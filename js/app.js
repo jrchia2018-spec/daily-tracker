@@ -213,18 +213,33 @@ function renderHome() {
     <button class="btn" id="q-weight"><span class="ico">⚖️</span>Weight</button>
   </div>
 
-  <div class="card" style="margin-top:14px">
+  <div class="card" style="margin-top:14px;cursor:pointer" id="home-news">
     <div class="row between">
       <h2 style="margin:0">📰 Daily news</h2>
-      <span class="badge">Coming soon</span>
+      <span class="badge" id="home-news-badge">…</span>
     </div>
-    <p class="small muted" style="margin-top:6px">This section is reserved for your daily news update.</p>
+    <p class="small muted" id="home-news-line" style="margin-top:6px">Loading briefing…</p>
   </div>`;
 
   view.querySelector('#theme-btn').addEventListener('click', () => {
     applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
     render();
   });
+  view.querySelector('#home-news').addEventListener('click', () => { tab = 'news'; render(); });
+  loadNews()
+    .then(rep => {
+      const badge = view.querySelector('#home-news-badge');
+      const line = view.querySelector('#home-news-line');
+      if (!badge || !line) return;
+      const isToday = rep.date === dateKey();
+      badge.textContent = isToday ? 'Today' : fmtDate(rep.date, { weekday: false });
+      const top = rep.global?.[0]?.headline || rep.singapore?.[0]?.headline || '';
+      line.textContent = top || 'Open the briefing →';
+    })
+    .catch(() => {
+      const line = view.querySelector('#home-news-line');
+      if (line) line.textContent = 'Briefing unavailable offline.';
+    });
   view.querySelector('#q-meal').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
   view.querySelector('#q-run').addEventListener('click', openRunModal);
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
@@ -924,14 +939,79 @@ function weightChart() {
 
 // ---------- news ----------
 
+let newsCache = null;
+let newsFetchedAt = 0;
+
+async function loadNews() {
+  if (newsCache && Date.now() - newsFetchedAt < 5 * 60 * 1000) return newsCache;
+  const res = await fetch('news/latest.json', { cache: 'no-store' });
+  if (!res.ok) throw new Error(`News fetch failed (${res.status})`);
+  newsCache = await res.json();
+  newsFetchedAt = Date.now();
+  return newsCache;
+}
+
 function renderNews() {
   view.innerHTML = `
   <h1 style="margin-bottom:14px">News</h1>
-  <div class="card center" style="padding:38px 20px">
-    <div style="font-size:40px;margin-bottom:10px">📰</div>
-    <h2>Daily news — coming soon</h2>
-    <p class="muted small" style="max-width:300px;margin:6px auto 0">This tab is reserved for your daily news update. We'll wire it up to your preferred sources later.</p>
+  <div id="news-body">
+    <div class="card center" style="padding:38px 20px">
+      <div style="font-size:40px;margin-bottom:10px">📰</div>
+      <p class="muted small">Loading today's briefing…</p>
+    </div>
   </div>`;
+  const body = view.querySelector('#news-body');
+  loadNews()
+    .then(rep => { if (tab === 'news') body.innerHTML = newsHtml(rep); })
+    .catch(() => {
+      if (tab !== 'news') return;
+      body.innerHTML = newsCache ? newsHtml(newsCache) : `
+      <div class="card center" style="padding:38px 20px">
+        <div style="font-size:40px;margin-bottom:10px">📵</div>
+        <h2>Briefing unavailable</h2>
+        <p class="muted small" style="max-width:300px;margin:6px auto 0">Couldn't load the report — check your connection and reopen this tab.</p>
+      </div>`;
+    });
+}
+
+function newsHtml(rep) {
+  const today = dateKey();
+  const stale = rep.date !== today
+    ? `<div class="news-note">This report is from <b>${esc(fmtDate(rep.date))}</b> — today's briefing hasn't been published yet.</div>`
+    : '';
+  const gap = rep.gapNote ? `<div class="news-note">⚠️ ${esc(rep.gapNote)}</div>` : '';
+  const w = rep.word || {};
+  return `
+  ${stale}
+  <div class="card">
+    <h2 style="margin:0">Morning report — ${esc(fmtDate(rep.date))}</h2>
+    <p class="small muted" style="margin-top:4px">${esc(rep.coverage?.label || '')}</p>
+  </div>
+  ${gap}
+  ${newsSection('Global', rep.global)}
+  ${newsSection('Singapore', rep.singapore)}
+  <div class="card" style="margin-top:14px">
+    <p class="small muted" style="margin:0 0 4px;letter-spacing:.06em;text-transform:uppercase">Word of the day</p>
+    <h2 style="margin:0">${esc(w.word)} <span class="muted small">(${esc(w.pos)}) ${esc(w.pronunciation || '')}</span></h2>
+    <p class="small" style="margin-top:8px">${esc(w.definition)}</p>
+    <p class="small muted" style="margin-top:8px"><b>Etymology:</b> ${esc(w.etymology)}</p>
+    <p class="small" style="margin-top:8px;font-style:italic">“${esc(w.example)}”</p>
+  </div>`;
+}
+
+function newsSection(title, stories) {
+  if (!stories?.length) return '';
+  return `
+  <p class="small muted" style="margin:16px 0 8px;letter-spacing:.06em;text-transform:uppercase">${esc(title)} — ${stories.length} ${stories.length === 1 ? 'story' : 'stories'}</p>
+  ${stories.map(s => `
+  <details class="card news-story" open>
+    <summary>
+      ${s.breaking ? '<span class="badge badge-breaking">Breaking</span> ' : ''}<b>${esc(s.headline)}</b>
+    </summary>
+    ${(s.summary || []).map(p => `<p class="small news-p">${esc(p)}</p>`).join('')}
+    <p class="small news-p"><span class="news-label">Geopolitical</span> ${esc(s.geopolitical)}</p>
+    <p class="small news-p"><span class="news-label">Socioeconomic</span> ${esc(s.socioeconomic)}</p>
+  </details>`).join('')}`;
 }
 
 // ---------- init ----------

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "date": "2026-07-06",
+  "generatedAt": "2026-07-06T07:00:00+08:00",
+  "coverage": {
+    "from": "2026-07-05T07:00:00+08:00",
+    "to": "2026-07-06T07:00:00+08:00",
+    "label": "Sunday 5 July 2026, 0700 SGT → Monday 6 July 2026, 0700 SGT"
+  },
+  "gapNote": "Last report ran on 26 June — a 10-day gap. Significant intervening Iran developments are carried forward in the dominant story summary below. Missed daily reports are not backfilled.",
+  "global": [
+    {
+      "headline": "IRAN — KHAMENEI FUNERAL PAUSES DIPLOMACY; HORMUZ SLOWLY REOPENING; IRGC TENSIONS RESURFACE",
+      "breaking": false,
+      "summary": [
+        "The 10-day gap since last session contains several significant shifts. Indirect US-Iran technical talks in Doha on July 1 produced \"positive progress\" — Qatar and Pakistan reported both sides agreed to continue discussions and confirmed $6B of frozen assets partly unfrozen, to be used for Iranian goods purchases. However, talks have since been suspended pending conclusion of the state funeral for former Supreme Leader Ali Khamenei, running July 4-9. Next meetings will be scheduled at the earliest possible time after funeral processions conclude.",
+        "Hormuz is slowly reopening in practice. Commercial traffic through the strait rose by more than 50% in the week of June 22-28 versus the prior week, according to Kpler data. But Iran's PGSA continues to assert routing authority, and a foreign-flagged container ship ran aground July 1 after deviating from Iran's designated corridor — a demonstration of exactly what operational risks shipping companies face if they try to bypass Iranian routing. The US Navy's JMIC widened an alternative route near Oman on June 27, creating physical competition to Iran's designated channel.",
+        "On July 1, Israeli Defence Minister Katz said Mojtaba Khamenei was \"marked for death.\" Iran's FM Araghchi immediately warned of an \"immediate powerful response\" to any Israeli attack and repeated demands for the US to restrain Israel. IAEA chief Rafael Grossi separately said the agency's inspectors \"will have to have access and inspect\" Iran's nuclear sites under the MOU — and Iran's parliament speaker Ghalibaf flatly denied that IAEA had access to Fordow, Natanz and Isfahan, the three sites struck in the war. The IAEA denial goes directly to the heart of Phase 2 nuclear talks.",
+        "Additionally, US CENTCOM deployed the USS Boxer Amphibious Ready Group — including the assault ship USS Boxer, the USS Portland and USS Comstock, carrying the 11th Marine Expeditionary Unit of over 2,000 Marines — to the Middle East as a \"scheduled deployment.\" Given the diplomatic sensitivity of the period, the timing carries an unmistakable signalling function."
+      ],
+      "geopolitical": "The 60-day MOU clock keeps running during the funeral pause. As of today, roughly 19 days of the 60-day window have elapsed since the June 17 signing. The Iran-IAEA access dispute is the most structurally dangerous unresolved issue — if Iran continues to deny inspectors access to struck sites, Phase 2 nuclear talks cannot even begin on substance. Katz's \"marked for death\" comment about Mojtaba Khamenei is reckless regardless of Israeli intent; it gives Iranian hardliners a pretext to declare the MOU incompatible with Israeli behaviour and walk away from talks after the funeral period.",
+      "socioeconomic": "Hormuz's gradual reopening has proceeded sufficiently for oil markets to fully price out the war premium — Brent has stayed near or below pre-war levels. But the four major shipping carriers remain on Cape of Good Hope routing, and ADNOC holds its position that full production normalization won't occur before 2027. Singapore's STB tourism receipts forecast and the pending Q3 electricity tariff remain contingent on how durable this partial reopening proves."
+    },
+    {
+      "headline": "NATO ANKARA SUMMIT OPENS TODAY; DRAFT TEXT PLEDGES €70B FOR UKRAINE, CALLS OUT IRAN",
+      "breaking": true,
+      "summary": [
+        "The 36th NATO Summit opens today in Ankara, Turkey — the first day being the Defence Industry Forum at 10am local time, with Rutte's pre-summit press conference at 4:45pm. Leaders' meetings follow July 7-8. Trump is confirmed attending. Zelenskyy confirmed attending.",
+        "A leaked draft communique reveals the substantive commitments NATO leaders are being asked to endorse. NATO allies are set to pledge SGD ~107B (€70B) in military assistance to Ukraine for 2026, with \"at least equivalent levels\" for 2027. The text reaffirms Article 5 collective defence as \"ironclad.\" On Iran, the communique states: \"Allies reiterate that Iran must never have a nuclear weapon and call on Iran to fully respect freedom of navigation in the Strait of Hormuz\" — direct language that Ankara has inserted as host, given Turkey's own exposure to the Iran conflict. Russia is described as a \"long-term threat to Euro-Atlantic security and stability.\"",
+        "A major pre-summit development: all NATO members met the 2% GDP spending target in 2025 for the first time since the target was set in 2014. European allies and Canada increased core defence spending by $139B between 2024 and 2025. Turkey arrested over 200 people ahead of the summit — drawing a Human Rights Watch condemnation for \"ruthless intolerance\" of free speech and assembly."
+      ],
+      "geopolitical": "The Ankara summit is the first since Trump publicly considered quitting NATO in April following allied refusals to assist in Hormuz operations. The defence industry forum occupying a full day — more time than the leaders' sessions themselves — reflects NATO's pivot from spending pledges to capability delivery and production. Turkey's simultaneous crackdown on dissent at a summit organised under nominally democratic auspices is the political contradiction sitting at the centre of the event. The Iran communique language aligns NATO formally with the US position on nuclear non-proliferation, but without any operative commitment — it is declaratory.",
+      "socioeconomic": "The €70B (~SGD 107B) Ukraine military commitment represents a significant fiscal burden redistribution from US to European allies. For Singapore, the NATO summit matters structurally: Singapore's F-35 programme, RSAF ties with the UK and US, and its own defence procurement trajectory (Singapore spent approximately 3% of GDP on defence in 2025) are all linked to the transatlantic defence industrial base whose structure is being renegotiated at Ankara."
+    },
+    {
+      "headline": "SUPER TYPHOON BAVI MAKES LANDFALL ON ROTA, US PACIFIC ISLAND; \"CATASTROPHIC\" DAMAGE WARNED",
+      "breaking": true,
+      "summary": [
+        "A super typhoon with equivalent force to a Category 5 hurricane made landfall on Rota, a US island in the Pacific, on July 5. The National Weather Service warned of \"catastrophic damage and a life-threatening situation\" as the typhoon's western eyewall passed directly over the island. Rota has a population of approximately 2,500, with limited evacuation infrastructure given its remoteness in the Mariana Islands."
+      ],
+      "geopolitical": "Rota is US sovereign territory under CNMI (Commonwealth of the Northern Mariana Islands) jurisdiction, meaning federal disaster response is activated. However, the Trump administration's posture toward territories and overseas federal obligations has been questioned after its immigration executive actions. Any perception of delayed or inadequate response becomes a domestic political issue. Rota's proximity to Guam — a major US military hub — also raises questions about whether typhoon damage affects US military infrastructure in the region.",
+      "socioeconomic": "Category 5-equivalent landfalls on inhabited Pacific islands cause near-total destruction of housing and utilities. Reconstruction costs for Rota will fall primarily on US federal emergency appropriations. The broader Pacific typhoon season's trajectory is being tracked by insurance markets and reinsurance pricing. Singapore's own monsoon and severe weather exposure means regional typhoon activity is a soft watchlist item for Changi Airport's flight schedule and the marine insurance market, where Singapore is a significant hub."
+    },
+    {
+      "headline": "RUSSIA-UKRAINE: ON THE EVE OF ANKARA, RUSSIA FIRES DRONES AT KYIV; NO CEASEFIRE PROGRESS",
+      "breaking": false,
+      "summary": [
+        "Context from the 10-day gap: Zelenskyy's proposal to meet Putin at the G7 summit was rejected by the Kremlin; Russia responded to the proposal with mass drone and missile strikes on Ukraine on June 16. Diplomatic momentum on Ukraine stalled as Iran absorbed US focus. Ahead of the NATO summit, Russia conducted overnight drone strikes on Kyiv and other cities in its standard pattern — asserting that Western summitry will not alter its battlefield posture.",
+        "Zelenskyy's position heading into Ankara: a frontline freeze offer, conditional on security guarantees that Russia has not credibly offered. Russia's position remains annexation of the four occupied oblasts. The gap has not closed. European allies' assessment is that military momentum has shifted toward Ukraine, creating an opening for negotiations on terms more favourable to Kyiv than what Russia proposed in the Alaska Putin-Trump summit framework."
+      ],
+      "geopolitical": "The Ankara communique's Ukraine pledge of €70B (~SGD 107B) is the hardest commitment of the summit. But commitments to deliver and the actual pace of weapons transfers are two different things — allies committed to Ukraine at Madrid, Vilnius, Washington and The Hague, and the gap between pledge and delivery has been a persistent NATO credibility problem. Zelenskyy's attendance is itself a statement: Ukraine is demanding to be heard at an alliance whose most powerful member is simultaneously negotiating with Russia's Iranian proxy.",
+      "socioeconomic": "European defence industrial scaling — ramping up artillery shell production, air defence systems and drone manufacturing — continues to pull capital and labour from civilian sectors. For Singapore, two dynamics are live: Singapore-flagged vessels continue to run rerouted insurance routes avoiding both Hormuz and the Red Sea; and Ukraine's reconstruction, whenever it begins, will be a significant emerging market opportunity for Singapore's infrastructure and engineering sectors."
+    }
+  ],
+  "singapore": [
+    {
+      "headline": "GREATER SENTOSA MASTER PLAN: BRANI MERGER, PEOPLE MOVER, DOUBLE VISITORS IN 20 YEARS",
+      "breaking": false,
+      "summary": [
+        "Sentosa Development Corporation unveiled the Greater Sentosa Master Plan on July 3, a 20-year vision to integrate Sentosa with the adjacent 120-hectare Pulau Brani and double visitor numbers. The plan includes a new People Mover system replacing the existing Sentosa Express, an Island Heart Transport Hub as the primary arrival gateway linking Sentosa and Brani, a sheltered forest canopy walk to the summit of Mount Imbiah, reimagined beaches at Siloso, Palawan and Tanjong, a floating boardwalk connecting islets, and a high-level waterfront link to the Greater Southern Waterfront project.",
+        "Near-term deliverables (by early 2030s) include the Imbiah Canopy hilltop destination, the Imbiah Lookout Walk, and the RWS 2.0 Waterfront Lifestyle Development. Super Nintendo World at Universal Studios Singapore is also part of the near-term pipeline. Beyond 2030, Brani West will be developed for new entertainment attractions with international partners.",
+        "Currently international visitors account for 80% of Sentosa's visitorship. SDC aims to double total visitor volumes. The plan was launched with a public exhibition at VivoCity from July 3-5, now moving to Our Tampines Hub July 22-27."
+      ],
+      "geopolitical": "The GSMP positions Singapore as a competitor to Bali, Phuket and other regional leisure destinations at the premium end of the market. The integration of Brani — a former military island — into the civilian leisure economy is consistent with Singapore's land intensification strategy and reflects long-term confidence in the tourism sector despite the STB's downward 2026 forecast revision. The inclusion of coastal protection measures signals that climate resilience is now integral to development planning, not an afterthought.",
+      "socioeconomic": "The GSMP's primary economic case rests on the Greater Southern Waterfront adding ~100,000 new residents to adjacent areas and Changi Terminal 5 by 2035 as an international arrival catalyst. If both materialise on schedule, Sentosa's demand fundamentals shift substantially. The STB's 2026 tourism receipts forecast of S$31-32.5B (down from S$32.8B in 2025) reflects Iran-war disruption to Middle East travel flows — but a 20-year plan is being built against a secular, not cyclical, demand curve."
+    },
+    {
+      "headline": "YOUNG PAP TO LAUNCH ACADEMY; ALVIN TAN SAYS YOUTH ENGAGEMENT \"EXISTENTIAL\" FOR PAP",
+      "breaking": false,
+      "summary": [
+        "The Straits Times reported yesterday that Young PAP is launching an academy to build political and civic engagement among younger Singaporeans. Minister of State Alvin Tan was quoted describing it as \"existential\" for the ruling party to attract and convince the youth demographic. The academy is positioned as a structured pathway for interested young Singaporeans to understand PAP's governance philosophy, policy positions, and political culture.",
+        "The framing of youth engagement as \"existential\" is notably candid for a minister of a party that controls 87 of 97 parliamentary seats after the May 2025 GE. It reflects recognition that PAP's margin among younger voters in 2025 — while still delivering the election — was lower than its overall two-thirds share, and that generational political preferences are shifting on issues including cost of living, housing affordability, and work-life balance."
+      ],
+      "geopolitical": "The PAP's relationship with youth sentiment has direct implications for Singapore's political stability premium — the basis on which foreign investors price Singapore's governance advantage. An \"existential\" admission from a minister signals internal polling awareness that the 2025 result, comfortable as it was, does not represent a settled political equilibrium with the next generation.",
+      "socioeconomic": "A PAP academy that successfully recruits and trains young members could function as a talent pipeline for the party and ultimately the public service — Singapore's governance structure depends on the depth of this pipeline. The academy's design will also signal whether the party intends to engage youth on their terms (cost of living, climate, housing) or primarily to transmit existing positions downward. The distinction matters for whether it improves or merely formalises the gap."
+    }
+  ],
+  "word": {
+    "word": "Liminal",
+    "pos": "adj.",
+    "pronunciation": "/ˈlɪm.ɪ.nl̩/",
+    "definition": "Occupying a threshold or transitional position between two distinct states; in anthropology, the disorienting middle stage of a rite of passage where the old order no longer applies but the new order has not yet been established.",
+    "etymology": "From Latin limen (threshold, doorway). Entered academic English via anthropologist Arnold van Gennep's 1909 work Rites of Passage, and then the broader language through Victor Turner's elaboration of liminality as a structural concept.",
+    "example": "The Iran peace process is in a liminal condition: the memorandum is signed but not implemented, Hormuz is neither fully open nor fully closed, the nuclear talks are suspended, and the principals are attending to funeral rites — suspended between a war that is formally over and a peace that has not yet materialised."
+  },
+  "source": "Seeded from the manual 6 July 2026 chat report; weekday and coverage-window labels corrected programmatically (5 Jul 2026 was a Sunday)."
+}
