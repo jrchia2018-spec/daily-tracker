@@ -66,7 +66,9 @@ git push
 
 **Cloud runs**: raw `git push` returns 403 for ALL branches in the cloud environment (verified 6 Jul 2026) — publish through the built-in GitHub tools instead. Use `push_files` (or `create_or_update_file` per file) to commit ALL changed `news/` files — the report, `latest.json`, and every updated state file — to the `main` branch of `jrchia2018-spec/daily-tracker` in ONE commit with message "Morning report <YYYY-MM-DD>". Verify afterwards that the commit landed (e.g. `git ls-remote` or a repo query).
 
-**Known blocker (as of 6 Jul 2026):** the GitHub integration in this environment currently has NO write scope on the repo — all write calls return 403 "Resource not accessible by integration" (git push and MCP tools alike; reads work). The fix is granting the Claude GitHub App `Contents: Read and write` on the repo. Until a write path is verified, expect publishes to fail. If every publish path fails: do NOT fabricate success — state clearly in your final message that the report was generated but could not be published, and include the full report content in the message so it isn't lost. Never leave state files updated locally but unpublished.
+(The GitHub-tools write path was verified working on 6 Jul 2026 after the Claude GitHub App was installed on the repo with Contents: Read and write. If writes ever start returning 403 "Resource not accessible by integration" again, that installation is the thing to check.)
+
+If every publish path fails: do NOT fabricate success — state clearly in your final message that the report was generated but could not be published, and include the full report content in the message so it isn't lost. Never leave state files updated locally but unpublished.
 
 GitHub Pages redeploys automatically (~1 min). The app's News tab fetches `news/latest.json` fresh on every view.
 
