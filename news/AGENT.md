@@ -21,9 +21,11 @@ Coverage window: **yesterday 07:00 SGT → today 07:00 SGT** (exactly 24 hours).
 
 Read every file in `news/state/` (sections 1–9). Sections 1, 2, 9 are your task, format rules, and standing instructions. Sections 3–5 are current data, the dominant arc, and open threads. Sections 7–8 are the used word lists.
 
-## 2. Gap check
+## 2. Already-published and gap check
 
-Read the `date` field of `news/latest.json`. If it is more than 1 day before today, set a `gapNote` at the top of the report flagging the gap, and carry forward significant intervening developments of the dominant arc in that story's summary. **Do not backfill missed reports.**
+Read the `date` field of `news/latest.json`:
+- **If it equals today's date, stop immediately and publish nothing** — another scheduler already ran today. This keeps cloud and local schedules safe to run side by side.
+- If it is more than 1 day before today, set a `gapNote` at the top of the report flagging the gap, and carry forward significant intervening developments of the dominant arc in that story's summary. **Do not backfill missed reports.**
 
 ## 3. Research
 
