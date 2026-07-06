@@ -32,6 +32,7 @@ Read the `date` field of `news/latest.json`:
 Follow the search procedure in `news/state/2-format-rules.md`:
 - Global: web-search breaking news first, then lead analytical stories; prioritise the coverage window. Consolidate ALL Iran-MOU angles into one story.
 - Singapore: fetch the CNA, Straits Times, and Mothership homepages and read headlines directly; check the PMO site for cabinet-level changes. SG politics and Singaporean achievements qualify explicitly.
+- **If the news homepages are unreachable** (cloud network policy blocks them; verified 6 Jul 2026: CNA/ST/Mothership blocked, PMO reachable), do NOT drop SG coverage — research SG stories via web search instead (e.g. "Singapore news today <date> CNA", "Straits Times top stories <date>", "Mothership Singapore <date>"). Only fall back to fewer/no SG stories if search itself returns nothing usable.
 - Check the no-repeat log in `5-open-threads.md`: no story repeated from a prior report unless there is a significant new development that day.
 - Fewer stories beats padding — under 5 global or under 5 SG is fine.
 
@@ -55,13 +56,15 @@ Produce `news/reports/<YYYY-MM-DD>.json` and copy it to `news/latest.json`. Matc
 
 ## 6. Publish
 
+**Local runs** (on the user's machine, where git push works):
+
 ```bash
 git add news/
 git commit -m "Morning report <YYYY-MM-DD>"
 git push
 ```
 
-**If the push to main is rejected** (cloud runs may only be allowed to push `claude/`-prefixed branches), do not discard the work: push the same commit to `claude/reports` instead (`git push origin HEAD:claude/reports --force`) and state clearly in your final message that main was rejected and the report is parked on `claude/reports`.
+**Cloud runs**: raw `git push` returns 403 for ALL branches in the cloud environment (verified 6 Jul 2026) — publish through the built-in GitHub tools instead. Use `push_files` (or `create_or_update_file` per file) to commit ALL changed `news/` files — the report, `latest.json`, and every updated state file — to the `main` branch of `jrchia2018-spec/daily-tracker` in ONE commit with message "Morning report <YYYY-MM-DD>". Verify afterwards that the commit landed (e.g. `git ls-remote` or a repo query). Never leave state files updated locally but unpublished — if the publish fails entirely, report the failure and publish nothing.
 
 GitHub Pages redeploys automatically (~1 min). The app's News tab fetches `news/latest.json` fresh on every view.
 
