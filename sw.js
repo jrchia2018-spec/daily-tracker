@@ -1,5 +1,5 @@
 // Basic offline support: cache the app shell, always hit the network for API calls.
-const CACHE = 'tracker-v1';
+const CACHE = 'tracker-v2';
 const SHELL = [
   '.',
   'index.html',
@@ -8,6 +8,7 @@ const SHELL = [
   'js/store.js',
   'js/targets.js',
   'js/food.js',
+  'js/foods.js',
   'manifest.webmanifest',
   'icons/icon.svg',
 ];

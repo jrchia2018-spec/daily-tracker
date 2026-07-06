@@ -8,6 +8,7 @@ import {
   burnedOn, weightTrend, runKcal,
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
+import { searchCommonFoods } from './foods.js';
 
 const view = document.getElementById('view');
 const tabbar = document.getElementById('tabbar');
@@ -58,6 +59,21 @@ tabbar.addEventListener('click', e => {
 function targets() {
   return state.targets || { calories: 2000, protein: 120, carbs: 220, fat: 60 };
 }
+
+// ---------- theme ----------
+
+function applyTheme(t) {
+  document.documentElement.dataset.theme = t;
+  localStorage.setItem('tracker.theme', t);
+  document.querySelector('meta[name="theme-color"]')
+    .setAttribute('content', t === 'light' ? '#f3f5fa' : '#0e1220');
+}
+
+function currentTheme() {
+  return localStorage.getItem('tracker.theme') || 'dark';
+}
+
+applyTheme(currentTheme());
 
 // ---------- render root ----------
 
@@ -151,7 +167,10 @@ function renderHome() {
   view.innerHTML = `
   <div class="row between" style="margin-bottom:14px">
     <div><h1>Today</h1><div class="muted small">${fmtDate(today)}</div></div>
-    <span class="badge ${state.targets?.mode === 'auto' ? 'green' : 'orange'}">${state.targets?.mode === 'auto' ? 'Auto targets' : 'Manual targets'}</span>
+    <div class="row" style="gap:8px">
+      <span class="badge ${state.targets?.mode === 'auto' ? 'green' : 'orange'}">${state.targets?.mode === 'auto' ? 'Auto targets' : 'Manual targets'}</span>
+      <button class="btn small" id="theme-btn" title="Toggle light/dark">${currentTheme() === 'dark' ? '☀️' : '🌙'}</button>
+    </div>
   </div>
 
   ${showNote ? `<div class="note">📈 ${esc(state.lastAutoNote)} <button class="btn ghost small" id="dismiss-note">Dismiss</button></div>` : ''}
@@ -202,6 +221,10 @@ function renderHome() {
     <p class="small muted" style="margin-top:6px">This section is reserved for your daily news update.</p>
   </div>`;
 
+  view.querySelector('#theme-btn').addEventListener('click', () => {
+    applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+    render();
+  });
   view.querySelector('#q-meal').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
   view.querySelector('#q-run').addEventListener('click', openRunModal);
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
@@ -258,9 +281,8 @@ function renderMeals() {
 
   <div class="card">
     <h2>Add food</h2>
-    <div class="search-box row">
-      <input id="food-q" type="search" placeholder="e.g. greek yogurt, chicken breast" autocomplete="off">
-      <button class="btn primary" id="food-go">Search</button>
+    <div class="search-box">
+      <input id="food-q" type="search" placeholder="Start typing… e.g. salmon, rice, yogurt" autocomplete="off">
     </div>
     <div id="food-results" class="search-results"></div>
     <button class="btn ghost small" id="food-manual">+ Enter manually instead</button>
@@ -282,9 +304,6 @@ function renderMeals() {
   view.querySelector('#d-prev').addEventListener('click', () => { mealDate = addDays(mealDate, -1); render(); });
   view.querySelector('#d-next').addEventListener('click', () => { mealDate = addDays(mealDate, 1); render(); });
   view.querySelector('#food-manual').addEventListener('click', () => openFoodModal(null));
-  view.querySelector('#food-go').addEventListener('click', doSearch);
-  const q = view.querySelector('#food-q');
-  q.addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
 
   for (const it of view.querySelectorAll('.item[data-id]')) {
     it.addEventListener('click', () => {
@@ -293,32 +312,52 @@ function renderMeals() {
     });
   }
 
-  async function doSearch() {
-    const query = q.value.trim();
-    if (!query) return;
-    const box = view.querySelector('#food-results');
-    box.innerHTML = '<div class="spinner"></div>';
-    try {
-      const results = await searchFood(query);
-      if (!results.length) {
-        box.innerHTML = '<p class="muted small" style="padding:8px 0">No results found. Try a simpler name, or enter it manually.</p>';
-        return;
-      }
-      box.innerHTML = results.map((f, i) => `
-        <div class="item" data-i="${i}">
-          <div>
-            <div class="title">${esc(f.name)}</div>
-            <div class="sub">${esc(f.brand || 'Generic')} · per 100g: P ${f.per100.protein ?? '?'} C ${f.per100.carbs ?? '?'} F ${f.per100.fat ?? '?'}</div>
-          </div>
-          <div class="val">${r0(f.per100.kcal)} kcal</div>
-        </div>`).join('');
-      for (const it of box.querySelectorAll('.item')) {
-        it.addEventListener('click', () => openFoodModal(results[Number(it.dataset.i)]));
-      }
-    } catch (err) {
-      box.innerHTML = `<p class="muted small" style="padding:8px 0">Search failed (${esc(err.message)}). Check your connection or enter manually.</p>`;
+  // Live search: built-in basics match instantly on every keystroke;
+  // online results (Open Food Facts) are debounced and appended below.
+  const q = view.querySelector('#food-q');
+  const box = view.querySelector('#food-results');
+  let shown = [];
+  let timer = null;
+  let seq = 0;
+
+  function paint(loading) {
+    box.innerHTML = shown.map((f, i) => `
+      <div class="item" data-i="${i}">
+        <div>
+          <div class="title">${esc(f.name)}</div>
+          <div class="sub">${f.brand === 'Basic' ? '<span class="badge green">Basic</span>' : esc(f.brand || 'Generic')} · per 100g: P ${f.per100.protein ?? '?'} C ${f.per100.carbs ?? '?'} F ${f.per100.fat ?? '?'}</div>
+        </div>
+        <div class="val">${r0(f.per100.kcal)} kcal</div>
+      </div>`).join('')
+      + (loading ? '<div class="spinner"></div>' : '')
+      + (!shown.length && !loading && q.value.trim()
+        ? '<p class="muted small" style="padding:8px 0">No matches. Try a simpler name, or enter it manually.</p>' : '');
+    for (const it of box.querySelectorAll('.item[data-i]')) {
+      it.addEventListener('click', () => openFoodModal(shown[Number(it.dataset.i)]));
     }
   }
+
+  q.addEventListener('input', () => {
+    const query = q.value.trim();
+    clearTimeout(timer);
+    const my = ++seq;
+    if (!query) { shown = []; box.innerHTML = ''; return; }
+    shown = searchCommonFoods(query);
+    const goOnline = query.length >= 3;
+    paint(goOnline);
+    if (goOnline) {
+      timer = setTimeout(async () => {
+        try {
+          const remote = await searchFood(query);
+          if (my !== seq) return; // a newer keystroke superseded this request
+          shown = [...searchCommonFoods(query), ...remote.slice(0, 10)];
+          paint(false);
+        } catch {
+          if (my === seq) paint(false);
+        }
+      }, 450);
+    }
+  });
 }
 
 function totCell(val, max, label) {

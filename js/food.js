@@ -1,23 +1,45 @@
 // Food macro lookup via the free Open Food Facts API (no key required).
+// The legacy endpoint reliably sends CORS headers so browsers can call it;
+// the newer search service is kept as a fallback for when legacy is down
+// (it only helps if they've enabled CORS for third-party origins).
 
-const SEARCH_URL = 'https://world.openfoodfacts.org/cgi/search.pl';
+const FIELDS = 'product_name,brands,nutriments,serving_size';
 
 export async function searchFood(query) {
+  try {
+    return normalize(await searchLegacy(query));
+  } catch {
+    return normalize(await searchNew(query));
+  }
+}
+
+async function searchNew(query) {
+  const params = new URLSearchParams({ q: query, page_size: '15', fields: FIELDS });
+  const res = await fetch(`https://search.openfoodfacts.org/search?${params}`, {
+    headers: { Accept: 'application/json' },
+  });
+  if (!res.ok) throw new Error(`Food search failed (${res.status})`);
+  return (await res.json()).hits || [];
+}
+
+async function searchLegacy(query) {
   const params = new URLSearchParams({
     search_terms: query,
     search_simple: '1',
     action: 'process',
     json: '1',
     page_size: '15',
-    fields: 'product_name,brands,nutriments,serving_size',
+    fields: FIELDS,
   });
-  const res = await fetch(`${SEARCH_URL}?${params}`, {
+  const res = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, {
     headers: { Accept: 'application/json' },
   });
   if (!res.ok) throw new Error(`Food search failed (${res.status})`);
-  const data = await res.json();
+  return (await res.json()).products || [];
+}
 
-  return (data.products || [])
+function normalize(products) {
+  return products
     .map(p => {
       const n = p.nutriments || {};
       let kcal = num(n['energy-kcal_100g']);
@@ -25,9 +47,10 @@ export async function searchFood(query) {
         const kj = num(n['energy_100g']);
         if (kj != null) kcal = kj / 4.184;
       }
+      const brands = Array.isArray(p.brands) ? p.brands.join(', ') : (p.brands || '');
       return {
         name: (p.product_name || '').trim(),
-        brand: (p.brands || '').split(',')[0].trim(),
+        brand: brands.split(',')[0].trim(),
         serving: p.serving_size || '',
         per100: {
           kcal: round1(kcal),
