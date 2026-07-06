@@ -15,7 +15,7 @@
 
 ## Search procedure
 - Global: search breaking news, then lead analytical stories. Prioritise developments within the coverage window.
-- Singapore: fetch CNA, Straits Times, and Mothership homepages and read headlines directly. Check PMO site for cabinet-level changes. Include SG politics and Singaporean achievements explicitly. Pending open-threads items don't qualify as SG stories unless materially new that day.
+- Singapore: fetch CNA, Straits Times, and Mothership headlines directly — via their RSS feeds, since the homepages are not machine-readable (JS-rendered/bot-blocked; feed URLs and fallbacks in `news/AGENT.md`, correction absorbed 6 Jul 2026). Check PMO site for cabinet-level changes. Include SG politics and Singaporean achievements explicitly. Pending open-threads items don't qualify as SG stories unless materially new that day.
 
 ## Word of the Day
 Every report ends with one unused word: word, definition, etymology, example sentence in context of that day's news. After every report, immediately append the word to the correct list (`7-words-a-m.md` or `8-words-n-z.md`). Never repeat a word from either list.

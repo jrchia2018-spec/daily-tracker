@@ -32,7 +32,12 @@ Read the `date` field of `news/latest.json`:
 Follow the search procedure in `news/state/2-format-rules.md`:
 - Global: web-search breaking news first, then lead analytical stories; prioritise the coverage window. Consolidate ALL Iran-MOU angles into one story.
 - Singapore: fetch the CNA, Straits Times, and Mothership homepages and read headlines directly; check the PMO site for cabinet-level changes. SG politics and Singaporean achievements qualify explicitly.
-- **If the news homepages are unreachable** (cloud network policy blocks them; verified 6 Jul 2026: CNA/ST/Mothership blocked, PMO reachable), do NOT drop SG coverage — research SG stories via web search instead (e.g. "Singapore news today <date> CNA", "Straits Times top stories <date>", "Mothership Singapore <date>"). Only fall back to fewer/no SG stories if search itself returns nothing usable.
+- **The homepages themselves are NOT usable programmatically** (verified 6 Jul 2026: CNA is JS-rendered, ST serves an empty shell, Mothership hard-blocks with Cloudflare). Read the **RSS feeds** instead — all three verified working with live headlines on 6 Jul 2026 (use `curl -A "Mozilla/5.0"`):
+  - CNA: `https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml`
+  - Straits Times (Singapore desk): `https://www.straitstimes.com/news/singapore/rss.xml`
+  - Mothership: `https://mothership.sg/feed/`
+
+  Use the feeds to pick stories, then research the chosen stories more deeply via web search. If a feed fails, fall back to web search for that source (e.g. "Straits Times top stories <date>"). Only run fewer/no SG stories if feeds AND search both return nothing usable.
 - Check the no-repeat log in `5-open-threads.md`: no story repeated from a prior report unless there is a significant new development that day.
 - Fewer stories beats padding — under 5 global or under 5 SG is fine.
 
