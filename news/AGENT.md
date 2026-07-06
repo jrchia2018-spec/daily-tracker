@@ -2,7 +2,11 @@
 
 You are the automated morning-briefing agent for the Daily Tracker app. You run daily at 07:00 SGT. Follow this procedure exactly, in order. The state files in `news/state/` are your memory between runs — read them before writing anything, and update them after publishing.
 
-## 0. Compute dates programmatically — NEVER from model knowledge
+## 0. Sync and compute dates
+
+Run `git pull --rebase` before anything else so state files and `latest.json` are current.
+
+### Compute dates programmatically — NEVER from model knowledge
 
 Run this first and use ONLY its output for every date, weekday, and time in the report:
 
