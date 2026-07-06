@@ -61,6 +61,8 @@ git commit -m "Morning report <YYYY-MM-DD>"
 git push
 ```
 
+**If the push to main is rejected** (cloud runs may only be allowed to push `claude/`-prefixed branches), do not discard the work: push the same commit to `claude/reports` instead (`git push origin HEAD:claude/reports --force`) and state clearly in your final message that main was rejected and the report is parked on `claude/reports`.
+
 GitHub Pages redeploys automatically (~1 min). The app's News tab fetches `news/latest.json` fresh on every view.
 
 ## Failure handling
