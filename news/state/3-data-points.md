@@ -14,7 +14,7 @@
 | Port throughput | +14% YoY | Q1 2026 |
 | Services Q2 outlook | -4.0% net weighted balance | Q2 2026 |
 | Q2 electricity tariff | 29.72 cents/kWh (with GST) | Q2 2026 |
-| Q3 electricity tariff | "significant rise" confirmed; analysts 20–30%; U-Save 2nd tranche July | EMA, 18 Jun 2026 |
+| Q3 electricity tariff | 31.91 cents/kWh before GST, 34.78 cents/kWh with GST (+17.5% QoQ) — record high, above Q4 2008's 30.45 cents/kWh | EMA/SP Group, 30 Jun 2026 |
 | MAS policy | S$NEER slope tightened Apr 14; July meeting flagged | Apr 2026 |
 | Govt support package | ~SGD 1B (cash, fuel vouchers) | Budget 2026 |
 | STB tourism receipts forecast | S$31–32.5B (down from S$32.8B record 2025) | STB, May 2026 |
@@ -26,6 +26,9 @@
 ## Global economic variables
 | Indicator | Figure | Source |
 |---|---|---|
-| Brent crude | ~$73/barrel — war premium unwound | 25 Jun 2026 |
-| Hormuz traffic | +50% week of Jun 22–28 vs prior week; still far below pre-crisis ~93/day | Kpler, early Jul 2026 |
+| Brent crude | $72.85/barrel, +2.6% on 7 Jul Hormuz tanker attacks; still near 4-month lows | 7 Jul 2026 |
+| Hormuz traffic | Kpler: 31–43 crossings/day (3–5 Jul) vs 120–140/day pre-war; fell sharply again after 7 Jul attacks (no confirmed post-attack count yet) | Kpler, 7 Jul 2026 |
+| Iran oil-export waiver | Revoked by US Treasury 7 Jul following tanker attacks; wind-down deadline 17 Jul 2026 | US Treasury, 7 Jul 2026 |
 | NATO 2% GDP target | All members met it in 2025 (first time since 2014); Europe+Canada +$139B core spend 2024→2025 | NATO, 6 Jul 2026 |
+| NATO Ukraine pledge | €70B (~SGD 107B) military assistance for 2026; "at least equivalent" 2027 | NATO Ankara draft declaration, 7 Jul 2026 |
+| Taiwan typhoon (Bavi) | Storm forecast ~200mph gusts approaching Taiwan after Rota landfall (no fatalities, Rota/Guam/N. Marianas) | 7 Jul 2026 |
