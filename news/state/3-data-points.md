@@ -28,6 +28,11 @@
 | Temasek net portfolio value | S$518B as at 31 Mar 2026 (+S$49B YoY) | Temasek Review 2026, 8 Jul 2026 |
 | Temasek TSR | 1-yr 10.5% SGD (14.8% USD); 10-yr 7.1%; 20-yr 6.8% | Temasek Review 2026, 8 Jul 2026 |
 | Temasek AI portfolio exposure | ~6% currently; target up to 15% by 2031 | Temasek Review 2026, 8 Jul 2026 |
+| GST Voucher — Cash (Aug 2026) | Up to S$850 to 1.5M adult Singaporeans | MOF, 9 Jul 2026 |
+| GST Voucher — MediSave top-up (Aug 2026) | Up to S$450 to ~710,000 seniors (S$150-S$450 by age/AV) | MOF, 9 Jul 2026 |
+| GSTV Cash + MediSave total disbursement | ~S$1.4B | MOF, 9 Jul 2026 |
+| AV driver-displacement estimate | ~7,000 drivers if AVs replace 10% of combined taxi/PHV fleet | Strides Premier CEO Ang Wei Neng, 7 Jul 2026 |
+| P2P driver training incentive (from Jan 2027 pilot) | S$20/hour, up to 80 hours (up to S$1,600/driver); ~2,000 SWDA-supported courses | MOT/Parliament, 7 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -40,3 +45,10 @@
 | NATO 2% GDP target | All members met it in 2025 (first time since 2014); Europe+Canada +$139B core spend 2024→2025 | NATO, 6 Jul 2026 |
 | NATO Ukraine pledge | €70B (~SGD 107B) military assistance for 2026; "at least equivalent" 2027 | NATO Ankara draft declaration, 7 Jul 2026 |
 | Taiwan typhoon (Bavi) | Storm forecast ~200mph gusts approaching Taiwan after Rota landfall (no fatalities, Rota/Guam/N. Marianas) | 7 Jul 2026 |
+| Brent crude (9 Jul pullback) | $76.99/barrel, -$1.03 from 8 Jul's surge | 9 Jul 2026, 07:49 GMT |
+| WTI crude (9 Jul pullback) | $72.64/barrel, -$0.88 from 8 Jul's surge | 9 Jul 2026, 07:49 GMT |
+| Iran casualties, 8-9 Jul US strikes | 14 killed, 78 injured (47 hospitalised), 5 provinces | Iranian Health Ministry, 9 Jul 2026 |
+| Iran strikes, second wave (9 Jul) | ~90 military targets (coastal/air-defence/naval/logistics) | CENTCOM, 9 Jul 2026 |
+| Iranian retaliation, 9 Jul | Drone/missile attacks on Kuwait, Qatar, Bahrain; 10 ballistic missiles at Jordan's Al Azraq base (8 intercepted) | Iranian army/Jordanian military, 9 Jul 2026 |
+| DRC Ebola cases/deaths | 1,561 confirmed cases, 506 deaths | WHO/ECDC, 5 Jul 2026 |
+| Uganda Ebola cases/deaths | 20 confirmed cases, 2 confirmed + 1 probable death | WHO, 2 Jul 2026 |
