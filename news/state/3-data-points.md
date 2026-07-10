@@ -33,6 +33,12 @@
 | GSTV Cash + MediSave total disbursement | ~S$1.4B | MOF, 9 Jul 2026 |
 | AV driver-displacement estimate | ~7,000 drivers if AVs replace 10% of combined taxi/PHV fleet | Strides Premier CEO Ang Wei Neng, 7 Jul 2026 |
 | P2P driver training incentive (from Jan 2027 pilot) | S$20/hour, up to 80 hours (up to S$1,600/driver); ~2,000 SWDA-supported courses | MOT/Parliament, 7 Jul 2026 |
+| Marriages, 2025 | -6.2% YoY (following -7% in 2024) | MSF Family Trends Report 2025, 10 Jul 2026 |
+| Seniors (65+) living alone | 87,200 (2024) vs 42,100 (2014) — roughly doubled in a decade; 80% of seniors still live with spouse/children | MSF Family Trends Report 2025, 10 Jul 2026 |
+| Govt-paid paternity leave uptake | 61% (2024-born children) vs 47% (2016-born children) | MSF Family Trends Report 2025, 10 Jul 2026 |
+| Shared parental leave | Expanded 6 → 10 weeks | Effective 1 Apr 2026 |
+| Unlicensed moneylending crackdown (1-7 Jul operation) | 69 persons investigated, aged 15-76; separately 9 more (aged 18-67) probed for cross-border moneylending with Malaysia | SPF, 9 Jul 2026 |
+| HDB Maju Forest/Clementi land release | 23ha total; ~15ha released for housing, ~8ha retained (stream + high-biodiversity vegetation); public feedback 10 Jul-6 Aug 2026 | HDB, 10 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -52,3 +58,9 @@
 | Iranian retaliation, 9 Jul | Drone/missile attacks on Kuwait, Qatar, Bahrain; 10 ballistic missiles at Jordan's Al Azraq base (8 intercepted) | Iranian army/Jordanian military, 9 Jul 2026 |
 | DRC Ebola cases/deaths | 1,561 confirmed cases, 506 deaths | WHO/ECDC, 5 Jul 2026 |
 | Uganda Ebola cases/deaths | 20 confirmed cases, 2 confirmed + 1 probable death | WHO, 2 Jul 2026 |
+| Brent crude (10 Jul) | $75.92/barrel, -0.5% on hopes of Hormuz reopening; still ~+6% for the week | 10 Jul 2026 |
+| WTI crude (10 Jul) | $71.39/barrel, -0.96%; still ~+5% for the week | 10 Jul 2026 |
+| Hormuz Southern Highway traffic | Zero vessels >10,000 dwt with AIS on have transited since 7 Jul (LNG tankers still passing) | Lloyd's List Intelligence, 10 Jul 2026 |
+| Spain wildfire (Almeria) | 12 dead, 23 missing; Spain's deadliest wildfire in 20+ years | 10 Jul 2026 |
+| Typhoon Bavi Philippines landslides | 15 dead, 6 missing (Mindanao: Sarangani + Lanao del Sur) | 10 Jul 2026 |
+| SK Hynix US IPO | US$26.5B raised (177.9M ADRs @ US$149); largest-ever foreign US listing, 2nd largest globally after SpaceX's US$85.7B | 10 Jul 2026 |
