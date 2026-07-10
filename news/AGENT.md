@@ -30,7 +30,10 @@ Read the `date` field of `news/latest.json`:
 ## 3. Research
 
 Follow the search procedure in `news/state/2-format-rules.md`:
-- Global: comb the preferred sources FIRST to identify candidate stories, then web-search for breaking/analytical stories they missed and to research the chosen stories in depth; prioritise the coverage window. Consolidate ALL Iran-MOU angles into one story. Preferred global sources (verified live 10 Jul 2026, `curl -A "Mozilla/5.0"`):
+- Sources are split by section: BBC, Guardian, NYT and CNN feed the **global** stories; CNA, Straits Times and Mothership feed the **Singapore** stories.
+- Global: comb the four global sources FIRST to identify candidate stories, then web-search for breaking/analytical stories they missed and to research the chosen stories in depth; prioritise the coverage window. Consolidate ALL Iran-MOU angles into one story. Global sources (all verified live 10 Jul 2026, `curl -A "Mozilla/5.0"`):
+  - BBC World: `https://feeds.bbci.co.uk/news/world/rss.xml`
+  - Guardian World: `https://www.theguardian.com/world/rss`
   - NYT World: `https://rss.nytimes.com/services/xml/rss/nyt/World.xml`
   - NYT front page: `https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml`
   - CNN: `https://lite.cnn.com` (text-only site; parse the article links — CNN's RSS feeds at rss.cnn.com are DEAD, frozen since April 2023, do not use them)
