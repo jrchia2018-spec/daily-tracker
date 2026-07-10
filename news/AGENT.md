@@ -69,9 +69,11 @@ git commit -m "Morning report <YYYY-MM-DD>"
 git push
 ```
 
-**Cloud runs**: raw `git push` returns 403 for ALL branches in the cloud environment (verified 6 Jul 2026) — publish through the built-in GitHub tools instead. Use `push_files` (or `create_or_update_file` per file) to commit ALL changed `news/` files — the report, `latest.json`, and every updated state file — to the `main` branch of `jrchia2018-spec/daily-tracker` in ONE commit with message "Morning report <YYYY-MM-DD>". Verify afterwards that the commit landed (e.g. `git ls-remote` or a repo query).
+**Cloud runs**: same commands — `git push origin main` works in the cloud environment (verified live on the 8, 9 and 10 Jul 2026 runs; an earlier 6 Jul 403 finding is obsolete).
 
-(The GitHub-tools write path was verified working on 6 Jul 2026 after the Claude GitHub App was installed on the repo with Contents: Read and write. If writes ever start returning 403 "Resource not accessible by integration" again, that installation is the thing to check.)
+**The report is published ONLY when the commit is on `main`.** The cloud session may designate a per-run branch (named like `main-xxxxx`) and instruct you to push there — that is NOT publication, and it is NOT a reason to skip pushing main. The 7 Jul 2026 run made exactly this mistake: it pushed only to its designated branch `main-2k18sg`, the app never saw the report, and the next run recorded a false gap. Push `main` first; additionally pushing the designated branch is fine if the session requires it. After pushing, verify: `git ls-remote origin main` must show your new commit.
+
+If pushing `main` is rejected, fall back to the built-in GitHub tools if available (`push_files` / `create_or_update_file` — commit ALL changed `news/` files to `main` in ONE commit; verified working 6 Jul 2026 via the Claude GitHub App with Contents: Read and write; a 403 "Resource not accessible by integration" means that app installation broke).
 
 If every publish path fails: do NOT fabricate success — state clearly in your final message that the report was generated but could not be published, and include the full report content in the message so it isn't lost. Never leave state files updated locally but unpublished.
 

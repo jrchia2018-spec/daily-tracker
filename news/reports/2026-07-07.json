@@ -1,0 +1,121 @@
+﻿{
+  "schema": 1,
+  "date": "2026-07-07",
+  "generatedAt": "2026-07-07T07:00:00+08:00",
+  "coverage": {
+    "from": "2026-07-06T07:00:00+08:00",
+    "to": "2026-07-07T07:00:00+08:00",
+    "label": "Monday 6 July 2026, 0700 SGT → Tuesday 7 July 2026, 0700 SGT"
+  },
+  "global": [
+    {
+      "headline": "HAMAS DISSOLVES GAZA GOVERNING BODY, PAVES WAY FOR UN-BACKED TECHNOCRATIC COMMITTEE",
+      "breaking": true,
+      "summary": [
+        "Hamas announced the dissolution of the Government Emergency Committee that has run Gaza for nearly two decades, with committee head Mohammed al-Farra submitting his resignation. Hamas is calling for the swift entry of the National Committee for the Administration of Gaza (NCAG) — a technocratic body under the US-backed post-war plan that has remained based outside Gaza for months amid reported Israeli objections to its entry.",
+        "Since the US-brokered ceasefire took effect in Gaza last October, Hamas has repeatedly signalled it would step back from day-to-day governance, but has left its disarmament — Israel's central precondition for a durable deal — unresolved. Israel dismissed the announcement as \"deception with no practical significance,\" saying Hamas personnel remain in their posts."
+      ],
+      "geopolitical": "The move is calibrated to claim credit for a governance handover without conceding anything binding: Hamas gets to point to a dissolved government while retaining the leverage its arms provide, precisely the ambiguity Israel refuses to accept. It also sharpens the contradiction in Israel's own position — criticising Hamas for a hollow handover while continuing to block NCAG's actual entry into Gaza.",
+      "socioeconomic": "A credible transfer of civil administration is the precondition for reconstruction financing and Gulf-backed investment pledges tied to the ceasefire framework; every month of ambiguity over governance and disarmament delays disbursement. Singapore's role here is peripheral, but its positioning as a humanitarian and reconstruction-finance conduit for the region depends on the kind of political closure this announcement does not yet deliver."
+    },
+    {
+      "headline": "RUSSIA HITS KYIV WITH 68 MISSILES, 351 DRONES ON EVE OF NATO SUMMIT; AT LEAST 21 DEAD",
+      "breaking": true,
+      "summary": [
+        "Russia launched one of its largest bombardments of the war on Kyiv overnight into Monday — 68 missiles and 351 attack drones, per Ukrainian officials — killing at least 15 people in the capital and six more in the surrounding region, with dozens wounded and damage reported at more than ten locations including residential buildings.",
+        "Zelenskyy called for \"strong decisions\" on air defence from the US and European partners at this week's NATO summit in Ankara. Separately, the Kremlin said Trump and Putin spoke by phone for 90 minutes over the weekend, with Trump offering to help find a resolution; the White House said Trump will meet Zelenskyy on the summit sidelines, expected Wednesday, before contacting Putin again."
+      ],
+      "geopolitical": "The timing — a mass strike the same week Ukraine tops the Ankara agenda — reads as Moscow signalling that summit declarations carry no operational weight on the battlefield. Trump running parallel tracks (a Putin call, then a Zelenskyy meeting, then another Putin contact) keeps Washington positioned as convener rather than committing to either side's terms, consistent with a pre-midterm calendar averse to new entanglements.",
+      "socioeconomic": "The roughly €70B (~SGD 107B) 2026 Ukraine assistance pledge expected out of Ankara is aimed precisely at closing the air-defence gap this strike exposes. Continued mass strikes on Kyiv sustain Ukraine's case to allies for financing and materiel, but they also reinforce the elevated insurance and shipping risk premiums that have kept Singapore-linked carriers routing around the region."
+    },
+    {
+      "headline": "SUPER TYPHOON BAVI: ROTA AND GUAM FACE WEEKS-LONG POWER OUTAGES AS FEMA MOBILISES",
+      "breaking": true,
+      "summary": [
+        "The scale of Super Typhoon Bavi's damage became clear Monday: Rota's mayor's office and much of the island's infrastructure sustained major damage, a communications tower collapsed cutting mobile service, and officials on Guam and Saipan reported widespread power outages, flooded roads and debris-choked streets. Forecasters said outages could last weeks to months and parts of the affected islands may be uninhabitable for an extended period.",
+        "The Port Authority of Guam suspended operations, and schools and hospitals across the region are expected to be affected. FEMA said it would support Guam and the Northern Mariana Islands as soon as the storm cleared the area."
+      ],
+      "geopolitical": "Rota's status as US sovereign CNMI territory makes the federal disaster response a domestic political test for Washington's handling of remote territories, a recurring sore point after past slow responses elsewhere. Guam's proximity to major US military infrastructure means any prolonged disruption to power and port operations is also being watched for knock-on effects to regional force posture.",
+      "socioeconomic": "Weeks-to-months-long outages and a suspended port will disrupt fuel and food resupply to islands with limited buffer stock, and reconstruction costs will fall almost entirely on US federal emergency appropriations given the islands' small tax base. For Singapore, the storm is a distant data point for the marine insurance and reinsurance market, where Singapore is a regional hub pricing Pacific catastrophe risk."
+    },
+    {
+      "headline": "IRAN: KHAMENEI FUNERAL REACHES ITS CLIMAX; HORMUZ SHIPPING SHIFTS TOWARD OMANI ROUTE; TRUMP VOWS US WILL \"WIN ONE WAY OR THE OTHER\"",
+      "breaking": false,
+      "summary": [
+        "Monday saw the largest crowds yet of the multi-day state funeral for former Supreme Leader Ali Khamenei, with a nearly 20km procession through central Tehran carrying his coffin alongside those of family members killed in the February 28 strike that opened the war. New Supreme Leader Ayatollah Mojtaba Khamenei has still not appeared publicly at any funeral event and is believed to remain in hiding, reportedly wounded in the same strike. Funeral events continue through July 9, with the paused Doha technical talks expected to resume only after processions conclude.",
+        "Hormuz shipping data shows the practical shape of the MOU-era reopening: of 108 vessels that transited the strait between Friday and Sunday, roughly 30 — including crude and LPG tankers — routed via the Omani coast rather than Iran's designated central corridor, continuing evidence that operators are hedging against PGSA routing enforcement even as raw transit volumes recover.",
+        "President Trump said Monday the US \"will win\" the war \"one way or the other,\" rhetoric that sits uneasily against the ongoing MOU diplomacy and funeral-period pause, and will be read in Tehran as confirmation that Washington views the ceasefire as conditional rather than final."
+      ],
+      "geopolitical": "Trump's \"win one way or the other\" framing undercuts the MOU's premise that both sides have accepted a negotiated end state, at exactly the moment Iranian domestic politics — a still-unseen new Supreme Leader, hardliner anger over Khamenei's assassination — are most volatile. The Omani-route data is itself significant: it shows shippers pricing Iranian control of the strait as unreliable even absent a formal closure, eroding Tehran's practical leverage over the one card — Hormuz access — it has left to play in Phase 2 talks.",
+      "socioeconomic": "Continued partial rerouting via Oman keeps a modest risk premium embedded in freight and insurance costs even as headline Brent prices stay near pre-war levels, since it signals operators are not yet confident enough to use Iran's own corridor. Singapore-linked shipping, insurance and bunkering interests remain exposed to how durable this de facto standoff over routing authority proves once the funeral period ends and enforcement questions resurface."
+    },
+    {
+      "headline": "NATO ANKARA SUMMIT OPENS FOR LEADERS AS MACRON MAKES HISTORIC SYRIA STOP",
+      "breaking": false,
+      "summary": [
+        "NATO leaders gather in Ankara from today for the 36th NATO Summit's leaders' sessions (July 7-8), following Monday's Defence Industry Forum. Secretary-General Rutte has framed the summit around \"NATO 3.0\" — deeper European capability and industrial investment alongside continued US commitment — building on 2025's milestone of all 32 members hitting the 2%-of-GDP spending floor for the first time since it was set in 2014.",
+        "Ahead of the summit, French President Macron arrived in Damascus on Monday for meetings with Syrian President Ahmed al-Sharaa — the first visit by a Western European head of state since Bashar al-Assad's fall, covering civil society talks, economic MOUs and regional security. Both leaders travel on to Ankara, where al-Sharaa is expected to hold a high-profile meeting with Trump on the sidelines."
+      ],
+      "geopolitical": "Macron's Damascus stop, timed directly ahead of Ankara, functions as European validation of Syria's post-Assad government just as it seeks a seat at the table alongside NATO principals — a marked shift from the isolation Assad's Syria faced. The summit's central tension remains whether the Ukraine pledge translates into faster delivery than past NATO commitments have managed, especially with the overnight Kyiv strikes underscoring the urgency.",
+      "socioeconomic": "The \"NATO 3.0\" defence-industrial push, if it proceeds, accelerates European rearmament spending that already added $139B in core defence outlays between 2024 and 2025 — a trend adjacent to Singapore's own defence-industrial partnerships with US and European primes. Syria's re-engagement with Western capital, if sanctions relief continues, opens a small but real reconstruction and investment opportunity that Gulf and Asian investors, including Singapore-based funds, have been positioning to watch."
+    }
+  ],
+  "singapore": [
+    {
+      "headline": "INDRANEE TO DELIVER MINISTERIAL STATEMENT ON WP'S SYLVIA LIM, FAISAL MANAP OVER RAEESAH KHAN COP FINDINGS",
+      "breaking": true,
+      "summary": [
+        "Leader of the House Indranee Rajah will deliver a ministerial statement in Parliament today setting out the Government's \"determination\" on Committee of Privileges (COP) findings concerning Workers' Party chairwoman and Aljunied GRC MP Sylvia Lim, and central executive committee member Faisal Manap, who does not hold a parliamentary seat. The COP found that both lied about a meeting they held with former Sengkang GRC MP Raeesah Khan, who had earlier admitted lying to Parliament in 2021 about a sexual assault case she said she had supported as an MP.",
+        "The statement follows a motion Indranee filed in January 2026 asking the House to note that the High Court's judgment and the COP's findings carry implications for Lim and Faisal that must be considered separately from those already determined for WP chief Pritam Singh, who was convicted of lying to a parliamentary committee. Separately, the Law Society confirmed disciplinary proceedings against Pritam Singh will be heard on 13 August."
+      ],
+      "geopolitical": "A second and third WP figure facing formal parliamentary scrutiny, alongside Pritam Singh's own conviction and the pending Law Society hearing, extends a multi-year integrity controversy across the opposition's leadership — MP, party chairwoman and CEC member alike — which outside observers use as a proxy for how genuinely contestable Singapore's political system is despite the PAP's dominant seat share.",
+      "socioeconomic": "Parliamentary sanction against a sitting opposition MP (Lim) versus a non-MP CEC member (Faisal) carries very different practical consequences — from possible suspension or loss of allowances to no formal parliamentary consequence at all for Faisal — and the distinction Indranee's statement draws will shape how the episode is read by voters ahead of any future WP leadership renewal."
+    },
+    {
+      "headline": "PM WONG'S JAKARTA VISIT YIELDS 26 AGREEMENTS AT SECOND SINGAPORE-INDONESIA LEADERS' RETREAT",
+      "breaking": false,
+      "summary": [
+        "PM Lawrence Wong visited Jakarta on 6 July for the second Singapore-Indonesia Leaders' Retreat, hosted by President Prabowo Subianto at the Istana Merdeka. The two sides concluded 26 agreements — 18 government-to-government and 8 business-to-business — spanning carbon credits collaboration, cross-border electricity trade (including transmission-asset development), environmental cooperation, digital cooperation, and technical collaboration on nuclear matters.",
+        "At the joint press conference, PM Wong and President Prabowo covered environment, foreign affairs, governance, transport and youth cooperation, and exchanged views on regional and global developments."
+      ],
+      "geopolitical": "The breadth of the agreement list — nuclear technical cooperation and cross-border electricity trade in particular — signals Singapore diversifying its energy security options beyond the Hormuz-exposed LNG contracts already flagged as a risk, while deepening a relationship Indonesia treats as a hedge against over-reliance on any single external power in the region.",
+      "socioeconomic": "Cross-border electricity trade and carbon credit MOUs move Singapore's decarbonisation pathway — which depends heavily on imported low-carbon electricity — from framework toward implementation; a haul of 26 concrete deliverables from one retreat is unusually large and suggests both governments are prioritising visible progress for their domestic audiences."
+    },
+    {
+      "headline": "SINGAPORE, CHINA CAN DEEPEN COOPERATION ON GREEN TRANSITION, AI AND AGEING: CHEE HONG TAT",
+      "breaking": false,
+      "summary": [
+        "Speaking at the Singapore-China Forum 2026 on 6 July, Minister for National Development Chee Hong Tat said Singapore and China can deepen cooperation in three areas: green transition, citing China's solar, wind and battery-storage capabilities; AI and intelligent manufacturing, citing China's deployment scale across construction, logistics and urban infrastructure; and ageing-population policy, citing Singapore's senior-friendly housing experience against China's mutual-aid eldercare efforts."
+      ],
+      "geopolitical": "The forum's framing — cooperation on technology and demographic policy rather than trade volumes — reflects Singapore's standard approach of engaging China on functional, depoliticised ground even as it maintains close security ties with the US, a balance made more delicate by the China-adjacent defence-industrial discussions running at the NATO summit the same week.",
+      "socioeconomic": "Deeper AI and green-tech cooperation with China gives Singapore-based firms an alternative technology-sourcing track to Western suppliers at a time of tightening US export controls, while the ageing-policy exchange is directly relevant given Singapore's own trajectory toward a super-aged society."
+    },
+    {
+      "headline": "BEVERAGE CONTAINER RETURN SCHEME HITS TRANSITION-PERIOD MIDPOINT; RETAILERS, WHOLESALERS FLAG LOGISTICAL STRAIN",
+      "breaking": false,
+      "summary": [
+        "Singapore's Beverage Container Return Scheme, which began 1 April 2026, has reached the midpoint of its April-September transition period, during which retailers may still sell down old stock purchased before the 10-cent Deposit Mark was required. Retailers and wholesalers told CNA the transition is proving logistically difficult — mixed inventories of marked and unmarked containers complicate stocking and returns processing, and the tender for the scheme's 1,000 reverse vending machines has still not been awarded, leaving producers unable to finalise inventory and collection planning.",
+        "Smaller importers have separately warned that combined labelling, registration, administration and security-deposit costs could force some out of the market once the transition period ends in September."
+      ],
+      "geopolitical": "The reverse-vending-machine tender delay — with the scheme now half-run and the vendor still unappointed — is the kind of implementation gap that tests confidence in Singapore's normally tight execution record on regulatory rollouts, a reputation the government relies on both domestically and as a policy-credibility signal abroad.",
+      "socioeconomic": "Cost pressure falling disproportionately on smaller importers risks concentrating the beverage market further among larger players able to absorb compliance costs, an outcome at odds with the scheme's environmental goals if it reduces product variety without yet materially improving return rates ahead of RVM deployment."
+    },
+    {
+      "headline": "SINGAPOREAN VANESSA LEE BREAKS 30-YEAR-OLD WOMEN'S HALF-MARATHON NATIONAL RECORD",
+      "breaking": false,
+      "summary": [
+        "Vanessa Lee, 28, broke Singapore's women's half-marathon record at the Gold Coast Marathon in Australia on 4 July, clocking 1:16:04 to better Yvonne Danson's 1:16:29 mark set in 1996. Lee placed 29th overall in the race and has only competed at the half-marathon distance since 2022. Shaun Goh also set a new men's 10km road record at the same event."
+      ],
+      "geopolitical": "Singapore's continued production of individual endurance-sport records — despite a small population base and no strong distance-running tradition — feeds the soft-power case Sport Singapore and the National Sports Institute make for continued public investment in athlete development pathways beyond the traditional swimming and table-tennis focus.",
+      "socioeconomic": "A 30-year-old record falling is a strong recruitment and sponsorship signal for distance running in Singapore, a sport with low equipment barriers relative to swimming or sailing, and could support participation growth in an ageing society where sustained cardiovascular fitness has direct healthcare-cost implications."
+    }
+  ],
+  "word": {
+    "word": "Simulacrum",
+    "pos": "n.",
+    "pronunciation": "/ˌsɪm.jəˈleɪ.krəm/ (also /-ˈlɑː-/)",
+    "definition": "An image, representation, or imitation of something that lacks the substance or qualities of the original; a superficial likeness or semblance standing in for the real thing.",
+    "etymology": "From Latin simulacrum (\"likeness, image\"), from simulare (\"to imitate, feign\") — the same root that gives English \"simulate\" and \"dissemble\" (used in a prior report). Entered philosophical currency through Jean Baudrillard's Simulacra and Simulation (1981), which theorised representations detached from any underlying reality.",
+    "example": "Israel dismissed Hamas's dissolution of its Gaza governing body as \"deception with no practical significance\" — a simulacrum of a handover, with the same personnel remaining in place and disarmament, the substance any real transfer of power would require, left untouched."
+  }
+}
