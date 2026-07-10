@@ -30,7 +30,12 @@ Read the `date` field of `news/latest.json`:
 ## 3. Research
 
 Follow the search procedure in `news/state/2-format-rules.md`:
-- Global: web-search breaking news first, then lead analytical stories; prioritise the coverage window. Consolidate ALL Iran-MOU angles into one story.
+- Global: comb the preferred sources FIRST to identify candidate stories, then web-search for breaking/analytical stories they missed and to research the chosen stories in depth; prioritise the coverage window. Consolidate ALL Iran-MOU angles into one story. Preferred global sources (verified live 10 Jul 2026, `curl -A "Mozilla/5.0"`):
+  - NYT World: `https://rss.nytimes.com/services/xml/rss/nyt/World.xml`
+  - NYT front page: `https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml`
+  - CNN: `https://lite.cnn.com` (text-only site; parse the article links — CNN's RSS feeds at rss.cnn.com are DEAD, frozen since April 2023, do not use them)
+
+  NYT article pages are paywalled — use the feeds for headlines/abstracts only and research the stories via web search, same as the SG flow. If a preferred source is unreachable (e.g. cloud network allowlist), fall back to web search for it; never skip a run over it.
 - Singapore: fetch the CNA, Straits Times, and Mothership homepages and read headlines directly; check the PMO site for cabinet-level changes. SG politics and Singaporean achievements qualify explicitly.
 - **The homepages themselves are NOT usable programmatically** (verified 6 Jul 2026: CNA is JS-rendered, ST serves an empty shell, Mothership hard-blocks with Cloudflare). Read the **RSS feeds** instead — all three verified working with live headlines on 6 Jul 2026 (use `curl -A "Mozilla/5.0"`):
   - CNA: `https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml`

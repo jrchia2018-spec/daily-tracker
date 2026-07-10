@@ -14,7 +14,7 @@
 - Prices: SGD primary; original currency in brackets if different.
 
 ## Search procedure
-- Global: search breaking news, then lead analytical stories. Prioritise developments within the coverage window.
+- Global: comb preferred sources first — NYT (World + HomePage RSS feeds) and CNN (lite.cnn.com text site) — to identify candidate stories, then web-search breaking news and lead analytical stories the sources may have missed and to research/corroborate the chosen stories (correction absorbed 10 Jul 2026, user request; URLs and fallbacks in `news/AGENT.md`). Prioritise developments within the coverage window. Preferred sources inform story selection; they do not cap it — a major in-window story found only via search still qualifies.
 - Singapore: fetch CNA, Straits Times, and Mothership headlines directly — via their RSS feeds, since the homepages are not machine-readable (JS-rendered/bot-blocked; feed URLs and fallbacks in `news/AGENT.md`, correction absorbed 6 Jul 2026). Check PMO site for cabinet-level changes. Include SG politics and Singaporean achievements explicitly. Pending open-threads items don't qualify as SG stories unless materially new that day.
 
 ## Word of the Day
