@@ -39,6 +39,8 @@
 | Shared parental leave | Expanded 6 → 10 weeks | Effective 1 Apr 2026 |
 | Unlicensed moneylending crackdown (1-7 Jul operation) | 69 persons investigated, aged 15-76; separately 9 more (aged 18-67) probed for cross-border moneylending with Malaysia | SPF, 9 Jul 2026 |
 | HDB Maju Forest/Clementi land release | 23ha total; ~15ha released for housing, ~8ha retained (stream + high-biodiversity vegetation); public feedback 10 Jul-6 Aug 2026 | HDB, 10 Jul 2026 |
+| EC income-ceiling waiver appeals (2020-2025) | 2,500+ filed, 845 approved (~1 in 3); current ceiling $16,000/month | HDB via Straits Times, 11 Jul 2026 |
+| SG flights cancelled (Typhoon Bavi) | At least 20 ex-Changi | Straits Times, 11 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -64,3 +66,10 @@
 | Spain wildfire (Almeria) | 12 dead, 23 missing; Spain's deadliest wildfire in 20+ years | 10 Jul 2026 |
 | Typhoon Bavi Philippines landslides | 15 dead, 6 missing (Mindanao: Sarangani + Lanao del Sur) | 10 Jul 2026 |
 | SK Hynix US IPO | US$26.5B raised (177.9M ADRs @ US$149); largest-ever foreign US listing, 2nd largest globally after SpaceX's US$85.7B | 10 Jul 2026 |
+| Venezuela earthquake toll (24 Jun quakes) | 4,333 killed, 16,740 injured, thousands still missing | Venezuela parliament chief Jorge Rodríguez, 11 Jul 2026 |
+| Bangladesh floods/landslides | 44 dead, 267,918 households (1M+ people) stranded across 7 districts; separately 16 Rohingya refugees killed in Cox's Bazar camp landslides earlier in the week | Wire reports, 11 Jul 2026 |
+| Johor state election result | BN 48/56 seats (Umno 36/37, MCA 8/15, MIC 4/4); PH 8 seats (DAP 6, Amanah 1, PKR 1); PN/Bersama/Muda wiped out | 11 Jul 2026 |
+| Typhoon Bavi China landfall | Yuhuan, Zhejiang, ~23:20 SGT 11 Jul; max sustained winds 144kph; 1.7M+ evacuated (500K+ Zhejiang, 100K+ Fujian) | 11 Jul 2026 |
+| US housing law (21st Century ROAD to Housing Act) | Became law automatically at midnight 10-11 Jul without Trump's signature (protest over SAVE America Act inaction) | 11 Jul 2026 |
+| NYT Air Force One subpoenas | 4 journalists (Barnes, Lipton, Pager, Schmitt) subpoenaed to Manhattan federal grand jury | DOJ, 11 Jul 2026 |
+| Treasury sanctions — Iran financier | Ali Ansari (Dubai-based) + Iranian exchange houses, tied to Khamenei/IRGC asset network | US Treasury, 11 Jul 2026 |
