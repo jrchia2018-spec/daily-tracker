@@ -1,6 +1,9 @@
 // Built-in database of common whole foods (per 100g) so basics like
 // "salmon" always match instantly, without relying on the online
 // branded-products database. Values are typical averages.
+// Singapore hawker dishes live in foods-sg.js and are searched together.
+
+import { SG_FOODS } from './foods-sg.js';
 
 const F = (name, kcal, protein, carbs, fat, serving = null) =>
   ({ name, brand: 'Basic', serving: serving ? `${serving} g` : '100 g', per100: { kcal, protein, carbs, fat } });
@@ -114,11 +117,13 @@ export const COMMON_FOODS = [
   F('Protein bar (typical)', 380, 33, 38, 12, 60),
 ];
 
+const BUILT_IN = [...COMMON_FOODS, ...SG_FOODS];
+
 // All query words must appear in the food name; prefix matches rank first.
-export function searchCommonFoods(query, limit = 6) {
+export function searchCommonFoods(query, limit = 8) {
   const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
   if (!tokens.length) return [];
-  return COMMON_FOODS
+  return BUILT_IN
     .filter(f => {
       const n = f.name.toLowerCase();
       return tokens.every(t => n.includes(t));
