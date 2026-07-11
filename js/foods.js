@@ -119,9 +119,49 @@ export const COMMON_FOODS = [
 
 const BUILT_IN = [...COMMON_FOODS, ...SG_FOODS];
 
+// Local shorthand → the words actually used in dish names. Whole-word
+// matches only, longest phrase first, applied before tokenizing.
+const ALIASES = {
+  'economic rice': 'economy rice',
+  'econ rice': 'economy rice',
+  'cai png': 'economy rice',
+  'cai fan': 'economy rice',
+  'caipng': 'economy rice',
+  'caifan': 'economy rice',
+  'chye png': 'economy rice',
+  'nasi ayam': 'chicken rice',
+  'nasi goreng': 'fried rice',
+  'maggie goreng': 'maggi goreng',
+  'prata kosong': 'prata plain',
+  'mee pok': 'bak chor mee',
+  'ckt': 'char kway teow',
+  'bcm': 'bak chor mee',
+  'bkt': 'bak kut teh',
+  'xlb': 'xiao long bao',
+  'hcg': 'har cheong gai',
+  'wonton': 'wanton',
+  'kopi peng': 'kopi',
+  'kopi bing': 'kopi',
+  'teh peng': 'teh',
+  'teh bing': 'teh',
+  'milo peng': 'milo',
+  'iced milo': 'milo',
+  'ice milo': 'milo',
+};
+
+const ALIAS_KEYS = Object.keys(ALIASES).sort((a, b) => b.length - a.length);
+
+function expandAliases(q) {
+  let s = q;
+  for (const k of ALIAS_KEYS) {
+    s = s.replace(new RegExp(`\\b${k}\\b`, 'g'), ALIASES[k]);
+  }
+  return s;
+}
+
 // All query words must appear in the food name; prefix matches rank first.
 export function searchCommonFoods(query, limit = 8) {
-  const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+  const tokens = expandAliases(query.toLowerCase()).split(/\s+/).filter(Boolean);
   if (!tokens.length) return [];
   return BUILT_IN
     .filter(f => {

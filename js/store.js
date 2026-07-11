@@ -37,6 +37,12 @@ export function exportData() {
 
 export function importData(json) {
   const parsed = JSON.parse(json); // throws if invalid
+  // Only accept files that look like a tracker backup, so importing a
+  // random JSON file can't silently wipe real data.
+  if (!parsed || typeof parsed !== 'object' || typeof parsed.meals !== 'object'
+    || !Array.isArray(parsed.runs) || !Array.isArray(parsed.gym) || !Array.isArray(parsed.weights)) {
+    throw new Error('not a tracker backup');
+  }
   Object.assign(state, defaults(), parsed);
   save();
 }

@@ -272,6 +272,28 @@ function dayCell(key, today) {
 
 // ---------- meals ----------
 
+// Most-logged foods from the last 60 days; the most recent entry for each
+// name is kept as the template (so last-used portion size is remembered).
+function frequentFoods(limit = 8) {
+  const cutoff = addDays(dateKey(), -60);
+  const byName = new Map();
+  for (const [date, list] of Object.entries(state.meals)) {
+    if (date < cutoff) continue;
+    for (const m of list) {
+      if (!m.name || m.name === 'Quick add') continue;
+      const k = m.name.toLowerCase();
+      const e = byName.get(k) || { count: 0, last: null, lastDate: '' };
+      e.count++;
+      if (date >= e.lastDate) { e.lastDate = date; e.last = m; }
+      byName.set(k, e);
+    }
+  }
+  return [...byName.values()]
+    .sort((a, b) => b.count - a.count || b.lastDate.localeCompare(a.lastDate))
+    .slice(0, limit)
+    .map(e => ({ ...e.last, count: e.count }));
+}
+
 function renderMeals() {
   const t = targets();
   const tot = mealTotals(mealDate);
@@ -300,7 +322,12 @@ function renderMeals() {
       <input id="food-q" type="search" placeholder="Start typing… e.g. salmon, rice, yogurt" autocomplete="off">
     </div>
     <div id="food-results" class="search-results"></div>
-    <button class="btn ghost small" id="food-manual">+ Enter manually instead</button>
+    <div class="row" style="margin-top:10px">
+      <input id="qa-name" placeholder="Quick add, e.g. lunch out" style="flex:2">
+      <input id="qa-kcal" type="number" inputmode="numeric" placeholder="kcal" style="flex:1;min-width:70px;max-width:90px">
+      <button class="btn small" id="qa-add">Add</button>
+    </div>
+    <button class="btn ghost small" id="food-manual" style="margin-top:8px">+ Enter manually instead</button>
   </div>
 
   <div class="card">
@@ -319,6 +346,18 @@ function renderMeals() {
   view.querySelector('#d-prev').addEventListener('click', () => { mealDate = addDays(mealDate, -1); render(); });
   view.querySelector('#d-next').addEventListener('click', () => { mealDate = addDays(mealDate, 1); render(); });
   view.querySelector('#food-manual').addEventListener('click', () => openFoodModal(null));
+
+  view.querySelector('#qa-add').addEventListener('click', () => {
+    const kcal = Number(view.querySelector('#qa-kcal').value);
+    if (!kcal || kcal <= 0) { toast('Enter calories'); return; }
+    const name = view.querySelector('#qa-name').value.trim() || 'Quick add';
+    (state.meals[mealDate] || (state.meals[mealDate] = [])).push({
+      id: uid(), name, grams: null, per100: null, kcal, protein: 0, carbs: 0, fat: 0,
+    });
+    save();
+    render();
+    toast(`Added ${name} (${r0(kcal)} kcal)`);
+  });
 
   for (const it of view.querySelectorAll('.item[data-id]')) {
     it.addEventListener('click', () => {
@@ -352,11 +391,49 @@ function renderMeals() {
     }
   }
 
+  // With an empty search box, offer one-tap re-logging: yesterday's meals
+  // and the most frequently logged foods.
+  function paintIdle() {
+    const favs = frequentFoods();
+    const prevDay = addDays(mealDate, -1);
+    const prevMeals = mealsFor(prevDay);
+    box.innerHTML =
+      (prevMeals.length
+        ? `<button class="btn ghost small" id="copy-prev">⧉ Copy ${fmtDate(prevDay)}'s meals (${prevMeals.length})</button>` : '')
+      + (favs.length
+        ? '<p class="small muted" style="margin:10px 0 0">Frequent</p>' + favs.map((f, i) => `
+          <div class="item" data-fav="${i}">
+            <div>
+              <div class="title">${esc(f.name)}</div>
+              <div class="sub"><span class="badge">${f.count}×</span>${f.grams ? ` ${f.grams}g` : ''}</div>
+            </div>
+            <div class="val">${r0(f.kcal)} kcal</div>
+          </div>`).join('') : '');
+    box.querySelector('#copy-prev')?.addEventListener('click', () => {
+      const list = state.meals[mealDate] || (state.meals[mealDate] = []);
+      for (const m of prevMeals) list.push({ ...m, id: uid() });
+      save();
+      render();
+      toast(`Copied ${prevMeals.length} item${prevMeals.length === 1 ? '' : 's'} from ${fmtDate(prevDay)}`);
+    });
+    for (const it of box.querySelectorAll('[data-fav]')) {
+      it.addEventListener('click', () => {
+        const f = favs[Number(it.dataset.fav)];
+        openFoodModal({
+          name: f.name, per100: f.per100, grams: f.grams,
+          kcal: f.kcal, protein: f.protein, carbs: f.carbs, fat: f.fat,
+          serving: f.grams ? `${f.grams} g` : '',
+        });
+      });
+    }
+  }
+  paintIdle();
+
   q.addEventListener('input', () => {
     const query = q.value.trim();
     clearTimeout(timer);
     const my = ++seq;
-    if (!query) { shown = []; box.innerHTML = ''; return; }
+    if (!query) { shown = []; paintIdle(); return; }
     shown = searchCommonFoods(query);
     const goOnline = query.length >= 3;
     paint(goOnline);
@@ -382,14 +459,16 @@ function totCell(val, max, label) {
 // Add (from search result or manual) or edit an existing entry.
 function openFoodModal(result, existing = null) {
   const per100 = existing?.per100 || result?.per100 || null;
-  const grams = existing?.grams ?? (result ? (parseServingGrams(result.serving) || 100) : '');
+  const grams = existing?.grams ?? result?.grams ?? (result ? (parseServingGrams(result.serving) || 100) : '');
   const scaled = f => per100 && per100[f] != null && grams ? r1((per100[f] * grams) / 100) : '';
+  // Favourite templates without per100 (manual entries) carry macros directly.
+  const direct = f => (per100 ? scaled(f) : result?.[f] ?? '');
   const init = {
     name: existing?.name ?? result?.name ?? '',
-    kcal: existing?.kcal ?? scaled('kcal'),
-    protein: existing?.protein ?? scaled('protein'),
-    carbs: existing?.carbs ?? scaled('carbs'),
-    fat: existing?.fat ?? scaled('fat'),
+    kcal: existing?.kcal ?? direct('kcal'),
+    protein: existing?.protein ?? direct('protein'),
+    carbs: existing?.carbs ?? direct('carbs'),
+    fat: existing?.fat ?? direct('fat'),
   };
 
   const m = openModal(`
