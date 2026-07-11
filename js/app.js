@@ -1,5 +1,5 @@
 import {
-  state, save, uid, dateKey, addDays, fmtDate, weekKeys,
+  state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys,
   mealsFor, mealTotals, runsOn, gymOn, latestWeight,
   exportData, importData, clamp,
 } from './store.js';
@@ -20,6 +20,7 @@ let tab = 'home';
 let mealDate = dateKey();
 let trainSub = 'runs';
 let gymDraft = null;
+let reviewWeek = 0; // 0 = current week, -1 = last week, …
 
 // ---------- small helpers ----------
 
@@ -740,6 +741,68 @@ function renderGym() {
 
 // ---------- progress ----------
 
+// Stats for one Mon–Sun week. Meal averages only count days with entries,
+// so unlogged days don't drag the numbers down.
+function weekReview(keys) {
+  const t = targets();
+  const today = dateKey();
+  const logged = keys.filter(k => k <= today && mealsFor(k).length);
+  let kcal = 0, protein = 0, proteinHit = 0;
+  for (const k of logged) {
+    const x = mealTotals(k);
+    kcal += x.kcal;
+    protein += x.protein;
+    if (x.protein >= t.protein) proteinHit++;
+  }
+  const runs = state.runs.filter(r => keys.includes(r.date));
+  const gym = state.gym.filter(g => keys.includes(g.date));
+  const byType = {};
+  for (const g of gym) if (g.type) byType[g.type] = (byType[g.type] || 0) + 1;
+  const ws = state.weights.filter(x => keys.includes(x.date));
+  return {
+    loggedDays: logged.length,
+    avgKcal: logged.length ? Math.round(kcal / logged.length) : 0,
+    avgProtein: logged.length ? Math.round(protein / logged.length) : 0,
+    proteinHit,
+    km: runs.reduce((s, r) => s + (r.km || 0), 0),
+    runN: runs.length,
+    gymN: gym.length,
+    ppl: GYM_TYPES.map(g => (byType[g.type] ? `${byType[g.type]}× ${g.label.toLowerCase()}` : null)).filter(Boolean).join(' · '),
+    weightDelta: ws.length >= 2 ? ws[ws.length - 1].kg - ws[0].kg : null,
+  };
+}
+
+function weeklyReviewCard() {
+  const keys = weekKeys(parseKey(addDays(dateKey(), reviewWeek * 7)));
+  const wr = weekReview(keys);
+  const t = targets();
+  const range = `${fmtDate(keys[0], { weekday: false })} – ${fmtDate(keys[6], { weekday: false })}`;
+  const label = reviewWeek === 0 ? `This week · ${range}` : reviewWeek === -1 ? `Last week · ${range}` : range;
+  const dKg = wr.weightDelta;
+  return `
+  <div class="card">
+    <div class="row between">
+      <h2 style="margin:0">Weekly review</h2>
+      <div class="row" style="gap:6px">
+        <button class="btn small" id="wr-prev">‹</button>
+        <button class="btn small" id="wr-next" ${reviewWeek >= 0 ? 'disabled' : ''}>›</button>
+      </div>
+    </div>
+    <p class="small muted" style="margin:6px 0 12px">${label}</p>
+    ${wr.loggedDays ? `
+    <div class="grid3" style="text-align:center;margin-bottom:12px">
+      <div><div class="tval" style="color:${wr.avgKcal > t.calories ? 'var(--red)' : 'var(--text)'}">${wr.avgKcal}</div><div class="tlabel">avg kcal · ${wr.loggedDays}d logged</div></div>
+      <div><div class="tval" style="color:${wr.proteinHit === wr.loggedDays ? 'var(--green)' : 'var(--text)'}">${wr.proteinHit}/${wr.loggedDays}</div><div class="tlabel">protein days ≥${t.protein}g</div></div>
+      <div><div class="tval">${wr.avgProtein}g</div><div class="tlabel">avg protein</div></div>
+    </div>` : '<p class="small muted" style="margin-bottom:12px">No meals logged this week.</p>'}
+    <div class="grid3" style="text-align:center">
+      <div><div class="tval">${r1(wr.km)}</div><div class="tlabel">run km${wr.runN ? ` · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : ''}</div></div>
+      <div><div class="tval">${wr.gymN}</div><div class="tlabel">gym${wr.ppl ? ` · ${wr.ppl}` : ' sessions'}</div></div>
+      <div><div class="tval" style="color:${dKg == null ? 'var(--muted)' : dKg <= 0 ? 'var(--green)' : 'var(--orange)'}">${dKg == null ? '—' : (dKg > 0 ? '+' : '') + r1(dKg)}</div><div class="tlabel">kg this week</div></div>
+    </div>
+  </div>`;
+}
+
 function renderProgress() {
   const p = state.profile;
   const t = targets();
@@ -781,6 +844,8 @@ function renderProgress() {
     </div>
   </div>
 
+  ${weeklyReviewCard()}
+
   <div class="card">
     <h2>Profile</h2>
     <p class="small muted">${p.sex === 'male' ? 'Male' : 'Female'}, ${p.age} · ${p.heightCm} cm · ${ACTIVITY[p.activity].label.split(' (')[0]} · ${GOAL_RATES.find(g => g.value === p.goalRate)?.label || ''}</p>
@@ -798,6 +863,8 @@ function renderProgress() {
   </div>`;
 
   view.querySelector('#w-add').addEventListener('click', openWeightModal);
+  view.querySelector('#wr-prev').addEventListener('click', () => { reviewWeek--; render(); });
+  view.querySelector('#wr-next').addEventListener('click', () => { if (reviewWeek < 0) { reviewWeek++; render(); } });
   view.querySelector('#t-edit').addEventListener('click', openTargetsModal);
   view.querySelector('#t-recalc').addEventListener('click', () => {
     if (state.targets) state.targets.mode = 'auto';
