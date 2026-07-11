@@ -776,29 +776,61 @@ function weeklyReviewCard() {
   const keys = weekKeys(parseKey(addDays(dateKey(), reviewWeek * 7)));
   const wr = weekReview(keys);
   const t = targets();
+  const today = dateKey();
   const range = `${fmtDate(keys[0], { weekday: false })} – ${fmtDate(keys[6], { weekday: false })}`;
-  const label = reviewWeek === 0 ? `This week · ${range}` : reviewWeek === -1 ? `Last week · ${range}` : range;
+  const label = reviewWeek === 0 ? 'This week' : reviewWeek === -1 ? 'Last week' : range;
   const dKg = wr.weightDelta;
+
+  // Meter: the fill carries the state (red when over target); the value stays
+  // in text ink. Width caps at 100% so an overshoot reads by colour, not size.
+  const meter = (name, val, max, unit, goodColor) => `
+    <div class="macro-bar">
+      <div class="row"><span class="muted">${name}</span>
+        <span><b>${r0(val)}</b><span class="muted"> / ${max} ${unit}</span></span></div>
+      <div class="track"><div class="fill" style="width:${clamp((val / max) * 100, 0, 100)}%;background:${val > max ? 'var(--red)' : goodColor}"></div></div>
+    </div>`;
+
+  const dayDots = keys.map(k => {
+    const logged = k <= today && mealsFor(k).length > 0;
+    const hit = logged && mealTotals(k).protein >= t.protein;
+    return `
+    <div class="day-cell ${k === today ? 'today' : ''} ${hit ? 'hit' : ''}">
+      <div class="dot">${hit ? '✓' : logged ? '<span class="muted" style="font-size:11px">·</span>' : ''}</div>
+      <div class="dname">${fmtDate(k).slice(0, 3)}</div>
+    </div>`;
+  }).join('');
+
+  const tile = (val, lbl, color) => `
+    <div><div class="tval"${color ? ` style="color:${color}"` : ''}>${val}</div><div class="tlabel">${lbl}</div></div>`;
+
   return `
   <div class="card">
     <div class="row between">
       <h2 style="margin:0">Weekly review</h2>
       <div class="row" style="gap:6px">
         <button class="btn small" id="wr-prev">‹</button>
+        <b class="small" style="min-width:76px;text-align:center">${label}</b>
         <button class="btn small" id="wr-next" ${reviewWeek >= 0 ? 'disabled' : ''}>›</button>
       </div>
     </div>
-    <p class="small muted" style="margin:6px 0 12px">${label}</p>
+    <p class="small muted" style="margin:4px 0 14px">${range}${wr.loggedDays ? ` · ${wr.loggedDays} day${wr.loggedDays === 1 ? '' : 's'} logged` : ''}</p>
     ${wr.loggedDays ? `
-    <div class="grid3" style="text-align:center;margin-bottom:12px">
-      <div><div class="tval" style="color:${wr.avgKcal > t.calories ? 'var(--red)' : 'var(--text)'}">${wr.avgKcal}</div><div class="tlabel">avg kcal · ${wr.loggedDays}d logged</div></div>
-      <div><div class="tval" style="color:${wr.proteinHit === wr.loggedDays ? 'var(--green)' : 'var(--text)'}">${wr.proteinHit}/${wr.loggedDays}</div><div class="tlabel">protein days ≥${t.protein}g</div></div>
-      <div><div class="tval">${wr.avgProtein}g</div><div class="tlabel">avg protein</div></div>
-    </div>` : '<p class="small muted" style="margin-bottom:12px">No meals logged this week.</p>'}
-    <div class="grid3" style="text-align:center">
-      <div><div class="tval">${r1(wr.km)}</div><div class="tlabel">run km${wr.runN ? ` · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : ''}</div></div>
-      <div><div class="tval">${wr.gymN}</div><div class="tlabel">gym${wr.ppl ? ` · ${wr.ppl}` : ' sessions'}</div></div>
-      <div><div class="tval" style="color:${dKg == null ? 'var(--muted)' : dKg <= 0 ? 'var(--green)' : 'var(--orange)'}">${dKg == null ? '—' : (dKg > 0 ? '+' : '') + r1(dKg)}</div><div class="tlabel">kg this week</div></div>
+    <div class="macro-bars" style="margin-bottom:14px">
+      ${meter('Avg calories', wr.avgKcal, t.calories, 'kcal', 'var(--accent)')}
+      ${meter('Avg protein', wr.avgProtein, t.protein, 'g', 'var(--green)')}
+    </div>
+    <div class="row between" style="font-size:12.5px;margin-bottom:4px">
+      <span class="muted">Protein target hit</span>
+      <span><b>${wr.proteinHit}</b><span class="muted"> / ${wr.loggedDays} logged day${wr.loggedDays === 1 ? '' : 's'}</span></span>
+    </div>
+    <div class="wr-days">${dayDots}</div>`
+    : '<p class="small muted" style="margin-bottom:14px">No meals logged this week.</p>'}
+    <div class="grid3" style="text-align:center;border-top:1px solid var(--line);padding-top:12px">
+      ${tile(r1(wr.km), wr.runN ? `km · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : 'run km')}
+      ${tile(wr.gymN, wr.ppl || 'gym sessions')}
+      ${dKg == null
+        ? tile('—', 'kg change', 'var(--muted)')
+        : tile((dKg > 0 ? '+' : '') + r1(dKg), 'kg this week', dKg <= 0 ? 'var(--green)' : 'var(--orange)')}
     </div>
   </div>`;
 }
