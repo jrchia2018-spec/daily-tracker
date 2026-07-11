@@ -574,25 +574,22 @@ function mileageChart() {
 
 // ---------- gym ----------
 
+const GYM_TYPES = [
+  { type: 'push', label: 'Push', ico: '🫸', sub: 'chest · shoulders · triceps' },
+  { type: 'pull', label: 'Pull', ico: '🫷', sub: 'back · biceps' },
+  { type: 'legs', label: 'Legs', ico: '🦵', sub: 'quads · hams · glutes' },
+];
+
+function gymTypeLabel(type) {
+  return GYM_TYPES.find(t => t.type === type)?.label || 'Gym';
+}
+
 function blankGymDraft() {
-  return { date: dateKey(), minutes: '', exercises: [{ name: '', sets: [{ w: '', r: '' }] }] };
+  return { date: dateKey(), minutes: '' };
 }
 
-function exerciseNames() {
-  const names = new Set();
-  for (const s of state.gym) for (const e of s.exercises) names.add(e.name);
-  return [...names].sort();
-}
-
-function lastSessionFor(name) {
-  const sorted = [...state.gym].sort((a, b) => b.date.localeCompare(a.date));
-  for (const s of sorted) {
-    const ex = s.exercises.find(e => e.name.toLowerCase() === name.toLowerCase());
-    if (ex) return { date: s.date, sets: ex.sets };
-  }
-  return null;
-}
-
+// Sessions logged before the push/pull/legs switch have exercises instead
+// of a type; summarise them so old history stays readable.
 function setsSummary(sets) {
   return sets.map(s => `${s.w}×${s.r}`).join(', ');
 }
@@ -600,7 +597,6 @@ function setsSummary(sets) {
 function renderGym() {
   if (!gymDraft) gymDraft = blankGymDraft();
   const body = view.querySelector('#train-body');
-  const names = exerciseNames();
   const sessions = [...state.gym].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 15);
 
   body.innerHTML = `
@@ -610,11 +606,14 @@ function renderGym() {
       <label class="field"><span>Date</span><input id="g-date" type="date" value="${gymDraft.date}"></label>
       <label class="field"><span>Duration (min)</span><input id="g-min" type="number" inputmode="numeric" placeholder="60" value="${gymDraft.minutes}"></label>
     </div>
-    <datalist id="ex-names">${names.map(n => `<option value="${esc(n)}">`).join('')}</datalist>
-    <div id="ex-blocks">${gymDraft.exercises.map((ex, i) => exBlock(ex, i)).join('')}</div>
-    <div class="row">
-      <button class="btn small" id="g-addex">+ Exercise</button>
-      <button class="btn primary" id="g-save" style="flex:1">Save session</button>
+    <p class="small muted" style="margin:10px 0 8px">Tap to log the session:</p>
+    <div class="grid3">
+      ${GYM_TYPES.map(t => `
+      <button class="btn" data-type="${t.type}" style="flex-direction:column;padding:14px 6px">
+        <span class="ico" style="font-size:22px">${t.ico}</span>
+        <b>${t.label}</b>
+        <span class="small muted">${t.sub}</span>
+      </button>`).join('')}
     </div>
   </div>
   <div class="card">
@@ -622,12 +621,14 @@ function renderGym() {
     ${sessions.length ? sessions.map(s => `
       <div class="item">
         <div style="flex:1">
-          <div class="title">${fmtDate(s.date)}${s.minutes ? ` <span class="muted small">· ${s.minutes} min</span>` : ''}</div>
-          ${s.exercises.map(e => `<div class="sub">${esc(e.name)} — ${setsSummary(e.sets)}</div>`).join('')}
+          <div class="title">${s.type ? `${gymTypeLabel(s.type)} day` : fmtDate(s.date)}${s.minutes ? ` <span class="muted small">· ${s.minutes} min</span>` : ''}</div>
+          ${s.type
+            ? `<div class="sub">${fmtDate(s.date)}</div>`
+            : (s.exercises || []).map(e => `<div class="sub">${esc(e.name)} — ${setsSummary(e.sets)}</div>`).join('')}
         </div>
         <button class="btn danger" data-del="${s.id}">✕</button>
       </div>`).join('')
-    : '<p class="muted small">No sessions yet. Your last weights per exercise will show up here.</p>'}
+    : '<p class="muted small">No sessions yet. Pick push, pull or legs above after you train.</p>'}
   </div>`;
 
   const $g = sel => body.querySelector(sel);
@@ -635,10 +636,20 @@ function renderGym() {
   $g('#g-date').addEventListener('change', e => { gymDraft.date = e.target.value; });
   $g('#g-min').addEventListener('input', e => { gymDraft.minutes = e.target.value; });
 
-  $g('#g-addex').addEventListener('click', () => {
-    gymDraft.exercises.push({ name: '', sets: [{ w: '', r: '' }] });
-    render();
-  });
+  for (const b of body.querySelectorAll('[data-type]')) {
+    b.addEventListener('click', () => {
+      state.gym.push({
+        id: uid(),
+        date: gymDraft.date || dateKey(),
+        minutes: Number(gymDraft.minutes) || null,
+        type: b.dataset.type,
+      });
+      save();
+      gymDraft = null;
+      render();
+      toast(`${gymTypeLabel(b.dataset.type)} day logged 💪`);
+    });
+  }
 
   for (const b of body.querySelectorAll('[data-del]')) {
     b.addEventListener('click', () => {
@@ -646,85 +657,6 @@ function renderGym() {
       save(); render();
     });
   }
-
-  // exercise block events
-  for (const block of body.querySelectorAll('.ex-block')) {
-    const i = Number(block.dataset.i);
-    const ex = gymDraft.exercises[i];
-
-    block.querySelector('.ex-name').addEventListener('input', e => { ex.name = e.target.value; });
-    block.querySelector('.ex-name').addEventListener('change', e => {
-      ex.name = e.target.value;
-      const hint = block.querySelector('.lasttime');
-      const last = ex.name.trim() ? lastSessionFor(ex.name.trim()) : null;
-      hint.textContent = last ? `Last time (${fmtDate(last.date)}): ${setsSummary(last.sets)} kg×reps` : '';
-    });
-
-    block.querySelector('.ex-remove').addEventListener('click', () => {
-      gymDraft.exercises.splice(i, 1);
-      if (!gymDraft.exercises.length) gymDraft.exercises.push({ name: '', sets: [{ w: '', r: '' }] });
-      render();
-    });
-
-    block.querySelector('.ex-addset').addEventListener('click', () => {
-      const prev = ex.sets[ex.sets.length - 1];
-      ex.sets.push({ w: prev?.w || '', r: prev?.r || '' });
-      render();
-    });
-
-    for (const row of block.querySelectorAll('.set-row')) {
-      const j = Number(row.dataset.j);
-      row.querySelector('.set-w').addEventListener('input', e => { ex.sets[j].w = e.target.value; });
-      row.querySelector('.set-r').addEventListener('input', e => { ex.sets[j].r = e.target.value; });
-      row.querySelector('.set-del').addEventListener('click', () => {
-        ex.sets.splice(j, 1);
-        if (!ex.sets.length) ex.sets.push({ w: '', r: '' });
-        render();
-      });
-    }
-  }
-
-  $g('#g-save').addEventListener('click', () => {
-    const exercises = gymDraft.exercises
-      .map(e => ({
-        name: e.name.trim(),
-        sets: e.sets
-          .filter(s => s.w !== '' && s.r !== '')
-          .map(s => ({ w: Number(s.w), r: Number(s.r) })),
-      }))
-      .filter(e => e.name && e.sets.length);
-    if (!exercises.length) { toast('Add at least one exercise with a set'); return; }
-    state.gym.push({
-      id: uid(),
-      date: gymDraft.date || dateKey(),
-      minutes: Number(gymDraft.minutes) || null,
-      exercises,
-    });
-    save();
-    gymDraft = null;
-    render();
-    toast('Gym session saved 💪');
-  });
-}
-
-function exBlock(ex, i) {
-  const last = ex.name.trim() ? lastSessionFor(ex.name.trim()) : null;
-  return `
-  <div class="ex-block" data-i="${i}">
-    <div class="row">
-      <input class="ex-name" list="ex-names" placeholder="Exercise (e.g. Bench Press)" value="${esc(ex.name)}">
-      <button class="btn danger ex-remove">✕</button>
-    </div>
-    <div class="lasttime">${last ? `Last time (${fmtDate(last.date)}): ${setsSummary(last.sets)} kg×reps` : ''}</div>
-    ${ex.sets.map((s, j) => `
-      <div class="set-row" data-j="${j}">
-        <span class="setnum">${j + 1}</span>
-        <input class="set-w" type="number" inputmode="decimal" step="0.5" placeholder="kg" value="${s.w}">
-        <input class="set-r" type="number" inputmode="numeric" placeholder="reps" value="${s.r}">
-        <button class="btn danger set-del">✕</button>
-      </div>`).join('')}
-    <button class="btn ghost small ex-addset" style="margin-top:8px">+ Set</button>
-  </div>`;
 }
 
 // ---------- progress ----------

@@ -8,7 +8,7 @@ function defaults() {
     targets: null,        // {calories, protein, carbs, fat, mode: 'auto'|'manual', updatedAt}
     meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat} ] }
     runs: [],             // [ {id, date, km, min, notes} ]
-    gym: [],              // [ {id, date, exercises: [{name, sets: [{w, r}]}]} ]
+    gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment
