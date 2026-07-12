@@ -207,11 +207,11 @@ function renderHome() {
   </div>
 
   ${(() => {
-    const sleep = wellnessFor(today).sleep;
+    const { sleep, sleepMins } = wellnessFor(today);
     const yesterday = addDays(today, -1);
     const yW = wellnessFor(yesterday);
     const yTot = mealTotals(yesterday);
-    const checkedIn = sleep != null && yW.activeKcal != null;
+    const checkedIn = (sleep != null || sleepMins != null) && yW.activeKcal != null;
     const yNet = yW.activeKcal != null && yTot.kcal
       ? r0(yTot.kcal - (t.calories + yW.activeKcal)) : null;
     return `
@@ -222,6 +222,7 @@ function renderHome() {
     </div>
     <div class="row" style="gap:16px;margin:10px 0 4px">
       <span class="small muted">😴 Sleep <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
+      <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= 450 ? 'var(--green)' : sleepMins < 360 ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
       <span class="small muted">🔥 Yesterday's burn <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
       ${yNet != null ? `<span class="small muted">Yesterday net <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
     </div>
@@ -283,17 +284,38 @@ function renderHome() {
   });
 }
 
+// Sleep time entry: accepts "7:41", "7h 41m", "7h41", or decimal "7.5".
+function parseSleepTime(str) {
+  const s = String(str).trim().toLowerCase();
+  if (!s) return null;
+  let m = /^(\d{1,2})[:h]\s*(\d{1,2})?m?$/.exec(s);
+  if (m) return Number(m[1]) * 60 + Number(m[2] || 0);
+  const dec = parseFloat(s);
+  return Number.isFinite(dec) && dec > 0 && dec <= 24 ? Math.round(dec * 60) : null;
+}
+
+function fmtSleep(mins) {
+  return `${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, '0')}m`;
+}
+
 // Rule-based daily suggestions — deterministic, no AI. Priority: sleep
 // first, then over-limits, then gaps. At most three.
 function daySuggestions(today) {
   const t = targets();
   const tot = mealTotals(today);
-  const sleep = wellnessFor(today).sleep;
+  const { sleep, sleepMins } = wellnessFor(today);
   const out = [];
 
-  if (sleep != null) {
-    if (sleep < 60) out.push(`😴 Sleep score ${sleep} — treat today as recovery: easy pace or lighter volume, earlier night tonight.`);
-    else if (sleep >= 80) out.push(`⚡ Sleep score ${sleep} — good day to push a harder session.`);
+  // Sleep: either metric can flag a rough night; a "push" day needs every
+  // present metric to look good (score ≥80, ≥7.5h).
+  const sleepBits = [
+    sleep != null ? `score ${sleep}` : null,
+    sleepMins != null ? fmtSleep(sleepMins) : null,
+  ].filter(Boolean).join(', ');
+  if ((sleep != null && sleep < 60) || (sleepMins != null && sleepMins < 360)) {
+    out.push(`😴 Rough night (${sleepBits}) — treat today as recovery: easy pace or lighter volume, earlier night tonight.`);
+  } else if (sleepBits && (sleep == null || sleep >= 80) && (sleepMins == null || sleepMins >= 450)) {
+    out.push(`⚡ Slept well (${sleepBits}) — good day to push a harder session.`);
   }
   if (tot.sodium > t.sodium) {
     out.push(`🧂 Sodium already over ${t.sodium}mg — keep the rest of today low-salt (broths and gravies are the big hitters).`);
@@ -322,6 +344,8 @@ function openCheckinModal() {
     <h2>Morning check-in</h2>
     <label class="field"><span>Sleep score, last night (0–100)</span>
       <input id="ci-sleep" type="number" inputmode="numeric" min="0" max="100" value="${wToday.sleep ?? ''}" placeholder="e.g. 78"></label>
+    <label class="field"><span>Sleep time, last night (e.g. 7:41)</span>
+      <input id="ci-time" value="${wToday.sleepMins != null ? fmtSleep(wToday.sleepMins) : ''}" placeholder="e.g. 7:41"></label>
     <label class="field"><span>Active calories, yesterday (from watch)</span>
       <input id="ci-active" type="number" inputmode="numeric" value="${wYest.activeKcal ?? ''}" placeholder="e.g. 650"></label>
     <p class="small muted" style="margin-bottom:12px">Yesterday's active calories replace the app's workout estimate for ${fmtDate(yesterday)}.</p>
@@ -329,10 +353,16 @@ function openCheckinModal() {
   `);
   m.querySelector('#ci-save').addEventListener('click', () => {
     const sleep = m.querySelector('#ci-sleep').value;
+    const time = m.querySelector('#ci-time').value.trim();
     const active = m.querySelector('#ci-active').value;
-    if (sleep === '' && active === '') { toast('Enter at least one value'); return; }
+    if (sleep === '' && time === '' && active === '') { toast('Enter at least one value'); return; }
+    const mins = time === '' ? undefined : parseSleepTime(time);
+    if (time !== '' && mins == null) { toast('Sleep time looks off — try 7:41 or 7.5'); return; }
     if (sleep !== '') {
       state.wellness[today] = { ...wellnessFor(today), sleep: clamp(Number(sleep), 0, 100) };
+    }
+    if (mins != null) {
+      state.wellness[today] = { ...wellnessFor(today), sleepMins: mins };
     }
     if (active !== '') {
       state.wellness[yesterday] = { ...wellnessFor(yesterday), activeKcal: Math.max(0, Number(active)) };
@@ -945,13 +975,15 @@ function weekReview(keys) {
   for (const g of gym) if (g.type) byType[g.type] = (byType[g.type] || 0) + 1;
   const ws = state.weights.filter(x => keys.includes(x.date));
   const sleeps = keys.map(k => wellnessFor(k).sleep).filter(s => s != null);
+  const times = keys.map(k => wellnessFor(k).sleepMins).filter(s => s != null);
   const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
   return {
     sleepAvg: sleeps.length ? Math.round(sleeps.reduce((a, b) => a + b) / sleeps.length) : null,
     sleepMin: sleeps.length ? Math.min(...sleeps) : null,
     sleepMax: sleeps.length ? Math.max(...sleeps) : null,
+    sleepTimeAvg: times.length ? Math.round(times.reduce((a, b) => a + b) / times.length) : null,
     activeAvg: actives.length ? Math.round(actives.reduce((a, b) => a + b) / actives.length) : null,
-    checkins: Math.max(sleeps.length, actives.length),
+    checkins: Math.max(sleeps.length, times.length, actives.length),
     loggedDays: logged.length,
     avgKcal: logged.length ? Math.round(kcal / logged.length) : 0,
     avgProtein: logged.length ? Math.round(protein / logged.length) : 0,
@@ -1024,10 +1056,13 @@ function weeklyReviewCard() {
         ? tile('—', 'kg change', 'var(--muted)')
         : tile((dKg > 0 ? '+' : '') + r1(dKg), 'kg this week', dKg <= 0 ? 'var(--green)' : 'var(--orange)')}
     </div>
-    <div class="grid3" style="text-align:center;margin-top:12px">
+    <div class="totals-strip" style="margin-top:12px">
       ${wr.sleepAvg == null
         ? tile('—', 'avg sleep score', 'var(--muted)')
         : tile(wr.sleepAvg, `sleep · ${wr.sleepMin}–${wr.sleepMax}`, wr.sleepAvg >= 80 ? 'var(--green)' : wr.sleepAvg < 60 ? 'var(--orange)' : undefined)}
+      ${wr.sleepTimeAvg == null
+        ? tile('—', 'avg sleep time', 'var(--muted)')
+        : tile(fmtSleep(wr.sleepTimeAvg), 'avg sleep time', wr.sleepTimeAvg >= 450 ? 'var(--green)' : wr.sleepTimeAvg < 360 ? 'var(--orange)' : undefined)}
       ${wr.activeAvg == null
         ? tile('—', 'avg active kcal', 'var(--muted)')
         : tile(wr.activeAvg, 'avg active kcal')}
