@@ -4,6 +4,7 @@
 // Singapore hawker dishes live in foods-sg.js and are searched together.
 
 import { SG_FOODS } from './foods-sg.js';
+import { MY_FOODS } from './foods-my.js';
 
 const F = (name, kcal, protein, carbs, fat, serving = null) =>
   ({ name, brand: 'Basic', serving: serving ? `${serving} g` : '100 g', per100: { kcal, protein, carbs, fat } });
@@ -117,7 +118,7 @@ export const COMMON_FOODS = [
   F('Protein bar (typical)', 380, 33, 38, 12, 60),
 ];
 
-const BUILT_IN = [...COMMON_FOODS, ...SG_FOODS];
+const BUILT_IN = [...COMMON_FOODS, ...SG_FOODS, ...MY_FOODS];
 
 // Local shorthand → the words actually used in dish names. Whole-word
 // matches only, longest phrase first, applied before tokenizing.

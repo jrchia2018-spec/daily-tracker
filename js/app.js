@@ -376,14 +376,23 @@ function renderMeals() {
   let seq = 0;
 
   function paint(loading) {
-    box.innerHTML = shown.map((f, i) => `
+    box.innerHTML = shown.map((f, i) => {
+      const badge = f.brand === 'Basic' ? '<span class="badge green">Basic</span>'
+        : f.brand === 'My log' ? '<span class="badge">My log</span>'
+        : esc(f.brand || 'Generic');
+      // "My log" items carry whole-portion macros and no per-100g data.
+      const macros = f.per100
+        ? `per 100g: P ${f.per100.protein ?? '?'} C ${f.per100.carbs ?? '?'} F ${f.per100.fat ?? '?'}`
+        : `per portion: P ${r0(f.protein)} C ${r0(f.carbs)} F ${r0(f.fat)}`;
+      return `
       <div class="item" data-i="${i}">
         <div>
           <div class="title">${esc(f.name)}</div>
-          <div class="sub">${f.brand === 'Basic' ? '<span class="badge green">Basic</span>' : esc(f.brand || 'Generic')} · per 100g: P ${f.per100.protein ?? '?'} C ${f.per100.carbs ?? '?'} F ${f.per100.fat ?? '?'}</div>
+          <div class="sub">${badge} · ${macros}</div>
         </div>
-        <div class="val">${r0(f.per100.kcal)} kcal</div>
-      </div>`).join('')
+        <div class="val">${r0(f.per100 ? f.per100.kcal : f.kcal)} kcal</div>
+      </div>`;
+    }).join('')
       + (loading ? '<div class="spinner"></div>' : '')
       + (!shown.length && !loading && q.value.trim()
         ? '<p class="muted small" style="padding:8px 0">No matches. Try a simpler name, or enter it manually.</p>' : '');
@@ -460,7 +469,10 @@ function totCell(val, max, label) {
 // Add (from search result or manual) or edit an existing entry.
 function openFoodModal(result, existing = null) {
   const per100 = existing?.per100 || result?.per100 || null;
-  const grams = existing?.grams ?? result?.grams ?? (result ? (parseServingGrams(result.serving) || 100) : '');
+  // Without per-100g data (My log / manual favourites) grams are unknown —
+  // leave Amount blank rather than implying the portion weighs 100g.
+  const grams = existing?.grams
+    ?? (result ? (per100 ? (result.grams ?? parseServingGrams(result.serving) ?? 100) : result.grams ?? '') : '');
   const scaled = f => per100 && per100[f] != null && grams ? r1((per100[f] * grams) / 100) : '';
   // Favourite templates without per100 (manual entries) carry macros directly.
   const direct = f => (per100 ? scaled(f) : result?.[f] ?? '');
