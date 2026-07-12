@@ -1,6 +1,6 @@
 import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys,
-  mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor,
+  mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp,
 } from './store.js';
 import {
@@ -64,8 +64,13 @@ function targets() {
   return {
     fibre: Math.max(25, Math.round(((t.calories || 2000) * 14) / 1000)),
     sodium: 2300,
+    water: 4000,
     ...t,
   };
+}
+
+function fmtWater(ml) {
+  return ml < 1000 ? `${ml}ml` : `${r1(ml / 1000)}L`;
 }
 
 // ---------- theme ----------
@@ -226,6 +231,17 @@ function renderHome() {
       <span class="small muted">🔥 Yesterday's burn <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
       ${yNet != null ? `<span class="small muted">Yesterday net <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
     </div>
+    <div class="row between" style="margin-top:12px">
+      <span class="small muted">💧 <b style="color:${waterFor(today) >= t.water ? 'var(--green)' : 'var(--text)'}">${fmtWater(waterFor(today))}</b><span class="muted"> / ${fmtWater(t.water)}</span></span>
+      <div class="row" style="gap:6px">
+        <button class="btn small" id="w-cup">+1 cup</button>
+        <button class="btn small" id="w-500">+500ml</button>
+        <button class="btn small" id="w-custom">+…</button>
+      </div>
+    </div>
+    <div class="macro-bar" style="margin-top:6px">
+      <div class="track"><div class="fill" style="width:${clamp((waterFor(today) / t.water) * 100, 0, 100)}%;background:var(--teal)"></div></div>
+    </div>
     ${daySuggestions(today).map(s => `<p class="small" style="margin:8px 0 0">${s}</p>`).join('')}
   </div>`;
   })()}
@@ -279,6 +295,9 @@ function renderHome() {
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
   view.querySelector('#q-weight').addEventListener('click', openWeightModal);
   view.querySelector('#q-checkin').addEventListener('click', openCheckinModal);
+  view.querySelector('#w-cup').addEventListener('click', () => { addWater(today, 250); render(); toast(`💧 +1 cup — ${fmtWater(waterFor(today))} today`); });
+  view.querySelector('#w-500').addEventListener('click', () => { addWater(today, 500); render(); toast(`💧 +500ml — ${fmtWater(waterFor(today))} today`); });
+  view.querySelector('#w-custom').addEventListener('click', () => openWaterModal(today));
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
   });
@@ -331,8 +350,30 @@ function daySuggestions(today) {
   if (tot.kcal > 0.7 * t.calories && tot.fibre < 0.5 * t.fibre) {
     out.push(`🥬 Fibre at ${r0(tot.fibre)}g of ${t.fibre}g — veg or fruit with the next meal closes the gap.`);
   }
+  const water = waterFor(today);
+  if (tot.kcal > 0.5 * t.calories && water < 0.4 * t.water) {
+    out.push(`💧 Water at ${fmtWater(water)} of ${fmtWater(t.water)} — the day's ahead of your drinking.`);
+  }
   if (!out.length && tot.kcal > 0) out.push('✅ All on track — nothing to fix today.');
   return out.slice(0, 3);
+}
+
+function openWaterModal(day) {
+  const m = openModal(`
+    <h2>Log water</h2>
+    <p class="small muted" style="margin-bottom:10px">Today so far: <b>${fmtWater(waterFor(day))}</b> of ${fmtWater(targets().water)}. Negative amounts subtract (mis-taps happen).</p>
+    <label class="field"><span>Amount (ml)</span>
+      <input id="wa-ml" type="number" inputmode="numeric" placeholder="e.g. 750"></label>
+    <button class="btn primary block" id="wa-save">Add</button>
+  `);
+  m.querySelector('#wa-save').addEventListener('click', () => {
+    const ml = Number(m.querySelector('#wa-ml').value);
+    if (!ml) { toast('Enter an amount'); return; }
+    addWater(day, Math.round(ml));
+    closeModal();
+    render();
+    toast(`💧 ${fmtWater(waterFor(day))} today`);
+  });
 }
 
 function openCheckinModal() {
@@ -977,7 +1018,10 @@ function weekReview(keys) {
   const sleeps = keys.map(k => wellnessFor(k).sleep).filter(s => s != null);
   const times = keys.map(k => wellnessFor(k).sleepMins).filter(s => s != null);
   const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
+  const waters = keys.map(k => waterFor(k)).filter(w => w > 0);
   return {
+    waterAvg: waters.length ? Math.round(waters.reduce((a, b) => a + b) / waters.length) : null,
+    waterHit: waters.filter(w => w >= t.water).length,
     sleepAvg: sleeps.length ? Math.round(sleeps.reduce((a, b) => a + b) / sleeps.length) : null,
     sleepMin: sleeps.length ? Math.min(...sleeps) : null,
     sleepMax: sleeps.length ? Math.max(...sleeps) : null,
@@ -1066,6 +1110,9 @@ function weeklyReviewCard() {
       ${wr.activeAvg == null
         ? tile('—', 'avg active kcal', 'var(--muted)')
         : tile(wr.activeAvg, 'avg active kcal')}
+      ${wr.waterAvg == null
+        ? tile('—', 'avg water', 'var(--muted)')
+        : tile(fmtWater(wr.waterAvg), `water · ${wr.waterHit}d ≥ ${fmtWater(t.water)}`, wr.waterAvg >= t.water ? 'var(--green)' : undefined)}
       ${tile(`${wr.checkins}/7`, 'check-ins')}
     </div>
   </div>`;
@@ -1106,6 +1153,7 @@ function renderProgress() {
       <div><div class="tval">${t.fat}g</div><div class="tlabel">fat</div></div>
       <div><div class="tval">${t.fibre}g</div><div class="tlabel">fibre ≥</div></div>
       <div><div class="tval">${t.sodium}</div><div class="tlabel">sodium mg ≤</div></div>
+      <div><div class="tval">${fmtWater(t.water)}</div><div class="tlabel">water ≥</div></div>
     </div>
     <p class="small muted" style="margin-bottom:10px">Auto mode recalculates weekly from your latest weight, and refines your calorie burn estimate once you have ~2 weeks of logged meals and weigh-ins.</p>
     <div class="row">
@@ -1199,6 +1247,7 @@ function openTargetsModal() {
       <label class="field"><span>Fat (g)</span><input id="t-f" type="number" value="${t.fat}"></label>
       <label class="field"><span>Fibre (g, minimum)</span><input id="t-fib" type="number" value="${t.fibre}"></label>
       <label class="field"><span>Sodium (mg, limit)</span><input id="t-na" type="number" value="${t.sodium}"></label>
+      <label class="field"><span>Water (ml, minimum)</span><input id="t-water" type="number" value="${t.water}"></label>
     </div>
     <p class="small muted" style="margin-bottom:12px">Saving here switches targets to <b>Manual</b> — they'll stay fixed until you tap "Recalculate now".</p>
     <button class="btn primary block" id="t-save">Save targets</button>
@@ -1211,6 +1260,7 @@ function openTargetsModal() {
       fat: Number(m.querySelector('#t-f').value) || t.fat,
       fibre: Number(m.querySelector('#t-fib').value) || t.fibre,
       sodium: Number(m.querySelector('#t-na').value) || t.sodium,
+      water: Number(m.querySelector('#t-water').value) || t.water,
       mode: 'manual',
       updatedAt: dateKey(),
     };

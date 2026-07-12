@@ -11,6 +11,7 @@ function defaults() {
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
     wellness: {},         // { 'YYYY-MM-DD': {sleep, sleepMins, activeKcal} } — sleep score + duration = that morning's, activeKcal = that day's watch total
+    water: {},            // { 'YYYY-MM-DD': ml }
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment
   };
@@ -126,6 +127,15 @@ export function gymOn(key) {
 
 export function wellnessFor(key) {
   return state.wellness[key] || {};
+}
+
+export function waterFor(key) {
+  return state.water[key] || 0;
+}
+
+export function addWater(key, ml) {
+  state.water[key] = Math.max(0, waterFor(key) + ml);
+  save();
 }
 
 export function latestWeight() {

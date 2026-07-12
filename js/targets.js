@@ -40,7 +40,8 @@ export function computeTargets(profile, weightKg, tdeeOverride = null) {
   // sodium is a flat 2300mg ceiling, not calorie-dependent.
   const fibre = Math.max(25, Math.round((calories * 14) / 1000));
   const sodium = 2300;
-  return { calories, protein, carbs, fat, fibre, sodium };
+  const water = 4000; // ml — user's chosen daily target
+  return { calories, protein, carbs, fat, fibre, sodium, water };
 }
 
 // Rough workout energy estimates (used for "daily caloric use").
