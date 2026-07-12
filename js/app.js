@@ -339,7 +339,10 @@ function renderMeals() {
       <input id="qa-kcal" type="number" inputmode="numeric" placeholder="kcal" style="flex:1;min-width:70px;max-width:90px">
       <button class="btn small" id="qa-add">Add</button>
     </div>
-    <button class="btn ghost small" id="food-manual" style="margin-top:8px">+ Enter manually instead</button>
+    <div class="row" style="margin-top:8px">
+      <button class="btn ghost small" id="food-manual">+ Enter manually</button>
+      <button class="btn ghost small" id="food-paste">📋 Paste from Claude</button>
+    </div>
   </div>
 
   <div class="card">
@@ -358,6 +361,7 @@ function renderMeals() {
   view.querySelector('#d-prev').addEventListener('click', () => { mealDate = addDays(mealDate, -1); render(); });
   view.querySelector('#d-next').addEventListener('click', () => { mealDate = addDays(mealDate, 1); render(); });
   view.querySelector('#food-manual').addEventListener('click', () => openFoodModal(null));
+  view.querySelector('#food-paste').addEventListener('click', openPasteModal);
 
   view.querySelector('#qa-add').addEventListener('click', () => {
     const kcal = Number(view.querySelector('#qa-kcal').value);
@@ -481,6 +485,67 @@ function totCell(val, max, label, dir = 'cap') {
     ? (val >= max ? 'var(--green)' : 'var(--text)')
     : (val > max ? 'var(--red)' : 'var(--text)');
   return `<div><div class="tval" style="color:${color}">${val}</div><div class="tlabel">/ ${max} ${label}</div></div>`;
+}
+
+// Parse pasted "name | kcal | protein | carbs | fat | fibre | sodium" lines
+// (one item per line). Tolerates markdown tables: leading/trailing pipes,
+// separator rows, and a header row are skipped.
+function parsePasteLines(text) {
+  const items = [], bad = [];
+  for (const raw of text.split(/\r?\n/)) {
+    let line = raw.trim();
+    if (!line) continue;
+    if (/^[|\s:—-]+$/.test(line)) continue; // markdown table separator row
+    line = line.replace(/^\|/, '').replace(/\|+$/, '');
+    const cells = line.split('|').map(c => c.trim());
+    const name = cells[0];
+    const nums = cells.slice(1, 7).map(c => parseFloat(String(c).replace(/[^\d.-]/g, '')));
+    if (!name || cells.length < 2 || !Number.isFinite(nums[0])) {
+      if (/kcal|calorie/i.test(line)) continue; // header row
+      bad.push(raw.trim());
+      continue;
+    }
+    const v = i => (Number.isFinite(nums[i]) ? nums[i] : 0);
+    items.push({ name, kcal: v(0), protein: v(1), carbs: v(2), fat: v(3), fibre: v(4), sodium: v(5) });
+  }
+  return { items, bad };
+}
+
+function openPasteModal() {
+  const m = openModal(`
+    <h2>Paste from Claude</h2>
+    <p class="small muted" style="margin-bottom:10px">One item per line:<br><code>name | kcal | protein | carbs | fat | fibre | sodium</code><br>Markdown tables paste fine too. Fibre/sodium optional.</p>
+    <textarea id="paste-in" rows="6" placeholder="Chicken katsu curry | 850 | 32 | 105 | 33 | 5 | 1600"></textarea>
+    <div id="paste-preview" class="small muted" style="margin:10px 0;min-height:18px"></div>
+    <button class="btn primary block" id="paste-add" disabled>Add to log</button>
+  `);
+  const input = m.querySelector('#paste-in');
+  const preview = m.querySelector('#paste-preview');
+  const addBtn = m.querySelector('#paste-add');
+  let parsed = { items: [], bad: [] };
+
+  input.addEventListener('input', () => {
+    parsed = parsePasteLines(input.value);
+    const kcal = parsed.items.reduce((s, x) => s + x.kcal, 0);
+    preview.innerHTML =
+      (parsed.items.length
+        ? `<b>${parsed.items.length}</b> item${parsed.items.length === 1 ? '' : 's'} · ${r0(kcal)} kcal — ` +
+          parsed.items.map(x => esc(x.name)).join(', ')
+        : 'Nothing parsed yet.')
+      + (parsed.bad.length ? `<br><span style="color:var(--orange)">Skipped ${parsed.bad.length} unreadable line${parsed.bad.length === 1 ? '' : 's'}</span>` : '');
+    addBtn.disabled = !parsed.items.length;
+  });
+
+  addBtn.addEventListener('click', () => {
+    const list = state.meals[mealDate] || (state.meals[mealDate] = []);
+    for (const x of parsed.items) {
+      list.push({ id: uid(), grams: null, per100: null, ...x });
+    }
+    save();
+    closeModal();
+    render();
+    toast(`Added ${parsed.items.length} item${parsed.items.length === 1 ? '' : 's'}`);
+  });
 }
 
 // Add (from search result or manual) or edit an existing entry.
