@@ -1,6 +1,6 @@
 // Calorie/macro target calculation and weekly adaptive adjustment.
 
-import { state, save, dateKey, addDays, parseKey, daysBetween, mealsFor, mealTotals, runsOn, gymOn, latestWeight, clamp } from './store.js';
+import { state, save, dateKey, addDays, parseKey, daysBetween, mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, clamp } from './store.js';
 
 export const ACTIVITY = {
   sedentary: { factor: 1.2, label: 'Sedentary (desk job, little exercise)' },
@@ -54,6 +54,10 @@ export function gymKcal(minutes, weightKg) {
 }
 
 export function burnedOn(key) {
+  // A logged watch figure (morning check-in) is authoritative — it includes
+  // steps and daily movement the workout estimates below can't see.
+  const logged = wellnessFor(key).activeKcal;
+  if (logged) return logged;
   const w = latestWeight() || 70;
   let total = 0;
   for (const r of runsOn(key)) total += runKcal(r.km, w);

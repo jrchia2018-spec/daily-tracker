@@ -1,6 +1,6 @@
 import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys,
-  mealsFor, mealTotals, runsOn, gymOn, latestWeight,
+  mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor,
   exportData, importData, clamp,
 } from './store.js';
 import {
@@ -206,6 +206,29 @@ function renderHome() {
     </div>
   </div>
 
+  ${(() => {
+    const sleep = wellnessFor(today).sleep;
+    const yesterday = addDays(today, -1);
+    const yW = wellnessFor(yesterday);
+    const yTot = mealTotals(yesterday);
+    const checkedIn = sleep != null && yW.activeKcal != null;
+    const yNet = yW.activeKcal != null && yTot.kcal
+      ? r0(yTot.kcal - (t.calories + yW.activeKcal)) : null;
+    return `
+  <div class="card">
+    <div class="row between">
+      <h2 style="margin:0">Daily summary</h2>
+      <button class="btn small ${checkedIn ? '' : 'primary'}" id="q-checkin">${checkedIn ? 'Edit check-in' : '🌅 Morning check-in'}</button>
+    </div>
+    <div class="row" style="gap:16px;margin:10px 0 4px">
+      <span class="small muted">😴 Sleep <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
+      <span class="small muted">🔥 Yesterday's burn <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
+      ${yNet != null ? `<span class="small muted">Yesterday net <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
+    </div>
+    ${daySuggestions(today).map(s => `<p class="small" style="margin:8px 0 0">${s}</p>`).join('')}
+  </div>`;
+  })()}
+
   <div class="card">
     <h2>This week</h2>
     <div class="week-strip">${week.map(k => dayCell(k, today)).join('')}</div>
@@ -254,8 +277,70 @@ function renderHome() {
   view.querySelector('#q-run').addEventListener('click', openRunModal);
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
   view.querySelector('#q-weight').addEventListener('click', openWeightModal);
+  view.querySelector('#q-checkin').addEventListener('click', openCheckinModal);
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
+  });
+}
+
+// Rule-based daily suggestions — deterministic, no AI. Priority: sleep
+// first, then over-limits, then gaps. At most three.
+function daySuggestions(today) {
+  const t = targets();
+  const tot = mealTotals(today);
+  const sleep = wellnessFor(today).sleep;
+  const out = [];
+
+  if (sleep != null) {
+    if (sleep < 60) out.push(`😴 Sleep score ${sleep} — treat today as recovery: easy pace or lighter volume, earlier night tonight.`);
+    else if (sleep >= 80) out.push(`⚡ Sleep score ${sleep} — good day to push a harder session.`);
+  }
+  if (tot.sodium > t.sodium) {
+    out.push(`🧂 Sodium already over ${t.sodium}mg — keep the rest of today low-salt (broths and gravies are the big hitters).`);
+  } else if (tot.sodium > 0.75 * t.sodium && tot.kcal < 0.75 * t.calories) {
+    out.push(`🧂 Sodium at ${r0(tot.sodium)}mg with meals still to come — pick a lighter-salt option next.`);
+  }
+  if (tot.kcal > t.calories + burnedOn(today)) {
+    out.push(`⚖️ Over today's energy target — balance across the week rather than restricting hard tonight.`);
+  }
+  if (tot.kcal > 0.6 * t.calories && tot.protein < 0.6 * t.protein) {
+    out.push(`🍗 Protein lagging (${r0(tot.protein)}g of ${t.protein}g) — make it the anchor of your next meal.`);
+  }
+  if (tot.kcal > 0.7 * t.calories && tot.fibre < 0.5 * t.fibre) {
+    out.push(`🥬 Fibre at ${r0(tot.fibre)}g of ${t.fibre}g — veg or fruit with the next meal closes the gap.`);
+  }
+  if (!out.length && tot.kcal > 0) out.push('✅ All on track — nothing to fix today.');
+  return out.slice(0, 3);
+}
+
+function openCheckinModal() {
+  const today = dateKey();
+  const yesterday = addDays(today, -1);
+  const wToday = wellnessFor(today);
+  const wYest = wellnessFor(yesterday);
+  const m = openModal(`
+    <h2>Morning check-in</h2>
+    <label class="field"><span>Sleep score, last night (0–100)</span>
+      <input id="ci-sleep" type="number" inputmode="numeric" min="0" max="100" value="${wToday.sleep ?? ''}" placeholder="e.g. 78"></label>
+    <label class="field"><span>Active calories, yesterday (from watch)</span>
+      <input id="ci-active" type="number" inputmode="numeric" value="${wYest.activeKcal ?? ''}" placeholder="e.g. 650"></label>
+    <p class="small muted" style="margin-bottom:12px">Yesterday's active calories replace the app's workout estimate for ${fmtDate(yesterday)}.</p>
+    <button class="btn primary block" id="ci-save">Save</button>
+  `);
+  m.querySelector('#ci-save').addEventListener('click', () => {
+    const sleep = m.querySelector('#ci-sleep').value;
+    const active = m.querySelector('#ci-active').value;
+    if (sleep === '' && active === '') { toast('Enter at least one value'); return; }
+    if (sleep !== '') {
+      state.wellness[today] = { ...wellnessFor(today), sleep: clamp(Number(sleep), 0, 100) };
+    }
+    if (active !== '') {
+      state.wellness[yesterday] = { ...wellnessFor(yesterday), activeKcal: Math.max(0, Number(active)) };
+    }
+    save();
+    closeModal();
+    render();
+    toast('Checked in ☀️');
   });
 }
 
@@ -859,7 +944,14 @@ function weekReview(keys) {
   const byType = {};
   for (const g of gym) if (g.type) byType[g.type] = (byType[g.type] || 0) + 1;
   const ws = state.weights.filter(x => keys.includes(x.date));
+  const sleeps = keys.map(k => wellnessFor(k).sleep).filter(s => s != null);
+  const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
   return {
+    sleepAvg: sleeps.length ? Math.round(sleeps.reduce((a, b) => a + b) / sleeps.length) : null,
+    sleepMin: sleeps.length ? Math.min(...sleeps) : null,
+    sleepMax: sleeps.length ? Math.max(...sleeps) : null,
+    activeAvg: actives.length ? Math.round(actives.reduce((a, b) => a + b) / actives.length) : null,
+    checkins: Math.max(sleeps.length, actives.length),
     loggedDays: logged.length,
     avgKcal: logged.length ? Math.round(kcal / logged.length) : 0,
     avgProtein: logged.length ? Math.round(protein / logged.length) : 0,
@@ -931,6 +1023,15 @@ function weeklyReviewCard() {
       ${dKg == null
         ? tile('—', 'kg change', 'var(--muted)')
         : tile((dKg > 0 ? '+' : '') + r1(dKg), 'kg this week', dKg <= 0 ? 'var(--green)' : 'var(--orange)')}
+    </div>
+    <div class="grid3" style="text-align:center;margin-top:12px">
+      ${wr.sleepAvg == null
+        ? tile('—', 'avg sleep score', 'var(--muted)')
+        : tile(wr.sleepAvg, `sleep · ${wr.sleepMin}–${wr.sleepMax}`, wr.sleepAvg >= 80 ? 'var(--green)' : wr.sleepAvg < 60 ? 'var(--orange)' : undefined)}
+      ${wr.activeAvg == null
+        ? tile('—', 'avg active kcal', 'var(--muted)')
+        : tile(wr.activeAvg, 'avg active kcal')}
+      ${tile(`${wr.checkins}/7`, 'check-ins')}
     </div>
   </div>`;
 }

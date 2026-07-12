@@ -10,6 +10,7 @@ function defaults() {
     runs: [],             // [ {id, date, km, min, notes} ]
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
+    wellness: {},         // { 'YYYY-MM-DD': {sleep, activeKcal} } — sleep = that morning's score, activeKcal = that day's watch total
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment
   };
@@ -121,6 +122,10 @@ export function runsOn(key) {
 
 export function gymOn(key) {
   return state.gym.filter(g => g.date === key);
+}
+
+export function wellnessFor(key) {
+  return state.wellness[key] || {};
 }
 
 export function latestWeight() {
