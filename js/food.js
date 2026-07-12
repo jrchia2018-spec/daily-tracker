@@ -3,7 +3,10 @@
 // the newer search service is kept as a fallback for when legacy is down
 // (it only helps if they've enabled CORS for third-party origins).
 
-const FIELDS = 'product_name,brands,nutriments,serving_size';
+// product_name comes back in the product's own language (OFF is a French
+// project — plenty of "Parmentier de saumon"); request the English name and
+// the language so normalize() can keep results English-only.
+const FIELDS = 'product_name,product_name_en,lang,brands,nutriments,serving_size';
 
 export async function searchFood(query) {
   try {
@@ -29,6 +32,7 @@ async function searchLegacy(query) {
     action: 'process',
     json: '1',
     page_size: '15',
+    lc: 'en',
     fields: FIELDS,
   });
   const res = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?${params}`, {
@@ -48,8 +52,13 @@ function normalize(products) {
         if (kj != null) kcal = kj / 4.184;
       }
       const brands = Array.isArray(p.brands) ? p.brands.join(', ') : (p.brands || '');
+      // English name if the product has one; otherwise keep the native name
+      // only for English-language products. Anything else is dropped by the
+      // name filter below rather than shown in French/German/etc.
+      const nameEn = (p.product_name_en || '').trim();
+      const native = (p.product_name || '').trim();
       return {
-        name: (p.product_name || '').trim(),
+        name: nameEn || (p.lang === 'en' || !p.lang ? native : ''),
         brand: brands.split(',')[0].trim(),
         serving: p.serving_size || '',
         per100: {
