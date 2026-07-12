@@ -41,6 +41,8 @@
 | HDB Maju Forest/Clementi land release | 23ha total; ~15ha released for housing, ~8ha retained (stream + high-biodiversity vegetation); public feedback 10 Jul-6 Aug 2026 | HDB, 10 Jul 2026 |
 | EC income-ceiling waiver appeals (2020-2025) | 2,500+ filed, 845 approved (~1 in 3); current ceiling $16,000/month | HDB via Straits Times, 11 Jul 2026 |
 | SG flights cancelled (Typhoon Bavi) | At least 20 ex-Changi | Straits Times, 11 Jul 2026 |
+| Circle Line Stage 6 (CCL6) opening | 3 new stations (Keppel, Cantonment, Prince Edward Road); loop closed HarbourFront-Marina Bay; peak frequency ~2 min | LTA/SMRT, 12 Jul 2026 |
+| President Tharman state visit to Malaysia | First State Visit as president, 12-15 Jul 2026, at invitation of King Sultan Ibrahim | MFA, 12 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -73,3 +75,10 @@
 | US housing law (21st Century ROAD to Housing Act) | Became law automatically at midnight 10-11 Jul without Trump's signature (protest over SAVE America Act inaction) | 11 Jul 2026 |
 | NYT Air Force One subpoenas | 4 journalists (Barnes, Lipton, Pager, Schmitt) subpoenaed to Manhattan federal grand jury | DOJ, 11 Jul 2026 |
 | Treasury sanctions — Iran financier | Ali Ansari (Dubai-based) + Iranian exchange houses, tied to Khamenei/IRGC asset network | US Treasury, 11 Jul 2026 |
+| GFS Galaxy attack | Cyprus-flagged container ship hit by IRGC drone in Hormuz; 1 of 11 Indian crew missing, 10 rescued; disabled by fire/engine damage | Wire reports, 12 Jul 2026 |
+| CENTCOM strikes, 12 Jul (third round of the week) | ~140 Iranian military targets; 300+ total for the week | CENTCOM, 12 Jul 2026 |
+| Brent/WTI crude, 12 Jul | Brent ~$78/barrel; WTI ~$73/barrel, rising on Hormuz closure declaration and GFS Galaxy attack | Wire reports, 12 Jul 2026 |
+| Iran barrage on Gulf states, 12 Jul | Qatar (Al-Udeid airbase; 3 wounded by shrapnel incl. 1 child), Kuwait (Patriot battery/ammo depot/radar), Bahrain (comms/radar site), Oman (Musandam sites), UAE (air defences engaged) — first Qatar hit since Apr, first UAE hit since early May | Wire reports, 12 Jul 2026 |
+| Bangkok pub fire (Rong Beer, Na Lat Phrao) | At least 27 dead, ~63 injured; venue had no fire escape | Thai officials, 12 Jul 2026 |
+| Lindsey Graham death | Died 11 Jul, aged 71; preliminary cause aortic dissection (arteriosclerotic cardiovascular disease) | DC Medical Examiner, 12 Jul 2026 |
+| Ann Widdecombe murder | Found dead 9 Jul (Haytor, SW England); attacked ~12:30pm 8 Jul; 28-year-old suspect arrested 11 Jul in South Yorkshire, in custody; no evidence of political motive | UK police, 12 Jul 2026 |

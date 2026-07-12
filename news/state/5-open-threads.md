@@ -1,6 +1,6 @@
-# Section 5 — Open threads (mutable; state as of 12 July 2026)
+# Section 5 — Open threads (mutable; state as of 13 July 2026)
 
-1. Iran ceasefire/MOU status — Trump declared it "over" 8 Jul (no formal termination filed); Iran privately calls the 7 Jul Hormuz attacks a "mistake" by an internal faction and wants talks to continue (11 Jul), but has not issued the public Hormuz-open statement Washington is demanding; Oman/Qatar/Pakistan still mediating — watch whether the verbal thaw becomes an actual reopening
+1. Iran ceasefire/MOU status — 12 Jul: IRGC formally declared Hormuz "closed until further notice" after disabling the GFS Galaxy; Iran's government said fresh US strikes "rendered futile" recent diplomacy — the sharpest break yet from the "talks continue" framing of 10-11 Jul; US disputes the closure claim outright; watch whether either side files a formal MOU termination or any diplomatic channel (Oman/Qatar/Pakistan) reopens
 2. Possible US move on Kharg Island — Trump continues to float taking the island (90% of Iran's oil exports) and reimposing a full blockade; not yet acted on as of 11 Jul
 3. Mojtaba Khamenei's posture now that he has re-emerged — broke his public silence 11 Jul with a revenge vow and target list over his father's killing; watch whether that hardens Iran's negotiating position or stays rhetorical while his FM continues the Oman track
 4. IAEA-Iran site access — Iran says access conditional on a final agreement + full sanctions relief; no movement since 7 Jul; core Phase 2 blocker
@@ -34,6 +34,11 @@
 34. Venezuela earthquake recovery financing — Delcy Rodríguez/UN calls for international financial help (11 Jul) as toll passes 4,333 dead, 16,740 injured, still climbing; watch for pledges or a donor conference
 35. Bangladesh floods/landslides — 44 dead, 1M+ stranded across 7 south-eastern districts as of 11 Jul; separately 16 Rohingya refugees killed in Cox's Bazar camp landslides earlier in the week; watch for toll and relief-effort updates
 36. HDB EC income-ceiling appeals — 2,500+ filed 2020-2025, 845 (~1/3) approved against the current $16,000/month ceiling; watch for any policy response to the sandwich-class pressure the figures imply
+37. GFS Galaxy — Cyprus-flagged container ship disabled by IRGC drone strike 12 Jul in Hormuz; 1 of 11 Indian crew still missing as of 12 Jul; watch for search outcome and vessel salvage/status
+38. Qatar/UAE response to being drawn into the Iran-Gulf barrage — both hit 12 Jul for the first time in months (Qatar since Apr, UAE since early May); watch whether either curtails mediation/basing cooperation or escalates its own response
+39. Ann Widdecombe murder — 28-year-old suspect arrested 11 Jul in South Yorkshire, in custody as of 12 Jul; police say no evidence of political motive; watch for charging decision
+40. Zelensky's Ukraine cabinet reshuffle — PM Svyrydenko to be replaced (offered a new role); contenders for PM include Naftogaz CEO Sergii Koretskyi and former PM/current energy minister Denys Shmyhal; watch for the formal appointment and any effect on the Patriot-production licence and EU-accession push
+41. Lindsey Graham's Senate seat — South Carolina governor's replacement-appointment process not yet reported; watch for an announcement, plus any near-term effect on Ukraine/Israel aid dealmaking in Trump's circle
 
 ## Resolved
 - SG Q3 2026 electricity tariff — confirmed by EMA 30 Jun. Folded into 3-data-points.md.
@@ -44,7 +49,7 @@
 - Johor state election (thread 26) — resolved 11 Jul: BN won a landslide 48/56 seats (two-thirds-plus majority); PH took the remaining 8; PN/Bersama/Muda wiped out. Folded into 3-data-points.md.
 - Typhoon Bavi China landfall (thread 28) — resolved 11 Jul: made landfall at Yuhuan, Zhejiang ~23:20 SGT; 1.7M+ evacuated; also disrupted at least 20 Singapore-bound/outbound flights. Folded into 3-data-points.md.
 
-## No-repeat log (most recent report: 12 July 2026)
+## No-repeat log (most recent report: 13 July 2026)
 - Global covered 9 Jul: Iran ceasefire declared "over" + Kharg Island strikes + oil surge; NATO Ankara declaration adoption + Patriot missile production licence + Russia's renewed Kyiv strikes; IOC provisionally lifts Russia's Olympic ban; Le Pen clears path to 2027 presidential run.
 - SG covered 9 Jul: Temasek Review 2026 record S$518B portfolio; COE premiums hit record highs; man to be charged over fake bomb threats to HTX/Parliament House; WP CEC appointments.
 - Global covered 10 Jul: Iran second-wave strikes (90 targets, Bushehr perimeter, 14 killed) + Iranian retaliation against Kuwait/Qatar/Bahrain/Jordan (consolidated Iran story); Lebanon Nabatieh drone strike (2 killed) + Gaza strikes killing 9 Palestinians incl. a WCK driver; NATO Ankara summit closes + Turkey sanctions lifted + Trump moves to rescind Syria's state-sponsor-of-terrorism designation; UK Labour leadership contest opens, Burnham on course for PM.
@@ -53,3 +58,5 @@
 - SG covered 11 Jul: Johor state election (11 Jul, all 56 seats); MSF Family Trends Report 2025 (marriages -6.2%, seniors living alone doubled, paternity leave uptake up); HDB Maju Forest/Clementi public housing land release; 69-person cross-border unlicensed moneylending crackdown (incl. 15-year-old).
 - Global covered 12 Jul: Iran — Mojtaba Khamenei's revenge vow, Trump's "decimate"/1,000-missile threat, Treasury sanctions on Ali Ansari, Iran privately calling the Hormuz attacks a "mistake," Oman talks (consolidated Iran story); Venezuela earthquake toll passes 4,333 dead; Bangladesh floods/landslides (44 dead, 1M+ stranded); Trump administration subpoenas 4 NYT journalists over Air Force One reporting; US housing affordability law takes effect without Trump's signature.
 - SG covered 12 Jul: Johor state election result (BN landslide, PN wiped out); Typhoon Bavi flight cancellations from Singapore + China landfall; HDB EC income-ceiling appeal figures (845/2,500+ approved since 2020); WhatsApp locks down SG politicians' usernames to pre-empt impersonation.
+- Global covered 13 Jul: Iran — GFS Galaxy attack + IRGC's formal Hormuz closure declaration + third round of CENTCOM strikes (~140 targets) + Iran's barrage widened to five Gulf states (Qatar, Kuwait, Bahrain, Oman, UAE) + Trump/CENTCOM dispute the closure claim (consolidated Iran story); Lindsey Graham dies suddenly at 71 (aortic dissection); Bangkok pub fire kills at least 27; UK police arrest second suspect, rule out political motive in Ann Widdecombe murder; Zelensky reshuffles Ukrainian cabinet, replaces PM Svyrydenko.
+- SG covered 13 Jul: President Tharman's first state visit to Malaysia (12-15 Jul); Circle Line Stage 6 opens, completing the full loop; PDPC proposes mandatory AI-specific notices for personal data used in AI training.
