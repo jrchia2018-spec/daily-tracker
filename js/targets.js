@@ -36,7 +36,11 @@ export function computeTargets(profile, weightKg, tdeeOverride = null) {
   const protein = Math.round((profile.goalRate < 0 ? 2.0 : 1.8) * weightKg);
   const fat = Math.round((calories * 0.25) / 9);
   const carbs = Math.max(0, Math.round((calories - protein * 4 - fat * 9) / 4));
-  return { calories, protein, carbs, fat };
+  // Fibre scales with intake (14g/1000 kcal guideline, floor 25g);
+  // sodium is a flat 2300mg ceiling, not calorie-dependent.
+  const fibre = Math.max(25, Math.round((calories * 14) / 1000));
+  const sodium = 2300;
+  return { calories, protein, carbs, fat, fibre, sodium };
 }
 
 // Rough workout energy estimates (used for "daily caloric use").

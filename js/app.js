@@ -58,7 +58,14 @@ tabbar.addEventListener('click', e => {
 });
 
 function targets() {
-  return state.targets || { calories: 2000, protein: 120, carbs: 220, fat: 60 };
+  const t = state.targets || { calories: 2000, protein: 120, carbs: 220, fat: 60 };
+  // Targets saved before fibre/sodium tracking existed lack those fields —
+  // fill them with the same defaults computeTargets would use.
+  return {
+    fibre: Math.max(25, Math.round(((t.calories || 2000) * 14) / 1000)),
+    sodium: 2300,
+    ...t,
+  };
 }
 
 // ---------- theme ----------
@@ -188,6 +195,8 @@ function renderHome() {
         ${macroBar('Protein', tot.protein, t.protein, 'var(--green)')}
         ${macroBar('Carbs', tot.carbs, t.carbs, 'var(--orange)')}
         ${macroBar('Fat', tot.fat, t.fat, 'var(--teal)')}
+        ${macroBar('Fibre', tot.fibre, t.fibre, 'var(--accent2)')}
+        ${macroBar('Sodium', tot.sodium, t.sodium, tot.sodium > t.sodium ? 'var(--red)' : 'var(--accent)', 'mg')}
       </div>
     </div>
     <div class="row between" style="margin-top:14px" >
@@ -250,11 +259,11 @@ function renderHome() {
   });
 }
 
-function macroBar(label, val, max, color) {
+function macroBar(label, val, max, color, unit = 'g') {
   const pct = clamp((val / max) * 100, 0, 100);
   return `
   <div class="macro-bar">
-    <div class="row"><span class="muted">${label}</span><span><b>${r0(val)}</b><span class="muted"> / ${max}g</span></span></div>
+    <div class="row"><span class="muted">${label}</span><span><b>${r0(val)}</b><span class="muted"> / ${max}${unit}</span></span></div>
     <div class="track"><div class="fill" style="width:${pct}%;background:${color}"></div></div>
   </div>`;
 }
@@ -314,6 +323,8 @@ function renderMeals() {
       ${totCell(r0(tot.protein), t.protein, 'protein')}
       ${totCell(r0(tot.carbs), t.carbs, 'carbs')}
       ${totCell(r0(tot.fat), t.fat, 'fat')}
+      ${totCell(r0(tot.fibre), t.fibre, 'fibre', 'floor')}
+      ${totCell(r0(tot.sodium), t.sodium, 'sodium')}
     </div>
   </div>
 
@@ -337,7 +348,7 @@ function renderMeals() {
       <div class="item" data-id="${m.id}" style="cursor:pointer">
         <div>
           <div class="title">${esc(m.name)}</div>
-          <div class="sub">${m.grams ? m.grams + 'g · ' : ''}P ${r0(m.protein)} · C ${r0(m.carbs)} · F ${r0(m.fat)}</div>
+          <div class="sub">${m.grams ? m.grams + 'g · ' : ''}P ${r0(m.protein)} · C ${r0(m.carbs)} · F ${r0(m.fat)}${m.fibre ? ` · Fb ${r0(m.fibre)}` : ''}${m.sodium ? ` · Na ${r0(m.sodium)}` : ''}</div>
         </div>
         <div class="val">${r0(m.kcal)} kcal</div>
       </div>`).join('')
@@ -353,7 +364,7 @@ function renderMeals() {
     if (!kcal || kcal <= 0) { toast('Enter calories'); return; }
     const name = view.querySelector('#qa-name').value.trim() || 'Quick add';
     (state.meals[mealDate] || (state.meals[mealDate] = [])).push({
-      id: uid(), name, grams: null, per100: null, kcal, protein: 0, carbs: 0, fat: 0,
+      id: uid(), name, grams: null, per100: null, kcal, protein: 0, carbs: 0, fat: 0, fibre: 0, sodium: 0,
     });
     save();
     render();
@@ -432,6 +443,7 @@ function renderMeals() {
         openFoodModal({
           name: f.name, per100: f.per100, grams: f.grams,
           kcal: f.kcal, protein: f.protein, carbs: f.carbs, fat: f.fat,
+          fibre: f.fibre, sodium: f.sodium,
           serving: f.grams ? `${f.grams} g` : '',
         });
       });
@@ -462,8 +474,13 @@ function renderMeals() {
   });
 }
 
-function totCell(val, max, label) {
-  return `<div><div class="tval" style="color:${val > max ? 'var(--red)' : 'var(--text)'}">${val}</div><div class="tlabel">/ ${max} ${label}</div></div>`;
+// dir 'cap': exceeding the target is bad (red). dir 'floor': reaching it is
+// the goal (green when met) — fibre is a floor, everything else a cap.
+function totCell(val, max, label, dir = 'cap') {
+  const color = dir === 'floor'
+    ? (val >= max ? 'var(--green)' : 'var(--text)')
+    : (val > max ? 'var(--red)' : 'var(--text)');
+  return `<div><div class="tval" style="color:${color}">${val}</div><div class="tlabel">/ ${max} ${label}</div></div>`;
 }
 
 // Add (from search result or manual) or edit an existing entry.
@@ -482,6 +499,8 @@ function openFoodModal(result, existing = null) {
     protein: existing?.protein ?? direct('protein'),
     carbs: existing?.carbs ?? direct('carbs'),
     fat: existing?.fat ?? direct('fat'),
+    fibre: existing?.fibre ?? direct('fibre'),
+    sodium: existing?.sodium ?? direct('sodium'),
   };
 
   const m = openModal(`
@@ -494,6 +513,8 @@ function openFoodModal(result, existing = null) {
       <label class="field"><span>Protein (g)</span><input id="f-protein" type="number" inputmode="decimal" value="${init.protein}"></label>
       <label class="field"><span>Carbs (g)</span><input id="f-carbs" type="number" inputmode="decimal" value="${init.carbs}"></label>
       <label class="field"><span>Fat (g)</span><input id="f-fat" type="number" inputmode="decimal" value="${init.fat}"></label>
+      <label class="field"><span>Fibre (g)</span><input id="f-fibre" type="number" inputmode="decimal" value="${init.fibre}"></label>
+      <label class="field"><span>Sodium (mg)</span><input id="f-sodium" type="number" inputmode="decimal" value="${init.sodium}"></label>
     </div>
     <div class="row" style="margin-top:6px">
       <button class="btn primary block" id="f-save">${existing ? 'Save changes' : 'Add to log'}</button>
@@ -505,7 +526,7 @@ function openFoodModal(result, existing = null) {
   if (per100) {
     $f('f-grams').addEventListener('input', () => {
       const g = Number($f('f-grams').value) || 0;
-      for (const f of ['kcal', 'protein', 'carbs', 'fat']) {
+      for (const f of ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium']) {
         if (per100[f] != null) $f('f-' + f).value = r1((per100[f] * g) / 100);
       }
     });
@@ -523,6 +544,8 @@ function openFoodModal(result, existing = null) {
       protein: Number($f('f-protein').value) || 0,
       carbs: Number($f('f-carbs').value) || 0,
       fat: Number($f('f-fat').value) || 0,
+      fibre: Number($f('f-fibre').value) || 0,
+      sodium: Number($f('f-sodium').value) || 0,
     };
     const list = state.meals[mealDate] || (state.meals[mealDate] = []);
     if (existing) {
@@ -880,6 +903,8 @@ function renderProgress() {
       <div><div class="tval">${t.protein}g</div><div class="tlabel">protein</div></div>
       <div><div class="tval">${t.carbs}g</div><div class="tlabel">carbs</div></div>
       <div><div class="tval">${t.fat}g</div><div class="tlabel">fat</div></div>
+      <div><div class="tval">${t.fibre}g</div><div class="tlabel">fibre ≥</div></div>
+      <div><div class="tval">${t.sodium}</div><div class="tlabel">sodium mg ≤</div></div>
     </div>
     <p class="small muted" style="margin-bottom:10px">Auto mode recalculates weekly from your latest weight, and refines your calorie burn estimate once you have ~2 weeks of logged meals and weigh-ins.</p>
     <div class="row">
@@ -971,6 +996,8 @@ function openTargetsModal() {
       <label class="field"><span>Protein (g)</span><input id="t-p" type="number" value="${t.protein}"></label>
       <label class="field"><span>Carbs (g)</span><input id="t-c" type="number" value="${t.carbs}"></label>
       <label class="field"><span>Fat (g)</span><input id="t-f" type="number" value="${t.fat}"></label>
+      <label class="field"><span>Fibre (g, minimum)</span><input id="t-fib" type="number" value="${t.fibre}"></label>
+      <label class="field"><span>Sodium (mg, limit)</span><input id="t-na" type="number" value="${t.sodium}"></label>
     </div>
     <p class="small muted" style="margin-bottom:12px">Saving here switches targets to <b>Manual</b> — they'll stay fixed until you tap "Recalculate now".</p>
     <button class="btn primary block" id="t-save">Save targets</button>
@@ -981,6 +1008,8 @@ function openTargetsModal() {
       protein: Number(m.querySelector('#t-p').value) || t.protein,
       carbs: Number(m.querySelector('#t-c').value) || t.carbs,
       fat: Number(m.querySelector('#t-f').value) || t.fat,
+      fibre: Number(m.querySelector('#t-fib').value) || t.fibre,
+      sodium: Number(m.querySelector('#t-na').value) || t.sodium,
       mode: 'manual',
       updatedAt: dateKey(),
     };

@@ -6,7 +6,7 @@ function defaults() {
   return {
     profile: null,        // {sex, age, heightCm, weightKg, goalWeightKg, activity, goalRate}
     targets: null,        // {calories, protein, carbs, fat, mode: 'auto'|'manual', updatedAt}
-    meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat} ] }
+    meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat, fibre, sodium} ] }
     runs: [],             // [ {id, date, km, min, notes} ]
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
@@ -108,8 +108,10 @@ export function mealTotals(key) {
       protein: t.protein + (m.protein || 0),
       carbs: t.carbs + (m.carbs || 0),
       fat: t.fat + (m.fat || 0),
+      fibre: t.fibre + (m.fibre || 0),
+      sodium: t.sodium + (m.sodium || 0),
     }),
-    { kcal: 0, protein: 0, carbs: 0, fat: 0 }
+    { kcal: 0, protein: 0, carbs: 0, fat: 0, fibre: 0, sodium: 0 }
   );
 }
 

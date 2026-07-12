@@ -57,6 +57,13 @@ function normalize(products) {
       // name filter below rather than shown in French/German/etc.
       const nameEn = (p.product_name_en || '').trim();
       const native = (p.product_name || '').trim();
+      // OFF reports sodium in g/100g (or salt, which is sodium × 2.5) — the
+      // app tracks sodium in mg.
+      let sodium = num(n.sodium_100g);
+      if (sodium == null) {
+        const salt = num(n.salt_100g);
+        if (salt != null) sodium = salt / 2.5;
+      }
       return {
         name: nameEn || (p.lang === 'en' || !p.lang ? native : ''),
         brand: brands.split(',')[0].trim(),
@@ -66,6 +73,8 @@ function normalize(products) {
           protein: round1(num(n.proteins_100g)),
           carbs: round1(num(n.carbohydrates_100g)),
           fat: round1(num(n.fat_100g)),
+          fibre: round1(num(n.fiber_100g)),
+          sodium: sodium == null ? null : Math.round(sodium * 1000),
         },
       };
     })
