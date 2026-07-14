@@ -43,6 +43,9 @@
 | SG flights cancelled (Typhoon Bavi) | At least 20 ex-Changi | Straits Times, 11 Jul 2026 |
 | Circle Line Stage 6 (CCL6) opening | 3 new stations (Keppel, Cantonment, Prince Edward Road); loop closed HarbourFront-Marina Bay; peak frequency ~2 min | LTA/SMRT, 12 Jul 2026 |
 | President Tharman state visit to Malaysia | First State Visit as president, 12-15 Jul 2026, at invitation of King Sultan Ibrahim | MFA, 12 Jul 2026 |
+| Bloomberg defamation damages | S$230,000 each to Shanmugam and Tan See Leng (S$170,000 general + S$60,000 aggravated); S$460,000 total | Singapore High Court (Justice Audrey Lim), 14 Jul 2026 |
+| Singapore Ebola response contribution | S$2.5m (US$2m) via WHO/Africa CDC Continental Preparedness and Response Plan | MOH/CDA, 14 Jul 2026 |
+| Armed robbery against ships in Asia, H1 2026 | 35 incidents, down 64% YoY (96 in H1 2025) — lowest half-year figure since 2019; Malacca/Singapore Straits incidents down 74% to 21 (60% of all Asia incidents) | ReCAAP ISC, 14 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -81,4 +84,7 @@
 | Iran barrage on Gulf states, 12 Jul | Qatar (Al-Udeid airbase; 3 wounded by shrapnel incl. 1 child), Kuwait (Patriot battery/ammo depot/radar), Bahrain (comms/radar site), Oman (Musandam sites), UAE (air defences engaged) — first Qatar hit since Apr, first UAE hit since early May | Wire reports, 12 Jul 2026 |
 | Bangkok pub fire (Rong Beer, Na Lat Phrao) | At least 27 dead, ~63 injured; venue had no fire escape | Thai officials, 12 Jul 2026 |
 | Lindsey Graham death | Died 11 Jul, aged 71; preliminary cause aortic dissection (arteriosclerotic cardiovascular disease) | DC Medical Examiner, 12 Jul 2026 |
-| Ann Widdecombe murder | Found dead 9 Jul (Haytor, SW England); attacked ~12:30pm 8 Jul; 28-year-old suspect arrested 11 Jul in South Yorkshire, in custody; no evidence of political motive | UK police, 12 Jul 2026 |
+| Ann Widdecombe murder | Found dead 9 Jul (Haytor, SW England); attacked ~12:30pm 8 Jul; 28-year-old suspect arrested 11 Jul in South Yorkshire, in custody; ruled a "targeted attack" by counter-terrorism police, motive still under investigation | UK police, 14 Jul 2026 |
+| Bangkok pub fire (Rong Beer, Na Lat Phrao) — updated | 30 dead (up from 27), 70+ injured (24 critical); electrical short-circuit in ceiling AC suspected cause; blocked/locked rear exits found; negligence primary investigative theory | Thai officials, 14 Jul 2026 |
+| ICE fatal shootings, Houston + Biddeford, Maine | Lorenzo Salgado Araujo (52) killed 7 Jul Houston; Joan Durán Guerrero (26) killed 13 Jul Maine; neither the intended target per DHS; officers in both cases not wearing body cameras; vehicle-stop pause ordered in 3+ ICE regions 14 Jul | DHS/wire reports, 14 Jul 2026 |
+| Lindsey Graham Senate seat | Sister Darline Graham Nordone appointed by Gov. Henry McMaster, sworn in 14 Jul | Wire reports, 14 Jul 2026 |

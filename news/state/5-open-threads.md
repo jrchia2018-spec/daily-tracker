@@ -1,7 +1,7 @@
-# Section 5 — Open threads (mutable; state as of 13 July 2026)
+# Section 5 — Open threads (mutable; state as of 15 July 2026)
 
-1. Iran ceasefire/MOU status — 12 Jul: IRGC formally declared Hormuz "closed until further notice" after disabling the GFS Galaxy; Iran's government said fresh US strikes "rendered futile" recent diplomacy — the sharpest break yet from the "talks continue" framing of 10-11 Jul; US disputes the closure claim outright; watch whether either side files a formal MOU termination or any diplomatic channel (Oman/Qatar/Pakistan) reopens
-2. Possible US move on Kharg Island — Trump continues to float taking the island (90% of Iran's oil exports) and reimposing a full blockade; not yet acted on as of 11 Jul
+1. Iran ceasefire/MOU status — 13-14 Jul: Trump formally notified Congress the war has resumed (fresh 60-day War Powers clock, legally disputed by Democrats); Senate blocked the NDAA 50-46 over the war 14 Jul; naval blockade resumed 14 Jul (4pm ET) after Trump dropped the 20% Hormuz toll-fee threat; fourth day of US strikes (Kish Island power plant, Bandar Abbas, Sirik/Tahrouyi, Hengam Island) and Iran hit two "non-compliant" supertankers plus US sites in Bahrain/Jordan; no formal MOU termination filed by either side; watch whether any diplomatic channel (Oman/Qatar/Pakistan) reopens
+2. Possible US move on Kharg Island — Trump continues to float taking the island (90% of Iran's oil exports); not yet acted on as of 14 Jul (Kish Island, a separate smaller island, was struck instead 14 Jul)
 3. Mojtaba Khamenei's posture now that he has re-emerged — broke his public silence 11 Jul with a revenge vow and target list over his father's killing; watch whether that hardens Iran's negotiating position or stays rhetorical while his FM continues the Oman track
 4. IAEA-Iran site access — Iran says access conditional on a final agreement + full sanctions relief; no movement since 7 Jul; core Phase 2 blocker
 5. Lebanon ceasefire — Israeli drone strike killed 2 in Nabatieh 8 Jul; Lebanese officials call it a fresh violation; Israel says strikes respond to Hezbollah activity; watch for further incidents
@@ -38,7 +38,17 @@
 38. Qatar/UAE response to being drawn into the Iran-Gulf barrage — both hit 12 Jul for the first time in months (Qatar since Apr, UAE since early May); watch whether either curtails mediation/basing cooperation or escalates its own response
 39. Ann Widdecombe murder — 28-year-old suspect arrested 11 Jul in South Yorkshire, in custody as of 12 Jul; police say no evidence of political motive; watch for charging decision
 40. Zelensky's Ukraine cabinet reshuffle — PM Svyrydenko to be replaced (offered a new role); contenders for PM include Naftogaz CEO Sergii Koretskyi and former PM/current energy minister Denys Shmyhal; watch for the formal appointment and any effect on the Patriot-production licence and EU-accession push
-41. Lindsey Graham's Senate seat — South Carolina governor's replacement-appointment process not yet reported; watch for an announcement, plus any near-term effect on Ukraine/Israel aid dealmaking in Trump's circle
+41. Lindsey Graham's Senate seat — resolved 14 Jul: Gov. Henry McMaster appointed Graham's sister Darline Graham Nordone, sworn in Tuesday; superseded by new thread 42 (Russia sanctions bill push)
+42. Graham's Russia sanctions bill (Sanctioning Russia Act of 2025, up to 500% tariffs on buyers of Russian oil/gas) — bipartisan push to pass it as a posthumous tribute; Schumer urging passage, Trump backing it; undecided whether Nordone becomes lead sponsor; watch for a vote
+43. Senate NDAA blockage — Democrats blocked debate 50-46 on 14 Jul over the Iran war and US-Israel defence-integration provisions; watch for a revised bill or a renewed cloture attempt
+44. War Powers Act legal dispute — Trump's 13 Jul notification claims a fresh 60-day clock on the theory the ceasefire ended hostilities; Democrats (Schiff) dispute any legal basis for restarting it; watch for a court challenge or a Congressional resolution
+45. Yemen-Saudi front — Houthis ended a four-year truce with Saudi Arabia 14 Jul (Abha airport strike) after Yemeni government forces hit Sanaa airport's runway; Houthis declared the de-escalation phase over; watch for further exchanges or Saudi retaliation
+46. ICE vehicle-stop pause — ordered in at least three ICE administrative regions 14 Jul after fatal shootings of Lorenzo Salgado Araujo (Houston, 7 Jul) and Joan Durán Guerrero (Biddeford, Maine, 13 Jul), neither the intended target; officers in both cases not wearing body cameras; watch for the new training content and whether the pause is lifted or made permanent; Mexico separately says it will demand criminal complaints
+47. Ann Widdecombe murder — UK counter-terrorism police say 14 Jul it was a "targeted attack"; 28-year-old suspect remains in custody in South Yorkshire; motive and extent of planning still under investigation
+48. Bloomberg defamation case — resolved 14 Jul: Singapore High Court awarded Shanmugam and Tan See Leng S$230,000 each (S$460,000 total); folded into 3-data-points.md. Closed as a standalone thread.
+49. President Tharman's Malaysia state visit — continues to 15 Jul; 14 Jul produced concrete JS-SEZ master-plan progress in the Anwar meeting; watch for the visit's conclusion and any closing joint statement
+50. SM Lee's Brunei visit — 14-17 Jul, representing Singapore at Sultan Hassanal Bolkiah's 80th birthday celebrations; watch for any bilateral announcements before it concludes
+51. Ebola response funding — Singapore pledged S$2.5m (US$2m) via WHO/Africa CDC 14 Jul; folded into 3-data-points.md; watch for whether the funding moves the case-count trajectory in the next WHO/ECDC update
 
 ## Resolved
 - SG Q3 2026 electricity tariff — confirmed by EMA 30 Jun. Folded into 3-data-points.md.
@@ -48,8 +58,14 @@
 - Mojtaba Khamenei's public absence (thread 3) — resolved 11 Jul: broke his silence with a public revenge vow and target list, his first statement since the funeral concluded. Superseded by new thread 3 (his posture now that he has re-emerged).
 - Johor state election (thread 26) — resolved 11 Jul: BN won a landslide 48/56 seats (two-thirds-plus majority); PH took the remaining 8; PN/Bersama/Muda wiped out. Folded into 3-data-points.md.
 - Typhoon Bavi China landfall (thread 28) — resolved 11 Jul: made landfall at Yuhuan, Zhejiang ~23:20 SGT; 1.7M+ evacuated; also disrupted at least 20 Singapore-bound/outbound flights. Folded into 3-data-points.md.
+- Lindsey Graham's Senate seat (thread 41) — resolved 14 Jul: sister Darline Graham Nordone appointed and sworn in. Superseded by thread 42 (Russia sanctions bill).
+- Bloomberg defamation case (thread 48) — resolved 14 Jul: Singapore High Court awarded Shanmugam and Tan See Leng S$230,000 each. Folded into 3-data-points.md.
 
-## No-repeat log (most recent report: 13 July 2026)
+## No-repeat log (most recent report: 15 July 2026)
+- Global covered 15 Jul (no report published 14 Jul — 2-day gap): Iran — formal War Powers notification/disputed 60-day clock, Senate blocks NDAA 50-46, naval blockade resumes + Hormuz toll threat dropped, fourth day of US strikes (Kish Island, Bandar Abbas, Sirik/Tahrouyi, Hengam Island), Iran hits two supertankers + US sites in Bahrain/Jordan, Yemen-Saudi truce collapses (consolidated Iran story); ICE orders nationwide vehicle-stop pause after fatal shootings of Lorenzo Salgado Araujo and Joan Durán Guerrero; Bangkok pub fire toll rises to 30, locked/blocked exits found; Ann Widdecombe murder ruled a "targeted attack"; Lindsey Graham's sister sworn in, Congress pushes his Russia sanctions bill.
+- SG covered 15 Jul: Bloomberg defamation case — Shanmugam and Tan See Leng awarded S$230,000 each; Tharman-Anwar JS-SEZ master-plan progress (Malaysia state visit, day 3); SM Lee begins Brunei visit for Sultan's 80th birthday; Singapore pledges S$2.5m to DRC/Uganda Ebola response.
+
+## No-repeat log (13 July 2026 report)
 - Global covered 9 Jul: Iran ceasefire declared "over" + Kharg Island strikes + oil surge; NATO Ankara declaration adoption + Patriot missile production licence + Russia's renewed Kyiv strikes; IOC provisionally lifts Russia's Olympic ban; Le Pen clears path to 2027 presidential run.
 - SG covered 9 Jul: Temasek Review 2026 record S$518B portfolio; COE premiums hit record highs; man to be charged over fake bomb threats to HTX/Parliament House; WP CEC appointments.
 - Global covered 10 Jul: Iran second-wave strikes (90 targets, Bushehr perimeter, 14 killed) + Iranian retaliation against Kuwait/Qatar/Bahrain/Jordan (consolidated Iran story); Lebanon Nabatieh drone strike (2 killed) + Gaza strikes killing 9 Palestinians incl. a WCK driver; NATO Ankara summit closes + Turkey sanctions lifted + Trump moves to rescind Syria's state-sponsor-of-terrorism designation; UK Labour leadership contest opens, Burnham on course for PM.
