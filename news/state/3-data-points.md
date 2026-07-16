@@ -46,6 +46,12 @@
 | Bloomberg defamation damages | S$230,000 each to Shanmugam and Tan See Leng (S$170,000 general + S$60,000 aggravated); S$460,000 total | Singapore High Court (Justice Audrey Lim), 14 Jul 2026 |
 | Singapore Ebola response contribution | S$2.5m (US$2m) via WHO/Africa CDC Continental Preparedness and Response Plan | MOH/CDA, 14 Jul 2026 |
 | Armed robbery against ships in Asia, H1 2026 | 35 incidents, down 64% YoY (96 in H1 2025) — lowest half-year figure since 2019; Malacca/Singapore Straits incidents down 74% to 21 (60% of all Asia incidents) | ReCAAP ISC, 14 Jul 2026 |
+| RTS Link projected cross-border spending | S$1.05B (RM3.31B)/yr more SG→JB spending vs S$756M/yr more JB→SG spending; net S$290M/yr outbound (0.4% of 2025 SG retail/F&B sales); SG→JB trips +51% (+11.2M/yr), JB→SG trips +3.3M/yr | SBF/RAS/SRA study, 16 Jul 2026 |
+| Community Care Apartments — age eligibility | Lowered 65 → 55, effective Oct 2026 BTO exercise (6th CCA project, Toa Payoh) | HDB/MOH/MND, 13 Jul 2026 |
+| Community Care Apartments — fee cuts | Monthly Basic Service Package fees down 18–75% for pre-2026 launches, effective Q2 2027 | HDB/MOH/MND, 13 Jul 2026 |
+| S$3b money laundering case — Wang Junjie sentence | 32 weeks' jail (conspiring to cheat IRAS; forgery/falsification of accounts for shell company Yihao Cyber Technologies) | Singapore courts, 16 Jul 2026 |
+| S$3b money laundering case — Chan I-Fei Julia charge | Conveyancing lawyer (61, Sterling Law director) charged with abetting forgery re: Chen Lingling's Dec 2023 South Beach Residences purchase | Singapore courts, 16 Jul 2026 |
+| PUB Choa Chu Kang Waterworks charges | Cleaning firm + worksite manager charged over May 2024 incident (2 workers died of H2S exposure) | Singapore courts, 16 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -88,3 +94,14 @@
 | Bangkok pub fire (Rong Beer, Na Lat Phrao) — updated | 30 dead (up from 27), 70+ injured (24 critical); electrical short-circuit in ceiling AC suspected cause; blocked/locked rear exits found; negligence primary investigative theory | Thai officials, 14 Jul 2026 |
 | ICE fatal shootings, Houston + Biddeford, Maine | Lorenzo Salgado Araujo (52) killed 7 Jul Houston; Joan Durán Guerrero (26) killed 13 Jul Maine; neither the intended target per DHS; officers in both cases not wearing body cameras; vehicle-stop pause ordered in 3+ ICE regions 14 Jul | DHS/wire reports, 14 Jul 2026 |
 | Lindsey Graham Senate seat | Sister Darline Graham Nordone appointed by Gov. Henry McMaster, sworn in 14 Jul | Wire reports, 14 Jul 2026 |
+| Iran casualties (cumulative since 7 Jul resumption) | 35 killed, 300+ injured | Iran Health Ministry, 15 Jul 2026 |
+| Iran bridge strikes (16 Jul, Hormozgan) | 2 killed, 4 injured | Hormozgan governor's office, 16 Jul 2026 |
+| Hormuz merchant-ship transits | 13 ships on Wednesday (vs 120-140/day pre-war baseline) | Kpler, 16 Jul 2026 |
+| Brent crude | ~$85/barrel, one-month high | 16 Jul 2026 |
+| WTI crude | ~$79.60/barrel (Aug delivery) | 15 Jul 2026 |
+| House GOP $95bn war-budget resolution | $60bn Armed Services cap, $13bn Intelligence, $12bn Agriculture, $10bn House Administration (SAVE Act) | House GOP budget resolution, 15 Jul 2026 |
+| Ukraine PM confirmation | Serhii Koretskyi confirmed 289 votes (16 Jul), succeeding Yulia Svyrydenko (dismissed 258 votes, 14 Jul, after 1 year in post) | Verkhovna Rada, 16 Jul 2026 |
+| Ukraine Kyiv protest over Fedorov's ouster | 1,000+ in central Kyiv, further protests in other cities | Wire reports, 16 Jul 2026 |
+| Canada wildfires / US air-quality alerts | 850+ active fires; alerts across 17 US states; Duluth AQI 902 | 16 Jul 2026 |
+| Uganda Ebola outbreak | 20 confirmed cases, 2 deaths; last patient discharged 16 Jul; 42-day countdown to declare outbreak over | Uganda MoH, 16 Jul 2026 |
+| DRC Ebola outbreak (updated) | 2,011 confirmed cases, 754 deaths; Ituri province 1,808 cases/631 deaths; 80% of new cases outside known contact chains | WHO, 14 Jul 2026 |
