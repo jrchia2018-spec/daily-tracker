@@ -52,6 +52,11 @@
 | S$3b money laundering case — Wang Junjie sentence | 32 weeks' jail (conspiring to cheat IRAS; forgery/falsification of accounts for shell company Yihao Cyber Technologies) | Singapore courts, 16 Jul 2026 |
 | S$3b money laundering case — Chan I-Fei Julia charge | Conveyancing lawyer (61, Sterling Law director) charged with abetting forgery re: Chen Lingling's Dec 2023 South Beach Residences purchase | Singapore courts, 16 Jul 2026 |
 | PUB Choa Chu Kang Waterworks charges | Cleaning firm + worksite manager charged over May 2024 incident (2 workers died of H2S exposure) | Singapore courts, 16 Jul 2026 |
+| Chief Justice Menon retirement / succession | Retires 26 Feb 2027 after 14+ yrs; Justice Sushil Nair (Court of Appeal) named 5th Chief Justice, effective same date | PMO, 17 Jul 2026 |
+| Hin Leong v Deloitte — largest claim struck out | US$2.6b (~S$3.4b) trading-loss claim struck out as "too remote"; US$90m (~S$118m) dividends claim + US$612k (~S$800k) audit-fee claim remain live | Singapore Court of Appeal, 16 Jul 2026 |
+| GovTech restructuring, phase 1 | 93 of 305 assessed officers retrenched (7-9% of workforce over 2 yrs); 102 retained, 110 in reskilling apprenticeships | GovTech, 16-17 Jul 2026 |
+| CNB islandwide anti-drug operation (12-17 Jul) | 100 arrested across 8 estates; ~859g cannabis, 120g heroin, 85g Ice, 3g Ecstasy, 2 Erimin-5 seized — enough for 228 abusers/week | CNB, 17 Jul 2026 |
+| Bangladeshi work-permit cancellations (extremist posts) | 2 repatriated (Tayani Md Risad, 25; Islam Sahedul, 37); no intent to attack/engage in terrorism found in Singapore | ISD, 17 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -105,3 +110,11 @@
 | Canada wildfires / US air-quality alerts | 850+ active fires; alerts across 17 US states; Duluth AQI 902 | 16 Jul 2026 |
 | Uganda Ebola outbreak | 20 confirmed cases, 2 deaths; last patient discharged 16 Jul; 42-day countdown to declare outbreak over | Uganda MoH, 16 Jul 2026 |
 | DRC Ebola outbreak (updated) | 2,011 confirmed cases, 754 deaths; Ituri province 1,808 cases/631 deaths; 80% of new cases outside known contact chains | WHO, 14 Jul 2026 |
+| Iran casualties (cumulative, current campaign) | 38 killed (incl. 3 women, 1 child), 400+ injured, 47 hospitalised; separately 7 killed in 17 Jul Bandar Khamir bridge strikes alone | Iran Health Ministry/IRNA, 17 Jul 2026 |
+| Brent/WTI crude, 17 Jul | Brent ~$85/barrel (+0.9%), WTI ~$79.80/barrel (+1%); both ~+12% for the week — one-month high | 17 Jul 2026 (Asian trading) |
+| Hormuz crossings | 8 confirmed crossings 16 Jul — lowest in 3 weeks; 7 of 8 via Iranian-controlled route, not the US-backed corridor | Kpler, 16 Jul 2026 |
+| Kuwait desalination/power plant strike | Fire + damage to "large number" of power-generation units; ~90% of Kuwait's drinking water from desalination | Kuwait EWA Ministry, 17 Jul 2026 |
+| Iran retaliation footprint, 17 Jul | 6 countries hit in one night: Jordan, Kuwait, Bahrain, Qatar, Oman, Syria — widest single-night spread of the war | Wire reports, 17 Jul 2026 |
+| Canada wildfires (updated) | 896 active fires; 100M+ people across 18 US states + DC under air-quality alerts | 17 Jul 2026 |
+| Trump declassified-documents claim | Alleges China acquired 220 million US voter files since the 2020 election cycle; no evidence provided that votes/outcome were altered | Trump primetime address, 16 Jul 2026 |
+| 7.3-magnitude earthquake, Mexico-Guatemala border | Tsunami threat issued then lifted ~3hrs later; no reported casualties or major damage | USGS/wire reports, 17 Jul 2026 |
