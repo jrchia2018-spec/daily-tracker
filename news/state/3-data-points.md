@@ -57,6 +57,8 @@
 | GovTech restructuring, phase 1 | 93 of 305 assessed officers retrenched (7-9% of workforce over 2 yrs); 102 retained, 110 in reskilling apprenticeships | GovTech, 16-17 Jul 2026 |
 | CNB islandwide anti-drug operation (12-17 Jul) | 100 arrested across 8 estates; ~859g cannabis, 120g heroin, 85g Ice, 3g Ecstasy, 2 Erimin-5 seized — enough for 228 abusers/week | CNB, 17 Jul 2026 |
 | Bangladeshi work-permit cancellations (extremist posts) | 2 repatriated (Tayani Md Risad, 25; Islam Sahedul, 37); no intent to attack/engage in terrorism found in Singapore | ISD, 17 Jul 2026 |
+| DBS/POSB cost-of-living support package | S$10m total, phase 1 = $3 off eggs + $3 off rice every Sat (18 Jul-29 Aug) at Sheng Siong/Giant, no min spend; phase 2 = S$3 PayLah! cashback from Sep (details tbc) | DBS, 18 Jul 2026 |
+| GemBet illegal World Cup betting case | 3 Singapore shell firms (incorporated Mar-May 2026) used to funnel PayNow/crypto deposits to Curaçao-based site; follows 6 Jul op (17 arrested, $720,000+ seized) | Straits Times, 18 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -118,3 +120,7 @@
 | Canada wildfires (updated) | 896 active fires; 100M+ people across 18 US states + DC under air-quality alerts | 17 Jul 2026 |
 | Trump declassified-documents claim | Alleges China acquired 220 million US voter files since the 2020 election cycle; no evidence provided that votes/outcome were altered | Trump primetime address, 16 Jul 2026 |
 | 7.3-magnitude earthquake, Mexico-Guatemala border | Tsunami threat issued then lifted ~3hrs later; no reported casualties or major damage | USGS/wire reports, 17 Jul 2026 |
+| US military deaths, Jordan strike (18 Jul) | 2 killed, 1 missing, 4 medevac'd (later discharged) — first US combat deaths since Apr truce; cumulative US toll now 16 | CENTCOM, 18 Jul 2026 |
+| Iran casualties (cumulative since 6 Jul) | 50 killed (5 women, 2 children), 500+ injured; 12 of the deaths in the latest 24h; 28 surgeries, 460 discharged, 37 hospitalised | Iran Health Ministry via PressTV, 18 Jul 2026 |
+| Brent crude | Above $87/barrel, highest since June; +14%+ for the week | Wire reports, 18 Jul 2026 |
+| CENTCOM strikes, 18 Jul (eighth night) | First fighter-jet use this round; reached ~650km inland to Yazd, central Iran | Wire reports, 18 Jul 2026 |
