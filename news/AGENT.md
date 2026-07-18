@@ -17,6 +17,15 @@ TZ=Asia/Singapore date -d "yesterday" +"%Y-%m-%d %A" # coverage window start day
 
 Coverage window: **yesterday 07:00 SGT → today 07:00 SGT** (exactly 24 hours). A previous manual run hallucinated "7 July", called a Sunday "Saturday", and used a 48-hour window — this rule exists because of that.
 
+**The session context's own "current date" hint can be WRONG — it has disagreed with the shell output by a day on multiple runs (16–18 Jul 2026).** The shell output is the only truth. State the computed date explicitly before proceeding, and never let any other source of "today" override it.
+
+### Git reconciliation (when the container starts on a `main-xxxxx` branch)
+
+- Fetch `origin main` **by itself**: `git fetch origin main`. Never combine it with a designated branch that may not exist on the remote — a multi-ref fetch aborts atomically and leaves stale tracking refs (this produced a phantom "3 stranded reports" scare on 15 Jul 2026).
+- Judge what is published ONLY by `git ls-remote origin main`, never by local tracking refs.
+- If `git push origin main` prints "Everything up-to-date", **nothing was recovered — the commit was already published.** Do not describe it as a recovery.
+- **Recovering a prior day's stranded report NEVER completes today's run.** The 16 Jul 2026 run "recovered" the already-published 15 Jul report, mislabelled it "today's report", and exited without researching 16 Jul at all — that day's briefing was silently lost and the run believed it had succeeded. After any reconciliation, return to the shell-computed date from step 0 and run the FULL cycle (research → write → publish) for TODAY.
+
 ## 1. Read state
 
 Read every file in `news/state/` (sections 1–9). Sections 1, 2, 9 are your task, format rules, and standing instructions. Sections 3–5 are current data, the dominant arc, and open threads. Sections 7–8 are the used word lists.
@@ -24,7 +33,7 @@ Read every file in `news/state/` (sections 1–9). Sections 1, 2, 9 are your tas
 ## 2. Already-published and gap check
 
 Read the `date` field of `news/latest.json`:
-- **If it equals today's date, stop immediately and publish nothing** — another scheduler already ran today. This keeps cloud and local schedules safe to run side by side.
+- **If it equals today's date (today = the shell-computed date from step 0, never the session's claimed date), stop immediately and publish nothing** — another scheduler already ran today. This keeps cloud and local schedules safe to run side by side.
 - If it is more than 1 day before today, set a `gapNote` at the top of the report flagging the gap, and carry forward significant intervening developments of the dominant arc in that story's summary. **Do not backfill missed reports.**
 
 ## 3. Research
@@ -85,10 +94,10 @@ If pushing `main` is rejected, fall back to the built-in GitHub tools if availab
 
 If every publish path fails: do NOT fabricate success — state clearly in your final message that the report was generated but could not be published, and include the full report content in the message so it isn't lost. Never leave state files updated locally but unpublished.
 
-GitHub Pages redeploys automatically (~1 min). The app's News tab fetches `news/latest.json` fresh on every view.
+GitHub Pages redeploys automatically (~1 min). Since 18 Jul 2026 the app's News tab fetches per-date files (`news/reports/<YYYY-MM-DD>.json`) for today, yesterday and the day before; it no longer reads `latest.json`. **Keep writing `latest.json` anyway** — it is the idempotency check in step 2.
 
 ## Failure handling
 
-- If web search is entirely unavailable, do not publish a fabricated report. Publish nothing; the app will show yesterday's report with a stale-date notice, and the next successful run's gap check handles recovery.
+- If web search is entirely unavailable, do not publish a fabricated report. Publish nothing; the app shows an explicit "no briefing this day" card for the missed date, and the next successful run's gap check handles recovery.
 - If Singapore sources are unreachable but global search works, run with fewer/no SG stories and say so in `gapNote`.
 - Never invent figures. A data point without a source and date does not go into section 3.
