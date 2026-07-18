@@ -204,6 +204,7 @@ function renderHome() {
         ${macroBar('Fat', tot.fat, t.fat, 'var(--teal)')}
         ${macroBar('Fibre', tot.fibre, t.fibre, 'var(--accent2)')}
         ${macroBar('Sodium', tot.sodium, t.sodium, tot.sodium > t.sodium ? 'var(--red)' : 'var(--accent)', 'mg')}
+        ${macroBar('Water', waterFor(today), t.water, 'var(--teal)', 'ml')}
       </div>
     </div>
     <div class="row between" style="margin-top:14px" >
@@ -1023,7 +1024,7 @@ function weekReview(keys) {
   const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
   const waters = keys.map(k => waterFor(k)).filter(w => w > 0);
   return {
-    waterAvg: waters.length ? Math.round(waters.reduce((a, b) => a + b) / waters.length) : null,
+    waterDays: waters.length,
     waterHit: waters.filter(w => w >= t.water).length,
     sleepAvg: sleeps.length ? Math.round(sleeps.reduce((a, b) => a + b) / sleeps.length) : null,
     sleepMin: sleeps.length ? Math.min(...sleeps) : null,
@@ -1061,15 +1062,19 @@ function weeklyReviewCard() {
       <div class="track"><div class="fill" style="width:${clamp((val / max) * 100, 0, 100)}%;background:${val > max ? 'var(--red)' : goodColor}"></div></div>
     </div>`;
 
-  const dayDots = keys.map(k => {
-    const logged = k <= today && mealsFor(k).length > 0;
-    const hit = logged && mealTotals(k).protein >= t.protein;
+  // Tick row: ✓ when the day's value meets the target, otherwise the deficit
+  // (how far short). Days with nothing tracked yet stay blank.
+  const tickRow = (valueOn, target, fmtMiss) => keys.map(k => {
+    const val = k <= today ? valueOn(k) : null;
+    const hit = val != null && val >= target;
     return `
     <div class="day-cell ${k === today ? 'today' : ''} ${hit ? 'hit' : ''}">
-      <div class="dot">${hit ? '✓' : logged ? '<span class="muted" style="font-size:11px">·</span>' : ''}</div>
+      <div class="dot">${hit ? '✓' : val != null ? `<span class="miss">-${fmtMiss(target - val)}</span>` : ''}</div>
       <div class="dname">${fmtDate(k).slice(0, 3)}</div>
     </div>`;
   }).join('');
+  const proteinDots = tickRow(k => (mealsFor(k).length ? mealTotals(k).protein : null), t.protein, d => r0(d));
+  const waterDots = tickRow(k => waterFor(k) || null, t.water, d => r1(d / 1000));
 
   const tile = (val, lbl, color) => `
     <div><div class="tval"${color ? ` style="color:${color}"` : ''}>${val}</div><div class="tlabel">${lbl}</div></div>`;
@@ -1091,11 +1096,16 @@ function weeklyReviewCard() {
       ${meter('Avg protein', wr.avgProtein, t.protein, 'g', 'var(--green)')}
     </div>
     <div class="row between" style="font-size:12.5px;margin-bottom:4px">
-      <span class="muted">Protein target hit</span>
-      <span><b>${wr.proteinHit}</b><span class="muted"> / ${wr.loggedDays} logged day${wr.loggedDays === 1 ? '' : 's'}</span></span>
+      <span class="muted">Protein ≥ ${t.protein}g <span style="opacity:.7">(misses show g short)</span></span>
+      <span><b>${wr.proteinHit}</b><span class="muted"> / ${wr.loggedDays} logged</span></span>
     </div>
-    <div class="wr-days">${dayDots}</div>`
+    <div class="wr-days">${proteinDots}</div>`
     : '<p class="small muted" style="margin-bottom:14px">No meals logged this week.</p>'}
+    <div class="row between" style="font-size:12.5px;margin-bottom:4px">
+      <span class="muted">Water ≥ ${fmtWater(t.water)} <span style="opacity:.7">(misses show L short)</span></span>
+      <span><b>${wr.waterHit}</b><span class="muted"> / ${wr.waterDays} tracked</span></span>
+    </div>
+    <div class="wr-days">${waterDots}</div>
     <div class="grid3" style="text-align:center;border-top:1px solid var(--line);padding-top:12px">
       ${tile(r1(wr.km), wr.runN ? `km · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : 'run km')}
       ${tile(wr.gymN, wr.ppl || 'gym sessions')}
@@ -1113,9 +1123,6 @@ function weeklyReviewCard() {
       ${wr.activeAvg == null
         ? tile('—', 'avg active kcal', 'var(--muted)')
         : tile(wr.activeAvg, 'avg active kcal')}
-      ${wr.waterAvg == null
-        ? tile('—', 'avg water', 'var(--muted)')
-        : tile(fmtWater(wr.waterAvg), `water · ${wr.waterHit}d ≥ ${fmtWater(t.water)}`, wr.waterAvg >= t.water ? 'var(--green)' : undefined)}
       ${tile(`${wr.checkins}/7`, 'check-ins')}
     </div>
   </div>`;
