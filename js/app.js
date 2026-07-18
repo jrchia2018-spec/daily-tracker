@@ -166,9 +166,11 @@ function renderHome() {
   const t = targets();
   const tot = mealTotals(today);
   const burned = burnedOn(today);
-  const remaining = t.calories - r0(tot.kcal) + burned;
+  // Burned kcal are shown for information only — the budget is the target
+  // alone (activity is already baked into TDEE via the activity factor).
+  const remaining = t.calories - r0(tot.kcal);
   const pct = clamp((tot.kcal / t.calories) * 100, 0, 100);
-  const over = tot.kcal > t.calories + burned;
+  const over = tot.kcal > t.calories;
   const week = weekKeys();
   const weekKm = state.runs.filter(r => week.includes(r.date)).reduce((s, r) => s + r.km, 0);
   const weekSessions = state.gym.filter(g => week.includes(g.date)).length;
@@ -217,8 +219,7 @@ function renderHome() {
     const yW = wellnessFor(yesterday);
     const yTot = mealTotals(yesterday);
     const checkedIn = (sleep != null || sleepMins != null) && yW.activeKcal != null;
-    const yNet = yW.activeKcal != null && yTot.kcal
-      ? r0(yTot.kcal - (t.calories + yW.activeKcal)) : null;
+    const yNet = yTot.kcal ? r0(yTot.kcal - t.calories) : null;
     return `
   <div class="card">
     <div class="row between">
@@ -229,7 +230,7 @@ function renderHome() {
       <span class="small muted">😴 Sleep <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
       <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= 450 ? 'var(--green)' : sleepMins < 360 ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
       <span class="small muted">🔥 Yesterday's burn <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
-      ${yNet != null ? `<span class="small muted">Yesterday net <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
+      ${yNet != null ? `<span class="small muted">Yesterday vs target <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
     </div>
     <div class="row between" style="margin-top:12px">
       <span class="small muted">💧 <b style="color:${waterFor(today) >= t.water ? 'var(--green)' : 'var(--text)'}">${fmtWater(waterFor(today))}</b><span class="muted"> / ${fmtWater(t.water)}</span></span>
@@ -276,7 +277,7 @@ function renderHome() {
     render();
   });
   view.querySelector('#home-news').addEventListener('click', () => { tab = 'news'; render(); });
-  loadNews()
+  loadLatestReport()
     .then(rep => {
       const badge = view.querySelector('#home-news-badge');
       const line = view.querySelector('#home-news-line');
@@ -287,8 +288,10 @@ function renderHome() {
       line.textContent = top || 'Open the briefing →';
     })
     .catch(() => {
+      const badge = view.querySelector('#home-news-badge');
       const line = view.querySelector('#home-news-line');
-      if (line) line.textContent = 'Briefing unavailable offline.';
+      if (badge) badge.textContent = '—';
+      if (line) line.textContent = 'No briefing in the last 3 days.';
     });
   view.querySelector('#q-meal').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
   view.querySelector('#q-run').addEventListener('click', openRunModal);
@@ -341,8 +344,8 @@ function daySuggestions(today) {
   } else if (tot.sodium > 0.75 * t.sodium && tot.kcal < 0.75 * t.calories) {
     out.push(`🧂 Sodium at ${r0(tot.sodium)}mg with meals still to come — pick a lighter-salt option next.`);
   }
-  if (tot.kcal > t.calories + burnedOn(today)) {
-    out.push(`⚖️ Over today's energy target — balance across the week rather than restricting hard tonight.`);
+  if (tot.kcal > t.calories) {
+    out.push(`⚖️ Over today's calorie target — balance across the week rather than restricting hard tonight.`);
   }
   if (tot.kcal > 0.6 * t.calories && tot.protein < 0.6 * t.protein) {
     out.push(`🍗 Protein lagging (${r0(tot.protein)}g of ${t.protein}g) — make it the anchor of your next meal.`);
@@ -671,7 +674,7 @@ function openPasteModal() {
   const m = openModal(`
     <h2>Paste from Claude</h2>
     <p class="small muted" style="margin-bottom:10px">One item per line:<br><code>name | kcal | protein | carbs | fat | fibre | sodium</code><br>Markdown tables paste fine too. Fibre/sodium optional.</p>
-    <textarea id="paste-in" rows="6" placeholder="Chicken katsu curry | 850 | 32 | 105 | 33 | 5 | 1600"></textarea>
+    <textarea id="paste-in" rows="14" style="min-height:38vh" placeholder="Chicken katsu curry | 850 | 32 | 105 | 33 | 5 | 1600"></textarea>
     <div id="paste-preview" class="small muted" style="margin:10px 0;min-height:18px"></div>
     <button class="btn primary block" id="paste-add" disabled>Add to log</button>
   `);
@@ -1341,50 +1344,85 @@ function weightChart() {
 
 // ---------- news ----------
 
-let newsCache = null;
-let newsFetchedAt = 0;
+// Per-date report cache. A published report never changes, so a hit lives
+// for the whole session; a miss (not yet published, or offline) is retried
+// after a minute. Reports are fetched by their own dated file — never a
+// shared "latest" pointer — so a briefing can't render under the wrong day.
+const newsReports = new Map();
+let newsSel = null; // date selected in the News tab
 
-async function loadNews() {
-  if (newsCache && Date.now() - newsFetchedAt < 5 * 60 * 1000) return newsCache;
-  const res = await fetch('news/latest.json', { cache: 'no-store' });
-  if (!res.ok) throw new Error(`News fetch failed (${res.status})`);
-  newsCache = await res.json();
-  newsFetchedAt = Date.now();
-  return newsCache;
+async function loadReport(date) {
+  const hit = newsReports.get(date);
+  if (hit && (hit.rep || Date.now() - hit.at < 60 * 1000)) return hit.rep;
+  let rep = null;
+  try {
+    const res = await fetch(`news/reports/${date}.json`, { cache: 'no-store' });
+    if (res.ok) rep = await res.json();
+  } catch { /* offline and not in the service-worker cache — treat as missing */ }
+  newsReports.set(date, { rep, at: Date.now() });
+  return rep;
+}
+
+function newsDays() {
+  const today = dateKey();
+  return [
+    { date: today, label: 'Today' },
+    { date: addDays(today, -1), label: 'Yesterday' },
+    { date: addDays(today, -2), label: fmtDate(addDays(today, -2)) },
+  ];
+}
+
+// Newest of the last three daily reports — for the home-screen card.
+async function loadLatestReport() {
+  for (const d of newsDays()) {
+    const rep = await loadReport(d.date);
+    if (rep) return rep;
+  }
+  throw new Error('No report in the last 3 days');
 }
 
 function renderNews() {
+  const days = newsDays();
+  if (!days.some(d => d.date === newsSel)) newsSel = days[0].date;
   view.innerHTML = `
   <h1 style="margin-bottom:14px">News</h1>
+  <div class="subtabs">
+    ${days.map(d => `<button data-nd="${d.date}" class="${d.date === newsSel ? 'active' : ''}">${d.label}</button>`).join('')}
+  </div>
   <div id="news-body">
     <div class="card center" style="padding:38px 20px">
       <div style="font-size:40px;margin-bottom:10px">📰</div>
-      <p class="muted small">Loading today's briefing…</p>
+      <p class="muted small">Loading briefing…</p>
     </div>
   </div>`;
+  for (const b of view.querySelectorAll('[data-nd]')) {
+    b.addEventListener('click', () => { newsSel = b.dataset.nd; render(); });
+  }
   const body = view.querySelector('#news-body');
-  loadNews()
-    .then(rep => { if (tab === 'news') body.innerHTML = newsHtml(rep); })
-    .catch(() => {
-      if (tab !== 'news') return;
-      body.innerHTML = newsCache ? newsHtml(newsCache) : `
-      <div class="card center" style="padding:38px 20px">
-        <div style="font-size:40px;margin-bottom:10px">📵</div>
-        <h2>Briefing unavailable</h2>
-        <p class="muted small" style="max-width:300px;margin:6px auto 0">Couldn't load the report — check your connection and reopen this tab.</p>
-      </div>`;
-    });
+  const date = newsSel;
+  loadReport(date).then(rep => {
+    if (tab !== 'news' || newsSel !== date || !body.isConnected) return;
+    body.innerHTML = rep ? newsHtml(rep) : missingNewsHtml(date);
+  });
+}
+
+function missingNewsHtml(date) {
+  const isToday = date === dateKey();
+  return `
+  <div class="card center" style="padding:38px 20px">
+    <div style="font-size:40px;margin-bottom:10px">${isToday ? '⏳' : '📭'}</div>
+    <h2>${isToday ? 'Not published yet' : 'No briefing this day'}</h2>
+    <p class="muted small" style="max-width:300px;margin:6px auto 0">${
+      isToday
+        ? "Today's briefing usually lands around 7:15am. If it's well past that, the morning run may have been missed — yesterday's report is one tap away."
+        : `No report was published on ${esc(fmtDate(date))} — that morning's run was missed.`}</p>
+  </div>`;
 }
 
 function newsHtml(rep) {
-  const today = dateKey();
-  const stale = rep.date !== today
-    ? `<div class="news-note">This report is from <b>${esc(fmtDate(rep.date))}</b> — today's briefing hasn't been published yet.</div>`
-    : '';
   const gap = rep.gapNote ? `<div class="news-note">⚠️ ${esc(rep.gapNote)}</div>` : '';
   const w = rep.word || {};
   return `
-  ${stale}
   <div class="card">
     <h2 style="margin:0">Morning report — ${esc(fmtDate(rep.date))}</h2>
     <p class="small muted" style="margin-top:4px">${esc(rep.coverage?.label || '')}</p>
