@@ -237,6 +237,24 @@ function renderHome() {
   </div>`;
   })()}
 
+  ${(() => {
+    const cu = catchupDays();
+    if (!cu.length) return '';
+    return `
+  <div class="card" style="border-color:rgba(255,176,84,.45)">
+    <h2 style="margin-bottom:2px">✍️ Catch-up</h2>
+    <p class="small muted" style="margin-bottom:2px">These days look under-logged — tap one to backfill, or ✕ if that's how the day really went.</p>
+    ${cu.map(c => `
+    <div class="item" data-cu="${c.date}" style="cursor:pointer">
+      <div>
+        <div class="title">${fmtDate(c.date)}</div>
+        <div class="sub">${c.parts.join(' · ')}</div>
+      </div>
+      <button class="btn danger" data-cudel="${c.date}" title="Dismiss">✕</button>
+    </div>`).join('')}
+  </div>`;
+  })()}
+
   <div class="card">
     <h2>This week</h2>
     <div class="week-strip">${week.map(k => dayCell(k, today)).join('')}</div>
@@ -288,6 +306,20 @@ function renderHome() {
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
   view.querySelector('#q-weight').addEventListener('click', openWeightModal);
   view.querySelector('#q-checkin').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
+  for (const it of view.querySelectorAll('[data-cu]')) {
+    it.addEventListener('click', () => { tab = 'meals'; mealDate = it.dataset.cu; render(); });
+  }
+  for (const b of view.querySelectorAll('[data-cudel]')) {
+    b.addEventListener('click', e => {
+      e.stopPropagation();
+      (state.catchupDismissed || (state.catchupDismissed = {}))[b.dataset.cudel] = true;
+      // Prune dismissals older than the 3-day window so the map stays tiny.
+      const cutoff = addDays(dateKey(), -7);
+      for (const k of Object.keys(state.catchupDismissed)) if (k < cutoff) delete state.catchupDismissed[k];
+      save();
+      render();
+    });
+  }
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
   });
@@ -346,6 +378,35 @@ function daySuggestions(today) {
   }
   if (!out.length && tot.kcal > 0) out.push('✅ All on track — nothing to fix today.');
   return out.slice(0, 3);
+}
+
+// Catch-up reminders: the last 3 days (excluding today, which the live
+// suggestions cover) where logging looks forgotten — nothing recorded, or
+// suspiciously little (kcal/water well under target). Days before the very
+// first log are ignored, and a dismissed day stays dismissed.
+function catchupDays() {
+  const t = targets();
+  const today = dateKey();
+  const dismissed = state.catchupDismissed || {};
+  const logged = [...Object.keys(state.meals), ...Object.keys(state.water), ...Object.keys(state.wellness)];
+  if (!logged.length) return [];
+  const earliest = logged.sort()[0];
+  const out = [];
+  for (let i = 1; i <= 3; i++) {
+    const d = addDays(today, -i);
+    if (d < earliest || dismissed[d]) continue;
+    const kcal = mealTotals(d).kcal;
+    const water = waterFor(d);
+    const w = wellnessFor(d);
+    const parts = [];
+    if (!mealsFor(d).length) parts.push('no food logged');
+    else if (kcal < 0.6 * t.calories) parts.push(`food looks partial (${r0(kcal)} of ${t.calories} kcal)`);
+    if (!water) parts.push('no water');
+    else if (water < 0.6 * t.water) parts.push(`water only ${fmtWater(water)}`);
+    if (w.sleep == null && w.sleepMins == null && w.activeKcal == null) parts.push('no check-in');
+    if (parts.length) out.push({ date: d, parts });
+  }
+  return out;
 }
 
 function openWaterModal(day) {

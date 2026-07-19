@@ -14,6 +14,7 @@ function defaults() {
     water: {},            // { 'YYYY-MM-DD': ml }
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment
+    catchupDismissed: {}, // { 'YYYY-MM-DD': true } — catch-up reminders the user waved off
   };
 }
 
