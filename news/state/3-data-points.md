@@ -59,6 +59,10 @@
 | Bangladeshi work-permit cancellations (extremist posts) | 2 repatriated (Tayani Md Risad, 25; Islam Sahedul, 37); no intent to attack/engage in terrorism found in Singapore | ISD, 17 Jul 2026 |
 | DBS/POSB cost-of-living support package | S$10m total, phase 1 = $3 off eggs + $3 off rice every Sat (18 Jul-29 Aug) at Sheng Siong/Giant, no min spend; phase 2 = S$3 PayLah! cashback from Sep (details tbc) | DBS, 18 Jul 2026 |
 | GemBet illegal World Cup betting case | 3 Singapore shell firms (incorporated Mar-May 2026) used to funnel PayNow/crypto deposits to Curaçao-based site; follows 6 Jul op (17 arrested, $720,000+ seized) | Straits Times, 18 Jul 2026 |
+| Outsourced PWM workers' minimum annual leave | Raised 7 → 10 days, phased from 2029; ~60% of outsourced workers (cleaning/security/landscape/lift-escalator/waste sectors, full-time residents aged 25-64) benefit | MOM, 19 Jul 2026 |
+| Woodlands Health THRIVE nursing-home pilot | ~300 residents; unplanned hospitalisations and A&E visits both down ~1/3 | Woodlands Health, 19 Jul 2026 |
+| US cyclospora outbreak (Taylor Farms iceberg lettuce) | 5,000+ suspected cases in Michigan alone; recall spans 27 US states; largest recorded Cyclospora outbreak in US history per health officials | Michigan health dept./CDC/FDA, 17-18 Jul 2026 |
+| Tate brothers' UK extradition charges | Andrew Tate: 42 charges (incl. rape, trafficking, indecent images of a child); Tristan Tate: 17 charges (incl. sexual assault, rape, trafficking); 7 alleged UK victims, 2010-2017 | US DOJ/UK CPS, 18-19 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -124,3 +128,6 @@
 | Iran casualties (cumulative since 6 Jul) | 50 killed (5 women, 2 children), 500+ injured; 12 of the deaths in the latest 24h; 28 surgeries, 460 discharged, 37 hospitalised | Iran Health Ministry via PressTV, 18 Jul 2026 |
 | Brent crude | Above $87/barrel, highest since June; +14%+ for the week | Wire reports, 18 Jul 2026 |
 | CENTCOM strikes, 18 Jul (eighth night) | First fighter-jet use this round; reached ~650km inland to Yazd, central Iran | Wire reports, 18 Jul 2026 |
+| US military deaths, Iraq controlled detonation (19 Jul) | 1 killed, 1 injured, during controlled detonation of downed Iranian drone ordnance; distinct from the 18 Jul Jordan strike; confirmed cumulative US toll now 17 (missing Jordan soldier's recovered remains still unidentified, not yet added) | CENTCOM, 19 Jul 2026 |
+| Russia missile/drone barrage on Kyiv (19 Jul) | 41 missiles (25 ballistic, 10 Zircon hypersonic, 6 other) + 125 drones; ~half of missiles and 108/125 drones intercepted; 1 killed, 16 injured; largest of the war per Ukraine's acting FM | Ukrainian officials, 19 Jul 2026 |
+| Golden Leo cargo ship strike (Black Sea, 19 Jul) | Turkish-owned, Guinea-Bissau-flagged grain carrier hit by 3 Russian cruise missiles; 5 of 13 crew killed, 2 of 8 survivors hospitalised | Ukrainian navy, 19 Jul 2026 |
