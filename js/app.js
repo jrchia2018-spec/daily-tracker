@@ -212,8 +212,6 @@ function renderHome() {
       <span class="small muted">Burned <b style="color:var(--text)">${burned}</b></span>
       <span class="small muted">Target <b style="color:var(--text)">${t.calories}</b></span>
     </div>
-  </div>
-
   ${(() => {
     const { sleep, sleepMins } = wellnessFor(today);
     const yesterday = addDays(today, -1);
@@ -222,20 +220,20 @@ function renderHome() {
     const checkedIn = (sleep != null || sleepMins != null) && yW.activeKcal != null;
     const yNet = yTot.kcal ? r0(yTot.kcal - t.calories) : null;
     return `
-  <div class="card">
-    <div class="row between">
-      <h2 style="margin:0">Daily summary</h2>
-      <button class="btn small ${checkedIn ? '' : 'primary'}" id="q-checkin">${checkedIn ? 'Edit in Meals' : '🌅 Check in'}</button>
-    </div>
-    <div class="row" style="gap:16px;margin:10px 0 4px">
-      <span class="small muted">😴 Sleep <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
-      <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= 450 ? 'var(--green)' : sleepMins < 360 ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
-      <span class="small muted">🔥 Yesterday's burn <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
-      ${yNet != null ? `<span class="small muted">Yesterday vs target <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
-    </div>
-    ${daySuggestions(today).map(s => `<p class="small" style="margin:8px 0 0">${s}</p>`).join('')}
-  </div>`;
+    <div style="border-top:1px solid var(--line);margin-top:12px;padding-top:12px">
+      <div class="row between">
+        <div class="row" style="gap:14px;flex-wrap:wrap">
+          <span class="small muted">😴 <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
+          <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= 450 ? 'var(--green)' : sleepMins < 360 ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
+          <span class="small muted">🔥 Yday <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
+          ${yNet != null ? `<span class="small muted">Yday vs target <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
+        </div>
+        <button class="btn small ${checkedIn ? '' : 'primary'}" id="q-checkin">${checkedIn ? 'Edit' : '🌅 Check in'}</button>
+      </div>
+      ${daySuggestions(today).map(s => `<p class="small" style="margin:8px 0 0">${s}</p>`).join('')}
+    </div>`;
   })()}
+  </div>
 
   ${(() => {
     const cu = catchupDays();
