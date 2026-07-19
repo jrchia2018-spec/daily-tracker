@@ -225,24 +225,13 @@ function renderHome() {
   <div class="card">
     <div class="row between">
       <h2 style="margin:0">Daily summary</h2>
-      <button class="btn small ${checkedIn ? '' : 'primary'}" id="q-checkin">${checkedIn ? 'Edit check-in' : '🌅 Morning check-in'}</button>
+      <button class="btn small ${checkedIn ? '' : 'primary'}" id="q-checkin">${checkedIn ? 'Edit in Meals' : '🌅 Check in'}</button>
     </div>
     <div class="row" style="gap:16px;margin:10px 0 4px">
       <span class="small muted">😴 Sleep <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
       <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= 450 ? 'var(--green)' : sleepMins < 360 ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
       <span class="small muted">🔥 Yesterday's burn <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
       ${yNet != null ? `<span class="small muted">Yesterday vs target <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
-    </div>
-    <div class="row between" style="margin-top:12px">
-      <span class="small muted">💧 <b style="color:${waterFor(today) >= t.water ? 'var(--green)' : 'var(--text)'}">${fmtWater(waterFor(today))}</b><span class="muted"> / ${fmtWater(t.water)}</span></span>
-      <div class="row" style="gap:6px">
-        <button class="btn small" id="w-cup">+1 cup</button>
-        <button class="btn small" id="w-500">+500ml</button>
-        <button class="btn small" id="w-custom">+…</button>
-      </div>
-    </div>
-    <div class="macro-bar" style="margin-top:6px">
-      <div class="track"><div class="fill" style="width:${clamp((waterFor(today) / t.water) * 100, 0, 100)}%;background:var(--teal)"></div></div>
     </div>
     ${daySuggestions(today).map(s => `<p class="small" style="margin:8px 0 0">${s}</p>`).join('')}
   </div>`;
@@ -298,10 +287,7 @@ function renderHome() {
   view.querySelector('#q-run').addEventListener('click', openRunModal);
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
   view.querySelector('#q-weight').addEventListener('click', openWeightModal);
-  view.querySelector('#q-checkin').addEventListener('click', openCheckinModal);
-  view.querySelector('#w-cup').addEventListener('click', () => { addWater(today, 250); render(); toast(`💧 +1 cup — ${fmtWater(waterFor(today))} today`); });
-  view.querySelector('#w-500').addEventListener('click', () => { addWater(today, 500); render(); toast(`💧 +500ml — ${fmtWater(waterFor(today))} today`); });
-  view.querySelector('#w-custom').addEventListener('click', () => openWaterModal(today));
+  view.querySelector('#q-checkin').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
   });
@@ -365,7 +351,7 @@ function daySuggestions(today) {
 function openWaterModal(day) {
   const m = openModal(`
     <h2>Log water</h2>
-    <p class="small muted" style="margin-bottom:10px">Today so far: <b>${fmtWater(waterFor(day))}</b> of ${fmtWater(targets().water)}. Negative amounts subtract (mis-taps happen).</p>
+    <p class="small muted" style="margin-bottom:10px">${day === dateKey() ? 'Today' : fmtDate(day)} so far: <b>${fmtWater(waterFor(day))}</b> of ${fmtWater(targets().water)}. Negative amounts subtract (mis-taps happen).</p>
     <label class="field"><span>Amount (ml)</span>
       <input id="wa-ml" type="number" inputmode="numeric" placeholder="e.g. 750"></label>
     <button class="btn primary block" id="wa-save">Add</button>
@@ -377,45 +363,6 @@ function openWaterModal(day) {
     closeModal();
     render();
     toast(`💧 ${fmtWater(waterFor(day))} today`);
-  });
-}
-
-function openCheckinModal() {
-  const today = dateKey();
-  const yesterday = addDays(today, -1);
-  const wToday = wellnessFor(today);
-  const wYest = wellnessFor(yesterday);
-  const m = openModal(`
-    <h2>Morning check-in</h2>
-    <label class="field"><span>Sleep score, last night (0–100)</span>
-      <input id="ci-sleep" type="number" inputmode="numeric" min="0" max="100" value="${wToday.sleep ?? ''}" placeholder="e.g. 78"></label>
-    <label class="field"><span>Sleep time, last night (e.g. 7:41)</span>
-      <input id="ci-time" value="${wToday.sleepMins != null ? fmtSleep(wToday.sleepMins) : ''}" placeholder="e.g. 7:41"></label>
-    <label class="field"><span>Active calories, yesterday (from watch)</span>
-      <input id="ci-active" type="number" inputmode="numeric" value="${wYest.activeKcal ?? ''}" placeholder="e.g. 650"></label>
-    <p class="small muted" style="margin-bottom:12px">Yesterday's active calories replace the app's workout estimate for ${fmtDate(yesterday)}.</p>
-    <button class="btn primary block" id="ci-save">Save</button>
-  `);
-  m.querySelector('#ci-save').addEventListener('click', () => {
-    const sleep = m.querySelector('#ci-sleep').value;
-    const time = m.querySelector('#ci-time').value.trim();
-    const active = m.querySelector('#ci-active').value;
-    if (sleep === '' && time === '' && active === '') { toast('Enter at least one value'); return; }
-    const mins = time === '' ? undefined : parseSleepTime(time);
-    if (time !== '' && mins == null) { toast('Sleep time looks off — try 7:41 or 7.5'); return; }
-    if (sleep !== '') {
-      state.wellness[today] = { ...wellnessFor(today), sleep: clamp(Number(sleep), 0, 100) };
-    }
-    if (mins != null) {
-      state.wellness[today] = { ...wellnessFor(today), sleepMins: mins };
-    }
-    if (active !== '') {
-      state.wellness[yesterday] = { ...wellnessFor(yesterday), activeKcal: Math.max(0, Number(active)) };
-    }
-    save();
-    closeModal();
-    render();
-    toast('Checked in ☀️');
   });
 }
 
@@ -488,8 +435,39 @@ function renderMeals() {
     </div>
   </div>
 
+  ${(() => {
+    const w = wellnessFor(mealDate);
+    const water = waterFor(mealDate);
+    const empty = w.sleep == null && w.sleepMins == null && w.activeKcal == null;
+    return `
+  <div class="card">
+    <div class="row between">
+      <span class="small muted">💧 <b style="color:${water >= t.water ? 'var(--green)' : 'var(--text)'}">${fmtWater(water)}</b><span class="muted"> / ${fmtWater(t.water)}</span></span>
+      <div class="row" style="gap:6px">
+        <button class="btn small" id="mw-cup">+1 cup</button>
+        <button class="btn small" id="mw-500">+500ml</button>
+        <button class="btn small" id="mw-custom">+…</button>
+      </div>
+    </div>
+    <div class="macro-bar" style="margin-top:6px">
+      <div class="track"><div class="fill" style="width:${clamp((water / t.water) * 100, 0, 100)}%;background:var(--teal)"></div></div>
+    </div>
+    <details ${empty && mealDate === dateKey() ? 'open' : ''}>
+      <summary class="small" style="cursor:pointer;margin-top:10px;color:var(--accent);font-weight:600">🌅 Check-in — sleep &amp; active kcal${empty ? '' : ' <span class="muted">(saved ✓)</span>'}</summary>
+      <div class="grid3" style="margin-top:10px">
+        <label class="field"><span>Sleep score</span><input id="mw-sleep" type="number" inputmode="numeric" min="0" max="100" value="${w.sleep ?? ''}" placeholder="78"></label>
+        <label class="field"><span>Sleep time</span><input id="mw-time" value="${w.sleepMins != null ? fmtSleep(w.sleepMins) : ''}" placeholder="7:41"></label>
+        <label class="field"><span>Active kcal</span><input id="mw-active" type="number" inputmode="numeric" value="${w.activeKcal ?? ''}" placeholder="650"></label>
+      </div>
+      <p class="small muted" style="margin-bottom:8px">Everything on this card belongs to ${mealDate === dateKey() ? 'today' : fmtDate(mealDate)} — sleep is the night into it; log the watch's active-kcal total on the day it happened (‹ for yesterday's).</p>
+      <button class="btn small block" id="mw-save">Save check-in</button>
+    </details>
+  </div>`;
+  })()}
+
   <div class="card">
     <h2>Add food</h2>
+    <button class="btn primary block" id="food-paste" style="margin-bottom:12px;padding:15px 16px;font-size:15px">📋 Paste from Claude</button>
     <div class="search-box">
       <input id="food-q" type="search" placeholder="Start typing… e.g. salmon, rice, yogurt" autocomplete="off">
     </div>
@@ -501,7 +479,6 @@ function renderMeals() {
     </div>
     <div class="row" style="margin-top:8px">
       <button class="btn ghost small" id="food-manual">+ Enter manually</button>
-      <button class="btn ghost small" id="food-paste">📋 Paste from Claude</button>
     </div>
   </div>
 
@@ -522,6 +499,26 @@ function renderMeals() {
   view.querySelector('#d-next').addEventListener('click', () => { mealDate = addDays(mealDate, 1); render(); });
   view.querySelector('#food-manual').addEventListener('click', () => openFoodModal(null));
   view.querySelector('#food-paste').addEventListener('click', openPasteModal);
+
+  view.querySelector('#mw-cup').addEventListener('click', () => { addWater(mealDate, 250); render(); toast(`💧 ${fmtWater(waterFor(mealDate))}`); });
+  view.querySelector('#mw-500').addEventListener('click', () => { addWater(mealDate, 500); render(); toast(`💧 ${fmtWater(waterFor(mealDate))}`); });
+  view.querySelector('#mw-custom').addEventListener('click', () => openWaterModal(mealDate));
+  view.querySelector('#mw-save').addEventListener('click', () => {
+    const sleep = view.querySelector('#mw-sleep').value;
+    const time = view.querySelector('#mw-time').value.trim();
+    const active = view.querySelector('#mw-active').value;
+    const mins = time === '' ? null : parseSleepTime(time);
+    if (time !== '' && mins == null) { toast('Sleep time looks off — try 7:41 or 7.5'); return; }
+    // Cleared fields delete the stored value, so bad entries can be removed.
+    const w = { ...wellnessFor(mealDate) };
+    if (sleep !== '') w.sleep = clamp(Number(sleep), 0, 100); else delete w.sleep;
+    if (mins != null) w.sleepMins = mins; else delete w.sleepMins;
+    if (active !== '') w.activeKcal = Math.max(0, Number(active)); else delete w.activeKcal;
+    state.wellness[mealDate] = w;
+    save();
+    render();
+    toast('Check-in saved ☀️');
+  });
 
   view.querySelector('#qa-add').addEventListener('click', () => {
     const kcal = Number(view.querySelector('#qa-kcal').value);
@@ -1044,6 +1041,31 @@ function weekReview(keys) {
   };
 }
 
+// Seven-day intake chart for the weekly review: one bar per logged day
+// against a dashed target line; over-target days turn red.
+function weekKcalChart(keys, target) {
+  const today = dateKey();
+  const vals = keys.map(k => (k <= today && mealsFor(k).length ? mealTotals(k).kcal : null));
+  if (!vals.some(v => v != null)) return '';
+  const W = 460, H = 128, pad = 6, bw = W / 7, top = 18, base = H - 22;
+  const max = Math.max(target * 1.2, ...vals.filter(v => v != null));
+  const Y = v => base - (v / max) * (base - top);
+  const bars = keys.map((k, i) => {
+    const x = i * bw + pad, w = bw - pad * 2, v = vals[i];
+    const day = `<text class="axis" x="${x + w / 2}" y="${H - 8}" text-anchor="middle">${fmtDate(k).slice(0, 3)}</text>`;
+    if (v == null) return day;
+    return `
+      <rect class="bar" x="${x}" y="${r1(Y(v))}" width="${w}" height="${Math.max(r1(base - Y(v)), 1.5)}" rx="4" style="fill:${v > target ? 'var(--red)' : 'var(--accent)'}"/>
+      <text class="axis" x="${x + w / 2}" y="${r1(Y(v)) - 4}" text-anchor="middle">${r0(v)}</text>
+      ${day}`;
+  }).join('');
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+    <line class="goal" x1="0" y1="${r1(Y(target))}" x2="${W}" y2="${r1(Y(target))}"/>
+    <text class="axis" x="${W}" y="${r1(Y(target)) - 4}" text-anchor="end" fill="var(--green)">target ${target}</text>
+    ${bars}
+  </svg>`;
+}
+
 function weeklyReviewCard() {
   const keys = weekKeys(parseKey(addDays(dateKey(), reviewWeek * 7)));
   const wr = weekReview(keys);
@@ -1053,13 +1075,12 @@ function weeklyReviewCard() {
   const label = reviewWeek === 0 ? 'This week' : reviewWeek === -1 ? 'Last week' : range;
   const dKg = wr.weightDelta;
 
-  // Meter: the fill carries the state (red when over target); the value stays
-  // in text ink. Width caps at 100% so an overshoot reads by colour, not size.
-  const meter = (name, val, max, unit, goodColor) => `
+  // Meter: the fill carries the state; the value stays in text ink. Width
+  // caps at 100% so an overshoot reads by colour, not size.
+  const meter = (name, val, max, color, disp) => `
     <div class="macro-bar">
-      <div class="row"><span class="muted">${name}</span>
-        <span><b>${r0(val)}</b><span class="muted"> / ${max} ${unit}</span></span></div>
-      <div class="track"><div class="fill" style="width:${clamp((val / max) * 100, 0, 100)}%;background:${val > max ? 'var(--red)' : goodColor}"></div></div>
+      <div class="row"><span class="muted">${name}</span><span>${disp}</span></div>
+      <div class="track"><div class="fill" style="width:${clamp((val / max) * 100, 0, 100)}%;background:${color}"></div></div>
     </div>`;
 
   // Tick row: ✓ when the day's value meets the target, otherwise the deficit
@@ -1091,9 +1112,10 @@ function weeklyReviewCard() {
     </div>
     <p class="small muted" style="margin:4px 0 14px">${range}${wr.loggedDays ? ` · ${wr.loggedDays} day${wr.loggedDays === 1 ? '' : 's'} logged` : ''}</p>
     ${wr.loggedDays ? `
-    <div class="macro-bars" style="margin-bottom:14px">
-      ${meter('Avg calories', wr.avgKcal, t.calories, 'kcal', 'var(--accent)')}
-      ${meter('Avg protein', wr.avgProtein, t.protein, 'g', 'var(--green)')}
+    ${weekKcalChart(keys, t.calories)}
+    <div class="macro-bars" style="margin:12px 0 14px">
+      ${meter('Avg calories', wr.avgKcal, t.calories, wr.avgKcal > t.calories ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgKcal}</b><span class="muted"> / ${t.calories} kcal</span>`)}
+      ${meter('Avg protein', wr.avgProtein, t.protein, 'var(--green)', `<b>${wr.avgProtein}</b><span class="muted"> / ${t.protein} g</span>`)}
     </div>
     <div class="row between" style="font-size:12.5px;margin-bottom:4px">
       <span class="muted">Protein ≥ ${t.protein}g <span style="opacity:.7">(misses show g short)</span></span>
@@ -1106,6 +1128,11 @@ function weeklyReviewCard() {
       <span><b>${wr.waterHit}</b><span class="muted"> / ${wr.waterDays} tracked</span></span>
     </div>
     <div class="wr-days">${waterDots}</div>
+    ${wr.sleepAvg != null || wr.sleepTimeAvg != null ? `
+    <div class="macro-bars" style="margin:14px 0">
+      ${wr.sleepAvg != null ? meter('Avg sleep score', wr.sleepAvg, 100, wr.sleepAvg >= 80 ? 'var(--green)' : wr.sleepAvg < 60 ? 'var(--orange)' : 'var(--accent)', `<b>${wr.sleepAvg}</b><span class="muted"> / 100 · range ${wr.sleepMin}–${wr.sleepMax}</span>`) : ''}
+      ${wr.sleepTimeAvg != null ? meter('Avg sleep time', wr.sleepTimeAvg, 480, wr.sleepTimeAvg >= 450 ? 'var(--green)' : wr.sleepTimeAvg < 360 ? 'var(--orange)' : 'var(--accent)', `<b>${fmtSleep(wr.sleepTimeAvg)}</b><span class="muted"> / 8h</span>`) : ''}
+    </div>` : ''}
     <div class="grid3" style="text-align:center;border-top:1px solid var(--line);padding-top:12px">
       ${tile(r1(wr.km), wr.runN ? `km · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : 'run km')}
       ${tile(wr.gymN, wr.ppl || 'gym sessions')}
@@ -1114,12 +1141,6 @@ function weeklyReviewCard() {
         : tile((dKg > 0 ? '+' : '') + r1(dKg), 'kg this week', dKg <= 0 ? 'var(--green)' : 'var(--orange)')}
     </div>
     <div class="totals-strip" style="margin-top:12px">
-      ${wr.sleepAvg == null
-        ? tile('—', 'avg sleep score', 'var(--muted)')
-        : tile(wr.sleepAvg, `sleep · ${wr.sleepMin}–${wr.sleepMax}`, wr.sleepAvg >= 80 ? 'var(--green)' : wr.sleepAvg < 60 ? 'var(--orange)' : undefined)}
-      ${wr.sleepTimeAvg == null
-        ? tile('—', 'avg sleep time', 'var(--muted)')
-        : tile(fmtSleep(wr.sleepTimeAvg), 'avg sleep time', wr.sleepTimeAvg >= 450 ? 'var(--green)' : wr.sleepTimeAvg < 360 ? 'var(--orange)' : undefined)}
       ${wr.activeAvg == null
         ? tile('—', 'avg active kcal', 'var(--muted)')
         : tile(wr.activeAvg, 'avg active kcal')}
