@@ -19,6 +19,13 @@ export const GOAL_RATES = [
 
 const KCAL_PER_KG = 7700;
 
+// The formula-derived fibre target (14g/1000 kcal guideline, floor 25g).
+// Also used to detect a hand-set fibre target: if the saved value differs
+// from this, the user chose it deliberately and auto-recalc keeps it.
+export function autoFibreFor(calories) {
+  return Math.max(25, Math.round((calories * 14) / 1000));
+}
+
 // Mifflin-St Jeor
 export function bmr({ sex, age, heightCm }, weightKg) {
   const base = 10 * weightKg + 6.25 * heightCm - 5 * age;
@@ -38,7 +45,7 @@ export function computeTargets(profile, weightKg, tdeeOverride = null) {
   const carbs = Math.max(0, Math.round((calories - protein * 4 - fat * 9) / 4));
   // Fibre scales with intake (14g/1000 kcal guideline, floor 25g);
   // sodium is a flat 2300mg ceiling, not calorie-dependent.
-  const fibre = Math.max(25, Math.round((calories * 14) / 1000));
+  const fibre = autoFibreFor(calories);
   const sodium = 2300;
   const water = 4000; // ml — user's chosen daily target
   return { calories, protein, carbs, fat, fibre, sodium, water };
@@ -89,13 +96,19 @@ export function weightTrend(days = 28) {
 }
 
 // Estimate real-world TDEE from logged intake vs weight change (last 14 days).
+// Only days logged to at least half the calorie target count: a day with one
+// item on it is an incomplete log, not a 120-kcal day, and averaging those in
+// drags the estimate far below reality (it once produced a 1570 kcal target
+// from three barely-logged days).
 function observedTdee() {
   const today = dateKey();
+  const floor = 0.5 * (state.targets?.calories || 2000);
   let intakeSum = 0, loggedDays = 0;
   for (let i = 1; i <= 14; i++) {
     const key = addDays(today, -i);
-    if (mealsFor(key).length) {
-      intakeSum += mealTotals(key).kcal;
+    const kcal = mealsFor(key).length ? mealTotals(key).kcal : 0;
+    if (kcal >= floor) {
+      intakeSum += kcal;
       loggedDays++;
     }
   }
@@ -128,6 +141,12 @@ export function maybeAutoRecalc({ force = false } = {}) {
   const next = computeTargets(p, w, tdee);
   const prev = state.targets;
   const changed = Math.abs(next.calories - prev.calories) >= 25 || next.protein !== prev.protein;
+
+  // A fibre target that doesn't match the formula was set by hand — keep it
+  // rather than resetting it every time calories move.
+  if (prev.fibre != null && prev.fibre !== autoFibreFor(prev.calories)) {
+    next.fibre = prev.fibre;
+  }
 
   state.lastAutoRecalc = today;
   if (changed) {

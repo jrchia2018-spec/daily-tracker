@@ -245,8 +245,8 @@ function renderHome() {
     <div style="border-top:1px solid var(--line);margin-top:12px;padding-top:12px">
       <div class="row between">
         <div class="row" style="gap:14px;flex-wrap:wrap">
-          <span class="small muted">😴 <b style="color:${sleep == null ? 'var(--muted)' : sleep >= 80 ? 'var(--green)' : sleep < 60 ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
-          <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= 450 ? 'var(--green)' : sleepMins < 360 ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
+          <span class="small muted">😴 <b style="color:${sleep == null ? 'var(--muted)' : sleep >= SLEEP.goodScore ? 'var(--green)' : sleep < SLEEP.roughScore ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
+          <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= SLEEP.goodMins ? 'var(--green)' : sleepMins < SLEEP.roughMins ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
           <span class="small muted">🔥 Yday <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
           ${yNet != null ? `<span class="small muted">Yday vs target <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
         </div>
@@ -364,6 +364,13 @@ function fmtSleep(mins) {
   return `${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, '0')}m`;
 }
 
+// Sleep bands, calibrated to actual logged nights rather than generic advice.
+// Weekday sleep is capped by circumstance here, so a 7.5h "good" bar never
+// fired and the card said nothing most days; these bands split the real
+// distribution instead. They rank nights against each other, not against
+// what's ideal — 6h40 is "good" only relative to a typical week.
+const SLEEP = { roughScore: 70, goodScore: 80, roughMins: 345, goodMins: 400 };
+
 // Rule-based daily suggestions — deterministic, no AI. Priority: sleep
 // first, then over-limits, then gaps. At most three.
 function daySuggestions(today) {
@@ -378,9 +385,9 @@ function daySuggestions(today) {
     sleep != null ? `score ${sleep}` : null,
     sleepMins != null ? fmtSleep(sleepMins) : null,
   ].filter(Boolean).join(', ');
-  if ((sleep != null && sleep < 60) || (sleepMins != null && sleepMins < 360)) {
+  if ((sleep != null && sleep < SLEEP.roughScore) || (sleepMins != null && sleepMins < SLEEP.roughMins)) {
     out.push(`😴 Rough night (${sleepBits}) — treat today as recovery: easy pace or lighter volume, earlier night tonight.`);
-  } else if (sleepBits && (sleep == null || sleep >= 80) && (sleepMins == null || sleepMins >= 450)) {
+  } else if (sleepBits && (sleep == null || sleep >= SLEEP.goodScore) && (sleepMins == null || sleepMins >= SLEEP.goodMins)) {
     out.push(`⚡ Slept well (${sleepBits}) — good day to push a harder session.`);
   }
   if (tot.sodium > t.sodium) {
@@ -1221,8 +1228,8 @@ function weeklyReviewCard() {
     <div class="wr-days">${waterDots}</div>
     ${wr.sleepAvg != null || wr.sleepTimeAvg != null ? `
     <div class="macro-bars" style="margin:14px 0">
-      ${wr.sleepAvg != null ? meter('Avg sleep score', wr.sleepAvg, 100, wr.sleepAvg >= 80 ? 'var(--green)' : wr.sleepAvg < 60 ? 'var(--orange)' : 'var(--accent)', `<b>${wr.sleepAvg}</b><span class="muted"> / 100 · range ${wr.sleepMin}–${wr.sleepMax}</span>`) : ''}
-      ${wr.sleepTimeAvg != null ? meter('Avg sleep time', wr.sleepTimeAvg, 480, wr.sleepTimeAvg >= 450 ? 'var(--green)' : wr.sleepTimeAvg < 360 ? 'var(--orange)' : 'var(--accent)', `<b>${fmtSleep(wr.sleepTimeAvg)}</b><span class="muted"> / 8h</span>`) : ''}
+      ${wr.sleepAvg != null ? meter('Avg sleep score', wr.sleepAvg, 100, wr.sleepAvg >= SLEEP.goodScore ? 'var(--green)' : wr.sleepAvg < SLEEP.roughScore ? 'var(--orange)' : 'var(--accent)', `<b>${wr.sleepAvg}</b><span class="muted"> / 100 · range ${wr.sleepMin}–${wr.sleepMax}</span>`) : ''}
+      ${wr.sleepTimeAvg != null ? meter('Avg sleep time', wr.sleepTimeAvg, 480, wr.sleepTimeAvg >= SLEEP.goodMins ? 'var(--green)' : wr.sleepTimeAvg < SLEEP.roughMins ? 'var(--orange)' : 'var(--accent)', `<b>${fmtSleep(wr.sleepTimeAvg)}</b><span class="muted"> / 8h</span>`) : ''}
     </div>` : ''}
     <div class="grid3" style="text-align:center;border-top:1px solid var(--line);padding-top:12px">
       ${tile(r1(wr.km), wr.runN ? `km · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : 'run km')}
