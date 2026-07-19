@@ -12,6 +12,7 @@ export const ACTIVITY = {
 
 export const GOAL_RATES = [
   { value: -0.5, label: 'Lose 0.5 kg / week' },
+  { value: -0.4, label: 'Lose 0.4 kg / week (~15% deficit)' },
   { value: -0.25, label: 'Lose 0.25 kg / week' },
   { value: 0, label: 'Maintain weight' },
   { value: 0.25, label: 'Gain 0.25 kg / week (lean bulk)' },
