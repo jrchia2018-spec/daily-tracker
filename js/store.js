@@ -15,6 +15,7 @@ function defaults() {
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment
     catchupDismissed: {}, // { 'YYYY-MM-DD': true } — catch-up reminders the user waved off
+    lastBackup: null,     // date string of the last export — drives the backup nudge
   };
 }
 

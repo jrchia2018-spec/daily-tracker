@@ -1,5 +1,5 @@
 import {
-  state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys,
+  state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys, daysBetween,
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp,
 } from './store.js';
@@ -71,6 +71,26 @@ function targets() {
 
 function fmtWater(ml) {
   return ml < 1000 ? `${ml}ml` : `${r1(ml / 1000)}L`;
+}
+
+function downloadBackup() {
+  const blob = new Blob([exportData()], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `tracker-backup-${dateKey()}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+  state.lastBackup = dateKey();
+  save();
+}
+
+// Nudge when the data (localStorage-only, no cloud) hasn't been exported in
+// a month. 'never' once there's enough logged to be worth protecting.
+function backupOverdue() {
+  if (Object.keys(state.meals).length < 7) return null;
+  if (!state.lastBackup) return 'never';
+  const d = daysBetween(state.lastBackup, dateKey());
+  return d > 30 ? d : null;
 }
 
 // ---------- theme ----------
@@ -189,6 +209,8 @@ function renderHome() {
   </div>
 
   ${showNote ? `<div class="note">📈 ${esc(state.lastAutoNote)} <button class="btn ghost small" id="dismiss-note">Dismiss</button></div>` : ''}
+
+  ${backupOverdue() ? `<div class="note" style="background:rgba(255,176,84,.1);border-color:rgba(255,176,84,.3)">💾 ${backupOverdue() === 'never' ? 'No backup yet' : `Last backup ${backupOverdue()} days ago`} — your data lives only on this device. <button class="btn ghost small" id="backup-now">Export now</button></div>` : ''}
 
   <div class="card">
     <div class="ring-wrap">
@@ -320,6 +342,11 @@ function renderHome() {
   }
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
+  });
+  view.querySelector('#backup-now')?.addEventListener('click', () => {
+    downloadBackup();
+    render();
+    toast('Backup downloaded 💾');
   });
 }
 
@@ -1065,11 +1092,12 @@ function weekReview(keys) {
   const t = targets();
   const today = dateKey();
   const logged = keys.filter(k => k <= today && mealsFor(k).length);
-  let kcal = 0, protein = 0, proteinHit = 0;
+  let kcal = 0, protein = 0, sodium = 0, proteinHit = 0;
   for (const k of logged) {
     const x = mealTotals(k);
     kcal += x.kcal;
     protein += x.protein;
+    sodium += x.sodium;
     if (x.protein >= t.protein) proteinHit++;
   }
   const runs = state.runs.filter(r => keys.includes(r.date));
@@ -1093,6 +1121,7 @@ function weekReview(keys) {
     loggedDays: logged.length,
     avgKcal: logged.length ? Math.round(kcal / logged.length) : 0,
     avgProtein: logged.length ? Math.round(protein / logged.length) : 0,
+    avgSodium: logged.length ? Math.round(sodium / logged.length) : 0,
     proteinHit,
     km: runs.reduce((s, r) => s + (r.km || 0), 0),
     runN: runs.length,
@@ -1177,6 +1206,7 @@ function weeklyReviewCard() {
     <div class="macro-bars" style="margin:12px 0 14px">
       ${meter('Avg calories', wr.avgKcal, t.calories, wr.avgKcal > t.calories ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgKcal}</b><span class="muted"> / ${t.calories} kcal</span>`)}
       ${meter('Avg protein', wr.avgProtein, t.protein, 'var(--green)', `<b>${wr.avgProtein}</b><span class="muted"> / ${t.protein} g</span>`)}
+      ${meter('Avg sodium', wr.avgSodium, t.sodium, wr.avgSodium > t.sodium ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgSodium}</b><span class="muted"> / ${t.sodium} mg</span>`)}
     </div>
     <div class="row between" style="font-size:12.5px;margin-bottom:4px">
       <span class="muted">Protein ≥ ${t.protein}g <span style="opacity:.7">(misses show g short)</span></span>
@@ -1269,7 +1299,7 @@ function renderProgress() {
       <button class="btn small" id="d-import">Import</button>
       <input id="d-file" type="file" accept=".json" class="hidden">
     </div>
-    <p class="small muted" style="margin-top:8px">Data lives on this device (browser storage). Export a backup before switching phones.</p>
+    <p class="small muted" style="margin-top:8px">Data lives on this device (browser storage). Export a backup before switching phones.${state.lastBackup ? ` Last backup: <b>${fmtDate(state.lastBackup)}</b>.` : ' <b>No backup yet.</b>'}</p>
   </div>`;
 
   view.querySelector('#w-add').addEventListener('click', openWeightModal);
@@ -1284,12 +1314,9 @@ function renderProgress() {
   });
   view.querySelector('#p-edit').addEventListener('click', openProfileModal);
   view.querySelector('#d-export').addEventListener('click', () => {
-    const blob = new Blob([exportData()], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `tracker-backup-${dateKey()}.json`;
-    a.click();
-    URL.revokeObjectURL(a.href);
+    downloadBackup();
+    render();
+    toast('Backup downloaded 💾');
   });
   const fileInput = view.querySelector('#d-file');
   view.querySelector('#d-import').addEventListener('click', () => fileInput.click());
@@ -1547,6 +1574,14 @@ function newsSection(title, stories) {
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+
+// Ask the browser to protect this origin's storage from eviction — every
+// byte of user data is localStorage-only, so eviction would mean total loss.
+if (navigator.storage?.persisted) {
+  navigator.storage.persisted()
+    .then(p => { if (!p) return navigator.storage.persist(); })
+    .catch(() => {});
 }
 
 const startupNote = maybeAutoRecalc();
