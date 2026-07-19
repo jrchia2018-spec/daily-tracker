@@ -515,12 +515,14 @@ function renderMeals() {
     </div>
     <details ${empty && mealDate === dateKey() ? 'open' : ''}>
       <summary class="small" style="cursor:pointer;margin-top:10px;color:var(--accent);font-weight:600">🌅 Check-in — sleep &amp; active kcal${empty ? '' : ' <span class="muted">(saved ✓)</span>'}</summary>
-      <div class="grid3" style="margin-top:10px">
+      <p class="small" style="margin:10px 0 6px">😴 Sleep from the night of <b>${fmtDate(addDays(mealDate, -1))}</b> to the morning of <b>${fmtDate(mealDate)}</b>${mealDate === dateKey() ? ' — last night' : ''}:</p>
+      <div class="grid2">
         <label class="field"><span>Sleep score</span><input id="mw-sleep" type="number" inputmode="numeric" min="0" max="100" value="${w.sleep ?? ''}" placeholder="78"></label>
         <label class="field"><span>Sleep time</span><input id="mw-time" value="${w.sleepMins != null ? fmtSleep(w.sleepMins) : ''}" placeholder="7:41"></label>
-        <label class="field"><span>Active kcal</span><input id="mw-active" type="number" inputmode="numeric" value="${w.activeKcal ?? ''}" placeholder="650"></label>
       </div>
-      <p class="small muted" style="margin-bottom:8px">Everything on this card belongs to ${mealDate === dateKey() ? 'today' : fmtDate(mealDate)} — sleep is the night into it; log the watch's active-kcal total on the day it happened (‹ for yesterday's).</p>
+      <p class="small" style="margin:0 0 6px">🔥 Active calories burned during the day of <b>${fmtDate(mealDate)}</b>:</p>
+      <label class="field"><span>Active kcal</span><input id="mw-active" type="number" inputmode="numeric" value="${w.activeKcal ?? ''}" placeholder="650"></label>
+      ${mealDate === dateKey() ? `<p class="small muted" style="margin:-2px 0 8px">${fmtDate(mealDate)} isn't over yet — the total your watch shows this morning is <b>${fmtDate(addDays(mealDate, -1))}</b>'s, so tap ‹ and enter it there.</p>` : ''}
       <button class="btn small block" id="mw-save">Save check-in</button>
     </details>
   </div>`;
