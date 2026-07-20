@@ -48,7 +48,11 @@ export function computeTargets(profile, weightKg, tdeeOverride = null) {
   // sodium is a flat 2300mg ceiling, not calorie-dependent.
   const fibre = autoFibreFor(calories);
   const sodium = 2300;
-  const water = 4000; // ml — user's chosen daily target
+  // ml — user's chosen daily target. Lowered 4000 → 3000 on 20 Jul 2026:
+  // 4L was missed on every one of the first 15 tracked days, and a target
+  // that never goes green stops carrying information. 3L sits about 1L
+  // above their actual intake — a stretch they can actually reach.
+  const water = 3000;
   return { calories, protein, carbs, fat, fibre, sodium, water };
 }
 
