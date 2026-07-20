@@ -2,6 +2,7 @@ import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys, daysBetween,
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
+  foodWaterFor, waterTotalFor,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -229,7 +230,8 @@ function renderHome() {
         ${macroBar('Fat', tot.fat, t.fat, 'var(--teal)')}
         ${macroBar('Fibre', tot.fibre, t.fibre, 'var(--accent2)')}
         ${macroBar('Sodium', tot.sodium, t.sodium, tot.sodium > t.sodium ? 'var(--red)' : 'var(--accent)', 'mg')}
-        ${macroBar('Water', waterFor(today), t.water, 'var(--teal)', 'ml')}
+        ${macroBar('Water', waterTotalFor(today), t.water, 'var(--teal)', 'ml')}
+        ${foodWaterFor(today) ? `<p class="small muted" style="margin:-4px 0 0">${fmtWater(waterFor(today))} logged + ${fmtWater(foodWaterFor(today))} from drinks and soup</p>` : ''}
       </div>
     </div>
     <div class="row between" style="margin-top:14px" >
@@ -259,6 +261,8 @@ function renderHome() {
     </div>`;
   })()}
   </div>
+
+  ${weighinPrompt(today)}
 
   ${(() => {
     const cu = catchupDays();
@@ -343,6 +347,14 @@ function renderHome() {
       render();
     });
   }
+  view.querySelector('#wi-log')?.addEventListener('click', openWeightModal);
+  view.querySelector('#wi-skip')?.addEventListener('click', () => {
+    (state.weighinDismissed || (state.weighinDismissed = {}))[today] = true;
+    const cutoff = addDays(dateKey(), -14);
+    for (const k of Object.keys(state.weighinDismissed)) if (k < cutoff) delete state.weighinDismissed[k];
+    save();
+    render();
+  });
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
   });
@@ -407,12 +419,37 @@ function daySuggestions(today) {
   if (tot.kcal > 0.7 * t.calories && tot.fibre < 0.5 * t.fibre) {
     out.push(`🥬 Fibre at ${r0(tot.fibre)}g of ${t.fibre}g — veg or fruit with the next meal closes the gap.`);
   }
-  const water = waterFor(today);
+  const water = waterTotalFor(today);
   if (tot.kcal > 0.5 * t.calories && water < 0.4 * t.water) {
     out.push(`💧 Water at ${fmtWater(water)} of ${fmtWater(t.water)} — the day's ahead of your drinking.`);
   }
   if (!out.length && tot.kcal > 0) out.push('✅ All on track — nothing to fix today.');
   return out.slice(0, 3);
+}
+
+// Saturday and Sunday weigh-in reminder. Two consecutive mornings under the
+// same conditions (waking, before breakfast, before drinking) average out the
+// day-to-day water swing that makes single weigh-ins so noisy. In-app only —
+// with no backend there are no push notifications, so this relies on the
+// user's habit of opening the app first thing.
+function weighinPrompt(today) {
+  const dow = parseKey(today).getDay(); // 0 Sun, 6 Sat
+  if (dow !== 0 && dow !== 6) return '';
+  if (state.weighinDismissed?.[today]) return '';
+  if (state.weights.some(w => w.date === today)) return '';
+  const day = dow === 6 ? 'Saturday' : 'Sunday';
+  const second = dow === 0 && state.weights.some(w => w.date === addDays(today, -1));
+  return `
+  <div class="card" style="border-color:rgba(94,208,192,.5)">
+    <div class="row between">
+      <h2 style="margin-bottom:2px">⚖️ ${day} weigh-in</h2>
+      <button class="btn danger small" id="wi-skip" title="Not today">✕</button>
+    </div>
+    <p class="small muted" style="margin-bottom:10px">${second
+      ? 'Second of the two — same conditions as yesterday: after waking, before breakfast, before drinking.'
+      : 'After waking, before breakfast, before drinking. Same as every time, so the numbers stay comparable.'}</p>
+    <button class="btn primary block" id="wi-log">Log this morning's weight</button>
+  </div>`;
 }
 
 // Catch-up reminders: the last 3 days (excluding today, which the live
@@ -431,7 +468,7 @@ function catchupDays() {
     if (d < earliest || dismissed[d]) continue;
     const t = targets(d);
     const kcal = mealTotals(d).kcal;
-    const water = waterFor(d);
+    const water = waterTotalFor(d);
     const w = wellnessFor(d);
     const parts = [];
     if (!mealsFor(d).length) parts.push('no food logged');
@@ -447,7 +484,7 @@ function catchupDays() {
 function openWaterModal(day) {
   const m = openModal(`
     <h2>Log water</h2>
-    <p class="small muted" style="margin-bottom:10px">${day === dateKey() ? 'Today' : fmtDate(day)} so far: <b>${fmtWater(waterFor(day))}</b> of ${fmtWater(targets(day).water)}. Negative amounts subtract (mis-taps happen).</p>
+    <p class="small muted" style="margin-bottom:10px">${day === dateKey() ? 'Today' : fmtDate(day)} so far: <b>${fmtWater(waterTotalFor(day))}</b> of ${fmtWater(targets(day).water)}${foodWaterFor(day) ? ` (including ${fmtWater(foodWaterFor(day))} from drinks and soup)` : ''}. This adds to what you've logged by hand; negative amounts subtract (mis-taps happen).</p>
     <label class="field"><span>Amount (ml)</span>
       <input id="wa-ml" type="number" inputmode="numeric" placeholder="e.g. 750"></label>
     <button class="btn primary block" id="wa-save">Add</button>
@@ -458,7 +495,7 @@ function openWaterModal(day) {
     addWater(day, Math.round(ml));
     closeModal();
     render();
-    toast(`💧 ${fmtWater(waterFor(day))} today`);
+    toast(`💧 ${fmtWater(waterTotalFor(day))} today`);
   });
 }
 
@@ -533,7 +570,8 @@ function renderMeals() {
 
   ${(() => {
     const w = wellnessFor(mealDate);
-    const water = waterFor(mealDate);
+    const water = waterTotalFor(mealDate);
+    const fromFood = foodWaterFor(mealDate);
     const empty = w.sleep == null && w.sleepMins == null && w.activeKcal == null;
     return `
   <div class="card">
@@ -548,6 +586,7 @@ function renderMeals() {
     <div class="macro-bar" style="margin-top:6px">
       <div class="track"><div class="fill" style="width:${clamp((water / t.water) * 100, 0, 100)}%;background:var(--teal)"></div></div>
     </div>
+    ${fromFood ? `<p class="small muted" style="margin:6px 0 0">${fmtWater(waterFor(mealDate))} logged + ${fmtWater(fromFood)} from drinks and soup</p>` : ''}
     <details ${empty && mealDate === dateKey() ? 'open' : ''}>
       <summary class="small" style="cursor:pointer;margin-top:10px;color:var(--accent);font-weight:600">🌅 Check-in — sleep &amp; active kcal${empty ? '' : ' <span class="muted">(saved ✓)</span>'}</summary>
       <p class="small" style="margin:10px 0 6px">😴 Sleep from the night of <b>${fmtDate(addDays(mealDate, -1))}</b> to the morning of <b>${fmtDate(mealDate)}</b>${mealDate === dateKey() ? ' — last night' : ''}:</p>
@@ -598,8 +637,8 @@ function renderMeals() {
   view.querySelector('#food-manual').addEventListener('click', () => openFoodModal(null));
   view.querySelector('#food-paste').addEventListener('click', openPasteModal);
 
-  view.querySelector('#mw-cup').addEventListener('click', () => { addWater(mealDate, 250); render(); toast(`💧 ${fmtWater(waterFor(mealDate))}`); });
-  view.querySelector('#mw-500').addEventListener('click', () => { addWater(mealDate, 500); render(); toast(`💧 ${fmtWater(waterFor(mealDate))}`); });
+  view.querySelector('#mw-cup').addEventListener('click', () => { addWater(mealDate, 250); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
+  view.querySelector('#mw-500').addEventListener('click', () => { addWater(mealDate, 500); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
   view.querySelector('#mw-custom').addEventListener('click', () => openWaterModal(mealDate));
   view.querySelector('#mw-save').addEventListener('click', () => {
     const sleep = view.querySelector('#mw-sleep').value;
@@ -702,7 +741,7 @@ function renderMeals() {
         openFoodModal({
           name: f.name, per100: f.per100, grams: f.grams,
           kcal: f.kcal, protein: f.protein, carbs: f.carbs, fat: f.fat,
-          fibre: f.fibre, sodium: f.sodium,
+          fibre: f.fibre, sodium: f.sodium, water: f.water,
           serving: f.grams ? `${f.grams} g` : '',
         });
       });
@@ -742,9 +781,10 @@ function totCell(val, max, label, dir = 'cap') {
   return `<div><div class="tval" style="color:${color}">${val}</div><div class="tlabel">/ ${max} ${label}</div></div>`;
 }
 
-// Parse pasted "name | kcal | protein | carbs | fat | fibre | sodium" lines
-// (one item per line). Tolerates markdown tables: leading/trailing pipes,
-// separator rows, and a header row are skipped.
+// Parse pasted "name | kcal | protein | carbs | fat | fibre | sodium | water"
+// lines (one item per line). Tolerates markdown tables: leading/trailing
+// pipes, separator rows, and a header row are skipped. Water is an optional
+// trailing column, so older 7-column pastes still work unchanged.
 function parsePasteLines(text) {
   const items = [], bad = [];
   for (const raw of text.split(/\r?\n/)) {
@@ -754,14 +794,14 @@ function parsePasteLines(text) {
     line = line.replace(/^\|/, '').replace(/\|+$/, '');
     const cells = line.split('|').map(c => c.trim());
     const name = cells[0];
-    const nums = cells.slice(1, 7).map(c => parseFloat(String(c).replace(/[^\d.-]/g, '')));
+    const nums = cells.slice(1, 8).map(c => parseFloat(String(c).replace(/[^\d.-]/g, '')));
     if (!name || cells.length < 2 || !Number.isFinite(nums[0])) {
       if (/kcal|calorie/i.test(line)) continue; // header row
       bad.push(raw.trim());
       continue;
     }
     const v = i => (Number.isFinite(nums[i]) ? nums[i] : 0);
-    items.push({ name, kcal: v(0), protein: v(1), carbs: v(2), fat: v(3), fibre: v(4), sodium: v(5) });
+    items.push({ name, kcal: v(0), protein: v(1), carbs: v(2), fat: v(3), fibre: v(4), sodium: v(5), water: v(6) });
   }
   return { items, bad };
 }
@@ -769,8 +809,8 @@ function parsePasteLines(text) {
 function openPasteModal() {
   const m = openModal(`
     <h2>Paste from Claude</h2>
-    <p class="small muted" style="margin-bottom:10px">One item per line:<br><code>name | kcal | protein | carbs | fat | fibre | sodium</code><br>Markdown tables paste fine too. Fibre/sodium optional.</p>
-    <textarea id="paste-in" rows="14" style="min-height:38vh" placeholder="Chicken katsu curry | 850 | 32 | 105 | 33 | 5 | 1600"></textarea>
+    <p class="small muted" style="margin-bottom:10px">One item per line:<br><code>name | kcal | protein | carbs | fat | fibre | sodium | water</code><br>Markdown tables paste fine too. Fibre/sodium/water optional — water in ml, for drinks and soup.</p>
+    <textarea id="paste-in" rows="14" style="min-height:38vh" placeholder="Chicken katsu curry | 850 | 32 | 105 | 33 | 5 | 1600 | 0"></textarea>
     <div id="paste-preview" class="small muted" style="margin:10px 0;min-height:18px"></div>
     <button class="btn primary block" id="paste-add" disabled>Add to log</button>
   `);
@@ -821,6 +861,7 @@ function openFoodModal(result, existing = null) {
     fat: existing?.fat ?? direct('fat'),
     fibre: existing?.fibre ?? direct('fibre'),
     sodium: existing?.sodium ?? direct('sodium'),
+    water: existing?.water ?? direct('water'),
   };
 
   const m = openModal(`
@@ -835,7 +876,9 @@ function openFoodModal(result, existing = null) {
       <label class="field"><span>Fat (g)</span><input id="f-fat" type="number" inputmode="decimal" value="${init.fat}"></label>
       <label class="field"><span>Fibre (g)</span><input id="f-fibre" type="number" inputmode="decimal" value="${init.fibre}"></label>
       <label class="field"><span>Sodium (mg)</span><input id="f-sodium" type="number" inputmode="decimal" value="${init.sodium}"></label>
+      <label class="field"><span>Water (ml)</span><input id="f-water" type="number" inputmode="decimal" value="${init.water}"></label>
     </div>
+    <p class="small muted" style="margin:-4px 0 10px">Water counts drinks and soup broth toward your daily water target. Leave blank for solid food.</p>
     <div class="row" style="margin-top:6px">
       <button class="btn primary block" id="f-save">${existing ? 'Save changes' : 'Add to log'}</button>
     </div>
@@ -846,7 +889,7 @@ function openFoodModal(result, existing = null) {
   if (per100) {
     $f('f-grams').addEventListener('input', () => {
       const g = Number($f('f-grams').value) || 0;
-      for (const f of ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium']) {
+      for (const f of ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water']) {
         if (per100[f] != null) $f('f-' + f).value = r1((per100[f] * g) / 100);
       }
     });
@@ -866,6 +909,7 @@ function openFoodModal(result, existing = null) {
       fat: Number($f('f-fat').value) || 0,
       fibre: Number($f('f-fibre').value) || 0,
       sodium: Number($f('f-sodium').value) || 0,
+      water: Number($f('f-water').value) || 0,
     };
     const list = state.meals[mealDate] || (state.meals[mealDate] = []);
     if (existing) {
@@ -1119,17 +1163,17 @@ function weekReview(keys) {
   const sleeps = keys.map(k => wellnessFor(k).sleep).filter(s => s != null);
   const times = keys.map(k => wellnessFor(k).sleepMins).filter(s => s != null);
   const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
-  const waters = keys.map(k => waterFor(k)).filter(w => w > 0);
+  const waters = keys.map(k => waterTotalFor(k)).filter(w => w > 0);
   // A week average is only meaningful against the average target over the
   // same days — targets can change mid-week.
   const avgTarget = (days, field) => {
     const src = days.length ? days : keys;
     return Math.round(src.reduce((s, k) => s + targets(k)[field], 0) / src.length);
   };
-  const waterKeys = keys.filter(k => waterFor(k) > 0);
+  const waterKeys = keys.filter(k => waterTotalFor(k) > 0);
   return {
     waterDays: waters.length,
-    waterHit: keys.filter(k => waterFor(k) > 0 && waterFor(k) >= targets(k).water).length,
+    waterHit: keys.filter(k => waterTotalFor(k) > 0 && waterTotalFor(k) >= targets(k).water).length,
     sleepAvg: sleeps.length ? Math.round(sleeps.reduce((a, b) => a + b) / sleeps.length) : null,
     sleepMin: sleeps.length ? Math.min(...sleeps) : null,
     sleepMax: sleeps.length ? Math.max(...sleeps) : null,
@@ -1215,7 +1259,7 @@ function weeklyReviewCard() {
     </div>`;
   }).join('');
   const proteinDots = tickRow(k => (mealsFor(k).length ? mealTotals(k).protein : null), k => targets(k).protein, d => r0(d));
-  const waterDots = tickRow(k => waterFor(k) || null, k => targets(k).water, d => r1(d / 1000));
+  const waterDots = tickRow(k => waterTotalFor(k) || null, k => targets(k).water, d => r1(d / 1000));
 
   const tile = (val, lbl, color) => `
     <div><div class="tval"${color ? ` style="color:${color}"` : ''}>${val}</div><div class="tlabel">${lbl}</div></div>`;

@@ -16,6 +16,7 @@ function defaults() {
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment
     catchupDismissed: {}, // { 'YYYY-MM-DD': true } — catch-up reminders the user waved off
+    weighinDismissed: {}, // { 'YYYY-MM-DD': true } — weekend weigh-in prompts waved off
     lastBackup: null,     // date string of the last export — drives the backup nudge
   };
 }
@@ -115,8 +116,9 @@ export function mealTotals(key) {
       fat: t.fat + (m.fat || 0),
       fibre: t.fibre + (m.fibre || 0),
       sodium: t.sodium + (m.sodium || 0),
+      water: t.water + (m.water || 0),
     }),
-    { kcal: 0, protein: 0, carbs: 0, fat: 0, fibre: 0, sodium: 0 }
+    { kcal: 0, protein: 0, carbs: 0, fat: 0, fibre: 0, sodium: 0, water: 0 }
   );
 }
 
@@ -139,6 +141,19 @@ export function waterFor(key) {
 export function addWater(key, ml) {
   state.water[key] = Math.max(0, waterFor(key) + ml);
   save();
+}
+
+// Fluid from logged drinks and soups (kopi, barley water, bak kut teh…).
+export function foodWaterFor(key) {
+  return Math.round(mealTotals(key).water);
+}
+
+// What actually counts toward the daily water target: what they logged by
+// hand plus what they drank as food. The 4L target is a total-fluid figure,
+// so counting drinks makes the number honest rather than easier — plain
+// water alone was always an under-count.
+export function waterTotalFor(key) {
+  return waterFor(key) + foodWaterFor(key);
 }
 
 // ---- targets over time ----

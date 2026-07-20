@@ -8,8 +8,14 @@
 // per-serving reference figures. Fibre (g/serving) and sodium (mg/serving)
 // added 12 Jul 2026 — sodium especially varies stall to stall; treat as
 // typical mid-range figures.
+//
+// Water (ml/serving, added 20 Jul 2026) is the drinkable fluid actually
+// taken in, not the dish's total water content: drinks are their volume
+// minus dissolved solids, soups count only the broth a person realistically
+// finishes. Deliberately conservative — under-counting hydration is the
+// safer error. Only drinks and broth-y soups carry it; solid food is null.
 
-const D = (name, grams, kcal, protein, carbs, fat, fibre = null, sodium = null) => ({
+const D = (name, grams, kcal, protein, carbs, fat, fibre = null, sodium = null, water = null) => ({
   name,
   brand: 'Local',
   serving: `${grams} g`,
@@ -20,6 +26,7 @@ const D = (name, grams, kcal, protein, carbs, fat, fibre = null, sodium = null) 
     fat: r1((fat * 100) / grams),
     fibre: fibre == null ? null : r1((fibre * 100) / grams),
     sodium: sodium == null ? null : Math.round((sodium * 100) / grams),
+    water: water == null ? null : Math.round((water * 100) / grams),
   },
 });
 
@@ -48,7 +55,7 @@ export const SG_FOODS = [
   D('Fish porridge', 500, 260, 18, 36, 5, 1, 900),
   D('Century egg and pork porridge', 500, 380, 20, 45, 13, 1, 1100),
   // noodles
-  D('Laksa (spicy coconut noodle soup)', 540, 590, 23, 58, 30, 6, 1600),
+  D('Laksa (spicy coconut noodle soup)', 540, 590, 23, 58, 30, 6, 1600, 150),
   D('Char kway teow (fried flat rice noodles)', 380, 740, 20, 92, 32, 4, 1200),
   D('Hokkien mee, fried (prawn noodles)', 400, 615, 24, 70, 26, 4, 1600),
   D('Mee goreng (Indian fried noodles)', 350, 660, 18, 88, 26, 5, 1500),
@@ -57,17 +64,17 @@ export const SG_FOODS = [
   D('Mee siam (rice vermicelli in tangy gravy)', 490, 690, 20, 100, 23, 5, 2100),
   D('Bak chor mee, dry (minced pork noodles)', 350, 510, 24, 60, 19, 3, 1400),
   D('Wanton mee, dry (pork dumpling noodles)', 330, 550, 22, 70, 20, 3, 1400),
-  D('Fishball noodles, soup', 500, 370, 18, 58, 7, 2, 1500),
+  D('Fishball noodles, soup', 500, 370, 18, 58, 7, 2, 1500, 200),
   D('Fishball noodles, dry', 350, 480, 18, 65, 16, 3, 1300),
-  D('Prawn noodle soup (hae mee)', 500, 460, 22, 62, 13, 3, 1600),
+  D('Prawn noodle soup (hae mee)', 500, 460, 22, 62, 13, 3, 1600, 200),
   D('Prawn noodles, dry', 350, 510, 22, 68, 16, 3, 1300),
   D('Lor mee (noodles in thick braised gravy)', 500, 500, 20, 70, 15, 4, 1900),
-  D('Ban mian, soup (handmade noodles)', 500, 475, 22, 58, 17, 4, 1600),
+  D('Ban mian, soup (handmade noodles)', 500, 475, 22, 58, 17, 4, 1600, 200),
   D('Kway chap set (rice sheets, braised pork, offal)', 600, 650, 28, 62, 32, 3, 2200),
   D('Beef hor fun (flat rice noodles)', 450, 700, 26, 86, 27, 3, 1500),
   D('Sliced fish hor fun (flat rice noodles)', 450, 615, 24, 74, 24, 3, 1400),
-  D('Sliced fish bee hoon soup (rice vermicelli)', 550, 420, 24, 55, 11, 3, 1400),
-  D('Yong tau foo, soup (stuffed tofu and veg, 6 pieces with noodles)', 550, 395, 24, 50, 10, 6, 1500),
+  D('Sliced fish bee hoon soup (rice vermicelli)', 550, 420, 24, 55, 11, 3, 1400, 230),
+  D('Yong tau foo, soup (stuffed tofu and veg, 6 pieces with noodles)', 550, 395, 24, 50, 10, 6, 1500, 230),
   D('Satay bee hoon (rice vermicelli, peanut sauce)', 400, 550, 22, 60, 24, 5, 1200),
   D('Vegetarian bee hoon (fried rice vermicelli)', 400, 450, 10, 70, 14, 6, 1100),
   D('Mala xiang guo (spicy stir-fry pot, 1 pax mixed)', 400, 800, 30, 50, 52, 8, 2500),
@@ -109,7 +116,7 @@ export const SG_FOODS = [
   D('Sambal kangkong (spicy water spinach)', 150, 130, 4, 8, 9, 3.5, 800),
   D('Cereal prawns (oat-crumb butter fried)', 200, 550, 25, 30, 36, 2, 900),
   D('Sweet and sour pork', 250, 420, 18, 40, 21, 2, 900),
-  D('Bak kut teh (pork rib soup)', 450, 340, 28, 8, 22, 1, 1800),
+  D('Bak kut teh (pork rib soup)', 450, 340, 28, 8, 22, 1, 1800, 250),
   D('Fish head curry (1 portion)', 300, 400, 25, 15, 26, 3, 1200),
   D('Chilli crab (1 serving with sauce)', 300, 470, 30, 20, 30, 1.5, 1200),
   D('Mantou, fried (Chinese bun, 1)', 40, 130, 3, 18, 5, 0.7, 100),
@@ -119,24 +126,24 @@ export const SG_FOODS = [
   D('Ice kacang (shaved ice dessert)', 300, 190, 3, 42, 1, 2, 60),
   D('Chendol (coconut milk shaved ice, palm sugar)', 300, 386, 5, 55, 16, 2, 80),
   D('Soya beancurd (tau huay), sweetened', 250, 130, 6, 20, 3, 0.3, 30),
-  D('Cheng tng (clear sweet soup)', 250, 105, 1, 25, 0.2, 1.5, 20),
+  D('Cheng tng (clear sweet soup)', 250, 105, 1, 25, 0.2, 1.5, 20, 190),
   D('Bubur cha cha (sweet potato coconut dessert)', 250, 260, 3, 40, 10, 3, 90),
   D('Pulut hitam (black glutinous rice dessert)', 250, 230, 4, 42, 5.5, 2, 50),
   D('Durian (1 seed)', 40, 54, 0.5, 11, 1, 1.5, 1),
   // kopitiam drinks
-  D('Kopi (coffee, condensed milk)', 250, 120, 3, 20, 3.5, 0, 40),
-  D('Kopi-C (coffee, evaporated milk, sugar)', 250, 70, 2, 10, 2.5, 0, 35),
-  D('Kopi-O (black coffee, sugar)', 250, 55, 0.3, 13, 0.2, 0, 10),
-  D('Kopi-O kosong (black coffee, no sugar)', 250, 5, 0.3, 0.5, 0.1, 0, 5),
-  D('Teh (tea, condensed milk)', 250, 130, 3, 22, 3.5, 0, 40),
-  D('Teh tarik (pulled milk tea)', 250, 160, 4, 26, 4.5, 0, 50),
-  D('Teh-O (black tea, sugar)', 250, 55, 0, 14, 0, 0, 5),
-  D('Milo (kopitiam)', 250, 180, 5, 30, 4.5, 0.5, 90),
-  D('Milo dinosaur (iced Milo, powder topping)', 400, 340, 8, 60, 8, 1, 150),
-  D('Bubble tea, milk tea with pearls (500ml)', 500, 340, 4, 70, 5.5, 0, 100),
-  D('Sugarcane juice', 300, 170, 0, 42, 0, 0, 5),
-  D('Bandung (rose syrup milk)', 250, 140, 2, 28, 2, 0, 60),
-  D('Lime juice, sweetened', 300, 100, 0, 25, 0, 0.2, 10),
-  D('Barley water', 300, 110, 0.5, 27, 0.2, 0.5, 10),
-  D('Soya bean milk, sweetened', 300, 140, 7, 20, 4, 1.5, 60),
+  D('Kopi (coffee, condensed milk)', 250, 120, 3, 20, 3.5, 0, 40, 215),
+  D('Kopi-C (coffee, evaporated milk, sugar)', 250, 70, 2, 10, 2.5, 0, 35, 220),
+  D('Kopi-O (black coffee, sugar)', 250, 55, 0.3, 13, 0.2, 0, 10, 235),
+  D('Kopi-O kosong (black coffee, no sugar)', 250, 5, 0.3, 0.5, 0.1, 0, 5, 245),
+  D('Teh (tea, condensed milk)', 250, 130, 3, 22, 3.5, 0, 40, 215),
+  D('Teh tarik (pulled milk tea)', 250, 160, 4, 26, 4.5, 0, 50, 210),
+  D('Teh-O (black tea, sugar)', 250, 55, 0, 14, 0, 0, 5, 235),
+  D('Milo (kopitiam)', 250, 180, 5, 30, 4.5, 0.5, 90, 205),
+  D('Milo dinosaur (iced Milo, powder topping)', 400, 340, 8, 60, 8, 1, 150, 310),
+  D('Bubble tea, milk tea with pearls (500ml)', 500, 340, 4, 70, 5.5, 0, 100, 350),
+  D('Sugarcane juice', 300, 170, 0, 42, 0, 0, 5, 250),
+  D('Bandung (rose syrup milk)', 250, 140, 2, 28, 2, 0, 60, 210),
+  D('Lime juice, sweetened', 300, 100, 0, 25, 0, 0.2, 10, 265),
+  D('Barley water', 300, 110, 0.5, 27, 0.2, 0.5, 10, 270),
+  D('Soya bean milk, sweetened', 300, 140, 7, 20, 4, 1.5, 60, 255),
 ];

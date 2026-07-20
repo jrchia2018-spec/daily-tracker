@@ -7,8 +7,10 @@
 import { SG_FOODS } from './foods-sg.js';
 import { MY_FOODS } from './foods-my.js';
 
-const F = (name, kcal, protein, carbs, fat, serving = null, fibre = null, sodium = null) =>
-  ({ name, brand: 'Basic', serving: serving ? `${serving} g` : '100 g', per100: { kcal, protein, carbs, fat, fibre, sodium } });
+// `water` is g of drinkable fluid per 100g, set only for liquids (see the
+// note in foods-sg.js); solid foods leave it null and contribute nothing.
+const F = (name, kcal, protein, carbs, fat, serving = null, fibre = null, sodium = null, water = null) =>
+  ({ name, brand: 'Basic', serving: serving ? `${serving} g` : '100 g', per100: { kcal, protein, carbs, fat, fibre, sodium, water } });
 
 export const COMMON_FOODS = [
   // fish & seafood
@@ -43,10 +45,10 @@ export const COMMON_FOODS = [
   F('Greek yogurt, full fat', 97, 9, 4, 5, 170, 0, 35),
   F('Skyr', 63, 11, 4, 0.2, 150, 0, 42),
   F('Cottage cheese', 98, 11, 3.4, 4.3, 100, 0, 350),
-  F('Milk, whole', 61, 3.2, 4.8, 3.3, 250, 0, 43),
-  F('Milk, skim', 34, 3.4, 5, 0.1, 250, 0, 42),
-  F('Soy milk, unsweetened', 33, 3.3, 1.2, 1.8, 250, 0.4, 40),
-  F('Oat milk', 47, 1, 7, 1.5, 250, 0.8, 40),
+  F('Milk, whole', 61, 3.2, 4.8, 3.3, 250, 0, 43, 87),
+  F('Milk, skim', 34, 3.4, 5, 0.1, 250, 0, 42, 91),
+  F('Soy milk, unsweetened', 33, 3.3, 1.2, 1.8, 250, 0.4, 40, 92),
+  F('Oat milk', 47, 1, 7, 1.5, 250, 0.8, 40, 90),
   F('Cheddar cheese', 403, 25, 1.3, 33, 30, 0, 650),
   F('Mozzarella', 280, 28, 3.1, 17, 30, 0, 500),
   F('Parmesan', 431, 38, 4.1, 29, 10, 0, 1500),
