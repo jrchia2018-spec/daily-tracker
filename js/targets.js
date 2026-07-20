@@ -1,6 +1,6 @@
 // Calorie/macro target calculation and weekly adaptive adjustment.
 
-import { state, save, dateKey, addDays, parseKey, daysBetween, mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, clamp } from './store.js';
+import { state, save, dateKey, addDays, parseKey, daysBetween, mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, clamp, targetsFor, recordTargetChange } from './store.js';
 
 export const ACTIVITY = {
   sedentary: { factor: 1.2, label: 'Sedentary (desk job, little exercise)' },
@@ -103,10 +103,12 @@ export function weightTrend(days = 28) {
 // from three barely-logged days).
 function observedTdee() {
   const today = dateKey();
-  const floor = 0.5 * (state.targets?.calories || 2000);
   let intakeSum = 0, loggedDays = 0;
   for (let i = 1; i <= 14; i++) {
     const key = addDays(today, -i);
+    // Judge each day's completeness against the target that was live then,
+    // or a target change mid-window would reclassify old days as partial.
+    const floor = 0.5 * (targetsFor(key)?.calories || 2000);
     const kcal = mealsFor(key).length ? mealTotals(key).kcal : 0;
     if (kcal >= floor) {
       intakeSum += kcal;
@@ -151,6 +153,7 @@ export function maybeAutoRecalc({ force = false } = {}) {
 
   state.lastAutoRecalc = today;
   if (changed) {
+    recordTargetChange(prev);
     state.targets = { ...next, mode: 'auto', updatedAt: today };
     const diff = next.calories - prev.calories;
     state.lastAutoNote =

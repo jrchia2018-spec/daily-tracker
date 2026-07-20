@@ -1,7 +1,7 @@
 import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys, daysBetween,
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
-  exportData, importData, clamp,
+  exportData, importData, clamp, targetsFor, recordTargetChange,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -57,8 +57,11 @@ tabbar.addEventListener('click', e => {
   render();
 });
 
-function targets() {
-  const t = state.targets || { calories: 2000, protein: 120, carbs: 220, fat: 60 };
+// Targets for a given day. Pass a date key to grade a past day against the
+// targets that were actually live then; no argument means today's.
+function targets(key) {
+  const t = (key ? targetsFor(key) : state.targets)
+    || { calories: 2000, protein: 120, carbs: 220, fat: 60 };
   // Targets saved before fibre/sodium tracking existed lack those fields —
   // fill them with the same defaults computeTargets would use.
   return {
@@ -374,7 +377,7 @@ const SLEEP = { roughScore: 70, goodScore: 80, roughMins: 345, goodMins: 400 };
 // Rule-based daily suggestions — deterministic, no AI. Priority: sleep
 // first, then over-limits, then gaps. At most three.
 function daySuggestions(today) {
-  const t = targets();
+  const t = targets(today);
   const tot = mealTotals(today);
   const { sleep, sleepMins } = wellnessFor(today);
   const out = [];
@@ -417,7 +420,6 @@ function daySuggestions(today) {
 // suspiciously little (kcal/water well under target). Days before the very
 // first log are ignored, and a dismissed day stays dismissed.
 function catchupDays() {
-  const t = targets();
   const today = dateKey();
   const dismissed = state.catchupDismissed || {};
   const logged = [...Object.keys(state.meals), ...Object.keys(state.water), ...Object.keys(state.wellness)];
@@ -427,6 +429,7 @@ function catchupDays() {
   for (let i = 1; i <= 3; i++) {
     const d = addDays(today, -i);
     if (d < earliest || dismissed[d]) continue;
+    const t = targets(d);
     const kcal = mealTotals(d).kcal;
     const water = waterFor(d);
     const w = wellnessFor(d);
@@ -444,7 +447,7 @@ function catchupDays() {
 function openWaterModal(day) {
   const m = openModal(`
     <h2>Log water</h2>
-    <p class="small muted" style="margin-bottom:10px">${day === dateKey() ? 'Today' : fmtDate(day)} so far: <b>${fmtWater(waterFor(day))}</b> of ${fmtWater(targets().water)}. Negative amounts subtract (mis-taps happen).</p>
+    <p class="small muted" style="margin-bottom:10px">${day === dateKey() ? 'Today' : fmtDate(day)} so far: <b>${fmtWater(waterFor(day))}</b> of ${fmtWater(targets(day).water)}. Negative amounts subtract (mis-taps happen).</p>
     <label class="field"><span>Amount (ml)</span>
       <input id="wa-ml" type="number" inputmode="numeric" placeholder="e.g. 750"></label>
     <button class="btn primary block" id="wa-save">Add</button>
@@ -505,7 +508,7 @@ function frequentFoods(limit = 8) {
 }
 
 function renderMeals() {
-  const t = targets();
+  const t = targets(mealDate);
   const tot = mealTotals(mealDate);
   const entries = mealsFor(mealDate);
 
@@ -1096,7 +1099,6 @@ function renderGym() {
 // Stats for one Mon–Sun week. Meal averages only count days with entries,
 // so unlogged days don't drag the numbers down.
 function weekReview(keys) {
-  const t = targets();
   const today = dateKey();
   const logged = keys.filter(k => k <= today && mealsFor(k).length);
   let kcal = 0, protein = 0, sodium = 0, proteinHit = 0;
@@ -1105,7 +1107,9 @@ function weekReview(keys) {
     kcal += x.kcal;
     protein += x.protein;
     sodium += x.sodium;
-    if (x.protein >= t.protein) proteinHit++;
+    // Hit/miss is judged per day against that day's target — a target change
+    // partway through the week must not re-grade the days before it.
+    if (x.protein >= targets(k).protein) proteinHit++;
   }
   const runs = state.runs.filter(r => keys.includes(r.date));
   const gym = state.gym.filter(g => keys.includes(g.date));
@@ -1116,9 +1120,16 @@ function weekReview(keys) {
   const times = keys.map(k => wellnessFor(k).sleepMins).filter(s => s != null);
   const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
   const waters = keys.map(k => waterFor(k)).filter(w => w > 0);
+  // A week average is only meaningful against the average target over the
+  // same days — targets can change mid-week.
+  const avgTarget = (days, field) => {
+    const src = days.length ? days : keys;
+    return Math.round(src.reduce((s, k) => s + targets(k)[field], 0) / src.length);
+  };
+  const waterKeys = keys.filter(k => waterFor(k) > 0);
   return {
     waterDays: waters.length,
-    waterHit: waters.filter(w => w >= t.water).length,
+    waterHit: keys.filter(k => waterFor(k) > 0 && waterFor(k) >= targets(k).water).length,
     sleepAvg: sleeps.length ? Math.round(sleeps.reduce((a, b) => a + b) / sleeps.length) : null,
     sleepMin: sleeps.length ? Math.min(...sleeps) : null,
     sleepMax: sleeps.length ? Math.max(...sleeps) : null,
@@ -1130,6 +1141,11 @@ function weekReview(keys) {
     avgProtein: logged.length ? Math.round(protein / logged.length) : 0,
     avgSodium: logged.length ? Math.round(sodium / logged.length) : 0,
     proteinHit,
+    tKcal: avgTarget(logged, 'calories'),
+    tProtein: avgTarget(logged, 'protein'),
+    tSodium: avgTarget(logged, 'sodium'),
+    tWater: avgTarget(waterKeys, 'water'),
+    targetsVaried: new Set(keys.map(k => targets(k).calories)).size > 1,
     km: runs.reduce((s, r) => s + (r.km || 0), 0),
     runN: runs.length,
     gymN: gym.length,
@@ -1139,26 +1155,33 @@ function weekReview(keys) {
 }
 
 // Seven-day intake chart for the weekly review: one bar per logged day
-// against a dashed target line; over-target days turn red.
-function weekKcalChart(keys, target) {
+// against the target line; over-target days turn red. The target is read per
+// day, so a week spanning a target change draws a step rather than pretending
+// today's number applied all week.
+function weekKcalChart(keys) {
   const today = dateKey();
   const vals = keys.map(k => (k <= today && mealsFor(k).length ? mealTotals(k).kcal : null));
   if (!vals.some(v => v != null)) return '';
+  const goals = keys.map(k => targets(k).calories);
   const W = 460, H = 128, pad = 6, bw = W / 7, top = 18, base = H - 22;
-  const max = Math.max(target * 1.2, ...vals.filter(v => v != null));
+  const max = Math.max(...goals.map(g => g * 1.2), ...vals.filter(v => v != null));
   const Y = v => base - (v / max) * (base - top);
   const bars = keys.map((k, i) => {
     const x = i * bw + pad, w = bw - pad * 2, v = vals[i];
     const day = `<text class="axis" x="${x + w / 2}" y="${H - 8}" text-anchor="middle">${fmtDate(k).slice(0, 3)}</text>`;
     if (v == null) return day;
     return `
-      <rect class="bar" x="${x}" y="${r1(Y(v))}" width="${w}" height="${Math.max(r1(base - Y(v)), 1.5)}" rx="4" style="fill:${v > target ? 'var(--red)' : 'var(--accent)'}"/>
+      <rect class="bar" x="${x}" y="${r1(Y(v))}" width="${w}" height="${Math.max(r1(base - Y(v)), 1.5)}" rx="4" style="fill:${v > goals[i] ? 'var(--red)' : 'var(--accent)'}"/>
       <text class="axis" x="${x + w / 2}" y="${r1(Y(v)) - 4}" text-anchor="middle">${r0(v)}</text>
       ${day}`;
   }).join('');
+  const goalLine = goals.map((g, i) =>
+    `<line class="goal" x1="${r1(i * bw)}" y1="${r1(Y(g))}" x2="${r1((i + 1) * bw)}" y2="${r1(Y(g))}"/>`).join('');
+  const last = goals[goals.length - 1];
+  const label = goals.every(g => g === last) ? `target ${last}` : `target ${Math.min(...goals)}–${Math.max(...goals)}`;
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
-    <line class="goal" x1="0" y1="${r1(Y(target))}" x2="${W}" y2="${r1(Y(target))}"/>
-    <text class="axis" x="${W}" y="${r1(Y(target)) - 4}" text-anchor="end" fill="var(--green)">target ${target}</text>
+    ${goalLine}
+    <text class="axis" x="${W}" y="${r1(Y(last)) - 4}" text-anchor="end" fill="var(--green)">${label}</text>
     ${bars}
   </svg>`;
 }
@@ -1166,7 +1189,6 @@ function weekKcalChart(keys, target) {
 function weeklyReviewCard() {
   const keys = weekKeys(parseKey(addDays(dateKey(), reviewWeek * 7)));
   const wr = weekReview(keys);
-  const t = targets();
   const today = dateKey();
   const range = `${fmtDate(keys[0], { weekday: false })} – ${fmtDate(keys[6], { weekday: false })}`;
   const label = reviewWeek === 0 ? 'This week' : reviewWeek === -1 ? 'Last week' : range;
@@ -1182,8 +1204,9 @@ function weeklyReviewCard() {
 
   // Tick row: ✓ when the day's value meets the target, otherwise the deficit
   // (how far short). Days with nothing tracked yet stay blank.
-  const tickRow = (valueOn, target, fmtMiss) => keys.map(k => {
+  const tickRow = (valueOn, targetOn, fmtMiss) => keys.map(k => {
     const val = k <= today ? valueOn(k) : null;
+    const target = targetOn(k);
     const hit = val != null && val >= target;
     return `
     <div class="day-cell ${k === today ? 'today' : ''} ${hit ? 'hit' : ''}">
@@ -1191,8 +1214,8 @@ function weeklyReviewCard() {
       <div class="dname">${fmtDate(k).slice(0, 3)}</div>
     </div>`;
   }).join('');
-  const proteinDots = tickRow(k => (mealsFor(k).length ? mealTotals(k).protein : null), t.protein, d => r0(d));
-  const waterDots = tickRow(k => waterFor(k) || null, t.water, d => r1(d / 1000));
+  const proteinDots = tickRow(k => (mealsFor(k).length ? mealTotals(k).protein : null), k => targets(k).protein, d => r0(d));
+  const waterDots = tickRow(k => waterFor(k) || null, k => targets(k).water, d => r1(d / 1000));
 
   const tile = (val, lbl, color) => `
     <div><div class="tval"${color ? ` style="color:${color}"` : ''}>${val}</div><div class="tlabel">${lbl}</div></div>`;
@@ -1209,20 +1232,21 @@ function weeklyReviewCard() {
     </div>
     <p class="small muted" style="margin:4px 0 14px">${range}${wr.loggedDays ? ` · ${wr.loggedDays} day${wr.loggedDays === 1 ? '' : 's'} logged` : ''}</p>
     ${wr.loggedDays ? `
-    ${weekKcalChart(keys, t.calories)}
+    ${weekKcalChart(keys)}
     <div class="macro-bars" style="margin:12px 0 14px">
-      ${meter('Avg calories', wr.avgKcal, t.calories, wr.avgKcal > t.calories ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgKcal}</b><span class="muted"> / ${t.calories} kcal</span>`)}
-      ${meter('Avg protein', wr.avgProtein, t.protein, 'var(--green)', `<b>${wr.avgProtein}</b><span class="muted"> / ${t.protein} g</span>`)}
-      ${meter('Avg sodium', wr.avgSodium, t.sodium, wr.avgSodium > t.sodium ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgSodium}</b><span class="muted"> / ${t.sodium} mg</span>`)}
+      ${meter('Avg calories', wr.avgKcal, wr.tKcal, wr.avgKcal > wr.tKcal ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgKcal}</b><span class="muted"> / ${wr.tKcal} kcal</span>`)}
+      ${meter('Avg protein', wr.avgProtein, wr.tProtein, 'var(--green)', `<b>${wr.avgProtein}</b><span class="muted"> / ${wr.tProtein} g</span>`)}
+      ${meter('Avg sodium', wr.avgSodium, wr.tSodium, wr.avgSodium > wr.tSodium ? 'var(--red)' : 'var(--accent)', `<b>${wr.avgSodium}</b><span class="muted"> / ${wr.tSodium} mg</span>`)}
     </div>
+    ${wr.targetsVaried ? '<p class="small muted" style="margin:-6px 0 12px">Targets changed during this week — each day is graded against the target that was live then.</p>' : ''}
     <div class="row between" style="font-size:12.5px;margin-bottom:4px">
-      <span class="muted">Protein ≥ ${t.protein}g <span style="opacity:.7">(misses show g short)</span></span>
+      <span class="muted">Protein ≥ ${wr.tProtein}g <span style="opacity:.7">(misses show g short)</span></span>
       <span><b>${wr.proteinHit}</b><span class="muted"> / ${wr.loggedDays} logged</span></span>
     </div>
     <div class="wr-days">${proteinDots}</div>`
     : '<p class="small muted" style="margin-bottom:14px">No meals logged this week.</p>'}
     <div class="row between" style="font-size:12.5px;margin-bottom:4px">
-      <span class="muted">Water ≥ ${fmtWater(t.water)} <span style="opacity:.7">(misses show L short)</span></span>
+      <span class="muted">Water ≥ ${fmtWater(wr.tWater)} <span style="opacity:.7">(misses show L short)</span></span>
       <span><b>${wr.waterHit}</b><span class="muted"> / ${wr.waterDays} tracked</span></span>
     </div>
     <div class="wr-days">${waterDots}</div>
@@ -1379,6 +1403,7 @@ function openTargetsModal() {
     <button class="btn primary block" id="t-save">Save targets</button>
   `);
   m.querySelector('#t-save').addEventListener('click', () => {
+    recordTargetChange(state.targets);
     state.targets = {
       calories: Number(m.querySelector('#t-kcal').value) || t.calories,
       protein: Number(m.querySelector('#t-p').value) || t.protein,

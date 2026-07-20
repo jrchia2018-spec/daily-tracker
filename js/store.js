@@ -6,6 +6,7 @@ function defaults() {
   return {
     profile: null,        // {sex, age, heightCm, weightKg, goalWeightKg, activity, goalRate}
     targets: null,        // {calories, protein, carbs, fat, mode: 'auto'|'manual', updatedAt}
+    targetHistory: [],    // [ {from: 'YYYY-MM-DD', targets: {...}} ] — superseded target sets, oldest first
     meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat, fibre, sodium} ] }
     runs: [],             // [ {id, date, km, min, notes} ]
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
@@ -138,6 +139,38 @@ export function waterFor(key) {
 export function addWater(key, ml) {
   state.water[key] = Math.max(0, waterFor(key) + ml);
   save();
+}
+
+// ---- targets over time ----
+
+const EPOCH = '1970-01-01';
+
+// Targets change (weekly auto-recalc, or a manual edit like the 19 Jul plan
+// change). A past day should be graded against the targets that were live
+// then, so every change files the outgoing set here with the date it took
+// effect; `targetsFor` replays that timeline.
+export function recordTargetChange(prev) {
+  if (!prev) return;
+  const entry = { from: prev.updatedAt || EPOCH, targets: { ...prev } };
+  const hist = state.targetHistory;
+  const last = hist[hist.length - 1];
+  // Two edits on the same day: only the later one was ever live for a whole
+  // day, so replace rather than stacking an entry no day can ever match.
+  if (last && last.from === entry.from) hist[hist.length - 1] = entry;
+  else hist.push(entry);
+}
+
+export function targetsFor(key) {
+  if (!state.targets) return null;
+  const timeline = [
+    ...state.targetHistory,
+    { from: state.targets.updatedAt || EPOCH, targets: state.targets },
+  ];
+  // Days before anything was recorded fall back to the oldest set we know —
+  // wrong targets are still better than no card at all.
+  let pick = timeline[0];
+  for (const e of timeline) if (e.from <= key) pick = e;
+  return pick.targets;
 }
 
 export function latestWeight() {
