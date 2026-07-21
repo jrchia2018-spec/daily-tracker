@@ -63,6 +63,12 @@
 | Woodlands Health THRIVE nursing-home pilot | ~300 residents; unplanned hospitalisations and A&E visits both down ~1/3 | Woodlands Health, 19 Jul 2026 |
 | US cyclospora outbreak (Taylor Farms iceberg lettuce) | 5,000+ suspected cases in Michigan alone; recall spans 27 US states; largest recorded Cyclospora outbreak in US history per health officials | Michigan health dept./CDC/FDA, 17-18 Jul 2026 |
 | Tate brothers' UK extradition charges | Andrew Tate: 42 charges (incl. rape, trafficking, indecent images of a child); Tristan Tate: 17 charges (incl. sexual assault, rape, trafficking); 7 alleged UK victims, 2010-2017 | US DOJ/UK CPS, 18-19 Jul 2026 |
+| Guyana ferry (MV Barima) disaster toll | 41 dead, 77 rescued, of 179 aboard; captain/crew held over alleged inaccurate manifest and drug use | Guyanese authorities, 21 Jul 2026 |
+| India Cockroach-movement crackdown injuries | ~180 injured (118 security personnel, 60 protesters) | Delhi Police, 21 Jul 2026 |
+| Iran war cost estimate (cumulative) | US$37.5 billion, up from earlier estimates | Defense Secretary Hegseth, Senate Appropriations Committee testimony, 21 Jul 2026 |
+| US military injured in Iran war (this month) | ~100, 96% returned to duty; confirmed death toll unchanged at 17 | CENTCOM/Pentagon, 21 Jul 2026 |
+| Hormuz transit facilitated since early May | ~900 commercial vessels, ~450 million barrels of crude | CENTCOM, 21 Jul 2026 |
+| O.K. Lim (Hin Leong founder) remaining charges | 127 charges withdrawn, discharge amounting to acquittal (17 Jul); serving 13.5-yr sentence (cut from 17.5 yrs on appeal, Mar 2026) | Straits Times, 20-21 Jul 2026 |
 
 ## Global economic variables
 | Indicator | Figure | Source |
@@ -135,6 +141,7 @@
 | Ukraine drone strike on Moscow region (20 Jul) | 400+ drones launched; Russia claims 85 downed approaching Moscow; hit an oil depot (Podolsk), a Wildberries fulfilment centre (Kolyedino), warehouses at Yuzhnye Vorota logistics park (Belye Stolby) | Moscow Mayor Sobyanin/Zelensky, 20 Jul 2026 |
 | US military death toll (confirmed, unchanged) | 17 killed since war resumed; no new fatality confirmed 20-21 Jul | CENTCOM, 19-20 Jul 2026 |
 | Houthi maritime embargo on Saudi Arabia | Declared effective immediately; threatens to close Bab el-Mandeb strait (~12% of world trade transits it); follows collapse of 4-yr Houthi-Saudi truce | Houthi spokesperson Yahya Saree, 20 Jul 2026 |
+| Brent/WTI crude, 21 Jul | Brent ~$88.87/barrel (-0.4%); WTI holding above $82/barrel | Wire reports, 21 Jul 2026 |
 | Trump 50% tariff on Canada (Section 338, Tariff Act 1930) | ~US$20b (~S$26.4b) of goods incl. autos, alcohol, dairy, machinery; energy/potash/fish/critical minerals + already-tariffed autos/steel exempt; takes effect in 30 days | White House, 20 Jul 2026 |
 | Hamas new leader | Khalil al-Hayya (66) elected in run-off vs Khaled Meshaal, succeeding Yahya Sinwar (killed Oct 2024) | Hamas statement, 20 Jul 2026 |
 | India "Cockroach movement" march on Parliament | 10,000+ marched, tear-gassed/baton-charged, defied Delhi lockdown; sparked by exam-system scandals + forcible hospitalisation of hunger-striking activist Sonam Wangchuk (59) | Wire reports, 20 Jul 2026 |
