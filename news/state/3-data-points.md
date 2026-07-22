@@ -142,6 +142,12 @@
 | US military death toll (confirmed, unchanged) | 17 killed since war resumed; no new fatality confirmed 20-21 Jul | CENTCOM, 19-20 Jul 2026 |
 | Houthi maritime embargo on Saudi Arabia | Declared effective immediately; threatens to close Bab el-Mandeb strait (~12% of world trade transits it); follows collapse of 4-yr Houthi-Saudi truce | Houthi spokesperson Yahya Saree, 20 Jul 2026 |
 | Brent/WTI crude, 21 Jul | Brent ~$88.87/barrel (-0.4%); WTI holding above $82/barrel | Wire reports, 21 Jul 2026 |
+| Brent crude, 22 Jul | $94.10/barrel, +3.4% — highest close of the war, on Trump's bridges/power-plants retaliation-rule threat | Wire reports, 22 Jul 2026 |
+| US military death/injury toll (cumulative) | 17 killed, at least 420 wounded, 1 still missing (since 18 Jul Jordan strike) | CENTCOM/Pentagon, 22 Jul 2026 |
+| House $95bn Iran-war budget resolution | Passed 216-214 (party-line): $60bn defence, $13bn intelligence, $12bn other | House GOP, 22 Jul 2026 |
+| House NDAA ($1.15 trillion) | Passed on a party-line vote despite bipartisan objection to Section 219 (US-Israel defence-tech integration); renames Pentagon "Department of War," 5-7% troop pay rise | US House, 22 Jul 2026 |
+| DP World Fujairah Hormuz-bypass port deal | 50-year concession, 2 new deepwater terminals (Al Rugaylat container/multi-purpose + Dibba general cargo), up to 30 months to build; lifts UAE container capacity 19.4M → ~22M TEUs | DP World/Fujairah Ports Authority, 22 Jul 2026 |
+| US-Saudi civil nuclear deal | Peaceful nuclear cooperation + safeguards agreement; ~30-year term, tens of billions of USD; gives Saudi Arabia a path to enrich its own uranium; pending mandatory congressional review | US DOE/Saudi Energy Ministry, 22 Jul 2026 |
 | Trump 50% tariff on Canada (Section 338, Tariff Act 1930) | ~US$20b (~S$26.4b) of goods incl. autos, alcohol, dairy, machinery; energy/potash/fish/critical minerals + already-tariffed autos/steel exempt; takes effect in 30 days | White House, 20 Jul 2026 |
 | Hamas new leader | Khalil al-Hayya (66) elected in run-off vs Khaled Meshaal, succeeding Yahya Sinwar (killed Oct 2024) | Hamas statement, 20 Jul 2026 |
 | India "Cockroach movement" march on Parliament | 10,000+ marched, tear-gassed/baton-charged, defied Delhi lockdown; sparked by exam-system scandals + forcible hospitalisation of hunger-striking activist Sonam Wangchuk (59) | Wire reports, 20 Jul 2026 |
@@ -150,3 +156,8 @@
 | "Digit-3" impersonation scam advisory | 12+ victims, S$274,000 lost since May 2026; eight-digit numbers starting with "3" impersonating banks/telcos then MinLaw/MAS/police | SPF, 19 Jul 2026 |
 | Company of Good Conferment 2026 | 481 organisations recognised; ~S$384m collectively donated over past 3 years (vs 393 firms in 2025 cohort) | NVPC/DPM Gan Kim Yong speech, 20 Jul 2026 |
 | PTC commuter satisfaction survey | 87% overall satisfaction (5,505 commuters); crowding, irregular bus waits, uneven train aircon flagged as top concerns | Public Transport Council, 20 Jul 2026 |
+| COE Cat A (2nd Jul bidding) | S$126,000, down S$3,000 from the record S$129,000 set in the 1st Jul bidding | LTA, 22 Jul 2026 |
+| COE Cat B / C / D / E (2nd Jul bidding) | Cat B S$129,890; Cat C S$93,889; Cat D S$10,202; Cat E S$129,971 | LTA, 22 Jul 2026 |
+| Singapore Henley Passport Index ranking | #1 globally (3rd straight year), visa-free/visa-on-arrival access to 192 destinations; UAE climbs to tie Japan/South Korea for 2nd (188); Afghanistan last (22) — record 170-destination gap | Henley & Partners, 22 Jul 2026 |
+| Singapore money-laundering syndicate charge (Operation Frontier+ III) | 28-year-old Malaysian man charged, up to 10 yrs' jail / S$500,000 fine; syndicate originally disrupted Mar 2026 via a MariBank tip | SPF, 22 Jul 2026 |
+| Singapore Cabinet reshuffle | Effective 27 Jul 2026: Shanmugam to Senior Minister; Ng Chee Meng (NTUC S-G) to Minister in PMO; Tan See Leng to Minister for Trade and Industry (Energy and Industry); Jasmin Lau acting Manpower Minister; Jeffrey Siow/David Neo/Sim Ann promoted to Minister/Second Minister; MTI renamed Ministry of Energy, Trade and Industry from 1 Oct 2026 | PMO, 22 Jul 2026 |
