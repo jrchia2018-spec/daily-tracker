@@ -3,6 +3,7 @@ import {
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods,
+  skincareFor, setSkincare, skincareProgram, skincareWeek,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -1642,16 +1643,80 @@ async function loadLatestReport() {
 
 // ---------- skincare ----------
 
-// Static reference page for the 8-week hold routine. Read-only — no logging
-// yet; the "not started" pill is a label, not tracked state.
+// Evening variant by weekday (0 Sun … 6 Sat): BHA Mon/Wed/Fri (spaced out),
+// sleeping pack Tue/Sat, nothing Thu/Sun — the routine's "3 BHA, 1–2 pack".
+const SKIN_NIGHT = { 1: 'bha', 3: 'bha', 5: 'bha', 2: 'pack', 6: 'pack', 0: 'none', 4: 'none' };
+const SKIN_NIGHT_TEXT = {
+  bha: 'PC 2% BHA Gel — last step, nothing on top',
+  pack: 'Skin1004 Hyalu-Cica Sleeping Pack',
+  none: 'Nothing further tonight',
+};
+
 function renderSkincare() {
-  const li = (steps) => steps.map(s =>
-    `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
+  const today = dateKey();
+  const prog = skincareProgram();
+  const tonight = SKIN_NIGHT[parseKey(today).getDay()];
+  const sc = skincareFor(today);
+  const li = steps => steps.map(s => `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
+
+  // Header: start button before day 0; week/day counter after.
+  const header = prog
+    ? `<span class="badge ${prog.done ? 'green' : ''}">${prog.done ? 'Hold complete' : `Week ${prog.week} of 8`}</span>`
+    : `<span class="badge orange">Not started</span>`;
+  const dayLine = prog
+    ? `Day ${prog.dayNum} · ${prog.done ? '8-week hold finished' : `week ${prog.week}, day ${prog.dayOfWeek} of 7`}`
+    : '8-week hold routine';
+
+  // Evening variants, tonight's pick highlighted.
+  const variant = (kind, prefix, text) => `
+    <div class="${tonight === kind ? 'skin-tonight' : ''}">
+      ${tonight === kind ? '<span class="badge">Tonight</span> ' : ''}<b>${prefix}</b> ${text}</div>`;
+
+  // Whitehead tracker: today's active count + a "new one appeared" flag,
+  // rolled up per program week once day 0 is set.
+  const count = typeof sc.whiteheads === 'number' ? sc.whiteheads : null;
+  let weekBlock = '';
+  if (prog) {
+    const rows = [];
+    for (let w = 0; w <= prog.weekIndex; w++) {
+      const s = skincareWeek(w);
+      rows.push(`
+      <div class="row between" style="font-size:13px;padding:5px 0;border-top:1px solid var(--line)">
+        <span class="muted">Week ${w + 1}${w === prog.weekIndex ? ' <span style="color:var(--accent)">· now</span>' : ''}</span>
+        <span>new on <b>${s.newDays}</b>/${s.daysElapsed} day${s.daysElapsed === 1 ? '' : 's'}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
+      </div>`);
+    }
+    weekBlock = `<div style="margin-top:12px">${rows.join('')}</div>`;
+  } else {
+    weekBlock = `<p class="small muted" style="margin-top:12px">Start day 0 to track new-lesion days by week.</p>`;
+  }
 
   view.innerHTML = `
   <div class="row between" style="margin-bottom:14px">
-    <div><h1>Skincare</h1><div class="muted small">8-week hold routine</div></div>
-    <span class="badge orange">Day 0 not started</span>
+    <div><h1>Skincare</h1><div class="muted small">${dayLine}</div></div>
+    ${header}
+  </div>
+
+  ${prog
+    ? `<div class="row" style="gap:8px;margin-bottom:14px"><button class="btn small" id="skin-reset">Reset day 0</button></div>`
+    : `<button class="btn primary block" id="skin-start" style="margin-bottom:14px">Start day 0 today</button>`}
+
+  <div class="card">
+    <div class="row between" style="margin-bottom:4px">
+      <h2 style="margin:0">🔎 Whiteheads</h2>
+      <span class="small muted">${today === dateKey() ? 'Today' : fmtDate(today)}</span>
+    </div>
+    <div class="row between" style="margin:12px 0 4px">
+      <span>Active count</span>
+      <div class="row" style="gap:10px">
+        <button class="btn small" id="wh-minus" aria-label="Fewer">−</button>
+        <b id="wh-count" style="min-width:26px;text-align:center;font-size:18px">${count == null ? '—' : count}</b>
+        <button class="btn small" id="wh-plus" aria-label="More">+</button>
+      </div>
+    </div>
+    <button class="btn small block ${sc.newLesion ? 'primary' : ''}" id="wh-new" style="margin-top:8px">
+      ${sc.newLesion ? '✓ New whitehead appeared today' : 'Mark a new whitehead today'}</button>
+    ${weekBlock}
   </div>
 
   <div class="card">
@@ -1684,12 +1749,12 @@ function renderSkincare() {
       { t: 'TO Squalane Cleanser (oil cleanse)' },
       { t: 'CeraVe Foaming Cleanser' },
       { t: 'CeraVe PM Lotion' },
-      { t: 'Then one of the two below', aside: true },
+      { t: `Tonight (${fmtDate(today).slice(0, 3)}): ${SKIN_NIGHT_TEXT[tonight]}`, aside: true },
     ])}</ol>
     <div class="skin-variants">
-      <div><b>3 nights:</b> PC 2% BHA Gel — last step, nothing on top</div>
-      <div><b>1–2 nights:</b> Skin1004 Hyalu-Cica Sleeping Pack</div>
-      <div><b>Remaining nights:</b> nothing further</div>
+      ${variant('bha', '3 nights (Mon/Wed/Fri):', 'PC 2% BHA Gel — last step, nothing on top')}
+      ${variant('pack', '2 nights (Tue/Sat):', 'Skin1004 Hyalu-Cica Sleeping Pack')}
+      ${variant('none', 'Other nights (Thu/Sun):', 'nothing further')}
     </div>
   </div>
 
@@ -1722,6 +1787,38 @@ function renderSkincare() {
     </div>
     <div class="note" style="margin:12px 0 0">Day 0 is the first morning the routine above runs complete. Baseline photos that evening, after cleansing, patted dry, 10 minutes' wait, before any product. Same room, same artificial light, same distance, every week.</div>
   </div>`;
+
+  const setCount = n => {
+    setSkincare(today, { whiteheads: Math.max(0, n) });
+    render();
+  };
+  view.querySelector('#wh-minus').addEventListener('click', () => setCount((count || 0) - 1));
+  view.querySelector('#wh-plus').addEventListener('click', () => setCount((count || 0) + 1));
+  view.querySelector('#wh-new').addEventListener('click', () => {
+    setSkincare(today, { newLesion: !sc.newLesion });
+    render();
+  });
+  view.querySelector('#skin-start')?.addEventListener('click', () => {
+    state.skincareStart = today;
+    save();
+    render();
+    toast('Day 0 set — 8-week hold started 🧴');
+  });
+  view.querySelector('#skin-reset')?.addEventListener('click', () => {
+    const m = openModal(`
+      <h2>Reset day 0?</h2>
+      <p class="small muted" style="margin-bottom:14px">This clears your start date and the week counter. Your logged whitehead counts stay. You can start again anytime.</p>
+      <button class="btn danger block" id="sr-yes">Reset day 0</button>
+      <button class="btn block" id="sr-no" style="margin-top:8px">Keep it</button>`);
+    m.querySelector('#sr-yes').addEventListener('click', () => {
+      state.skincareStart = null;
+      save();
+      closeModal();
+      render();
+      toast('Day 0 cleared');
+    });
+    m.querySelector('#sr-no').addEventListener('click', closeModal);
+  });
 }
 
 function renderNews() {

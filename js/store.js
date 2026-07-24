@@ -18,6 +18,8 @@ function defaults() {
     catchupDismissed: {}, // { 'YYYY-MM-DD': true } — catch-up reminders the user waved off
     weighinDismissed: {}, // { 'YYYY-MM-DD': true } — weekend weigh-in prompts waved off
     lastBackup: null,     // date string of the last export — drives the backup nudge
+    skincareStart: null,  // 'YYYY-MM-DD' — day 0 of the 8-week hold routine, or null
+    skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } }
   };
 }
 
@@ -206,4 +208,53 @@ export function targetsFor(key) {
 export function latestWeight() {
   if (!state.weights.length) return state.profile ? state.profile.weightKg : null;
   return state.weights[state.weights.length - 1].kg;
+}
+
+// ---- skincare 8-week hold ----
+
+export function skincareFor(key) {
+  return state.skincare[key] || {};
+}
+
+// Merge a patch into a day's skincare entry; drop the entry when it holds
+// nothing meaningful so the map stays sparse. whiteheads is kept even at 0
+// (a logged zero is real data), so we test for a number, not truthiness.
+export function setSkincare(key, patch) {
+  const next = { ...state.skincare[key], ...patch };
+  if (typeof next.whiteheads !== 'number' && !next.newLesion) delete state.skincare[key];
+  else state.skincare[key] = next;
+  save();
+}
+
+// Program position: day 0 is `skincareStart`, week 1 = days 0–6, over 8 weeks.
+export function skincareProgram() {
+  if (!state.skincareStart) return null;
+  const today = dateKey();
+  const dayNum = daysBetween(state.skincareStart, today); // 0 on day 0
+  return {
+    start: state.skincareStart,
+    dayNum,                              // 0-based days since day 0
+    weekIndex: Math.floor(dayNum / 7),   // 0-based week
+    week: Math.floor(dayNum / 7) + 1,    // 1-based week
+    dayOfWeek: (dayNum % 7) + 1,         // 1..7 within the week
+    done: dayNum >= 56,                  // past the 8-week hold
+  };
+}
+
+// New-lesion days and average active count for one 0-based program week,
+// counting only days up to today.
+export function skincareWeek(weekIndex) {
+  const first = addDays(state.skincareStart, weekIndex * 7);
+  const today = dateKey();
+  let newDays = 0, sum = 0, counted = 0, logged = 0;
+  for (let i = 0; i < 7; i++) {
+    const k = addDays(first, i);
+    if (k > today) break;
+    logged++;
+    const e = state.skincare[k];
+    if (!e) continue;
+    if (e.newLesion) newDays++;
+    if (typeof e.whiteheads === 'number') { sum += e.whiteheads; counted++; }
+  }
+  return { first, daysElapsed: logged, newDays, avg: counted ? Math.round(sum / counted) : null };
 }
