@@ -122,7 +122,7 @@ function render() {
   for (const b of tabbar.querySelectorAll('.tab')) {
     b.classList.toggle('active', b.dataset.tab === tab);
   }
-  ({ home: renderHome, meals: renderMeals, train: renderTrain, progress: renderProgress, news: renderNews }[tab])();
+  ({ home: renderHome, meals: renderMeals, train: renderTrain, progress: renderProgress, news: renderNews, skincare: renderSkincare }[tab])();
   window.scrollTo(0, 0);
 }
 
@@ -1638,6 +1638,90 @@ async function loadLatestReport() {
     if (rep) return rep;
   }
   throw new Error('No report in the last 3 days');
+}
+
+// ---------- skincare ----------
+
+// Static reference page for the 8-week hold routine. Read-only — no logging
+// yet; the "not started" pill is a label, not tracked state.
+function renderSkincare() {
+  const li = (steps) => steps.map(s =>
+    `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
+
+  view.innerHTML = `
+  <div class="row between" style="margin-bottom:14px">
+    <div><h1>Skincare</h1><div class="muted small">8-week hold routine</div></div>
+    <span class="badge orange">Day 0 not started</span>
+  </div>
+
+  <div class="card">
+    <h2>🏃 Morning — training days</h2>
+    <ol class="skin-list">${li([
+      { t: 'Water rinse only' },
+      { t: 'Anessa Perfect UV Milk' },
+      { t: 'Water-Fit Sun Serum, ~90 min in' },
+      { t: 'Train, then shower', aside: true },
+      { t: 'CeraVe Foaming Cleanser' },
+      { t: 'CeraVe PM Lotion' },
+      { t: 'Anessa Perfect UV Milk' },
+      { t: 'Water-Fit Sun Serum at midday' },
+    ])}</ol>
+  </div>
+
+  <div class="card">
+    <h2>☀️ Morning — rest days</h2>
+    <ol class="skin-list">${li([
+      { t: 'CeraVe Foaming Cleanser' },
+      { t: 'CeraVe PM Lotion' },
+      { t: 'Anessa Perfect UV Milk' },
+      { t: 'Water-Fit Sun Serum at midday' },
+    ])}</ol>
+  </div>
+
+  <div class="card">
+    <h2>🌙 Evening — every day</h2>
+    <ol class="skin-list">${li([
+      { t: 'TO Squalane Cleanser (oil cleanse)' },
+      { t: 'CeraVe Foaming Cleanser' },
+      { t: 'CeraVe PM Lotion' },
+      { t: 'Then one of the two below', aside: true },
+    ])}</ol>
+    <div class="skin-variants">
+      <div><b>3 nights:</b> PC 2% BHA Gel — last step, nothing on top</div>
+      <div><b>1–2 nights:</b> Skin1004 Hyalu-Cica Sleeping Pack</div>
+      <div><b>Remaining nights:</b> nothing further</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📅 Weekly</h2>
+    <ul class="skin-list">
+      <li>Innisfree Clay Mask ×1, T-zone only, on a non-BHA night — <span class="muted">optional</span></li>
+      <li>Photos: nose, left 45°, right 45°</li>
+      <li>Log whitehead count and new-lesion days</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="small muted" style="margin-bottom:8px">Held out for the full 8 weeks</div>
+    <div class="skin-hold">
+      TO Niacinamide 10% + Zinc<br>
+      TO Salicylic Acid 2%<br>
+      Farmacy 10% Niacinamide Night Mask<br>
+      BYOMA Gel Cream<br>
+      LRP Effaclar Purifying Gel<br>
+      COSRX patches — <span class="muted">only on an already-drained spot</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="small muted" style="margin-bottom:8px">Buy before day 0</div>
+    <div class="skin-hold">
+      CeraVe Foaming Cleanser 236ml <span class="muted">— SGD ~$25–30</span><br>
+      Skin1004 Water-Fit Sun Serum <span class="muted">— SGD ~$25</span>
+    </div>
+    <div class="note" style="margin:12px 0 0">Day 0 is the first morning the routine above runs complete. Baseline photos that evening, after cleansing, patted dry, 10 minutes' wait, before any product. Same room, same artificial light, same distance, every week.</div>
+  </div>`;
 }
 
 function renderNews() {
