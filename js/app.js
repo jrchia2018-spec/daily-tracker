@@ -2,7 +2,7 @@ import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys, daysBetween,
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
-  foodWaterFor, waterTotalFor,
+  foodWaterFor, waterTotalFor, loggedFoods,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -524,11 +524,11 @@ function dayCell(key, today) {
 
 // Most-logged foods from the last 60 days; the most recent entry for each
 // name is kept as the template (so last-used portion size is remembered).
+// All-time most-logged foods (no time window — a food you logged months ago
+// still surfaces here, so nothing you've eaten is ever forgotten).
 function frequentFoods(limit = 8) {
-  const cutoff = addDays(dateKey(), -60);
   const byName = new Map();
   for (const [date, list] of Object.entries(state.meals)) {
-    if (date < cutoff) continue;
     for (const m of list) {
       if (!m.name || m.name === 'Quick add') continue;
       const k = m.name.toLowerCase();
@@ -686,7 +686,8 @@ function renderMeals() {
 
   function paint(loading) {
     box.innerHTML = shown.map((f, i) => {
-      const badge = f.brand === 'Basic' ? '<span class="badge green">Basic</span>'
+      const badge = f.saved ? '<span class="badge green">Saved</span>'
+        : f.brand === 'Basic' ? '<span class="badge green">Basic</span>'
         : f.brand === 'My log' ? '<span class="badge">My log</span>'
         : esc(f.brand || 'Generic');
       // "My log" items carry whole-portion macros and no per-100g data.
@@ -754,7 +755,7 @@ function renderMeals() {
     clearTimeout(timer);
     const my = ++seq;
     if (!query) { shown = []; paintIdle(); return; }
-    shown = searchCommonFoods(query);
+    shown = localFoodMatches(query);
     const goOnline = query.length >= 3;
     paint(goOnline);
     if (goOnline) {
@@ -762,7 +763,7 @@ function renderMeals() {
         try {
           const remote = await searchFood(query);
           if (my !== seq) return; // a newer keystroke superseded this request
-          shown = [...searchCommonFoods(query), ...remote.slice(0, 10)];
+          shown = [...localFoodMatches(query), ...remote.slice(0, 10)];
           paint(false);
         } catch {
           if (my === seq) paint(false);
@@ -770,6 +771,29 @@ function renderMeals() {
       }, 450);
     }
   });
+}
+
+// Foods from the user's own logged history that match the query — their
+// personal saved foods, surfaced above the built-in databases so anything
+// they've eaten before is one tap away. Newest-logged first.
+function searchLoggedFoods(query, limit = 6) {
+  const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!tokens.length) return [];
+  return loggedFoods()
+    .filter(f => { const n = f.name.toLowerCase(); return tokens.every(t => n.includes(t)); })
+    .sort((a, b) => b.lastDate.localeCompare(a.lastDate))
+    .slice(0, limit)
+    .map(f => ({ ...f, saved: true }));
+}
+
+// Local (offline) matches: the user's own saved foods first, then the
+// built-in databases with any name already covered by a saved food dropped,
+// so a food logged before doesn't show twice.
+function localFoodMatches(query) {
+  const saved = searchLoggedFoods(query);
+  const seen = new Set(saved.map(f => f.name.toLowerCase()));
+  const builtin = searchCommonFoods(query).filter(f => !seen.has(f.name.toLowerCase()));
+  return [...saved, ...builtin];
 }
 
 // dir 'cap': exceeding the target is bad (red). dir 'floor': reaching it is
@@ -869,6 +893,13 @@ function openFoodModal(result, existing = null) {
     <label class="field"><span>Name</span><input id="f-name" value="${esc(init.name)}"></label>
     <label class="field"><span>Amount (g) ${per100 ? '— macros update automatically' : ''}</span>
       <input id="f-grams" type="number" inputmode="decimal" value="${grams}"></label>
+    <div class="row" style="gap:6px;margin:0 0 10px;align-items:center">
+      <span class="small muted">Quantity</span>
+      <button type="button" class="btn small" data-mult="0.5">½×</button>
+      <button type="button" class="btn small" data-mult="2">2×</button>
+      <button type="button" class="btn small" data-mult="3">3×</button>
+      <input id="f-mult" type="number" inputmode="decimal" placeholder="custom ×" style="width:82px" title="Multiply the amounts below, then press Enter">
+    </div>
     <div class="grid2">
       <label class="field"><span>Calories (kcal)</span><input id="f-kcal" type="number" inputmode="decimal" value="${init.kcal}"></label>
       <label class="field"><span>Protein (g)</span><input id="f-protein" type="number" inputmode="decimal" value="${init.protein}"></label>
@@ -894,6 +925,32 @@ function openFoodModal(result, existing = null) {
       }
     });
   }
+
+  // Quantity multiplier: scales the portion. For a gram-based food we scale
+  // grams and let the listener above recompute from per100 (stays exact);
+  // for a per-portion item (My log / manual, no per100) we scale the macro
+  // fields directly. Multiplies what's shown, so ½× then ½× gives a quarter.
+  const applyMult = factor => {
+    if (!(factor > 0)) return;
+    if (per100 && Number($f('f-grams').value)) {
+      $f('f-grams').value = r1(Number($f('f-grams').value) * factor);
+      $f('f-grams').dispatchEvent(new Event('input'));
+    } else {
+      for (const f of ['grams', 'kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water']) {
+        const el = $f('f-' + f);
+        const v = Number(el.value);
+        if (el.value !== '' && Number.isFinite(v)) el.value = r1(v * factor);
+      }
+    }
+  };
+  for (const b of m.querySelectorAll('[data-mult]')) {
+    b.addEventListener('click', () => applyMult(Number(b.dataset.mult)));
+  }
+  $f('f-mult').addEventListener('change', () => {
+    const factor = Number($f('f-mult').value);
+    applyMult(factor);
+    $f('f-mult').value = '';
+  });
 
   $f('f-save').addEventListener('click', () => {
     const name = $f('f-name').value.trim();

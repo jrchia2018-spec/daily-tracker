@@ -122,6 +122,21 @@ export function mealTotals(key) {
   );
 }
 
+// Every distinct food ever logged, keeping the most recent version of each
+// (by name, case-insensitive) with the date it was last logged. This is the
+// "saved forever" list — anything logged once stays searchable and one-tap
+// re-loggable with no time window. "Quick add" kcal-only stubs are excluded.
+export function loggedFoods() {
+  const byName = new Map();
+  for (const date of Object.keys(state.meals).sort()) { // ascending: later wins
+    for (const m of state.meals[date]) {
+      if (!m.name || m.name === 'Quick add') continue;
+      byName.set(m.name.toLowerCase(), { ...m, lastDate: date });
+    }
+  }
+  return [...byName.values()];
+}
+
 export function runsOn(key) {
   return state.runs.filter(r => r.date === key);
 }
