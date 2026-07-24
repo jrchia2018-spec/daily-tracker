@@ -388,4 +388,6 @@ export const MY_FOODS = [
   M('1 chicken karaage', 100, 7, 5, 6, 0.2, 200),
   M('1/3 fist braised pork belly (~30g)', 55, 3, 0.5, 4.5, 0, 100),
   M('3 pan cooked gyoza', 180, 9, 21, 6, 1, 450),
+  M('Rokeby chocolate shake', 287, 30, 27.2, 6.4, 0, 106, 240),
+  M('Rokeby strawberry protein shake', 289, 30, 27, 6, 0, 80, 240),
 ];

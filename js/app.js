@@ -786,14 +786,24 @@ function searchLoggedFoods(query, limit = 6) {
     .map(f => ({ ...f, saved: true }));
 }
 
-// Local (offline) matches: the user's own saved foods first, then the
-// built-in databases with any name already covered by a saved food dropped,
-// so a food logged before doesn't show twice.
+// Local (offline) matches. The user's own logged foods lead (recency-ranked)
+// so nothing they've eaten is ever lost — but for any food that also lives in
+// a built-in database, the DATABASE entry is substituted in that same slot.
+// The databases are the source of truth for current data (e.g. the water
+// values added 24 Jul); a logged snapshot predating that would otherwise
+// re-log the food with stale/zero water. Built-ins not already shown follow.
 function localFoodMatches(query) {
-  const saved = searchLoggedFoods(query);
-  const seen = new Set(saved.map(f => f.name.toLowerCase()));
-  const builtin = searchCommonFoods(query).filter(f => !seen.has(f.name.toLowerCase()));
-  return [...saved, ...builtin];
+  const builtin = searchCommonFoods(query);
+  const dbByName = new Map(builtin.map(f => [f.name.toLowerCase(), f]));
+  const out = [];
+  const used = new Set();
+  for (const s of searchLoggedFoods(query)) {
+    const k = s.name.toLowerCase();
+    out.push(dbByName.get(k) || s); // prefer the DB entry, keep the saved slot
+    used.add(k);
+  }
+  for (const b of builtin) if (!used.has(b.name.toLowerCase())) out.push(b);
+  return out;
 }
 
 // dir 'cap': exceeding the target is bad (red). dir 'floor': reaching it is
