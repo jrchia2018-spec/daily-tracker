@@ -169,3 +169,16 @@
 | RSN 2nd Multi-Role Combat Vessel (Valour) launch | Victory-class MRCV, launched at ST Engineering Benoi Shipyard; 6-ship class ordered 2023, deliveries from 2028 | MINDEF, 23 Jul 2026 |
 | Ex-IRAS investigator charge (Mansur @ Thio Shuang Long, 49) | Charged with Transstar Asia director Loh Chee Wee, 50, under Computer Misuse and Cybersecurity Act + Official Secrets Act over 2014-2016 unauthorised taxpayer-data access; cases adjourned to 19 Aug | CPIB, 22-23 Jul 2026 |
 | Singapore Enhanced Technical Assistance Package (Palestinian Authority) | S$10m; Singapore's cumulative Gaza humanitarian aid ~US$19m across 11 tranches since Oct 2023 | MFA, 22-23 Jul 2026 |
+| Trump forced-labour tariff on Singapore | 12.5%, effective 24 Jul 2026 12:01am ET; ~1/3 of SG's domestic exports to the US affected; Singapore one of 54 economies named in USTR's Section 301 forced-labour determination; MTI rejects the allegation | USTR/MTI, 23-24 Jul 2026 |
+| GIC Anthropic investment stakes | 3 rounds in ~1 year: undisclosed (~Sep 2025); led US$30b (S$38.7b) Series G, Feb 2026, valuing Anthropic at US$380b; co-led US$65b (S$83.9b) Series H, May 2026, valuing it at US$965b (~S$1.2 trillion) | GIC/wire reports, 24 Jul 2026 |
+| Anthropic run-rate revenue growth | ~US$9b (end-2025) to ~US$47b (S$60.7b) by May 2026 — 5x+ in under a year | Wire reports, 24 Jul 2026 |
+| SG private home rents, Q2 2026 | +0.7% QoQ (vs +0.3% Q1); landed +2.7%, non-landed +0.4% | URA, 24 Jul 2026 |
+| SG private home prices, Q2 2026 | +0.5% QoQ (vs +0.9% Q1); landed/CCR non-landed led, RCR/OCR non-landed declined | URA, 24 Jul 2026 |
+| SG private home vacancy rate | 6.4% end-Q2 2026, up from 6.2% end-Q1 | URA, 24 Jul 2026 |
+| EU fine on Google (DMA breach) | €890m (~US$1b); Google Play/Search self-preferencing; triggers Trump's Section 301 threat | European Commission, 24 Jul 2026 |
+| Iran frozen assets (global estimate) | US$100-120b, held mostly in third countries (Iraq, Qatar, Japan, China); US itself holds a much smaller share (~US$2b) | Wire reports, 24 Jul 2026 |
+| Brent crude, 24 Jul | Briefly above $100/barrel, then fell ~4% to ~$97 — steepest one-day drop since late Jun | Wire reports, 24 Jul 2026 |
+| Spain wildfire evacuations/deaths | 18,000+ evacuated (merged Madrid-area fire), 1,500 (Ávila); 1 dead (Tres Cantos, 98% burns); 3 firefighters dead in Spain wildfires this year; 100,000+ hectares burned nationwide in 2026 | Spanish authorities/wire reports, 24 Jul 2026 |
+| France-Spain combined wildfire evacuations | 200,000+ | Wire reports, 24 Jul 2026 |
+| Kyiv defence-exhibition strike toll | 10 killed, ~100 injured; separate Sloviansk glide-bomb strikes killed 5 more same day (15 nationwide) | Ukrainian officials, 24 Jul 2026 |
+| ICC prosecutor Karim Khan removal vote | 82 of 125 member states voted to dismiss | Wire reports, 24 Jul 2026 |
