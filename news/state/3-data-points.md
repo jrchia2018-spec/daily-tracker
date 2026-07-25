@@ -63,7 +63,7 @@
 | Woodlands Health THRIVE nursing-home pilot | ~300 residents; unplanned hospitalisations and A&E visits both down ~1/3 | Woodlands Health, 19 Jul 2026 |
 | US cyclospora outbreak (Taylor Farms iceberg lettuce) | 5,000+ suspected cases in Michigan alone; recall spans 27 US states; largest recorded Cyclospora outbreak in US history per health officials | Michigan health dept./CDC/FDA, 17-18 Jul 2026 |
 | Tate brothers' UK extradition charges | Andrew Tate: 42 charges (incl. rape, trafficking, indecent images of a child); Tristan Tate: 17 charges (incl. sexual assault, rape, trafficking); 7 alleged UK victims, 2010-2017 | US DOJ/UK CPS, 18-19 Jul 2026 |
-| Guyana ferry (MV Barima) disaster toll | 41 dead, 77 rescued, of 179 aboard; captain/crew held over alleged inaccurate manifest and drug use | Guyanese authorities, 21 Jul 2026 |
+| Guyana ferry (MV Barima) disaster toll | 72 dead, 76 rescued, of 179 aboard; govt estimates final toll could approach 100 (worst maritime disaster on record for Guyana); 3 detained incl. captain + a crew member who tested positive for marijuana | Guyanese authorities, 25 Jul 2026 |
 | India Cockroach-movement crackdown injuries | ~180 injured (118 security personnel, 60 protesters) | Delhi Police, 21 Jul 2026 |
 | Iran war cost estimate (cumulative) | US$37.5 billion, up from earlier estimates | Defense Secretary Hegseth, Senate Appropriations Committee testimony, 21 Jul 2026 |
 | US military injured in Iran war (this month) | ~100, 96% returned to duty; confirmed death toll unchanged at 17 | CENTCOM/Pentagon, 21 Jul 2026 |
@@ -170,6 +170,10 @@
 | Ex-IRAS investigator charge (Mansur @ Thio Shuang Long, 49) | Charged with Transstar Asia director Loh Chee Wee, 50, under Computer Misuse and Cybersecurity Act + Official Secrets Act over 2014-2016 unauthorised taxpayer-data access; cases adjourned to 19 Aug | CPIB, 22-23 Jul 2026 |
 | Singapore Enhanced Technical Assistance Package (Palestinian Authority) | S$10m; Singapore's cumulative Gaza humanitarian aid ~US$19m across 11 tranches since Oct 2023 | MFA, 22-23 Jul 2026 |
 | Trump forced-labour tariff on Singapore | 12.5%, effective 24 Jul 2026 12:01am ET; ~1/3 of SG's domestic exports to the US affected; Singapore one of 54 economies named in USTR's Section 301 forced-labour determination; MTI rejects the allegation | USTR/MTI, 23-24 Jul 2026 |
+| MOM/TADM Employment Standards Report 2025 | 13,083 claims/appeals (up from 11,685 in 2024), rate 3.44/1,000 employees (up from 3.12); salary claims 10,801 (2.84/1,000, up from 2.63; foreign 5.16 vs local 1.61); wrongful-dismissal claims 2,168 (up from 1,720; local 0.64/1,000 up from 0.54, foreign 0.44 up from 0.27); 92% full salary recovery (down from 94%), S$22m recovered (up from S$19m) | MOM/TADM, 24 Jul 2026 |
+| SG Youth Plan (launched 25 Jul) | 20+ initiatives over 5 years; 12 new free "third spaces" by end-2026; S$500 Curiosity Credits for 13-17-yr-olds in Self-Help Group families; Somerset Belt youth precinct (8,700+ sq m) by 2028; ~20,000 youth opportunities/yr by 2030 | PMO/MCCY/NYC, 25 Jul 2026 |
+| Singapore MP-photo impersonation scam | Woman, 60s, lost over S$1m over 2 weeks in Apr (32 transactions + jewellery handovers); scammer used an MP's WhatsApp photo + MinLaw banner posing as police; surfaced at MP Cai Yinzhou's Meet-the-People Session 21 Jul | MP Cai Yinzhou/wire reports, 23-25 Jul 2026 |
+| Typhoon Noul — SIA/Cathay disruption | SIA cancelled SQ856/SQ855/SQ899 (SIN-Shenzhen/HK legs); Cathay cancelled all HKIA flights 1:15am-6pm 26 Jul; HK raised Signal No. 9; 340,000+ evacuated in Guangdong | Wire reports, 25 Jul 2026 |
 | GIC Anthropic investment stakes | 3 rounds in ~1 year: undisclosed (~Sep 2025); led US$30b (S$38.7b) Series G, Feb 2026, valuing Anthropic at US$380b; co-led US$65b (S$83.9b) Series H, May 2026, valuing it at US$965b (~S$1.2 trillion) | GIC/wire reports, 24 Jul 2026 |
 | Anthropic run-rate revenue growth | ~US$9b (end-2025) to ~US$47b (S$60.7b) by May 2026 — 5x+ in under a year | Wire reports, 24 Jul 2026 |
 | SG private home rents, Q2 2026 | +0.7% QoQ (vs +0.3% Q1); landed +2.7%, non-landed +0.4% | URA, 24 Jul 2026 |
@@ -182,3 +186,12 @@
 | France-Spain combined wildfire evacuations | 200,000+ | Wire reports, 24 Jul 2026 |
 | Kyiv defence-exhibition strike toll | 10 killed, ~100 injured; separate Sloviansk glide-bomb strikes killed 5 more same day (15 nationwide) | Ukrainian officials, 24 Jul 2026 |
 | ICC prosecutor Karim Khan removal vote | 82 of 125 member states voted to dismiss | Wire reports, 24 Jul 2026 |
+| Pentagon Iran-war casualty count ("data disruption") | Confirmed US deaths fell 18→14 on the site (removing the 4 killed in Jordan/Iraq since late-Jun fighting resumed); wounded fell 482→420; site left uncorrected ~1 day later | CNN/Pentagon website, 24-25 Jul 2026 |
+| Brent crude, 25 Jul (Houthi Aramco strikes) | Spiked briefly above $100/barrel, then eased to high-$80s/low-$90s range | Wire reports, 25 Jul 2026 |
+| Houthi strikes on Saudi Aramco (Jizan, Yanbu) | First direct hit on a Saudi refinery complex in 4 years; Yanbu handled 92% of Saudi seaborne crude exports in Jun; Patriot battery (Greek-operated) intercepted 2 missiles at Yanbu | Wire reports, 25 Jul 2026 |
+| Hormuz merchant-ship transits (Thu) | 6 vessels | Wire reports, 25 Jul 2026 |
+| CENTCOM Iran strikes | Paused overnight Fri-Sat (25 Jul) — first pause after 13 consecutive nights — amid Oman-mediated Hormuz talks | Wire reports, 25-26 Jul 2026 |
+| West Bank clampdown (Tal village, near Nablus) | ~50 Palestinians arrested, ~70 homes raided, day after a settler-linked shootout killed 4 Palestinians + 2 Israelis | Wire reports, 25 Jul 2026 |
+| Berlin Pride car-ramming | At least 1 dead, at least 14 injured (some life-threatening); parade cancelled; suspect at large, motive unknown | German police/wire reports, 25 Jul 2026 |
+| Syria bus collision (Homs province, Deir Ezzor road) | At least 35 killed, 30 injured; described as one of Syria's deadliest road accidents in recent years | Syrian state media/health ministry, 25 Jul 2026 |
+| India Education Minister Dharmendra Pradhan resignation | Resigned 25 Jul after month-long "Cockroach" protests; CJP declared all demands met, called off protests | Wire reports, 25 Jul 2026 |
