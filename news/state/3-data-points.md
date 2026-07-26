@@ -195,3 +195,9 @@
 | Berlin Pride car-ramming | At least 1 dead, at least 14 injured (some life-threatening); parade cancelled; suspect at large, motive unknown | German police/wire reports, 25 Jul 2026 |
 | Syria bus collision (Homs province, Deir Ezzor road) | At least 35 killed, 30 injured; described as one of Syria's deadliest road accidents in recent years | Syrian state media/health ministry, 25 Jul 2026 |
 | India Education Minister Dharmendra Pradhan resignation | Resigned 25 Jul after month-long "Cockroach" protests; CJP declared all demands met, called off protests | Wire reports, 25 Jul 2026 |
+| Pentagon Iran-war casualty count, corrected | Restored to 18 killed (4 Jordan/Iraq deaths reinstated) and 624 wounded (up from 482, "Overseas Operations" category backdated to 7 Jul) | Pentagon DCAS via CNN, 26 Jul 2026 |
+| Brent crude, 26 Jul | $90.95/barrel, -7.6% on Iran strike-pause/Hormuz-talks news; still ~+10% for the week | Wire reports, 26 Jul 2026 |
+| Berlin Pride attack toll, updated | 1 dead, 29 injured; suspect Abdul Ballout (21) shot dead by police in Spandau ~20hrs after the attack; prior suspended sentence (1yr10mo) for attempting to join ISIS | German police/wire reports, 26 Jul 2026 |
+| European wildfire evacuations, updated | 300,000+ total (~220,000 France, ~75,000 Spain evacuated + ~30,000 sheltering in place); Bordeaux fire ~15km from the city | Wire reports/Bordeaux Mayor Cazenave, 26 Jul 2026 |
+| Israel's Gaza International Stabilization Force approval | ~200 troops initially, incl. Uganda/Morocco/Indonesia; secures borders, trains local police; Israel retains approval rights over contributing countries | Israeli official/wire reports, 26 Jul 2026 |
+| Tan Boon Liat Building en bloc sale | S$950m to Kingsford Havelock Pte Ltd; Singapore's largest 2026 collective sale, surpassing Loyang Valley's S$880m (Apr); below original S$1.15b asking price and reduced S$1b reserve | Wire reports, 26 Jul 2026 |
