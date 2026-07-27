@@ -201,3 +201,19 @@
 | European wildfire evacuations, updated | 300,000+ total (~220,000 France, ~75,000 Spain evacuated + ~30,000 sheltering in place); Bordeaux fire ~15km from the city | Wire reports/Bordeaux Mayor Cazenave, 26 Jul 2026 |
 | Israel's Gaza International Stabilization Force approval | ~200 troops initially, incl. Uganda/Morocco/Indonesia; secures borders, trains local police; Israel retains approval rights over contributing countries | Israeli official/wire reports, 26 Jul 2026 |
 | Tan Boon Liat Building en bloc sale | S$950m to Kingsford Havelock Pte Ltd; Singapore's largest 2026 collective sale, surpassing Loyang Valley's S$880m (Apr); below original S$1.15b asking price and reduced S$1b reserve | Wire reports, 26 Jul 2026 |
+
+## Global economic variables (continued)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 27 Jul | $88.36/barrel, -8.7% — steepest one-day drop of the war, on the third consecutive US-Iran strike-free night | Wire reports, 27 Jul 2026 |
+| WTI crude, 27 Jul | $82.62/barrel, -8.68% | Wire reports, 27 Jul 2026 |
+| Caspian Sea Ukraine strike on Iranian-linked vessel | 1 Iranian sailor killed, several injured; Ukraine says targets included a Russian missile boat + vessels ferrying Iranian military cargo to Russia | Iranian officials/Ukrainian SBU, 26-27 Jul 2026 |
+| Vietnamese cargo ship Khoi Nguyen 18 sinking | 62 aboard, 45 rescued, 17 missing (Fiery Cross Reef, South China Sea) | Vietnamese/Chinese rescue authorities, 27 Jul 2026 |
+
+## Singapore data points (continued)
+| Indicator | Figure | Source |
+|---|---|---|
+| MAS monetary policy, Jul 2026 review | S$NEER slope steepened ~50bps (2nd straight tightening, smaller than April's move); band width/centre unchanged; core inflation to stay elevated into early 2027 | MAS Monetary Policy Statement, 27 Jul 2026 |
+| Singapore births, 2025 | ~29,864 total (27,393 resident, 2,471 non-resident) — below 30,000 for the first time since independence; -11% YoY; median first-time-mother age 32.1 (up from 31.3 in 2021) | Registry of Births and Deaths via wire reports, 27 Jul 2026 |
+| Singapore-Australia essential-supplies protocol | Legally binding SAFTA protocol on diesel/LNG/defence-supply export restrictions; new Australia-Singapore Economic Resilience Dialogue; pending domestic ratification | PMO/Australian PM's Office joint statement, 27 Jul 2026 |
+| ISD self-radicalised teens (3 detained) | Detained Apr-Jun 2026 under ISA; incl. Tan Jun Jie, 19 (planned Sembawang Air Base/LGBTQ-schoolmate knife attacks) and a 14-year-old (planned school stabbing, livestream) | ISD, 27 Jul 2026 |
