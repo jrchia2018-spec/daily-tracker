@@ -217,3 +217,21 @@
 | Singapore births, 2025 | ~29,864 total (27,393 resident, 2,471 non-resident) — below 30,000 for the first time since independence; -11% YoY; median first-time-mother age 32.1 (up from 31.3 in 2021) | Registry of Births and Deaths via wire reports, 27 Jul 2026 |
 | Singapore-Australia essential-supplies protocol | Legally binding SAFTA protocol on diesel/LNG/defence-supply export restrictions; new Australia-Singapore Economic Resilience Dialogue; pending domestic ratification | PMO/Australian PM's Office joint statement, 27 Jul 2026 |
 | ISD self-radicalised teens (3 detained) | Detained Apr-Jun 2026 under ISA; incl. Tan Jun Jie, 19 (planned Sembawang Air Base/LGBTQ-schoolmate knife attacks) and a 14-year-old (planned school stabbing, livestream) | ISD, 27 Jul 2026 |
+| ISA cases under age 20 (past decade+) | 23 people; more than half intended attacks on Singapore soil | Straits Times, 28 Jul 2026 |
+| Singapore terrorism-financing charge (Gaza) | 23-year-old Myanmar PR; US$72.28 (S$93.33) sent via PayPal + attempted US$1 more; up to 10 yrs jail/S$500,000 fine if convicted | MHA/ISD, 28 Jul 2026 |
+| HDB resale price growth moderation | 10.4% (2022) to 2.9% (2025); fell for 2nd consecutive quarter in Q2 2026 | HDB/National Development Ministry, 28 Jul 2026 |
+| Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
+| Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
+| HSBC Global AI Centre of Excellence | 100+ AI specialist hires (NLP, data science, AI governance, human-centred design), opening H2 2026 | HSBC, 27-28 Jul 2026 |
+
+## Global economic variables (29 Jul)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 28 Jul | $84.09/barrel, -4.8%, on Iran-Saudi-Oman Hormuz talks | CNBC, 28 Jul 2026 |
+| WTI crude, 28 Jul | $79.26/barrel, -4% | CNBC, 28 Jul 2026 |
+| Kumamoto earthquake | Magnitude 6.8, ~9 miles N of Kumamoto, ~6-mile depth; 2 dead (Aeon Mall Kashima explosion), dozens injured, 9 missing + 2 in cardiopulmonary arrest at a separate Nippon Paper Yatsushiro plant chimney collapse; ~3,600 SDF personnel mobilised | Wire reports/NHK, 28-29 Jul 2026 |
+| Spain Ávila/Burgohondo wildfire | 500+ km² (50,000+ ha) burned — Spain's largest wildfire on record; 63,000+ evacuated across Madrid/Toledo/Ávila | Wire reports, 28 Jul 2026 |
+| Spain heatwave-linked wildfires (Galicia/Castile and León) | ~20 fires, 115,000+ ha burned over a 16-day heatwave; 1 firefighter killed (truck crash, Espinoso de Compludo) | Wire reports, 28 Jul 2026 |
+| France Gironde/Bordeaux wildfire evacuations | ~220,000 already evacuated; ~4,000 more ordered evacuated 28 Jul from Atlantic-coast tourist sites ahead of a fresh heatwave | Wire reports, 28 Jul 2026 |
+| Pakistan-administered Kashmir election-crackdown toll | At least 30 killed over 2 days (25 Mon, 5 Tue) per JAAC; UN's Volker Türk calls for independent investigation | JAAC/UN OHCHR, 28-29 Jul 2026 |
+| Iran executions (2025, Amnesty estimate) | At least 2,159 people executed | Amnesty International, 28 Jul 2026 |
