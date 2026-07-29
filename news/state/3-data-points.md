@@ -235,3 +235,21 @@
 | France Gironde/Bordeaux wildfire evacuations | ~220,000 already evacuated; ~4,000 more ordered evacuated 28 Jul from Atlantic-coast tourist sites ahead of a fresh heatwave | Wire reports, 28 Jul 2026 |
 | Pakistan-administered Kashmir election-crackdown toll | At least 30 killed over 2 days (25 Mon, 5 Tue) per JAAC; UN's Volker Türk calls for independent investigation | JAAC/UN OHCHR, 28-29 Jul 2026 |
 | Iran executions (2025, Amnesty estimate) | At least 2,159 people executed | Amnesty International, 28 Jul 2026 |
+
+## Global economic variables (30 Jul)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 29 Jul | ~$90/barrel, +6.6%, on the Jordan missile attack/Saudi-Iraq strikes/Egypt tanker fire | CNBC, 29 Jul 2026 |
+| Kumamoto earthquake, revised | Magnitude 7.1 (JMA)/6.8 (USGS unchanged); 18 dead incl. 1 foreigner, 62+ injured (6 serious); ~190 aftershocks in 24h; Nippon Paper Yatsushiro chimney collapse toll confirmed at 5 dead, 7 rescued; 345 rescue teams/1,410 personnel deployed | Wire reports/NPR/Al Jazeera, 29-30 Jul 2026 |
+| US-Saudi strikes on Iran-backed PMF (Iraq) | 20+ killed, 32 wounded; response to 30+ militia drone attacks on Saudi Eastern Region facilities in 72h | Wire reports, 29 Jul 2026 |
+| Iran missile attack on Jordan (Muwaffaq Salti) | 5 missiles intercepted by Jordan; CENTCOM confirms all intercepted, no casualties; first direct Iranian strike since 25 Jul pause began | CENTCOM/Jordanian military, 29 Jul 2026 |
+| Egypt Damietta tanker drone strike | Energos Winter (FSRU) + Gaslog Salem hit, fire, no injuries; unclaimed, assessed likely drone by 2 security sources | Wire reports/Ambrey, 29 Jul 2026 |
+| Iran Ghezel Hesar Prison hunger strike | 1,000+ death-row inmates, 3rd week (began 13 Jul); reports of prisoners sewing lips shut | NCRI/Guardian, 28-29 Jul 2026 |
+| Ghana nationwide blackout | Grid fault ~3:11am 29 Jul; Accra/Kumasi/north affected; water utility GWL also disrupted | GRIDCo, 29 Jul 2026 |
+| Greece wildfire firefighter deaths | 3 killed (2 Crete/Rethymno, 1 Peloponnese) | Wire reports, 29 Jul 2026 |
+
+## Singapore data points (30 Jul)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singapore 2nd Middle-East-war support package | ~S$900m: S$300 CDC vouchers/household (Jan 2027), up to S$1,200 rental support for ~15,200 hawkers/stallholders (from Sep), ComCare Interim Assistance raised to $250+/month; total war-related support now ~S$2b (incl. Apr's S$1b package) | Jeffrey Siow ministerial statement/MOF, 29 Jul 2026 |
+| Ex-SAF captain Benjamin Song sentencing | 21.5 months' jail + S$6,000 fine; cheated 5 colleagues of ~S$87,000 (39 occasions, May 2021-Mar 2024) + vape offences; full restitution made | Singapore courts, 29 Jul 2026 |
