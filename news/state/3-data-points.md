@@ -253,3 +253,25 @@
 |---|---|---|
 | Singapore 2nd Middle-East-war support package | ~S$900m: S$300 CDC vouchers/household (Jan 2027), up to S$1,200 rental support for ~15,200 hawkers/stallholders (from Sep), ComCare Interim Assistance raised to $250+/month; total war-related support now ~S$2b (incl. Apr's S$1b package) | Jeffrey Siow ministerial statement/MOF, 29 Jul 2026 |
 | Ex-SAF captain Benjamin Song sentencing | 21.5 months' jail + S$6,000 fine; cheated 5 colleagues of ~S$87,000 (39 occasions, May 2021-Mar 2024) + vape offences; full restitution made | Singapore courts, 29 Jul 2026 |
+
+## Global economic variables (31 Jul)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 30-31 Jul | Above $92/barrel, extending 29 Jul's 6.6% jump | Wire reports, 30-31 Jul 2026 |
+| Kumamoto earthquake toll, updated | 34 dead (up from 18), 9 more deaths under investigation; 100+ aftershocks; 9,400+ in 406 shelters; ~79,700 households without water | Wire reports, 30 Jul 2026 |
+| Senate Iran War Powers vote (13th this war) | Failed 49-50; Republicans Collins/Murkowski/Paul crossed the aisle, Democrat Fetterman voted against | US Senate, 30 Jul 2026 |
+| Saudi-led Red Sea maritime coalition | 43-nation proposal, HQ in Riyadh; 14 countries (Turkey, Egypt, Pakistan, Sudan, Djibouti etc.) co-signed a joint statement | Wire reports, 30 Jul 2026 |
+| Poland missile incident | Russian Kh-101 (per Tusk/Ukraine FM Sybiha), 10m crater, Tarnawa Kolonia near Lublin, ~90km inside Poland; no casualties; NATO activated air defences | Polish PM/NATO, 30 Jul 2026 |
+| Russia overnight barrage on Ukraine (30 Jul) | 74 missiles + 284 drones (55 missiles/265 drones intercepted); 8 killed incl. 6 of the Voronov family (Kryvyi Rih); Kyiv drone factory + other defence-industrial sites hit | Ukrainian air force/wire reports, 30 Jul 2026 |
+| Greece wildfire firefighter deaths | 3 killed (2 Crete/Rethymno, 1 Peloponnese/Gytheio) | Wire reports, 29-30 Jul 2026 |
+| Suffolk (UK) wildfire — Sizewell B | Major incident declared, Dunwich Heath fire ~3 miles from Sizewell B, plant on high alert (smoke/ventilation risk, not direct fire) | Wire reports, 30 Jul 2026 |
+| Ceuta (Spain) migrant surge | 1,500-2,000 entered over 10 days, hundreds more in a single day 30 Jul; 9 bodies recovered; humanitarian emergency declared | Wire reports, 30 Jul 2026 |
+
+## Singapore data points (31 Jul)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singapore measles cases, 2026 | 40 infections, six-year high; 3 in fully vaccinated individuals | MOH via CNA, 31 Jul 2026 |
+| Singapore Police scam/money-mule operation (16-29 Jul) | 255 persons (172 men, 83 women, aged 16-77) investigated over 660+ scam cases, ~S$5.6m losses; first operation under new Cyber Command (est. 3 Jul) | SPF, 30 Jul 2026 |
+| Petrel 8 flag-registration charge | Company + 49-year-old director charged over 2022 flag registration for UNSC-designated (2017) North Korea-linked vessel; director faces up to 10 yrs jail/S$500,000 fine, company up to S$1m fine | CAD/Singapore courts, 31 Jul 2026 |
+| Singapore youth "friendship recession" | 8% of youth (2025) report no close friends, double the 4% in 2013 | Expert panel report via Straits Times, 30 Jul 2026 |
+| Shanti Pereira 200m semi-final | Season-best 22.81s, advances to Commonwealth Games 200m final | CNA, 31 Jul 2026 |
