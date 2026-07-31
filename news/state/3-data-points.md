@@ -275,3 +275,24 @@
 | Petrel 8 flag-registration charge | Company + 49-year-old director charged over 2022 flag registration for UNSC-designated (2017) North Korea-linked vessel; director faces up to 10 yrs jail/S$500,000 fine, company up to S$1m fine | CAD/Singapore courts, 31 Jul 2026 |
 | Singapore youth "friendship recession" | 8% of youth (2025) report no close friends, double the 4% in 2013 | Expert panel report via Straits Times, 30 Jul 2026 |
 | Shanti Pereira 200m semi-final | Season-best 22.81s, advances to Commonwealth Games 200m final | CNA, 31 Jul 2026 |
+
+## Global economic variables (1 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 31 Jul | $87.84/barrel, ~+22% for the month | Wire reports, 31 Jul 2026 |
+| WTI crude, 31 Jul | $86.80/barrel, +3.84% on the day | Wire reports, 31 Jul 2026 |
+| Ceuta migrant crossing toll | 57 dead (drowning + Tarajal breakwater stampede); ~60,000 crossed from Morocco in 24h, ~48,300 already returned to Morocco by Fri afternoon | Spanish government, 31 Jul 2026 |
+| DRC Ebola outbreak (Bundibugyo strain) | 3,553 confirmed cases, 1,558 deaths since mid-May — fastest-growing on record, 2nd-largest ever; no vaccine/treatment certified for this strain (existing ones target Zaire ebolavirus) | WHO, 31 Jul 2026 |
+| Pakistan Balochistan coal mine blast | 34 miners killed, methane explosion, Mian Kaly-area families/17-25 age range | Wire reports, 31 Jul 2026 |
+| Trump approval rating | 32% — record low | Quinnipiac poll, 31 Jul 2026 |
+| Sri Lanka Easter bombings death sentences | Ex-police chief Pujith Jayasundara (66), ex-defence secretary Hemasiri Fernando (76); criminal dereliction of duty/murder/attempted murder; no execution since 1976 | Sri Lanka special court, 31 Jul 2026 |
+| Russia Ukraine fuel-station campaign | 200+ stations hit since Jun (~3/day); Zaporizhzhia 54 strikes/24 days to 27 Jul, 4 dead/29 injured | CNN analysis, 31 Jul 2026 |
+
+## Singapore data points (1 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| 38 Oxley Road acquisition | Compulsory acquisition completed, possession taken 31 Jul; gazetted monument 12 Dec 2025, gazetted for acquisition 29 Jan 2026; compensation basis = market value at Dec 2025 gazette (amount undisclosed) | SLA/NHB, 31 Jul 2026 |
+| Piang Ngaih Don case — Kevin Chelvam sentence | Raised 10 → 11.5 years (High Court allowed prosecution appeal on 1 of 4 charges) | Singapore courts, 31 Jul 2026 |
+| Massive Attack Singapore ban | 2 members (understood Del Naja, Marshall) barred from re-entry, stern warnings; IMDA won't approve future performance applications, separately probing concert licence breach | SPF/IMDA, 31 Jul 2026 |
+| Shanti Pereira Commonwealth Games 200m final | 8th place — 1st Singaporean to reach an individual sprint final at the Games | CNA, 31 Jul 2026 |
+| Pritam Singh Law Society disciplinary hearing | Set for 13 Aug 2026; Law Society seeking strike-off; bench = CJ Menon, Justice Ramesh, Justice See; possible sanctions: censure, fine up to S$100,000, or strike-off | Law Society, 31 Jul 2026 |
