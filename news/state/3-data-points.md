@@ -296,3 +296,23 @@
 | Massive Attack Singapore ban | 2 members (understood Del Naja, Marshall) barred from re-entry, stern warnings; IMDA won't approve future performance applications, separately probing concert licence breach | SPF/IMDA, 31 Jul 2026 |
 | Shanti Pereira Commonwealth Games 200m final | 8th place — 1st Singaporean to reach an individual sprint final at the Games | CNA, 31 Jul 2026 |
 | Pritam Singh Law Society disciplinary hearing | Set for 13 Aug 2026; Law Society seeking strike-off; bench = CJ Menon, Justice Ramesh, Justice See; possible sanctions: censure, fine up to S$100,000, or strike-off | Law Society, 31 Jul 2026 |
+
+## Global economic variables (2 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 1 Aug | ~$88/barrel, little moved by Iran's Gulf-energy threat/US embassy warnings | Wire reports, 1 Aug 2026 |
+| Ceuta migrant crisis death toll, updated | 67 (up from 57, 31 Jul); ~60,000 crossed in 24h, 48,000+ already returned to Morocco; 500m floating barrier installed; 22 EU states secure emergency interior-ministers meeting for Tue 4 Aug | Spanish government/wire reports, 1 Aug 2026 |
+| DRC Ebola outbreak, updated | 3,605 confirmed cases, 1,587 deaths (44% case-fatality rate) — now the largest Ebola outbreak ever recorded in DRC (surpassing 2018-20's 3,317 cases), second-largest globally after 2014-16 West Africa; spread to 5 provinces/49 health zones | WHO, 31 Jul-1 Aug 2026 |
+| Qeshm Island strike munition identification | Crater/fragment analysis consistent with a US Mark-84 2,000lb bomb; killed a husband, wife, 2-year-old son; 2 more children pulled alive from rubble | NYT satellite/munitions analysis, 1 Aug 2026 |
+| Moscow restaurant bombing toll | 3 dead (security guard, customer, suspected device-carrier), 21+ injured; device ~1kg TNT-equivalent with ball bearings, remotely detonated | Russian investigators/RIA Novosti, 1 Aug 2026 |
+| Russian barrage on Kyiv, 1-2 Aug | 9 killed, 30+ injured, ballistic missiles; 2nd 9-dead Kyiv barrage in a week; hours after Trump said US "has not agreed" to Ukraine Patriot-manufacturing licences | Ukrainian officials/wire reports, 1-2 Aug 2026 |
+| Peru Nazca Lines tourist plane crash | 13 dead (11 foreign tourists + 2 crew); Aerodiana-operated flight from Ica; crashed near Pueblo Viejo, ~6km from Nazca | Peruvian police/wire reports, 1 Aug 2026 |
+| Nirmal Purja/Broad Peak avalanche toll | Purja + at least 4 other climbers confirmed dead (Nadhira Al Harthy-Oman, Pur Bahadur Gurung-Nepal, Sarah Mallory Geis-US); avalanche struck Thu 30 Jul; search continues for remaining missing of the 10-person team | Climbing company/wire reports, 1 Aug 2026 |
+| Negeri Sembilan state election | BN-PN supermajority, 25/36 seats; PH (Anwar's coalition) 11 seats; 2nd PH setback in weeks after the 11 Jul Johor result | Malaysian election authorities, 1 Aug 2026 |
+
+## Singapore data points (2 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Clementi flat fire | 1 dead, 2 firefighters injured (burns); Block 309 Clementi Ave 4, ~11.10pm 31 Jul; ~40 residents evacuated | SCDF/wire reports, 1 Aug 2026 |
+| Maju Forest/Gillman Barracks petitions | 31,500+ combined signatures across 2 petitions as of late Jul; public consultation window 10 Jul-6 Aug 2026 | Change.org/wire reports, late Jul 2026 |
+| Woodlands Hospital negligence dispute | Mo Jinying, 59, died Jun (4 months after Feb cardiac arrest during heart-surgery recovery); hospital's internal review + independent experts found no negligence; family disputes 4-hourly (not continuous) monitoring | Shin Min Daily News via Mothership, 1 Aug 2026 |
