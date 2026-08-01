@@ -20,6 +20,7 @@ function defaults() {
     lastBackup: null,     // date string of the last export — drives the backup nudge
     skincareStart: null,  // 'YYYY-MM-DD' — day 0 of the 8-week hold routine, or null
     skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } }
+    supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
   };
 }
 
@@ -208,6 +209,22 @@ export function targetsFor(key) {
 export function latestWeight() {
   if (!state.weights.length) return state.profile ? state.profile.weightKg : null;
   return state.weights[state.weights.length - 1].kg;
+}
+
+// ---- supplements ----
+
+export function supplementsFor(key) {
+  return state.supplements[key] || [];
+}
+
+// Toggle one supplement for a day. Empty days are dropped so the map stays
+// sparse and an untouched day is distinguishable from a deliberate "none".
+export function toggleSupplement(key, id) {
+  const cur = supplementsFor(key);
+  const next = cur.includes(id) ? cur.filter(x => x !== id) : [...cur, id];
+  if (next.length) state.supplements[key] = next;
+  else delete state.supplements[key];
+  save();
 }
 
 // ---- skincare 8-week hold ----

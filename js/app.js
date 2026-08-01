@@ -4,6 +4,7 @@ import {
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods,
   skincareFor, setSkincare, skincareProgram, skincareWeek, hadNewLesion,
+  supplementsFor, toggleSupplement,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -545,6 +546,18 @@ function frequentFoods(limit = 8) {
     .map(e => ({ ...e.last, count: e.count }));
 }
 
+// The daily supplement stack (settled 1 Aug 2026). Edit this list to change
+// what the checklist shows; ids are what get stored, so don't reuse an id for
+// a different supplement or old logs will mean the wrong thing.
+const SUPPLEMENTS = [
+  { id: 'whey', label: 'Whey isolate', note: 'closes the protein gap' },
+  { id: 'creatine', label: 'Creatine', note: '3-5g' },
+  { id: 'psyllium', label: 'Psyllium husk', note: 'with a full glass' },
+  { id: 'magnesium', label: 'Magnesium glycinate' },
+  { id: 'multi', label: 'Multivitamin' },
+  { id: 'omega', label: 'Omega-3' },
+];
+
 function renderMeals() {
   const t = targets(mealDate);
   const tot = mealTotals(mealDate);
@@ -603,6 +616,23 @@ function renderMeals() {
   </div>`;
   })()}
 
+  ${(() => {
+    const taken = supplementsFor(mealDate);
+    return `
+  <div class="card">
+    <div class="row between" style="margin-bottom:10px">
+      <h2 style="margin:0">💊 Supplements</h2>
+      <span class="small ${taken.length === SUPPLEMENTS.length ? '' : 'muted'}">${taken.length}/${SUPPLEMENTS.length}</span>
+    </div>
+    <div class="supp-grid">
+      ${SUPPLEMENTS.map(s => `
+        <button class="btn small ${taken.includes(s.id) ? 'primary' : ''}" data-supp="${s.id}">
+          ${taken.includes(s.id) ? '✓ ' : ''}${s.label}${s.note ? `<span class="supp-note">${s.note}</span>` : ''}
+        </button>`).join('')}
+    </div>
+  </div>`;
+  })()}
+
   <div class="card">
     <h2>Add food</h2>
     <button class="btn primary block" id="food-paste" style="margin-bottom:12px;padding:15px 16px;font-size:15px">📋 Paste from Claude</button>
@@ -641,6 +671,10 @@ function renderMeals() {
   view.querySelector('#mw-cup').addEventListener('click', () => { addWater(mealDate, 250); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
   view.querySelector('#mw-500').addEventListener('click', () => { addWater(mealDate, 500); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
   view.querySelector('#mw-custom').addEventListener('click', () => openWaterModal(mealDate));
+
+  for (const b of view.querySelectorAll('[data-supp]')) {
+    b.addEventListener('click', () => { toggleSupplement(mealDate, b.dataset.supp); render(); });
+  }
   view.querySelector('#mw-save').addEventListener('click', () => {
     const sleep = view.querySelector('#mw-sleep').value;
     const time = view.querySelector('#mw-time').value.trim();
