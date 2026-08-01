@@ -216,12 +216,19 @@ export function skincareFor(key) {
   return state.skincare[key] || {};
 }
 
+// A day counts as a new-lesion day if any area was tagged. Entries logged
+// before areas existed only have the boolean, so honour that too.
+export function hadNewLesion(entry) {
+  return !!(entry && ((entry.areas && entry.areas.length) || entry.newLesion));
+}
+
 // Merge a patch into a day's skincare entry; drop the entry when it holds
 // nothing meaningful so the map stays sparse. whiteheads is kept even at 0
 // (a logged zero is real data), so we test for a number, not truthiness.
 export function setSkincare(key, patch) {
   const next = { ...state.skincare[key], ...patch };
-  if (typeof next.whiteheads !== 'number' && !next.newLesion) delete state.skincare[key];
+  if (next.areas && !next.areas.length) delete next.areas;
+  if (typeof next.whiteheads !== 'number' && !hadNewLesion(next)) delete state.skincare[key];
   else state.skincare[key] = next;
   save();
 }
@@ -241,20 +248,27 @@ export function skincareProgram() {
   };
 }
 
-// New-lesion days and average active count for one 0-based program week,
-// counting only days up to today.
+// New-lesion days, average active count, and a per-area tally for one 0-based
+// program week, counting only days up to today. `daysLogged` distinguishes
+// "no new whiteheads" from "didn't log" — they mean very different things.
 export function skincareWeek(weekIndex) {
   const first = addDays(state.skincareStart, weekIndex * 7);
   const today = dateKey();
-  let newDays = 0, sum = 0, counted = 0, logged = 0;
+  let newDays = 0, sum = 0, counted = 0, elapsed = 0, daysLogged = 0;
+  const areas = {};
   for (let i = 0; i < 7; i++) {
     const k = addDays(first, i);
     if (k > today) break;
-    logged++;
+    elapsed++;
     const e = state.skincare[k];
     if (!e) continue;
-    if (e.newLesion) newDays++;
+    daysLogged++;
+    if (hadNewLesion(e)) newDays++;
+    for (const a of e.areas || []) areas[a] = (areas[a] || 0) + 1;
     if (typeof e.whiteheads === 'number') { sum += e.whiteheads; counted++; }
   }
-  return { first, daysElapsed: logged, newDays, avg: counted ? Math.round(sum / counted) : null };
+  return {
+    first, daysElapsed: elapsed, daysLogged, newDays, areas,
+    avg: counted ? Math.round(sum / counted) : null,
+  };
 }

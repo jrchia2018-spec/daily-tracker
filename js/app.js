@@ -3,7 +3,7 @@ import {
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods,
-  skincareFor, setSkincare, skincareProgram, skincareWeek,
+  skincareFor, setSkincare, skincareProgram, skincareWeek, hadNewLesion,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -625,7 +625,7 @@ function renderMeals() {
     ${entries.length ? entries.map(m => `
       <div class="item" data-id="${m.id}" style="cursor:pointer">
         <div>
-          <div class="title">${esc(m.name)}</div>
+          <div class="title">${esc(m.name)}${m.servings && m.servings !== 1 ? ` <span class="badge">×${m.servings}</span>` : ''}</div>
           <div class="sub">${m.grams ? m.grams + 'g · ' : ''}P ${r0(m.protein)} · C ${r0(m.carbs)} · F ${r0(m.fat)}${m.fibre ? ` · Fb ${r0(m.fibre)}` : ''}${m.sodium ? ` · Na ${r0(m.sodium)}` : ''}</div>
         </div>
         <div class="val">${r0(m.kcal)} kcal</div>
@@ -883,34 +883,45 @@ function openFoodModal(result, existing = null) {
   const per100 = existing?.per100 || result?.per100 || null;
   // Without per-100g data (My log / manual favourites) grams are unknown —
   // leave Amount blank rather than implying the portion weighs 100g.
-  const grams = existing?.grams
-    ?? (result ? (per100 ? (result.grams ?? parseServingGrams(result.serving) ?? 100) : result.grams ?? '') : '');
+  // An existing entry stores TOTAL grams; the field shows one serving's worth.
+  const grams = existing?.grams != null
+    ? r1(existing.grams / (existing.servings || 1))
+    : (result ? (per100 ? (result.grams ?? parseServingGrams(result.serving) ?? 100) : result.grams ?? '') : '');
   const scaled = f => per100 && per100[f] != null && grams ? r1((per100[f] * grams) / 100) : '';
   // Favourite templates without per100 (manual entries) carry macros directly.
   const direct = f => (per100 ? scaled(f) : result?.[f] ?? '');
+  // The macro fields always hold ONE serving. Servings is a separate
+  // multiplier applied only when saving, so picking 2× never overwrites the
+  // food's own per-serving figures (they stay editable and correct).
+  // Older entries have no per1/servings — treat their totals as one serving.
+  const per1 = existing?.per1 || null;
+  const servings0 = existing?.servings ?? 1;
+  const one = f => (per1 ? per1[f] : existing?.[f]) ?? direct(f);
   const init = {
     name: existing?.name ?? result?.name ?? '',
-    kcal: existing?.kcal ?? direct('kcal'),
-    protein: existing?.protein ?? direct('protein'),
-    carbs: existing?.carbs ?? direct('carbs'),
-    fat: existing?.fat ?? direct('fat'),
-    fibre: existing?.fibre ?? direct('fibre'),
-    sodium: existing?.sodium ?? direct('sodium'),
-    water: existing?.water ?? direct('water'),
+    kcal: one('kcal'),
+    protein: one('protein'),
+    carbs: one('carbs'),
+    fat: one('fat'),
+    fibre: one('fibre'),
+    sodium: one('sodium'),
+    water: one('water'),
   };
 
   const m = openModal(`
     <h2>${existing ? 'Edit food' : 'Add food'}</h2>
     <label class="field"><span>Name</span><input id="f-name" value="${esc(init.name)}"></label>
-    <label class="field"><span>Amount (g) ${per100 ? '— macros update automatically' : ''}</span>
+    <label class="field"><span>Amount per serving (g) ${per100 ? '— macros update automatically' : ''}</span>
       <input id="f-grams" type="number" inputmode="decimal" value="${grams}"></label>
-    <div class="row" style="gap:6px;margin:0 0 10px;align-items:center">
-      <span class="small muted">Quantity</span>
-      <button type="button" class="btn small" data-mult="0.5">½×</button>
-      <button type="button" class="btn small" data-mult="2">2×</button>
-      <button type="button" class="btn small" data-mult="3">3×</button>
-      <input id="f-mult" type="number" inputmode="decimal" placeholder="custom ×" style="width:82px" title="Multiply the amounts below, then press Enter">
+    <div class="row" style="gap:6px;margin:0 0 6px;align-items:center;flex-wrap:wrap">
+      <span class="small muted">Servings</span>
+      <button type="button" class="btn small" data-serv="0.5">½</button>
+      <button type="button" class="btn small" data-serv="1">1</button>
+      <button type="button" class="btn small" data-serv="2">2</button>
+      <button type="button" class="btn small" data-serv="3">3</button>
+      <input id="f-serv" type="number" inputmode="decimal" step="0.5" min="0" value="${servings0}" style="width:70px">
     </div>
+    <p class="small muted" id="f-total" style="margin:0 0 10px"></p>
     <div class="grid2">
       <label class="field"><span>Calories (kcal)</span><input id="f-kcal" type="number" inputmode="decimal" value="${init.kcal}"></label>
       <label class="field"><span>Protein (g)</span><input id="f-protein" type="number" inputmode="decimal" value="${init.protein}"></label>
@@ -920,7 +931,7 @@ function openFoodModal(result, existing = null) {
       <label class="field"><span>Sodium (mg)</span><input id="f-sodium" type="number" inputmode="decimal" value="${init.sodium}"></label>
       <label class="field"><span>Water (ml)</span><input id="f-water" type="number" inputmode="decimal" value="${init.water}"></label>
     </div>
-    <p class="small muted" style="margin:-4px 0 10px">Water counts drinks and soup broth toward your daily water target. Leave blank for solid food.</p>
+    <p class="small muted" style="margin:-4px 0 10px">Figures above are for <b>one serving</b> — changing servings won't alter them. Water counts drinks and soup broth toward your water target; leave blank for solid food.</p>
     <div class="row" style="margin-top:6px">
       <button class="btn primary block" id="f-save">${existing ? 'Save changes' : 'Add to log'}</button>
     </div>
@@ -937,48 +948,47 @@ function openFoodModal(result, existing = null) {
     });
   }
 
-  // Quantity multiplier: scales the portion. For a gram-based food we scale
-  // grams and let the listener above recompute from per100 (stays exact);
-  // for a per-portion item (My log / manual, no per100) we scale the macro
-  // fields directly. Multiplies what's shown, so ½× then ½× gives a quarter.
-  const applyMult = factor => {
-    if (!(factor > 0)) return;
-    if (per100 && Number($f('f-grams').value)) {
-      $f('f-grams').value = r1(Number($f('f-grams').value) * factor);
-      $f('f-grams').dispatchEvent(new Event('input'));
-    } else {
-      for (const f of ['grams', 'kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water']) {
-        const el = $f('f-' + f);
-        const v = Number(el.value);
-        if (el.value !== '' && Number.isFinite(v)) el.value = r1(v * factor);
-      }
-    }
+  // Servings SETS a count (it never multiplies the fields above). The total
+  // that gets logged is per-serving × servings, previewed live so the two
+  // numbers can't be confused.
+  const MACROS = ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water'];
+  const servingsNow = () => {
+    const n = Number($f('f-serv').value);
+    return Number.isFinite(n) && n > 0 ? n : 1;
   };
-  for (const b of m.querySelectorAll('[data-mult]')) {
-    b.addEventListener('click', () => applyMult(Number(b.dataset.mult)));
+  const paintTotal = () => {
+    const n = servingsNow();
+    if (n === 1) { $f('f-total').textContent = ''; return; }
+    const t = f => r1((Number($f('f-' + f).value) || 0) * n);
+    $f('f-total').innerHTML =
+      `Logging <b>${n} servings</b> — total <b>${r0(t('kcal'))} kcal</b> · P ${t('protein')} · C ${t('carbs')} · F ${t('fat')}`;
+  };
+  for (const b of m.querySelectorAll('[data-serv]')) {
+    b.addEventListener('click', () => { $f('f-serv').value = b.dataset.serv; paintTotal(); });
   }
-  $f('f-mult').addEventListener('change', () => {
-    const factor = Number($f('f-mult').value);
-    applyMult(factor);
-    $f('f-mult').value = '';
-  });
+  $f('f-serv').addEventListener('input', paintTotal);
+  for (const f of MACROS) $f('f-' + f).addEventListener('input', paintTotal);
+  paintTotal();
 
   $f('f-save').addEventListener('click', () => {
     const name = $f('f-name').value.trim();
     if (!name) { toast('Name is required'); return; }
+    // Store the per-serving figures (per1) plus the count, and the totals the
+    // rest of the app sums. Keeping per1 means re-opening this entry shows the
+    // original serving again rather than the multiplied-up numbers.
+    const n = servingsNow();
+    const gramsOne = Number($f('f-grams').value) || null;
+    const per1Out = {};
+    for (const f of MACROS) per1Out[f] = Number($f('f-' + f).value) || 0;
     const entry = {
       id: existing?.id || uid(),
       name,
-      grams: Number($f('f-grams').value) || null,
+      grams: gramsOne == null ? null : r1(gramsOne * n),
       per100,
-      kcal: Number($f('f-kcal').value) || 0,
-      protein: Number($f('f-protein').value) || 0,
-      carbs: Number($f('f-carbs').value) || 0,
-      fat: Number($f('f-fat').value) || 0,
-      fibre: Number($f('f-fibre').value) || 0,
-      sodium: Number($f('f-sodium').value) || 0,
-      water: Number($f('f-water').value) || 0,
+      per1: per1Out,
+      servings: n,
     };
+    for (const f of MACROS) entry[f] = r1(per1Out[f] * n);
     const list = state.meals[mealDate] || (state.meals[mealDate] = []);
     if (existing) {
       const i = list.findIndex(x => x.id === existing.id);
@@ -1646,6 +1656,16 @@ async function loadLatestReport() {
 // Evening variant by weekday (0 Sun … 6 Sat): BHA Mon/Wed/Fri (spaced out),
 // sleeping pack Tue/Sat, nothing Thu/Sun — the routine's "3 BHA, 1–2 pack".
 const SKIN_NIGHT = { 1: 'bha', 3: 'bha', 5: 'bha', 2: 'pack', 6: 'pack', 0: 'none', 4: 'none' };
+
+// Where a new whitehead showed up. The bridge strip is tracked separately
+// from the rest of the nose because it's a contact/occlusion site (glasses),
+// so it can respond differently from the skin around it.
+const SKIN_AREAS = [
+  { id: 'bridge', label: 'Bridge strip' },
+  { id: 'nose', label: 'Rest of nose' },
+  { id: 'lip', label: 'Upper lip' },
+  { id: 'chin', label: 'Chin' },
+];
 const SKIN_NIGHT_TEXT = {
   bha: 'PC 2% BHA Gel — last step, nothing on top',
   pack: 'Skin1004 Hyalu-Cica Sleeping Pack',
@@ -1657,6 +1677,9 @@ function renderSkincare() {
   const prog = skincareProgram();
   const tonight = SKIN_NIGHT[parseKey(today).getDay()];
   const sc = skincareFor(today);
+  const areasToday = sc.areas || [];
+  // A day logged before areas existed carries only the old boolean.
+  const legacyNew = !areasToday.length && !!sc.newLesion;
   const li = steps => steps.map(s => `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
 
   // Header: start button before day 0; week/day counter after.
@@ -1680,13 +1703,19 @@ function renderSkincare() {
     const rows = [];
     for (let w = 0; w <= prog.weekIndex; w++) {
       const s = skincareWeek(w);
+      const spots = SKIN_AREAS.filter(a => s.areas[a.id])
+        .map(a => `${a.label.toLowerCase()} ${s.areas[a.id]}`).join(' · ');
       rows.push(`
-      <div class="row between" style="font-size:13px;padding:5px 0;border-top:1px solid var(--line)">
-        <span class="muted">Week ${w + 1}${w === prog.weekIndex ? ' <span style="color:var(--accent)">· now</span>' : ''}</span>
-        <span>new on <b>${s.newDays}</b>/${s.daysElapsed} day${s.daysElapsed === 1 ? '' : 's'}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
+      <div style="font-size:13px;padding:6px 0;border-top:1px solid var(--line)">
+        <div class="row between">
+          <span class="muted">Week ${w + 1}${w === prog.weekIndex ? ' <span style="color:var(--accent)">· now</span>' : ''}</span>
+          <span>new on <b>${s.newDays}</b>/${s.daysLogged} logged${s.daysLogged < s.daysElapsed ? ` <span class="muted">(of ${s.daysElapsed})</span>` : ''}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
+        </div>
+        ${spots ? `<div class="muted" style="font-size:12px;margin-top:2px">${spots}</div>` : ''}
       </div>`);
     }
-    weekBlock = `<div style="margin-top:12px">${rows.join('')}</div>`;
+    weekBlock = `<div style="margin-top:14px">
+      <div class="small muted" style="margin-bottom:2px">By week</div>${rows.join('')}</div>`;
   } else {
     weekBlock = `<p class="small muted" style="margin-top:12px">Start day 0 to track new-lesion days by week.</p>`;
   }
@@ -1714,8 +1743,20 @@ function renderSkincare() {
         <button class="btn small" id="wh-plus" aria-label="More">+</button>
       </div>
     </div>
-    <button class="btn small block ${sc.newLesion ? 'primary' : ''}" id="wh-new" style="margin-top:8px">
-      ${sc.newLesion ? '✓ New whitehead appeared today' : 'Mark a new whitehead today'}</button>
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">
+      <div class="small muted" style="margin-bottom:8px">Did a <b>new</b> one appear today? Tap where — tap again to undo.</div>
+      <div class="skin-areas">
+        ${SKIN_AREAS.map(a => `
+          <button class="btn small ${areasToday.includes(a.id) ? 'primary' : ''}" data-area="${a.id}">${a.label}</button>`).join('')}
+      </div>
+      <div class="small ${areasToday.length ? '' : 'muted'}" style="margin-top:8px">
+        ${areasToday.length
+          ? `Logged: new whitehead on <b>${areasToday.map(id => SKIN_AREAS.find(a => a.id === id).label.toLowerCase()).join(', ')}</b>.`
+          : legacyNew
+            ? 'Logged as a new whitehead (before areas were tracked) — tap an area to place it.'
+            : 'Nothing tapped = no new whiteheads today.'}
+      </div>
+    </div>
     ${weekBlock}
   </div>
 
@@ -1794,10 +1835,17 @@ function renderSkincare() {
   };
   view.querySelector('#wh-minus').addEventListener('click', () => setCount((count || 0) - 1));
   view.querySelector('#wh-plus').addEventListener('click', () => setCount((count || 0) + 1));
-  view.querySelector('#wh-new').addEventListener('click', () => {
-    setSkincare(today, { newLesion: !sc.newLesion });
-    render();
-  });
+  for (const b of view.querySelectorAll('[data-area]')) {
+    b.addEventListener('click', () => {
+      const id = b.dataset.area;
+      const next = areasToday.includes(id)
+        ? areasToday.filter(a => a !== id)
+        : [...areasToday, id];
+      // areas supersede the old boolean; clear it so the two can't disagree.
+      setSkincare(today, { areas: next, newLesion: next.length > 0 });
+      render();
+    });
+  }
   view.querySelector('#skin-start')?.addEventListener('click', () => {
     state.skincareStart = today;
     save();
