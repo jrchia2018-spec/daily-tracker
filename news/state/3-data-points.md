@@ -316,3 +316,23 @@
 | Clementi flat fire | 1 dead, 2 firefighters injured (burns); Block 309 Clementi Ave 4, ~11.10pm 31 Jul; ~40 residents evacuated | SCDF/wire reports, 1 Aug 2026 |
 | Maju Forest/Gillman Barracks petitions | 31,500+ combined signatures across 2 petitions as of late Jul; public consultation window 10 Jul-6 Aug 2026 | Change.org/wire reports, late Jul 2026 |
 | Woodlands Hospital negligence dispute | Mo Jinying, 59, died Jun (4 months after Feb cardiac arrest during heart-surgery recovery); hospital's internal review + independent experts found no negligence; family disputes 4-hourly (not continuous) monitoring | Shin Min Daily News via Mothership, 1 Aug 2026 |
+
+## Global economic variables (3 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Trump cancels planned US-Israel joint strike on Iran | Cited "outlines" of a deal: full Hormuz reopening + end to Iran's nuclear threat; Saudi-led allies' request; unsigned; talks resume 3 Aug | Truth Social/Bloomberg/Washington Post, 2 Aug 2026 |
+| Brent crude, 2-3 Aug | Fell as much as 7.3% to $81.55/barrel on the Iran strike-cancellation news; WTI near $80 | Bloomberg, 2-3 Aug 2026 |
+| Gaza toll, 2 Aug | At least 18 Palestinians killed — highest single-day toll in weeks; Israel controls ~70% of Gaza per Energy Min. Eli Cohen | Palestinian health officials/wire reports, 2 Aug 2026 |
+| Israel-Hezbollah Ali al-Taher Ridge clash | Several Hezbollah members killed, 1 IDF officer wounded, ~6 miles north of the Lebanon border | IDF, 1-2 Aug 2026 |
+| Pakistan Swat Valley (Kabal) suicide bombing | 14+ killed (5 police officers), 25+ injured, at an anti-militant rally | Wire reports, 2 Aug 2026 |
+| Indonesia ferry Mutiara Sentosa 2 fire | 271 aboard (232 passengers, 39 crew), 5 dead, 41 missing, 225 rescued as of Sun afternoon; Surabaya-Makassar route, off Sumenep, Java | Indonesian authorities/wire reports, 2 Aug 2026 |
+| Ukraine strikes on Russia | Saratov oil refinery (~7m tonnes/yr capacity) + Engels airfield (Tu-95MS/Tu-160 strategic bombers) + Kaluga oil depot + Bryansk drone-launch site | Ukraine General Staff/Zelensky, 2-3 Aug 2026 |
+| Ceuta EU emergency meeting | Confirmed for Tue 4 Aug, Justice and Home Affairs Council, chaired by Irish Justice Min. Jim O'Callaghan (Ireland holds EU presidency) | EU Council/wire reports, 2 Aug 2026 |
+| Greece firefighting-helicopter collision | 2 dead (1 Greek, 1 Danish), 2 survived; Porto Germeno fire near Psatha, ~45 miles NW of Athens; Bell helicopters grounded pending probe | Greek officials/wire reports, 2 Aug 2026 |
+
+## Singapore data points (3 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Sexual exploitation of 2 minors charge | 20-year-old woman (recruitment/trafficking/cheating) + 8 men aged 20-41 (obtaining commercial sexual services); charged in court 3 Aug | SPF/wire reports, 2-3 Aug 2026 |
+| Clementi fire dry-riser fault | SCDF confirms dry rising main at Block 309 Clementi Ave 4 not in proper working condition during the fatal fire; firefighters hauled hoses up 8 floors | SCDF/Straits Times, 2 Aug 2026 |
+| WP Parliament economy motion | Tabled for 4 Aug by Kenneth Tiong (Aljunied GRC), seconded by Jamus Lim (Sengkang GRC); most of WP's 12 MPs to speak | Workers' Party/wire reports, 2 Aug 2026 |
