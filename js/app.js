@@ -548,11 +548,13 @@ function frequentFoods(limit = 8) {
 
 // The daily supplement stack (settled 1 Aug 2026). Edit this list to change
 // what the checklist shows; ids are what get stored, so don't reuse an id for
-// a different supplement or old logs will mean the wrong thing.
+// a different supplement or old logs will mean the wrong thing — when
+// something is swapped out, retire its id and add a new one (psyllium was
+// dropped for chia this way; any stray 'psyllium' ticks just stop rendering).
 const SUPPLEMENTS = [
   { id: 'whey', label: 'Whey isolate', note: 'closes the protein gap' },
   { id: 'creatine', label: 'Creatine', note: '3-5g' },
-  { id: 'psyllium', label: 'Psyllium husk', note: 'with a full glass' },
+  { id: 'chia', label: 'Chia seeds', note: '2 tbsp in the shake' },
   { id: 'magnesium', label: 'Magnesium glycinate' },
   { id: 'multi', label: 'Multivitamin' },
   { id: 'omega', label: 'Omega-3' },
@@ -618,11 +620,14 @@ function renderMeals() {
 
   ${(() => {
     const taken = supplementsFor(mealDate);
+    // Count only ids still on the list — a retired one (e.g. psyllium, dropped
+    // for chia) stays in old logs but must not inflate today's tally.
+    const n = taken.filter(id => SUPPLEMENTS.some(s => s.id === id)).length;
     return `
   <div class="card">
     <div class="row between" style="margin-bottom:10px">
       <h2 style="margin:0">💊 Supplements</h2>
-      <span class="small ${taken.length === SUPPLEMENTS.length ? '' : 'muted'}">${taken.length}/${SUPPLEMENTS.length}</span>
+      <span class="small ${n === SUPPLEMENTS.length ? '' : 'muted'}">${n}/${SUPPLEMENTS.length}</span>
     </div>
     <div class="supp-grid">
       ${SUPPLEMENTS.map(s => `
