@@ -336,3 +336,20 @@
 | Sexual exploitation of 2 minors charge | 20-year-old woman (recruitment/trafficking/cheating) + 8 men aged 20-41 (obtaining commercial sexual services); charged in court 3 Aug | SPF/wire reports, 2-3 Aug 2026 |
 | Clementi fire dry-riser fault | SCDF confirms dry rising main at Block 309 Clementi Ave 4 not in proper working condition during the fatal fire; firefighters hauled hoses up 8 floors | SCDF/Straits Times, 2 Aug 2026 |
 | WP Parliament economy motion | Tabled for 4 Aug by Kenneth Tiong (Aljunied GRC), seconded by Jamus Lim (Sengkang GRC); most of WP's 12 MPs to speak | Workers' Party/wire reports, 2 Aug 2026 |
+
+## Global economic variables (4 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 3 Aug | ~$83.81/barrel, -4.7% (one tracker showed $82.92, -5.7%) — second consecutive sharp drop on Iran-Oman Hormuz "temporary route" talks progress | Wire reports, 3 Aug 2026 |
+| Sudan Darfur court drone strike | 35 killed (incl. 4 tribal leaders, 2 RSF commanders), Ghara al-Zawiya village (RSF-controlled), customary court in session under a tree | Emergency Lawyers Group, 2-3 Aug 2026 |
+| Ukraine drone strike, Russian Black Sea beach (Gelendzhik/Arkhipo-Osipovka) | 7 killed (incl. 3 children), ~40 injured | Krasnodar regional governor, 3 Aug 2026 |
+| US cyclosporiasis outbreak deaths | First 2 US deaths (Michigan, underlying conditions); Michigan 11,234 cases/193 hospitalised; 6,700+ confirmed nationally; recall spans 27 states | CDC/Michigan health dept., 3 Aug 2026 |
+| Gaza toll, weekend (Fri-Sun) | At least 26 killed cumulative; Monday 3 Aug strike killed named Hamas Daraj-Tuffah Battalion commander Jalal Sobieh, first strike in a day defying Board of Peace pressure to halt fire | Palestinian health officials/IDF, 1-3 Aug 2026 |
+
+## Singapore data points (4 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Jurong Port scaffolding collapse | 23-year-old worker killed, scaffolding fell onto lorry he was driving, worksite along Jurong Port Road | SCDF/SPF, 3 Aug 2026 |
+| Farrer Park flat fire | 5 trapped (3 unconscious), Block 684 Race Course Road, 5th-floor bedroom fire | SCDF, 3 Aug 2026 |
+| Niece sexual-abuse sentencing | 38-year-old man: 21 years' jail + 16 strokes of the cane; abuse over ~2 years from age 13; 6 charges pled guilty, 17 more taken into consideration | Singapore courts, 3 Aug 2026 |
+| Singapore births-deaths natural increase, 2025 | 3,365 (down from 7,261 in 2024, 14,380 in 2021) — births 29,864 (record low, -11.4% YoY) | Singapore Dept of Statistics, 3 Aug 2026 |
