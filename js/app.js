@@ -4,6 +4,7 @@ import {
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods,
   skincareFor, setSkincare, skincareProgram, skincareWeek, hadNewLesion,
+  areaCounts, newLesionCount, bumpSkincareArea,
   supplementsFor, toggleSupplement, latestWaist, bodyChange,
 } from './store.js';
 import {
@@ -1827,9 +1828,10 @@ function renderSkincare() {
   const prog = skincareProgram();
   const tonight = SKIN_NIGHT[parseKey(today).getDay()];
   const sc = skincareFor(today);
-  const areasToday = sc.areas || [];
+  const areasToday = areaCounts(sc);           // { areaId: count }
+  const newToday = newLesionCount(sc);
   // A day logged before areas existed carries only the old boolean.
-  const legacyNew = !areasToday.length && !!sc.newLesion;
+  const legacyNew = !Object.keys(areasToday).length && !!sc.newLesion;
   const li = steps => steps.map(s => `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
 
   // Header: start button before day 0; week/day counter after.
@@ -1859,7 +1861,7 @@ function renderSkincare() {
       <div style="font-size:13px;padding:6px 0;border-top:1px solid var(--line)">
         <div class="row between">
           <span class="muted">Week ${w + 1}${w === prog.weekIndex ? ' <span style="color:var(--accent)">· now</span>' : ''}</span>
-          <span>new on <b>${s.newDays}</b>/${s.daysLogged} logged${s.daysLogged < s.daysElapsed ? ` <span class="muted">(of ${s.daysElapsed})</span>` : ''}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
+          <span><b>${s.newTotal}</b> new on <b>${s.newDays}</b>/${s.daysLogged} logged${s.daysLogged < s.daysElapsed ? ` <span class="muted">(of ${s.daysElapsed})</span>` : ''}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
         </div>
         ${spots ? `<div class="muted" style="font-size:12px;margin-top:2px">${spots}</div>` : ''}
       </div>`);
@@ -1885,26 +1887,34 @@ function renderSkincare() {
       <h2 style="margin:0">🔎 Whiteheads</h2>
       <span class="small muted">${today === dateKey() ? 'Today' : fmtDate(today)}</span>
     </div>
-    <div class="row between" style="margin:12px 0 4px">
-      <span>Active count</span>
-      <div class="row" style="gap:10px">
-        <button class="btn small" id="wh-minus" aria-label="Fewer">−</button>
-        <b id="wh-count" style="min-width:26px;text-align:center;font-size:18px">${count == null ? '—' : count}</b>
-        <button class="btn small" id="wh-plus" aria-label="More">+</button>
+    <div style="margin:12px 0 4px">
+      <div class="small muted" style="margin-bottom:8px"><b>New</b> spots today — count them per area:</div>
+      ${SKIN_AREAS.map(a => {
+        const n = areasToday[a.id] || 0;
+        return `
+        <div class="row between skin-area-row">
+          <span class="${n ? '' : 'muted'}">${a.label}</span>
+          <div class="row" style="gap:8px">
+            <button class="btn small" data-area-dec="${a.id}" aria-label="One fewer on ${a.label}" ${n ? '' : 'disabled'}>−</button>
+            <b style="min-width:20px;text-align:center;${n ? '' : 'color:var(--muted);font-weight:400'}">${n}</b>
+            <button class="btn small" data-area-inc="${a.id}" aria-label="One more on ${a.label}">+</button>
+          </div>
+        </div>`;
+      }).join('')}
+      <div class="small ${newToday ? '' : 'muted'}" style="margin-top:8px">
+        ${newToday
+          ? `<b>${newToday}</b> new today${legacyNew ? ' (logged before areas were tracked — add them above to place it)' : ''}.`
+          : 'All zero = no new whiteheads today.'}
       </div>
     </div>
     <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">
-      <div class="small muted" style="margin-bottom:8px">Did a <b>new</b> one appear today? Tap where — tap again to undo.</div>
-      <div class="skin-areas">
-        ${SKIN_AREAS.map(a => `
-          <button class="btn small ${areasToday.includes(a.id) ? 'primary' : ''}" data-area="${a.id}">${a.label}</button>`).join('')}
-      </div>
-      <div class="small ${areasToday.length ? '' : 'muted'}" style="margin-top:8px">
-        ${areasToday.length
-          ? `Logged: new whitehead on <b>${areasToday.map(id => SKIN_AREAS.find(a => a.id === id).label.toLowerCase()).join(', ')}</b>.`
-          : legacyNew
-            ? 'Logged as a new whitehead (before areas were tracked) — tap an area to place it.'
-            : 'Nothing tapped = no new whiteheads today.'}
+      <div class="row between">
+        <span>Active count <span class="small muted">— total on your face now</span></span>
+        <div class="row" style="gap:10px">
+          <button class="btn small" id="wh-minus" aria-label="Fewer">−</button>
+          <b id="wh-count" style="min-width:26px;text-align:center;font-size:18px">${count == null ? '—' : count}</b>
+          <button class="btn small" id="wh-plus" aria-label="More">+</button>
+        </div>
       </div>
     </div>
     ${weekBlock}
@@ -1985,16 +1995,11 @@ function renderSkincare() {
   };
   view.querySelector('#wh-minus').addEventListener('click', () => setCount((count || 0) - 1));
   view.querySelector('#wh-plus').addEventListener('click', () => setCount((count || 0) + 1));
-  for (const b of view.querySelectorAll('[data-area]')) {
-    b.addEventListener('click', () => {
-      const id = b.dataset.area;
-      const next = areasToday.includes(id)
-        ? areasToday.filter(a => a !== id)
-        : [...areasToday, id];
-      // areas supersede the old boolean; clear it so the two can't disagree.
-      setSkincare(today, { areas: next, newLesion: next.length > 0 });
-      render();
-    });
+  for (const b of view.querySelectorAll('[data-area-inc]')) {
+    b.addEventListener('click', () => { bumpSkincareArea(today, b.dataset.areaInc, +1); render(); });
+  }
+  for (const b of view.querySelectorAll('[data-area-dec]')) {
+    b.addEventListener('click', () => { bumpSkincareArea(today, b.dataset.areaDec, -1); render(); });
   }
   view.querySelector('#skin-start')?.addEventListener('click', () => {
     state.skincareStart = today;

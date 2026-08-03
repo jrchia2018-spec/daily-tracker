@@ -262,10 +262,27 @@ export function skincareFor(key) {
   return state.skincare[key] || {};
 }
 
-// A day counts as a new-lesion day if any area was tagged. Entries logged
-// before areas existed only have the boolean, so honour that too.
+// `areas` is a { areaId: count } map so more than one new spot can be logged
+// in the same place on the same day. Two older shapes still exist in real
+// data and must keep working: an ARRAY of ids (each meaning one), and the
+// original bare `newLesion: true` boolean with no areas at all.
+export function areaCounts(entry) {
+  const a = entry && entry.areas;
+  if (Array.isArray(a)) return Object.fromEntries(a.map(id => [id, 1]));
+  if (a && typeof a === 'object') return { ...a };
+  return {};
+}
+
+// How many NEW spots appeared that day. A legacy boolean-only entry means
+// "at least one" — count it as 1 rather than losing the day entirely.
+export function newLesionCount(entry) {
+  const total = Object.values(areaCounts(entry)).reduce((s, n) => s + n, 0);
+  if (total) return total;
+  return entry && entry.newLesion ? 1 : 0;
+}
+
 export function hadNewLesion(entry) {
-  return !!(entry && ((entry.areas && entry.areas.length) || entry.newLesion));
+  return newLesionCount(entry) > 0;
 }
 
 // Merge a patch into a day's skincare entry; drop the entry when it holds
@@ -273,10 +290,19 @@ export function hadNewLesion(entry) {
 // (a logged zero is real data), so we test for a number, not truthiness.
 export function setSkincare(key, patch) {
   const next = { ...state.skincare[key], ...patch };
-  if (next.areas && !next.areas.length) delete next.areas;
+  if (next.areas && !Object.keys(areaCounts(next)).length) delete next.areas;
   if (typeof next.whiteheads !== 'number' && !hadNewLesion(next)) delete state.skincare[key];
   else state.skincare[key] = next;
   save();
+}
+
+// Add or remove one new spot in a given area for a day.
+export function bumpSkincareArea(key, id, delta) {
+  const areas = areaCounts(state.skincare[key]);
+  const n = Math.max(0, (areas[id] || 0) + delta);
+  if (n) areas[id] = n; else delete areas[id];
+  const any = Object.keys(areas).length > 0;
+  setSkincare(key, { areas, newLesion: any });
 }
 
 // Program position: day 0 is `skincareStart`, week 1 = days 0–6, over 8 weeks.
@@ -300,7 +326,7 @@ export function skincareProgram() {
 export function skincareWeek(weekIndex) {
   const first = addDays(state.skincareStart, weekIndex * 7);
   const today = dateKey();
-  let newDays = 0, sum = 0, counted = 0, elapsed = 0, daysLogged = 0;
+  let newDays = 0, newTotal = 0, sum = 0, counted = 0, elapsed = 0, daysLogged = 0;
   const areas = {};
   for (let i = 0; i < 7; i++) {
     const k = addDays(first, i);
@@ -310,11 +336,13 @@ export function skincareWeek(weekIndex) {
     if (!e) continue;
     daysLogged++;
     if (hadNewLesion(e)) newDays++;
-    for (const a of e.areas || []) areas[a] = (areas[a] || 0) + 1;
+    newTotal += newLesionCount(e);
+    // Sum the counts, not the number of distinct areas — two on the chin is 2.
+    for (const [a, n] of Object.entries(areaCounts(e))) areas[a] = (areas[a] || 0) + n;
     if (typeof e.whiteheads === 'number') { sum += e.whiteheads; counted++; }
   }
   return {
-    first, daysElapsed: elapsed, daysLogged, newDays, areas,
+    first, daysElapsed: elapsed, daysLogged, newDays, newTotal, areas,
     avg: counted ? Math.round(sum / counted) : null,
   };
 }
