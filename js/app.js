@@ -4,11 +4,11 @@ import {
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods,
   skincareFor, setSkincare, skincareProgram, skincareWeek, hadNewLesion,
-  supplementsFor, toggleSupplement,
+  supplementsFor, toggleSupplement, latestWaist, bodyChange,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
-  burnedOn, weightTrend, runKcal,
+  burnedOn, weightTrend, runKcal, bmr,
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
@@ -1307,11 +1307,44 @@ function weekReview(keys) {
     tSodium: avgTarget(logged, 'sodium'),
     tWater: avgTarget(waterKeys, 'water'),
     targetsVaried: new Set(keys.map(k => targets(k).calories)).size > 1,
+    ...energyBalance(keys),
     km: runs.reduce((s, r) => s + (r.km || 0), 0),
     runN: runs.length,
     gymN: gym.length,
     ppl: GYM_TYPES.map(g => (byType[g.type] ? `${byType[g.type]}× ${g.label.toLowerCase()}` : null)).filter(Boolean).join(' · '),
     weightDelta: ws.length >= 2 ? ws[ws.length - 1].kg - ws[0].kg : null,
+  };
+}
+
+// Eaten vs burned across a week, per day and averaged.
+//
+// The watch reports ACTIVE calories — what movement cost, on top of resting
+// metabolism. Comparing intake to that alone would suggest an enormous daily
+// surplus, so the honest comparison is against TOTAL burn: resting (BMR) plus
+// active. That total is what intake actually has to beat to lose weight.
+//
+// This is presentation only. Burned calories still do not extend the daily
+// budget — that was a deliberate decision and this must not quietly undo it.
+function energyBalance(keys) {
+  const today = dateKey();
+  const rest = state.profile ? Math.round(bmr(state.profile, latestWeight() || 70)) : 0;
+  const days = keys.map(k => {
+    if (k > today) return null;
+    const logged = mealsFor(k).length > 0;
+    const active = Math.round(burnedOn(k));
+    return { key: k, eaten: logged ? Math.round(mealTotals(k).kcal) : null, active, total: rest + active };
+  });
+  const withFood = days.filter(d => d && d.eaten != null);
+  const avg = (arr, f) => (arr.length ? Math.round(arr.reduce((s, x) => s + f(x), 0) / arr.length) : null);
+  return {
+    ebRest: rest,
+    ebDays: days,
+    ebAvgEaten: avg(withFood, d => d.eaten),
+    ebAvgActive: avg(withFood, d => d.active),
+    ebAvgTotal: avg(withFood, d => d.total),
+    ebNet: withFood.length ? Math.round(withFood.reduce((s, d) => s + (d.eaten - d.total), 0) / withFood.length) : null,
+    ebSumNet: withFood.length ? Math.round(withFood.reduce((s, d) => s + (d.eaten - d.total), 0)) : null,
+    ebDaysCounted: withFood.length,
   };
 }
 
@@ -1411,6 +1444,28 @@ function weeklyReviewCard() {
       <span><b>${wr.waterHit}</b><span class="muted"> / ${wr.waterDays} tracked</span></span>
     </div>
     <div class="wr-days">${waterDots}</div>
+
+    ${wr.ebDaysCounted ? `
+    <div class="row between" style="font-size:12.5px;margin:14px 0 4px">
+      <span class="muted">Eaten vs burned <span style="opacity:.7">(per day, − is a deficit)</span></span>
+      <span class="${wr.ebNet <= 0 ? '' : 'muted'}"><b style="color:${wr.ebNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${wr.ebNet > 0 ? '+' : ''}${wr.ebNet}</b><span class="muted"> avg</span></span>
+    </div>
+    <div class="wr-days">
+      ${wr.ebDays.map(d => {
+        if (!d) return '<div class="day-cell"><div class="dot"></div><div class="dname"></div></div>';
+        const net = d.eaten == null ? null : d.eaten - d.total;
+        return `
+        <div class="day-cell ${d.key === today ? 'today' : ''}">
+          <div class="dot" style="${net == null ? '' : `background:${net <= 0 ? 'rgba(61,220,151,.16)' : 'rgba(255,176,84,.16)'};border-color:${net <= 0 ? 'var(--green)' : 'var(--orange)'}`}">
+            <span style="font-size:9.5px;font-weight:700;letter-spacing:-.5px;color:${net == null ? 'var(--muted)' : net <= 0 ? 'var(--green)' : 'var(--orange)'}">${net == null ? '' : (net > 0 ? '+' : '') + r0(net)}</span>
+          </div>
+          <div class="dname">${fmtDate(d.key).slice(0, 3)}</div>
+        </div>`;
+      }).join('')}
+    </div>
+    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — resting ${wr.ebRest} + active ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.</p>
+    ` : ''}
+
     ${wr.sleepAvg != null || wr.sleepTimeAvg != null ? `
     <div class="macro-bars" style="margin:14px 0">
       ${wr.sleepAvg != null ? meter('Avg sleep score', wr.sleepAvg, 100, wr.sleepAvg >= SLEEP.goodScore ? 'var(--green)' : wr.sleepAvg < SLEEP.roughScore ? 'var(--orange)' : 'var(--accent)', `<b>${wr.sleepAvg}</b><span class="muted"> / 100 · range ${wr.sleepMin}–${wr.sleepMax}</span>`) : ''}
@@ -1455,6 +1510,39 @@ function renderProgress() {
     ${weightChart()}
   </div>
 
+  ${(() => {
+    const bc = bodyChange(28);
+    const cm = latestWaist();
+    // Weight alone can't tell recomposition from a stall. Waist read against
+    // the SAME window can, so the two are shown together with a plain reading.
+    let verdict = '';
+    if (bc && bc.weightDelta != null) {
+      const wDown = bc.waistDelta <= -0.5, wUp = bc.waistDelta >= 0.5;
+      const kgFlat = Math.abs(bc.weightDelta) < 0.5, kgDown = bc.weightDelta <= -0.5;
+      if (wDown && kgFlat) verdict = ['Waist down, weight steady — fat down and muscle holding. Keep going, change nothing.', 'var(--green)'];
+      else if (wDown && kgDown) verdict = ['Waist and weight both down — losing fat.', 'var(--green)'];
+      else if (wUp) verdict = ['Waist up — worth a look at intake.', 'var(--orange)'];
+      else if (kgFlat) verdict = ['Neither moving — a genuine stall, not recomposition.', 'var(--orange)'];
+      else verdict = ['Weight moving without much waist change — read over a longer window.', 'var(--muted)'];
+    }
+    return `
+  <div class="card">
+    <div class="row between">
+      <h2 style="margin:0">Waist</h2>
+      <button class="btn primary small" id="wa-add">+ Log waist</button>
+    </div>
+    ${cm == null
+      ? '<p class="small muted" style="margin-top:10px">No measurements yet. Weight alone can\'t tell fat loss from muscle gain — a weekly waist reading can. Same spot, fasted, on waking.</p>'
+      : `
+    <div class="grid3" style="margin:12px 0;text-align:center">
+      <div><div style="font-size:20px;font-weight:750">${r1(cm)}</div><div class="small muted">current cm</div></div>
+      <div><div style="font-size:20px;font-weight:750;color:${bc == null ? 'var(--muted)' : bc.waistDelta <= 0 ? 'var(--green)' : 'var(--orange)'}">${bc == null ? '—' : (bc.waistDelta > 0 ? '+' : '') + bc.waistDelta}</div><div class="small muted">cm / 4 wks</div></div>
+      <div><div style="font-size:20px;font-weight:750;color:${bc == null || bc.weightDelta == null ? 'var(--muted)' : bc.weightDelta <= 0 ? 'var(--green)' : 'var(--orange)'}">${bc == null || bc.weightDelta == null ? '—' : (bc.weightDelta > 0 ? '+' : '') + bc.weightDelta}</div><div class="small muted">kg, same span</div></div>
+    </div>
+    ${verdict ? `<p class="small" style="color:${verdict[1]};margin-top:4px">${verdict[0]}</p>` : '<p class="small muted" style="margin-top:4px">Log a second measurement a week apart to read a trend.</p>'}`}
+  </div>`;
+  })()}
+
   <div class="card">
     <div class="row between">
       <h2 style="margin:0">Targets</h2>
@@ -1495,6 +1583,7 @@ function renderProgress() {
   </div>`;
 
   view.querySelector('#w-add').addEventListener('click', openWeightModal);
+  view.querySelector('#wa-add').addEventListener('click', openWaistModal);
   view.querySelector('#wr-prev').addEventListener('click', () => { reviewWeek--; render(); });
   view.querySelector('#wr-next').addEventListener('click', () => { if (reviewWeek < 0) { reviewWeek++; render(); } });
   view.querySelector('#t-edit').addEventListener('click', openTargetsModal);
@@ -1544,6 +1633,28 @@ function openWeightModal() {
     closeModal();
     render();
     toast(note || 'Weight logged');
+  });
+}
+
+function openWaistModal() {
+  const m = openModal(`
+    <h2>Log waist</h2>
+    <p class="small muted" style="margin-bottom:12px">Same spot each time — around the navel, tape snug but not compressing, after breathing out. Measure fasted on waking, like your weigh-in, or it isn't comparable.</p>
+    <label class="field"><span>Date</span><input id="wa-date" type="date" value="${dateKey()}"></label>
+    <label class="field"><span>Waist (cm)</span><input id="wa-cm" type="number" inputmode="decimal" step="0.1" placeholder="${latestWaist() || 78}"></label>
+    <button class="btn primary block" id="wa-save2">Save</button>
+  `);
+  m.querySelector('#wa-save2').addEventListener('click', () => {
+    const cm = Number(m.querySelector('#wa-cm').value);
+    const date = m.querySelector('#wa-date').value || dateKey();
+    if (!cm) { toast('Enter a measurement'); return; }
+    state.waists = state.waists.filter(x => x.date !== date);
+    state.waists.push({ date, cm });
+    state.waists.sort((a, b) => a.date.localeCompare(b.date));
+    save();
+    closeModal();
+    render();
+    toast('Waist logged');
   });
 }
 

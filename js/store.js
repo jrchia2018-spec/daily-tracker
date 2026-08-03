@@ -11,6 +11,7 @@ function defaults() {
     runs: [],             // [ {id, date, km, min, notes} ]
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
+    waists: [],           // [ {date, cm} ] sorted by date — separates recomp from a stall when weight is flat
     wellness: {},         // { 'YYYY-MM-DD': {sleep, sleepMins, activeKcal} } — sleep score + duration = that morning's, activeKcal = that day's watch total
     water: {},            // { 'YYYY-MM-DD': ml }
     lastAutoRecalc: null, // date string of last automatic target adjustment
@@ -210,6 +211,34 @@ export function latestWeight() {
   if (!state.weights.length) return state.profile ? state.profile.weightKg : null;
   return state.weights[state.weights.length - 1].kg;
 }
+
+export function latestWaist() {
+  return state.waists.length ? state.waists[state.waists.length - 1].cm : null;
+}
+
+// Change in weight and waist over the same window, so the two can be read
+// together — that pairing is what distinguishes recomposition (waist down,
+// weight flat) from a genuine stall (neither moving). Needs >= 2 waist
+// points; weight is matched to the same date span so the comparison is fair.
+export function bodyChange(days = 28) {
+  const w = state.waists;
+  if (w.length < 2) return null;
+  const cutoff = addDays(dateKey(), -days);
+  const pts = w.filter(x => x.date >= cutoff);
+  if (pts.length < 2) return null;
+  const first = pts[0], last = pts[pts.length - 1];
+  const inSpan = state.weights.filter(x => x.date >= first.date && x.date <= last.date);
+  return {
+    from: first.date,
+    to: last.date,
+    waistDelta: r1cm(last.cm - first.cm),
+    waistNow: last.cm,
+    weightDelta: inSpan.length >= 2 ? r1cm(inSpan[inSpan.length - 1].kg - inSpan[0].kg) : null,
+    points: pts.length,
+  };
+}
+
+const r1cm = n => Math.round(n * 10) / 10;
 
 // ---- supplements ----
 
