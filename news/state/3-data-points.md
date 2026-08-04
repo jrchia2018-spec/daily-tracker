@@ -353,3 +353,21 @@
 | Farrer Park flat fire | 5 trapped (3 unconscious), Block 684 Race Course Road, 5th-floor bedroom fire | SCDF, 3 Aug 2026 |
 | Niece sexual-abuse sentencing | 38-year-old man: 21 years' jail + 16 strokes of the cane; abuse over ~2 years from age 13; 6 charges pled guilty, 17 more taken into consideration | Singapore courts, 3 Aug 2026 |
 | Singapore births-deaths natural increase, 2025 | 3,365 (down from 7,261 in 2024, 14,380 in 2021) — births 29,864 (record low, -11.4% YoY) | Singapore Dept of Statistics, 3 Aug 2026 |
+
+## Global economic variables (5 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 4 Aug | Fell $3.95 (-4.72%) to $79.82/barrel by mid-afternoon GMT, from an earlier $86.33; briefly touched $79.73 (~-5%); held above $80 by close, on Bessent's Hormuz-deal comments | Wire reports, 4 Aug 2026 |
+| US missile-interceptor stockpiles | ~80% of pre-war THAAD inventory and ~50% of Patriot interceptors expended since the war resumed; fewer than 827 Patriot and 278 THAAD interceptors remain | CNN/US defence officials, 4 Aug 2026 |
+| MSV Faize Noore Oliya sinking | India-flagged cargo vessel capsized after a projectile strike off Yemen; all 14 crew (13 Indian) rescued by Yemeni coast guard, taken to Port of Mokha | Indian MEA/wire reports, 4 Aug 2026 |
+| Gaza Sabra strike mass funeral | 112 bodies recovered and buried, from the Nov 2023 strike that killed 308 (40 children, 30 women, 7 disabled) across two families in Gaza City's Sabra neighbourhood | Palestinian officials/wire reports, 4 Aug 2026 |
+| Ukraine Wildberries-warehouse strikes | 5 killed, 10 injured, Moscow region (Chekhov district/Novoselki industrial zone); further warehouses hit in Leningrad and Tver regions; ~2 dozen Wildberries sites struck since mid-July | Moscow region governor Vorobyov/wire reports, 4 Aug 2026 |
+| Guatemala Fuego volcano eruption | 1,421+ evacuated (El Porvenir, Las Lajitas hamlets); ash to 120km/5,000m+ altitude; 29,000+ affected by ashfall; paroxysm phase expected to last 24-72h from late 3 Aug | Guatemalan disaster-management authority (CONRED)/wire reports, 4 Aug 2026 |
+| Ceuta returns to Morocco, updated | ~70,000 of the ~72,000 who crossed illegally already returned to Morocco | Spanish government via BBC, 4 Aug 2026 |
+
+## Singapore data points (5 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Road Traffic (Miscellaneous Amendments) Bill | Passed 4 Aug; phone-holding while driving now an offence (up to S$1,000/6mo first offence, S$2,000/1yr repeat); follows a ~24% traffic-fatality-rate rise and ~38% violations rise, 2021-2025 | MHA/Parliament, 4 Aug 2026 |
+| MOH undeclared project savings | National Cancer Centre Singapore: S$147.96m undeclared savings, S$30.83m in tenders called pre-approval, S$105m eventual savings; S$11.95m of undeclared savings used on 3 items without MOF approval (2 worth S$4.08m previously rejected); same non-declaration practice found across 11 other MOH projects | AGO/Ong Ye Kung in Parliament, 4 Aug 2026 |
+| Lim Tean jail-term evasion | Failed to surrender 3 Aug (after a 20 Jul deferment) for a 3-month-1-week sentence; warrant of arrest issued; warrant-of-arrest review set for 17 Aug | Singapore courts, 3-4 Aug 2026 |
