@@ -371,3 +371,21 @@
 | Road Traffic (Miscellaneous Amendments) Bill | Passed 4 Aug; phone-holding while driving now an offence (up to S$1,000/6mo first offence, S$2,000/1yr repeat); follows a ~24% traffic-fatality-rate rise and ~38% violations rise, 2021-2025 | MHA/Parliament, 4 Aug 2026 |
 | MOH undeclared project savings | National Cancer Centre Singapore: S$147.96m undeclared savings, S$30.83m in tenders called pre-approval, S$105m eventual savings; S$11.95m of undeclared savings used on 3 items without MOF approval (2 worth S$4.08m previously rejected); same non-declaration practice found across 11 other MOH projects | AGO/Ong Ye Kung in Parliament, 4 Aug 2026 |
 | Lim Tean jail-term evasion | Failed to surrender 3 Aug (after a 20 Jul deferment) for a 3-month-1-week sentence; warrant of arrest issued; warrant-of-arrest review set for 17 Aug | Singapore courts, 3-4 Aug 2026 |
+
+## Global economic variables (6 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 5 Aug | $79.15/barrel, -0.3%, muted follow-through on 4 Aug's sharper 5.3% drop | Wire reports, 5 Aug 2026 |
+| Iran-Oman Hormuz route coordinates | Joint statement in final drafting after ~2 months of talks; reopening still contingent per Iran on US lifting its naval blockade | Iran FM spokesman Baghaei, 5 Aug 2026 |
+| Kyiv barrage, 5 Aug | 24 ballistic + 4 Zircon/Oniks missiles + 115 drones (Zelensky); 17 killed, 44 injured; zero ballistic/anti-ship missiles intercepted | Ukrainian officials/CNN, 5 Aug 2026 |
+| Wildberries strikes (cumulative) | 16 sites hit in <3 weeks; 8 of 15 largest logistics hubs disabled; latest (Tula) 1 injured | Wire reports/Tula Gov. Milyaev, 5 Aug 2026 |
+| Leipzig/Halle airport explosive drone | Nitrate-based device found beside a Ukrainian An-124 cargo jet; detonator removed by bomb squad; separate aircraft diverted to Hanover after mid-air collision with unidentified object | German police/NATO, 5 Aug 2026 |
+| China sanctions on US firms | 6 firms added to "unreliable entity list"/export-control list + tightened drone-export controls; retaliation for US's 43-firm import ban + FCC robot-import ban | China Commerce Ministry, 5 Aug 2026 |
+| Guatemala Fuego volcano, updated | Explosive intensity "progressive reduction" but rain-driven lahar risk (up to 7km) now dominant hazard; red alert holds (Sacatepéquez/Chimaltenango/Escuintla); ~1,700 still sheltering | CONRED, 5 Aug 2026 |
+
+## Singapore data points (6 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| WP economy motion outcome | PAP-amended motion passed after ~9hr debate; all 12 WP MPs recorded dissent | Straits Times/Parliament, 5 Aug 2026 |
+| Law Society of Singapore audit | "Significant failings in leadership, workplace culture and governance," 2022-2025; no deliberate financial impropriety/cover-up found; report to Council 5 Jun, to MinLaw 1 Jul | Law Minister Edwin Tong/MinLaw, 5 Aug 2026 |
+| Race Course Road fire fatality | 88-year-old man dies from injuries in the 3 Aug Block 684 fire (5 trapped, 3 unconscious) | Straits Times, 5 Aug 2026 |
