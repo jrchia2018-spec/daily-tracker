@@ -389,3 +389,22 @@
 | WP economy motion outcome | PAP-amended motion passed after ~9hr debate; all 12 WP MPs recorded dissent | Straits Times/Parliament, 5 Aug 2026 |
 | Law Society of Singapore audit | "Significant failings in leadership, workplace culture and governance," 2022-2025; no deliberate financial impropriety/cover-up found; report to Council 5 Jun, to MinLaw 1 Jul | Law Minister Edwin Tong/MinLaw, 5 Aug 2026 |
 | Race Course Road fire fatality | 88-year-old man dies from injuries in the 3 Aug Block 684 fire (5 trapped, 3 unconscious) | Straits Times, 5 Aug 2026 |
+
+## Global economic variables (7 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 6 Aug | $83.64/barrel (7am ET), little changed | Wire reports, 6 Aug 2026 |
+| Iran draft Hormuz plan transit fee | Iran pushing 5-7% of cargo value; Oman proposed 3% | Iranian Deputy FM Gharibabadi/wire reports, 6 Aug 2026 |
+| Lebanon strike toll, 6 Aug | 2 Israeli reservists killed (Harel Birenstock, Tamir Vaknin) + 4 wounded, Majdal Zoun booby-trap; Israeli reprisal strikes: 1 killed/12 injured (Tibnin cemetery prayer hall), 8 wounded (Burj Shemali) | Israeli military/Lebanese Health Ministry, 6 Aug 2026 |
+| Houthi-Yemen government clash toll | 30 (Yemeni officials) to 45+ (other reports) government troops killed, dozens wounded, Marib/Hadramawt | Yemeni officials/wire reports, 6 Aug 2026 |
+| Ukraine refinery strikes | Bashneft-Novoil (Bashkortostan) + Slavneft-YANOS (Yaroslavl, 1 of Russia's 5 largest, 15m tonnes/yr capacity) hit by 600+ drones | Zelensky/Ukraine General Staff, 6 Aug 2026 |
+| Nigeria hostage rescue | 308 abductees rescued (163 from Feb Woro/Kwara mass abduction, 145 from Niger State), Kainji Lake National Park; largest single-day rescue in Nigeria's history | Nigerian presidency (Bayo Onanuga), 6 Aug 2026 |
+| DRC Ebola outbreak, updated | 3,874 confirmed cases, 1,751 deaths (as of 4 Aug); Congo River boat quarantined after 5 onboard deaths | DRC health ministry/wire reports, 4-6 Aug 2026 |
+| Ceuta death toll, updated | At least 100 (up from 72, 3 Aug); 3,000-5,000 migrants still in the enclave; ~80,000 crossed 30-31 Jul | Ceuta mayor-president Juan Jesús Vivas, 6 Aug 2026 |
+
+## Singapore data points (7 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Insulting-Islam charge | 27-year-old man, deported from Malaysia 6 Aug (RMP assistance), charged 7 Aug under Maintenance of Religious Harmony Act, up to 5 yrs jail/fine; separately assisting a Quran-stepping video probe | SPF, 6-7 Aug 2026 |
+| Indonesian baby-trafficking case | West Java authorities allege 3 Singapore-based adoption agents involved; SG prosecutors find no evidence of a local offence, can't identify the agents; Bandung court sentenced 19 ring members 21 Jul (3y4m-7y) for trafficking 34+ babies 2023-2025, sold for S$14,300-S$17,900 each (200m-250m rupiah) | Straits Times/West Java authorities, 6 Aug 2026 |
+| MOM enhanced migrant-worker Primary Care Plan | From 1 Apr 2027: 22 clinics/4 zones, 2km access (down from 3km), S$5 standardised co-pay, 4 Anchor Operators appointed, centralised enrolment portal | MOM, 6 Aug 2026 |
