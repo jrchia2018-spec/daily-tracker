@@ -408,3 +408,23 @@
 | Insulting-Islam charge | 27-year-old man, deported from Malaysia 6 Aug (RMP assistance), charged 7 Aug under Maintenance of Religious Harmony Act, up to 5 yrs jail/fine; separately assisting a Quran-stepping video probe | SPF, 6-7 Aug 2026 |
 | Indonesian baby-trafficking case | West Java authorities allege 3 Singapore-based adoption agents involved; SG prosecutors find no evidence of a local offence, can't identify the agents; Bandung court sentenced 19 ring members 21 Jul (3y4m-7y) for trafficking 34+ babies 2023-2025, sold for S$14,300-S$17,900 each (200m-250m rupiah) | Straits Times/West Java authorities, 6 Aug 2026 |
 | MOM enhanced migrant-worker Primary Care Plan | From 1 Apr 2027: 22 clinics/4 zones, 2km access (down from 3km), S$5 standardised co-pay, 4 Anchor Operators appointed, centralised enrolment portal | MOM, 6 Aug 2026 |
+
+## Global economic variables (8 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 7 Aug | Opened $83.49/barrel, +$1 intraday | Wire reports, 7 Aug 2026 |
+| Mecca Joint Defense Agreement | Saudi Arabia, Turkey, Pakistan mutual-defence pact; "attack on one is an attack on all"; signed by MBS/Erdogan/Shehbaz Sharif | Wire reports, 7 Aug 2026 |
+| Senate Russia-Iran sanctions bill | Lindsey O. Graham Sanctioning Russia and Iran Act of 2026 passed 86-11; up to 100% tariffs on top 5 Russian oil/gas buyers; extends Iran Sanctions Act 1996 | US Senate, 7 Aug 2026 |
+| Houthi-Yemen government clash toll, updated | At least 58 government troops killed (military source); 73 reported dead from a single Marib mosque-camp strike per some outlets; worst single day since 2022 | Wire reports, 7 Aug 2026 |
+| Houthi strike on Najran, Saudi Arabia | 11 civilians wounded (7 Saudi, 1 Yemeni, 2 Egyptian, 1 Pakistani) incl. a 4-year-old with 2nd-degree burns; first direct hit on Saudi civilian soil since 14 Jul truce collapse | Wire reports, 6-7 Aug 2026 |
+| Thailand Debsirin School shooting (Nonthaburi) | 14-year-old shot grandparents then 5 teachers; 8 dead incl. shooter, 30+ injured; Thailand's deadliest school shooting since 2022 Nong Bua Lamphu (38 dead) | Thai police/PM Anutin Charnvirakul, 7 Aug 2026 |
+| DRC Ebola outbreak, updated | Crossed 4,000 confirmed cases for the first time (3,973 cases/1,801 deaths as of 5 Aug); Africa CDC formalising mutation-study plans with WHO | DRC government/Africa CDC, 7 Aug 2026 |
+| Ceuta/Spain-Italy Schengen dispute | Spain gives Italy 48-hr deadline (to 9 Aug) to lift border checks or face "proportionate measures"; Italy holds checks to at least 15 Aug; ~1,342 migrants still in Ceuta (capacity 90), 1,100+ children needing assistance | Wire reports, 7 Aug 2026 |
+| Fun Coffee Ponzi scheme (HK/Macau) | 264 reports, ~HK$107.5m (~S$18.5m) projected losses; lawmakers fear 1,000+ victims, potential losses HK$1b+ (~S$172m); app offline since 20 Jul | HK/Macau police/wire reports, 7 Aug 2026 |
+
+## Singapore data points (8 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Lim Tean arrest | Arrested Johor Bahru 6 Aug after 2-hr standoff, no passport found; failed to surrender by noon 3 Aug deadline for enhanced 3-month-1-week jail term | Royal Malaysia Police/Straits Times, 6-7 Aug 2026 |
+| Insulting-Islam charge, named | Elvin John Baptist, 27, charged under MRHA s17F(4), up to 5 yrs jail/fine | SPF, 7 Aug 2026 |
+| Singpass work-permit-holder scheme | 3 arrested; scheme offered work permit holders S$80 cash each for Singpass account access | Straits Times, 7 Aug 2026 |
