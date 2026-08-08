@@ -12,7 +12,7 @@ function defaults() {
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
     waists: [],           // [ {date, cm} ] sorted by date — separates recomp from a stall when weight is flat
-    wellness: {},         // { 'YYYY-MM-DD': {sleep, sleepMins, activeKcal} } — sleep score + duration = that morning's, activeKcal = that day's watch total
+    wellness: {},         // { 'YYYY-MM-DD': {sleep, sleepMins, steps, activeKcal} } — sleep score + duration = that morning's; steps = that day's total. activeKcal is LEGACY (the watch's active-calorie figure, collected until 8 Aug); kept so old days still read, no longer used in any calculation.
     water: {},            // { 'YYYY-MM-DD': ml }
     lastAutoRecalc: null, // date string of last automatic target adjustment
     lastAutoNote: null,   // human-readable note about the last adjustment

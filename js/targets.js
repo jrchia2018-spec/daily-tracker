@@ -66,16 +66,51 @@ export function gymKcal(minutes, weightKg) {
   return Math.round(((5 * 3.5 * (weightKg || 70)) / 200) * (minutes || 45));
 }
 
-export function burnedOn(key) {
-  // A logged watch figure (morning check-in) is authoritative — it includes
-  // steps and daily movement the workout estimates below can't see.
-  const logged = wellnessFor(key).activeKcal;
-  if (logged) return logged;
+// Resting burn before any movement — the user's chosen flat figure (8 Aug),
+// close to their Mifflin-St Jeor BMR of ~1628. Flat on purpose so the daily
+// number is predictable; revisit if their weight moves materially.
+export const BASE_KCAL = 1600;
+
+// Steps per km at a walking stride, used both to price steps and to work out
+// how many of the day's steps a logged run already accounts for.
+const STEPS_PER_KM = 1300;
+
+// Net cost of walking, i.e. ABOVE resting — resting is already in BASE_KCAL,
+// so using a gross figure here (as most step trackers report) would double
+// count it. ~0.5 kcal per kg per km works out at ~0.0004 kcal per step per kg.
+export function stepKcal(steps, weightKg) {
+  return Math.round((steps || 0) * (weightKg || 70) * 0.0004);
+}
+
+export function exerciseKcal(key) {
   const w = latestWeight() || 70;
   let total = 0;
   for (const r of runsOn(key)) total += runKcal(r.km, w);
   for (const g of gymOn(key)) total += gymKcal(g.minutes || 45, w);
   return total;
+}
+
+// Steps left once the ones a logged run already covers are removed. Without
+// this a 5km run is paid for twice: once inside the day's step count and
+// again as exercise. Each metre should be counted once, at running cost.
+export function walkingSteps(key) {
+  const raw = wellnessFor(key).steps || 0;
+  const runKm = runsOn(key).reduce((s, r) => s + (r.km || 0), 0);
+  return Math.max(0, raw - Math.round(runKm * STEPS_PER_KM));
+}
+
+// What the day actually cost: resting + walking + workouts. This replaces the
+// old watch "active calories" basis (dropped 8 Aug at the user's request) —
+// it's built from inputs they control rather than one opaque number, at the
+// cost of missing incidental movement the watch would have caught.
+export function dailyBurn(key) {
+  const w = latestWeight() || 70;
+  return BASE_KCAL + stepKcal(walkingSteps(key), w) + exerciseKcal(key);
+}
+
+// Movement only, no resting — for the "burned" figure shown next to intake.
+export function activityKcal(key) {
+  return dailyBurn(key) - BASE_KCAL;
 }
 
 // Linear-regression weight trend in kg/day over entries within the last `days`.

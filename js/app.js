@@ -9,7 +9,8 @@ import {
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
-  burnedOn, weightTrend, runKcal, bmr,
+  weightTrend, runKcal, bmr,
+  BASE_KCAL, dailyBurn, activityKcal, walkingSteps, stepKcal, exerciseKcal,
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
@@ -192,7 +193,7 @@ function renderHome() {
   const today = dateKey();
   const t = targets();
   const tot = mealTotals(today);
-  const burned = burnedOn(today);
+  const burned = activityKcal(today);
   // Burned kcal are shown for information only — the budget is the target
   // alone (activity is already baked into TDEE via the activity factor).
   const remaining = t.calories - r0(tot.kcal);
@@ -247,7 +248,7 @@ function renderHome() {
     const yesterday = addDays(today, -1);
     const yW = wellnessFor(yesterday);
     const yTot = mealTotals(yesterday);
-    const checkedIn = (sleep != null || sleepMins != null) && yW.activeKcal != null;
+    const checkedIn = (sleep != null || sleepMins != null) && yW.steps != null;
     const yNet = yTot.kcal ? r0(yTot.kcal - t.calories) : null;
     return `
     <div style="border-top:1px solid var(--line);margin-top:12px;padding-top:12px">
@@ -255,7 +256,7 @@ function renderHome() {
         <div class="row" style="gap:14px;flex-wrap:wrap">
           <span class="small muted">😴 <b style="color:${sleep == null ? 'var(--muted)' : sleep >= SLEEP.goodScore ? 'var(--green)' : sleep < SLEEP.roughScore ? 'var(--orange)' : 'var(--text)'}">${sleep ?? '—'}</b></span>
           <span class="small muted">🛏 <b style="color:${sleepMins == null ? 'var(--muted)' : sleepMins >= SLEEP.goodMins ? 'var(--green)' : sleepMins < SLEEP.roughMins ? 'var(--orange)' : 'var(--text)'}">${sleepMins != null ? fmtSleep(sleepMins) : '—'}</b></span>
-          <span class="small muted">🔥 Yday <b style="color:var(--text)">${yW.activeKcal ?? '—'}</b></span>
+          <span class="small muted">👟 Yday <b style="color:var(--text)">${yW.steps != null ? r0(yW.steps).toLocaleString() : '—'}</b></span>
           ${yNet != null ? `<span class="small muted">Yday vs target <b style="color:${yNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${yNet > 0 ? '+' : ''}${yNet}</b></span>` : ''}
         </div>
         <button class="btn small ${checkedIn ? '' : 'primary'}" id="q-checkin">${checkedIn ? 'Edit' : '🌅 Check in'}</button>
@@ -478,7 +479,7 @@ function catchupDays() {
     else if (kcal < 0.6 * t.calories) parts.push(`food looks partial (${r0(kcal)} of ${t.calories} kcal)`);
     if (!water) parts.push('no water');
     else if (water < 0.6 * t.water) parts.push(`water only ${fmtWater(water)}`);
-    if (w.sleep == null && w.sleepMins == null && w.activeKcal == null) parts.push('no check-in');
+    if (w.sleep == null && w.sleepMins == null && w.steps == null) parts.push('no check-in');
     if (parts.length) out.push({ date: d, parts });
   }
   return out;
@@ -589,7 +590,7 @@ function renderMeals() {
     const w = wellnessFor(mealDate);
     const water = waterTotalFor(mealDate);
     const fromFood = foodWaterFor(mealDate);
-    const empty = w.sleep == null && w.sleepMins == null && w.activeKcal == null;
+    const empty = w.sleep == null && w.sleepMins == null && w.steps == null;
     return `
   <div class="card">
     <div class="row between">
@@ -605,14 +606,14 @@ function renderMeals() {
     </div>
     ${fromFood ? `<p class="small muted" style="margin:6px 0 0">${fmtWater(waterFor(mealDate))} logged + ${fmtWater(fromFood)} from drinks and soup</p>` : ''}
     <details ${empty && mealDate === dateKey() ? 'open' : ''}>
-      <summary class="small" style="cursor:pointer;margin-top:10px;color:var(--accent);font-weight:600">🌅 Check-in — sleep &amp; active kcal${empty ? '' : ' <span class="muted">(saved ✓)</span>'}</summary>
+      <summary class="small" style="cursor:pointer;margin-top:10px;color:var(--accent);font-weight:600">🌅 Check-in — sleep &amp; steps${empty ? '' : ' <span class="muted">(saved ✓)</span>'}</summary>
       <p class="small" style="margin:10px 0 6px">😴 Sleep from the night of <b>${fmtDate(addDays(mealDate, -1))}</b> to the morning of <b>${fmtDate(mealDate)}</b>${mealDate === dateKey() ? ' — last night' : ''}:</p>
       <div class="grid2">
         <label class="field"><span>Sleep score</span><input id="mw-sleep" type="number" inputmode="numeric" min="0" max="100" value="${w.sleep ?? ''}" placeholder="78"></label>
         <label class="field"><span>Sleep time</span><input id="mw-time" value="${w.sleepMins != null ? fmtSleep(w.sleepMins) : ''}" placeholder="7:41"></label>
       </div>
-      <p class="small" style="margin:0 0 6px">🔥 Active calories burned during the day of <b>${fmtDate(mealDate)}</b>:</p>
-      <label class="field"><span>Active kcal</span><input id="mw-active" type="number" inputmode="numeric" value="${w.activeKcal ?? ''}" placeholder="650"></label>
+      <p class="small" style="margin:0 0 6px">👟 Steps taken during the day of <b>${fmtDate(mealDate)}</b>:</p>
+      <label class="field"><span>Steps</span><input id="mw-active" type="number" inputmode="numeric" value="${w.steps ?? ''}" placeholder="8500"></label>
       ${mealDate === dateKey() ? `<p class="small muted" style="margin:-2px 0 8px">${fmtDate(mealDate)} isn't over yet — the total your watch shows this morning is <b>${fmtDate(addDays(mealDate, -1))}</b>'s, so tap ‹ and enter it there.</p>` : ''}
       <button class="btn small block" id="mw-save">Save check-in</button>
     </details>
@@ -691,7 +692,7 @@ function renderMeals() {
     const w = { ...wellnessFor(mealDate) };
     if (sleep !== '') w.sleep = clamp(Number(sleep), 0, 100); else delete w.sleep;
     if (mins != null) w.sleepMins = mins; else delete w.sleepMins;
-    if (active !== '') w.activeKcal = Math.max(0, Number(active)); else delete w.activeKcal;
+    if (active !== '') w.steps = Math.max(0, Number(active)); else delete w.steps;
     state.wellness[mealDate] = w;
     save();
     render();
@@ -1280,7 +1281,7 @@ function weekReview(keys) {
   const ws = state.weights.filter(x => keys.includes(x.date));
   const sleeps = keys.map(k => wellnessFor(k).sleep).filter(s => s != null);
   const times = keys.map(k => wellnessFor(k).sleepMins).filter(s => s != null);
-  const actives = keys.map(k => wellnessFor(k).activeKcal).filter(a => a != null);
+  const actives = keys.map(k => wellnessFor(k).steps).filter(a => a != null);
   const waters = keys.map(k => waterTotalFor(k)).filter(w => w > 0);
   // A week average is only meaningful against the average target over the
   // same days — targets can change mid-week.
@@ -1319,20 +1320,20 @@ function weekReview(keys) {
 
 // Eaten vs burned across a week, per day and averaged.
 //
-// The watch reports ACTIVE calories — what movement cost, on top of resting
-// metabolism. Comparing intake to that alone would suggest an enormous daily
-// surplus, so the honest comparison is against TOTAL burn: resting (BMR) plus
-// active. That total is what intake actually has to beat to lose weight.
+// Burn is built from inputs the user controls: a flat resting BASE_KCAL, plus
+// walking priced from their step count, plus logged workouts. Steps a run
+// already accounts for are deducted first, so a 5km run isn't paid twice.
+// (Replaced the watch's active-calorie figure on 8 Aug at their request.)
 //
 // This is presentation only. Burned calories still do not extend the daily
 // budget — that was a deliberate decision and this must not quietly undo it.
 function energyBalance(keys) {
   const today = dateKey();
-  const rest = state.profile ? Math.round(bmr(state.profile, latestWeight() || 70)) : 0;
+  const rest = BASE_KCAL;
   const days = keys.map(k => {
     if (k > today) return null;
     const logged = mealsFor(k).length > 0;
-    const active = Math.round(burnedOn(k));
+    const active = Math.round(activityKcal(k));
     return { key: k, eaten: logged ? Math.round(mealTotals(k).kcal) : null, active, total: rest + active };
   });
   const withFood = days.filter(d => d && d.eaten != null);
@@ -1464,7 +1465,7 @@ function weeklyReviewCard() {
         </div>`;
       }).join('')}
     </div>
-    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — resting ${wr.ebRest} + active ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.</p>
+    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — base ${wr.ebRest} + steps &amp; workouts ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.</p>
     ` : ''}
 
     ${wr.sleepAvg != null || wr.sleepTimeAvg != null ? `
@@ -1481,8 +1482,8 @@ function weeklyReviewCard() {
     </div>
     <div class="totals-strip" style="margin-top:12px">
       ${wr.activeAvg == null
-        ? tile('—', 'avg active kcal', 'var(--muted)')
-        : tile(wr.activeAvg, 'avg active kcal')}
+        ? tile('—', 'avg steps', 'var(--muted)')
+        : tile(r0(wr.activeAvg).toLocaleString(), 'avg steps')}
       ${tile(`${wr.checkins}/7`, 'check-ins')}
     </div>
   </div>`;
