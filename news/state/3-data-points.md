@@ -428,3 +428,23 @@
 | Lim Tean arrest | Arrested Johor Bahru 6 Aug after 2-hr standoff, no passport found; failed to surrender by noon 3 Aug deadline for enhanced 3-month-1-week jail term | Royal Malaysia Police/Straits Times, 6-7 Aug 2026 |
 | Insulting-Islam charge, named | Elvin John Baptist, 27, charged under MRHA s17F(4), up to 5 yrs jail/fine | SPF, 7 Aug 2026 |
 | Singpass work-permit-holder scheme | 3 arrested; scheme offered work permit holders S$80 cash each for Singpass account access | Straits Times, 7 Aug 2026 |
+
+## Global economic variables (9 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 7 Aug | $82.15/barrel, -0.41% on the day | Wire reports, 7 Aug 2026 |
+| Iran draft Hormuz deal terms | Would bar US-/Israeli-flagged or -linked vessels entirely; 5-7% transit toll (vs Oman's 3%); IRGC hardliners want blockade lift + sanctions relief + resumed dollar oil sales guaranteed first; only route coordinates actually agreed per Deputy FM Gharibabadi | Bloomberg/wire reports, 8-9 Aug 2026 |
+| ADNOC tanker strike | Iran hit an ADNOC tanker with a missile in the Strait of Hormuz, no casualties; 15th ADNOC vessel attacked this war, 3rd this week alone | UAE Foreign Ministry/ADNOC, 8 Aug 2026 |
+| Thailand Debsirin School shooting toll, updated | 9 dead (up from 8), after a 12-year-old Year 7 student died of her wounds; 14 still hospitalised | Thai school officials/police, 8 Aug 2026 |
+| Bald Range wildfire (British Columbia) | Grew to ~50 sq km within hours of first detection; 20,000+ evacuated (Summerland ~12,000 fully evacuated, Peachland area ~8,000); state of emergency declared | BC emergency officials/wire reports, 8 Aug 2026 |
+| DRC Ebola outbreak, updated | 3,973 cases, 1,801 deaths (as of 5 Aug); Bundibugyo strain may be mutating per Africa CDC, joint WHO study under way, no mutation yet confirmed | DRC health ministry/Africa CDC, 8-9 Aug 2026 |
+| Spain-Italy Ceuta border checks | Spain imposed checks on Italian travellers overnight (random stops at Barcelona airport) after its 9 Aug deadline passed; checks to last at least 1 month; Italy's own checks (imposed 1 Aug) hold to at least 15 Aug | Wire reports, 8-9 Aug 2026 |
+| Colombia US security aid | US State Dept plans ~US$1b security assistance package for new president Abelardo de la Espriella's government (sworn in 7 Aug, Cali) | US State Dept/wire reports, 7-8 Aug 2026 |
+
+## Singapore data points (9 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| National Day Awards 2026 | 7,491 total recipients (6,624 civilian, 867 military); Chief Justice Sundaresh Menon and former CPA/PSC chairman Eddie Teo receive the Order of Temasek, Singapore's highest civilian honour | CNA/Straits Times, 9 Aug 2026 |
+| Lim Tean escape-helper charges | 2 men (37, 44) charged with conspiracy to defeat the course of justice over helping Lim Tean leave for Malaysia 4 Aug; up to 7 yrs jail/fine each; one booked the Johor Bahru accommodation Lim hid in | Singapore courts, 8 Aug 2026 |
+| Chen Zhi/Prince Group Singapore assets | S$150m+ already seized (6 properties, yacht, 11 vehicles, bank/securities accounts); associate Chen Xing/"Chen Sokly"/"Martin Chen" identified as risk-control lead with significant Singapore asset holdings | Straits Times/OCCRP, 8-9 Aug 2026 |
+| Fun Coffee Ponzi scheme, Singapore-specific | 49-year-old woman arrested (Multi-Level Marketing and Pyramid Selling (Prohibition) Act); one 48-year-old victim lost ~S$400,000, recovered only ~S$10,000 in returns; regional losses already exceed HK$94m (~S$15.6m) across 220+ complaints | Singapore Police Force/wire reports, 8-9 Aug 2026 |
