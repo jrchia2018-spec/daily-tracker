@@ -216,6 +216,24 @@ export function latestWaist() {
   return state.waists.length ? state.waists[state.waists.length - 1].cm : null;
 }
 
+// Change over a window, estimated by a least-squares line through EVERY
+// reading rather than first-vs-last. First and last are the two single
+// noisiest points in any series, so differencing them hands the whole verdict
+// to two tape placements. A fitted slope lets the middle readings pull the
+// error out. With exactly 2 points it reduces to last-minus-first anyway.
+function fittedChange(pts, valueOf, fromDate, spanDays) {
+  if (pts.length < 2 || spanDays <= 0) return null;
+  const xs = pts.map(p => daysBetween(fromDate, p.date));
+  const ys = pts.map(valueOf);
+  const n = pts.length;
+  const mx = xs.reduce((a, b) => a + b, 0) / n;
+  const my = ys.reduce((a, b) => a + b, 0) / n;
+  let num = 0, den = 0;
+  for (let i = 0; i < n; i++) { num += (xs[i] - mx) * (ys[i] - my); den += (xs[i] - mx) ** 2; }
+  if (den === 0) return null;            // every reading on one date
+  return r1cm((num / den) * spanDays);   // slope per day, over the whole span
+}
+
 // Change in weight and waist over the same window, so the two can be read
 // together — that pairing is what distinguishes recomposition (waist down,
 // weight flat) from a genuine stall (neither moving). Needs >= 2 waist
@@ -227,16 +245,32 @@ export function bodyChange(days = 28) {
   const pts = w.filter(x => x.date >= cutoff);
   if (pts.length < 2) return null;
   const first = pts[0], last = pts[pts.length - 1];
+  const spanDays = daysBetween(first.date, last.date);
   const inSpan = state.weights.filter(x => x.date >= first.date && x.date <= last.date);
   return {
     from: first.date,
     to: last.date,
-    waistDelta: r1cm(last.cm - first.cm),
+    spanDays,
+    waistDelta: fittedChange(pts, p => p.cm, first.date, spanDays),
     waistNow: last.cm,
-    weightDelta: inSpan.length >= 2 ? r1cm(inSpan[inSpan.length - 1].kg - inSpan[0].kg) : null,
+    weightDelta: inSpan.length >= 2 ? fittedChange(inSpan, p => p.kg, first.date, spanDays) : null,
     points: pts.length,
   };
 }
+
+// How far a reading has to move before it means anything. A self-taken tape
+// measurement carries roughly +/-1cm of placement error, so anything under
+// 1cm is indistinguishable from wobble and must not be given a verdict.
+// The scale is far more precise, hence the tighter bar there.
+export const WAIST_NOISE_CM = 1.0;
+export const WEIGHT_NOISE_KG = 0.5;
+
+// Single readings can't be averaged down, so the only way to beat the noise is
+// to wait for more of them across a longer span. Under these floors the honest
+// answer is "not yet", not a confident stall-or-recomp call.
+export const BODY_MIN_POINTS = 3;
+export const BODY_MIN_SPAN_DAYS = 21;   // enough to name a change
+export const BODY_STALL_SPAN_DAYS = 42; // "nothing is moving" needs longer still
 
 const r1cm = n => Math.round(n * 10) / 10;
 

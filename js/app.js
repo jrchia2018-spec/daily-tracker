@@ -6,6 +6,7 @@ import {
   skincareFor, setSkincare, skincareProgram, skincareWeek, hadNewLesion,
   areaCounts, newLesionCount, bumpSkincareArea,
   supplementsFor, toggleSupplement, latestWaist, bodyChange,
+  WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
@@ -20,6 +21,11 @@ const tabbar = document.getElementById('tabbar');
 const modalRoot = document.getElementById('modal-root');
 const modalCard = document.getElementById('modal-card');
 const toastEl = document.getElementById('toast');
+
+// What "+1 cup" pours. 300ml is the user's actual glass — raised from a
+// generic 250 on 8 Aug. Only affects new taps; days already logged keep the
+// millilitres they were logged with.
+const CUP_ML = 300;
 
 let tab = 'home';
 let mealDate = dateKey();
@@ -352,6 +358,7 @@ function renderHome() {
     });
   }
   view.querySelector('#wi-log')?.addEventListener('click', openWeightModal);
+  view.querySelector('#wi-waist')?.addEventListener('click', openWaistModal);
   view.querySelector('#wi-skip')?.addEventListener('click', () => {
     (state.weighinDismissed || (state.weighinDismissed = {}))[today] = true;
     const cutoff = addDays(dateKey(), -14);
@@ -436,23 +443,45 @@ function daySuggestions(today) {
 // day-to-day water swing that makes single weigh-ins so noisy. In-app only —
 // with no backend there are no push notifications, so this relies on the
 // user's habit of opening the app first thing.
+// The waist reading is due weekly, and it shares the weigh-in's conditions
+// (waking, fasted, before drinking) — so it belongs in the same prompt rather
+// than buried behind a button on Progress. Sunday, because that's already the
+// morning the user is holding still for the scale.
 function weighinPrompt(today) {
   const dow = parseKey(today).getDay(); // 0 Sun, 6 Sat
   if (dow !== 0 && dow !== 6) return '';
   if (state.weighinDismissed?.[today]) return '';
-  if (state.weights.some(w => w.date === today)) return '';
+
+  const weightDue = !state.weights.some(w => w.date === today);
+  const waistDue = dow === 0 && !state.waists.some(x => x.date >= addDays(today, -6));
+  if (!weightDue && !waistDue) return '';
+
   const day = dow === 6 ? 'Saturday' : 'Sunday';
   const second = dow === 0 && state.weights.some(w => w.date === addDays(today, -1));
+  const first = waistDue && !state.waists.length;
+
+  const heading = weightDue && waistDue ? `⚖️ ${day} weigh-in + waist`
+    : waistDue ? '📏 Weekly waist' : `⚖️ ${day} weigh-in`;
+
+  // The tape is the fussier of the two: same spot every week is the whole
+  // point, so the protocol gets restated where it will actually be read.
+  const blurb = waistDue
+    ? (first
+      ? 'Both now, fasted, before drinking. For the waist: around the navel, tape snug but not compressing, after breathing out — note where you put it, because every future reading has to match this one.'
+      : 'Both now, fasted, before drinking. Waist at the same spot as last week — around the navel, after breathing out.')
+    : (second
+      ? 'Second of the two — same conditions as yesterday: after waking, before breakfast, before drinking.'
+      : 'After waking, before breakfast, before drinking. Same as every time, so the numbers stay comparable.');
+
   return `
   <div class="card" style="border-color:rgba(94,208,192,.5)">
     <div class="row between">
-      <h2 style="margin-bottom:2px">⚖️ ${day} weigh-in</h2>
+      <h2 style="margin-bottom:2px">${heading}</h2>
       <button class="btn danger small" id="wi-skip" title="Not today">✕</button>
     </div>
-    <p class="small muted" style="margin-bottom:10px">${second
-      ? 'Second of the two — same conditions as yesterday: after waking, before breakfast, before drinking.'
-      : 'After waking, before breakfast, before drinking. Same as every time, so the numbers stay comparable.'}</p>
-    <button class="btn primary block" id="wi-log">Log this morning's weight</button>
+    <p class="small muted" style="margin-bottom:10px">${blurb}</p>
+    ${weightDue ? '<button class="btn primary block" id="wi-log">Log this morning\'s weight</button>' : ''}
+    ${waistDue ? `<button class="btn ${weightDue ? '' : 'primary '}block" id="wi-waist" style="margin-top:${weightDue ? '8px' : '0'}">${first ? 'Log your first waist measurement' : 'Log this week\'s waist'}</button>` : ''}
   </div>`;
 }
 
@@ -596,7 +625,7 @@ function renderMeals() {
     <div class="row between">
       <span class="small muted">💧 <b style="color:${water >= t.water ? 'var(--green)' : 'var(--text)'}">${fmtWater(water)}</b><span class="muted"> / ${fmtWater(t.water)}</span></span>
       <div class="row" style="gap:6px">
-        <button class="btn small" id="mw-cup">+1 cup</button>
+        <button class="btn small" id="mw-cup">+1 cup (${CUP_ML}ml)</button>
         <button class="btn small" id="mw-500">+500ml</button>
         <button class="btn small" id="mw-custom">+…</button>
       </div>
@@ -675,7 +704,8 @@ function renderMeals() {
   view.querySelector('#food-manual').addEventListener('click', () => openFoodModal(null));
   view.querySelector('#food-paste').addEventListener('click', openPasteModal);
 
-  view.querySelector('#mw-cup').addEventListener('click', () => { addWater(mealDate, 250); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
+  // A cup is 300ml, the user's actual glass (raised from 250 on 8 Aug).
+  view.querySelector('#mw-cup').addEventListener('click', () => { addWater(mealDate, CUP_ML); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
   view.querySelector('#mw-500').addEventListener('click', () => { addWater(mealDate, 500); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
   view.querySelector('#mw-custom').addEventListener('click', () => openWaterModal(mealDate));
 
@@ -1500,6 +1530,52 @@ function weeklyReviewCard() {
   </div>`;
 }
 
+// A change tile that stays grey while the number is inside its measurement
+// error. Colouring a -0.4cm wobble green would sell noise as progress, which
+// is the exact mistake the waist card exists to avoid.
+function deltaTile(delta, noise, label) {
+  const colour = delta == null ? 'var(--muted)'
+    : Math.abs(delta) < noise ? 'var(--muted)'
+      : delta < 0 ? 'var(--green)' : 'var(--orange)';
+  const text = delta == null ? '—' : (delta > 0 ? '+' : '') + delta;
+  return `<div><div style="font-size:20px;font-weight:750;color:${colour}">${text}</div><div class="small muted">${label}</div></div>`;
+}
+
+// Reads the waist/weight pair, and refuses to read it when the numbers are
+// too small or too few to mean anything. A single tape reading carries about
+// +/-1cm of error, and three weeks of real recomposition may only move the
+// waist half that — so naming "recomp" or "stall" off a 0.5cm difference is
+// announcing a coin flip. Better to say "not yet" and keep measuring.
+function waistVerdict(bc) {
+  if (!bc || bc.waistDelta == null) return null;
+
+  const weeksShort = Math.max(
+    BODY_MIN_POINTS - bc.points,
+    Math.ceil((BODY_MIN_SPAN_DAYS - bc.spanDays) / 7),
+  );
+  if (weeksShort > 0) {
+    return [`Too early to read. ${weeksShort} more weekly measurement${weeksShort > 1 ? 's' : ''} and this will start meaning something.`, 'var(--muted)'];
+  }
+
+  const down = bc.waistDelta <= -WAIST_NOISE_CM, up = bc.waistDelta >= WAIST_NOISE_CM;
+  const kg = bc.weightDelta;
+  const kgFlat = kg != null && Math.abs(kg) < WEIGHT_NOISE_KG;
+  const kgDown = kg != null && kg <= -WEIGHT_NOISE_KG;
+
+  if (down && kgFlat) return ['Waist down, weight steady — fat down and muscle holding. Keep going, change nothing.', 'var(--green)'];
+  if (down && kgDown) return ['Waist and weight both down — losing fat.', 'var(--green)'];
+  if (down) return ['Waist down — fat is coming off.', 'var(--green)'];
+  if (up) return ['Waist up — worth a look at intake.', 'var(--orange)'];
+
+  // Waist sits inside the tape's own error. That is NOT the same as "nothing
+  // is happening", and calling a stall here is what would wrongly trigger a
+  // calorie cut. Only a long flat run earns that word.
+  if (bc.spanDays >= BODY_STALL_SPAN_DAYS && kgFlat) {
+    return [`Neither has moved over ${Math.round(bc.spanDays / 7)} weeks — that's a genuine stall now, not measurement error.`, 'var(--orange)'];
+  }
+  return [`Waist has moved less than the tape's own error (±${WAIST_NOISE_CM}cm), so this can't tell recomposition from a stall yet. Keep measuring.`, 'var(--muted)'];
+}
+
 function renderProgress() {
   const p = state.profile;
   const t = targets();
@@ -1528,16 +1604,7 @@ function renderProgress() {
     const cm = latestWaist();
     // Weight alone can't tell recomposition from a stall. Waist read against
     // the SAME window can, so the two are shown together with a plain reading.
-    let verdict = '';
-    if (bc && bc.weightDelta != null) {
-      const wDown = bc.waistDelta <= -0.5, wUp = bc.waistDelta >= 0.5;
-      const kgFlat = Math.abs(bc.weightDelta) < 0.5, kgDown = bc.weightDelta <= -0.5;
-      if (wDown && kgFlat) verdict = ['Waist down, weight steady — fat down and muscle holding. Keep going, change nothing.', 'var(--green)'];
-      else if (wDown && kgDown) verdict = ['Waist and weight both down — losing fat.', 'var(--green)'];
-      else if (wUp) verdict = ['Waist up — worth a look at intake.', 'var(--orange)'];
-      else if (kgFlat) verdict = ['Neither moving — a genuine stall, not recomposition.', 'var(--orange)'];
-      else verdict = ['Weight moving without much waist change — read over a longer window.', 'var(--muted)'];
-    }
+    const verdict = waistVerdict(bc);
     return `
   <div class="card">
     <div class="row between">
@@ -1549,8 +1616,8 @@ function renderProgress() {
       : `
     <div class="grid3" style="margin:12px 0;text-align:center">
       <div><div style="font-size:20px;font-weight:750">${r1(cm)}</div><div class="small muted">current cm</div></div>
-      <div><div style="font-size:20px;font-weight:750;color:${bc == null ? 'var(--muted)' : bc.waistDelta <= 0 ? 'var(--green)' : 'var(--orange)'}">${bc == null ? '—' : (bc.waistDelta > 0 ? '+' : '') + bc.waistDelta}</div><div class="small muted">cm / 4 wks</div></div>
-      <div><div style="font-size:20px;font-weight:750;color:${bc == null || bc.weightDelta == null ? 'var(--muted)' : bc.weightDelta <= 0 ? 'var(--green)' : 'var(--orange)'}">${bc == null || bc.weightDelta == null ? '—' : (bc.weightDelta > 0 ? '+' : '') + bc.weightDelta}</div><div class="small muted">kg, same span</div></div>
+      ${deltaTile(bc?.waistDelta, WAIST_NOISE_CM, 'cm / 4 wks')}
+      ${deltaTile(bc?.weightDelta, WEIGHT_NOISE_KG, 'kg, same span')}
     </div>
     ${verdict ? `<p class="small" style="color:${verdict[1]};margin-top:4px">${verdict[0]}</p>` : '<p class="small muted" style="margin-top:4px">Log a second measurement a week apart to read a trend.</p>'}`}
   </div>`;
