@@ -82,11 +82,17 @@ export function stepKcal(steps, weightKg) {
   return Math.round((steps || 0) * (weightKg || 70) * 0.0004);
 }
 
+// A figure typed in when logging the workout (off their watch) beats the
+// estimate — it knows the actual effort, which km or minutes can't. 0 is a
+// valid logged value, so test for a number rather than truthiness.
+const loggedOr = (entry, fallback) =>
+  typeof entry.kcal === 'number' ? entry.kcal : fallback;
+
 export function exerciseKcal(key) {
   const w = latestWeight() || 70;
   let total = 0;
-  for (const r of runsOn(key)) total += runKcal(r.km, w);
-  for (const g of gymOn(key)) total += gymKcal(g.minutes || 45, w);
+  for (const r of runsOn(key)) total += loggedOr(r, runKcal(r.km, w));
+  for (const g of gymOn(key)) total += loggedOr(g, gymKcal(g.minutes || 45, w));
   return total;
 }
 

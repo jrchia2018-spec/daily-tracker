@@ -1091,7 +1091,7 @@ function renderRuns() {
       <div class="item">
         <div>
           <div class="title">${fmtDate(r.date)}</div>
-          <div class="sub">${r.min ? r.min + ' min · ' + pace(r) + ' /km' : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
+          <div class="sub">${r.min ? r.min + ' min · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
         </div>
         <div class="row" style="gap:4px">
           <div class="val">${r1(r.km)} km</div>
@@ -1126,23 +1126,29 @@ function openRunModal() {
       <label class="field"><span>Distance (km)</span><input id="r-km" type="number" inputmode="decimal" step="0.01" placeholder="5.0"></label>
       <label class="field"><span>Duration (min)</span><input id="r-min" type="number" inputmode="decimal" placeholder="28"></label>
     </div>
+    <label class="field"><span>Calories burnt (optional)</span>
+      <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate"></label>
     <label class="field"><span>Notes (optional)</span><input id="r-notes" placeholder="easy run, intervals..."></label>
     <button class="btn primary block" id="r-save">Save run</button>
   `);
   m.querySelector('#r-save').addEventListener('click', () => {
     const km = Number(m.querySelector('#r-km').value);
     if (!km) { toast('Distance is required'); return; }
-    state.runs.push({
+    const kcalRaw = m.querySelector('#r-kcal').value;
+    const entry = {
       id: uid(),
       date: m.querySelector('#r-date').value || dateKey(),
       km,
       min: Number(m.querySelector('#r-min').value) || null,
       notes: m.querySelector('#r-notes').value.trim(),
-    });
+    };
+    if (kcalRaw !== '') entry.kcal = Math.max(0, Number(kcalRaw));
+    state.runs.push(entry);
     save();
     closeModal();
     render();
-    toast(`Run logged: ${km} km (~${runKcal(km, latestWeight())} kcal)`);
+    const used = entry.kcal ?? runKcal(km, latestWeight());
+    toast(`Run logged: ${km} km (${entry.kcal != null ? '' : '~'}${used} kcal)`);
   });
 }
 
@@ -1183,7 +1189,7 @@ function gymTypeLabel(type) {
 }
 
 function blankGymDraft() {
-  return { date: dateKey(), minutes: '' };
+  return { date: dateKey(), minutes: '', kcal: '' };
 }
 
 // Sessions logged before the push/pull/legs switch have exercises instead
@@ -1204,6 +1210,8 @@ function renderGym() {
       <label class="field"><span>Date</span><input id="g-date" type="date" value="${gymDraft.date}"></label>
       <label class="field"><span>Duration (min)</span><input id="g-min" type="number" inputmode="numeric" placeholder="60" value="${gymDraft.minutes}"></label>
     </div>
+    <label class="field"><span>Calories burnt (optional)</span>
+      <input id="g-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate" value="${gymDraft.kcal}"></label>
     <p class="small muted" style="margin:10px 0 8px">Tap to log the session:</p>
     <div class="grid3">
       ${GYM_TYPES.map(t => `
@@ -1219,7 +1227,7 @@ function renderGym() {
     ${sessions.length ? sessions.map(s => `
       <div class="item">
         <div style="flex:1">
-          <div class="title">${s.type ? `${gymTypeLabel(s.type)} day` : fmtDate(s.date)}${s.minutes ? ` <span class="muted small">· ${s.minutes} min</span>` : ''}</div>
+          <div class="title">${s.type ? `${gymTypeLabel(s.type)} day` : fmtDate(s.date)}${s.minutes ? ` <span class="muted small">· ${s.minutes} min</span>` : ''}${s.kcal != null ? ` <span class="muted small">· ${r0(s.kcal)} kcal</span>` : ''}</div>
           ${s.type
             ? `<div class="sub">${fmtDate(s.date)}</div>`
             : (s.exercises || []).map(e => `<div class="sub">${esc(e.name)} — ${setsSummary(e.sets)}</div>`).join('')}
@@ -1233,15 +1241,18 @@ function renderGym() {
 
   $g('#g-date').addEventListener('change', e => { gymDraft.date = e.target.value; });
   $g('#g-min').addEventListener('input', e => { gymDraft.minutes = e.target.value; });
+  $g('#g-kcal').addEventListener('input', e => { gymDraft.kcal = e.target.value; });
 
   for (const b of body.querySelectorAll('[data-type]')) {
     b.addEventListener('click', () => {
-      state.gym.push({
+      const entry = {
         id: uid(),
         date: gymDraft.date || dateKey(),
         minutes: Number(gymDraft.minutes) || null,
         type: b.dataset.type,
-      });
+      };
+      if (gymDraft.kcal !== '') entry.kcal = Math.max(0, Number(gymDraft.kcal));
+      state.gym.push(entry);
       save();
       gymDraft = null;
       render();
