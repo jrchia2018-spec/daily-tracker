@@ -448,3 +448,16 @@
 | Lim Tean escape-helper charges | 2 men (37, 44) charged with conspiracy to defeat the course of justice over helping Lim Tean leave for Malaysia 4 Aug; up to 7 yrs jail/fine each; one booked the Johor Bahru accommodation Lim hid in | Singapore courts, 8 Aug 2026 |
 | Chen Zhi/Prince Group Singapore assets | S$150m+ already seized (6 properties, yacht, 11 vehicles, bank/securities accounts); associate Chen Xing/"Chen Sokly"/"Martin Chen" identified as risk-control lead with significant Singapore asset holdings | Straits Times/OCCRP, 8-9 Aug 2026 |
 | Fun Coffee Ponzi scheme, Singapore-specific | 49-year-old woman arrested (Multi-Level Marketing and Pyramid Selling (Prohibition) Act); one 48-year-old victim lost ~S$400,000, recovered only ~S$10,000 in returns; regional losses already exceed HK$94m (~S$15.6m) across 220+ complaints | Singapore Police Force/wire reports, 8-9 Aug 2026 |
+
+## Global economic variables (10 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Bald Range wildfire (British Columbia), updated | Grown to 136 sq km (up from 103 sq km), Rank 6 (highest) fire behaviour; ~22,000 displaced provincewide; 5,688 Summerland properties + 416 Okanagan-Similkameen properties under evacuation order, 1,100 more on alert; Highway 97 closed Peachland-Summerland | BC Wildfire Service/provincial state of emergency, 8-9 Aug 2026 |
+| Russia-Ukraine overnight barrage toll | 13 killed, ~90 injured across Ukraine; Kharkiv Saltivskyi high-rise strike (2 dead, 13 injured); Belgorod cross-border drone strike (5 dead incl. a 4-year-old, ~24 injured) | Ukrainian/Russian officials via wire reports, 9 Aug 2026 |
+| Typhoon Dolphin China landfall | 300,000+ pre-emptively evacuated; Shanghai's Hongqiao/Pudong airports cancel ~1,300-1,400 flights (~60% of Sunday's schedule); 20+ Singapore-Shanghai flights (incl. SIA) cancelled | Wire reports/Straits Times, 9 Aug 2026 |
+| Syria-Russia Mediterranean bases deal | Syria takes control of Hmeimim air base (Latakia) + Tartus port commercial berth; military facilities become "joint training and qualification centres"; 3-month transition deadline | Wire reports, 9 Aug 2026 |
+
+## Singapore data points (10 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Infoassa fake think-tank investigation | Singapore-registered firm advertised 6+ events at its premises over 4 months; most recent (7 Aug) never took place | CNA investigation, 10 Aug 2026 |
