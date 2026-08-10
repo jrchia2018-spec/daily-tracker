@@ -1368,26 +1368,41 @@ function weekReview(keys) {
 //
 // This is presentation only. Burned calories still do not extend the daily
 // budget — that was a deliberate decision and this must not quietly undo it.
+// A day with no step count has NO usable burn figure. Walking is the largest
+// movable part of this model, so without steps the estimate collapses to the
+// flat base and the day reads as a big surplus purely because nothing was
+// recorded — the user walked, the app just doesn't know it. Scoring those days
+// made the strip look relentlessly orange and manufactured a deficit that
+// never existed. An unmeasured day is now blank, not bad.
 function energyBalance(keys) {
   const today = dateKey();
   const rest = BASE_KCAL;
   const days = keys.map(k => {
     if (k > today) return null;
     const logged = mealsFor(k).length > 0;
+    const hasSteps = wellnessFor(k).steps != null;
     const active = Math.round(activityKcal(k));
-    return { key: k, eaten: logged ? Math.round(mealTotals(k).kcal) : null, active, total: rest + active };
+    return {
+      key: k,
+      eaten: logged ? Math.round(mealTotals(k).kcal) : null,
+      active,
+      total: hasSteps ? rest + active : null,   // null = burn unknown
+      hasSteps,
+    };
   });
-  const withFood = days.filter(d => d && d.eaten != null);
+  const scored = days.filter(d => d && d.eaten != null && d.total != null);
+  const unmeasured = days.filter(d => d && d.eaten != null && d.total == null).length;
   const avg = (arr, f) => (arr.length ? Math.round(arr.reduce((s, x) => s + f(x), 0) / arr.length) : null);
   return {
     ebRest: rest,
     ebDays: days,
-    ebAvgEaten: avg(withFood, d => d.eaten),
-    ebAvgActive: avg(withFood, d => d.active),
-    ebAvgTotal: avg(withFood, d => d.total),
-    ebNet: withFood.length ? Math.round(withFood.reduce((s, d) => s + (d.eaten - d.total), 0) / withFood.length) : null,
-    ebSumNet: withFood.length ? Math.round(withFood.reduce((s, d) => s + (d.eaten - d.total), 0)) : null,
-    ebDaysCounted: withFood.length,
+    ebAvgEaten: avg(scored, d => d.eaten),
+    ebAvgActive: avg(scored, d => d.active),
+    ebAvgTotal: avg(scored, d => d.total),
+    ebNet: scored.length ? Math.round(scored.reduce((s, d) => s + (d.eaten - d.total), 0) / scored.length) : null,
+    ebSumNet: scored.length ? Math.round(scored.reduce((s, d) => s + (d.eaten - d.total), 0)) : null,
+    ebDaysCounted: scored.length,
+    ebDaysUnmeasured: unmeasured,
   };
 }
 
@@ -1491,22 +1506,24 @@ function weeklyReviewCard() {
     ${wr.ebDaysCounted ? `
     <div class="row between" style="font-size:12.5px;margin:14px 0 4px">
       <span class="muted">Eaten vs burned <span style="opacity:.7">(per day, − is a deficit)</span></span>
-      <span class="${wr.ebNet <= 0 ? '' : 'muted'}"><b style="color:${wr.ebNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${wr.ebNet > 0 ? '+' : ''}${wr.ebNet}</b><span class="muted"> avg</span></span>
+      <span class="${wr.ebNet <= 0 ? '' : 'muted'}"><b style="color:${wr.ebNet <= 0 ? 'var(--green)' : 'var(--orange)'}">${wr.ebNet > 0 ? '+' : ''}${wr.ebNet}</b><span class="muted"> avg${wr.ebDaysUnmeasured ? ` of ${wr.ebDaysCounted} day${wr.ebDaysCounted > 1 ? 's' : ''}` : ''}</span></span>
     </div>
     <div class="wr-days">
       ${wr.ebDays.map(d => {
         if (!d) return '<div class="day-cell"><div class="dot"></div><div class="dname"></div></div>';
-        const net = d.eaten == null ? null : d.eaten - d.total;
+        // No steps logged = no burn figure = no score. A dash, not a verdict.
+        const net = d.eaten == null || d.total == null ? null : d.eaten - d.total;
+        const noSteps = d.eaten != null && d.total == null;
         return `
         <div class="day-cell ${d.key === today ? 'today' : ''}">
           <div class="dot" style="${net == null ? '' : `background:${net <= 0 ? 'rgba(61,220,151,.16)' : 'rgba(255,176,84,.16)'};border-color:${net <= 0 ? 'var(--green)' : 'var(--orange)'}`}">
-            <span style="font-size:9.5px;font-weight:700;letter-spacing:-.5px;color:${net == null ? 'var(--muted)' : net <= 0 ? 'var(--green)' : 'var(--orange)'}">${net == null ? '' : (net > 0 ? '+' : '') + r0(net)}</span>
+            <span style="font-size:9.5px;font-weight:700;letter-spacing:-.5px;color:var(--muted)${net == null ? '' : `;color:${net <= 0 ? 'var(--green)' : 'var(--orange)'}`}">${net == null ? (noSteps ? '–' : '') : (net > 0 ? '+' : '') + r0(net)}</span>
           </div>
           <div class="dname">${fmtDate(d.key).slice(0, 3)}</div>
         </div>`;
       }).join('')}
     </div>
-    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — base ${wr.ebRest} + steps &amp; workouts ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.</p>
+    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — base ${wr.ebRest} + steps &amp; workouts ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.${wr.ebDaysUnmeasured ? ` <b>${wr.ebDaysUnmeasured} day${wr.ebDaysUnmeasured > 1 ? 's' : ''}</b> had no step count, so ${wr.ebDaysUnmeasured > 1 ? 'they are' : 'it is'} left out — without steps there's no way to tell a big day from a lazy one.` : ''}</p>
     ` : ''}
 
     ${wr.sleepAvg != null || wr.sleepTimeAvg != null ? `
