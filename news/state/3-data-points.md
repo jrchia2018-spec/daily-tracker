@@ -461,3 +461,19 @@
 | Indicator | Figure | Source |
 |---|---|---|
 | Infoassa fake think-tank investigation | Singapore-registered firm advertised 6+ events at its premises over 4 months; most recent (7 Aug) never took place | CNA investigation, 10 Aug 2026 |
+
+## Global economic variables (11 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 10 Aug | ~$87.72/barrel, ~+5% on the day, on faded Hormuz-deal hopes | Wire reports, 10 Aug 2026 |
+| Colombia earthquake | 7.4-magnitude, epicentre San José del Palmar, Chocó; 111+ dead (~40 Risaralda, 27 Valle del Cauca incl. 3 children, 9 Chocó, 2 Caldas, 1 Antioquia), 87 injured, 1,600+ buildings damaged; national disaster declared | Colombian government/wire reports, 10 Aug 2026 |
+| Nizhnekamsk (Tatarstan) drone strike | 13+ killed, 75 injured; Taneco refinery (16m+ tonnes/yr capacity) hit, fire started; ~1,200km inside Russia | Ukrainian General Staff/Russian officials, 10 Aug 2026 |
+| Philippines monsoon floods | 16+ dead (7 in a single Baguio landslide), 500,000+ affected across 33 provinces; 9 days of rain, in places exceeding a month's normal total | Philippine officials/wire reports, 10 Aug 2026 |
+| Turkey PKK-disbandment bill | Passed 468/600 votes; legal protections + suspended sentences for former militants without specific crimes | Turkish parliament, 10 Aug 2026 |
+| Trump Iran reparations counter-demand | Cites 17 USS Cole dead (2000, Yemen — an al-Qaeda attack), "thousands" more combat deaths, "hundreds of thousands" of Iranian protesters killed over 50 years, "52,000" killed in the last 5 months, + Lebanon/Syria/Yemen/Gaza deaths | Truth Social, 10 Aug 2026 |
+
+## Singapore data points (11 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singaporean Kedah kidnap-for-ransom | 72-year-old retiree, lured to Penang 26 Jul via fake consultancy job offer; RM3.2m (~S$1m) ransom demanded; rescued in police raid, Telaga Bata, Alor Setar, Kedah; 2 foreign suspects shot dead | Malaysian/Singapore police, 7-10 Aug 2026 |
+| Chen Zhi/Prince Group — Singapore PAs | New reporting: Singaporeans hired as personal assistants by network figures, unwittingly embedded in scam-compound/money-laundering operations; extends S$150m+ already-seized Singapore asset trail | Straits Times, 11 Aug 2026 |
