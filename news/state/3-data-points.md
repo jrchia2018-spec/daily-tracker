@@ -477,3 +477,17 @@
 |---|---|---|
 | Singaporean Kedah kidnap-for-ransom | 72-year-old retiree, lured to Penang 26 Jul via fake consultancy job offer; RM3.2m (~S$1m) ransom demanded; rescued in police raid, Telaga Bata, Alor Setar, Kedah; 2 foreign suspects shot dead | Malaysian/Singapore police, 7-10 Aug 2026 |
 | Chen Zhi/Prince Group — Singapore PAs | New reporting: Singaporeans hired as personal assistants by network figures, unwittingly embedded in scam-compound/money-laundering operations; extends S$150m+ already-seized Singapore asset trail | Straits Times, 11 Aug 2026 |
+
+## Global economic variables (12 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Colombia earthquake toll, updated | 224 dead per President De La Espriella (Cali 97, Pereira 66, Quibdó 9, Manizales 5) vs 179 per a joint local mayors/governors tally; 3,000+ reported missing; 1,600+ buildings damaged; 6 airports closed (Quibdó, Pereira, Manizales, Armenia, Cartago, Buenaventura) | Colombian government/wire reports, 11-12 Aug 2026 |
+| US blockade vessel interdictions (cumulative) | 3 vessels disabled since 14 Jul blockade restart (incl. M/V Vela Nova, Hellfire-struck 11 Aug ~71nm off Pakistan), 2 boarded, 55 redirected | CENTCOM, 11 Aug 2026 |
+| DRC Ebola outbreak (Bundibugyo strain), updated | 2,000+ deaths — fastest-growing outbreak on record, ~3x faster than 2014-16 West Africa outbreak to reach 1,000 deaths; 2nd-largest outbreak in history (behind 2014-16's 11,000+ deaths) | WHO/Congolese health ministry, 11 Aug 2026 |
+| Houthi strike on cargo ship Tihamah | 4 crew killed (3 Pakistani, 1 Indonesian), 4 injured + 1 rescuer; 3 successive ballistic-missile strikes near Bab el-Mandeb | Yemeni government, 11 Aug 2026 |
+
+## Singapore data points (12 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Tan Khi Wie immigration-fraud sentence | 14 months 15 weeks' jail; fled Singapore by boat 2002-2003, used false Indonesian identity "Ken Srona" 2011-2016, caught at Changi on automated-clearance failure | Singapore courts, 11 Aug 2026 |
+| Junction 8 restaurant fire | 100+ evacuated, 1 taken to Singapore General Hospital (smoke inhalation) | SCDF/Straits Times, 12 Aug 2026 |
