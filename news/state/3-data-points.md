@@ -301,6 +301,23 @@
 | Indicator | Figure | Source |
 |---|---|---|
 | Brent crude, 1 Aug | ~$88/barrel, little moved by Iran's Gulf-energy threat/US embassy warnings | Wire reports, 1 Aug 2026 |
+
+## Global economic variables (13 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Zimbabwe Lake Kariba ferry disaster | 44+ dead, 114 adult passengers+5 crew vs 90 capacity, Mbuya Nehanda, Kariba-Chalala route | Zimbabwe Civil Protection Unit/wire reports, 12 Aug 2026 |
+| Colombia earthquake toll (revised) | 181 confirmed dead (down from president's earlier 224 figure), 2,595 injured, ~195 officially missing (civilian trackers ~4,000) | Colombian presidency, 12 Aug 2026 |
+| Colombia earthquake — Cali-specific | 75 dead, 1,000+ injured, 56 buildings under search | UPI/wire reports, 12 Aug 2026 |
+| Colombia earthquake rescues | 87 people rescued alive from rubble nationwide as of 12 Aug | Wire reports, 12 Aug 2026 |
+| West Bank settler violence, 2026 | 1,430+ incidents; ~3,800 Palestinians displaced (nearly half children) | UN deputy special coordinator Ramiz Alakbarov to UNSC, 12 Aug 2026 |
+| US blockade of Iran — vessels redirected | 55 as of Sun 9 Aug (up from 35 on 2 Aug); 2 disabled, 2 boarded | CENTCOM, 10-12 Aug 2026 |
+| Tihamah Red Sea strike toll (revised) | 6 dead total (4 crew + 2 rescue-team members) — first Red Sea shipping fatalities in over a year | Yemeni government/wire reports, 12 Aug 2026 |
+
+## Singapore data points (13 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Fake MHA/Home Team websites taken down | 500+, identified by HTX on 10 Aug; no evidence of scam use or system compromise | MHA/HTX, 12 Aug 2026 |
+| Pioneer Generation Fund shortfall | Costs exceed fund balance by S$785m; Govt to top up as needed | Parliamentary report via Straits Times, 12 Aug 2026 |
 | Ceuta migrant crisis death toll, updated | 67 (up from 57, 31 Jul); ~60,000 crossed in 24h, 48,000+ already returned to Morocco; 500m floating barrier installed; 22 EU states secure emergency interior-ministers meeting for Tue 4 Aug | Spanish government/wire reports, 1 Aug 2026 |
 | DRC Ebola outbreak, updated | 3,605 confirmed cases, 1,587 deaths (44% case-fatality rate) — now the largest Ebola outbreak ever recorded in DRC (surpassing 2018-20's 3,317 cases), second-largest globally after 2014-16 West Africa; spread to 5 provinces/49 health zones | WHO, 31 Jul-1 Aug 2026 |
 | Qeshm Island strike munition identification | Crater/fragment analysis consistent with a US Mark-84 2,000lb bomb; killed a husband, wife, 2-year-old son; 2 more children pulled alive from rubble | NYT satellite/munitions analysis, 1 Aug 2026 |
