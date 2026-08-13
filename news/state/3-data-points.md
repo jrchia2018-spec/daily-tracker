@@ -508,3 +508,19 @@
 |---|---|---|
 | Tan Khi Wie immigration-fraud sentence | 14 months 15 weeks' jail; fled Singapore by boat 2002-2003, used false Indonesian identity "Ken Srona" 2011-2016, caught at Changi on automated-clearance failure | Singapore courts, 11 Aug 2026 |
 | Junction 8 restaurant fire | 100+ evacuated, 1 taken to Singapore General Hospital (smoke inhalation) | SCDF/Straits Times, 12 Aug 2026 |
+
+## Global economic variables (14 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Colombia earthquake toll, updated | 265 dead, 3,500+ injured, ~500 missing; rescue effort in "final phase" as the 72-hour survival window closes | Colombian authorities via wire reports, 13 Aug 2026 |
+| Novorossiysk grain-terminal strike | 3 killed (incl. an 8-year-old), 24 injured; 3 major grain terminals (United Grain Co., Demetra) halted; frigates Admiral Essen/Admiral Makarov, a landing ship and a corvette also hit | Zelensky/Gov. Kondratyev, 12-13 Aug 2026 |
+| Oman oil spill (tanker Caroline Bezengi) | 2,000+ sq km slick, Ras Madrakah beaches contaminated; vessel carried ~1m barrels, grounded after unexplained June explosions off Yemen; UK/EU-sanctioned as part of Russia's "shadow fleet" | Wire reports, 13 Aug 2026 |
+| DRC Ebola outbreak, updated | 4,500+ confirmed cases, 2,100+ deaths; spread to a 6th province (Bas-Uele) after a Buta death; on track to surpass the 2018-20 outbreak's 11,000+ deaths | DRC government, 13 Aug 2026 |
+| Hormuz traffic | Reportedly near a 3-month low; Hegseth says blockade can hold "indefinitely" via carrier rotation | Wire reports, 13 Aug 2026 |
+
+## Singapore data points (14 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Pritam Singh strike-off costs | S$5,808 ordered paid to the Law Society; earlier S$14,000 fine (Dec 2025 appeal loss) for the underlying perjury conviction | Singapore courts (Court of Three Judges), 13 Aug 2026 |
+| Enhanced B2026 Cost-of-Living Special Payment | S$400-600 to 2.4m+ citizens aged 21+; automatic from 9 Sept 2026 (from 9 Sept if NRIC-PayNow linked by 30 Aug); based on ≤1 property owned and YA2025 Assessable Income ≤S$100,000 | MOF, 13 Aug 2026 |
+| JB kidnap-for-ransom ransom figures | Demanded S$80,000, negotiated to S$25,000; S$5,000 already transferred by victim's mother before rescue | Royal Malaysia Police/wire reports, 12-13 Aug 2026 |
