@@ -524,3 +524,20 @@
 | Pritam Singh strike-off costs | S$5,808 ordered paid to the Law Society; earlier S$14,000 fine (Dec 2025 appeal loss) for the underlying perjury conviction | Singapore courts (Court of Three Judges), 13 Aug 2026 |
 | Enhanced B2026 Cost-of-Living Special Payment | S$400-600 to 2.4m+ citizens aged 21+; automatic from 9 Sept 2026 (from 9 Sept if NRIC-PayNow linked by 30 Aug); based on ≤1 property owned and YA2025 Assessable Income ≤S$100,000 | MOF, 13 Aug 2026 |
 | JB kidnap-for-ransom ransom figures | Demanded S$80,000, negotiated to S$25,000; S$5,000 already transferred by victim's mother before rescue | Royal Malaysia Police/wire reports, 12-13 Aug 2026 |
+
+## Global economic variables (15 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Colombia earthquake toll, updated | 285 dead, 3,500+ injured, ~379 missing | Colombia National Disaster Risk Management Unit, 14 Aug 2026 |
+| UAE ADNOC tanker attacks (cumulative) | 15 vessels hit this war, 3 this week alone; cumulative toll 1 crew killed, 20 injured | UAE Foreign Ministry/ADNOC, 14 Aug 2026 |
+| Ust-Luga strike | 54 drones launched, 51 downed by air defences; 2 processing plants damaged, fire extinguished by morning, no casualties; 6th strike on this port in 2026 | Ukraine General Staff/Leningrad Gov. Drozdenko, 14 Aug 2026 |
+| Zambia election vote-count suspension | Suspended nationwide over violence against poll staff and ballot-paper theft; commission to review within 24h | Electoral Commission of Zambia, 14 Aug 2026 |
+| Oman oil spill (Caroline Bezengi), updated | Slick reached ~40km of Ras Madrakah coastline; expected to reach a 10-20km stretch of Masirah Island within hours | Wire reports/Ambrey, 13-14 Aug 2026 |
+| Croatia wildfire (Omiš) | 1 dead, ~40 injured, 1,200+ evacuated | Wire reports, 14 Aug 2026 |
+
+## Singapore data points (15 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Crypto job-scam breach | S$15.1m (US$11.8m) stolen via fake LinkedIn recruiter, rigged coding assessment, malware, session-token theft bypassing MFA | SPF/CSA, 14 Aug 2026 |
+| ICA/China-official impersonation scams | S$6.1m lost across 72 reported cases since January 2026 | SPF, 14 Aug 2026 |
+| Preschool closures | ~70/year closed 2023-2025, mostly non-government-supported private centres; ~half of 2025 closures were below 40% enrolment capacity | Straits Times/MSF, 14 Aug 2026 |
