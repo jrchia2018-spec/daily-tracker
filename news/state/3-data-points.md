@@ -541,3 +541,22 @@
 | Crypto job-scam breach | S$15.1m (US$11.8m) stolen via fake LinkedIn recruiter, rigged coding assessment, malware, session-token theft bypassing MFA | SPF/CSA, 14 Aug 2026 |
 | ICA/China-official impersonation scams | S$6.1m lost across 72 reported cases since January 2026 | SPF, 14 Aug 2026 |
 | Preschool closures | ~70/year closed 2023-2025, mostly non-government-supported private centres; ~half of 2025 closures were below 40% enrolment capacity | Straits Times/MSF, 14 Aug 2026 |
+
+## Global economic variables (16 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Indonesia earthquake (Flores) | Magnitude 7.7, epicentre ~68km NNW of Ende; 47+ dead, 200+ aftershocks (strongest M6.2); tsunami warning issued then lifted, small waves (>0.5m) reached Manggarai/East Manggarai/Bulukumba/Sape; landslides bury/cut off villages across 6 Flores regencies, block the Trans-Flores highway | Wire reports/Indonesian BMKG, 15-16 Aug 2026 |
+| Hurricane Lala (Hawaii) | Category 1, 75mph/120kph sustained winds; eyewall forecast over/near Big Island's southern end by evening; up to 25in rain possible at high elevation (Mauna Kea); last direct Big Island hurricane hit was Category 3 in 1871 | National Hurricane Center/wire reports, 15 Aug 2026 |
+| Colombia earthquake toll, updated | 288 dead (from 285), 4,018 injured, 202 missing (down sharply from 379), 354 rescued alive; Cali: 105 dead/1,401 injured/115 missing, 107 homes collapsed/800 damaged | Ungrd (Colombia National Disaster Risk Management Unit), 15 Aug 2026 |
+| Colombia earthquake — US aid | US$15.5m committed for shelter, food, protection and damage assessments | US government/wire reports, Aug 2026 |
+| Zambia election, first results | 4 of 226 constituencies: Hichilema 22,476, Mundubile 14,388; count resumed under heightened security after a violence-triggered suspension | Zambia Electoral Commission, 15-16 Aug 2026 |
+| Qatar-Iran captured-pilots dispute | Iran claims 3 Su-24 pilots (Javad Salehi, Abdolmajid Dashtian, Omran Beh-Raveshian) held alive by Qatar since March; Qatar denies, says only 1 pilot's remains recovered/offered for handover | Iranian military letter to ICRC/Qatar FM spokesman Al-Ansari, 15 Aug 2026 |
+| Lebanon strikes toll, 15 Aug | 11 killed (7 Ansar house strike, 4 Deir El Zahrani) — deadliest since the 20 June truce; Israel cites a Hezbollah attack wounding 3 IDF soldiers as trigger | Lebanon Health Ministry/IDF, 15 Aug 2026 |
+
+## Singapore data points (16 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Healthy Living Biotech mattress-origin-fraud case | ~S$1.9m of China-made bedding falsely declared Singapore-origin, exported to US (Aug 2024-Sep 2025); 3 individuals + company charged, incl. GST-evasion charges; Singapore Customs probe opened Feb 2026 | Singapore Customs/Singapore courts, 14-15 Aug 2026 |
+| NEA Beverage Container Return Scheme | 5.5m containers returned via 1m+ transactions (multiple containers per transaction); refutes online claims refunds withheld from most containers | NEA, 15 Aug 2026 |
+| CASE beauty-industry prepayment losses, H1 2026 | S$1.9m+, ~18x H1 2025; 6,684 total complaints (+6.9% YoY), beauty >15% of all complaints, ~4 in 10 beauty complaints prepayment-related; Royal Secrets Wellness spa closure alone cost customers S$1m+ | CASE, 14 Aug 2026 |
+| Marriage and Parenthood Reset Workgroup | Chaired by Indranee Rajah; interim support measures to be unveiled at PM Wong's 23 Aug National Day Rally; full report (financial costs, housing, healthcare, preschool) due early 2027 | PMO/Straits Times, 15-16 Aug 2026 |
