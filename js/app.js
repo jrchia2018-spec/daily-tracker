@@ -3,8 +3,9 @@ import {
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods,
-  skincareFor, setSkincare, skincareProgram, skincareWeek, hadNewLesion,
-  areaCounts, newLesionCount, bumpSkincareArea,
+  skincareFor, skincareProgram, skincareWeek, bumpSkincareArea,
+  activeLesionsOn, activeCountOn, newOnDate, newAreasOn,
+  addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   supplementsFor, toggleSupplement, latestWaist, bodyChange,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
@@ -1924,10 +1925,16 @@ function renderSkincare() {
   const prog = skincareProgram();
   const tonight = SKIN_NIGHT[parseKey(today).getDay()];
   const sc = skincareFor(today);
-  const areasToday = areaCounts(sc);           // { areaId: count }
-  const newToday = newLesionCount(sc);
+  const areasToday = newAreasOn(today);        // { areaId: count }
+  const newToday = newOnDate(today);
   // A day logged before areas existed carries only the old boolean.
   const legacyNew = !Object.keys(areasToday).length && !!sc.newLesion;
+  const active = activeLesionsOn(today);
+  const started = !!ledgerStart();
+  // The "already there" row has to survive its own first tap — re-rendering
+  // after one spot must not hide the control before the rest are placed. It
+  // stays for the whole day the ledger begins, then goes.
+  const setupMode = !started || ledgerStart() === today;
   const li = steps => steps.map(s => `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
 
   // Header: start button before day 0; week/day counter after.
@@ -1943,9 +1950,10 @@ function renderSkincare() {
     <div class="${tonight === kind ? 'skin-tonight' : ''}">
       ${tonight === kind ? '<span class="badge">Tonight</span> ' : ''}<b>${prefix}</b> ${text}</div>`;
 
-  // Whitehead tracker: today's active count + a "new one appeared" flag,
-  // rolled up per program week once day 0 is set.
-  const count = typeof sc.whiteheads === 'number' ? sc.whiteheads : null;
+  // Active count is now DERIVED from the ledger, not typed in — that's what
+  // makes it carry from day to day without re-entry.
+  const count = activeCountOn(today);
+  const clearedToday = lesionsAll().filter(l => l.resolved === today);
   let weekBlock = '';
   if (prog) {
     const rows = [];
@@ -1959,6 +1967,7 @@ function renderSkincare() {
           <span class="muted">Week ${w + 1}${w === prog.weekIndex ? ' <span style="color:var(--accent)">· now</span>' : ''}</span>
           <span><b>${s.newTotal}</b> new on <b>${s.newDays}</b>/${s.daysLogged} logged${s.daysLogged < s.daysElapsed ? ` <span class="muted">(of ${s.daysElapsed})</span>` : ''}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
         </div>
+        ${s.cleared ? `<div style="font-size:12px;margin-top:2px;color:var(--green)"><b>${s.cleared}</b> cleared${s.avgDaysToClear != null ? ` · lasted <b>${s.avgDaysToClear + 1}</b> day${s.avgDaysToClear ? 's' : ''} on average` : ' <span class="muted">(started before tracking, so no duration)</span>'}</div>` : ''}
         ${spots ? `<div class="muted" style="font-size:12px;margin-top:2px">${spots}</div>` : ''}
       </div>`);
     }
@@ -2004,14 +2013,47 @@ function renderSkincare() {
       </div>
     </div>
     <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">
-      <div class="row between">
-        <span>Active count <span class="small muted">— total on your face now</span></span>
-        <div class="row" style="gap:10px">
-          <button class="btn small" id="wh-minus" aria-label="Fewer">−</button>
-          <b id="wh-count" style="min-width:26px;text-align:center;font-size:18px">${count == null ? '—' : count}</b>
-          <button class="btn small" id="wh-plus" aria-label="More">+</button>
-        </div>
+      <div class="row between" style="margin-bottom:8px">
+        <span>Still there <span class="small muted">— on your face now</span></span>
+        <b style="font-size:18px">${count == null ? '—' : count}</b>
       </div>
+      ${active.length ? active.map(l => {
+        const area = SKIN_AREAS.find(a => a.id === l.area);
+        const d = lesionDays(l, today);
+        // A carried spot has no true start date — it predates tracking — so
+        // it must never claim to have appeared on the day it was entered.
+        const when = l.carried
+          ? (d === 0 ? 'already there' : `already there, tracked ${d} day${d > 1 ? 's' : ''}`)
+          : (d === 0 ? 'appeared today' : `day ${d + 1}`);
+        return `
+        <div class="row between skin-area-row">
+          <span>${area ? area.label : l.area} <span class="small muted">— ${when}</span></span>
+          <button class="btn small" data-clear="${l.id}">Gone</button>
+        </div>`;
+      }).join('') : `<p class="small muted" style="margin:0">${started
+        ? 'Nothing active — clear skin today.'
+        : 'None tracked yet. Add any new one above; if you already have some, place them below so they carry forward.'}</p>`}
+      ${setupMode ? `
+      <div style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)">
+        <div class="small muted" style="margin-bottom:6px">Already have some? Add them here — these won't count as new today.</div>
+        <div class="row" style="gap:6px;flex-wrap:wrap">
+          ${SKIN_AREAS.map(a => `<button class="btn small" data-carry="${a.id}">+ ${a.label}</button>`).join('')}
+        </div>
+      </div>` : ''}
+      ${clearedToday.length ? `
+      <div style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)">
+        <div class="small muted" style="margin-bottom:6px">Cleared today</div>
+        ${clearedToday.map(l => {
+          const area = SKIN_AREAS.find(a => a.id === l.area);
+          const d = lesionDays(l);
+          return `
+          <div class="row between skin-area-row">
+            <span class="muted">${area ? area.label : l.area}
+              <span class="small">— ${l.carried ? 'started before tracking' : `lasted ${d + 1} day${d ? 's' : ''}`}</span></span>
+            <button class="btn small" data-unclear="${l.id}">Undo</button>
+          </div>`;
+        }).join('')}
+      </div>` : ''}
     </div>
     ${weekBlock}
   </div>
@@ -2085,12 +2127,15 @@ function renderSkincare() {
     <div class="note" style="margin:12px 0 0">Day 0 is the first morning the routine above runs complete. Baseline photos that evening, after cleansing, patted dry, 10 minutes' wait, before any product. Same room, same artificial light, same distance, every week.</div>
   </div>`;
 
-  const setCount = n => {
-    setSkincare(today, { whiteheads: Math.max(0, n) });
-    render();
-  };
-  view.querySelector('#wh-minus').addEventListener('click', () => setCount((count || 0) - 1));
-  view.querySelector('#wh-plus').addEventListener('click', () => setCount((count || 0) + 1));
+  for (const b of view.querySelectorAll('[data-clear]')) {
+    b.addEventListener('click', () => { resolveLesion(b.dataset.clear, today); render(); toast('Marked gone ✨'); });
+  }
+  for (const b of view.querySelectorAll('[data-unclear]')) {
+    b.addEventListener('click', () => { unresolveLesion(b.dataset.unclear); render(); });
+  }
+  for (const b of view.querySelectorAll('[data-carry]')) {
+    b.addEventListener('click', () => { addLesion(today, b.dataset.carry, true); render(); });
+  }
   for (const b of view.querySelectorAll('[data-area-inc]')) {
     b.addEventListener('click', () => { bumpSkincareArea(today, b.dataset.areaInc, +1); render(); });
   }

@@ -20,7 +20,8 @@ function defaults() {
     weighinDismissed: {}, // { 'YYYY-MM-DD': true } — weekend weigh-in prompts waved off
     lastBackup: null,     // date string of the last export — drives the backup nudge
     skincareStart: null,  // 'YYYY-MM-DD' — day 0 of the 8-week hold routine, or null
-    skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } }
+    skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } } — LEGACY per-day counts, still read for days before the ledger starts
+    lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
   };
 }
@@ -330,13 +331,110 @@ export function setSkincare(key, patch) {
   save();
 }
 
-// Add or remove one new spot in a given area for a day.
+// ---- whitehead ledger (15 Aug 2026) ----
+//
+// A whitehead is now ONE RECORD that lives until it clears, instead of a count
+// retyped every day. This fixes both of the user's complaints at once: the
+// active count carries itself forward with no daily entry, and a spot can be
+// marked gone on the day it goes — which is what makes "how long does one
+// last" answerable at all. Duration is a far more sensitive read on whether
+// the 8-week routine is working than a daily headcount.
+//
+// Nothing is migrated. Days before the ledger starts keep being read from the
+// old per-day `skincare` map, which still holds all three legacy shapes.
+
+export function lesionsAll() {
+  if (!Array.isArray(state.lesions)) state.lesions = [];
+  return state.lesions;
+}
+
+// First date the ledger covers. Before it, only the old per-day count exists.
+export function ledgerStart() {
+  const ls = lesionsAll();
+  if (!ls.length) return null;
+  return ls.reduce((m, l) => (l.appeared < m ? l.appeared : m), ls[0].appeared);
+}
+
+const onLedger = key => {
+  const s = ledgerStart();
+  return !!s && key >= s;
+};
+
+// Spots present on a given day, oldest first. A spot marked resolved on day X
+// is treated as gone ON X — it's logged the morning they notice it cleared.
+export function activeLesionsOn(key) {
+  return lesionsAll()
+    .filter(l => l.appeared <= key && (!l.resolved || l.resolved > key))
+    .sort((a, b) => a.appeared.localeCompare(b.appeared));
+}
+
+// Active count for a day: the ledger once it starts, the old stored number
+// before that. A logged 0 is real data, so this tests for a number.
+export function activeCountOn(key) {
+  if (onLedger(key)) return activeLesionsOn(key).length;
+  const e = state.skincare[key];
+  return e && typeof e.whiteheads === 'number' ? e.whiteheads : null;
+}
+
+// Spots that APPEARED on a day. Carried-over ones are excluded — they were
+// already on the face when tracking began and aren't new incidence.
+export function newOnDate(key) {
+  if (onLedger(key)) {
+    return lesionsAll().filter(l => l.appeared === key && !l.carried).length;
+  }
+  return newLesionCount(state.skincare[key]);
+}
+
+// New spots by area for a day, in the same { areaId: count } shape the old
+// per-day map used, so the weekly rollup can treat both alike.
+export function newAreasOn(key) {
+  if (!onLedger(key)) return areaCounts(state.skincare[key]);
+  const out = {};
+  for (const l of lesionsAll()) {
+    if (l.appeared === key && !l.carried) out[l.area] = (out[l.area] || 0) + 1;
+  }
+  return out;
+}
+
+export function addLesion(key, area, carried = false) {
+  lesionsAll().push({ id: uid(), area, appeared: key, resolved: null, carried });
+  save();
+}
+
+// Undo for the '−' button. Only ever removes a spot added on the SAME day in
+// that area, so a mistap is reversible without destroying a real older record.
+export function removeLesionAdded(key, area) {
+  const ls = lesionsAll();
+  for (let i = ls.length - 1; i >= 0; i--) {
+    if (ls[i].appeared === key && ls[i].area === area && !ls[i].resolved) {
+      ls.splice(i, 1);
+      save();
+      return true;
+    }
+  }
+  return false;
+}
+
+export function resolveLesion(id, key) {
+  const l = lesionsAll().find(x => x.id === id);
+  if (l) { l.resolved = key; save(); }
+}
+
+export function unresolveLesion(id) {
+  const l = lesionsAll().find(x => x.id === id);
+  if (l) { l.resolved = null; save(); }
+}
+
+// How long a spot lasted, in days. Null while it's still there.
+export function lesionDays(l, key = dateKey()) {
+  return daysBetween(l.appeared, l.resolved || key);
+}
+
+// Add or remove one new spot in a given area for a day. Same two buttons the
+// user already knows; a ledger record underneath instead of a bare count.
 export function bumpSkincareArea(key, id, delta) {
-  const areas = areaCounts(state.skincare[key]);
-  const n = Math.max(0, (areas[id] || 0) + delta);
-  if (n) areas[id] = n; else delete areas[id];
-  const any = Object.keys(areas).length > 0;
-  setSkincare(key, { areas, newLesion: any });
+  if (delta > 0) addLesion(key, id);
+  else removeLesionAdded(key, id);
 }
 
 // Program position: day 0 is `skincareStart`, week 1 = days 0–6, over 8 weeks.
@@ -366,17 +464,40 @@ export function skincareWeek(weekIndex) {
     const k = addDays(first, i);
     if (k > today) break;
     elapsed++;
+    const ledger = onLedger(k);
     const e = state.skincare[k];
-    if (!e) continue;
-    daysLogged++;
-    if (hadNewLesion(e)) newDays++;
-    newTotal += newLesionCount(e);
+    // On the ledger every elapsed day is known — an untouched day genuinely
+    // means "nothing changed", not "forgot to log". That ambiguity was the
+    // whole reason daysLogged existed.
+    if (ledger) daysLogged++;
+    else if (e) daysLogged++;
+    else continue;
+
+    const n = newOnDate(k);
+    if (n) newDays++;
+    newTotal += n;
     // Sum the counts, not the number of distinct areas — two on the chin is 2.
-    for (const [a, n] of Object.entries(areaCounts(e))) areas[a] = (areas[a] || 0) + n;
-    if (typeof e.whiteheads === 'number') { sum += e.whiteheads; counted++; }
+    for (const [a, c] of Object.entries(newAreasOn(k))) areas[a] = (areas[a] || 0) + c;
+    const act = activeCountOn(k);
+    if (typeof act === 'number') { sum += act; counted++; }
   }
+
+  // Spots that cleared during this week, and how long they had lasted.
+  // CARRIED spots are excluded from the duration average: they were already
+  // on the face when tracking began, so their `appeared` is the day they were
+  // entered, not the day they started. Averaging them in would understate how
+  // long a whitehead really lasts — the one number this whole tab is for.
+  const last = addDays(first, 6);
+  const clearedList = lesionsAll().filter(l => l.resolved && l.resolved >= first && l.resolved <= last);
+  const timed = clearedList.filter(l => !l.carried);
+  const durSum = timed.reduce((s, l) => s + daysBetween(l.appeared, l.resolved), 0);
+
   return {
     first, daysElapsed: elapsed, daysLogged, newDays, newTotal, areas,
     avg: counted ? Math.round(sum / counted) : null,
+    cleared: clearedList.length,
+    clearedTimed: timed.length,
+    avgDaysToClear: timed.length ? Math.round(durSum / timed.length) : null,
+    onLedger: onLedger(first) || onLedger(last),
   };
 }
