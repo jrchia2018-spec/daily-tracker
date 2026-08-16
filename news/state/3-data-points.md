@@ -560,3 +560,20 @@
 | NEA Beverage Container Return Scheme | 5.5m containers returned via 1m+ transactions (multiple containers per transaction); refutes online claims refunds withheld from most containers | NEA, 15 Aug 2026 |
 | CASE beauty-industry prepayment losses, H1 2026 | S$1.9m+, ~18x H1 2025; 6,684 total complaints (+6.9% YoY), beauty >15% of all complaints, ~4 in 10 beauty complaints prepayment-related; Royal Secrets Wellness spa closure alone cost customers S$1m+ | CASE, 14 Aug 2026 |
 | Marriage and Parenthood Reset Workgroup | Chaired by Indranee Rajah; interim support measures to be unveiled at PM Wong's 23 Aug National Day Rally; full report (financial costs, housing, healthcare, preschool) due early 2027 | PMO/Straits Times, 15-16 Aug 2026 |
+
+## Global economic variables (17 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Iran bounty on US soldiers | US$30,000 (US$60,000 if killed/captured by a woman) | Iranian army chief Amir Hatami/IRNA, 16 Aug 2026 |
+| USS Abraham Lincoln deployment | 265 days supporting the Iran war as it heads home; among the lowest mental-health case counts of the Navy's 11 active carriers per CENTCOM | Adm. Brad Cooper/CENTCOM, 16 Aug 2026 |
+| US-South Korea joint exercise scale-back | 11-day exercise, 18,000 South Korean troops, "substantially" reduced | Trump/Truth Social, 16 Aug 2026 |
+| Ukraine drone attack on Moscow region | 800+ drones launched, 6+ killed nationwide (incl. 1 in Podolsk Wildberries-warehouse strike); largest since the start of the year per TASS | Moscow region Gov. Vorobyov/Russian MoD/TASS, 16 Aug 2026 |
+| Zambia election, updated count | 49 of 226 constituencies: Hichilema 438,708 (52.6%), Mundubile 351,281 (42.1%) | Zambia Electoral Commission, 15-16 Aug 2026 |
+| Indonesia Flores earthquake toll, updated | 51 dead, 36 seriously injured, 77 minor injuries, 346 houses damaged (157 severe), 230+ aftershocks (strongest M6.2) | Indonesian authorities/wire reports, 16 Aug 2026 |
+
+## Singapore data points (17 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Poh Po Lian MACC arrest warrant | Issued 4 Aug 2026, Kuala Lumpur magistrate's court; untraceable 3 years per MACC; co-warrant for Malaysian national Jennifer Kok Sau Keng | MACC/wire reports, 12-16 Aug 2026 |
+| Jurong East HDB flat fire | 1 dead (67-year-old man), 50 evacuated; Block 339 Jurong East Ave 1, ~3.55am | SCDF/Singapore courts, 16 Aug 2026 |
+| Orchard Road pedestrian accident | 79-year-old pedestrian dies in hospital; 46-year-old driver arrested for driving without due care and attention causing death | Straits Times/SPF, 16 Aug 2026 |
