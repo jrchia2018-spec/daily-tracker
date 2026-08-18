@@ -310,6 +310,13 @@
 | Zimbabwe Lake Kariba ferry disaster toll (revised) | 84 dead (incl. 18 children), up from 68; 77 rescued; vessel carried 114+ adults/5 crew vs 90 capacity | Wire reports, 16-17 Aug 2026 |
 | DR Congo Ebola outbreak (deadliest in DRC history) | 2,325 deaths (surpassing 2018-2020's 2,299 record), 4,945 confirmed cases; Bundibugyo strain, first detected late Apr; no approved vaccine/treatment for this strain | DRC public health institute/WHO, 15-16 Aug 2026 |
 | Zambia election vote count | Hichilema ~62% (867,066-vote lead) vs Mundubile ~36%, 161 of 226 constituencies declared | ECZ via wire reports, 17 Aug 2026 |
+| Zambia election final result | Hichilema 2,965,326 votes (60.49%), Mundubile 1,856,217 (37.87%), all 226 constituencies | Electoral Commission of Zambia, 18 Aug 2026 |
+| Zimbabwe Lake Kariba ferry toll (further revised) | 93 dead (up from 84), 39 identified by next of kin; 77 survivors; ~168-170 estimated aboard vs 90 capacity | Zimbabwe Republic Police, 18 Aug 2026 |
+| Brent crude, 18 Aug | ~$91-92/barrel, extending gains on faded US-Iran ceasefire-renewal hopes | Wire reports, 18 Aug 2026 |
+| UAE ballistic-missile incident | 2 missiles from Iran, 1 outside/1 within territorial waters, no damage/casualties; first such barrage in months; Iran calls it "baseless" | UAE defence ministry, 18 Aug 2026 |
+| DOJ Mabna Institute hacking indictment (expanded) | 17 Iranians charged total (8 new + 9 from 2018); ~31.5TB stolen from 144 US/178 foreign universities, 42 US/11 foreign companies, 5 US govt agencies; $10m reward for 5 fugitives | US DOJ, 18 Aug 2026 |
+| Philippines Ateneo de Zamboanga University shooting | 1 student killed, gunman (a 7th-grade student) dead by suicide; 2nd Philippine school shooting in 2 months | Philippine authorities, 18 Aug 2026 |
+| Israel strike on Syria's Abu al-Duhur air base | 8 airstrikes, runway + storage facilities hit, Idlib province, ~70km from Turkish border | Syrian military/US envoy Tom Barrack, 18 Aug 2026 |
 | Iran war cost/MOU 60-day window | 60-day ceasefire-extension window (from 17 Jun MOU) lapsed 17 Aug with no resolution; Brent crude ~US$88/barrel, little moved | Wire reports, 17 Aug 2026 |
 | Colombia earthquake — Cali-specific | 75 dead, 1,000+ injured, 56 buildings under search | UPI/wire reports, 12 Aug 2026 |
 | Colombia earthquake rescues | 87 people rescued alive from rubble nationwide as of 12 Aug | Wire reports, 12 Aug 2026 |
@@ -581,3 +588,10 @@
 | Poh Po Lian MACC arrest warrant | Issued 4 Aug 2026, Kuala Lumpur magistrate's court; untraceable 3 years per MACC; co-warrant for Malaysian national Jennifer Kok Sau Keng | MACC/wire reports, 12-16 Aug 2026 |
 | Jurong East HDB flat fire | 1 dead (67-year-old man), 50 evacuated; Block 339 Jurong East Ave 1, ~3.55am | SCDF/Singapore courts, 16 Aug 2026 |
 | Orchard Road pedestrian accident | 79-year-old pedestrian dies in hospital; 46-year-old driver arrested for driving without due care and attention causing death | Straits Times/SPF, 16 Aug 2026 |
+
+## Singapore data points (19 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Social-media scam-advertising share, 2025 | Facebook/Instagram/TikTok ~30% of total Singapore scam cases; Facebook alone ~18% | SPF, 18 Aug 2026 |
+| New Online Criminal Harms Act Social Media Code | Advertiser identity verification against govt records required; compliance deadline 31 Jan 2027; fines up to $1m for non-compliance | SPF, 18 Aug 2026 |
+| "Religious influencer" mosque abuse case sentence | 27 years 10 months' jail + 24 strokes of the cane; abuse of 2 brothers 2022-2023, incl. rape of the younger boy (then aged 6-8) at a mosque toilet | Singapore courts, 17 Aug 2026 |
