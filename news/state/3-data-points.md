@@ -595,3 +595,20 @@
 | Social-media scam-advertising share, 2025 | Facebook/Instagram/TikTok ~30% of total Singapore scam cases; Facebook alone ~18% | SPF, 18 Aug 2026 |
 | New Online Criminal Harms Act Social Media Code | Advertiser identity verification against govt records required; compliance deadline 31 Jan 2027; fines up to $1m for non-compliance | SPF, 18 Aug 2026 |
 | "Religious influencer" mosque abuse case sentence | 27 years 10 months' jail + 24 strokes of the cane; abuse of 2 brothers 2022-2023, incl. rape of the younger boy (then aged 6-8) at a mosque toilet | Singapore courts, 17 Aug 2026 |
+
+## Global economic variables (20 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| UAE-Iran trade halt | UAE suspends all trade, commercial exchange and financial transactions with Iran "until further notice"; UAE supplies 30%+ of Iran's imports; Iran facing near-70% inflation, 5.4% GDP contraction | UAE Ministry of Foreign Affairs/wire reports, 19 Aug 2026 |
+| US Iran-war casualties, updated | 18 killed, 757+ wounded since 28 Feb (wounded up from 624, jump of 130+ in one DCAS update, "Overseas Operations" category) | Pentagon DCAS via CNN, 19 Aug 2026 |
+| Brent crude, 19 Aug | ~US$91.28/barrel, +0.29%, 4th consecutive session of gains | Wire reports, 19 Aug 2026 |
+| Kenya helicopter crash toll | 7 dead (4 Americans incl. Telemundo exec José Alberto Suárez, 2 Ecuadorians incl. an intelligence official, 1 Kenyan pilot); Eurocopter EC130 B4, Mount Ololokwe, Samburu County | Kenya Civil Aviation Authority/wire reports, 19 Aug 2026 |
+| CAR gold-mine collapse toll | At least 30 dead, more feared trapped; Abba area, Nana-Mambéré prefecture | Local officials/wire reports, 18-19 Aug 2026 |
+
+## Singapore data points (20 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| MAS asset-management hub measures | Tax exemption for fund-management profit-related returns; new hedge-fund investment programme; new Investment Management Track under ONE Pass; industry ~S$7 trillion AUM, ~15% of financial-sector output, ~13% of its employment, +7.5%/yr avg past 5 yrs | MAS, 19 Aug 2026 |
+| MSF PATH Fund rough-sleeper/homeless-youth pilots | 17 projects, $450,000 fund; incl. drop-in centre, co-tenant housing-matching scheme, micro-jobs/apprenticeships, homeless-youth mentoring/family mediation | MSF, 19 Aug 2026 |
+| Korea Artiz Studio Singapore closure | 66 CASE complaints (14-18 Aug), S$271,000+ in prepayment losses; follows Taiwan outlet's 10 Aug closure; founded Busan 2008, Singapore since 2017 | CASE/wire reports, 18-19 Aug 2026 |
+| Japan Home Singapore store closures | 5 outlets (Hougang Mall, Century Square, Northpoint City, HarbourFront Centre, Buangkok Square) with closing sales; 34 outlets islandwide before closures; reports of partial Valu$ takeover | Business Times/wire reports, 19 Aug 2026 |
