@@ -612,3 +612,19 @@
 | MSF PATH Fund rough-sleeper/homeless-youth pilots | 17 projects, $450,000 fund; incl. drop-in centre, co-tenant housing-matching scheme, micro-jobs/apprenticeships, homeless-youth mentoring/family mediation | MSF, 19 Aug 2026 |
 | Korea Artiz Studio Singapore closure | 66 CASE complaints (14-18 Aug), S$271,000+ in prepayment losses; follows Taiwan outlet's 10 Aug closure; founded Busan 2008, Singapore since 2017 | CASE/wire reports, 18-19 Aug 2026 |
 | Japan Home Singapore store closures | 5 outlets (Hougang Mall, Century Square, Northpoint City, HarbourFront Centre, Buangkok Square) with closing sales; 34 outlets islandwide before closures; reports of partial Valu$ takeover | Business Times/wire reports, 19 Aug 2026 |
+
+## Global economic variables (21 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | Toward US$93/barrel, fifth straight day of gains, on Trump's "Economic Warfare" announcement compounding Hormuz-risk premium | Wire reports, 20-21 Aug 2026 |
+| Central African Republic Zamboye mine collapse toll | 100+ dead (from initial 30+ estimate), several still missing/trapped; local Red Cross says response lacks equipment for the scale | Wire reports (ABC/WaPo/NBC/Al Jazeera), 19-20 Aug 2026 |
+| Nigeria Sokoto boat capsize | At least 47 dead (mostly children aged 10-15), 16 rescued, boat carried 80+ people to farm work in Gorau town, Goronyo LGA | Wire reports, 20 Aug 2026 |
+| Kyiv 20 Aug missile/drone barrage | At least 13 killed, ~40 injured (Zelensky); 44 missiles fired, 39 intercepted; Solomianskyi district worst hit (8 killed, 18 injured); children's hospital windows blown out | Ukrainian officials/wire reports, 20 Aug 2026 |
+| North Korea ballistic missile launch | ~10 short-range ballistic missiles fired toward the sea, ~5pm 20 Aug, day after Kim Yo Jong dismissed Trump's SK-drill cut | South Korean military, 20 Aug 2026 |
+
+## Singapore data points (21 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singapore iMessage courier-impersonation scam losses | ~S$2.2m lost in under 2 months (up from S$1.2m as of 5 Aug); 30,000+ scam accounts disrupted since June by SPF Cyber Command | SPF, 20 Aug 2026 |
+| Singapore-India 4th Ministerial Roundtable pacts | 2 MOUs + 1 LOI (maritime heritage, food safety, telecom/broadcasting regulation); SG delegation led by DPM Gan Kim Yong | Wire reports, 20 Aug 2026 |
+| Primary schools dropping P1 parent-volunteer scheme | Fairfield Methodist (Primary) and Mee Toh stopped in 2026, Hong Wen and Rosyth in 2025; ~1/3 of primary schools still offer it; Fairfield had 27 applicants for 22 Phase 2B places in 2026 (30 for 20 in 2025) | Wire reports, 20-21 Aug 2026 |
