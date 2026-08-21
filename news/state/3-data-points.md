@@ -628,3 +628,20 @@
 | Singapore iMessage courier-impersonation scam losses | ~S$2.2m lost in under 2 months (up from S$1.2m as of 5 Aug); 30,000+ scam accounts disrupted since June by SPF Cyber Command | SPF, 20 Aug 2026 |
 | Singapore-India 4th Ministerial Roundtable pacts | 2 MOUs + 1 LOI (maritime heritage, food safety, telecom/broadcasting regulation); SG delegation led by DPM Gan Kim Yong | Wire reports, 20 Aug 2026 |
 | Primary schools dropping P1 parent-volunteer scheme | Fairfield Methodist (Primary) and Mee Toh stopped in 2026, Hong Wen and Rosyth in 2025; ~1/3 of primary schools still offer it; Fairfield had 27 applicants for 22 Phase 2B places in 2026 (30 for 20 in 2025) | Wire reports, 20-21 Aug 2026 |
+
+## Global economic variables (22 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Kryvyi Rih shopping-mall "double-tap" strike | At least 15 dead, 130+ injured (23 children); 21 dead nationwide incl. separate Mykolaiv/Kharkiv strikes | Ukrainian officials/wire reports, 21 Aug 2026 |
+| Germany Berlin-forest weapons cache | Handgun cache found on Berlin-Brandenburg border; BfV assesses stockpiled for Russian-directed "kinetic operations" incl. assassinations; 1 suspect arrested in Romania, several more agents detained in Germany this year | German Interior Ministry (Dobrindt)/BfV, 21 Aug 2026 |
+| Hong Kong Tiananmen vigil leaders convicted | Chow Hang-tung (41) and Lee Cheuk-yan (69) convicted of "inciting subversion," face up to 10 yrs; 3rd leader Albert Ho (74) pleaded guilty Jan 2026 | Hong Kong court, 21 Aug 2026 |
+| Turkey Interpol Red Notice request for Netanyahu | Over May interception of Global Sumud Flotilla off Cyprus; charges incl. genocide, crimes against humanity, torture | Turkish Justice Ministry (Akin Gurlek), 21 Aug 2026 |
+
+## Singapore data points (22 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singapore-Vietnam inaugural Strategic Dialogue | 25 Aug 2026; co-chaired by Chan Chun Sing and CPV Politburo member Tran Cam Tu; theme "Towards a Resilient Future" | MFA/wire reports, 21 Aug 2026 |
+| Town council bribery charge | S$220,000 in alleged bribes to a 63-year-old senior project manager (managing agent linked to 3 town councils); part allegedly spent on a Mercedes-Benz | Singapore courts, 21 Aug 2026 |
+| Singapore data-centre capacity award (DC-CFA2) | 200MW total, 50MW each to Digital Realty, Equinix, Keppel Data Centres, ST Telemedia; Jurong Island low-carbon park; ≥50% low-carbon energy required | EDB/IMDA, 21 Aug 2026 |
+| Changi Airport wheelchair-assistant pay-docking claim | S$5 docked from S$7/hour wage for clocking in 11 seconds late; employer Aventa Services (SATS service partner); MOM investigating | MOM/SATS, 21 Aug 2026 |
+| Singapore Apple-impersonation crypto scam losses | At least S$195,000 across 5 cases since 7 Aug 2026 | SPF, 21 Aug 2026 |
