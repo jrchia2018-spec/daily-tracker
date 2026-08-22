@@ -313,6 +313,19 @@
 | Zambia election final result | Hichilema 2,965,326 votes (60.49%), Mundubile 1,856,217 (37.87%), all 226 constituencies | Electoral Commission of Zambia, 18 Aug 2026 |
 | Zimbabwe Lake Kariba ferry toll (further revised) | 93 dead (up from 84), 39 identified by next of kin; 77 survivors; ~168-170 estimated aboard vs 90 capacity | Zimbabwe Republic Police, 18 Aug 2026 |
 | Brent crude, 18 Aug | ~$91-92/barrel, extending gains on faded US-Iran ceasefire-renewal hopes | Wire reports, 18 Aug 2026 |
+
+## Global economic variables (23 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| US-Canada tariffs | 50% on ~US$20b (~S$26b) of Canadian goods (hockey sticks, building materials, liquor, clothing), effective midnight 21-22 Aug after talks collapsed | Wire reports, 22 Aug 2026 |
+| Myanmar monastery airstrike (Sagaing) | 14 killed (incl. 3 women), 20 injured; two bombs 15 min apart on a compound hosting 100+ Lent retreatants, Swel Le Oh village, Myaung township | Opposition group/wire reports, 21-22 Aug 2026 |
+| DR Congo Ebola outbreak (Africa CDC modelling) | 5,200+ confirmed cases, 47.5% case-fatality rate; Africa CDC/DRC biomedical-research institute modelling suggests true burden "far larger" than confirmed count | Africa CDC, 22 Aug 2026 |
+| US 75-country immigrant-visa ban struck down | Judge Jeannette A. Vargas rules the Jan 2026 State Dept policy exceeded Secretary Rubio's statutory authority; covers Afghanistan, Iran, Russia, Somalia among 75 countries | US District Court (SDNY), 21 Aug 2026 |
+
+## Singapore data points (23 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Cyclist accidents, 2025 | 772 cases, 17 fatal — 4-year high; over half attributed to cyclists' own lookout/riding-manner lapses | SPF via Straits Times, 23 Aug 2026 |
 | UAE ballistic-missile incident | 2 missiles from Iran, 1 outside/1 within territorial waters, no damage/casualties; first such barrage in months; Iran calls it "baseless" | UAE defence ministry, 18 Aug 2026 |
 | DOJ Mabna Institute hacking indictment (expanded) | 17 Iranians charged total (8 new + 9 from 2018); ~31.5TB stolen from 144 US/178 foreign universities, 42 US/11 foreign companies, 5 US govt agencies; $10m reward for 5 fugitives | US DOJ, 18 Aug 2026 |
 | Philippines Ateneo de Zamboanga University shooting | 1 student killed, gunman (a 7th-grade student) dead by suicide; 2nd Philippine school shooting in 2 months | Philippine authorities, 18 Aug 2026 |
