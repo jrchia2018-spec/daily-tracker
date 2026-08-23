@@ -262,6 +262,13 @@ export const MY_FOODS = [
   M('Small cup grass jelly', 40, 0, 10, 0, 0, 10),
   M('Stir fried noodles w/ chicken', 450, 25, 55, 15, 2, 800),
   M('1 baked chicken nugget', 60, 5, 6, 2, 0.2, 125),
+  // Single units derived from multipacks that only ever existed as logged
+  // entries (23 Aug 2026) — divided out so the servings control can do the
+  // counting, per the basic-unit rule.
+  M('1 Ikea-size chicken meatball', 25, 2.8, 0.5, 1.3, 0, 63),
+  M('1 beef marinara meatball', 64, 3.1, 3.3, 4.3, 0.3, 121),
+  M('1 Famous Amos chocolate chip cookie', 35, 0.5, 4.5, 1.8, 0.3, 26),
+  M('1 chocolate coated strawberry', 45, 0.5, 6, 2.5, 0.5, 3),
   M('1 baked chicken drumstick', 180, 22, 0, 9, 0, 200),
   M('1 piece kaya toast', 130, 3, 19, 5, 0.5, 180),
   M('Thai basil chicken rice (1/2 rice)', 415, 32, 38, 15, 1.5, 950),

@@ -415,9 +415,30 @@ export function removeLesionAdded(key, area) {
   return false;
 }
 
+// Mark a spot cleared, optionally on an earlier day than today — noticing it
+// has gone is not the same as the day it went, and a forgotten tap otherwise
+// inflates the duration for good. The date is clamped to [appeared, today]:
+// clearing before it appeared would make a negative duration, and clearing in
+// the future would leave it active while claiming to be gone.
 export function resolveLesion(id, key) {
   const l = lesionsAll().find(x => x.id === id);
-  if (l) { l.resolved = key; save(); }
+  if (!l) return null;
+  const today = dateKey();
+  let d = key || today;
+  if (d < l.appeared) d = l.appeared;
+  if (d > today) d = today;
+  l.resolved = d;
+  save();
+  return d;
+}
+
+// Spots cleared in the last `days`, newest first — the window in which a
+// wrong clear-date can still be corrected.
+export function recentlyCleared(days = 14) {
+  const cutoff = addDays(dateKey(), -days);
+  return lesionsAll()
+    .filter(l => l.resolved && l.resolved >= cutoff)
+    .sort((a, b) => b.resolved.localeCompare(a.resolved));
 }
 
 export function unresolveLesion(id) {

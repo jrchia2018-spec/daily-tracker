@@ -6,6 +6,7 @@ import {
   skincareFor, skincareProgram, skincareWeek, bumpSkincareArea,
   activeLesionsOn, activeCountOn, newOnDate, newAreasOn,
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
+  recentlyCleared,
   supplementsFor, toggleSupplement, latestWaist, bodyChange,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
@@ -1920,6 +1921,40 @@ const SKIN_NIGHT_TEXT = {
   none: 'Nothing further tonight',
 };
 
+// Correct the day a spot cleared. Noticing it has gone and the day it went
+// are different things, and a tap remembered three days late otherwise
+// overstates how long it lasted for good — which is the one number the
+// 8-week hold is being judged on.
+function openClearedModal(id) {
+  const l = lesionsAll().find(x => x.id === id);
+  if (!l) return;
+  const area = SKIN_AREAS.find(a => a.id === l.area);
+  const today = dateKey();
+  const m = openModal(`
+    <h2>When did it go?</h2>
+    <p class="small muted" style="margin-bottom:12px">${area ? area.label : l.area} —
+      ${l.carried ? 'was already there when you started tracking' : `first seen ${fmtDate(l.appeared)}`}.
+      Set the day you last saw it, not the day you remembered to tap.</p>
+    <label class="field"><span>Cleared on</span>
+      <input id="cl-date" type="date" value="${l.resolved}" min="${l.appeared}" max="${today}"></label>
+    <button class="btn primary block" id="cl-save">Save</button>
+    <button class="btn danger block" id="cl-undo" style="margin-top:8px">Still there — undo</button>
+  `);
+  m.querySelector('#cl-save').addEventListener('click', () => {
+    const picked = m.querySelector('#cl-date').value;
+    const set = resolveLesion(id, picked);
+    closeModal();
+    render();
+    toast(set === picked ? 'Updated' : `Set to ${fmtDate(set)} — kept in range`);
+  });
+  m.querySelector('#cl-undo').addEventListener('click', () => {
+    unresolveLesion(id);
+    closeModal();
+    render();
+    toast('Back on the list');
+  });
+}
+
 function renderSkincare() {
   const today = dateKey();
   const prog = skincareProgram();
@@ -1953,7 +1988,7 @@ function renderSkincare() {
   // Active count is now DERIVED from the ledger, not typed in — that's what
   // makes it carry from day to day without re-entry.
   const count = activeCountOn(today);
-  const clearedToday = lesionsAll().filter(l => l.resolved === today);
+  const cleared = recentlyCleared(14);
   let weekBlock = '';
   if (prog) {
     const rows = [];
@@ -2040,17 +2075,17 @@ function renderSkincare() {
           ${SKIN_AREAS.map(a => `<button class="btn small" data-carry="${a.id}">+ ${a.label}</button>`).join('')}
         </div>
       </div>` : ''}
-      ${clearedToday.length ? `
+      ${cleared.length ? `
       <div style="margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)">
-        <div class="small muted" style="margin-bottom:6px">Cleared today</div>
-        ${clearedToday.map(l => {
+        <div class="small muted" style="margin-bottom:6px">Recently cleared <span style="opacity:.7">— tap a date to correct it</span></div>
+        ${cleared.map(l => {
           const area = SKIN_AREAS.find(a => a.id === l.area);
           const d = lesionDays(l);
           return `
           <div class="row between skin-area-row">
             <span class="muted">${area ? area.label : l.area}
               <span class="small">— ${l.carried ? 'started before tracking' : `lasted ${d + 1} day${d ? 's' : ''}`}</span></span>
-            <button class="btn small" data-unclear="${l.id}">Undo</button>
+            <button class="btn small" data-editclear="${l.id}">${l.resolved === today ? 'today' : fmtDate(l.resolved)}</button>
           </div>`;
         }).join('')}
       </div>` : ''}
@@ -2130,8 +2165,8 @@ function renderSkincare() {
   for (const b of view.querySelectorAll('[data-clear]')) {
     b.addEventListener('click', () => { resolveLesion(b.dataset.clear, today); render(); toast('Marked gone ✨'); });
   }
-  for (const b of view.querySelectorAll('[data-unclear]')) {
-    b.addEventListener('click', () => { unresolveLesion(b.dataset.unclear); render(); });
+  for (const b of view.querySelectorAll('[data-editclear]')) {
+    b.addEventListener('click', () => openClearedModal(b.dataset.editclear));
   }
   for (const b of view.querySelectorAll('[data-carry]')) {
     b.addEventListener('click', () => { addLesion(today, b.dataset.carry, true); render(); });
