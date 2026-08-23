@@ -141,7 +141,11 @@ export const MY_FOODS = [
   M('40g steamed fish', 44, 9, 0, 0.8, 0, 80),
   M('1/2 cup butter rice', 130, 2, 23, 4, 0.3, 150),
   M('Fried chicken thigh, no skin', 200, 28, 0, 10, 0, 300),
-  M('1 baked fish nugget', 60, 5, 6, 2, 0.2, 125),
+  // 23 Aug: was 60 with 5g protein, logged as 20. Reference brands cluster at
+  // 38-57 kcal/piece (Fisher Boy, Earth's Best, Trader Joe's); ~50 for a baked
+  // 25-28g nugget. The 5g protein was the bigger error — fish nuggets run
+  // 12-16% protein, so ~3.5g at this size.
+  M('1 baked fish nugget', 50, 3.5, 5, 1.8, 0.3, 140),
   M('1 cup steamed broccoli & carrots', 50, 3, 10, 0.3, 3.5, 50),
   M('Mango thai tea ice cream', 120, 2, 18, 4, 0, 50),
   M('1 slice Domino\'s Large Hawaiian', 203.1, 9.1, 27.3, 6.4, 1.8, 536),
@@ -254,7 +258,12 @@ export const MY_FOODS = [
   M('1/2 bowl lontong', 300, 8, 42, 11, 3, 650),
   M('Fried chicken cutlet', 350, 28, 15, 20, 0.5, 500),
   M('1/2 fist braised chicken (~40g)', 80, 9, 1.5, 4, 0, 175),
-  M('1 plain prata + curry', 206.7, 5, 27.7, 7.3, 1.3, 333),
+  // Was 206.7 — which is bare prata, with the curry never counted. Rebuilt
+  // 23 Aug from the app's own audited SG entry (Roti prata plain, 209kcal,
+  // HealthXchange/HPB) plus ~3 tbsp of curry gravy (~50kcal, the portion
+  // HealthXchange recommends per prata). Sodium is the big correction: the
+  // prata alone is ~400mg, so 333 for prata AND curry was never possible.
+  M('1 plain prata + curry', 259, 5.5, 31, 12.5, 2, 650),
   M('1 pancake', 90, 2, 14, 3, 0.2, 150),
   M('1 tbsp baked beans', 25, 1.5, 4, 0.2, 0.8, 50),
   M('Braised chicken breast dark sauce', 220, 35, 8, 5, 0, 600),
