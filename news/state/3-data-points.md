@@ -314,6 +314,27 @@
 | Zimbabwe Lake Kariba ferry toll (further revised) | 93 dead (up from 84), 39 identified by next of kin; 77 survivors; ~168-170 estimated aboard vs 90 capacity | Zimbabwe Republic Police, 18 Aug 2026 |
 | Brent crude, 18 Aug | ~$91-92/barrel, extending gains on faded US-Iran ceasefire-renewal hopes | Wire reports, 18 Aug 2026 |
 
+## Global economic variables (24 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| US-Canada retaliation timeline | Canada's dollar-for-dollar retaliatory tariffs (steel/dairy/appliances/farm equipment/pulp-paper/electronics) to begin 8 Sept 2026 | Wire reports, 23 Aug 2026 |
+| Thailand southern-insurgency attacks | 51 coordinated arson/bomb attacks, 3 wounded; 22 Narathiwat, 18 Yala, 11 Pattani, 8pm-midnight Sat 22 Aug | Thai military (ISOC), 23 Aug 2026 |
+| Guinea Conakry landfill landslide | 30 dead, 6 seriously injured; Dar es Salam landfill, slated for closure same day | Guinean officials/wire reports, 23 Aug 2026 |
+| DR Congo-M23 peace roadmap | Agreed after 5-day Switzerland-hosted talks (17-21 Aug) incl. US/Qatar/Togo/AU; standardised ceasefire-violation reporting mechanism, no withdrawal timeline | Swiss govt joint statement, 23 Aug 2026 |
+| UK power-plant cyberattack (Iran-linked) | 4-day shutdown in July 2026, disclosed 23 Aug; first successful such attack on UK energy infrastructure; NCSC handles 4+ "nationally significant" cyberattacks/week | UK govt/Telegraph/NCSC, 23 Aug 2026 |
+| Brent crude | ~$94.39/barrel (21 Aug); Nov 2026 contract rollover 23 Aug, no separate closing figure available in-window | Wire reports, 21-23 Aug 2026 |
+
+## Singapore data points (24 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| SG Child Support Package | S$2,000/yr Child Credits (age 1-16) + S$10,000 post-secondary top-up at 17 = ~S$70,000/child birth-to-adulthood | PMO/NDR 2026, 23 Aug 2026 |
+| Merged childcare leave scheme | 8-12 days/yr (children ≤12), scaled to family size; 3-child couple gets 24 days (up from 12 today); govt-funded in full | PMO/NDR 2026, 23 Aug 2026 |
+| Preschool fee targets (by 2030) | Full-day childcare to S$150/month, infant care to S$300/month, regardless of household income | PMO/NDR 2026, 23 Aug 2026 |
+| BTO/EC income ceiling | Raised S$14,000 → S$16,000/month, effective 24 Aug 2026; more ballot chances for first-timer families with children | HDB/NDR 2026, 23-24 Aug 2026 |
+| Problematic social-media use among youth | 1 in 6 aged 10-24 show signs of problematic use; some 6-7 hrs/day | PMO/NDR 2026 citing govt study, 23 Aug 2026 |
+| Singapore ASEAN chairmanship | Takes over from the Philippines in 2027; priorities: collective resilience, integration, AI adoption | PMO/NDR 2026, 23 Aug 2026 |
+| Ecuador-Singapore state visit | First-ever South American head-of-state visit to Singapore; 23-24 Aug 2026, President Noboa hosted by President Tharman | MFA/wire reports, 23 Aug 2026 |
+
 ## Global economic variables (23 Aug)
 | Indicator | Figure | Source |
 |---|---|---|
