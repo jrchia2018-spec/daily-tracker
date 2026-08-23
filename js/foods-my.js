@@ -346,7 +346,10 @@ export const MY_FOODS = [
   M('Lays BBQ chips (small packet)', 149, 2, 18, 8, 0.5, 180),
   M('Stir fried white bee hoon (1 bowl)', 380, 10, 55, 13, 2, 700),
   M('1 fried spring roll', 80, 2, 9, 4, 0.5, 100),
-  M('1 plain prata', 160, 4, 24, 5, 0.5, 200),
+  // 23 Aug: was 160/200mg, contradicting the app's own audited SG entry
+  // (Roti prata plain = 209kcal / 400mg, HealthXchange). Aligned to it, so
+  // this and "1 plain prata + curry" now agree with each other.
+  M('1 plain prata', 209, 4, 27, 9, 1.5, 400),
   M('Laksa (1 bowl)', 900, 28, 110, 38, 3, 1800, 180),
   M('Hash brown', 150, 1, 16, 9, 1, 250),
   M('Steamed chicken sausage', 120, 7, 5, 8, 0, 400),
