@@ -322,6 +322,17 @@
 | Guinea Conakry landfill landslide | 30 dead, 6 seriously injured; Dar es Salam landfill, slated for closure same day | Guinean officials/wire reports, 23 Aug 2026 |
 | DR Congo-M23 peace roadmap | Agreed after 5-day Switzerland-hosted talks (17-21 Aug) incl. US/Qatar/Togo/AU; standardised ceasefire-violation reporting mechanism, no withdrawal timeline | Swiss govt joint statement, 23 Aug 2026 |
 | UK power-plant cyberattack (Iran-linked) | 4-day shutdown in July 2026, disclosed 23 Aug; first successful such attack on UK energy infrastructure; NCSC handles 4+ "nationally significant" cyberattacks/week | UK govt/Telegraph/NCSC, 23 Aug 2026 |
+
+## Global economic variables (25 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 24 Aug | Fell over 2% to below $93/barrel (~S$120), ending a 5-day rally, on Bessent's new Iran sanctions campaign | Wire reports, 24 Aug 2026 |
+| US-Canada auto/steel tariff threat | Trump: tariffs on Canadian cars, trucks, auto parts and steel to rise to 50% from 1 Jan 2027 | White House/wire reports, 24 Aug 2026 |
+| Syria state-sponsor-of-terrorism delisting | Removed after 47 years (since 1979); HTS/al-Nusrah Front global-terrorist designation also revoked; only Cuba, Iran, N Korea remain listed | US State Dept, 24-25 Aug 2026 |
+| Nigeria Niger State mosque kidnapping | Up to ~600 reportedly abducted (unconfirmed) from Dekera village during Friday prayers, per a hostage-takers' video; simultaneous raids on nearby communities | Wire reports/residents, 23-24 Aug 2026 |
+| US Supreme Court mail-in-voting ruling | 6-3 (Sotomayor/Kagan/Jackson dissent); lifts June injunction blocking Trump's order in CA + 22 other states; preliminary only | US Supreme Court, 24 Aug 2026 |
+| Singapore mid-year crime brief (H1 2026) | Rape cases 261 (up from 230, H1 2025); molestation 762 (up from 739); total physical crime 10,287 (down from 10,325) | SPF, 24 Aug 2026 |
+| Singapore PSI, central region | 98 (24-hr), just below the 101-200 "unhealthy" band; hotspots escalating in Kalimantan/southern Sumatra | NEA, 24 Aug 2026 |
 | Brent crude | ~$94.39/barrel (21 Aug); Nov 2026 contract rollover 23 Aug, no separate closing figure available in-window | Wire reports, 21-23 Aug 2026 |
 
 ## Singapore data points (24 Aug)
