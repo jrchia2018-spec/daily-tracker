@@ -690,3 +690,18 @@
 | Singapore data-centre capacity award (DC-CFA2) | 200MW total, 50MW each to Digital Realty, Equinix, Keppel Data Centres, ST Telemedia; Jurong Island low-carbon park; ≥50% low-carbon energy required | EDB/IMDA, 21 Aug 2026 |
 | Changi Airport wheelchair-assistant pay-docking claim | S$5 docked from S$7/hour wage for clocking in 11 seconds late; employer Aventa Services (SATS service partner); MOM investigating | MOM/SATS, 21 Aug 2026 |
 | Singapore Apple-impersonation crypto scam losses | At least S$195,000 across 5 cases since 7 Aug 2026 | SPF, 21 Aug 2026 |
+
+## Global economic variables (26 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Operation Economic Outcast sanctions list | ~60 individuals/entities/vessels sanctioned incl. multiple Chinese nationals and China/Hong Kong-based firms; no major Chinese financial institution named | US Treasury, 25 Aug 2026 |
+| Canada retaliatory tariffs | 15-50% on ~US$20b (~S$26.4b) of US goods, 700+ items (dairy, seafood, appliances, wood/paper, clothing), effective 8 Sept 2026 | Canadian Finance Ministry (Champagne), 25 Aug 2026 |
+| Haiti Kenscoff gang attack | At least 47 killed, 50+ kidnapped, Port-au-Prince hills | UN/wire reports, 25 Aug 2026 |
+| Haiti gang-violence displacement (2026 YTD) | 1.5m people displaced nationwide (record); 3,100+ killed, 1,189 injured Jan-Jun 2026 | UN statistics, 25 Aug 2026 |
+| Nigeria Niger State mosque mass-kidnapping | ~600 reportedly held per unverified hostage-video claim; 30 confirmed dead, buried Sunday, Borgu district | Wire reports/Borgu district official, 25 Aug 2026 |
+
+## Singapore data points (26 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| DBS/POSB PayLah! $3 cashback campaign (new run) | 29 Aug-19 Dec 2026, 17 Saturdays (+5 weeks); 2.7m rewards available (+40%); first 160,000 customers/Saturday get up to S$3 cashback | DBS, 25 Aug 2026 |
+| Malacca/Singapore Straits seaborne trade share | 20%+ of world seaborne trade transits the Malacca Strait | 17th Co-operation Forum/wire reports, 25 Aug 2026 |
