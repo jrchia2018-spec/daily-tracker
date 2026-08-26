@@ -705,3 +705,23 @@
 |---|---|---|
 | DBS/POSB PayLah! $3 cashback campaign (new run) | 29 Aug-19 Dec 2026, 17 Saturdays (+5 weeks); 2.7m rewards available (+40%); first 160,000 customers/Saturday get up to S$3 cashback | DBS, 25 Aug 2026 |
 | Malacca/Singapore Straits seaborne trade share | 20%+ of world seaborne trade transits the Malacca Strait | 17th Co-operation Forum/wire reports, 25 Aug 2026 |
+
+## Global economic variables (27 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Nepal-Tibet flash flood toll | 157+ killed (some counts to 160), 403 missing incl. 341 foreign nationals (133 Indian, 47 US, 34 Australian, 33 British, 24 Canadian); Gyirong County, Tibet: 3 dead, 265 missing separately | Nepali police/CCTV/wire reports, 26 Aug 2026 |
+| Nepal hydropower capacity affected | 12%+ of national generating capacity disrupted | Wire reports, 26 Aug 2026 |
+| Pakistan PIMS Islamabad hospital fire | At least 14 newborns dead (hospital/rescue sources: 15); air-con compressor explosion in the nursery, 1 of 15 babies rescued | Pakistani officials/wire reports, 26 Aug 2026 |
+| Bank Melli shutdown demand (Operation Economic Outcast) | Sectoral sanctions determinations across 5 Iran trade lifelines: digital assets, technology, gold, aviation, shipping | Treasury Secretary Bessent, 26 Aug 2026 |
+| Brent/WTI crude, 26 Aug | Brent $86.20/barrel (-2.6%, 3rd straight day of declines); WTI $80.30/barrel (-2.5%) | Wire reports, 26 Aug 2026 |
+| Chinese state-linked hacking campaign (DOJ unsealed) | 2018-2026 span; targets incl. NASA, Federal Reserve, DOJ, Dept of Energy, NIH, HHS agency, US Senate, military networks, hospitals, power companies, defence contractors; 2 hacking platforms (QScan, QTRouter) seized | US DOJ, 26 Aug 2026 |
+| Meta child-harm settlement | Up to US$18b (~S$23.4b): US$17.1b+ to 29-state 2023 suit, remainder to other states/territories; incl. binding platform-design changes (2hr/day under-18 default cap, blocked school-hours access, no weekday 8am-3pm push notifications) | Wire reports, 26 Aug 2026 |
+
+## Singapore data points (27 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Air India equity request from SIA/Tata | ~US$1.5b (~S$1.9b); Tata Sons 75%/SIA 25% ownership; Air India + Air India Express FY to Mar 2026 combined loss US$2.33b (2x prior year) | Wire reports, 26 Aug 2026 |
+| SPF Mid-Year Scam and Cybercrime Brief 2026 | Cases -17.9% to 18,391 (scam-only -14.4% to 16,821 from 19,644); losses down to S$410.6m (from S$500.2m); Anti-Scam Centre recovered S$97.7m, averted S$127.1m | SPF, 26 Aug 2026 |
+| Amos Yee charges (total) | 7 charges: 4 new (racial disharmony x2, POHA/child-sex remarks x2) + 3 existing under Enlistment Act; S$15,000 bail; PTC 18 Sept 2026 | Singapore courts, 26 Aug 2026 |
+| SG Child Support Package cash components | S$10,000 Baby Gift (cash) + S$32,000 Child Credits (cash) + S$5,000 CDA First Step Grant, extended to unwed parents' children (reversing Baby Bonus married-only cash eligibility); effective Apr 2027 | MSF/NDR 2026 detail, 26-27 Aug 2026 |
+| SM Lee Central Asia visit | First-ever SG visits: Kazakhstan 24-27 Aug (Order of Dostyk First Class, Nazarbayev University honorary professorship), Uzbekistan 27-31 Aug; Uzbekistan = SG's 2nd-largest Central Asian services partner/3rd-largest goods partner (2024-25) | MFA/PMO, 26-27 Aug 2026 |
