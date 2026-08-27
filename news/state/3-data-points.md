@@ -725,3 +725,21 @@
 | Amos Yee charges (total) | 7 charges: 4 new (racial disharmony x2, POHA/child-sex remarks x2) + 3 existing under Enlistment Act; S$15,000 bail; PTC 18 Sept 2026 | Singapore courts, 26 Aug 2026 |
 | SG Child Support Package cash components | S$10,000 Baby Gift (cash) + S$32,000 Child Credits (cash) + S$5,000 CDA First Step Grant, extended to unwed parents' children (reversing Baby Bonus married-only cash eligibility); effective Apr 2027 | MSF/NDR 2026 detail, 26-27 Aug 2026 |
 | SM Lee Central Asia visit | First-ever SG visits: Kazakhstan 24-27 Aug (Order of Dostyk First Class, Nazarbayev University honorary professorship), Uzbekistan 27-31 Aug; Uzbekistan = SG's 2nd-largest Central Asian services partner/3rd-largest goods partner (2024-25) | MFA/PMO, 26-27 Aug 2026 |
+
+## Global economic variables (28 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Nepal-Tibet flood toll/missing (updated) | Nepal side: ~392 dead, 910 out of contact incl. 517 foreign tourists (90 American, plus Indian/Australian/British/Canadian nationals); Tibet side: 3 dead, 558 missing | Nepal Tourism Board/Chinese state media via wire reports, 27 Aug 2026 |
+| Ratko Mladić death | Died aged 84, UN Detention Centre, The Hague; life sentence for Srebrenica genocide (8,000+ Bosniak men/boys killed 1995) and Sarajevo siege; in custody since 2011 arrest after 16 years a fugitive | UN court/wire reports, 27 Aug 2026 |
+| Hormuz tanker attack (unidentified projectile) | Struck off Oman's coast, engine disabled, crew safe; UKMTO/UK Joint Maritime Information Center warn drifting/uncharted mines remain a live risk | UKMTO/wire reports, 25-27 Aug 2026 |
+| Brent crude, 27 Aug | ~US$87/barrel (up from 26 Aug's $86.20 low, on tanker-attack/mine-risk doubt over Trump's "mission accomplished" claim) | Wire reports/tradingeconomics, 27 Aug 2026 |
+| Norway King Harald health | Age 89; hospitalised in Oslo since 17 Aug (haemolytic anaemia, plus earlier fluid retention/bacterial blood infection); condition "extremely serious" as of 27 Aug; Crown Prince Haakon acting regent | Norwegian royal palace, 27 Aug 2026 |
+
+## Singapore data points (28 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singaporeans missing in Nepal floods | 9 total (per Nepal Tourism Board's 644-name preliminary missing list); 2 from a 47-person Himalayan Glacier tour group (also incl. 15 Australians, 10 Canadians, 9 Nepalese, 8 Americans, 2 Britons, 1 Russian-American) | Nepal Tourism Board/Mothership, 27 Aug 2026 |
+| Singapore Red Cross Nepal floods pledge | S$50,000 to Red Cross/Red Crescent partners; public fundraising appeal to launch 28 Aug | Singapore Red Cross, 27 Aug 2026 |
+| Dr Fong Yan Kit SMC finding | Restricted from most surgery for 18 months; 2022 Raffles Hospital kidney-surgery death (severed superior mesenteric artery/coeliac trunk instead of renal vein); separate criminal charge filed Mar 2026 | Singapore Medical Council, 27 Aug 2026 |
+| MinLaw/IPOS AI-copyright consultation | Public consultation 26 Aug-22 Oct 2026 on IP regime's response to AI, incl. Computational Data Analysis exception clarity | MinLaw/IPOS, 26 Aug 2026 |
+| Promenade Peak concrete transfer slab | 63-storey River Valley/Zion Road condo; transfer slab failed quality checks, being dismantled and rebuilt; cause not disclosed | Developer via Straits Times, 27 Aug 2026 |
