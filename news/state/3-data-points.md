@@ -743,3 +743,22 @@
 | Dr Fong Yan Kit SMC finding | Restricted from most surgery for 18 months; 2022 Raffles Hospital kidney-surgery death (severed superior mesenteric artery/coeliac trunk instead of renal vein); separate criminal charge filed Mar 2026 | Singapore Medical Council, 27 Aug 2026 |
 | MinLaw/IPOS AI-copyright consultation | Public consultation 26 Aug-22 Oct 2026 on IP regime's response to AI, incl. Computational Data Analysis exception clarity | MinLaw/IPOS, 26 Aug 2026 |
 | Promenade Peak concrete transfer slab | 63-storey River Valley/Zion Road condo; transfer slab failed quality checks, being dismantled and rebuilt; cause not disclosed | Developer via Straits Times, 27 Aug 2026 |
+
+## Global economic variables (29 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Nepal-Tibet flood toll (updated) | 579 dead Nepal + 7 dead Tibet = 586 combined; 1,924 missing in Nepal (incl. 517 foreign nationals), ~554-558 missing in Tibet — nearly 2,500 combined missing; 4,451+ injured/rescued incl. 129 foreign nationals; 8,300+ police deployed | Nepal disaster authority/Xinhua via wire reports, 28-29 Aug 2026 |
+| Norway King Harald V death | Died 6:35am, 28 Aug, Oslo University Hospital Rikshospitalet, aged 89, after 35-year reign; succeeded by son King Haakon VIII | Norwegian royal palace, 28 Aug 2026 |
+| Iran/Hormuz Omani-route dominance claim | 80%+ of liquids transiting Hormuz over the past 2 weeks used the US-backed Omani route rather than Iranian waters | US officials via wire reports, 28-29 Aug 2026 |
+| Brent crude, 28 Aug | ~US$88.22/barrel, -0.34% on the day | tradingeconomics/wire reports, 28 Aug 2026 |
+| Pentagon/Anthropic ruling | Judge Rita Lin (N.D. Cal.) rules Pentagon's "supply chain risk" designation of Anthropic unlawful First Amendment retaliation + due-process violation; 59-page ruling; designation ordered removed pending appeal | US District Court, 27-28 Aug 2026 |
+| Russia Ukraine-war troop attrition | Losing ~6,000 more troops/month than it can recruit (recruiting ~1,000/day); gap held for 2 months | Western officials via wire reports, 28 Aug 2026 |
+| China EV door-handle recall | ~4.3m vehicles, 9 automakers (Tesla 2.98m — largest single share — plus Xiaomi ~390,000, Leapmotor ~371,000, Xpeng ~264,000, Geely/Zeekr, Chery, FAW, BAIC); flush electronic handles can fail to release post-crash if low-voltage system disabled | China recall database/wire reports, 27-28 Aug 2026 |
+
+## Singapore data points (29 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Singapore Nepal flood Red Cross pledge (government) | US$100,000 (S$127,000) to Singapore Red Cross public fundraising appeal, on top of Red Cross's own S$50,000 pledge; 9 Singaporeans still missing | MFA, 28 Aug 2026 |
+| MOM heat-stress framework enhancement | 4 more measures (cool drinking water, emergency cooling supplies/ice packs, breathable protective clothing, heat-stress training) made mandatory from 1 Dec 2026; mandatory measures rise from 7 to 11; 3-month employer transition window | MOM, 28 Aug 2026 |
+| ECDA infant care educator hiring plan | 1,800 more infant care educators to be hired by 2030 | ECDA, 28 Aug 2026 |
+| Neighbour dispute mediation unit | Nationwide rollout from 1 Sept 2026 for severe noise/hoarding disputes | Wire reports, 28 Aug 2026 |
