@@ -762,3 +762,20 @@
 | MOM heat-stress framework enhancement | 4 more measures (cool drinking water, emergency cooling supplies/ice packs, breathable protective clothing, heat-stress training) made mandatory from 1 Dec 2026; mandatory measures rise from 7 to 11; 3-month employer transition window | MOM, 28 Aug 2026 |
 | ECDA infant care educator hiring plan | 1,800 more infant care educators to be hired by 2030 | ECDA, 28 Aug 2026 |
 | Neighbour dispute mediation unit | Nationwide rollout from 1 Sept 2026 for severe noise/hoarding disputes | Wire reports, 28 Aug 2026 |
+
+## Global economic variables (30 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| Nepal-Tibet flood toll | 626 dead (Nepal)/7 dead (Tibet); ~2,400 missing Nepal + ~554 missing Tibet, nearly 3,000 combined; 933 hydropower-project workers unaccounted for, 350 already rescued, 100+ trapped in Trishuli 3A tunnel (Rasuwa) | Nepal disaster authority/wire reports, 29 Aug 2026 |
+| Russia strike on Kyiv-area (Bucha) ammunition depot | 37 killed, dozens injured, hundreds evacuated; deadliest single Russian attack on Ukraine this year | Ukrainian officials/wire reports, 29 Aug 2026 |
+| Iran sanctions — Banque Misr UAE branch | ~US$1.8b processed over 2 years for ~100 Iran-linked companies; also blacklisted: Bank Melli Dubai GM Reza Mohammad Taeedi, Hong Kong front company Kameng Trading Ltd | US Treasury, 28-29 Aug 2026 |
+| IMO Gulf seafarer toll (6 months) | 19 seafarers killed since 28 Feb; ~6,000 stranded; 70+ shipping attacks recorded; CENTCOM: 82 commercial vessels redirected by the blockade to date | IMO/CENTCOM, 29 Aug 2026 |
+| Venezuela oil deal | US-led joint venture gets 55% control of 65bn barrels via 100-year concession from interim President Delcy Rodriguez; Rubio projects ~US$100b in private investment | White House/State Dept, 28 Aug 2026 |
+| Niger coup attempt | Mutinous officers stormed toward the presidential palace, airport (seizing Turkish drones) and state broadcaster; crushed within hours per Defence Minister Salifou Mody; no casualty/arrest figures released; 7th coup attempt since 1960 independence | Niger Defence Ministry/wire reports, 29 Aug 2026 |
+
+## Singapore data points (30 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| S$3b money laundering case — asset auctions | 80+ properties, 1,000+ luxury items (250+ jewellery pieces incl. Graff/Bulgari/Van Cleef & Arpels, Hermes handbags, Patek Philippe/Richard Mille/Rolex watches); first auctions 7 Sept 2026, running to mid-2027 | Hotlotz/wire reports, 29 Aug 2026 |
+| SQ321 turbulence lawsuit | Linda Kitchen (74) sues SIA in UK High Court over husband Geoffrey Kitchen's (73) May 2024 turbulence death + her own back injury; other passengers have also filed claims | UK High Court filing, 29 Aug 2026 |
+| Traffic Police H1 2026 road data | 60 fatal accidents/61 deaths (down from 78/79 in H1 2025); injury-accidents up 3.2% to 3,869; total injured+killed up to 5,151 (from 4,973) | Traffic Police, 29 Aug 2026 |
