@@ -131,12 +131,31 @@ export function mealTotals(key) {
 // (by name, case-insensitive) with the date it was last logged. This is the
 // "saved forever" list — anything logged once stays searchable and one-tap
 // re-loggable with no time window. "Quick add" kcal-only stubs are excluded.
+// A logged entry's top-level macros are TOTALS (per-serving x servings), so
+// handing one straight back to search made a half portion become that food's
+// new base — and re-logging it halved it again. Exactly the compounding the
+// servings redesign was built to end. Search must always offer ONE serving.
+const MACRO_FIELDS = ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water'];
+function oneServingOf(m) {
+  const n = m.servings || 1;
+  const out = { ...m, servings: 1 };
+  for (const f of MACRO_FIELDS) {
+    // per1 is authoritative where present; otherwise divide the totals back
+    // out. Entries predating the servings feature have neither per1 nor
+    // servings and are already per-serving, so n === 1 leaves them alone.
+    if (m.per1 && m.per1[f] != null) out[f] = m.per1[f];
+    else if (typeof m[f] === 'number' && n !== 1) out[f] = Math.round((m[f] / n) * 10) / 10;
+  }
+  if (typeof m.grams === 'number' && n !== 1) out.grams = Math.round((m.grams / n) * 10) / 10;
+  return out;
+}
+
 export function loggedFoods() {
   const byName = new Map();
   for (const date of Object.keys(state.meals).sort()) { // ascending: later wins
     for (const m of state.meals[date]) {
       if (!m.name || m.name === 'Quick add') continue;
-      byName.set(m.name.toLowerCase(), { ...m, lastDate: date });
+      byName.set(m.name.toLowerCase(), { ...oneServingOf(m), lastDate: date });
     }
   }
   return [...byName.values()];

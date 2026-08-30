@@ -378,12 +378,26 @@ function renderHome() {
   });
 }
 
-// Sleep time entry: accepts "7:41", "7h 41m", "7h41", or decimal "7.5".
+// Sleep time entry: "7:41", "7h 41m", "7h41", "6.54", or decimal "7.5".
+//
+// The dot is genuinely ambiguous and used to be read as decimal hours only,
+// so "6.54" typed meaning 6h54m was stored as 6h32m (user, 30 Aug). The rule
+// now splits on how many digits follow the dot, which matches how people
+// actually type each form:
+//   TWO digits, 00-59  -> minutes.  "6.54" = 6h54m, "6.05" = 6h05m
+//   one digit          -> decimal.  "7.5"  = 7h30m
+//   two digits >= 60   -> decimal.  "7.75" = 7h45m
+// Whatever it decides is echoed back on screen before saving, because no
+// rule survives every way of writing this and seeing the result does.
 function parseSleepTime(str) {
   const s = String(str).trim().toLowerCase();
   if (!s) return null;
-  let m = /^(\d{1,2})[:h]\s*(\d{1,2})?m?$/.exec(s);
+  const m = /^(\d{1,2})[:h]\s*(\d{1,2})?m?$/.exec(s);
   if (m) return Number(m[1]) * 60 + Number(m[2] || 0);
+  const dot = /^(\d{1,2})\.(\d{1,2})$/.exec(s);
+  if (dot && dot[2].length === 2 && Number(dot[2]) < 60) {
+    return Number(dot[1]) * 60 + Number(dot[2]);
+  }
   const dec = parseFloat(s);
   return Number.isFinite(dec) && dec > 0 && dec <= 24 ? Math.round(dec * 60) : null;
 }
@@ -641,8 +655,9 @@ function renderMeals() {
       <p class="small" style="margin:10px 0 6px">😴 Sleep from the night of <b>${fmtDate(addDays(mealDate, -1))}</b> to the morning of <b>${fmtDate(mealDate)}</b>${mealDate === dateKey() ? ' — last night' : ''}:</p>
       <div class="grid2">
         <label class="field"><span>Sleep score</span><input id="mw-sleep" type="number" inputmode="numeric" min="0" max="100" value="${w.sleep ?? ''}" placeholder="78"></label>
-        <label class="field"><span>Sleep time</span><input id="mw-time" value="${w.sleepMins != null ? fmtSleep(w.sleepMins) : ''}" placeholder="7:41"></label>
+        <label class="field"><span>Sleep time</span><input id="mw-time" value="${w.sleepMins != null ? fmtSleep(w.sleepMins) : ''}" placeholder="7:41 or 6.54"></label>
       </div>
+      <p class="small" id="mw-time-echo" style="margin:-6px 0 8px;min-height:16px"></p>
       <p class="small" style="margin:0 0 6px">👟 Steps taken during the day of <b>${fmtDate(mealDate)}</b>:</p>
       <label class="field"><span>Steps</span><input id="mw-active" type="number" inputmode="numeric" value="${w.steps ?? ''}" placeholder="8500"></label>
       ${mealDate === dateKey() ? `<p class="small muted" style="margin:-2px 0 8px">${fmtDate(mealDate)} isn't over yet — the total your watch shows this morning is <b>${fmtDate(addDays(mealDate, -1))}</b>'s, so tap ‹ and enter it there.</p>` : ''}
@@ -714,6 +729,22 @@ function renderMeals() {
   for (const b of view.querySelectorAll('[data-supp]')) {
     b.addEventListener('click', () => { toggleSupplement(mealDate, b.dataset.supp); render(); });
   }
+  // Echo what the typed sleep time was understood as. "6.54" reading back as
+  // "6h 54m" is what stops the decimal-vs-minutes ambiguity costing three
+  // weeks of wrong data again.
+  const timeInput = view.querySelector('#mw-time');
+  const timeEcho = view.querySelector('#mw-time-echo');
+  const paintTimeEcho = () => {
+    const v = timeInput.value.trim();
+    if (!v) { timeEcho.textContent = ''; return; }
+    const mins = parseSleepTime(v);
+    timeEcho.innerHTML = mins == null
+      ? '<span style="color:var(--orange)">Not understood — try 7:41, 7h41m, 6.54 or 7.5</span>'
+      : `Reading this as <b>${fmtSleep(mins)}</b>`;
+  };
+  timeInput.addEventListener('input', paintTimeEcho);
+  paintTimeEcho();
+
   view.querySelector('#mw-save').addEventListener('click', () => {
     const sleep = view.querySelector('#mw-sleep').value;
     const time = view.querySelector('#mw-time').value.trim();
