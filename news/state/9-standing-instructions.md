@@ -5,3 +5,4 @@
 - Responses: thorough, rigorous, pushback default — never open with agreement.
 - Clarify before proceeding if instructions are ambiguous. (Automated runs cannot clarify: when genuinely ambiguous, choose the conservative reading, note the choice in `6-changelog.md`, and proceed.)
 - Each story a genuinely distinct development; consolidate related angles; fewer stories rather than padding.
+- Rank stories by consequence, not drama — see the Story selection section of `1-task.md`. Casualty count is not a ranking.
