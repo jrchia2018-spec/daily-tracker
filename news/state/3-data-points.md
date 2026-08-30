@@ -779,3 +779,26 @@
 | S$3b money laundering case — asset auctions | 80+ properties, 1,000+ luxury items (250+ jewellery pieces incl. Graff/Bulgari/Van Cleef & Arpels, Hermes handbags, Patek Philippe/Richard Mille/Rolex watches); first auctions 7 Sept 2026, running to mid-2027 | Hotlotz/wire reports, 29 Aug 2026 |
 | SQ321 turbulence lawsuit | Linda Kitchen (74) sues SIA in UK High Court over husband Geoffrey Kitchen's (73) May 2024 turbulence death + her own back injury; other passengers have also filed claims | UK High Court filing, 29 Aug 2026 |
 | Traffic Police H1 2026 road data | 60 fatal accidents/61 deaths (down from 78/79 in H1 2025); injury-accidents up 3.2% to 3,869; total injured+killed up to 5,151 (from 4,973) | Traffic Police, 29 Aug 2026 |
+
+## Global economic variables (31 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| US strike on Larak Island | 2 Iranian launchers struck 30 Aug; first known US strike on Iran since late July; US official says forces were preparing to fire mine-carrying rockets into Hormuz; IRGC claims forces and civilian casualties (no verified figure) | US official/IRGC/wire reports, 30 Aug 2026 |
+| Iran petrol shortfall | Deficit of 15 million litres/day against total daily demand of 135 million litres; US naval blockade in place since 14 July 2026 | Iran Energy Optimisation Organisation, 29-30 Aug 2026 |
+| Iran sanctions — Banque Misr UAE branches | UAE central bank orders a "special and urgent examination" incl. a forensic lookback; FinCEN proposed rule cites ~US$1.8b (~S$2.3b) processed for 103 Iran-linked companies; Banque Misr has 5 UAE branches | UAE Central Bank/FinCEN, 29-30 Aug 2026 |
+| Brent crude | Last close ~US$88/barrel (28-29 Aug); markets shut for the weekend when the Larak strike occurred — no in-window close | Wire reports, 28-29 Aug 2026 |
+| Cyprus ferry Filojet capsize | At least 8 dead, ~22 missing, 237 rescued of ~270 aboard; departed Kyrenia 12:30pm local for Tasucu; wreck settled at 514m; captain + 7 crew arrested | Northern Cypriot authorities/wire reports, 30 Aug 2026 |
+| Nepal-Tibet flood toll | ~797 dead combined, 3,000+ missing (as of Sun 30 Aug); mass burials begun; 933 hydropower workers unaccounted for, 100+ believed alive in Trishuli 3A/3B tunnels; 261 foreigners from 23 countries missing on the Tibet side (incl. 18 US citizens, 15 Britons); ~85 Americans missing in Nepal | Nepal NDRRMA/Chinese authorities/US State Dept/wire reports, 30 Aug 2026 |
+| NASA Roman Space Telescope | Launched 7.26am EDT 30 Aug on a SpaceX Falcon Heavy from LC-39A, Kennedy Space Center; ~US$4.3b (~S$5.5b); 5-10 year mission; orbit ~1.6m km (1m miles) from Earth; observations from ~December; 2.4m primary mirror (same as Hubble), 300-megapixel Wide Field Instrument imaging 100x Hubble's sky area at comparable sensitivity | NASA, 30 Aug 2026 |
+| Iceland EU-accession referendum | No 118,040 (52.8%) vs Yes 105,399 (47.2%); 225,031 votes cast; turnout 82.5%; vote was on reopening talks suspended over a decade ago, not on membership | Icelandic official count, 29-30 Aug 2026 |
+| Grand Canyon flash flood | 20+ missing or unaccounted for; 62 airlifted by Sunday morning; flood hit ~2:30pm Sat 29 Aug in Bright Angel Canyon/Phantom Ranch; footbridges destroyed, creek bed widened | US National Park Service, 30 Aug 2026 |
+
+## Singapore data points (31 Aug)
+| Indicator | Figure | Source |
+|---|---|---|
+| New not-for-profit private hospital | 300-400 beds, eastern region; adds to 9,200+ existing acute beds in the eastern and central regions; first private hospital land tender in ~2 decades, intended H2 2026; fixed-price land model with bill-size restrictions | MOH, 30 Aug 2026 |
+| Singapore hospital capacity split | Public hospitals hold ~80% of beds, run above 90% occupancy, handle ~90% of inpatient cases; private hospitals at about half capacity | MOH, 30 Aug 2026 |
+| Heatwave response plan | 300+ air-conditioned cooling centres (CCs, selected RC/RN centres, some indoor sports halls) to open if activated; myENV alert at least 4 days ahead; priority to vulnerable residents when near capacity; rental flats identified as most vulnerable | Heat Resilience Policy Office, 30 Aug 2026 |
+| Copenhagen Metro contract | KBH Metro Partner (RATP Dev + SBS Transit Rail, Westbus, ComfortDelGro Irish Citylink) wins operations/maintenance; ~S$3.5b (€2.4b; DKK 17b); 12 years to 2039 + 3-year option; signature Sept 2026, handover from Metro Service Sept 2027; beat 2 other prequalified bidders | Metroselskabet/wire reports, 30 Aug 2026 |
+| Singapore Red Cross Nepal-China flood appeal | $1m target reached 3 days after the 28 Aug launch; supplements SRC's own $50,000 pledge and the govt's US$100,000 (S$127,000); donations open to 30 Nov 2026 | Singapore Red Cross, 30 Aug 2026 |
+| Wealth-guru bankruptcies | 50+ investors chasing ~S$5m. Lim Jian Bin, 36 ("Takeshi Lim"): 40+ investors, up to S$4m into Nozomii Vending (registered 2022) from 2023, promised 5-10%/yr; bankrupt 14 Jul 2026. Jason Fong Wai Hong, 46: property scheme, S$100,000 per investor, promised 15%; bankrupt Apr 2026, left for Malaysia Jun 2026 | Straits Times/court records, 30 Aug 2026 |
