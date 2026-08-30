@@ -23,6 +23,7 @@ function defaults() {
     skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } } — LEGACY per-day counts, still read for days before the ledger starts
     lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
+    plan: {},             // { 'YYYY-MM-DD': { am: kind, pm: kind, night: kind } } — the training plan, sparse. See the planner section below.
   };
 }
 
@@ -293,6 +294,103 @@ export const BODY_MIN_SPAN_DAYS = 21;   // enough to name a change
 export const BODY_STALL_SPAN_DAYS = 42; // "nothing is moving" needs longer still
 
 const r1cm = n => Math.round(n * 10) / 10;
+
+// ---- training planner (30 Aug 2026) ----
+//
+// Three slots a day so a gym session and a run can share a date while still
+// being hours apart — which is the whole reason the user asked for slots
+// rather than a day-level plan.
+export const PLAN_SLOTS = [
+  { id: 'am', label: 'Morning' },
+  { id: 'pm', label: 'Afternoon' },
+  { id: 'night', label: 'Night' },
+];
+
+export const PLAN_KINDS = [
+  { id: 'push', label: 'Push', group: 'gym', short: 'Push' },
+  { id: 'pull', label: 'Pull', group: 'gym', short: 'Pull' },
+  { id: 'legs', label: 'Legs', group: 'gym', short: 'Legs' },
+  { id: 'run-easy', label: 'Easy run', group: 'run', short: 'Easy' },
+  { id: 'run-hard', label: 'Hard run', group: 'run', short: 'Hard' },
+];
+
+const kindOf = id => PLAN_KINDS.find(k => k.id === id) || null;
+
+export function planFor(key) {
+  return state.plan[key] || {};
+}
+
+// Set or clear one slot. Empty days are dropped so the map stays sparse.
+export function setPlanSlot(key, slot, kind) {
+  const day = { ...planFor(key) };
+  if (kind) day[slot] = kind; else delete day[slot];
+  if (Object.keys(day).length) state.plan[key] = day; else delete state.plan[key];
+  save();
+}
+
+// Did the planned session actually happen? Read from what was LOGGED rather
+// than asking for a second tick — the user logs sessions anyway, so a
+// separate "mark done" would be pure duplicate friction.
+// A planned gym slot needs a logged gym session of that type; a planned run
+// needs any logged run (runs carry no intensity, so easy/hard can't be told
+// apart after the fact).
+export function planSlotStatus(key, slot) {
+  const kind = kindOf(planFor(key)[slot]);
+  if (!kind) return null;
+  const done = kind.group === 'gym'
+    ? gymOn(key).some(g => g.type === kind.id)
+    : runsOn(key).length > 0;
+  if (done) return 'done';
+  return key < dateKey() ? 'missed' : 'todo';
+}
+
+// Advisory warnings, never blocks. The user plans around a varying week, so
+// the app's job is to point at a clash, not to refuse it.
+export function planWarnings(keys) {
+  const out = [];
+  const kindsOn = k => Object.values(planFor(k)).map(kindOf).filter(Boolean);
+
+  // Legs and a hard run on back-to-back days — both tax the same legs.
+  for (let i = 0; i < keys.length; i++) {
+    const a = keys[i], b = keys[i + 1];
+    if (!b) break;
+    const aK = kindsOn(a), bK = kindsOn(b);
+    const legsThen = aK.some(k => k.id === 'legs') && bK.some(k => k.id === 'run-hard');
+    const hardThen = aK.some(k => k.id === 'run-hard') && bK.some(k => k.id === 'legs');
+    if (legsThen || hardThen) {
+      out.push(`${fmtDate(a, { weekday: true })} → ${fmtDate(b, { weekday: true })}: legs and a hard run back to back — put a day between them.`);
+    }
+  }
+
+  // Gym and a run on the same day must be far apart: morning + night is fine,
+  // adjacent slots are not.
+  for (const k of keys) {
+    const day = planFor(k);
+    const pairs = [['am', 'pm'], ['pm', 'night']];
+    for (const [x, y] of pairs) {
+      const kx = kindOf(day[x]), ky = kindOf(day[y]);
+      if (kx && ky && kx.group !== ky.group) {
+        out.push(`${fmtDate(k, { weekday: true })}: ${kx.label} and ${ky.label} are in back-to-back slots — spread them to morning and night.`);
+      }
+    }
+  }
+  return out;
+}
+
+// How the week's plan compares to the 3 gym + 3 runs target.
+export function planCounts(keys) {
+  let gym = 0, run = 0;
+  for (const k of keys) {
+    for (const id of Object.values(planFor(k))) {
+      const kind = kindOf(id);
+      if (!kind) continue;
+      if (kind.group === 'gym') gym++; else run++;
+    }
+  }
+  return { gym, run };
+}
+
+export { kindOf as planKind };
 
 // ---- supplements ----
 

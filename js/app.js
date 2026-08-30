@@ -8,6 +8,7 @@ import {
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   recentlyCleared,
   supplementsFor, toggleSupplement, latestWaist, bodyChange,
+  PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
 import {
@@ -274,6 +275,8 @@ function renderHome() {
   })()}
   </div>
 
+  ${todayPlanCard(today)}
+
   ${weighinPrompt(today)}
 
   ${(() => {
@@ -359,6 +362,7 @@ function renderHome() {
       render();
     });
   }
+  view.querySelector('#tp-open')?.addEventListener('click', () => { tab = 'train'; trainSub = 'plan'; render(); });
   view.querySelector('#wi-log')?.addEventListener('click', openWeightModal);
   view.querySelector('#wi-waist')?.addEventListener('click', openWaistModal);
   view.querySelector('#wi-skip')?.addEventListener('click', () => {
@@ -452,6 +456,35 @@ function daySuggestions(today) {
   }
   if (!out.length && tot.kcal > 0) out.push('✅ All on track — nothing to fix today.');
   return out.slice(0, 3);
+}
+
+// Today's plan on Home — the finalised version of what the Train tab plans,
+// so the morning glance says what's on without opening anything. Silent when
+// nothing is planned, so a rest day adds no clutter.
+function todayPlanCard(today) {
+  const day = planFor(today);
+  const rows = PLAN_SLOTS
+    .map(s => ({ slot: s, kind: planKind(day[s.id]), status: planSlotStatus(today, s.id) }))
+    .filter(r => r.kind);
+  if (!rows.length) return '';
+  const allDone = rows.every(r => r.status === 'done');
+  return `
+  <div class="card">
+    <div class="row between" style="margin-bottom:8px">
+      <h2 style="margin:0">📅 Today's training</h2>
+      ${allDone ? '<span class="badge green">All done</span>' : `<button class="btn small" id="tp-open">Plan</button>`}
+    </div>
+    ${rows.map(r => `
+      <div class="row between skin-area-row">
+        <span class="${r.status === 'done' ? 'muted' : ''}">
+          ${r.kind.group === 'gym' ? '🏋️' : '🏃'} <b>${r.kind.label}</b>
+          <span class="small muted">— ${r.slot.label.toLowerCase()}</span>
+        </span>
+        <span class="small" style="color:${r.status === 'done' ? 'var(--green)' : r.status === 'missed' ? 'var(--orange)' : 'var(--muted)'}">
+          ${r.status === 'done' ? 'logged ✓' : r.status === 'missed' ? 'not logged' : 'to do'}
+        </span>
+      </div>`).join('')}
+  </div>`;
 }
 
 // Saturday and Sunday weigh-in reminder. Two consecutive mornings under the
@@ -1121,16 +1154,112 @@ function renderTrain() {
   view.innerHTML = `
   <h1 style="margin-bottom:14px">Train</h1>
   <div class="subtabs">
+    <button id="st-plan" class="${trainSub === 'plan' ? 'active' : ''}">📅 Plan</button>
     <button id="st-runs" class="${trainSub === 'runs' ? 'active' : ''}">🏃 Runs</button>
     <button id="st-gym" class="${trainSub === 'gym' ? 'active' : ''}">🏋️ Gym</button>
   </div>
   <div id="train-body"></div>`;
 
+  view.querySelector('#st-plan').addEventListener('click', () => { trainSub = 'plan'; render(); });
   view.querySelector('#st-runs').addEventListener('click', () => { trainSub = 'runs'; render(); });
   view.querySelector('#st-gym').addEventListener('click', () => { trainSub = 'gym'; render(); });
 
-  if (trainSub === 'runs') renderRuns();
+  if (trainSub === 'plan') renderPlan();
+  else if (trainSub === 'runs') renderRuns();
   else renderGym();
+}
+
+// Weekly training plan: 7 days x 3 slots. Deliberately a grid of taps rather
+// than a form — the week varies, so re-planning has to be as cheap as
+// planning. Status comes from what was logged, so nothing needs ticking off.
+let planWeekOffset = 0;
+
+function renderPlan() {
+  const body = view.querySelector('#train-body');
+  const base = parseKey(dateKey());
+  base.setDate(base.getDate() + planWeekOffset * 7);
+  const week = weekKeys(base);
+  const today = dateKey();
+  const counts = planCounts(week);
+  const warnings = planWarnings(week);
+
+  const label = planWeekOffset === 0 ? 'This week'
+    : planWeekOffset === 1 ? 'Next week'
+      : planWeekOffset === -1 ? 'Last week'
+        : `${fmtDate(week[0], { weekday: false })} – ${fmtDate(week[6], { weekday: false })}`;
+
+  const cell = (k, slot) => {
+    const kind = planKind(planFor(k)[slot]);
+    const st = planSlotStatus(k, slot);
+    const bg = !kind ? 'transparent'
+      : st === 'done' ? 'rgba(61,220,151,.16)'
+        : st === 'missed' ? 'rgba(255,176,84,.16)'
+          : kind.group === 'gym' ? 'rgba(122,162,255,.16)' : 'rgba(94,208,192,.16)';
+    const col = !kind ? 'var(--muted)'
+      : st === 'done' ? 'var(--green)' : st === 'missed' ? 'var(--orange)' : 'var(--text)';
+    return `<button class="plan-cell" data-plan="${k}|${slot}"
+      style="background:${bg};color:${col}" aria-label="${fmtDate(k)} ${slot}">
+      ${kind ? kind.short : '·'}${st === 'done' ? ' ✓' : st === 'missed' ? ' !' : ''}</button>`;
+  };
+
+  body.innerHTML = `
+  <div class="card">
+    <div class="row between">
+      <button class="btn small" id="pw-prev">‹</button>
+      <div style="text-align:center"><b>${label}</b><div class="small muted">${fmtDate(week[0], { weekday: false })} – ${fmtDate(week[6], { weekday: false })}</div></div>
+      <button class="btn small" id="pw-next">›</button>
+    </div>
+
+    <div style="margin:14px 0 4px;display:grid;grid-template-columns:46px 1fr 1fr 1fr;gap:5px;align-items:center">
+      <span></span>
+      ${PLAN_SLOTS.map(s => `<span class="small muted" style="text-align:center">${s.label}</span>`).join('')}
+      ${week.map(k => `
+        <span class="small ${k === today ? '' : 'muted'}" style="${k === today ? 'font-weight:700;color:var(--accent)' : ''}">${fmtDate(k).slice(0, 3)}</span>
+        ${PLAN_SLOTS.map(s => cell(k, s.id)).join('')}
+      `).join('')}
+    </div>
+
+    <div class="row between" style="margin-top:12px">
+      <span class="small ${counts.gym === 3 ? '' : 'muted'}">🏋️ <b style="color:${counts.gym === 3 ? 'var(--green)' : 'var(--text)'}">${counts.gym}</b>/3 gym</span>
+      <span class="small ${counts.run === 3 ? '' : 'muted'}">🏃 <b style="color:${counts.run === 3 ? 'var(--green)' : 'var(--text)'}">${counts.run}</b>/3 runs</span>
+    </div>
+    ${warnings.length ? `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)">
+      ${warnings.map(w => `<p class="small" style="color:var(--orange);margin:0 0 6px">⚠️ ${w}</p>`).join('')}
+    </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
+    <p class="small muted" style="margin:10px 0 0">Tap any slot to set or change it. ✓ means it was logged, <b>!</b> means the day passed without it — tap to move it.</p>
+  </div>`;
+
+  body.querySelector('#pw-prev').addEventListener('click', () => { planWeekOffset--; render(); });
+  body.querySelector('#pw-next').addEventListener('click', () => { planWeekOffset++; render(); });
+  for (const b of body.querySelectorAll('[data-plan]')) {
+    b.addEventListener('click', () => {
+      const [k, slot] = b.dataset.plan.split('|');
+      openPlanModal(k, slot);
+    });
+  }
+}
+
+function openPlanModal(key, slot) {
+  const slotLabel = PLAN_SLOTS.find(s => s.id === slot).label.toLowerCase();
+  const current = planFor(key)[slot] || '';
+  const st = planSlotStatus(key, slot);
+  const m = openModal(`
+    <h2>${fmtDate(key)} — ${slotLabel}</h2>
+    ${st === 'missed' ? '<p class="small" style="color:var(--orange);margin-bottom:10px">This one was planned but never logged. Clear it, or move it by setting a different slot.</p>' : ''}
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0">
+      ${PLAN_KINDS.map(k => `
+        <button class="btn ${current === k.id ? 'primary' : ''}" data-kind="${k.id}">
+          ${k.group === 'gym' ? '🏋️' : '🏃'} ${k.label}</button>`).join('')}
+    </div>
+    <button class="btn danger block" data-kind="">Clear this slot</button>
+  `);
+  for (const b of m.querySelectorAll('[data-kind]')) {
+    b.addEventListener('click', () => {
+      setPlanSlot(key, slot, b.dataset.kind || null);
+      closeModal();
+      render();
+    });
+  }
 }
 
 function renderRuns() {
