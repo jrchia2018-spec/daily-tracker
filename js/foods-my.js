@@ -274,6 +274,16 @@ export const MY_FOODS = [
   // Single units derived from multipacks that only ever existed as logged
   // entries (23 Aug 2026) — divided out so the servings control can do the
   // counting, per the basic-unit rule.
+  // Foods whose saved base was corrupted by the half-portion bug (fixed
+  // 30 Aug). Search prefers a DB entry over a logged snapshot, so adding them
+  // here at their ORIGINAL pre-drift values overrides the bad history without
+  // touching any logged day. Names must match the logged names exactly or the
+  // substitution won't happen.
+  M('Captain Chocolate Granola, 1 serving (40g)', 194, 4.9, 26, 7.8, 8.3, 14),
+  M('Baked chicken breast, 150g, with teriyaki sauce', 320, 47, 15, 5.5, 0, 810),
+  M('Roasted chicken breast, 100g', 165, 31, 0, 3.6, 0, 75),
+  M('Sweet and sour pork, 1 serving', 253, 9.3, 20, 14.7, 0.7, 347),
+  M('French fry, 1 piece', 12, 0.2, 1.6, 0.5, 0.1, 8),
   M('1 Ikea-size chicken meatball', 25, 2.8, 0.5, 1.3, 0, 63),
   M('1 beef marinara meatball', 64, 3.1, 3.3, 4.3, 0.3, 121),
   M('1 Famous Amos chocolate chip cookie', 35, 0.5, 4.5, 1.8, 0.3, 26),
