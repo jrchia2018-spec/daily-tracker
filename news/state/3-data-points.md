@@ -802,3 +802,37 @@
 | Copenhagen Metro contract | KBH Metro Partner (RATP Dev + SBS Transit Rail, Westbus, ComfortDelGro Irish Citylink) wins operations/maintenance; ~S$3.5b (€2.4b; DKK 17b); 12 years to 2039 + 3-year option; signature Sept 2026, handover from Metro Service Sept 2027; beat 2 other prequalified bidders | Metroselskabet/wire reports, 30 Aug 2026 |
 | Singapore Red Cross Nepal-China flood appeal | $1m target reached 3 days after the 28 Aug launch; supplements SRC's own $50,000 pledge and the govt's US$100,000 (S$127,000); donations open to 30 Nov 2026 | Singapore Red Cross, 30 Aug 2026 |
 | Wealth-guru bankruptcies | 50+ investors chasing ~S$5m. Lim Jian Bin, 36 ("Takeshi Lim"): 40+ investors, up to S$4m into Nozomii Vending (registered 2022) from 2023, promised 5-10%/yr; bankrupt 14 Jul 2026. Jason Fong Wai Hong, 46: property scheme, S$100,000 per investor, promised 15%; bankrupt Apr 2026, left for Malaysia Jun 2026 | Straits Times/court records, 30 Aug 2026 |
+
+## Global economic variables (1 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | US$90.69/barrel, +2.93% on the day — back above US$90 for the first time since the strike pause began | TradingEconomics, 31 Aug 2026 |
+| Hormuz crude flow | 6–8 million barrels/day still transiting despite no peace agreement | Reported 31 Aug 2026 |
+| Iranian rial | 2,000,000 per US dollar — historic low, a ~47-fold devaluation in two years (from ~42,000) | 23 Aug 2026 |
+| Iran inflation | 87.9% (revises the earlier "near-70%" figure carried in this file) | Data released late Jul 2026 |
+| Iran unemployment | 9.1% | Spring 2026 |
+| Iran GDP | forecast to contract 5.4% in 2026 | 2026 forecast, cited 31 Aug 2026 |
+| Iran oil exports | "essentially no longer exporting oil" — central bank governor Abdolnaser Hemmati | Aug 2026 |
+| Jordan interceptions | 8 Iranian missiles intercepted at King Hussein / Al Azraq bases | Jordanian government, 31 Aug 2026 |
+| Nepal flood toll | 903 dead; 4,247 missing, incl. 592 foreign nationals | Nepal authorities, 31 Aug 2026 |
+| Nepal recovery cost | about S$6.4 billion (US$5 billion), requested from the UN climate-disaster recovery fund | Nepal government, 31 Aug 2026 |
+| Nepal cumulative disaster damage | ~US$7 billion over the past four decades | Cited 31 Aug 2026 |
+| Nepal hydropower rescues | 254 rescued from Upper Trishuli-1 (216MW), 18 from Langtang Khola (20MW); 933 hydropower workers unaccounted for; 100+ believed alive in Trishuli 3A/3B tunnels | Nepal Army / NDRRMA, 30–31 Aug 2026 |
+| US Supreme Court, White House ballroom | 5–4, unsigned, granted on standing grounds | US Supreme Court, 31 Aug 2026 |
+| Israel–Greece defence deal | US$3.5 billion (logged, not run as a story) | 31 Aug 2026 |
+| USD/SGD | 1.2726 (mid-market); 50-day average 1.286; 52-week range 1.2588–1.3096 | 31 Aug 2026 |
+
+## Singapore data points (1 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| RIE2030 plan | S$37 billion over five years, about 1% of GDP, running from April 2026 | Announced by SM Lee Hsien Loong, Dec 2025 |
+| New nascent-technologies grant | S$300 million, under RIE2030 | Reported 31 Aug 2026 |
+| RIE2025 outcome | S$28 billion public R&D funding disbursed; business R&D spending up 64% | RIE2025 report, 31 Aug 2026 |
+| Moneylender cooling-off | 3 business days on all unsecured licensed loans from 15 Sept 2026; no interest on cancellation; repayment capped at principal | MinLaw, 31 Aug 2026 |
+| Retained approval fee cap | max S$50 on loans of S$5,000 or less; max 3.5% of principal above that, not exceeding the approval fee | MinLaw, 31 Aug 2026 |
+| Online safety — designated platforms | 6: Facebook, Instagram, TikTok, X, YouTube, HardwareZone; mandatory age assurance at 13; legislation due early 2027 | MDDI (Josephine Teo), reported 31 Aug 2026 |
+| Nepal aid — government | US$100,000 (about S$127,000) to the Singapore Red Cross appeal, 28 Aug; plus a police DVI team and civilian/SAF humanitarian supplies | MFA, 31 Aug 2026 |
+| Nepal aid — RLAF | S$50,000 pledged, public appeal opened | RLAF, 31 Aug 2026 |
+| Singaporeans unaccounted for in Nepal | 9 | MFA, as of 31 Aug 2026 |
+| Pet cat licensing | 111,000+ cats licensed since the new rules; transition period ended 31 Aug 2026; fines up to S$5,000 from 1 Sept | AVS, 31 Aug 2026 |
+| Ramon Magsaysay Award | Tommy Koh, 4th Singaporean recipient (after 1965, 1972, 2017); ceremony 15 Nov 2026 | Ramon Magsaysay Award Foundation, 31 Aug 2026 |
