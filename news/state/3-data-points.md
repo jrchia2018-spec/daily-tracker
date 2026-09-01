@@ -836,3 +836,26 @@
 | Singaporeans unaccounted for in Nepal | 9 | MFA, as of 31 Aug 2026 |
 | Pet cat licensing | 111,000+ cats licensed since the new rules; transition period ended 31 Aug 2026; fines up to S$5,000 from 1 Sept | AVS, 31 Aug 2026 |
 | Ramon Magsaysay Award | Tommy Koh, 4th Singaporean recipient (after 1965, 1972, 2017); ceremony 15 Nov 2026 | Ramon Magsaysay Award Foundation, 31 Aug 2026 |
+
+## Global economic variables (2 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | US$91.28/barrel, +0.87% on the day — a second session above US$90 | TradingEconomics/wire reports, 1 Sep 2026 |
+| UK 30-year gilt yield | Up as much as 0.12pp to 5.9% — highest since the late 1990s | Wire reports, 1 Sep 2026 |
+| Japan 10-year government bond yield | 3.0% — highest since 1996 | Wire reports, 1 Sep 2026 |
+| Germany 10-year Bund yield | Highest level since 2011 | Wire reports, 1 Sep 2026 |
+| France 10-year OAT yield | Highest level since 2008 | Wire reports, 1 Sep 2026 |
+| Shein market valuation at Hong Kong debut | About US$26bn (roughly S$33bn at 1.2725), against a former peak of about US$100bn (about S$127bn); shares fell as much as 10% on day one | Wire reports, 1 Sep 2026 |
+| France ultra-fast-fashion levy, 2026 rates | €0.50 underwear (about S$0.75), €2 T-shirt (about S$2.95), €9 jeans (about S$13.30), €12 jacket (about S$17.70); up to €19.50 (about S$28.80) by 2030, capped at 50% of pre-tax price | French Senate bill adopted 337-1, 1 Sep 2026 |
+| Ukrainian railway staff casualties since Feb 2022 | 58 killed, at least 318 injured | Ukrzaliznytsia, 1 Sep 2026 |
+| Kyiv overnight bombardment toll | At least 12 killed (incl. 6 Ukrzaliznytsia employees at a locomotive depot), about a dozen wounded incl. 3 children | Ukrainian officials/Ukrzaliznytsia, 1 Sep 2026 |
+| US stopgap funding bill | Passed 370-48; funds government at current levels through 11 December 2026 | US House, 1 Sep 2026 |
+| FX reference rates used this run | USD/SGD 1.2725 (1 Sep 2026); EUR/SGD ~1.476 (carried from 29 Aug 2026) | Wire reports |
+
+## Singapore data points (2 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| New Upper Changi Road GLS tender | 4 bids; top bid S$1.425bn = S$1,537 psf ppr (record for a pure residential OCR site), 13.8% above CDL/Hong Realty; 99-year leasehold, ~1,010 units | URA tender close, 1 Sep 2026 |
+| Project Wolbachia efficacy | Mosquito populations at project sites down 80-90%; dengue-acquisition risk down more than 70%; on track for 50% household coverage in 2026 | NEA, cited 1 Sep 2026 |
+| MAS stablecoin consultation | Draft Payment Services Act amendments; interest on regulated stablecoins prohibited; stress tests, recovery and orderly wind-down plans required; consultation closes 16 Oct 2026 | MAS, 1 Sep 2026 |
+| Regional haze outlook | Dense smoke over southern/central Sumatra and parts of Kalimantan most days since about 21 Aug; below-average rainfall forecast over most of Singapore for the first half of September | Meteorological Service Singapore, 1 Sep 2026 |
