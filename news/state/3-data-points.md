@@ -894,3 +894,33 @@
 | SPF-crypto joint operation (4th) | 1 Jul-31 Aug 2026: 355+ victims identified, over S$8.94m in losses prevented, 50 victims overseas; 8 DPT providers (Coinbase, Coinhako, DTCPay, Gemini, Independent Reserve, OKX, StraitsX, Upbit); Chainalysis and TRM Labs analytics. Third operation (announced Apr 2026): 90+ victims, S$2.86m prevented | Singapore Police Force, 3 Sep 2026 |
 | FX reference rates used this run | USD/SGD 1.2700; EUR/SGD 1.4726 | Wire reports, 3 Sep 2026 |
 
+## Global economic variables (4-5 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | ~US$95.23/barrel, -0.31% on the day; near six-week highs | Trading data, 4 Sep 2026 |
+| US non-farm payrolls, August | +162,000 vs Dow Jones consensus +53,000; unemployment 4.1% (unchanged); wage growth lagging | BLS via CNBC/NBC/Al Jazeera, 4 Sep 2026 |
+| Fed September pricing | ~60% odds of a quarter-point rise at the 15-16 Sep FOMC | Futures pricing via CNBC, 4 Sep 2026 |
+| US equities, 4 Sep close | Dow -0.5%; S&P 500 -0.3%; Nasdaq -0.2% | Al Jazeera, 4 Sep 2026 |
+| US diesel price | All-time high | BBC, 4 Sep 2026 |
+| US petrol, Labor Day 2026 | Most expensive Labor Day on record | CNN, 4 Sep 2026 |
+| Iran sanctions designation | Golden Global Yatirim Bankasi Anonim Sirketi (Turkish investment bank) — accused of moving Iranian oil revenues from China to Turkey for conversion to cash and gold; most substantial single action since Operation Economic Outcast announced 19 Aug 2026 | US Treasury, 4 Sep 2026 |
+| Iran war US casualties | 18 US service members killed; hundreds wounded (757+ wounded under "Overseas Operations" per DCAS since 20 Aug) | CNN, 4 Sep 2026 |
+| Nepal-Tibet flood toll | 1,300+ dead; 5,600+ missing across Nepal and Chinese-controlled Tibet; 557 workers missing at Trishuli 3A, ~115 believed trapped in the main tunnel; 2 pulled alive on day 9 (Sanjay Sah, 30; Kabir Maharjan, 45) | Al Jazeera/NPR/NBC, 4 Sep 2026 |
+| UN world map resolution | Equal Earth projection adopted 164 in favour, 1 against (United States), 6 abstentions | UN General Assembly via France 24/CNN, 4 Sep 2026 |
+| Kyiv SBU headquarters strike | 12 injured, 9 hospitalised, 2 serious; first hit on the building in 4.5 years of war | Kyiv Independent/CNN, 4 Sep 2026 |
+| Falkland Islands population | ~3,600 islanders | Standing reference, cited 4 Sep 2026 |
+
+## Singapore data points (4-5 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| PSI (24-hour) | Central region 101 at 7am, 105 at 10am, 123 at 11pm on 4 Sep; east 104 — first crossing above 100 since October 2023 | NEA via ST/Malay Mail, 4 Sep 2026 |
+| Haze forecast, 5 Sep | High-moderate to mid-unhealthy range | NEA, 4 Sep 2026 |
+| Haze response | Haze Task Force health advisory issued; NEA daily haze advisories from 4 Sep; PSI 101-200 = unhealthy | NEA/HTF, 4 Sep 2026 |
+| Singaporeans detained in Guangxi | 52 arrested and detained over suspected pyramid scheme activities and related offences; believed the largest number of Singaporeans detained overseas at one time; consular visits conducted to all 52 | MFA-SPF joint statement, 4 Sep 2026 |
+| RTS Link Woodlands North station | Complete; underground, max depth 28m, three storeys (two basement levels), underground linkway to CIQ building | LTA, 4 Sep 2026 |
+| RTS Link line | 4km Woodlands North to Bukit Chagar; ~5-minute end-to-end journey; up to 10,000 passengers/hour/direction at peak; service on track for 2027 | LTA, 4 Sep 2026 |
+| Singapore humanitarian package to Nepal | ~S$560,000 — medical supplies, DNA test kits, PPE, specialised search/recovery/DVI equipment; handed to honorary consul Helen Campos by MOS Gan Siow Huang | MFA, 4 Sep 2026 |
+| Nepal appeal (Singapore, private) | Singapore Red Cross appeal over S$3m; Mercy Relief S$120,000; 9 Singaporeans still missing; 19-member DVI contingent (17 SPF, 2 HSA), 14 more planned | MFA/SPF, 3-4 Sep 2026 |
+| SID | 60th anniversary; Eddie Teo joined 1970, longest-serving director 1979-1994, 56 years public service incl. 24 at SID, conferred Singapore's highest civilian honour at National Day Awards 2026 | CNA/ST interviews, 5 Sep 2026 |
+| 2015 haze episode cost (reference) | ~S$700m to Singapore, chiefly healthcare and lost productivity | Standing reference, cited 5 Sep 2026 |
+| Causeway daily crossings (reference) | ~300,000 people/day | Standing reference, cited 5 Sep 2026 |
