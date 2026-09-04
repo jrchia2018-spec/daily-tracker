@@ -312,7 +312,13 @@ export const PLAN_KINDS = [
   { id: 'legs', label: 'Legs', group: 'gym', short: 'Legs' },
   { id: 'run-easy', label: 'Easy run', group: 'run', short: 'Easy' },
   { id: 'run-hard', label: 'Hard run', group: 'run', short: 'Hard' },
+  { id: 'run-long', label: 'Long run', group: 'run', short: 'Long' },
 ];
+
+// Runs that leave the legs wrecked. A long run isn't "high intensity" in the
+// pace sense, but it costs the legs as much as a hard one, so it clashes with
+// leg day for the same reason.
+const HEAVY_RUNS = new Set(['run-hard', 'run-long']);
 
 const kindOf = id => PLAN_KINDS.find(k => k.id === id) || null;
 
@@ -350,15 +356,16 @@ export function planWarnings(keys) {
   const out = [];
   const kindsOn = k => Object.values(planFor(k)).map(kindOf).filter(Boolean);
 
-  // Legs and a hard run on back-to-back days — both tax the same legs.
+  // Legs and a leg-heavy run on back-to-back days — both tax the same legs.
   for (let i = 0; i < keys.length; i++) {
     const a = keys[i], b = keys[i + 1];
     if (!b) break;
     const aK = kindsOn(a), bK = kindsOn(b);
-    const legsThen = aK.some(k => k.id === 'legs') && bK.some(k => k.id === 'run-hard');
-    const hardThen = aK.some(k => k.id === 'run-hard') && bK.some(k => k.id === 'legs');
-    if (legsThen || hardThen) {
-      out.push(`${fmtDate(a, { weekday: true })} → ${fmtDate(b, { weekday: true })}: legs and a hard run back to back — put a day between them.`);
+    const aLegs = aK.some(k => k.id === 'legs'), bLegs = bK.some(k => k.id === 'legs');
+    const aRun = aK.find(k => HEAVY_RUNS.has(k.id)), bRun = bK.find(k => HEAVY_RUNS.has(k.id));
+    const run = (aLegs && bRun) ? bRun : (bLegs && aRun) ? aRun : null;
+    if (run) {
+      out.push(`${fmtDate(a, { weekday: true })} → ${fmtDate(b, { weekday: true })}: legs and a ${run.label.toLowerCase()} back to back — put a day between them.`);
     }
   }
 
