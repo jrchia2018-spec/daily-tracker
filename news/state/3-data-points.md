@@ -924,3 +924,31 @@
 | SID | 60th anniversary; Eddie Teo joined 1970, longest-serving director 1979-1994, 56 years public service incl. 24 at SID, conferred Singapore's highest civilian honour at National Day Awards 2026 | CNA/ST interviews, 5 Sep 2026 |
 | 2015 haze episode cost (reference) | ~S$700m to Singapore, chiefly healthcare and lost productivity | Standing reference, cited 5 Sep 2026 |
 | Causeway daily crossings (reference) | ~300,000 people/day | Standing reference, cited 5 Sep 2026 |
+
+## Global economic variables (5-6 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | ~US$96/barrel at Friday's close, +9% on the week — strongest weekly gain since mid-July; markets shut during Saturday's US-Iran exchange | Trading data via wire reports, 4-5 Sep 2026 |
+| US strikes on Iranian tankers | 3 IRGC crude carriers: M/T Downy "permanently disabled" off Kharg Island, M/T Stark 1 "permanently disabled" near Jask, M/T Kylo (unladen) "completely destroyed" in the Gulf of Oman; second use of the tanker-for-tanker approach first applied 2 Sep | US Central Command, 5 Sep 2026 |
+| IRGC attack on US warships | Ballistic missiles fired at 2 US Navy vessels (an aircraft carrier and a guided-missile destroyer); both evaded, no US personnel injured | US Central Command, 5 Sep 2026 |
+| IRGC counter-claim | Claims to have targeted 3 tankers transiting Hormuz on "unauthorised" routes plus 3 US-linked vessels; no independent confirmation in window | IRGC Navy statement via wire reports, 5 Sep 2026 |
+| Kyiv strike pause | 3 days from midnight local, capital only, ordered by Putin; Ukraine suspends strikes on Moscow until Monday | Kremlin (Peskov) / President Zelensky, 5 Sep 2026 |
+| Putin-Witkoff-Kushner meeting | ~3 hours at the Kremlin; direct Russia-Ukraine talks suspended 6 months since late February | Kremlin readout via wire reports, 5 Sep 2026 |
+| Yemen fighting | 120+ fighters killed since the Houthi offensive began Thursday; government flew at least 15 air strikes Friday in Taiz and Hodeidah; 4 civilians killed and 9 injured on the Heijah al-Abd road south of Taiz; thousands displaced | Al Jazeera / Yemen Ministry of Social Affairs and Labour, 5 Sep 2026 |
+| Isar Aerospace Spectrum | Reached orbit ~4 minutes after liftoff from Andoya Spaceport, Norway — first orbital launch from Western European soil; 2-stage, 28m; 5 cubesats (TU Berlin, NTNU, Univ. of Maribor, TU Wien Space Team, EnduroSat) + a Dcubed experiment under ESA's Boost! programme; 2nd attempt after the March 2025 debut failure | Isar Aerospace / Bloomberg / Space.com, 5 Sep 2026 |
+| Isar Aerospace funding | EUR270m round closed 9 Jun 2026 (S$398m at EUR/SGD 1.4729) valuing the company at ~EUR2bn (S$2.9bn); total raised ~EUR870m (S$1.28bn) | Company statements via wire reports, cited 5 Sep 2026 |
+| Sudan chemical weapons dossier | ~150 documents, images, videos and voice notes plus several thousand text messages, apparently from senior Sudanese officers' phones; nearly 300 chemical munitions claimed produced by Oct 2024, most stored at Merowe airport; chlorine partly sourced from a civilian water treatment plant supplied by international aid groups | Middle Eastern intelligence dossier shared with The New York Times, 5 Sep 2026 |
+| FX reference rates used this run | USD/SGD 1.2668; EUR/SGD 1.4729 | Market close, 4 Sep 2026 |
+
+## Singapore data points (5-6 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| PSI (24-hour) | Morning 5 Sep: central 119, west 102, east 99; all five regions back below 101 (moderate) by Saturday evening; 4 Sep was the first unhealthy reading from haze since 2023 | NEA via ST, 5 Sep 2026 |
+| Haze forecast, next 24h | Higher end of the moderate band to the lower end of the unhealthy band; Sumatra and Kalimantan plumes still drifting towards Singapore | NEA advisory, 5 Sep 2026 |
+| Air India equity call | ~S$1.90bn (US$1.5bn) sought from shareholders, SIA among them, after a record loss of ~S$2.53bn (US$2bn) in the last financial year | Reported in Shanmugam's 5 Sep remarks; converted at USD/SGD 1.2668 |
+| Guangxi pyramid scheme recruitment | Participants reported to have paid between S$26,000 and S$50,000; inducements included free dinners, ~S$8 manicures and tours of developments such as Nanning Skyfame ASEAN Maker Town, rentals cited at ~S$500/month; reported variant of the 1040 Sunshine Project | The Straits Times, 5 Sep 2026 (currency stated as "$" in the source; SGD assumed — see changelog) |
+| Exercise Maritime Cooperation 2026 | 5th edition since 2015; shore phase in Guangdong 5-7 Sep, sea phase off Zhanjiang 8-9 Sep; RSS Steadfast and PLA Navy guided-missile frigate Dali; live firings, replenishment-at-sea, joint search-and-rescue, exchange of sea riders | RSN / Xinhua / China Military, 5 Sep 2026 |
+| "Pump and dump" scam cases | 21 cases involving overseas-listed companies reported since July; one Hong Kong-listed case with losses above S$700,000; last public warning on this variant was 2021 | Singapore Police Force advisory, 5 Sep 2026 |
+| Other scam losses reported this week | A Singaporean couple lost more than S$500,000 in an alleged stock investment scam; an 85-year-old retiree almost lost S$110,000 to a tech support scam | ST, 5 Sep 2026 |
+| Nepal floods (Singapore link) | More than 1,200 killed; 9 Singaporeans still missing | Cited in Shanmugam's 5 Sep remarks |
+
