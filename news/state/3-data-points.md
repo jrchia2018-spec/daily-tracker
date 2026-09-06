@@ -952,3 +952,27 @@
 | Other scam losses reported this week | A Singaporean couple lost more than S$500,000 in an alleged stock investment scam; an 85-year-old retiree almost lost S$110,000 to a tech support scam | ST, 5 Sep 2026 |
 | Nepal floods (Singapore link) | More than 1,200 killed; 9 Singaporeans still missing | Cited in Shanmugam's 5 Sep remarks |
 
+
+## Global data points (6-7 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Saxony-Anhalt state election | AfD 44.5%, CDU 18.5%, Die Linke 9.5%, SPD 8% on ARD projections; AfD had 20.8% in 2021; largest party but short of an outright Landtag majority on overnight projections | ARD projections via Bloomberg / Al Jazeera / NPR / Euronews, 6 Sep 2026 |
+| Anak Krakatau eruption | Active since Friday 4 Sep; erupted ~30 seconds at 3.53am local Sunday 6 Sep; plume 1 to ~20,000ft (6,100m) over Jakarta, Banten, West Java; plume 2 to ~50,000ft (15,200m) over Banten, Lampung, Bengkulu, southern Sunda Strait and Indian Ocean west of Sumatra; ash reported to Bandung, ~150km SE of Jakarta | Indonesia Geological Agency via AP / Al Jazeera / Reuters, 6 Sep 2026 |
+| Anak Krakatau aviation impact | 1,558 flights delayed or cancelled across 8 affected airports, 900+ at Soekarno-Hatta; ~170,000 passengers stranded; Soekarno-Hatta (>150km from the volcano) suspended operations, extended to 8.59am local Monday 7 Sep; school activities and fishing halted | Al Jazeera / AP / Reuters, 6 Sep 2026 |
+| Anak Krakatau — Singapore carriers | Singapore Airlines: 19 flights cancelled as of an 11.30am update, 6 Sep; Scoot: at least a dozen return Singapore-Jakarta services cancelled as a precaution | SIA and Scoot advisories via The Star / ST, 6 Sep 2026 |
+| Strait of Hormuz shipping | Traffic down close to 95% vs pre-crisis levels; ~1,000 vessels and up to 20,000 seafarers unable to transit; 20 seafarers and 1 port worker killed, 35 injured, 1 missing since 28 Feb; 24 commercial vessels incl. 11 tankers attacked or reporting incidents since 1 Mar; the strait normally carries ~25% of seaborne oil trade and ~20% of LNG | Industry/IMO estimates compiled via wire reports, early Sep 2026 |
+| Brent crude | No in-window close — markets shut all weekend. Last settlement ~US$96/barrel at Friday 4 Sep's close, +9% on the week (strongest week since mid-July) | Trading data via wire reports, 4-6 Sep 2026 |
+| China financial-sector recapitalisation | ~US$54bn (GBP40bn, ~S$68.6bn at USD/SGD 1.2700) of capital for banks and insurers from state institutions incl. the finance ministry and the state tobacco monopoly company; China Life Insurance 35bn yuan, China Taiping Insurance Group 7bn yuan; stated purpose is capacity to invest in the domestic stock market and lend to businesses | Company statements and Chinese state disclosures via The Guardian, 6 Sep 2026 |
+| Amazon Prime Air Miami crash | Flight 7598, Boeing 767 from San Juan, overran a diagonal runway at Miami International ~2pm ET Sunday, struck multiple vehicles and caught fire; 5 killed, 3 critically injured, 2 hospitalised with lesser injuries; pilot and copilot trapped; ground stop imposed, FAA investigating | Miami-Dade County officials via CNN / NBC / CBS Miami, 6 Sep 2026 |
+| FX reference rate used this run | USD/SGD 1.2700 | Carried from the 3 Sep close reference; no newer in-window rate (markets shut) |
+
+## Singapore data points (6-7 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Breast cancer screening recommendation | Annually for asymptomatic normal-risk women aged 40-49; every two years for ages 50-74. Previously: every two years for ages 50-69 | Screening Test Review Committee 2026 report (Vol 1, published Feb 2026) via ST, 7 Sep 2026 |
+| Osteoporosis screening recommendation | Screening and formal risk assessment for women from age 50 and men from age 65, at five-yearly intervals; no prior recommendation existed for the general population | New local clinical guidelines via ST, 7 Sep 2026 |
+| STRC 2026 Vol 1 scope | Refreshed recommendations for breast, cervical, colorectal and lung cancer, diabetes mellitus, hyperlipidaemia, hypertension, obesity and osteoporosis; MOH reviewing, incl. whether to extend subsidies | MOH statement to ST, 7 Sep 2026 |
+| SCDF NSF death | Lance Corporal Muhammad Nur Ilham Mohammed Iswadi, 20; found unconscious in the Marina Bay Fire Station training yard ~8.10am Sunday 6 Sep, died at SGH after on-site CPR; enlisted 10 Feb, completed the Civil Defence Academy firefighter course 7 Aug, posted to the station 18 Aug; preliminary police investigations indicate no foul play | SCDF / SPF via ST, Mothership, CNA, 6 Sep 2026 |
+| JTC industrial-residential study | JTC with the Singapore Institute of Architects; two Toa Payoh industrial sites as case studies; proposed uses are small-scale assembly and prototyping, 3D printing, maker spaces, design studios, dry labs and SME workshops | JTC / Singapore Institute of Architects via ST, 7 Sep 2026 |
+| "Friendship recession" (logged, not run) | 48% of young Singaporeans in 2025 said they have more than three close friends, down from 56% in 2013 | ST, 7 Sep 2026 |
+| ReadSG Challenge (logged, not run) | Pilot runs 6 Sep to 31 Dec 2026 as part of a five-year reading movement; target 15 minutes of reading a day | ST, 6 Sep 2026 |
