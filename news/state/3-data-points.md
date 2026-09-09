@@ -22,7 +22,7 @@
 | HDB resale prices | -0.1% QoQ — first decline since 2019 | Q1 2026 |
 | Q1 2026 retrenchments | 3,830 — highest since Q3 2023 | MOM, 15 Jun 2026 |
 | Taiwan (#1 trading partner) | ~$134B bilateral 2025; semiconductor-driven | MTI, early 2026 |
-| COE Cat A (cars ≤1,600cc/97kW) | S$129,000 — record, above Oct 2025's S$128,105 | LTA, 8 Jul 2026 |
+| COE Cat A (cars ≤1,600cc/97kW) | S$133,009 — record; first time above S$130,000, S$4,009 above the 8 Jul 2026 record of S$129,000 | LTA, 9 Sep 2026 |
 | COE Cat C (goods vehicles/buses) | S$95,000 — record, above Jun 2026's S$94,000 | LTA, 8 Jul 2026 |
 | COE Cat D (motorcycles) | S$10,201 — still below Nov 2022 peak S$13,189 | LTA, 8 Jul 2026 |
 | Temasek net portfolio value | S$518B as at 31 Mar 2026 (+S$49B YoY) | Temasek Review 2026, 8 Jul 2026 |
@@ -1038,3 +1038,41 @@
 | PISA 2025 — Singapore AI use | 66% use AI chatbots to help them learn at least weekly (OECD average 46%); preliminary research 46% (OECD 31%); summarising set reading 41% (OECD 30%); drafting assignment text 45% (OECD 29%); only 4% never or almost never use them for any schoolwork task examined (OECD 14%) | OECD PISA 2025 Singapore country note, 8 Sep 2026 |
 | Islamic institutions safeguarding review | Committee co-chaired by Assoc Prof Razwana Begum and Ustaz Fathurrahman Dawoed; to cover reporting and escalation procedures, supervision of informal gatherings involving minors, staff and volunteer training, regular reviews. Triggering case: 37-year-old self-styled religious influencer sentenced 17 Aug to 27 years 10 months' jail and 24 strokes for abusing two brothers, the younger aged 6-8, incl. in a mosque toilet | Zaqy Mohamad in Parliament via ST/Mothership, 8 Sep 2026 |
 | Malone Lam guilty plea | Singaporean, 22; pleaded guilty 8 Sep before Judge Colleen Kollar-Kotelly (US District Court, DC) to one RICO conspiracy count; losses put at more than US$245m; 11th of 18 charged defendants to plead; faces up to 20 years; status hearing 8 Dec 2026, no sentencing date set. FBI cites a US$2m watch and 30+ cars among purchases | US DOJ (USAO-DC) press release, 8 Sep 2026 |
+
+## Global economic variables (10 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 9 Sep | US$100.72/barrel, +~3% — first move above US$100 since July; CNN put the intraday peak at US$101 | Wire reports / CNN, 9 Sep 2026 |
+| WTI crude, 9 Sep | US$95.25/barrel, +2.4% | Wire reports, 9 Sep 2026 |
+| US diesel average, 9 Sep | US$5.94/gallon — record | Fortune / wire reports, 9 Sep 2026 |
+| US gasoline average, 9 Sep | US$4.22/gallon (per CNN's account of Trump's remarks; not independently confirmed elsewhere in-window) | CNN, 9 Sep 2026 |
+| Saudi observed crude exports | ~3m barrels/day in August — lowest in at least nine years; a shipping constraint (Hormuz restricted, Red Sea threatened), not a production one | Bloomberg tanker-tracking data, reported 2-9 Sep 2026 |
+| Saudi seafarer deaths, week to 9 Sep | 2 killed on a Bahri-owned tanker carrying Saudi crude, hit by projectiles in the Strait of Hormuz | Bahri via Bloomberg, 9 Sep 2026 |
+| IAEA Board vote referring Iran to the UNSC | 23 in favour, 3 against (Russia, China, Niger), 8 abstentions, 1 not voting, of 35 members; resolution submitted by Britain, France, Germany, the United States; first referral of Iran in 20 years | IAEA Board of Governors, 9 Sep 2026 |
+| Iran HEU stockpile (unchanged, no new observation) | 440.9kg at 60% — last physically observed before the June 2025 loss of access to declared enrichment sites | IAEA, last verified figure; restated 9 Sep 2026 |
+| Iranian tankers struck by CENTCOM, 8-9 Sep | 5 (M/T Kaviz, M/T Charminar, M/T Horizon 1, M/T Riesco, M/T Derya) — 4 in the Gulf of Oman, 1 near Kharg Island; at least 1 sunk | CENTCOM, 9 Sep 2026 |
+| Iranian missiles at Jordan's Muwaffaq Salti air base | 20+ launched; Jordanian army engaged 20 and destroyed 18, remainder fell in unpopulated areas; no casualties reported. US officials: damage limited (IRGC claimed heavy damage to F-35/F-16/F-15 facilities) | Jordanian armed forces / US officials, 9 Sep 2026 |
+| Saudi airstrikes in Yemen, 9 Sep | 32 across Marib, Al-Jawf, Taiz and Hodeidah — first sustained Saudi air campaign in ~4 years (Houthi media figure, not independently confirmed) | Houthi media via wire reports, 9 Sep 2026 |
+| Anthropic distillation allegation | 3 Chinese AI labs, 16m+ exchanges with Claude via ~24,000 fraudulent accounts | Anthropic, via FBI/NSA/CISA joint advisory, 8-9 Sep 2026 |
+| Canada retaliatory tariffs now in force | ~US$20bn (about S$26bn) of American goods | White House / CBC, 8-9 Sep 2026 |
+| US import bans on Canadian goods | Effective 29 Sep 2026: most alcohol (beer, wine, whisky, bourbon, rum, vodka, vermouth, tequila, mezcal, brandy), whey protein, invert molasses, cane molasses, non-alcoholic beer, motorcycles; various cheeses added to a 50% tariff list rather than banned | White House notices, 8-9 Sep 2026 |
+| AfD, Saxony-Anhalt final count | 43.8%, 39 of 83 Landtag seats — three short of a majority; BSW cleared 5% and holds the balance | Final count, reported 8-9 Sep 2026 |
+
+## Singapore data points (10 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| COE Cat A, 1st Sep bidding | S$133,009, +3.51% — record; first above S$130,000 | LTA/OneMotoring, 9 Sep 2026 |
+| COE Cat B | S$135,001 | LTA/OneMotoring, 9 Sep 2026 |
+| COE Cat C (goods vehicles/buses) | S$93,101 | LTA/OneMotoring, 9 Sep 2026 |
+| COE Cat D (motorcycles) | S$12,556 | LTA/OneMotoring, 9 Sep 2026 |
+| COE Cat E (open) | S$137,890 | LTA/OneMotoring, 9 Sep 2026 |
+| COE bids vs quota, 1st Sep exercise | 4,776 bids against a 3,253 quota; successful bids 1,152 (A), 910 (B), 306 (C), 495 (D), 300 (E). LTA cited the three-week gap since the last exercise and urged prudence | LTA/OneMotoring, 9 Sep 2026 |
+| Terror threat level | High; no specific intelligence of an imminent attack | ISD, Singapore Terrorism Threat Assessment Report, 10 Sep 2026 |
+| Youth ISA cases | 15 in the five years to 2026, up from 4 in the five years to 2021; 6 in the past year alone (three 14-year-olds, one 15-year-old, two 19-year-olds) | ISD STTAR, 10 Sep 2026 |
+| Youth attack intent | More than half of the 23 youths dealt with under the ISA over the past decade intended to attack in Singapore; 3 detained Apr-Jun 2026 (aged 14-19) had local plans close to execution; youngest ever detainee is 14 | ISD STTAR, 10 Sep 2026 |
+| Self-radicalisation share | 7 of 8 Singaporeans dealt with under the ISA between Jul 2025 and 2026 were self-radicalised; 3 of the 8 radicalised by the Oct 2023 re-escalation of the Israeli-Palestinian conflict | ISD STTAR, 10 Sep 2026 |
+| ISA orders since 2022 | 156 Singaporeans — 106 orders of detention, 50 restriction orders; 87 of those detained since released | ISD STTAR, 10 Sep 2026 |
+| Online account mule penalty (Scams (Countermeasures) and Other Matters Bill, passed 9 Sep) | Up to 3 years' jail, fine up to S$10,000, up to 12 strokes of the cane; offence covers supplying personal details for account creation and supplying or buying accounts for crime | Parliament via ST/The Star, 9 Sep 2026 |
+| Online service provider maximum fine | Raised from S$1m to S$10m for non-compliance with codes of practice or implementation directives; scope includes WhatsApp, Telegram, WeChat, Apple, Google, Carousell, Facebook, Instagram, TikTok | Parliament via ST, 9 Sep 2026 |
+| WAICO membership question | Singapore "will consider the invitation alongside our broader engagements with China and other international AI cooperation initiatives"; WAICO established 16 Jul 2026, 29 founding members, HQ Shanghai; ASEAN members already signed: Cambodia, Indonesia, Laos, Malaysia, Myanmar | Josephine Teo in Parliament, 9 Sep 2026 |
+| SPH Media Trust leadership | Khaw Boon Wan, 73, steps down as chairman 1 Oct 2026 after five years; CEO Chan Yeng Kit takes the chair while remaining CEO, subject to regulatory approval | SPH Media Trust via ST, 10 Sep 2026 |
