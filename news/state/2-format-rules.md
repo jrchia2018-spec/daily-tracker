@@ -5,6 +5,23 @@
 - Global stories: breaking first, then analytical.
 - Singapore stories: 2–3 SG-world, 2–3 domestic; breaking first, then analytical.
 - Each story: headline, factual summary, then two separate paragraphs labelled **Geopolitical** and **Socioeconomic**.
+
+## Length limits — hard caps, check before publishing
+The reader skims this at 7am on a phone. These caps match what the report ran at through August, which the reader was happy with; from 31 Aug it ran 2.4× longer and grew every day (3,000 → 6,600 words). Word-count each field before publishing and cut anything over — do not publish over a cap.
+
+| Field | Max |
+|---|---|
+| Headline | 12 words |
+| Summary | 120 words |
+| Geopolitical | 50 words |
+| Socioeconomic | 50 words |
+| Word of the Day (all parts together) | 70 words |
+| **Whole report** | **2,500 words** |
+
+- **Summaries report what happened in the coverage window.** Background the reader already had in earlier reports gets one sentence at most, never a recap. Most of the overrun was re-telling ongoing stories (Iran, Ukraine, Gaza) from the beginning each morning.
+- **Consequence paragraphs make one point each** — the single most important effect, stated concretely. Not a survey of every possible effect.
+- Cut before you drop a story: shorten sentences, remove attribution chains ("according to officials cited by…"), remove restated figures. Only drop a story if the report still won't fit.
+- **Keep the state files from growing.** When updating `3-data-points.md`, `4-dominant-arc.md` and `5-open-threads.md`, write each new entry in 3 sentences or fewer and do not restate earlier entries. These files feed every run; they grew ~50% in 11 days from 31 Aug, and a longer memory produced a longer report the next morning.
 - No cross-report repetition unless a significant new development occurred that day. Stale summaries excluded.
 - No cross-story repetition within a report unless genuinely different angle.
 - SG stories must be genuinely local. An elaboration of a global story already covered does not qualify unless it adds materially new local information. Local stories of even medium importance take precedence. Run fewer than 5 rather than pad (applies to global too).
