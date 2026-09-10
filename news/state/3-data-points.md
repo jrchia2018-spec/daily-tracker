@@ -1076,3 +1076,32 @@
 | Online service provider maximum fine | Raised from S$1m to S$10m for non-compliance with codes of practice or implementation directives; scope includes WhatsApp, Telegram, WeChat, Apple, Google, Carousell, Facebook, Instagram, TikTok | Parliament via ST, 9 Sep 2026 |
 | WAICO membership question | Singapore "will consider the invitation alongside our broader engagements with China and other international AI cooperation initiatives"; WAICO established 16 Jul 2026, 29 founding members, HQ Shanghai; ASEAN members already signed: Cambodia, Indonesia, Laos, Malaysia, Myanmar | Josephine Teo in Parliament, 9 Sep 2026 |
 | SPH Media Trust leadership | Khaw Boon Wan, 73, steps down as chairman 1 Oct 2026 after five years; CEO Chan Yeng Kit takes the chair while remaining CEO, subject to regulatory approval | SPH Media Trust via ST, 10 Sep 2026 |
+
+## Global economic variables (11 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 10 Sep | Intraday high US$108/barrel (+7.1%); settled US$107.63, +6.34% — highest close since 19 May, largest one-day gain in six weeks | CNN Business / Breitbart Economy, 10 Sep 2026 |
+| US 10-year Treasury yield, 10 Sep | 4.922%, +0.082 points — multiyear high | Breitbart Economy / CNN, 10 Sep 2026 |
+| US 2-year Treasury yield, 10 Sep | 4.541%, +0.114 points | Breitbart Economy, 10 Sep 2026 |
+| US mortgage rates, 10 Sep | Highest in 15 months, tracking the 10-year | CNN Business, 10 Sep 2026 |
+| US wholesale inflation (PPI), August | Picked up, driven by energy costs | CNN, 10 Sep 2026 |
+| Copper | Record highs, attributed to AI buildout and tariff uncertainty | CNN, 10 Sep 2026 |
+| Iranian crude loadings, 30 days to 10 Sep | ~0.2m barrels/day, against 1.8m b/d in January-February (US official, not independently verified) | US official via Reuters, 10 Sep 2026 |
+| US advisers in Saudi Arabia | More than 100, in a joint forces command formed in recent weeks; geospatial/real-time targeting support compared to the Pentagon's Maven; no US strikes or refuelling of Saudi aircraft | CNN exclusive, 10 Sep 2026 |
+| IRGC officers in Yemen | Hundreds, per US officials, working with the Houthis toward closing the Bab al-Mandab | US officials via CNN, 10 Sep 2026 |
+| IAEA access to Iran | None since February 2026 beyond the Bushehr power plant; several enrichment specialists expelled, monitoring cameras disabled, inspectors subjected to invasive physical searches | IAEA/diplomatic officials via CNN, 9-10 Sep 2026 |
+| Sanctions added under Operation Economic Outcast, 10 Sep | Firms and individuals in Iraq, the UAE, Lebanon and Turkey supporting Kata'ib Hezbollah and Hezbollah | US Treasury OFAC via Reuters, 10 Sep 2026 |
+| Missouri congressional map | Supreme Court order (unsigned, no noted dissents) requires the 2022 map for November, second block this week; Cleaver's Kansas City seat preserved | US Supreme Court via Washington Post/NBC, 10 Sep 2026 |
+| Proposed 2030 census exclusion | ~15 million immigrants without permanent legal status excluded from apportionment; citizenship question restored; race and ethnicity questions reduced | Administration proposed rule via NPR/Al Jazeera, 9-10 Sep 2026 |
+| Anthropic biological-misuse review | ~35 distinct concerning research efforts over 30 days; five case studies; multiple accounts banned; intent not established, institutions and countries unnamed | Anthropic report via CNN, 10 Sep 2026 |
+
+## Singapore data points (11 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| DBS 1MDB-linked claim | ~S$1.298 billion (US$1.03 billion) sought by liquidators of BlackRock Commodities (Global), Platinum Global Luxury Services, Affinity Equity International Partners and TKIL Global Investments; DBS rejects it and has made no provision | Reuters/SCMP/Malay Mail, 9-10 Sep 2026 |
+| 1MDB total estimated stolen | ~US$4.5 billion between 2009 and 2014 | US investigators, cited 10 Sep 2026 |
+| High Court money-mule ruling | Three-judge panel (Menon CJ, Ang Cheng Hock, Hoo Sheau Peng) across seven unrelated appeals, six offenders under 21: imprisonment or reformative training is not the default sentence, the 2024 approach "too blunt" | Singapore High Court via ST, 10 Sep 2026 |
+| P1 Phase 2C reserved places | Rising from 40 to 60 from the 2027 registration exercise (children entering P1 in 2028), except schools with fewer than 180 P1 places, which stay at 40 | MOE via ST/AsiaOne, 10 Sep 2026 |
+| P1 two-track scheme | 12 schools where public housing is under 40% of dwellings within 2km; Phase 2C places split equally between children living within and beyond 2km, no distance priority within either track | MOE via ST/Mothership, 10 Sep 2026 |
+| Ministerial salary debate | WP accepts the one-off adjustment of up to 9%; Pritam Singh wants the benchmark pegged to a multiple of an MP's allowance rather than a discount to top earners' median pay, and full MR4 remuneration disclosed; PM Wong will consider disclosing more; Chan Chun Sing calls S$1.8m "a reference point, not an entitlement"; 12 MPs spoke, Singh the only WP speaker | Parliament via ST/AsiaOne/The Star, 10 Sep 2026 |
+| ASEAN Power Grid timeline | ~2 years to clear regulatory obstacles and settle the subsea cable blueprint; Singapore chairs ASEAN in 2027, Thailand in 2028; Submarine Power Cable Development Framework (legal, technical, commercial, governance) due under the 2026 Philippine chairmanship; no unified ASEAN legal framework for cross-border electricity trade today | Jeffrey Siow at Unlocking Capital for Sustainability summit, via ST, 10 Sep 2026 |
