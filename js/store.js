@@ -65,7 +65,81 @@ function migrate(s) {
     s.migrations.runMmss = true;
     changed = true;
   }
+
+  // Follow-up: the old duration box was type="number", which silently drops
+  // a trailing zero — "60.40" (60m40s) was stored as 60.4, one decimal, which
+  // the rule above deliberately skips. The user types seconds as two digits
+  // (every earlier run shows it), so on OLD-CODE runs one decimal means a
+  // dropped zero. Old-code is decided by creation time, read from the run's
+  // id (uid() starts with Date.now() in base 36): anything created after the
+  // fixed parser shipped stores true decimal minutes, where 27.5 really is
+  // 27m30s and must not be touched.
+  if (!s.migrations.runMmss2) {
+    const fixedParserShipped = Date.parse('2026-09-11T00:00:00+08:00');
+    for (const r of s.runs || []) {
+      if (r.minTyped != null) continue; // already corrected above
+      const created = parseInt(String(r.id || '').slice(0, 8), 36);
+      if (!Number.isFinite(created) || created >= fixedParserShipped) continue;
+      const m = /^(\d+)\.(\d)$/.exec(String(r.min));
+      if (m) {
+        r.minTyped = r.min;
+        r.min = Math.round((Number(m[1]) + (Number(m[2]) * 10) / 60) * 10000) / 10000;
+      }
+    }
+    s.migrations.runMmss2 = true;
+    changed = true;
+  }
+
+  // Chia was being counted twice on some days: logged by hand AND ticked on
+  // the checklist, which since v25 also logs it. Entries the checklist added
+  // before this fix carry supp:'chia' but no suppAuto marker — mark them
+  // auto so reconciliation knows they're the checklist's, then keep one chia
+  // entry per day.
+  if (!s.migrations.chiaLink) {
+    for (const key of Object.keys(s.meals || {})) {
+      for (const m of s.meals[key]) if (m.supp === 'chia' && !m.suppAuto) m.suppAuto = true;
+      reconcileChiaIn(s, key);
+    }
+    s.migrations.chiaLink = true;
+    changed = true;
+  }
   return changed;
+}
+
+// One chia entry per day, linked to the checklist tick. If the user logged
+// chia themselves, THEIR entry wins — it carries their own pack's label
+// figures — any checklist-added copy that day is removed, and theirs is
+// linked to the tick (so unticking removes it). Only entries whose name
+// STARTS with "chia" are adopted: a "protein shake with chia" stays a shake,
+// and "macchiato" never matches.
+// A function declaration, not a const arrow: migrate() runs at module load,
+// above this line, and a const here would still be in its dead zone.
+function ownChia(m) {
+  return !m.suppAuto && (m.supp === 'chia' || /^\s*chia\b/i.test(m.name || ''));
+}
+
+function reconcileChiaIn(s, key) {
+  const list = s.meals[key];
+  if (!list || !list.length) return false;
+  const own = list.filter(ownChia);
+  if (!own.length) return false;
+  let changed = false;
+  const kept = list.filter(m => !(m.suppAuto && m.supp === 'chia'));
+  if (kept.length !== list.length) { s.meals[key] = kept; changed = true; }
+  if (!own.some(m => m.supp === 'chia')) { own[0].supp = 'chia'; changed = true; }
+  const ticked = s.supplements[key] || [];
+  if (!ticked.includes('chia')) { s.supplements[key] = [...ticked, 'chia']; changed = true; }
+  return changed;
+}
+
+export function reconcileChia(key) {
+  const changed = reconcileChiaIn(state, key);
+  if (changed) save();
+  return changed;
+}
+
+export function hasOwnChia(key) {
+  return (state.meals[key] || []).some(ownChia);
 }
 
 export function save() {

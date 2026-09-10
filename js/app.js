@@ -7,7 +7,7 @@ import {
   activeLesionsOn, activeCountOn, newOnDate, newAreasOn,
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   recentlyCleared,
-  supplementsFor, toggleSupplement, latestWaist, bodyChange,
+  supplementsFor, toggleSupplement, latestWaist, bodyChange, reconcileChia, hasOwnChia,
   PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
@@ -637,9 +637,13 @@ function frequentFoods(limit = 8) {
 // can open it and change servings (e.g. 0.5 for 1 tbsp).
 // Chia is the case that matters: its whole reason for being in the stack is
 // ~8g of fibre, which counted for nothing while it was only a tick.
+// Chia uses the user's OWN pack, not USDA: their hand-logged entry (2 tbsp =
+// 22.4g, 116.8 kcal, P4.88 C7.76 F7.36, fibre 7.2, Na 9.6) has label-precision
+// decimals, so it came off the packet. per100 is back-derived from it so
+// 22.4g reproduces those figures exactly.
 const SUPP_FOODS = {
-  chia: { name: 'Chia seeds, 2 tbsp', grams: 24,
-    per100: { kcal: 486, protein: 16.5, carbs: 42.1, fat: 30.7, fibre: 34.4, sodium: 16, water: null } },
+  chia: { name: 'Chia seeds, 2 tbsp', grams: 22.4,
+    per100: { kcal: 521.43, protein: 21.79, carbs: 34.64, fat: 32.86, fibre: 32.14, sodium: 42.86, water: null } },
 };
 
 function addSuppFood(key, id) {
@@ -649,7 +653,9 @@ function addSuppFood(key, id) {
     per1[k] = f.per100[k] == null ? 0 : r1((f.per100[k] * f.grams) / 100);
   }
   const list = state.meals[key] || (state.meals[key] = []);
-  list.push({ id: uid(), name: f.name, grams: f.grams, per100: f.per100, per1, servings: 1, ...per1, supp: id });
+  // suppAuto marks it as the checklist's own entry, so reconciliation can tell
+  // it apart from one the user logged by hand and drop it in favour of theirs.
+  list.push({ id: uid(), name: f.name, grams: f.grams, per100: f.per100, per1, servings: 1, ...per1, supp: id, suppAuto: true });
   save();
 }
 
@@ -664,7 +670,7 @@ function removeSuppFood(key, id) {
 const SUPPLEMENTS = [
   { id: 'whey', label: 'Whey isolate', note: 'closes the protein gap' },
   { id: 'creatine', label: 'Creatine', note: '3-5g' },
-  { id: 'chia', label: 'Chia seeds', note: '2 tbsp · logs 117 kcal, 8g fibre' },
+  { id: 'chia', label: 'Chia seeds', note: '2 tbsp · logs 117 kcal, 7g fibre' },
   { id: 'magnesium', label: 'Magnesium glycinate' },
   { id: 'multi', label: 'Multivitamin' },
   { id: 'omega', label: 'Omega-3' },
@@ -795,7 +801,10 @@ function renderMeals() {
       const wasOn = supplementsFor(mealDate).includes(id);
       toggleSupplement(mealDate, id);
       if (SUPP_FOODS[id]) {
-        if (wasOn) removeSuppFood(mealDate, id); else addSuppFood(mealDate, id);
+        if (wasOn) removeSuppFood(mealDate, id);
+        // Already logged it by hand? Link that entry instead of adding a second.
+        else if (id === 'chia' && hasOwnChia(mealDate)) reconcileChia(mealDate);
+        else addSuppFood(mealDate, id);
       }
       render();
     });
@@ -907,7 +916,10 @@ function renderMeals() {
           </div>`).join('') : '');
     box.querySelector('#copy-prev')?.addEventListener('click', () => {
       const list = state.meals[mealDate] || (state.meals[mealDate] = []);
-      for (const m of prevMeals) list.push({ ...m, id: uid() });
+      // Copies become ordinary entries: a checklist link belongs to the day it
+      // was ticked, and a stray auto-tag would make the next tick double up.
+      for (const m of prevMeals) list.push({ ...m, id: uid(), supp: undefined, suppAuto: undefined });
+      reconcileChia(mealDate);
       save();
       render();
       toast(`Copied ${prevMeals.length} item${prevMeals.length === 1 ? '' : 's'} from ${fmtDate(prevDay)}`);
@@ -1046,6 +1058,7 @@ function openPasteModal() {
     for (const x of parsed.items) {
       list.push({ id: uid(), grams: null, per100: null, ...x });
     }
+    reconcileChia(mealDate);
     save();
     closeModal();
     render();
@@ -1171,6 +1184,10 @@ function openFoodModal(result, existing = null) {
     } else {
       list.push(entry);
     }
+    // Logged chia by hand? It replaces any checklist copy and ticks the box —
+    // so logging it either way counts it once. Also re-links an edited entry,
+    // since rebuilding it above drops the link.
+    reconcileChia(mealDate);
     save();
     closeModal();
     render();
