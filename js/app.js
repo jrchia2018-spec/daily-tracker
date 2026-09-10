@@ -631,10 +631,40 @@ function frequentFoods(limit = 8) {
 // a different supplement or old logs will mean the wrong thing — when
 // something is swapped out, retire its id and add a new one (psyllium was
 // dropped for chia this way; any stray 'psyllium' ticks just stop rendering).
+// Supplements that are really food. Ticking one logs its macros as a normal
+// meal entry, tagged `supp` so unticking removes exactly that entry and
+// nothing the user logged by hand. It stays a normal entry otherwise — they
+// can open it and change servings (e.g. 0.5 for 1 tbsp).
+// Chia is the case that matters: its whole reason for being in the stack is
+// ~8g of fibre, which counted for nothing while it was only a tick.
+const SUPP_FOODS = {
+  chia: { name: 'Chia seeds, 2 tbsp', grams: 24,
+    per100: { kcal: 486, protein: 16.5, carbs: 42.1, fat: 30.7, fibre: 34.4, sodium: 16, water: null } },
+};
+
+function addSuppFood(key, id) {
+  const f = SUPP_FOODS[id];
+  const per1 = {};
+  for (const k of ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water']) {
+    per1[k] = f.per100[k] == null ? 0 : r1((f.per100[k] * f.grams) / 100);
+  }
+  const list = state.meals[key] || (state.meals[key] = []);
+  list.push({ id: uid(), name: f.name, grams: f.grams, per100: f.per100, per1, servings: 1, ...per1, supp: id });
+  save();
+}
+
+function removeSuppFood(key, id) {
+  const list = state.meals[key];
+  if (!list) return;
+  state.meals[key] = list.filter(m => m.supp !== id);
+  if (!state.meals[key].length) delete state.meals[key];
+  save();
+}
+
 const SUPPLEMENTS = [
   { id: 'whey', label: 'Whey isolate', note: 'closes the protein gap' },
   { id: 'creatine', label: 'Creatine', note: '3-5g' },
-  { id: 'chia', label: 'Chia seeds', note: '2 tbsp in the shake' },
+  { id: 'chia', label: 'Chia seeds', note: '2 tbsp · logs 117 kcal, 8g fibre' },
   { id: 'magnesium', label: 'Magnesium glycinate' },
   { id: 'multi', label: 'Multivitamin' },
   { id: 'omega', label: 'Omega-3' },
@@ -760,7 +790,15 @@ function renderMeals() {
   view.querySelector('#mw-custom').addEventListener('click', () => openWaterModal(mealDate));
 
   for (const b of view.querySelectorAll('[data-supp]')) {
-    b.addEventListener('click', () => { toggleSupplement(mealDate, b.dataset.supp); render(); });
+    b.addEventListener('click', () => {
+      const id = b.dataset.supp;
+      const wasOn = supplementsFor(mealDate).includes(id);
+      toggleSupplement(mealDate, id);
+      if (SUPP_FOODS[id]) {
+        if (wasOn) removeSuppFood(mealDate, id); else addSuppFood(mealDate, id);
+      }
+      render();
+    });
   }
   // Echo what the typed sleep time was understood as. "6.54" reading back as
   // "6h 54m" is what stops the decimal-vs-minutes ambiguity costing three
@@ -1283,7 +1321,7 @@ function renderRuns() {
       <div class="item">
         <div>
           <div class="title">${fmtDate(r.date)}</div>
-          <div class="sub">${r.min ? r.min + ' min · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
+          <div class="sub">${r.min ? fmtRunTime(r.min) + ' · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
         </div>
         <div class="row" style="gap:4px">
           <div class="val">${r1(r.km)} km</div>
@@ -1302,12 +1340,43 @@ function renderRuns() {
   }
 }
 
+// Run duration entry, stored as decimal minutes. Same dot rule as sleep time,
+// for the same reason: "27.46" was typed meaning 27m46s and got stored as
+// 27.46 minutes (27m28s) — 11 of the first 15 runs. Accepts:
+//   "27:46", "27.46", "27m46s", "27m"   -> minutes and seconds
+//   "1:50:00", "1h50"                   -> hours for long runs
+//   "28", "27.5"                        -> plain minutes (one decimal = decimal)
+// Two digits after a dot mean seconds only when under 60; "27.75" is 27¾ min.
+function parseRunTime(str) {
+  const s = String(str).trim().toLowerCase().replace(/\s+/g, '');
+  if (!s) return null;
+  const mins = (h, m, sec) => Math.round((h * 60 + m + sec / 60) * 10000) / 10000;
+  let x;
+  if ((x = /^(\d{1,2}):(\d{2}):(\d{2})$/.exec(s))) {
+    return Number(x[2]) < 60 && Number(x[3]) < 60 ? mins(+x[1], +x[2], +x[3]) : null;
+  }
+  if ((x = /^(\d{1,2})h(\d{1,2})?m?$/.exec(s))) return mins(+x[1], +(x[2] || 0), 0);
+  if ((x = /^(\d{1,3}):(\d{2})$/.exec(s))) return Number(x[2]) < 60 ? mins(0, +x[1], +x[2]) : null;
+  if ((x = /^(\d{1,3})m(\d{1,2})?s?$/.exec(s))) return mins(0, +x[1], +(x[2] || 0));
+  if ((x = /^(\d{1,3})\.(\d{2})$/.exec(s)) && Number(x[2]) < 60) return mins(0, +x[1], +x[2]);
+  const dec = Number(s);
+  return Number.isFinite(dec) && dec > 0 && dec <= 600 ? dec : null;
+}
+
+// Decimal minutes -> "27:46", or "1:50:00" past an hour.
+function fmtRunTime(min) {
+  const t = Math.round(min * 60);
+  const h = Math.floor(t / 3600), m = Math.floor((t % 3600) / 60), s = t % 60;
+  const ss = String(s).padStart(2, '0');
+  return h ? `${h}:${String(m).padStart(2, '0')}:${ss}` : `${m}:${ss}`;
+}
+
+// Split into whole seconds first — rounding the seconds on their own could
+// produce "5:60".
 function pace(r) {
   if (!r.min || !r.km) return '';
-  const p = r.min / r.km;
-  const mm = Math.floor(p);
-  const ss = String(Math.round((p - mm) * 60)).padStart(2, '0');
-  return `${mm}:${ss}`;
+  const t = Math.round((r.min / r.km) * 60);
+  return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
 }
 
 function openRunModal() {
@@ -1316,22 +1385,43 @@ function openRunModal() {
     <label class="field"><span>Date</span><input id="r-date" type="date" value="${dateKey()}"></label>
     <div class="grid2">
       <label class="field"><span>Distance (km)</span><input id="r-km" type="number" inputmode="decimal" step="0.01" placeholder="5.0"></label>
-      <label class="field"><span>Duration (min)</span><input id="r-min" type="number" inputmode="decimal" placeholder="28"></label>
+      <label class="field"><span>Duration</span><input id="r-min" type="text" inputmode="decimal" placeholder="27.46 or 27:46"></label>
     </div>
+    <p class="small" id="r-echo" style="margin:-6px 0 8px;min-height:16px"></p>
     <label class="field"><span>Calories burnt (optional)</span>
       <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate"></label>
     <label class="field"><span>Notes (optional)</span><input id="r-notes" placeholder="easy run, intervals..."></label>
     <button class="btn primary block" id="r-save">Save run</button>
   `);
+  // Echo how the duration was read, with the pace it implies — a pace that
+  // looks wrong is the fastest way to spot a mistyped time.
+  const durIn = m.querySelector('#r-min'), kmIn = m.querySelector('#r-km'), echo = m.querySelector('#r-echo');
+  const paintEcho = () => {
+    const v = durIn.value.trim();
+    if (!v) { echo.textContent = ''; return; }
+    const min = parseRunTime(v);
+    if (min == null) {
+      echo.innerHTML = '<span style="color:var(--orange)">Not understood — try 27.46, 27:46 or 1:50:00</span>';
+      return;
+    }
+    const km = Number(kmIn.value);
+    echo.innerHTML = `Reading this as <b>${fmtRunTime(min)}</b>${km > 0 ? ` · pace <b>${pace({ min, km })}</b> /km` : ''}`;
+  };
+  durIn.addEventListener('input', paintEcho);
+  kmIn.addEventListener('input', paintEcho);
+
   m.querySelector('#r-save').addEventListener('click', () => {
     const km = Number(m.querySelector('#r-km').value);
     if (!km) { toast('Distance is required'); return; }
+    const durRaw = durIn.value.trim();
+    const min = durRaw === '' ? null : parseRunTime(durRaw);
+    if (durRaw !== '' && min == null) { toast('Duration looks off — try 27.46 or 27:46'); return; }
     const kcalRaw = m.querySelector('#r-kcal').value;
     const entry = {
       id: uid(),
       date: m.querySelector('#r-date').value || dateKey(),
       km,
-      min: Number(m.querySelector('#r-min').value) || null,
+      min,
       notes: m.querySelector('#r-notes').value.trim(),
     };
     if (kcalRaw !== '') entry.kcal = Math.max(0, Number(kcalRaw));

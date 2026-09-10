@@ -24,10 +24,12 @@ function defaults() {
     lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
     plan: {},             // { 'YYYY-MM-DD': { am: kind, pm: kind, night: kind } } — the training plan, sparse. See the planner section below.
+    migrations: {},       // { name: true } — one-time data corrections already applied. See migrate().
   };
 }
 
 export const state = load();
+if (migrate(state)) { try { save(); } catch { /* storage blocked — re-migrates next load */ } }
 
 function load() {
   try {
@@ -37,6 +39,33 @@ function load() {
   } catch {
     return defaults();
   }
+}
+
+// One-time data corrections, each gated by a flag in state.migrations so it
+// runs exactly once. The flag travels inside exports: an old backup (no flag)
+// is corrected when imported, a new one (flag set) is left alone.
+function migrate(s) {
+  if (!s.migrations) s.migrations = {};
+  let changed = false;
+
+  // Run durations were typed as minutes.seconds ("27.46" = 27m46s) but stored
+  // as decimal minutes (27.46 min = 27m28s), understating every such run by
+  // up to ~24s and skewing pace. Two digits after the dot, under 60, can only
+  // have meant seconds — nobody types "39.01" for 39.01 minutes. The typed
+  // value is kept as minTyped so this is reversible. Must NOT re-run once new
+  // runs are stored in true decimal minutes (30.25 = 30m15s), hence the flag.
+  if (!s.migrations.runMmss) {
+    for (const r of s.runs || []) {
+      const m = /^(\d+)\.(\d{2})$/.exec(String(r.min));
+      if (m && Number(m[2]) < 60) {
+        r.minTyped = r.min;
+        r.min = Math.round((Number(m[1]) + Number(m[2]) / 60) * 10000) / 10000;
+      }
+    }
+    s.migrations.runMmss = true;
+    changed = true;
+  }
+  return changed;
 }
 
 export function save() {
@@ -56,6 +85,7 @@ export function importData(json) {
     throw new Error('not a tracker backup');
   }
   Object.assign(state, defaults(), parsed);
+  migrate(state); // an old backup carries uncorrected data and no flag
   save();
 }
 

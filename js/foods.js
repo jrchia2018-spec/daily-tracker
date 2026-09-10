@@ -109,6 +109,8 @@ export const COMMON_FOODS = [
   F('Asparagus', 20, 2.2, 3.9, 0.1, 90, 2.1, 2),
   // nuts, fats & snacks
   F('Almonds', 579, 21, 22, 50, 28, 12.5, 1),
+  // USDA 12006. Serving 24g = the 2 tbsp the supplement checklist adds.
+  F('Chia seeds', 486, 16.5, 42.1, 30.7, 24, 34.4, 16),
   F('Walnuts', 654, 15, 14, 65, 28, 6.7, 2),
   F('Cashews', 553, 18, 30, 44, 28, 3.3, 12),
   F('Peanuts', 567, 26, 16, 49, 28, 8.5, 18),
