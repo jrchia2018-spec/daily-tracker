@@ -1105,3 +1105,25 @@
 | P1 two-track scheme | 12 schools where public housing is under 40% of dwellings within 2km; Phase 2C places split equally between children living within and beyond 2km, no distance priority within either track | MOE via ST/Mothership, 10 Sep 2026 |
 | Ministerial salary debate | WP accepts the one-off adjustment of up to 9%; Pritam Singh wants the benchmark pegged to a multiple of an MP's allowance rather than a discount to top earners' median pay, and full MR4 remuneration disclosed; PM Wong will consider disclosing more; Chan Chun Sing calls S$1.8m "a reference point, not an entitlement"; 12 MPs spoke, Singh the only WP speaker | Parliament via ST/AsiaOne/The Star, 10 Sep 2026 |
 | ASEAN Power Grid timeline | ~2 years to clear regulatory obstacles and settle the subsea cable blueprint; Singapore chairs ASEAN in 2027, Thailand in 2028; Submarine Power Cable Development Framework (legal, technical, commercial, governance) due under the 2026 Philippine chairmanship; no unified ASEAN legal framework for cross-border electricity trade today | Jeffrey Siow at Unlocking Capital for Sustainability summit, via ST, 10 Sep 2026 |
+
+## Global economic variables (12 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | Settled -2.8% at US$104.61 on Friday 11 Sep, after ~US$108 Thursday; +8.7% on the week | Reuters/CNBC via search, 11 Sep 2026 |
+| US retail diesel | US$6.06/US gallon national average (~S$2.03/litre) — first time above US$6, past June 2022's US$5.82 record; +21c in a week; California US$7.98 | AAA via CNN/NBC, 11 Sep 2026 |
+| US diesel since war start | +55% (vs +40% for petrol); ~US$46bn and >US$350 per household in added cost | CNN, 11 Sep 2026 |
+| US CPI (August) | +0.4% m/m, 3.4% y/y unchanged; core +0.3% m/m against 0.2% forecast; petrol >1/3 of the monthly rise | BLS via CNBC/NBC, 11 Sep 2026 |
+| Fed hike odds, 15-16 Sep | Rose from under 70% to ~86% for 25bp; benchmark held at 3.50-3.75% all 2026; would be first hike since 2023 | CME FedWatch via CNBC, 11 Sep 2026 |
+| Saudi East-West pipeline | ~7m b/d pumping capacity; ~5m b/d flowing since Hormuz closed; shut as a precaution after drones from Iraq | Saudi Ministry of Energy/MFA via CNN/UPI, 11 Sep 2026 |
+| Saudi crude exports | Lowest in 13 years; production -23% July to August | Cited via search, 11 Sep 2026 |
+| Chokepoint share of trade | Hormuz + Bab al-Mandab: >1/4 of seaborne crude and petroleum products; ~1/3 of world container traffic uses the Red Sea | Cited via search, 11 Sep 2026 |
+| Hong Kong subversion sentences | Chow Hang-tung 7y3m; Lee Cheuk-yan 7y; Albert Ho 5y2m (guilty plea); 206-page verdict | HK court via NBC/NPR, 11 Sep 2026 |
+
+## Singapore data points (12 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| True Fitness/True Yoga | Provisional liquidation 10 Sep; all 10 outlets shut; 241 CASE complaints and >S$609,000 reported by 11 Sep; net liabilities >S$64m; ~100 ex-staff at liquidators' meeting | CASE via Mothership/ST, 11 Sep 2026 |
+| Cambodia impersonation syndicate | 528+ cases, >S$52m lost Sep 2024-Sep 2025; ~90 victims aged 65+ lost close to S$15m (US$11.8m); victims aged 26-84; Callurn Lim Yuan Jin jailed 1y9m21w3d, fined S$12,000 | State Courts via ST, 11 Sep 2026 |
+| Purpose-built dormitory sites | Mandai, Lorong Lada Hitam 1: 10.7ha, ~15,000 beds, sale by Q1 2027. 529 Upper Jurong Road: 2ha, 8,100 beds (subject to agency clearance), H2 2027. Both 30-year leases | MOM/MND, 11 Sep 2026 |
+| MRT reliability (August) | Network MKBF 2.88m train-km (July 2.37m), above 2m for a fifth month; DTL 8.37m (July 4.2m); 10th month without a >30-min delay excluding TEL | LTA via AsiaOne/ST, 11 Sep 2026 |
+| SPH Media Trust | Khaw Boon Wan steps down as chairman 1 Oct 2026 after five years; CEO Chan Yeng Kit takes the chair while remaining CEO, subject to regulatory approval | SPH Media via Mothership/ST, 11 Sep 2026 |
