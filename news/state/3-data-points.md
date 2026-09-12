@@ -1127,3 +1127,20 @@
 | Purpose-built dormitory sites | Mandai, Lorong Lada Hitam 1: 10.7ha, ~15,000 beds, sale by Q1 2027. 529 Upper Jurong Road: 2ha, 8,100 beds (subject to agency clearance), H2 2027. Both 30-year leases | MOM/MND, 11 Sep 2026 |
 | MRT reliability (August) | Network MKBF 2.88m train-km (July 2.37m), above 2m for a fifth month; DTL 8.37m (July 4.2m); 10th month without a >30-min delay excluding TEL | LTA via AsiaOne/ST, 11 Sep 2026 |
 | SPH Media Trust | Khaw Boon Wan steps down as chairman 1 Oct 2026 after five years; CEO Chan Yeng Kit takes the chair while remaining CEO, subject to regulatory approval | SPH Media via Mothership/ST, 11 Sep 2026 |
+
+## Global economic variables (13 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Philippine ferry fire (M/V June Aster) | 76 confirmed dead, 13 unaccounted for; 134 aboard; fire off Coron, Palawan, Wednesday evening; 41 remains recovered Saturday | Philippine Coast Guard/MARINA via CNN/Inquirer, 12 Sep 2026 |
+| Amodei essay | 3,800 words; three steps — embedded third-party evaluators with employee-like access, democratic-lab benchmarks and capability checkpoints, then narrower China deals | CNN/Axios/Bloomberg via search, 12 Sep 2026 |
+| OpenAI listing | Altman rules out a 2026 IPO as an "ill-advised moment" on safety grounds; not before 2027 | Altman to Fortune via Reuters/Bloomberg/TechCrunch, 12 Sep 2026 |
+| BRICS New Delhi Declaration | Adopted unanimously at the 18th summit, 12-13 Sep; deep concern over West Asia, maximum restraint, civilian protection, WTO reform; Xi's first India visit in seven years | PMIndia/NBC/CNBC via search, 12 Sep 2026 |
+| Saudi East-West pipeline | Still shut; drones confirmed launched from Iraqi territory; Maysan operations commander and provincial police chief dismissed, three Iran border crossings closed | Iraqi PM's office via PBS/Washington Times/Al Jazeera, 12 Sep 2026 |
+
+## Singapore data points (13 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| PC prices | Up to +40% y/y in Q2 2026; average laptop S$1,650 (from ~S$1,300, +26%); average desktop S$1,410 (from ~S$1,100, +28%); IDC sees prices elevated through 2027 | IDC via ST, 12 Sep 2026 |
+| NTU OpenAI grant | S$126,800 (US$100,000) to a team led by Nanyang Business School's Hyeokkoo Eric Kwon; 1 of 14 projects from 400+ proposals; data covers 1m+ users of a South Korean budgeting app, 2023-2025; six-month build | ST, 12 Sep 2026 |
+| North-South Corridor | Hard rock and boulders at Novena and Thomson plus water seepage forced a change of tunnelling method; phased opening from 2027, northern viaduct and Lentor-ECP tunnel due 2029 | LTA via ST, 12 Sep 2026 |
+| Chan Chin Bock | EDB's third chairman 1972-1975, alternate chairman 1975-1987 based in the US; died 12 Sep aged 93; PAM (Silver) 1969, PAM (Gold) 1973, Meritorious Service Award 1988 | ST, 12 Sep 2026 |
