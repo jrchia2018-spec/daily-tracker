@@ -1144,3 +1144,24 @@
 | NTU OpenAI grant | S$126,800 (US$100,000) to a team led by Nanyang Business School's Hyeokkoo Eric Kwon; 1 of 14 projects from 400+ proposals; data covers 1m+ users of a South Korean budgeting app, 2023-2025; six-month build | ST, 12 Sep 2026 |
 | North-South Corridor | Hard rock and boulders at Novena and Thomson plus water seepage forced a change of tunnelling method; phased opening from 2027, northern viaduct and Lentor-ECP tunnel due 2029 | LTA via ST, 12 Sep 2026 |
 | Chan Chin Bock | EDB's third chairman 1972-1975, alternate chairman 1975-1987 based in the US; died 12 Sep aged 93; PAM (Silver) 1969, PAM (Gold) 1973, Meritorious Service Award 1988 | ST, 12 Sep 2026 |
+
+## Global data points (14 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | US$108.23/barrel at Monday's open, +US$3.62 (+3.46%) | Reuters via Yahoo Finance, 14 Sep 2026 |
+| WTI crude | US$103.20/barrel, +US$3.15 | Reuters via Yahoo Finance, 14 Sep 2026 |
+| Hormuz shipping | One vessel hit by a projectile, set alight and abandoned; a separate strike on an Iranian commercial ship killed 1 crewman and wounded 4 | UKMTO via Reuters, 13-14 Sep 2026 |
+| Salalah meeting | Postponed "in the interests of consensus"; regional states requested the delay, Bahrain had refused to attend | Oman FM Badr Albusaidi via Arab News/Bloomberg, 13 Sep 2026 |
+| Ukrainian refinery strikes | More than 60 strikes on at least 24 Russian refineries | Bloomberg/CBS via search, 13 Sep 2026 |
+| Virgo Transport 8 | 243 aboard (213 passengers, 30 crew), Surabaya-Banjarmasin; 6 dead, 130 missing, 107 rescued; last position ~148km from Banjarmasin; 3m waves reported before the distress call | Basarnas via AP/Al Jazeera, 13 Sep 2026 |
+| Okinawa governorship | Genta Koja, 42, LDP-backed, beats incumbent Denny Tamaki, 66, and four others; first LDP-aligned governor in 12 years; accepts the Futenma-to-Henoko relocation | Japan Times/Nikkei, 13 Sep 2026 |
+| Sweden election (preliminary) | Left bloc 175 seats, right bloc 174; Social Democrats 27.8%, Moderates 19.8%, Sweden Democrats 17.7%; final count from 16 Sep | Swedish Election Authority via Euronews/The Local, 13 Sep 2026 |
+
+## Singapore data points (14 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| NUS PEMF study | Four 30-minute sessions eradicated tumours in 75% of pre-clinical models without chemotherapy; mechanism via TRPC1 channels and a STING-dependent inflammatory axis; Phase II trial planned | NUS via ST, 14 Sep 2026 |
+| Cyber insurance | Eight insurers and brokers report 2-3 years of rising demand, now led by SMEs and mid-market firms; UEI Logistics pays S$980/year for S$300,000 of cover | ST, 14 Sep 2026 |
+| True Group fallout | SFA with NICA and e2i placing 200+ affected staff and freelancers; ~235 in the group chat; SFA not involved in recovering unpaid salaries or commissions | ST, 13 Sep 2026 |
+| Axion Design | ~20 households affected; 17 Small Claims Tribunals cases this year, 14 ending in payment orders; co-founder says the firm is bankrupt and owes staff ~S$10,000 (US$7,800) | CNA, 14 Sep 2026 |
+| Workplace death | Man, 35, struck by a hose at a Jurong Port Road construction site; MOM investigating, all concreting works stopped | MOM via ST, 13 Sep 2026 |
