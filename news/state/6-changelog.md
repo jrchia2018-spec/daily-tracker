@@ -208,3 +208,12 @@
 - **Two SG items dropped for want of verifiable detail.** The ST coral piece (East Asian cover stable against global decline) and the MCST balcony-defect suit could not be corroborated beyond their RSS blurbs — straitstimes.com, channelnewsasia.com, redhot.sg and aljazeera.com are all blocked by the egress proxy — so both were logged as threads rather than written from a headline.
 - **Length.** Ten stories, 1,790 words against the 2,500 cap; every field verified programmatically before publishing.
 - **Sources.** All seven RSS feeds and lite.cnn.com fetched cleanly; the PMO newsroom showed no cabinet-level change in-window (latest item 12 Sep). Story detail came from search summaries with at least two outlets agreeing where the primary page was blocked.
+
+## 15 September 2026 run
+- **Dates.** Shell-computed: today 2026-09-15 Tuesday, window Monday 14 Sep 0700 SGT → Tuesday 15 Sep 0700 SGT. The session context claimed 2026-09-14; the shell output was used, per the standing rule. latest.json read 2026-09-14, one day back, so no gap note.
+- **AI held out of the report.** 14 Sep already ran Trump's rejection of the slowdown; Monday's additions (AI stocks sliding, the Huang speakerphone call, Harris and a Sanders-Bannon pairing) are the market echo of that story, so it was logged rather than run again and the slot went to the Bangsamoro vote.
+- **Neuroprosthesis ran over the NYT's rival BCI item.** The NYT's wireless imagined-speech story could not be corroborated beyond its RSS blurb; the UCSF speech-and-gesture study was confirmed against the NIH release and Nature Neuroscience, so that is the one carried. Section 1's consequence rule put it ahead of the AI market move.
+- **No-repeat log rebuilt.** The file carried two conventions — dated sections at the top that stopped at 12 Sep, and "(most recent report: …)" blocks appended at the bottom, which is where the 13 and 14 Sep entries actually were. All logs are now in the dated top-of-file format, the 13-15 Sep entries written there, and everything older than 9 Sep dropped per the runbook's "replace" instruction. 5-open-threads.md fell from 402KB to 227KB.
+- **Length.** Ten stories, 1,778 words against the 2,500 cap; every field checked programmatically before publishing.
+- **Sources.** All seven RSS feeds and lite.cnn.com fetched cleanly; the PMO newsroom showed no cabinet-level change in-window (latest item 12 Sep). nih.gov, washingtonpost.com and livenowfox.com are blocked by the egress proxy, so those stories rest on search summaries with at least two outlets agreeing.
+

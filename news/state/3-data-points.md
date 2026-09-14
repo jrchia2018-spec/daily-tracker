@@ -1165,3 +1165,25 @@
 | True Group fallout | SFA with NICA and e2i placing 200+ affected staff and freelancers; ~235 in the group chat; SFA not involved in recovering unpaid salaries or commissions | ST, 13 Sep 2026 |
 | Axion Design | ~20 households affected; 17 Small Claims Tribunals cases this year, 14 ending in payment orders; co-founder says the firm is bankrupt and owes staff ~S$10,000 (US$7,800) | CNA, 14 Sep 2026 |
 | Workplace death | Man, 35, struck by a hose at a Jurong Port Road construction site; MOM investigating, all concreting works stopped | MOM via ST, 13 Sep 2026 |
+
+## Global economic variables (15 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent | Settled US$107.54, +2.9%; session high US$108.40, previous close US$104.47 | Fortune/Investing.com via search, 14 Sep 2026 |
+| US 10-year Treasury | Intraday 5.014%, highest since Oct 2023; closed 4.987% | CNBC/Bloomberg via search, 14 Sep 2026 |
+| 10-year forecast | Standard Bank's Steven Barrow: 5.2% by end-2026, 5.3% in Q1 2027 | Bloomberg via search, 14 Sep 2026 |
+| VTB sanctions | Redesignated under Operation Economic Outcast for opening Iran offices, banking sanctioned Iranian institutions and moving billions in Iranian assets | US Treasury/State Dept, 14 Sep 2026 |
+| US power-plant emissions | Roughly a quarter of US greenhouse gases; EPA claims repeal saves industry more than US$300bn | EPA via AP/Axios, 14 Sep 2026 |
+| BARMM election | 80 seats (40 party, 32 district, 8 sectoral); 2.3m+ eligible voters; 3 killed in a Cotabato City shootout | Rappler/Philstar/Al Jazeera, 14 Sep 2026 |
+| Speech-gesture BCI | First BCI decoding speech and upper-body gesture simultaneously; 3 participants with severe paralysis; one reached 100% accuracy on both in three assessments | Nature Neuroscience / NIH release, 14 Sep 2026 |
+
+## Singapore data points (15 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Haze / PSI | Central 24-hour PSI 154 at 6am; north crossed 101 at about 1am; all five regions unhealthy for the first time since Sep 2019; 1-hour PM2.5 central 113 on 14 Sep; source is Kalimantan fires on SE/ESE winds | NEA via CNA/ST/Mothership, 15 Sep 2026 |
+| Diesel | S$4.03/litre at Shell and Esso, S$4.07 at Caltex (before discounts); rises of 8-12 cents | ST/Goody Feed, 14 Sep 2026 |
+| Petrol 95-octane | S$3.45 at Shell and Esso, S$3.49 at Caltex, S$3.36 at SPC (unchanged as of 8pm) | ST/Goody Feed, 14 Sep 2026 |
+| Maintenance of Racial Harmony Act | In force 15 Sep; passed 4 Feb 2025; ministerial restraining orders effective on issue; community remedial initiative; new Presidential Council for Racial and Religious Harmony, inaugural 3-year terms from 15 Sep | MHA via CNA/ST/AsiaOne, 14 Sep 2026 |
+| NBER working paper | "Do Social Norms Substitute for Enforcement? Evidence from Public Officials' Home Purchases in Singapore" — Piskorski (Columbia), Seru and Zhao (Stanford), Zhang (HKU); PSD reviewing, CPIB referral if material basis | PSD via ST, 14 Sep 2026 |
+| Heavy vehicle parking | Goods vehicles/concrete mixers above 5,000kg MLW and buses seating 15+; free OneMotoring lodgement valid two years; 12am-6am designated-lot requirement removed from registration, transfer and road-tax renewal | LTA via ST/AsiaOne, 14 Sep 2026 |
+
