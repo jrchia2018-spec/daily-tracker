@@ -217,3 +217,12 @@
 - **Length.** Ten stories, 1,778 words against the 2,500 cap; every field checked programmatically before publishing.
 - **Sources.** All seven RSS feeds and lite.cnn.com fetched cleanly; the PMO newsroom showed no cabinet-level change in-window (latest item 12 Sep). nih.gov, washingtonpost.com and livenowfox.com are blocked by the egress proxy, so those stories rest on search summaries with at least two outlets agreeing.
 
+
+## 16 Sep 2026 run
+- **Date discipline.** The session context claimed "today" was 15 September; `TZ=Asia/Singapore date` returned 16 September, and the shell output was used throughout, as the runbook requires. `latest.json` held 15 Sep — exactly one day — so no gap note.
+- **Iran consolidation.** The CBO cost report, the Pentagon IG munitions finding, the El Gaia tanker and the Brent/pipeline picture were run as one story per the consolidation rule; the CBO's inflation finding went into the socioeconomic paragraph rather than opening a second markets story, since the 10-year yield was already covered on 15 Sep.
+- **Repeat judgment — haze.** Carried a second day because the direction reversed (four regions back to moderate) and there was materially new information: ~20% more respiratory presentations and the urban-heat explanation for the central region's readings. Fuel prices, covered 15 Sep with no new pump move, were not repeated.
+- **Yemen/Saudi not run.** The Houthi-Saudi exchange continued in-window but added threats and displacement figures rather than a new development; the slot went to the DRC Ebola epidemic under the consequence-over-drama rule in section 1.
+- **Israel arms package logged, not run.** The US$2.8bn/40,000-bomb figure appears in the NYT front-page feed but searches surfaced only older packages, so it is thread 580 rather than a story — the "never invent figures" rule applied to a number with one source.
+- **Sources.** All seven RSS feeds and lite.cnn.com fetched cleanly. cnn.com, africanews.com and straitstimes.com are blocked by the egress proxy for direct fetches, so those stories rest on search summaries with at least two outlets agreeing. PMO newsroom showed no cabinet-level change in-window (latest item 12 Sep).
+- **Length.** Ten stories, 2,041 words against the 2,500 cap; every field word-counted programmatically before publishing.

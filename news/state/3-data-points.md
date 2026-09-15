@@ -1187,3 +1187,26 @@
 | NBER working paper | "Do Social Norms Substitute for Enforcement? Evidence from Public Officials' Home Purchases in Singapore" — Piskorski (Columbia), Seru and Zhao (Stanford), Zhang (HKU); PSD reviewing, CPIB referral if material basis | PSD via ST, 14 Sep 2026 |
 | Heavy vehicle parking | Goods vehicles/concrete mixers above 5,000kg MLW and buses seating 15+; free OneMotoring lodgement valid two years; 12am-6am designated-lot requirement removed from registration, transfer and road-tax renewal | LTA via ST/AsiaOne, 14 Sep 2026 |
 
+
+## Global economic variables (16 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Iran war cost to US | ~US$38bn in combat-operation costs through 1 Aug 2026; US$21.7bn of it to replace munitions | Congressional Budget Office via CNA/Defense News, 15 Sep 2026 |
+| US interceptor stocks | Half to two-thirds of inventories of certain missile-defence interceptors consumed since June 2025; at least five years to rebuild even at raised production rates | Congressional Budget Office via Defense News, 15 Sep 2026 |
+| Pentagon IG munitions finding | Confirms "strategic inventory shortfalls" and industrial-base bottlenecks in munitions resupply | DoD Inspector General via BBC/NBC, 15 Sep 2026 |
+| Brent crude | ~US$107.50/barrel Tuesday, a four-month high, with the Saudi East-West pipeline still shut | TradingEconomics/Convex via search, 15 Sep 2026 |
+| Saudi East-West pipeline | 1,200km (745-mile) Petroline; pumping station badly damaged in the 11 Sep attack; closure could cut supply by up to 3.6m b/d | BBC Verify satellite imagery, 13-15 Sep 2026 |
+| El Gaia tanker | Panama-flagged, Indian crew; towed to an Omani port; 23 rescued, 2 missing; IRGC says mines, CENTCOM says missile then drone | Oman authorities via BBC/gCaptain, 15 Sep 2026 |
+| US on-orbit weapons | First official acknowledgement: "on-orbit space control weapons"; no type or deployment date given; 1967 Outer Space Treaty bars WMD in orbit, not conventional arms | Air Force Sec. Troy Meink, Air Space & Cyber Conference, 14-15 Sep 2026 |
+| Supreme Court mail-ballot ruling | 7-2, Thomas and Alito dissenting; Kavanaugh: arbitrary and capricious under the APA for lack of implementation time | US Supreme Court via NPR/NBC/Votebeat, 15 Sep 2026 |
+| DRC Ebola (Bundibugyo) | 7,258 confirmed cases, 3,510 deaths as of 14 Sep; Ituri 5,659 cases/2,583 deaths across 28 of 36 health zones; peaked mid-Aug; passed 1,000 cases in 40 days vs ~235 days in 2018; no licensed vaccine or treatment, Ervebo given to health workers from 27 Aug | DRC authorities/WHO via Africanews/Al Jazeera, 14-15 Sep 2026 |
+| Dutch rail sabotage | Signalling faults at 30+ locations from 05:30 on Budget Day; pipes tied to tracks and jumper cables faking occupied sections; minor collision near Steenwijk, no injuries; unclaimed | ProRail/NS via NL Times/Euronews, 15 Sep 2026 |
+
+## Singapore data points (16 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Haze / PSI | East, west, north and south back in the moderate band by early 16 Sep; only central still above 101; doctors report ~20% more asthma flare-ups, nose allergies and throat irritation | NEA/clinicians via ST, 15-16 Sep 2026 |
+| Muis payroll ransomware | SmartHRMS (vendor: Avelogic) used by mosques and madrasahs; threat-actor activity detected 30-31 Aug; staff names, contact details, salaries and bank account numbers potentially compromised; Muis will not say how many institutions, what data, or whether a ransom was paid | Muis via ST, 15 Sep 2026 |
+| S$3b laundering asset auctions | First property auctions: 7 at Knight Frank 17 Sep, 9 at Edmund Tie and 10 at SRI 23 Sep; guide prices S$2.238m (Martin Modern) to S$25.3m (South Beach Residences penthouse, 6,700+ sq ft); Suntec Tower One Grade A office S$11.5m; Deloitte handling 80+ properties, Hotlotz 15 auctions of 1,000+ items to mid-2027; proceeds to the Consolidated Fund | SPF/Deloitte via CNA/Mothership/ST, 15-16 Sep 2026 |
+| SIA / Air India | SIA stake 25.1%; Air India combined loss ~S$3bn (US$2.33bn) for FY to March 2026; seeking ~S$1.9bn (US$1.5bn) from shareholders | Parliament via ST/Mothership, 15 Sep 2026 |
+| Beverage Container Return Scheme | Deposit mark and barcode compulsory from 1 Oct 2026 for regulated beverages (plastic/metal, 150ml-3L); 10-cent deposit live since 1 Apr 2026; six-month transition ends 30 Sep; retailers discounting unmarked stock, some at half price | NEA/BCRS via ST/Stomp, 15 Sep 2026 |
