@@ -1210,3 +1210,28 @@
 | S$3b laundering asset auctions | First property auctions: 7 at Knight Frank 17 Sep, 9 at Edmund Tie and 10 at SRI 23 Sep; guide prices S$2.238m (Martin Modern) to S$25.3m (South Beach Residences penthouse, 6,700+ sq ft); Suntec Tower One Grade A office S$11.5m; Deloitte handling 80+ properties, Hotlotz 15 auctions of 1,000+ items to mid-2027; proceeds to the Consolidated Fund | SPF/Deloitte via CNA/Mothership/ST, 15-16 Sep 2026 |
 | SIA / Air India | SIA stake 25.1%; Air India combined loss ~S$3bn (US$2.33bn) for FY to March 2026; seeking ~S$1.9bn (US$1.5bn) from shareholders | Parliament via ST/Mothership, 15 Sep 2026 |
 | Beverage Container Return Scheme | Deposit mark and barcode compulsory from 1 Oct 2026 for regulated beverages (plastic/metal, 150ml-3L); 10-cent deposit live since 1 Apr 2026; six-month transition ends 30 Sep; retailers discounting unmarked stock, some at half price | NEA/BCRS via ST/Stomp, 15 Sep 2026 |
+
+## Global economic variables (17 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Fed funds target range | Raised 25bp to 3.75-4.00%, first hike since 2023; FOMC unanimous 12-0 | Federal Reserve via CNBC/Fox Business/Kiplinger, 16 Sep 2026 |
+| Fed projections | 16 of 18 officials see at least one more 25bp hike this year; 4 see two; Warsh submitted no dot and favours a smaller balance sheet over the funds rate | Federal Reserve SEP via CNBC/Reuters, 16 Sep 2026 |
+| US 10-year Treasury | Intraday 5.041%, highest since 19 July 2007; closed near 5.01% | CNBC/Bloomberg/Reuters via search, 15-16 Sep 2026 |
+| Brent crude | US$108.34/barrel at 07:00 ET, +US$1.77 on the day; US$109.21 on 15 Sep (+3.34%) | Fortune/TradingEconomics, 15-16 Sep 2026 |
+| Iran war equipment losses | Up to US$3.7bn, spanning nearly 60 aircraft | DoD Inspector General via CBS/Tehran Times, 15-16 Sep 2026 |
+| House war powers vote | 220-204; 7 Republicans (Massie, Fitzpatrick, Davidson, Barrett, Mace, Miller-Meeks, Nunn), 3 voting yes for the first time; concurrent resolution, no force of law | US House via CBS/Washington Post/The Hill, 15-16 Sep 2026 |
+| US opinion on the Iran war | ~58% oppose / ~34% support; 64% call the decision wrong (NYT/Siena); 56% of likely voters prefer a candidate opposed to Trump's approach, 66% call it very important to their vote (CBS/YouGov 8-11 Sep); 51% back a war powers resolution | Silver Bulletin / CBS-YouGov / NYT-Siena via search, 16 Sep 2026 |
+| Fiji HIV | ~1 in 60 adults living with HIV (1 in 167 five years ago); 2,060 new diagnoses in 2025; 117 HIV-related deaths in 2025 vs 25 in 2021; injecting drug use ~half of new cases with an identified route; outbreak first declared Jan 2025 | Fiji Health Ministry via CNN, 15-16 Sep 2026 |
+| EU Kids Act (proposed) | No social media under 13; no personal account under 15; guardian-controlled accounts 13-15; mandatory safe design under 18; 1 hour/day cap; burden of proof reversed onto platforms | European Commission (State of the Union, Strasbourg) via CNN/RTE, 16 Sep 2026 |
+| US-Houthi contact | US officials met a Houthi delegation at the US embassy in Muscat over the weekend; delegation included Mohammad Abdulsalam (US-sanctioned) and Abdelmalik al-Ajiri; Oman organised | Reuters via Iran International/TBS, 16 Sep 2026 |
+| Saudi travel advisory | Raised to Level 3, "reconsider travel"; US government employees barred from travel near the Yemen border | US State Department via NPR/NBC, 16 Sep 2026 |
+
+## Singapore data points (17 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Databricks Singapore investment | More than S$445m (US$350m) over three years; 32,000 sq ft headquarters (a fourfold increase); headcount from 250 to more than 500; APJ regional hub | Databricks newsroom via ST/Malay Mail, 16 Sep 2026 |
+| Anthropic Singapore office | Opens October 2026; fifth Asia-Pacific office after Tokyo, Bengaluru, Seoul, Sydney; ASEAN GM Dale Finlay; Anthropic Economic Index ranks Singapore 2nd of 121 markets at 5.81x expected usage | ST/Fortune/Techgoondu, 16 Sep 2026 |
+| MOE classroom pilot | From January 2027 at St Anthony's Canossian Primary, Woodgrove Primary, Zhangde Primary, Commonwealth Secondary, Deyi Secondary, Jurongville Secondary; flexible spaces, smaller classes where needed, reorganised teacher work; study of limiting teachers to two of three duties (form teachership, CCAs, committee work) | MOE/Desmond Lee, Schools Work Plan Seminar, via ST/AsiaOne, 16 Sep 2026 |
+| SkillsFuture Festival 2026 | 16 Sep-28 Oct; 140 events, ~450 job opportunities; first under the Skills and Workforce Development Agency; 200+ AI courses; six months' free access to one of ChatGPT Plus, Google AI Pro, Manus AI, Microsoft 365 Personal or Singtel AI Pass, one per person; Connect by SWDA opens at the Lifelong Learning Institute, Paya Lebar | PMO/SWDA via CNA/AsiaOne/Goody Feed, 16 Sep 2026 |
+| Ex-HDB group director charge | Tan Chew Ling, 58; 161 unauthorised accesses to HDB's housing management submissions database on 27-28 Apr 2024 (Computer Misuse Act); retention of documents on seven flats (Official Secrets Act) in Kim Keat, Pasir Ris, Dakota, Dawson Road, Bedok North, Tampines, Shunfu; first charged Aug 2026; pre-trial conference 20 Oct | Singapore courts via ST/AsiaOne/Mothership, 16 Sep 2026 |
+| NParks wildlife seizure | 101 specimens from six residential premises, raids 14 Sep; largest single seizure since ~120 in 2021; axolotls, leopard geckos, tarantulas, pig-nosed turtles, armadillo girdled lizards, rosy boas, Mount Elliot leaf-tailed geckos; several CITES-listed; 13 found dead, 1 euthanised; mandatory quarantine before repatriation or transfer | NParks via AsiaOne/MustShareNews, 16 Sep 2026 |

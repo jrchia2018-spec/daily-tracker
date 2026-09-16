@@ -226,3 +226,13 @@
 - **Israel arms package logged, not run.** The US$2.8bn/40,000-bomb figure appears in the NYT front-page feed but searches surfaced only older packages, so it is thread 580 rather than a story — the "never invent figures" rule applied to a number with one source.
 - **Sources.** All seven RSS feeds and lite.cnn.com fetched cleanly. cnn.com, africanews.com and straitstimes.com are blocked by the egress proxy for direct fetches, so those stories rest on search summaries with at least two outlets agreeing. PMO newsroom showed no cabinet-level change in-window (latest item 12 Sep).
 - **Length.** Ten stories, 2,041 words against the 2,500 cap; every field word-counted programmatically before publishing.
+
+## 17 Sep 2026 run
+- Date discipline: the session context asserted "Today's date is 2026-09-16"; `TZ=Asia/Singapore date` returned 2026-09-17 Thursday (UTC was still 16 Sep 23:00). Used the shell output, per the standing rule. This is the same context-vs-shell disagreement logged on 16-18 Jul.
+- Gap check: `news/latest.json` read 2026-09-16, exactly one day back, so no `gapNote` and no carry-forward.
+- Consolidation call: von der Leyen's associate-membership offer to Canada and the proposed Kids Act both came from the same State of the Union address, so they ran as one story rather than two, which would have been the same speech told twice. The geopolitical paragraph takes Canada, the socioeconomic one takes the Kids Act.
+- Yemen/Saudi kept separate from the Iran arc per the standing treatment since 14 Jul, though the US-Houthi Muscat channel makes that separation thinner still: Washington is now talking to one belligerent while fighting its sponsor.
+- Only one genuinely SG-world story existed today (Databricks and Anthropic), against the 2-3 the format rules suggest. Ran four domestic rather than padding, per "fewer stories beats padding".
+- Databricks and Anthropic ran as one story, not two: same day, same category (US AI firms siting Asia-Pacific operations in Singapore), and separately they would have been two thin items.
+- No CENTCOM strikes or Iranian retaliation were reported in-window — the second such day this month. Said so explicitly in the summary rather than leaving the absence unremarked.
+- Length: 1,868 words against the 2,500 cap; all per-field caps checked programmatically before publishing. Three summaries needed trimming from 121-139 words down under 120.
