@@ -236,3 +236,15 @@
 - Databricks and Anthropic ran as one story, not two: same day, same category (US AI firms siting Asia-Pacific operations in Singapore), and separately they would have been two thin items.
 - No CENTCOM strikes or Iranian retaliation were reported in-window — the second such day this month. Said so explicitly in the summary rather than leaving the absence unremarked.
 - Length: 1,868 words against the 2,500 cap; all per-field caps checked programmatically before publishing. Three summaries needed trimming from 121-139 words down under 120.
+
+## 18 Sep 2026 run
+- Date discipline: the session context asserted "Today's date is 2026-09-17"; `TZ=Asia/Singapore date` returned 2026-09-18 Friday. Used the shell output, per the standing rule — the fourth such disagreement logged (16-18 Jul, 17 Sep).
+- Gap check: `news/latest.json` read 2026-09-17, exactly one day back, so no `gapNote` and no carry-forward.
+- Git: the container started on branch `claude/dreamy-brown-f74gi1`, already level with `origin/main` (bce811c). No stranded reports; `git ls-remote origin main` used as the only test, per the runbook.
+- Iran consolidation: the war-crimes finding, the Security Council veto, the UNGA visas and the oil move ran as one story, not four. Yemen kept separate, as it has been since 14 Jul.
+- Judgment call: the F-35 sale and the Yemen advance are both Saudi stories and were nearly merged. Kept separate because one is an arms-transfer precedent with a congressional check and the other is a battlefield turn; the summaries cross-reference rather than repeat.
+- Judgment call: Singapore's own AI-governance items in-window (Josephine Teo on aviation-style safety regulation, Jasmin Lau on employer transparency) were dropped as elaborations of the global AI story, per the format rule against SG stories that restate a covered global one. The Muis ransomware update was logged to section 3 rather than run, being a follow-up to a 16 Sep story.
+- Sources: all four global RSS feeds, lite.cnn.com and the CNA/ST feeds fetched cleanly. Mothership's feed is not well-formed XML and needed a regex parser; nothing of consequence in it today. PMO newsroom showed no cabinet-level change in-window (latest item 16 Sep).
+- Currency: the FX API (api.frankfurter.app) is blocked by the egress proxy; USD/SGD 1.2767 taken from search and recorded in section 3 with its source.
+- Length: 1,803 words against the 2,500 cap; every field word-counted programmatically before publishing. Two summaries needed trimming from 136 and 135 words to under 120.
+
