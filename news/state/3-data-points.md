@@ -1259,3 +1259,24 @@
 | Global Heat Resilience Roadmap | Announced by UNEP at the inaugural Global Cooling Pledge Assembly in Singapore (Parkroyal on Beach Road), 60+ countries; covers water and food security, schools, hospitals, workplaces and energy infrastructure; follows a pledge by 70+ countries to cut air-conditioning emissions 68% by 2050 | UNEP via ST/Red Hot Singapore, 17 Sep 2026 |
 | Muis/Avelogic ransomware (update) | No evidence a large amount of data was taken; independent forensic investigation commissioned 3 Sep found no bulk exfiltration on AWS network data covering confirmed attacker activity 30-31 Aug; police report made, no ransom paid | Muis via ST/DataBreaches.net, 17 Sep 2026 |
 
+
+## Global economic variables (19 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Oil | Brent settled US$103.87, -0.9% | CNBC/Fortune, 18 Sep 2026 |
+| Iran war cost (Pentagon) | US$45.1bn total reported to Congress: US$43.6bn through 3 Sep plus US$1.5bn extra fuel; first breakout by armed service; excludes base/building repairs and the indirect costs lawmakers requested; above CBO's US$38bn (through 1 Aug) and the Pentagon's own US$37.5bn in July | Pentagon via CNN/NYT, 18 Sep 2026 |
+| Bank of Japan policy rate | Raised 25bp to 1.25%, highest since 1995; 7-2 vote, Asada and Sato dissenting; third hike in three months rather than six; August headline CPI 1.9% | BOJ via CNBC/Al Jazeera, 18 Sep 2026 |
+| USD/JPY | 156.64, yen -0.45% after the hike, despite a coordinated Tokyo-Washington intervention; 10-year JGB yield -4.9bp to 2.947% | CNBC, 18 Sep 2026 |
+| Graham Act 2026 | Lindsey O. Graham Sanctioning Russia and Iran Act signed; tariffs up to 100% on the five largest purchasers of Russian oil and gas; sanctions Putin, officials, oligarchs, banks; passed 86-11 Senate, 262-159 House | Bloomberg/CBS/AP, 18 Sep 2026 |
+| Greenland security agreement | US "permanent control over security, and all other needs"; adversary bases, military presence and sensitive investments require express written US approval; signing expected next week at UNGA high-level week; Danish and Greenlandic parliaments must approve; Frederiksen says no US sovereignty | Trump/Frederiksen via NBC/The Hill/Washington Times, 18 Sep 2026 |
+| Autonomous AI influence operations | Iran, China and Israeli commercial firms combined Chinese open-source models with AI agents for first-of-their-kind autonomous campaigns; one commercial operation ran ~70 fabricated news sites, ~70 linked X accounts, 250+ inauthentic commenting accounts | NYT, 18 Sep 2026; Anthropic threat report, 10 Sep 2026 |
+| South Korea | Lee Jae Myung rules out troops or military assets for the Strait of Hormuz, stated three times; reviewing expanded operations for the naval unit already deployed nearby; approval rating 37% | Al Jazeera/NYT/Taipei Times, 18 Sep 2026 |
+
+## Singapore data points (19 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Waymo Singapore | Fully driverless all-electric ride-hailing from 2028, first in South-East Asia, with MOT and LTA; Jaguar I-Pace fleet on roads within months with trained AV specialists; testing starts Labrador and HarbourFront; AVs carrying passengers to grow from 16 today to several hundred within two years (Jeffrey Siow) | LTA/Waymo via ST/Mothership, 18 Sep 2026 |
+| Skytrax World Airline Awards 2026 | SIA named World's Best Airline, its sixth; Qatar Airways 2nd, Cathay Pacific 3rd; no US carrier in the top 20; SIA also won best economy class, best economy catering, best airline in Asia, 2nd for cabin crew; survey Sep 2025-Aug 2026, 100+ nationalities, eight languages | Skytrax via ST/Time Out, 18 Sep 2026 |
+| Institute of Digital Government | New institute with the Civil Service College to train 150,000+ public officers in digital, data and AI skills; training compulsory for all officers; senior-leader programme already accelerated over the past year | Chan Chun Sing via ST/PSD, 18 Sep 2026 |
+| Keppel Indonesia solar import | Subsea cable planned from up to 2GW of Riau Islands solar with battery storage, landing on Jurong Island at Keppel Merlimau Cogen beside the planned data centre park; EMA conditional licence for 300MW; marine survey next; imports expected from end-2027 | Keppel via ST/BT, 18-19 Sep 2026 |
+| URA Master Plan amendment | Gross plot ratio raised on three Upper Changi plots near Expo and Simei MRT to "optimise the provision of housing in view of its proximity to MRT infrastructure"; all three within land identified in 2022 for possible public housing | URA via ST, 18 Sep 2026 |
