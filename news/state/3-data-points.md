@@ -22,9 +22,9 @@
 | HDB resale prices | -0.1% QoQ — first decline since 2019 | Q1 2026 |
 | Q1 2026 retrenchments | 3,830 — highest since Q3 2023 | MOM, 15 Jun 2026 |
 | Taiwan (#1 trading partner) | ~$134B bilateral 2025; semiconductor-driven | MTI, early 2026 |
-| COE Cat A (cars ≤1,600cc/97kW) | S$133,009 — record; first time above S$130,000, S$4,009 above the 8 Jul 2026 record of S$129,000 | LTA, 9 Sep 2026 |
-| COE Cat C (goods vehicles/buses) | S$95,000 — record, above Jun 2026's S$94,000 | LTA, 8 Jul 2026 |
-| COE Cat D (motorcycles) | S$10,201 — still below Nov 2022 peak S$13,189 | LTA, 8 Jul 2026 |
+| COE Cat A (cars ≤1,600cc/97kW) | S$131,890 — down S$1,119 (0.84%) from the 9 Sep 2026 record of S$133,009; still above S$130,000 | LTA, 23 Sep 2026 |
+| COE Cat C (goods vehicles/buses) | S$92,144 — below the S$95,000 record of 8 Jul 2026 | LTA, 23 Sep 2026 |
+| COE Cat D (motorcycles) | S$12,201 — still below Nov 2022 peak S$13,189 | LTA, 23 Sep 2026 |
 | Temasek net portfolio value | S$518B as at 31 Mar 2026 (+S$49B YoY) | Temasek Review 2026, 8 Jul 2026 |
 | Temasek TSR | 1-yr 10.5% SGD (14.8% USD); 10-yr 7.1%; 20-yr 6.8% | Temasek Review 2026, 8 Jul 2026 |
 | Temasek AI portfolio exposure | ~6% currently; target up to 15% by 2031 | Temasek Review 2026, 8 Jul 2026 |
@@ -1331,3 +1331,17 @@
 | Taxi fuel surcharges | ComfortDelGro and Strides Premier extended to 30 Nov (from 30 Sep); ComfortDelGro 27 cents regular/large taxi and 39 cents limousine at trip points, driver fee 50 cents under S$15 and 80 cents at S$15+; Strides unit fare 27 cents per 45 seconds; introduced March 2026 | Operators via ST, 22 Sep 2026 |
 | Online Safety Commission | Over 500 reports in first two months from 29 Jun; close to one-fifth of eligible reports involved victims 18 and under, youngest a seven-year-old doxing victim; over 90% of eligible reports resolved; 40 staff; five harms covered; penalties to S$20,000 and 12 months for individuals, S$500,000 for entities | OSC via ST, 22 Sep 2026 |
 | Frontier AI joint declaration | Singapore plus the EU and 19 other countries; initiated by Finland's Stubb and Norway's Store; welcomed by Guterres 21 Sep; Singapore the only South-east Asian signatory; US and China not signatories | ST, 22 Sep 2026 |
+
+## Global economic variables (24 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | US$101.61/barrel, +2.4% — first rise after five straight falls, on Pezeshkian's UN refusal to concede; Saudi Arabia preparing to restart the East–West pipeline to bypass Hormuz | Wire reports, 23 Sep 2026 |
+| US 10-year Treasury yield | 5.11%, +15bp — highest since 2007 (19-year high), on strong business-activity surveys, hawkish Fed commentary, weak 5-year auction and WTI +2% | CNN/CNBC, 23 Sep 2026 |
+| US federal funds rate | 3.75–4.00% after a 25bp rise, the first increase since 2023; dot plot signals one more in 2026 | Federal Reserve, 16 Sep 2026 |
+
+## Singapore data points (24 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| COE Cat B / E (2nd Sep bidding) | Cat B S$133,000; Cat E S$137,000 — all five categories lower | LTA, 23 Sep 2026 |
+| Meta/SPF scam enforcement | ~3.7m accounts, pages and content actioned, of which 3.64m dormant "shell pages"; 113,000+ fraud entities Jan–Jun from police intelligence; 65m scam ads pulled globally in 2026, 94% before any user report | Meta, 23 Sep 2026 |
+| Air Canada Vancouver–Singapore | 12,818km, up to 5x weekly, suspended after 26 Jan 2027 — no non-stop link to Canada remains | Air Canada, 23 Sep 2026 |
