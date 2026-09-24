@@ -1345,3 +1345,20 @@
 | COE Cat B / E (2nd Sep bidding) | Cat B S$133,000; Cat E S$137,000 — all five categories lower | LTA, 23 Sep 2026 |
 | Meta/SPF scam enforcement | ~3.7m accounts, pages and content actioned, of which 3.64m dormant "shell pages"; 113,000+ fraud entities Jan–Jun from police intelligence; 65m scam ads pulled globally in 2026, 94% before any user report | Meta, 23 Sep 2026 |
 | Air Canada Vancouver–Singapore | 12,818km, up to 5x weekly, suspended after 26 Jan 2027 — no non-stop link to Canada remains | Air Canada, 23 Sep 2026 |
+
+## Global economic variables (25 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | ~US$106.60/barrel, +3.4% — second straight rise, on Iran's six-day Hormuz offer and continued Houthi attacks on Saudi Arabia | Wire reports / Guardian, 24 Sep 2026 |
+| US 10-year Treasury yield | 5.163% intraday — fresh 19-year high; 30-year yield at its highest since June 2004 as the bond sell-off deepened | NBC News / market reports, 24 Sep 2026 |
+| US 30-year fixed mortgage rate | 7.26% — highest since early 2025, attributed to Iran-war oil prices feeding inflation expectations | NYT, 24 Sep 2026 |
+| US–China tariff truce | Extended from its November expiry to February; rare-earth export controls stay suspended, chip controls unchanged | Scott Bessent, 24 Sep 2026 |
+| Gaza reconstruction | Board of Peace six-month plan S$3.1b (US$2.45b) over 66 projects; S$23b (US$18b) pledged, S$357m (US$280m) received; full recovery estimated S$91b (US$71.4b) over a decade | Board of Peace / Axios, 24 Sep 2026 |
+
+## Singapore data points (25 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Pandemic readiness | Ong Ye Kung puts Singapore at "50 per cent" prepared; mRNA influenza vaccine development and production planned with Hilleman Laboratories; HSA offered as a vaccine-approving regulator in a WHO network | ST/Lianhe Zaobao interview, 24 Sep 2026 |
+| Scaffold netting rule | Fire-retardant netting required outside all buildings for projects awarded from 1 Mar 2027; SAC-accredited certification from 1 Mar 2028; follows the Nov 2025 Wang Fuk Court fire that killed 168 and July's timber-scaffold cut from 9 to 3 months (effective Jan 2027) | MOM/Dinesh Vasu Dash, 24 Sep 2026 |
+| SBS Transit FlowOS | AI bunching co-pilot on trial on services 70 and 145, seven more routes to Mar 2027, fleet-wide in Q2 2027; one controller oversees 60–80 buses across five routes | SBS Transit, 24 Sep 2026 |
+| Unauthorised assemblies | Woman, 62, to be charged over six permit-less assemblies Oct 2024–Feb 2026; prior convictions 2001, 2005, 2007 and a 2020 conditional warning; maximum fine $3,000 | SPF, 24 Sep 2026 |
