@@ -19,6 +19,17 @@
 | Govt support package | ~SGD 1B (cash, fuel vouchers) | Budget 2026 |
 | STB tourism receipts forecast | S$31–32.5B (down from S$32.8B record 2025) | STB, May 2026 |
 | TFR | 0.87 — historic low | 2025 data, PM Wong 8 Jun 2026 |
+| Citizens aged 65+ | 21.4% — past the UN's 21% super-aged threshold (20.7% in 2025; 13.7% in 2016) | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Citizens aged 80+ | 152,000 (145,000 in 2025; 95,000 a decade ago) | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Working-age share (20-64) of citizens | 59.3% (64.3% in 2016) | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Working-age to elderly residents ratio | 3.2 (5.4 in 2016) | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Median age of citizens | 44.1 (43.7 in 2025) | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Total population | 6.21m as at Jun 2026, +1.6% (+97,300): non-residents +70,300, citizens +24,200, PRs +2,800 | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Citizen population | 3.68m, +0.7% | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| PR population | 0.55m, stable | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Non-resident population | 1.98m, +3.7% on more work permit holders and migrant domestic workers | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| New citizenships / PRs granted (2025) | 25,094 / 35,352; 62.1% of new citizens from South-east Asia | Population in Brief 2026, NPTD, 25 Sep 2026 |
+| Residents 65+ in employment | nearly 1 in 3 (24.7% in 2015) | 2025 data cited by ST, 25 Sep 2026 |
 | HDB resale prices | -0.1% QoQ — first decline since 2019 | Q1 2026 |
 | Q1 2026 retrenchments | 3,830 — highest since Q3 2023 | MOM, 15 Jun 2026 |
 | Taiwan (#1 trading partner) | ~$134B bilateral 2025; semiconductor-driven | MTI, early 2026 |
@@ -1362,3 +1373,20 @@
 | Scaffold netting rule | Fire-retardant netting required outside all buildings for projects awarded from 1 Mar 2027; SAC-accredited certification from 1 Mar 2028; follows the Nov 2025 Wang Fuk Court fire that killed 168 and July's timber-scaffold cut from 9 to 3 months (effective Jan 2027) | MOM/Dinesh Vasu Dash, 24 Sep 2026 |
 | SBS Transit FlowOS | AI bunching co-pilot on trial on services 70 and 145, seven more routes to Mar 2027, fleet-wide in Q2 2027; one controller oversees 60–80 buses across five routes | SBS Transit, 24 Sep 2026 |
 | Unauthorised assemblies | Woman, 62, to be charged over six permit-less assemblies Oct 2024–Feb 2026; prior convictions 2001, 2005, 2007 and a 2020 conditional warning; maximum fine $3,000 | SPF, 24 Sep 2026 |
+
+## Global economic variables (26 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, 25 Sep | Rose about 3% to a one-week high on the Taif/Yanbu missile attacks, then eased off session highs on US-Iran contact; more than 2% higher for the week, trading around US$104-106/barrel | Guardian, 25 Sep 2026; Trading Economics, 25 Sep 2026 |
+| Houthi missiles intercepted by Saudi-led coalition | 6 ballistic missiles aimed at Taif and the Yanbu area | Saudi-led coalition via Guardian, 25 Sep 2026 |
+| US-Saudi 123 agreement enrichment ceiling | Below 5% initially, rising to 20% after a further study and written agreement; 30-year term; signed 22 Jul 2026, submitted to Congress 25 Aug 2026; 90 days of continuous session for a joint resolution of disapproval | Arms Control Association / congressional review documents, Sep 2026 |
+| Ukraine Patriot interceptor holdings | About one-tenth of assessed need; 5% of the US stockpile would cover the winter | Zelensky to CNN, Aug 2026, restated 25 Sep 2026 |
+| Kyiv drone strikes, 25 Sep | 7 civilians killed, 59 injured; 8 regions attacked | Kyiv mayor via CNN, 25 Sep 2026 |
+| Tigray war death toll (2020-22) | About 600,000 estimated | CNN, 25 Sep 2026 |
+| Ethiopia-Djibouti fuel pipeline | US$660m, part-funded by Aliko Dangote | BBC, 25 Sep 2026 |
+
+## Singapore data points (26 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Jetstar Asia consumer refunds | S$11.4m owed to about 194,000 consumer creditors, no proof of debt required; nearly 146,000 held vouchers under S$20 | SICC written grounds, 24 Sep 2026 |
+| Telok Blangah jumbo flat listing | S$2.18m for 1,465 sq ft (two combined three-room flats), 91 years lease left; comparable three-room flats S$673,000-S$771,000 over six months, so about S$1.54m for two; listing over S$600,000 / over 40% above, payable as cash over valuation | HDB via ST, 25 Sep 2026 |
