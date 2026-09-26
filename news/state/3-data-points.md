@@ -1390,3 +1390,28 @@
 |---|---|---|
 | Jetstar Asia consumer refunds | S$11.4m owed to about 194,000 consumer creditors, no proof of debt required; nearly 146,000 held vouchers under S$20 | SICC written grounds, 24 Sep 2026 |
 | Telok Blangah jumbo flat listing | S$2.18m for 1,465 sq ft (two combined three-room flats), 91 years lease left; comparable three-room flats S$673,000-S$771,000 over six months, so about S$1.54m for two; listing over S$600,000 / over 40% above, payable as cash over valuation | HDB via ST, 25 Sep 2026 |
+
+## Global economic variables (27 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, Friday 25 Sep settlement | About US$105.70/barrel, -0.88% on the day, some 2% higher on the week, off an intraday US$108 earlier in the week; Trump's rejection came after Saturday's close, untested until Monday | The National, 25 Sep 2026; Vantage Markets, 25 Sep 2026 |
+| US-China tariff relief | More favourable treatment on US$30bn of non-sensitive goods in each direction: US exports of agricultural goods, wood, cosmetics; US imports of small appliances, toys, decorations | White House statement, 25 Sep 2026 |
+| US-China tariff truce | Extended by two months from the 10 November expiry | Reuters, 26 Sep 2026 |
+| US-China AI dialogue | First round agreed, covering risks and benefits; next round set for November | White House / Chinese Foreign Ministry, 26 Sep 2026 |
+| Bangkok rainfall | Nearly 300mm in 48 hours; flood-disaster declaration extended from 3 to all 50 districts | Bangkok Metropolitan Administration via CNN, 26 Sep 2026 |
+| Chao Phraya Dam discharge | Raised from 1,850 to 1,950 cubic metres per second at Chai Nat | Royal Irrigation Department, 26 Sep 2026 |
+| UN settlements database | 61 firms added, 5 of last year's 158 removed, total 214 across 11 countries, mostly Israeli | UN human rights office, 25 Sep 2026 |
+| Chinese support to Iranian targeting | Satellite imagery and geospatial data credited with enabling the July strike on a US base in Jordan that killed 3 US service members; one escort operation saw US forces intercept 12+ missiles and nearly 20 drones while striking about 60 targets | US intelligence assessments via CNN, 25 Sep 2026 |
+| Nepal/Tibet flood toll | More than 1,450 dead, over 5,700 missing including 9 Singaporeans, from the 26 Aug flood | Singapore MHA via ST, 26 Sep 2026 |
+
+## Singapore data points (27 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| 24-hour PSI, central region | 104 at 8pm, 115 at 11pm on 26 Sep; first above 101 since 20 Sep; other regions moderate at 11pm (north 80, south 84, east 99, west 97); unhealthy band is 101-200; peak this month was 154 in the central region on 15 Sep, the first unhealthy reading since Oct 2023 coming on 4 Sep | NEA via ST, 26 Sep 2026 |
+| Hourly PM2.5, central area | Peaked at 131 at 9pm, 124 at 11pm; elevated band is 56-150 | NEA via ST, 26 Sep 2026 |
+| Woodlands temperature | 35.8degC at Woodlands Avenue 9 climate station on 26 Sep, joint highest for the month | NEA via ST, 26 Sep 2026 |
+| Government systems under AI penetration testing | About 2,000, some holding citizen data and transactions; second AI tool scans government source code; 11 CII sectors in scope for expansion | CSA/GovTech via ST, 27 Sep 2026 |
+| Women aged 85 and over | More than 6 in 10 Singapore residents aged 85+ are women | Sim Ann, PAP Women's Wing conference, 26 Sep 2026 |
+| Operation Vanguard | 35 officers from SPF, HSA and HTX deployed to Nepal 1-18 Sep, 100+ personnel involved overall; 6 drones donated; Nepal Police and Armed Police Force trained in drone search | MHA via ST, 26 Sep 2026 |
+| UOB Plaza mosque fire | Man, 50, charged 26 Sep with causing or contributing to the risk of a dangerous fire (up to 1 year's jail, fine, or both); fire set at Masjid Moulana Mohamed Ali entrance about 9pm on 25 Sep, extinguished by a member of the public, no injuries | SPF via ST, 26 Sep 2026 |
+| Jason Fong investigation | Undischarged bankrupt since January, in Malaysia since 21 Jun; promised up to 15% annual returns on a 134 sq m Telok Blangah Heights property; ST found 7 investors who put in a total of S$390,000 | ST, 27 Sep 2026 |
