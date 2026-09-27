@@ -1415,3 +1415,22 @@
 | Operation Vanguard | 35 officers from SPF, HSA and HTX deployed to Nepal 1-18 Sep, 100+ personnel involved overall; 6 drones donated; Nepal Police and Armed Police Force trained in drone search | MHA via ST, 26 Sep 2026 |
 | UOB Plaza mosque fire | Man, 50, charged 26 Sep with causing or contributing to the risk of a dangerous fire (up to 1 year's jail, fine, or both); fire set at Masjid Moulana Mohamed Ali entrance about 9pm on 25 Sep, extinguished by a member of the public, no injuries | SPF via ST, 26 Sep 2026 |
 | Jason Fong investigation | Undischarged bankrupt since January, in Malaysia since 21 Jun; promised up to 15% annual returns on a 134 sq m Telok Blangah Heights property; ST found 7 investors who put in a total of S$390,000 | ST, 27 Sep 2026 |
+
+## Global economic variables (28 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, Monday Asian session | Above US$106/barrel, WTI toward US$94, as Iran held to its seven-day Hormuz terms — the first pricing of Trump's rejection, which landed after Friday's close | Bloomberg, 28 Sep 2026 |
+| Switzerland neutrality initiative | Rejected by about 70% of voters and in all 26 cantons; would have enshrined "perpetual and armed neutrality", barred economic sanctions and limited NATO cooperation to imminent attack; support for neutrality as a principle still about 82% | Swiss federal results / CNBC, 27 Sep 2026 |
+| Serbia snap parliamentary election | 25 October 2026; Vucic resigned the presidency seven months early, Ana Brnabic acting president pending a presidential vote | Reuters / Al Jazeera, 27 Sep 2026 |
+| South Africa township shootings | 17 killed at a Wedela tavern, Gauteng West Rand, about 9.30pm Sat 26 Sep by 8 gunmen with AK-47s and pistols; 10 killed at a Lwandle shisanyama near Somerset West at 1.46am Sun 27 Sep; no arrests | SAPS via ABC / EWN, 27 Sep 2026 |
+
+## Singapore data points (28 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Simba data breach | 23,549 individual customers' names, NRIC numbers, dates of birth, mobile numbers and email addresses exposed; discovered 24 Sep, disclosed in a notice dated 25 Sep; no credit card or bank account data; no indication of malicious misuse; email notification over the following week | Simba notice, 25 Sep 2026; ST, 27 Sep 2026 |
+| Sec 3 subject load at G3 level | 8 or more G3 subjects: 14% in 2026, from 34% in 2025; 7 subjects 57%, from 54%; 6 or fewer 29%, from 12%; one in five of the 6-or-fewer group also takes at least one G2 or G1 subject | MOE via ST, 27 Sep 2026 |
+| Public Order Act charges | 6 people aged 31-70 to be charged 28 Sep; a 31-year-old man on 3 counts of assembly without a permit (prior stern warning, Mar-Apr 2022); a 56-year-old woman on 2 counts (22 and 29 Nov 2024; stern warning 18 Sep 2026 over a 3 Feb 2025 State Courts assembly); the man and 4 others on 1 count each of assembly in a prohibited area | SPF, 27 Sep 2026 |
+| Kiprun Singapore half-marathon | Cut from 21.1km to 10km at about 3am on race day 27 Sep on readings taken at 2am; 10km, 5km and Kids Dash unchanged; awards ceremony cancelled, all categories non-competitive with no official results | Decathlon/MetaSport via ST and Mothership, 27 Sep 2026 |
+| Haze, 27-28 Sep | Central-region 24-hour PSI stayed in the unhealthy band through Sunday morning before easing; air quality back to moderate islandwide by Monday morning; PUB warned of flash-flood risk across many areas on 27 Sep | NEA and PUB via ST, 28 Sep 2026 |
+| Fujian-gang jewellery auction (2nd tranche) | Bids totalled about S$5m across 286 pieces, closing from 4pm on 27 Sep; top offers about S$360,000 for a Hermes bracelet set with 263 diamonds totalling 30.31 carats and S$230,000 for a 15.02-carat fancy yellow diamond ring; range from S$700; the 20 Sep luxury-goods tranche of 337 items drew over S$1.1m | ST, 27 Sep 2026 |
+| Singapore at the 81st UNGA | Vivian Balakrishnan's national statement, New York, 26 Sep: AI the "most urgent frontier"; proposed exploring a UN Framework Convention on AI Safeguards and an international institution to set common technical standards for AI | MFA, 26 Sep 2026 |
