@@ -1434,3 +1434,25 @@
 | Haze, 27-28 Sep | Central-region 24-hour PSI stayed in the unhealthy band through Sunday morning before easing; air quality back to moderate islandwide by Monday morning; PUB warned of flash-flood risk across many areas on 27 Sep | NEA and PUB via ST, 28 Sep 2026 |
 | Fujian-gang jewellery auction (2nd tranche) | Bids totalled about S$5m across 286 pieces, closing from 4pm on 27 Sep; top offers about S$360,000 for a Hermes bracelet set with 263 diamonds totalling 30.31 carats and S$230,000 for a 15.02-carat fancy yellow diamond ring; range from S$700; the 20 Sep luxury-goods tranche of 337 items drew over S$1.1m | ST, 27 Sep 2026 |
 | Singapore at the 81st UNGA | Vivian Balakrishnan's national statement, New York, 26 Sep: AI the "most urgent frontier"; proposed exploring a UN Framework Convention on AI Safeguards and an international institution to set common technical standards for AI | MFA, 26 Sep 2026 |
+
+## Global economic variables (29 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent settlement, 28 Sep | US$105.28, +96 cents; intraday high US$108.83 | Reuters via CNBC, 28 Sep 2026 |
+| WTI settlement, 28 Sep | US$92.60, +19 cents; intraday high US$96.54 | Reuters via CNBC, 28 Sep 2026 |
+| US 2031 model-year CAFE target | 34.5 mpg fleet-wide, replacing 50.4 mpg; EV credit trading abolished; crossovers reclassified as cars | NHTSA rule via NPR and ABC News, 28 Sep 2026 |
+| Projected 2035 emissions increase vs prior CAFE rules | +22,111 tons CO2, +90 tons soot particles, +4,870 tons smog precursors per year | Analyses cited with the NHTSA rule via NPR, 28 Sep 2026 |
+| Yemen casualties since 6 Aug 2026 | 4,481 total, including 838 killed; 809 new casualties logged 19-26 Sep | WHO Health Emergency Operation Centre register, 28 Sep 2026 |
+| Yemen displacement since the September offensive | 158,000+ people, about 23,550 families across eight governorates incl. Aden, Hodeidah, Taiz | WHO/UN via NYT, 28 Sep 2026 |
+| Yemen health system | 60% of facilities fully operational; operations suspended in 90 of 105 northern priority health-cluster districts; 19.3m need health aid in 2026, 7.3m (38%) prioritised; 18% of Health Cluster funding covered | WHO EMRO, Sep 2026 |
+| FBI employee data breach | Nearly 5,000 current and former employees' names, addresses, phone numbers, job titles, Social Security numbers and relatives' data; ShinyHunters threatens 2-3 terabytes; claimed entry via an unknown Oracle PeopleSoft flaw | FBI internal notification and ShinyHunters via Nextgov/FCW and CBC, 28 Sep 2026 |
+| Pentagon DMDC breach (context) | 2.76m living individuals and 294,000 deceased exposed; access from Oct 2025, found and remediated July 2026 | Pentagon via CNN and Military Times, 24-25 Sep 2026 |
+
+## Singapore data points (29 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Haze, 28-29 Sep | 24-hour PSI back in the unhealthy band on the night of 28 Sep (south 103, central 104 at 8pm; west 101 at 9pm; east 103 at midnight); above 120 in all regions except the north early on 29 Sep; NEA forecast high-moderate to mid-unhealthy for the next 24 hours | NEA via ST, 29 Sep 2026 |
+| PacificLight Jurong Island plant | S$1.2b, 670MW hydrogen-ready combined-cycle with integrated battery storage, Singapore's first; Mitsubishi Power M701JAC, 64%+ combined-cycle efficiency; 30% hydrogen co-firing by volume from the start, path to 100%; powers up to 1.2m four-room flats a year; operational 2029; groundbreaking 28 Sep with Tan See Leng | PacificLight/MGEN via ST and AsiaOne, 28 Sep 2026 |
+| ERP 2 transition | New markings and "ERP Charge Zone" signs from October at the 33 existing ERP locations; gantries progressively removed; ERP 2 live 1 Jan 2027; over 98% of eligible Singapore-registered vehicles fitted with an OBU | LTA via ST and AsiaOne, 28 Sep 2026 |
+| State Courts IT vendor case | Janarthanan Tamil Kovan, 42, jailed 28 weeks on 28 Sep for one count each of computer misuse and an Official Secrets Act offence; laptop held 18,016 State Courts files incl. network login credentials; 10-minute UltraViewer session, no exfiltration | State Courts via ST and CNA, 28 Sep 2026 |
+| WorldSkills Shanghai 2026 | Team Singapore: four silvers, four bronzes — its highest award count to date, including a first podium in digital construction (Taiwan: 3 gold, 3 silver, 7 bronze) | ST, 28 Sep 2026; Focus Taiwan, 28 Sep 2026 |
