@@ -1456,3 +1456,25 @@
 | ERP 2 transition | New markings and "ERP Charge Zone" signs from October at the 33 existing ERP locations; gantries progressively removed; ERP 2 live 1 Jan 2027; over 98% of eligible Singapore-registered vehicles fitted with an OBU | LTA via ST and AsiaOne, 28 Sep 2026 |
 | State Courts IT vendor case | Janarthanan Tamil Kovan, 42, jailed 28 weeks on 28 Sep for one count each of computer misuse and an Official Secrets Act offence; laptop held 18,016 State Courts files incl. network login credentials; 10-minute UltraViewer session, no exfiltration | State Courts via ST and CNA, 28 Sep 2026 |
 | WorldSkills Shanghai 2026 | Team Singapore: four silvers, four bronzes — its highest award count to date, including a first podium in digital construction (Taiwan: 3 gold, 3 silver, 7 bronze) | ST, 28 Sep 2026; Focus Taiwan, 28 Sep 2026 |
+
+## Global economic variables (30 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent | Settled US$102.59, down US$2.69 (-2.6%) | Reuters/CNBC, 29 Sep 2026 |
+| WTI | Settled US$89.38, down US$3.22 (-3.5%) | Reuters/CNBC, 29 Sep 2026 |
+| Saudi East–West pipeline | Restarted after 11 Sep shutdown from drone attacks Riyadh blamed on Iraqi militias; Yanbu/Al Muajjiz loadings ~2m bpd (Kpler ~2.65m bpd) against 7m bpd capacity; all seven berths working on 27 Sep satellite imagery | Reuters trade sources, Kpler, TankerTrackers.com, 29 Sep 2026 |
+| Hormuz plus bypass routes | Nearly 80% of pre-war volumes; Saudi, Iraqi, Emirati and other regional output near 13m bpd, the highest since February | Kpler via CNN, 29 Sep 2026 |
+| Estonia/Milrem sabotage | 15 Aug arson attributed to Russian special services after a six-week Internal Security Service investigation; 150+ THeMIS UGVs due to Ukraine, Dutch-funded; three Latvian citizens detained 17-18 Aug | Estonian government via AP/Defense News, 29 Sep 2026 |
+| Spain housing decrees | Eviction freeze for vulnerable tenants to 2030, investment-fund purchase restrictions, short-term rental curbs, two-year lease extensions; government says 5m+ people relieved; needs Congress, special session Friday | Spanish cabinet via Reuters/AP, 29 Sep 2026 |
+
+## Singapore data points (30 Sep)
+| Indicator | Figure | Source |
+|---|---|---|
+| Public transport fares | +7.0% from 26 Dec 2026; adult card +12 cents to 3.2km (new S$1.40 baseline), +13 cents beyond; cash +20 cents; concession card +10 cents; largest rise to date (2023: 11 cents) | Public Transport Council, 29 Sep 2026 |
+| Fare formula quantum | Maximum allowable 14.7% = 5.3% formula-generated + 9.4% deferred from the 2025 exercise; 7.0% granted leaves 7.7% deferred | Public Transport Council, 29 Sep 2026 |
+| Public Transport Vouchers | S$60 → S$80 per household; income ceiling S$1,800 → S$2,100 per capita per month; ~60,000 more households; four in ten households qualify | MOT/PTC, 29 Sep 2026 |
+| Youth offending 2025 | 3,117 arrested aged 10 to under 21 (2,627 in 2024, +19%); rate 4.8 → 5.6 per 1,000; cheating offences 814 → 1,114 (+37%), largely scam mules; sexual offences 461 → 437 overall but 193 → 199 among under-16s; sexual penetration of a minor 105 → 114 offenders | MSF trends report, 29 Sep 2026 |
+| Drug arrests at checkpoints 2025 | 975 arrests, ~+53% YoY, on 1,417 joint ICA-CNB operations (~+34%); 39 separately arrested over Telegram drug activity, half under 30 | ICA/CNB joint statement and CNB, 29 Sep 2026 |
+| Universal Periodic Review (4th cycle) | 243 of 342 recommendations supported (~71%); outcome adopted at the UN Human Rights Council's 63rd session, 28 Sep; FIDH criticised rejections on the death penalty and freedom of peaceful assembly | MFA and FIDH, 28-29 Sep 2026 |
+| Haze, 29-30 Sep | All five regions in the unhealthy band on 29 Sep — north 101 at 7am, central 155; improved slightly overnight but most areas still unhealthy at dawn on 30 Sep; NEA forecast high-moderate to mid-unhealthy for 30 Sep, winds easterly/south-easterly, fires in southern Sumatra and Kalimantan | NEA via ST and Malay Mail, 29-30 Sep 2026 |
+| PM2.5 and respiratory emergencies | Singapore-led study: emergency department visits for asthma and chronic respiratory disease rise with higher PM2.5, including at modest increases rather than only in severe haze | Study reported by ST, 29 Sep 2026 |

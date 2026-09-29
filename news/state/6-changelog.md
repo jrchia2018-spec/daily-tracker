@@ -319,3 +319,14 @@ No-repeat log trimmed to the most recent 10 days, as on 24, 25 and 26 Sep. Threa
 - **Figure withheld:** search results gave a US 10-year Treasury yield of 4.97% described as the highest since Oct 2023, which contradicts the 5.163% recorded on 25 Sep in section 3. Treated as stale boilerplate and omitted rather than published; the report says only that yields rose.
 - **No-repeat window** held at 11 days by dropping the 18 Sep log when the 29 Sep log was added, to stop the file growing.
 - **PMO newsroom checked:** no cabinet-level changes on 27-29 Sep (latest item was Supreme Court judge appointments, 25 Sep).
+
+## 30 Sep 2026
+- **Session date hint was wrong again.** The harness context said 2026-09-29; `TZ=Asia/Singapore date` said 2026-09-30 Wednesday. Used the shell output per the rule. `latest.json` read 2026-09-29, exactly one day prior, so no gap note.
+- **Iran story pivoted to the supply side.** The genuinely new in-window development was the Saudi East–West pipeline restart and Yanbu loadings putting Hormuz plus bypass routes at ~80% of pre-war volumes, with Brent down 2.6%. The diplomacy (Araghchi–Qatar, nuclear-first sequencing) was folded into the same story per the Iran-consolidation rule rather than run separately.
+- **Fairford dropped to a thread (700).** Rubio's "foreign actor" statement is new, but the day's other developments (no viable explosives, a suspect who had called police himself) are deflationary; the story ran on 29 Sep and did not clear the bar for a second consecutive slot.
+- **Morocco's first woman PM dropped to a thread (699)** on the consequence test: historic but a coalition still has to be formed (PAM took 97 of 395 seats, 198 needed). Spain's housing decrees kept instead — 5m+ people, though still unpassed.
+- **Only one SG-world story again** (the Universal Periodic Review outcome) against the format's 2-3. The checkpoint drug figures are border-facing but domestic in effect. Ran four domestic plus one overseas rather than pad.
+- **Haze carried a fourth day only because the local PM2.5/emergency-visits study is new.** The study's effect sizes were not available from accessible sources, so it is reported qualitatively; no figures invented.
+- **Egress note:** the proxy blocked cnbc.com, aljazeera.com, globalsecurity.org, nea.gov.sg, mot.gov.sg, landtransportguru.net and redhot.sg. All feeds in AGENT.md worked. Facts were corroborated through WebSearch summaries and mirror outlets instead; no run-blocking failure.
+- **No-repeat window** held at 11 days by dropping the 19 Sep log when the 30 Sep log was added.
+- **PMO newsroom checked:** no cabinet-level changes on 29-30 Sep (latest item remains the 25 Sep Supreme Court judge appointments, effective 1 Oct).
