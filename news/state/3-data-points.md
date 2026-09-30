@@ -15,6 +15,7 @@
 | Services Q2 outlook | -4.0% net weighted balance | Q2 2026 |
 | Q2 electricity tariff | 29.72 cents/kWh (with GST) | Q2 2026 |
 | Q3 electricity tariff | 31.91 cents/kWh before GST, 34.78 cents/kWh with GST (+17.5% QoQ) — record high, above Q4 2008's 30.45 cents/kWh | EMA/SP Group, 30 Jun 2026 |
+| Q4 electricity tariff | 28.59 cents/kWh before GST, down 10.4% QoQ from Q3's record 31.91; overall tariff incl. non-households -10.6% (-3.32 cents/kWh); four-room HDB bill -S$12.99/month before GST | SP Group, 30 Sep 2026 |
 | MAS policy | S$NEER slope tightened Apr 14; July meeting flagged | Apr 2026 |
 | Govt support package | ~SGD 1B (cash, fuel vouchers) | Budget 2026 |
 | STB tourism receipts forecast | S$31–32.5B (down from S$32.8B record 2025) | STB, May 2026 |
@@ -1478,3 +1479,20 @@
 | Universal Periodic Review (4th cycle) | 243 of 342 recommendations supported (~71%); outcome adopted at the UN Human Rights Council's 63rd session, 28 Sep; FIDH criticised rejections on the death penalty and freedom of peaceful assembly | MFA and FIDH, 28-29 Sep 2026 |
 | Haze, 29-30 Sep | All five regions in the unhealthy band on 29 Sep — north 101 at 7am, central 155; improved slightly overnight but most areas still unhealthy at dawn on 30 Sep; NEA forecast high-moderate to mid-unhealthy for 30 Sep, winds easterly/south-easterly, fires in southern Sumatra and Kalimantan | NEA via ST and Malay Mail, 29-30 Sep 2026 |
 | PM2.5 and respiratory emergencies | Singapore-led study: emergency department visits for asthma and chronic respiratory disease rise with higher PM2.5, including at modest increases rather than only in severe haze | Study reported by ST, 29 Sep 2026 |
+
+## Global economic variables (1 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent settle, 30 Sep | ~US$97.46, +1.0% | Market data, 30 Sep 2026 |
+| WTI settle, 30 Sep | US$90.60, +1.4% | Market data, 30 Sep 2026 |
+| US troops in Iraq before withdrawal | ~2,500, held for years; small residual force remains in Kurdistan for Syria operations | Reported on completion of withdrawal, 30 Sep 2026 |
+| Russian strike on Ukraine, night of 29-30 Sep | ~190 drones plus ballistic missiles across 11 regions; 5 missiles and 155 drones downed; at least 7 killed incl. a child; Trypilska thermal plant generating equipment damaged | Ukrainian air force and officials via BBC/Irish Times, 30 Sep 2026 |
+
+## Singapore data points (1 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| October U-Save rebate | S$190 (1-/2-room), S$170 (3-room), S$150 (4-room), S$110 (5-room and executive/multi-gen); up to S$760 across FY2026 (double the regular GSTV amount) | MOF, 30 Sep 2026 |
+| October S&CC rebate | Up to 1 month, by flat type; up to 3.5 months across FY2026; over 1m Singaporean HDB households eligible | MOF, 30 Sep 2026 |
+| Healthcare worker abuse and harassment reports | ~4,200 in 2025 from ~2,200 in 2023; police referrals 350 → 550; workgroup attributes the rise to awareness and reporting confidence, not prevalence | Tripartite workgroup report via MOH, 30 Sep 2026 |
+| Bee Cheng Hiang data breach | 95,364 customers' e-mail addresses exposed by AI-written batch-mail script; first AI-related breach notified to the PDPC; voluntary undertaking accepted | PDPC, 30 Sep 2026 |
+| Home Team Humanoid Robotics Centre | ~S$100m committed; 29,000 sq ft HTX testbed; first humanoid robot alongside officers in real operations targeted by 2028 | MHA/HTX, 30 Sep 2026 |

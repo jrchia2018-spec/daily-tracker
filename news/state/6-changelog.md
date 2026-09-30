@@ -330,3 +330,14 @@ No-repeat log trimmed to the most recent 10 days, as on 24, 25 and 26 Sep. Threa
 - **Egress note:** the proxy blocked cnbc.com, aljazeera.com, globalsecurity.org, nea.gov.sg, mot.gov.sg, landtransportguru.net and redhot.sg. All feeds in AGENT.md worked. Facts were corroborated through WebSearch summaries and mirror outlets instead; no run-blocking failure.
 - **No-repeat window** held at 11 days by dropping the 19 Sep log when the 30 Sep log was added.
 - **PMO newsroom checked:** no cabinet-level changes on 29-30 Sep (latest item remains the 25 Sep Supreme Court judge appointments, effective 1 Oct).
+
+## 1 Oct 2026
+- **Session date hint was wrong again.** The session context claimed 2026-09-30; `TZ=Asia/Singapore date` returned 2026-10-01 Thursday. Shell output used throughout, per the step-0 rule.
+- **No gap.** `latest.json` was dated 2026-09-30, exactly one day back, so no `gapNote` and no carry-forward.
+- **Iraq withdrawal run as a separate story, not folded into the Iran consolidation.** The end of Operation Inherent Resolve is a distinct 12-year arc, not an Iran-MOU angle; its Iran-militia consequence is carried in the consequence paragraphs and in the arc entry. The Fairford attribution WAS folded into the Iran story, since it concerns an Iranian operation against a base used to strike Iran.
+- **Brent reported as the day's settle only, with no bridge to the 29 Sep figure.** The 30 Sep settle (~US$97.46, +1.0%) sits about US$5 below the 29 Sep settle of US$102.59 while still being up on the day, which points to a front-month contract roll rather than a one-day fall. No bridging explanation was asserted because none was sourced; future runs should note the Brent contract month when the level steps.
+- **Five SG stories, all domestic.** In-window SG-world items were thin (the Brunei Crown Prince call was 29 Sep, out of window), so the 2-3 SG-world / 2-3 domestic split in section 2 was not met. Dropped rather than padded: the MCCY/MUIS child-safeguarding committee (logged as thread 718) and the BCRS transition deadline.
+- **Egress note:** the proxy blocked longwarjournal.org, pbs.org and npr.org. All RSS feeds in AGENT.md worked, including Mothership (which is not well-formed XML and needs regex rather than an XML parser). Facts corroborated via WebSearch summaries and mirror outlets; no run-blocking failure.
+- **PMO newsroom checked:** no cabinet-level changes. Latest item is PM Wong's 30 Sep Economist Service speech; the 25 Sep Supreme Court appointments took effect 1 Oct.
+- **No-repeat window** held at 11 days by dropping the 20 Sep log when the 1 Oct log was added.
+
