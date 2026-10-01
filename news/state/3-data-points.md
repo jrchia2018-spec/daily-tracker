@@ -1496,3 +1496,29 @@
 | Healthcare worker abuse and harassment reports | ~4,200 in 2025 from ~2,200 in 2023; police referrals 350 → 550; workgroup attributes the rise to awareness and reporting confidence, not prevalence | Tripartite workgroup report via MOH, 30 Sep 2026 |
 | Bee Cheng Hiang data breach | 95,364 customers' e-mail addresses exposed by AI-written batch-mail script; first AI-related breach notified to the PDPC; voluntary undertaking accepted | PDPC, 30 Sep 2026 |
 | Home Team Humanoid Robotics Centre | ~S$100m committed; 29,000 sq ft HTX testbed; first humanoid robot alongside officers in real operations targeted by 2028 | MHA/HTX, 30 Sep 2026 |
+
+## Added 2 October 2026
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent settlement | US$102.31 (+4.4%), after an early ~1% fall on the pre-war-flows reports | Reuters/wire, 1 Oct 2026 |
+| WTI settlement | US$92.87 (+2.7%) | Reuters/wire, 1 Oct 2026 |
+| Hormuz crude throughput | Seven-day average 13.5m bpd, matching the pre-war baseline; JP Morgan up to 98% of pre-war, Kpler ~80%, Goldman Middle East flows 23.3m bpd (2025 average) — via pipelines, ship-to-ship transfers and US naval escorts; refined products still constrained | Reuters/Guardian/CNBC, 1 Oct 2026 |
+| China oil-product exports | Refiners suspended exports beyond Hong Kong and Macau until further notice; PetroChina cancelled some October petrol and jet-fuel cargoes | Reuters, 1 Oct 2026 |
+| US diesel release demand on EU | 120 million barrels over six months sought from Germany and France, or a US export ban | Wire reports, 1 Oct 2026 |
+| US retail diesel | US$6.51/US gallon (~S$2.20/litre at USD/SGD 1.2807) | Wood Mackenzie, 21 Sep 2026 |
+| US retail petrol | US$4.46/US gallon (~S$1.51/litre at USD/SGD 1.2807) | Week of 28 Sep 2026 |
+| USD/SGD | 1.2807 | exchange-rates.org, 1 Oct 2026 |
+| US 10-year Treasury yield | High of 5.342% — highest since early 2002, above the 2007 peak; 30-year also at a 2002 high; biggest quarterly rise this century in Q3 | Reuters/Bloomberg, 1 Oct 2026 |
+| US 30-year fixed mortgage | 7.28% (6.34% a year ago) | Reported via NYT/CNN, 1 Oct 2026 |
+| Russia 2027 military budget | Record 17.1 trillion roubles, +27%; social policy -7%, education -6%, healthcare -6.8%, infrastructure and agriculture -7.4% | Reuters/Meduza, 29-30 Sep 2026; NYT 1 Oct 2026 |
+| Russia 2026 deficit forecast | 3.2% of GDP, raised from 1.6% | Reuters, 29-30 Sep 2026 |
+| Russian GDP cost of Ukrainian strikes | ~1% of GDP; 100+ Russian vessels destroyed in the Black Sea (Putin's own figures) | Putin at Valdai, 1 Oct 2026 |
+| France school protests | 1,949 arrests, 305 officers injured in one day; ~900 blockades and related incidents; 1,000+ schools affected, 160+ closed | French interior ministry via Reuters/France 24, 1 Oct 2026 |
+| US force posture, Middle East | Third carrier (USS Theodore Roosevelt) plus Marine Corps ships and up to 10,000 troops, arriving by late November; USS George H.W. Bush and USS George Washington on station | Wall Street Journal via wires, 1 Oct 2026 |
+| RSN Offshore Patrol Vessel (Sentinel) | 94.85m length, 15.2m beam, 2,700 tonnes, 23+ knots, 4,000+ nm endurance, baseline crew ~40; first of four, delivery from 2028; launched at Fassmer, Berne, Germany | MINDEF, 1-2 Oct 2026 |
+| HDB resale price index (Q3 2026 flash) | 202.4, -0.2% QoQ; third consecutive quarterly fall (-0.1% Q1, -0.3% Q2; -0.6% over nine months) | HDB flash estimate, 1 Oct 2026 |
+| HDB resale volume (Q3 2026) | 7,528 transactions, +5.2% on 7,157 a year earlier | HDB flash estimate, 1 Oct 2026 |
+| Private home prices (Q3 2026 flash) | +1.4% QoQ | URA flash estimate, 1 Oct 2026 |
+| Beverage Container Return Scheme | Mandatory from 1 Oct 2026 — only Deposit Mark containers may be sold; 10-cent deposit on 150ml–3,000ml plastic and metal; ~1,300 Return Right machines; 33m+ containers collected by mid-September against 5.5m in early August | NEA/ST, 1 Oct 2026 |
+| Singapore fertility literacy | 84% of 18-39s want children; only ~10% answered all basic fertility questions correctly; 43% of childless respondents who want children got 2 or fewer of 5 right; 29% knew ovaries do not produce new eggs | Thomson Medical/NUS study led by Reuben Ng (LKYSPP), 1 Oct 2026 |
+| SIA/Scoot Middle East suspensions | SQ494/495 Singapore-Dubai cancelled to 1 Dec; TR796/797 Singapore-Jeddah cancelled to 2 Dec | SIA/Scoot, 1 Oct 2026 |
