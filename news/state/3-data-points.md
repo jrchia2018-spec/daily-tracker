@@ -1522,3 +1522,22 @@
 | Beverage Container Return Scheme | Mandatory from 1 Oct 2026 — only Deposit Mark containers may be sold; 10-cent deposit on 150ml–3,000ml plastic and metal; ~1,300 Return Right machines; 33m+ containers collected by mid-September against 5.5m in early August | NEA/ST, 1 Oct 2026 |
 | Singapore fertility literacy | 84% of 18-39s want children; only ~10% answered all basic fertility questions correctly; 43% of childless respondents who want children got 2 or fewer of 5 right; 29% knew ovaries do not produce new eggs | Thomson Medical/NUS study led by Reuben Ng (LKYSPP), 1 Oct 2026 |
 | SIA/Scoot Middle East suspensions | SQ494/495 Singapore-Dubai cancelled to 1 Dec; TR796/797 Singapore-Jeddah cancelled to 2 Dec | SIA/Scoot, 1 Oct 2026 |
+| Brent crude | US$102.25 (-6 cents) settle | CNBC, 2 Oct 2026 |
+| WTI crude | US$91.11 (-US$1.76) settle | CNBC, 2 Oct 2026 |
+| G7 strategic reserve release | Up to 100m barrels agreed — 50m diesel, 50m crude; substantial diesel tranche front-loaded in the first 20 days; all members committed to no export bans | Macron via Guardian/NYT, 2 Oct 2026 |
+| US distillate stocks | Lowest seasonal level since 1996 | Guardian, 2 Oct 2026 |
+| US diesel exports | Record 1.9m barrels a week, early August 2026 | Guardian, 2 Oct 2026 |
+| UK pump diesel | Record £2.00/litre; average family car fill £110, ~£32 more than pre-war | RAC via Guardian, 2 Oct 2026 |
+| Singapore pump diesel | S$3.97 (SPC) to S$4.07 (Shell/Esso/Caltex) per litre; above petrol for the first time | motorist.sg/petrolprice.sg, 1 Oct 2026 |
+| Singapore pump petrol 95 | S$3.48 (SPC) to S$3.54/litre | motorist.sg, 1 Oct 2026 |
+| US non-farm payrolls (Sep 2026) | +29,000 against ~90,000 expected; Aug revised to +133,000, Jul revised to -10,000; 2026 average +68,000/month | BLS via CNN, 2 Oct 2026 |
+| US unemployment rate (Sep 2026) | 4.2%, up from 4.1% | BLS, 2 Oct 2026 |
+| US Black unemployment (Sep 2026) | 7.0%, up from 6.0%; Black women 7.3% from 5.9%; fastest monthly rise since Apr 2020 | BLS via CNN, 2 Oct 2026 |
+| US annual wage growth (Sep 2026) | 3.0%, fourth consecutive monthly slowdown, lowest since May 2021 | BLS via CNN, 2 Oct 2026 |
+| Iran attacks on shipping | ~30 drone and ~10 anti-ship missile attacks a week since early August; three dark-running Liberia-flagged tankers hit in the week to 2 Oct | NYT, 2 Oct 2026 |
+| Spain housing decrees | Rejected 178-172 and 184-166; cabinet had said they would benefit 5m+ people | Congress of Deputies via Al Jazeera/Catalan News, 2 Oct 2026 |
+| RTS Link opening | February 2027 (from end-December 2026); tests and trial runs complete by 31 Dec 2026; 4km Bukit Chagar-Woodlands North; up to 10,000 passengers/hour each way; 5-minute journey | RTS Operations/LTA, 2 Oct 2026 |
+| HPV9 (Gardasil 9) subsidy | On NCIS/NAIS and subsidised vaccine list from 1 Jan 2027, females aged 9-26; covers up to 90% of cervical cancers (HPV2: up to 70%); up to 75% means-tested subsidy plus MediSave; Sec 1-2 school doses switch from HPV2; HPV4 withdrawn | MOH/HPB/CDA, 2 Oct 2026 |
+| CRIMSON-1 | 5kg, 30cm NTU nanosatellite, first Singapore-built with onboard AI image filtering; deployed ~520km up ~55 min after Falcon 9 launch from Vandenberg at ~2.30am SGT 2 Oct; one of 130 vehicles; year-long mission; also tests NTU/Singfilm perovskite cells | NTU/OSTIn, 2 Oct 2026 |
+| Space solar cell cost | Gallium arsenide US$250-US$450 (S$320-S$576) per watt vs under US$1/watt for terrestrial silicon | NTU via ST, 2 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2807 | Carried from 1 Oct 2026 reference (exchange-rates.org); no newer in-window rate sourced |
