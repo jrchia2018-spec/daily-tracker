@@ -1541,3 +1541,26 @@
 | CRIMSON-1 | 5kg, 30cm NTU nanosatellite, first Singapore-built with onboard AI image filtering; deployed ~520km up ~55 min after Falcon 9 launch from Vandenberg at ~2.30am SGT 2 Oct; one of 130 vehicles; year-long mission; also tests NTU/Singfilm perovskite cells | NTU/OSTIn, 2 Oct 2026 |
 | Space solar cell cost | Gallium arsenide US$250-US$450 (S$320-S$576) per watt vs under US$1/watt for terrestrial silicon | NTU via ST, 2 Oct 2026 |
 | FX reference rate used this run | USD/SGD 1.2807 | Carried from 1 Oct 2026 reference (exchange-rates.org); no newer in-window rate sourced |
+
+## Global economic variables (4 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Saudi strikes on Sanaa, 3 Oct | 26 strikes; Houthis claim ~60 Saudi air/missile attacks in 24h | Al-Masirah / Houthi spokesman Yahya Saree, 3 Oct 2026 |
+| Houthi territorial control | Entire Yemeni Red Sea coast and Bab al-Mandab strait, taken in Sept 2026 offensive | AFP/Al Jazeera, 3 Oct 2026 |
+| Kyiv Dnipro bridges struck | 2 of the capital's crossings (Southern 1-2 Oct, Northern 3 Oct); first bridge strikes of the war | Kyiv Independent / Meduza, 3 Oct 2026 |
+| Iranian flights into Najaf | 40 daily, Mahan Air excluded, under US sanctions exemption | Iraqi PM Ali al-Zaidi's office, 2 Oct 2026 |
+| Spain housing protest turnout | Madrid 70,000 (government) to 500,000 (Tenants' Union); ~50 cities | Reuters/AP, 3 Oct 2026 |
+| Flydubai FZ1073 | Boeing 737 MAX 8, 180 aboard, dive from ~34,000ft; co-pilot suspended 2024 over extremist material | UAE prosecutor general / CNN, 3 Oct 2026 |
+
+## Singapore data points (4 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Central region 24-hour PSI peak, 3 Oct | 102 (unhealthy band from 11am; island-wide moderate by evening) | NEA, 3 Oct 2026 |
+| Average daily calorie intake | 2,460 (2,360 in 2019); 57% above estimated energy needs | National Nutrition Survey, MOH/HPB, 3 Oct 2026 |
+| Residents exceeding 2,000mg daily sodium | 95% (88% in 2019) | MOH/HPB, 3 Oct 2026 |
+| Top sodium sources (highest-intake group) | Soupy dishes 358mg and processed foods 266mg per 1,000 calories | MOH/HPB, 3 Oct 2026 |
+| Eating out at least once a day | 7 in 10 residents (6 in 10 in 2019); portions ~10% more caloric | MOH/HPB, 3 Oct 2026 |
+| MUIS religious-school registration | Threshold 10 or more learners incl. online; ~50 providers affected; effective 2 Oct 2026, compliance by 31 Mar 2027 | MUIS, 3 Oct 2026 |
+| Ride-hail fuel fees (extended to 30 Nov) | Grab and Gojek S$0.90; Tada S$0.90 up to S$18 / S$1.20 above S$18.10; CDG Zig S$0.50 below S$15 / S$0.80 at or above | NPHVA, 3 Oct 2026 |
+| Prince Group-linked asset seizure | S$39m proceeds of 2 Jalan Kilang Barat (32,000 sq ft), buyer Jackspeed Holdings | SPF via Straits Times, 4 Oct 2026 |
+
