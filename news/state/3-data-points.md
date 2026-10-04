@@ -1564,3 +1564,33 @@
 | Ride-hail fuel fees (extended to 30 Nov) | Grab and Gojek S$0.90; Tada S$0.90 up to S$18 / S$1.20 above S$18.10; CDG Zig S$0.50 below S$15 / S$0.80 at or above | NPHVA, 3 Oct 2026 |
 | Prince Group-linked asset seizure | S$39m proceeds of 2 Jalan Kilang Barat (32,000 sq ft), buyer Jackspeed Holdings | SPF via Straits Times, 4 Oct 2026 |
 
+## Global data points (5 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brazil first round (partial) | 64.81% of polling stations counted: Flávio Bolsonaro 49.58%, Lula 42.25%; runoff 25 Oct; counting incomplete at 0700 SGT | TSE via Reuters/Datafolha, 4 Oct 2026 |
+| Brazil final pre-election poll | Lula 45% to Flávio Bolsonaro 42% of valid votes | Datafolha, 3 Oct 2026 |
+| Brazil ballot scope | All 513 Chamber of Deputies seats, two-thirds of the Senate, state governorships | TSE via Reuters, 4 Oct 2026 |
+| RAF Fairford bombers | All US bombers deployed there returned to US home stations after an unspecified new threat; six men arrested since 27 Sep remain on bail without charge | US official via CNN, 4 Oct 2026 |
+| Saudi strikes on Yemen | 106 air and missile strikes in 24 hours (Houthi-stated); Houthis claim Aramco Riyadh and Khurais | Houthi armed forces via CNN, 4 Oct 2026 |
+| US personnel supporting Saudi in Yemen | 200+ US intelligence and military analysts in Saudi Arabia | Current and former US officials via NYT, 4 Oct 2026 |
+| Yemen hunger | 3 of every 4 families going hungry in parts of Yemen | WFP, week of 28 Sep 2026 |
+| German aid to Ukraine | ~S$1.45b (€1b) military aid; ~S$500m (€350m) for energy repairs; joint drone/missile production | German government officials via CNN, 4 Oct 2026 |
+| Kyiv bridge strikes | Northern Bridge hit twice in two days (2 injured, 4 Oct); Southern Bridge hit 5 times in 24 hours (1-2 Oct) | Klitschko / CNN, 4 Oct 2026 |
+| Irkutsk Anti-Plague Institute | 1 laboratory worker (28, female) dead of "pneumonia of unknown etiology"; ~200 contacts under observation (unofficial) | Rospotrebnadzor/TASS, Liudi Baikala via CNN, 4 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2807; EUR/SGD ~1.4472 derived from CNN's €1b = US$1.13bn | USD/SGD carried from 1 Oct 2026 (exchange-rates.org); EUR cross 4 Oct 2026 |
+
+## Singapore data points (5 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Disability support spending | Up to 60% higher on average over the next five years | Taskforce on Assurance for Families with Persons with Disabilities report (67 pages), 4 Oct 2026 |
+| Employment rate, residents with disabilities | 34.7% | Taskforce report, 4 Oct 2026 |
+| SG Enable Employment Support Office | Enabling Village, Lengkok Bahru; fully operational H2 2027 | Taskforce report, 4 Oct 2026 |
+| Students with disabilities at ITE/polytechnics | ~2% of total enrolment a year on average, 2023-2025 | MOE via Straits Times, 4 Oct 2026 |
+| Polyclinic measures | All front-line staff trained from 2027; priority queueing; 3 designated polyclinics (one per cluster) by 2028; Health Communication Passport from 2027 | MOH, 4 Oct 2026 |
+| ElderFund cumulative payouts | 7,973 claimants, over S$48.9m as at 30 Jun 2026 | MOH via Straits Times, 5 Oct 2026 |
+| ElderFund annual series | S$1.3m/777 (2020), S$4.3m/1,772 (2021), S$6.2m (2022), S$8.5m (2023), S$10.3m (2024), S$11.9m/5,083 (2025), S$6.4m/4,836 (H1 2026) | MOH via Straits Times, 5 Oct 2026 |
+| ElderFund eligibility | S$150 or S$250 monthly; full help needed with 3 of 6 daily activities; PCHI ceiling S$2,600 | MOH via Straits Times, 5 Oct 2026 |
+| Asian Games 2026, Team Singapore | 18 medals (2-9-7) vs 16 (3-6-7) at Hangzhou; lowest gold tally in 28 years; 21st of 46, worst placing since 1994 | SNOC/SportSG wrap-up, 4 Oct 2026 |
+| Punggol robot crossings | 4 UHF RFID antennas sought 21 Sep for Punggol Way / New Punggol Road crossings; 8-firm trial from late 2026 | LTA via GeBiz and Straits Times, 2 Oct 2026 |
+| TrAPs wound technology | Roughly doubles healing speed in living-skin tests; fits existing scaffolds | Ho et al., Nature Materials, 27 Jul 2026 |
+| Central/west 24-hour PSI, 6am 5 Oct | 110 (central), 102 (west); north, south, east in moderate band | NEA via Straits Times, 5 Oct 2026 |
