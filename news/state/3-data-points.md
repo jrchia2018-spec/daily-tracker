@@ -1594,3 +1594,29 @@
 | Punggol robot crossings | 4 UHF RFID antennas sought 21 Sep for Punggol Way / New Punggol Road crossings; 8-firm trial from late 2026 | LTA via GeBiz and Straits Times, 2 Oct 2026 |
 | TrAPs wound technology | Roughly doubles healing speed in living-skin tests; fits existing scaffolds | Ho et al., Nature Materials, 27 Jul 2026 |
 | Central/west 24-hour PSI, 6am 5 Oct | 110 (central), 102 (west); north, south, east in moderate band | NEA via Straits Times, 5 Oct 2026 |
+
+## Global data points (6 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent | US$101.31 (-0.9%) | 5 Oct 2026 close |
+| WTI | US$89.24 (-2.1%) | 5 Oct 2026 close |
+| Gulf tanker day rates | about S$1.7m (US$1.3m) on some routes, ~43x January levels | NBC News, 5 Oct 2026 |
+| Hormuz/Gulf of Aden attacks | at least one a day since 2 Oct; at least 7 incidents in a week (VLCC Kazimah III alight in the strait 1 Oct; Aframax Lipsi engine room hit off Oman 4 Oct) | UKMTO and Marisks via NBC News, 5 Oct 2026 |
+| Yemen "Dawn of Yemen" air support | ~100 coalition fighter jets; 324 "high-value" targets destroyed; 1,122 precision strikes claimed by government forces | Saudi-led coalition via The National, 5 Oct 2026 |
+| Brazil first round (final) | Flávio Bolsonaro 47.03%, Lula 45.16%; abstention 21.08%, highest since 1998; runoff 25 Oct | TSE count via Americas Quarterly, 5 Oct 2026 |
+| Bovespa | record close 206,911.89, +7.7% — biggest day since 24 Mar 2020 | 5 Oct 2026 |
+| Brazilian real | +4%+ to about R$4.98/US$, first time below R$5 in months | 5 Oct 2026 |
+| Spain polling | PP 33.3%, PSOE 25.7%, Vox 18.3%; ~142/104/64 of 350 seats; PP+Vox ≥199 in all eight polls; PSOE+Sumar+Podemos ~34.7% | The Olive Press poll aggregate, 5 Oct 2026 |
+| Nobel medicine prize 2026 | Deisseroth, Hegemann, Nagel for optogenetics; about S$1.5m (12m Swedish kronor) shared | Karolinska Institute, 5 Oct 2026 |
+
+## Singapore data points (6 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Central 24-hour PSI, 6am 6 Oct | 130 (unhealthy); 122 central and 118 west at 5pm 5 Oct; most of island unhealthy | NEA via CNA and Straits Times, 6 Oct 2026 |
+| Regional hotspots | 281 in Sumatra, 21% of regional total; clusters in southern Sumatra and southern Kalimantan | NEA, 6 Oct 2026 |
+| Workplace fatalities | 7 since September (incl. Tanjong Rhu HDB site, Tuas Port) | MOM, 5 Oct 2026 |
+| WSH enforcement, 5 Oct–4 Nov | first-offence composition fine S$2,000 → S$3,000; minimum stop-work order 5 → 8 weeks; up to 3-month bar on new migrant-worker hiring in egregious cases | MOM, 5 Oct 2026 |
+| Panama Canal neutrality protocol | Singapore to accede; 41 states already party | MFA, 5 Oct 2026 |
+| Bioeconomy funding | S$118m total public funding for bio-based chemicals research; NCEB on NRF mid-sized grant of close to S$50m over 7 years from 2023; SG Bio-SPRINT S$22m | NUS/NRF, 5 Oct 2026 |
+| IMH long-stay population | median age 58; 83 patients aged 70+ | MOH via Straits Times, 5 Oct 2026 |
+| Vanguard Lorong Napiri facility | 257-bed nursing care home, 48-bed independent-living home, day care centre Q1 2027; 151 IMH long-stay residents plus 14 admitted since May 2026 | Vanguard Healthcare/MOH, 5 Oct 2026 |
