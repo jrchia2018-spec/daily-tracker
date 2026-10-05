@@ -548,16 +548,11 @@ export function hadNewLesion(entry) {
   return newLesionCount(entry) > 0;
 }
 
-// Merge a patch into a day's skincare entry; drop the entry when it holds
-// nothing meaningful so the map stays sparse. whiteheads is kept even at 0
-// (a logged zero is real data), so we test for a number, not truthiness.
-export function setSkincare(key, patch) {
-  const next = { ...state.skincare[key], ...patch };
-  if (next.areas && !Object.keys(areaCounts(next)).length) delete next.areas;
-  if (typeof next.whiteheads !== 'number' && !hadNewLesion(next)) delete state.skincare[key];
-  else state.skincare[key] = next;
-  save();
-}
+// (setSkincare — the writer for the old per-day skincare map — was removed
+// 5 Oct 2026 as dead code: the whitehead ledger below replaced it on 15 Aug
+// and nothing had called it since. areaCounts/newLesionCount/hadNewLesion
+// above are still live: they READ the three legacy shapes for days that
+// pre-date the ledger.)
 
 // ---- whitehead ledger (15 Aug 2026) ----
 //
