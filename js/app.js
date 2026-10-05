@@ -896,16 +896,13 @@ function renderMeals() {
     }
   }
 
-  // With an empty search box, offer one-tap re-logging: yesterday's meals
-  // and the most frequently logged foods.
+  // With an empty search box, offer one-tap re-logging of the most frequently
+  // logged foods. ("Copy yesterday's meals" was removed 5 Oct 2026 at the
+  // user's request — don't reinstate it.)
   function paintIdle() {
     const favs = frequentFoods();
-    const prevDay = addDays(mealDate, -1);
-    const prevMeals = mealsFor(prevDay);
     box.innerHTML =
-      (prevMeals.length
-        ? `<button class="btn ghost small" id="copy-prev">⧉ Copy ${fmtDate(prevDay)}'s meals (${prevMeals.length})</button>` : '')
-      + (favs.length
+      (favs.length
         ? '<p class="small muted" style="margin:10px 0 0">Frequent</p>' + favs.map((f, i) => `
           <div class="item" data-fav="${i}">
             <div>
@@ -914,16 +911,6 @@ function renderMeals() {
             </div>
             <div class="val">${r0(f.kcal)} kcal</div>
           </div>`).join('') : '');
-    box.querySelector('#copy-prev')?.addEventListener('click', () => {
-      const list = state.meals[mealDate] || (state.meals[mealDate] = []);
-      // Copies become ordinary entries: a checklist link belongs to the day it
-      // was ticked, and a stray auto-tag would make the next tick double up.
-      for (const m of prevMeals) list.push({ ...m, id: uid(), supp: undefined, suppAuto: undefined });
-      reconcileChia(mealDate);
-      save();
-      render();
-      toast(`Copied ${prevMeals.length} item${prevMeals.length === 1 ? '' : 's'} from ${fmtDate(prevDay)}`);
-    });
     for (const it of box.querySelectorAll('[data-fav]')) {
       it.addEventListener('click', () => {
         const f = favs[Number(it.dataset.fav)];
