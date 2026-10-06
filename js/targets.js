@@ -48,13 +48,25 @@ export function computeTargets(profile, weightKg, tdeeOverride = null) {
   // sodium is a flat 2300mg ceiling, not calorie-dependent.
   const fibre = autoFibreFor(calories);
   const sodium = 2300;
-  // ml — user's chosen daily target. Lowered 4000 → 3000 on 20 Jul 2026:
-  // 4L was missed on every one of the first 15 tracked days, and a target
-  // that never goes green stops carrying information. 3L sits about 1L
-  // above their actual intake — a stretch they can actually reach.
-  const water = 3000;
+  const water = autoWaterFor(weightKg);
   return { calories, protein, carbs, fat, fibre, sodium, water };
 }
+
+// Daily fluid, ml. The owner's is their chosen 3000 — lowered from 4000 on
+// 20 Jul 2026: 4L was missed on every one of the first 15 tracked days, and a
+// target that never goes green stops carrying information. A guest's starts
+// from the usual ~35 ml per kg of body weight, so a 52kg friend isn't handed
+// the owner's 3L, and it follows their weight while targets are on auto.
+export function autoWaterFor(weightKg) {
+  if (state.owner) return 3000;
+  return Math.round((35 * (weightKg || 70)) / 100) * 100;
+}
+
+// Fibre, sodium and water are the user's to set: auto-adjust works out
+// calories and macros from the weight trend, and has no business resetting
+// a floor or ceiling someone chose. A value edited by hand is marked in
+// targets.handSet and survives every recalculation.
+export const PREFERENCE_TARGETS = ['fibre', 'sodium', 'water'];
 
 // Rough workout energy estimates (used for "daily caloric use").
 export function runKcal(km, weightKg) {
@@ -197,22 +209,28 @@ export function maybeAutoRecalc({ force = false } = {}) {
 
   const next = computeTargets(p, w, tdee);
   const prev = state.targets;
-  const changed = Math.abs(next.calories - prev.calories) >= 25 || next.protein !== prev.protein;
 
-  // A fibre target that doesn't match the formula was set by hand — keep it
-  // rather than resetting it every time calories move.
+  // Anything set by hand stays as it was set.
+  const handSet = prev.handSet || {};
+  for (const k of PREFERENCE_TARGETS) if (handSet[k] && prev[k] != null) next[k] = prev[k];
+  // A fibre target that doesn't match the formula was set by hand before
+  // handSet existed — keep it rather than resetting it every time calories move.
   if (prev.fibre != null && prev.fibre !== autoFibreFor(prev.calories)) {
     next.fibre = prev.fibre;
   }
 
+  const macrosMoved = Math.abs(next.calories - prev.calories) >= 25 || next.protein !== prev.protein;
+  const changed = macrosMoved || next.water !== prev.water;
+
   state.lastAutoRecalc = today;
   if (changed) {
     recordTargetChange(prev);
-    state.targets = { ...next, mode: 'auto', updatedAt: today };
+    state.targets = { ...next, handSet, mode: 'auto', updatedAt: today };
     const diff = next.calories - prev.calories;
-    state.lastAutoNote =
-      `Targets updated from ${basis}: ${diff > 0 ? '+' : ''}${diff} kcal ` +
-      `(now ${next.calories} kcal, ${next.protein}g protein).`;
+    state.lastAutoNote = macrosMoved
+      ? `Targets updated from ${basis}: ${diff > 0 ? '+' : ''}${diff} kcal ` +
+        `(now ${next.calories} kcal, ${next.protein}g protein).`
+      : `Water target updated from your latest weight: now ${(next.water / 1000).toFixed(1)}L.`;
   }
   save();
   return changed ? state.lastAutoNote : null;

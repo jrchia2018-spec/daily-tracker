@@ -13,7 +13,7 @@ import {
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
 import {
-  ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
+  ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc, PREFERENCE_TARGETS,
   weightTrend, runKcal, bmr,
   baseKcal, dailyBurn, activityKcal, walkingSteps, stepKcal, exerciseKcal,
 } from './targets.js';
@@ -1994,7 +1994,7 @@ function renderProgress() {
       <div><div class="tval">${t.sodium}</div><div class="tlabel">sodium mg ≤</div></div>
       <div><div class="tval">${fmtWater(t.water)}</div><div class="tlabel">water ≥</div></div>
     </div>
-    <p class="small muted" style="margin-bottom:10px">Auto mode recalculates weekly from your latest weight, and refines your calorie burn estimate once you have ~2 weeks of logged meals and weigh-ins.</p>
+    <p class="small muted" style="margin-bottom:10px">Auto mode recalculates weekly from your latest weight, and refines your calorie burn estimate once you have ~2 weeks of logged meals and weigh-ins. Fibre, sodium or water you've set yourself stay as you set them.</p>
     <div class="row">
       <button class="btn small" id="t-edit">Edit targets</button>
       <button class="btn small" id="t-recalc">Recalculate now</button>
@@ -2110,26 +2110,33 @@ function openTargetsModal() {
       <label class="field"><span>Sodium (mg, limit)</span><input id="t-na" type="number" value="${t.sodium}"></label>
       <label class="field"><span>Water (ml, minimum)</span><input id="t-water" type="number" value="${t.water}"></label>
     </div>
-    <p class="small muted" style="margin-bottom:12px">Saving here switches targets to <b>Manual</b> — they'll stay fixed until you tap "Recalculate now".</p>
+    <p class="small muted" style="margin-bottom:12px">Changing calories, protein, carbs or fat switches targets to <b>Manual</b> — they'll stay fixed until you tap "Recalculate now". Fibre, sodium and water are yours to set: changing only those keeps auto-adjust on, and it won't overwrite them.</p>
     <button class="btn primary block" id="t-save">Save targets</button>
   `);
   m.querySelector('#t-save').addEventListener('click', () => {
-    recordTargetChange(state.targets);
-    state.targets = {
-      calories: Number(m.querySelector('#t-kcal').value) || t.calories,
-      protein: Number(m.querySelector('#t-p').value) || t.protein,
-      carbs: Number(m.querySelector('#t-c').value) || t.carbs,
-      fat: Number(m.querySelector('#t-f').value) || t.fat,
-      fibre: Number(m.querySelector('#t-fib').value) || t.fibre,
-      sodium: Number(m.querySelector('#t-na').value) || t.sodium,
-      water: Number(m.querySelector('#t-water').value) || t.water,
-      mode: 'manual',
-      updatedAt: dateKey(),
+    const val = (id, cur) => Number(m.querySelector(id).value) || cur;
+    const next = {
+      calories: val('#t-kcal', t.calories),
+      protein: val('#t-p', t.protein),
+      carbs: val('#t-c', t.carbs),
+      fat: val('#t-f', t.fat),
+      fibre: val('#t-fib', t.fibre),
+      sodium: val('#t-na', t.sodium),
+      water: val('#t-water', t.water),
     };
+    // Only calories and macros are what auto-adjust computes, so only
+    // overriding those means taking them off auto. Before this, changing the
+    // water target alone silently ended weekly adjustment.
+    const macrosEdited = ['calories', 'protein', 'carbs', 'fat'].some(k => next[k] !== t[k]);
+    const handSet = { ...(state.targets?.handSet || {}) };
+    for (const k of PREFERENCE_TARGETS) if (next[k] !== t[k]) handSet[k] = true;
+    const mode = macrosEdited ? 'manual' : (state.targets?.mode || 'manual');
+    recordTargetChange(state.targets);
+    state.targets = { ...next, handSet, mode, updatedAt: dateKey() };
     save();
     closeModal();
     render();
-    toast('Targets saved (manual mode)');
+    toast(mode === 'manual' ? 'Targets saved (manual mode)' : 'Targets saved — auto-adjust still on');
   });
 }
 
