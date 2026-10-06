@@ -1620,3 +1620,36 @@
 | Bioeconomy funding | S$118m total public funding for bio-based chemicals research; NCEB on NRF mid-sized grant of close to S$50m over 7 years from 2023; SG Bio-SPRINT S$22m | NUS/NRF, 5 Oct 2026 |
 | IMH long-stay population | median age 58; 83 patients aged 70+ | MOH via Straits Times, 5 Oct 2026 |
 | Vanguard Lorong Napiri facility | 257-bed nursing care home, 48-bed independent-living home, day care centre Q1 2027; 151 IMH long-stay residents plus 14 admitted since May 2026 | Vanguard Healthcare/MOH, 5 Oct 2026 |
+
+## Global data points (7 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent | US$100.58 (+0.26%) | 6 Oct 2026 close |
+| WTI | US$89.44 (+0.01%) | 6 Oct 2026 close |
+| S&P 500 | record close 7,818.93, +44.98 (+0.58%) | 6 Oct 2026 close |
+| US 10-year Treasury yield | 5.275% (-3.6bp), after touching above 5.3%, highest since 2002; 30-year 5.647% | 6 Oct 2026 close |
+| Iranian crude loadings | September the first month with none since tracking began in 2013; last loading 25 Aug 2026 | Kpler via CNN, 6 Oct 2026 |
+| Iranian oil outside US blockade zone | 10m barrels, down from 100m in July; onshore stocks ~70m barrels, near pandemic peak | Kpler via CNN, 6 Oct 2026 |
+| Iranian crude production | ~2m bpd, half pre-war level | Kpler via CNN, 6 Oct 2026 |
+| Iran GDP | contracted at a 10% annual rate Mar–Jun 2026 | Iranian government data via CNN, 6 Oct 2026 |
+| Iran inflation | 90% annual rate last month; 73% average over the past year — highest since WWII | CNN, 6 Oct 2026 |
+| VLCC day rate | S$2.05m (US$1.6m) a day, 24x the 2025 cost | Clarksons via CNN, 6 Oct 2026 |
+| US pump diesel | S$2.14/litre (US$6.32/US gallon) national average; record US$6.53 on 22 Sep; US$3.76 pre-war; federal duty US$0.244/gallon deferred to year-end | AAA/EIA via CNBC and CNN, 6 Oct 2026 |
+| DR Congo Ebola outbreak | ~8,400 cases, 4,000+ deaths in 2026 — fastest-growing Ebola outbreak on record; Bundibugyo strain, no licensed vaccine or treatment | DRC government data via Al Jazeera/AP, 6 Oct 2026 |
+| Ebola country spread | 4 countries: DR Congo, Uganda (20 cases), France (1), Kenya (1 case, 1 death) | Kenya MOH/WHO via AP, 6 Oct 2026 |
+| India electoral roll deletions | 130m+ names removed since 2025 under the Special Intensive Revision; a third of voters in one region | Semafor/NYT, 6 Oct 2026 |
+| France school protests | 250,000+ nationwide in 40+ cities; ~500 detained 6 Oct; 6,000+ in custody over recent weeks, mostly minors with no prior record | French interior ministry via NPR, 6 Oct 2026 |
+| Quebec election (5 Oct) | PQ 59 seats/28.02%, PLQ 40/24.22%, PCQ 19/20.67%, QS 9/12.43%, CAQ 0/13.35% of 127 seats; 64 needed for majority; turnout 66.9% | CBC/Élections Québec, 6 Oct 2026 |
+| Nobel physics prize 2026 | Francis Halzen, 82 (U. Wisconsin–Madison), sole laureate, for IceCube and the discovery of high-energy astrophysical neutrinos; IceCube = 5,160 sensors over 1 km³, completed 2011, US$271m NSF-funded | Royal Swedish Academy of Sciences, 6 Oct 2026 |
+| USD/SGD | 1.2807 (carried from 1 Oct 2026; no fresher rate found on 7 Oct) | exchange-rates.org, 1 Oct 2026 |
+
+## Singapore data points (7 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| MRT-property review | 191 officers in rail-planning agencies reviewed over 2007–2014 transactions; 8 cases referred to police | Chan Chun Sing in Parliament, 6 Oct 2026 |
+| President's salary | S$1,568,900 → S$2,568,200 a year (+~64%), effective 15 Oct 2026 | Parliament, 6 Oct 2026 |
+| Speaker's salary | S$550,000 → S$900,000 a year; Deputy Speakers S$135,000 a year | Parliament, 6 Oct 2026 |
+| Political office-holder bonuses, 2016–2025 | individual performance bonus 2.5–6 months; national bonus 0.75–5.63 months; NPAA 1 month; AVC typically ~1 month | Chan Chun Sing in Parliament, 6 Oct 2026 |
+| Proposed Pulau Tekong energy cluster | 200 hectares; ~6GW domestic generation and 2GW electricity imports via 3 sea corridors; third LNG terminal and hydrogen-ready gas plants; consultant by mid-2027, ~2-year study | EMA, 6 Oct 2026 |
+| Singapore energy mix | ~93% of energy from imported natural gas; second LNG terminal at Jurong Port due by end of the decade | EMA, 6 Oct 2026 |
+| Youths investigated over scams | more than 1,000 | MHA/Shanmugam in Parliament, 6 Oct 2026 |
