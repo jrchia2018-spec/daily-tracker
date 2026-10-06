@@ -66,16 +66,25 @@ export function gymKcal(minutes, weightKg) {
   return Math.round(((5 * 3.5 * (weightKg || 70)) / 200) * (minutes || 45));
 }
 
-// Resting burn before any movement — the user's chosen flat figure (8 Aug),
+// Resting burn before any movement — the owner's chosen flat figure (8 Aug),
 // close to their Mifflin-St Jeor BMR of ~1628. Flat on purpose so the daily
 // number is predictable; revisit if their weight moves materially.
-export const BASE_KCAL = 1600;
+const OWNER_BASE_KCAL = 1600;
+
+// A guest gets the same thing worked out from their own body — Mifflin-St Jeor
+// BMR at their latest weight, which is what the owner's 1600 approximates — so
+// a 50kg or 90kg friend isn't priced at the owner's resting burn.
+export function baseKcal() {
+  const p = state.profile;
+  if (state.owner || !p) return OWNER_BASE_KCAL;
+  return Math.round(bmr(p, latestWeight() || p.weightKg) / 10) * 10;
+}
 
 // Steps per km at a walking stride, used both to price steps and to work out
 // how many of the day's steps a logged run already accounts for.
 const STEPS_PER_KM = 1300;
 
-// Net cost of walking, i.e. ABOVE resting — resting is already in BASE_KCAL,
+// Net cost of walking, i.e. ABOVE resting — resting is already in baseKcal(),
 // so using a gross figure here (as most step trackers report) would double
 // count it. ~0.5 kcal per kg per km works out at ~0.0004 kcal per step per kg.
 export function stepKcal(steps, weightKg) {
@@ -111,12 +120,12 @@ export function walkingSteps(key) {
 // cost of missing incidental movement the watch would have caught.
 export function dailyBurn(key) {
   const w = latestWeight() || 70;
-  return BASE_KCAL + stepKcal(walkingSteps(key), w) + exerciseKcal(key);
+  return baseKcal() + stepKcal(walkingSteps(key), w) + exerciseKcal(key);
 }
 
 // Movement only, no resting — for the "burned" figure shown next to intake.
 export function activityKcal(key) {
-  return dailyBurn(key) - BASE_KCAL;
+  return dailyBurn(key) - baseKcal();
 }
 
 // Linear-regression weight trend in kg/day over entries within the last `days`.

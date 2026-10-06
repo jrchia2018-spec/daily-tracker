@@ -8,13 +8,14 @@ import {
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   recentlyCleared,
   supplementsFor, toggleSupplement, latestWaist, bodyChange, reconcileChia, hasOwnChia,
+  addCustomSupplement, removeCustomSupplement,
   PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc,
   weightTrend, runKcal, bmr,
-  BASE_KCAL, dailyBurn, activityKcal, walkingSteps, stepKcal, exerciseKcal,
+  baseKcal, dailyBurn, activityKcal, walkingSteps, stepKcal, exerciseKcal,
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
@@ -101,13 +102,47 @@ function downloadBackup() {
   save();
 }
 
-// Nudge when the data (localStorage-only, no cloud) hasn't been exported in
-// a month. 'never' once there's enough logged to be worth protecting.
+// A file left in Downloads dies with the phone, so a backup goes to the
+// phone's share menu instead — straight to Google Drive or a chat with
+// yourself. Android Chrome only shares an allowlist of file types and .json
+// isn't on it, so the same contents go as .txt there (Import takes both).
+// Where sharing files isn't supported, it downloads.
+// Only a completed backup is stamped; backing out of the menu changes nothing.
+async function backUp() {
+  const json = exportData();
+  if (navigator.canShare) {
+    for (const [ext, type] of [['json', 'application/json'], ['txt', 'text/plain']]) {
+      const file = new File([json], `tracker-backup-${dateKey()}.${ext}`, { type });
+      if (!navigator.canShare({ files: [file] })) continue;
+      try {
+        await navigator.share({ files: [file], title: 'Tracker backup' });
+      } catch (e) {
+        if (e.name === 'AbortError') return 'cancelled';
+        break; // refused for some other reason — fall through to a download
+      }
+      state.lastBackup = dateKey();
+      save();
+      return 'shared';
+    }
+  }
+  downloadBackup();
+  return 'downloaded';
+}
+
+async function backUpAndReport() {
+  const how = await backUp();
+  if (how === 'cancelled') return;
+  render();
+  toast(how === 'shared' ? 'Backed up 💾' : 'Saved to Downloads — copy it off this phone 💾');
+}
+
+// Nudge when the data (on this phone only, no cloud) hasn't been backed up in
+// a week. 'never' once there's enough logged to be worth protecting.
 function backupOverdue() {
   if (Object.keys(state.meals).length < 7) return null;
   if (!state.lastBackup) return 'never';
   const d = daysBetween(state.lastBackup, dateKey());
-  return d > 30 ? d : null;
+  return d > 7 ? d : null;
 }
 
 // ---------- theme ----------
@@ -227,7 +262,7 @@ function renderHome() {
 
   ${showNote ? `<div class="note">📈 ${esc(state.lastAutoNote)} <button class="btn ghost small" id="dismiss-note">Dismiss</button></div>` : ''}
 
-  ${backupOverdue() ? `<div class="note" style="background:rgba(255,176,84,.1);border-color:rgba(255,176,84,.3)">💾 ${backupOverdue() === 'never' ? 'No backup yet' : `Last backup ${backupOverdue()} days ago`} — your data lives only on this device. <button class="btn ghost small" id="backup-now">Export now</button></div>` : ''}
+  ${backupOverdue() ? `<div class="note" style="background:rgba(255,176,84,.1);border-color:rgba(255,176,84,.3)">💾 ${backupOverdue() === 'never' ? 'No backup yet' : `Last backup ${backupOverdue()} days ago`} — your data lives only on this phone. <button class="btn ghost small" id="backup-now">Back up now</button></div>` : ''}
 
   <div class="card">
     <div class="ring-wrap">
@@ -375,11 +410,7 @@ function renderHome() {
   view.querySelector('#dismiss-note')?.addEventListener('click', () => {
     state.lastAutoNote = null; save(); render();
   });
-  view.querySelector('#backup-now')?.addEventListener('click', () => {
-    downloadBackup();
-    render();
-    toast('Backup downloaded 💾');
-  });
+  view.querySelector('#backup-now')?.addEventListener('click', backUpAndReport);
 }
 
 // Sleep time entry: "7:41", "7h 41m", "7h41", "6.54", or decimal "7.5".
@@ -676,6 +707,45 @@ const SUPPLEMENTS = [
   { id: 'omega', label: 'Omega-3' },
 ];
 
+// The stack above is the owner's. A guest builds their own list instead.
+function supplementList() {
+  return state.owner ? SUPPLEMENTS : (state.suppList || []);
+}
+
+function openSuppListModal() {
+  const list = state.suppList || [];
+  const m = openModal(`
+    <h2>Your supplements</h2>
+    <p class="small muted" style="margin-bottom:6px">What you take regularly — ticked off each day on the Meals page. Removing one keeps the days you already ticked.</p>
+    ${list.length ? list.map(s => `
+      <div class="item">
+        <div><div class="title">${esc(s.label)}</div>${s.note ? `<div class="sub">${esc(s.note)}</div>` : ''}</div>
+        <button class="btn ghost small" data-supp-del="${s.id}">Remove</button>
+      </div>`).join('') : '<p class="small muted">Nothing on your list yet.</p>'}
+    <label class="field" style="margin-top:12px"><span>Name</span><input id="sl-label" maxlength="40" placeholder="e.g. Vitamin D"></label>
+    <label class="field"><span>Note (optional)</span><input id="sl-note" maxlength="40" placeholder="e.g. 1000 IU, with breakfast"></label>
+    <button class="btn primary block" id="sl-add">Add</button>
+    <button class="btn block" id="sl-done" style="margin-top:8px">Done</button>
+  `);
+  // Re-render the page underneath on every change, so closing the sheet any
+  // way (Done or tapping outside) leaves Meals already up to date.
+  m.querySelector('#sl-add').addEventListener('click', () => {
+    const label = m.querySelector('#sl-label').value.trim();
+    if (!label) { toast('Enter a name'); return; }
+    addCustomSupplement(label, m.querySelector('#sl-note').value.trim());
+    render();
+    openSuppListModal();
+  });
+  for (const b of m.querySelectorAll('[data-supp-del]')) {
+    b.addEventListener('click', () => {
+      removeCustomSupplement(b.dataset.suppDel);
+      render();
+      openSuppListModal();
+    });
+  }
+  m.querySelector('#sl-done').addEventListener('click', closeModal);
+}
+
 function renderMeals() {
   const t = targets(mealDate);
   const tot = mealTotals(mealDate);
@@ -736,20 +806,33 @@ function renderMeals() {
   })()}
 
   ${(() => {
+    const list = supplementList();
+    // A guest with nothing set up gets one quiet line, not an empty card —
+    // plenty of people take no supplements at all.
+    if (!list.length) return `
+  <div class="card">
+    <div class="row between">
+      <span class="small muted">💊 Supplements — tick off what you take each day</span>
+      <button class="btn small" id="supp-edit">Set up</button>
+    </div>
+  </div>`;
     const taken = supplementsFor(mealDate);
     // Count only ids still on the list — a retired one (e.g. psyllium, dropped
     // for chia) stays in old logs but must not inflate today's tally.
-    const n = taken.filter(id => SUPPLEMENTS.some(s => s.id === id)).length;
+    const n = taken.filter(id => list.some(s => s.id === id)).length;
     return `
   <div class="card">
     <div class="row between" style="margin-bottom:10px">
       <h2 style="margin:0">💊 Supplements</h2>
-      <span class="small ${n === SUPPLEMENTS.length ? '' : 'muted'}">${n}/${SUPPLEMENTS.length}</span>
+      <div class="row" style="gap:8px">
+        <span class="small ${n === list.length ? '' : 'muted'}">${n}/${list.length}</span>
+        ${state.owner ? '' : '<button class="btn ghost small" id="supp-edit">Edit</button>'}
+      </div>
     </div>
     <div class="supp-grid">
-      ${SUPPLEMENTS.map(s => `
+      ${list.map(s => `
         <button class="btn small ${taken.includes(s.id) ? 'primary' : ''}" data-supp="${s.id}">
-          ${taken.includes(s.id) ? '✓ ' : ''}${s.label}${s.note ? `<span class="supp-note">${s.note}</span>` : ''}
+          ${taken.includes(s.id) ? '✓ ' : ''}${esc(s.label)}${s.note ? `<span class="supp-note">${esc(s.note)}</span>` : ''}
         </button>`).join('')}
     </div>
   </div>`;
@@ -795,6 +878,7 @@ function renderMeals() {
   view.querySelector('#mw-500').addEventListener('click', () => { addWater(mealDate, 500); render(); toast(`💧 ${fmtWater(waterTotalFor(mealDate))}`); });
   view.querySelector('#mw-custom').addEventListener('click', () => openWaterModal(mealDate));
 
+  view.querySelector('#supp-edit')?.addEventListener('click', openSuppListModal);
   for (const b of view.querySelectorAll('[data-supp]')) {
     b.addEventListener('click', () => {
       const id = b.dataset.supp;
@@ -1617,7 +1701,7 @@ function weekReview(keys) {
 
 // Eaten vs burned across a week, per day and averaged.
 //
-// Burn is built from inputs the user controls: a flat resting BASE_KCAL, plus
+// Burn is built from inputs the user controls: a resting baseKcal(), plus
 // walking priced from their step count, plus logged workouts. Steps a run
 // already accounts for are deducted first, so a 5km run isn't paid twice.
 // (Replaced the watch's active-calorie figure on 8 Aug at their request.)
@@ -1632,7 +1716,7 @@ function weekReview(keys) {
 // never existed. An unmeasured day is now blank, not bad.
 function energyBalance(keys) {
   const today = dateKey();
-  const rest = BASE_KCAL;
+  const rest = baseKcal();
   const days = keys.map(k => {
     if (k > today) return null;
     const logged = mealsFor(k).length > 0;
@@ -1928,11 +2012,12 @@ function renderProgress() {
   <div class="card">
     <h2>Data</h2>
     <div class="row">
-      <button class="btn small" id="d-export">Export backup</button>
+      <button class="btn small primary" id="d-export">Back up…</button>
+      <button class="btn small" id="d-download">Download</button>
       <button class="btn small" id="d-import">Import</button>
-      <input id="d-file" type="file" accept=".json" class="hidden">
+      <input id="d-file" type="file" accept=".json,.txt,application/json,text/plain" class="hidden">
     </div>
-    <p class="small muted" style="margin-top:8px">Data lives on this device (browser storage). Export a backup before switching phones.${state.lastBackup ? ` Last backup: <b>${fmtDate(state.lastBackup)}</b>.` : ' <b>No backup yet.</b>'}</p>
+    <p class="small muted" style="margin-top:8px">Your data lives only on this phone. Back up weekly — send it to Google Drive or a chat with yourself, so it survives losing the phone. Import restores it on any phone.${state.lastBackup ? ` Last backup: <b>${fmtDate(state.lastBackup)}</b>.` : ' <b>No backup yet.</b>'}</p>
   </div>`;
 
   view.querySelector('#w-add').addEventListener('click', openWeightModal);
@@ -1947,7 +2032,8 @@ function renderProgress() {
     toast(note || 'Targets are already up to date');
   });
   view.querySelector('#p-edit').addEventListener('click', openProfileModal);
-  view.querySelector('#d-export').addEventListener('click', () => {
+  view.querySelector('#d-export').addEventListener('click', backUpAndReport);
+  view.querySelector('#d-download').addEventListener('click', () => {
     downloadBackup();
     render();
     toast('Backup downloaded 💾');

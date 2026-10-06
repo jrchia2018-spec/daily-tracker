@@ -82,19 +82,27 @@ if ($groot) {
     # accident, or by a sync propagating a deletion - the OneDrive copy must
     # survive it. That is the entire difference between a backup and a sync,
     # so do not "tidy up" this folder to match Drive.
+    #
+    # Exports arrive as .json (Download, or the share menu on iPhone) or .txt
+    # (the share menu on Android, which refuses to share .json files). Same
+    # contents either way; both are backups.
+    function Get-DataExports($dir) {
+        Get-ChildItem $dir -File -ErrorAction Stop |
+            Where-Object { $_.Name -like 'tracker-backup-*.json' -or $_.Name -like 'tracker-backup-*.txt' }
+    }
     try {
         New-Item -ItemType Directory -Force $dataDest | Out-Null
         $copied = 0; $already = 0
-        foreach ($f in Get-ChildItem $groot -Filter 'tracker-backup-*.json' -ErrorAction Stop) {
+        foreach ($f in Get-DataExports $groot) {
             $target = Join-Path $dataDest $f.Name
             if ((Test-Path $target) -and ((Get-Item $target).Length -eq $f.Length)) { $already++; continue }
             Copy-Item $f.FullName $target -Force
             $copied++
         }
-        $total = (Get-ChildItem $dataDest -Filter 'tracker-backup-*.json').Count
+        $total = @(Get-DataExports $dataDest).Count
         Write-Output "Data exports: $copied new, $already already held | $total total in $dataDest"
         if ($total -eq 0) {
-            Write-Warning "No data exports found. Export one from the app: Progress > Data > Export backup."
+            Write-Warning "No data exports found. Make one in the app: Progress > Data > Back up."
         }
     } catch {
         Write-Warning "Copying data exports FAILED: $($_.Exception.Message)"

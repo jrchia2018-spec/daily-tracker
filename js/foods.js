@@ -6,6 +6,7 @@
 
 import { SG_FOODS } from './foods-sg.js';
 import { MY_FOODS } from './foods-my.js';
+import { state } from './store.js';
 
 // `water` is g of drinkable fluid per 100g, set only for liquids (see the
 // note in foods-sg.js); solid foods leave it null and contribute nothing.
@@ -123,7 +124,11 @@ export const COMMON_FOODS = [
   F('Protein bar (typical)', 380, 33, 38, 12, 60, 10, 250),
 ];
 
-const BUILT_IN = [...COMMON_FOODS, ...SG_FOODS, ...MY_FOODS];
+// MY_FOODS is the owner's personal list (their portions, their brands), so a
+// guest searches the general databases only. Their own foods build up in the
+// "Saved" results as they log, the same way the owner's history does.
+const GENERAL = [...COMMON_FOODS, ...SG_FOODS];
+const WITH_MY_FOODS = [...GENERAL, ...MY_FOODS];
 
 // Local shorthand → the words actually used in dish names. Whole-word
 // matches only, longest phrase first, applied before tokenizing.
@@ -169,7 +174,7 @@ function expandAliases(q) {
 export function searchCommonFoods(query, limit = 8) {
   const tokens = expandAliases(query.toLowerCase()).split(/\s+/).filter(Boolean);
   if (!tokens.length) return [];
-  return BUILT_IN
+  return (state.owner ? WITH_MY_FOODS : GENERAL)
     .filter(f => {
       const n = f.name.toLowerCase();
       return tokens.every(t => n.includes(t));

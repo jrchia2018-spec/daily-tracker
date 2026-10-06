@@ -23,6 +23,8 @@ function defaults() {
     skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } } — LEGACY per-day counts, still read for days before the ledger starts
     lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
+    suppList: [],         // [ {id, label, note} ] — a guest's own supplement checklist; the owner's stack is fixed in app.js
+    owner: false,         // true only on the phone of the person this app was built for. See migrate() (ownerMark).
     plan: {},             // { 'YYYY-MM-DD': { am: kind, pm: kind, night: kind } } — the training plan, sparse. See the planner section below.
     migrations: {},       // { name: true } — one-time data corrections already applied. See migrate().
   };
@@ -103,6 +105,19 @@ function migrate(s) {
     s.migrations.chiaLink = true;
     changed = true;
   }
+
+  // Shared with friends from 6 Oct 2026. What's personal — the food list, the
+  // fixed supplement stack, the flat 1600 resting burn — belongs to the owner
+  // only. There are no accounts, so ownership is decided once, from the data:
+  // an install already holding logged data when this shipped is the owner's
+  // phone; a fresh install is a guest's. The flag travels in exports, so the
+  // owner restoring a backup on a new phone stays the owner, and an older
+  // backup (no flag, full of data) is recognised the same way on import.
+  if (!s.migrations.ownerMark) {
+    s.owner = !!(s.profile || Object.keys(s.meals || {}).length);
+    s.migrations.ownerMark = true;
+    changed = true;
+  }
   return changed;
 }
 
@@ -132,7 +147,10 @@ function reconcileChiaIn(s, key) {
   return changed;
 }
 
+// Owner only: chia is a fixed item on the owner's checklist. A guest's list is
+// their own, so their chia is just food.
 export function reconcileChia(key) {
+  if (!state.owner) return false;
   const changed = reconcileChiaIn(state, key);
   if (changed) save();
   return changed;
@@ -516,6 +534,19 @@ export function toggleSupplement(key, id) {
   const next = cur.includes(id) ? cur.filter(x => x !== id) : [...cur, id];
   if (next.length) state.supplements[key] = next;
   else delete state.supplements[key];
+  save();
+}
+
+// A guest's own checklist. Ids are fresh uids and never reused, so removing an
+// item leaves the days it was ticked pointing at nothing — the same way a
+// retired owner id (psyllium) stops rendering without rewriting history.
+export function addCustomSupplement(label, note) {
+  (state.suppList || (state.suppList = [])).push({ id: uid(), label, note: note || '' });
+  save();
+}
+
+export function removeCustomSupplement(id) {
+  state.suppList = (state.suppList || []).filter(s => s.id !== id);
   save();
 }
 
