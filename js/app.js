@@ -163,8 +163,11 @@ applyTheme(currentTheme());
 // ---------- render root ----------
 
 function render() {
+  // No tabs until set up — tapping one before then only led back here.
+  tabbar.classList.toggle('hidden', !state.profile);
   if (!state.profile) {
-    renderOnboarding();
+    if (!runningInstalled() && !installSkipped) renderInstall();
+    else renderOnboarding();
     return;
   }
   for (const b of tabbar.querySelectorAll('.tab')) {
@@ -172,6 +175,98 @@ function render() {
   }
   ({ home: renderHome, meals: renderMeals, train: renderTrain, progress: renderProgress, news: renderNews, skincare: renderSkincare }[tab])();
   window.scrollTo(0, 0);
+}
+
+// ---------- install ----------
+//
+// Shown before setup to anyone who opens the link in a browser tab. Mainly
+// for friends the link is shared with (from 6 Oct 2026), but it matters most
+// on iPhone: the home-screen app keeps its own data, separate from Safari's,
+// so someone who set up in Safari and then installed would start over empty.
+// Installing first is the only order that doesn't lose anything.
+
+// Opened from the home-screen icon rather than a browser tab.
+// navigator.standalone is iPhone Safari's own flag for it.
+function runningInstalled() {
+  return window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+}
+
+function phoneKind() {
+  const ua = navigator.userAgent;
+  // iPads report themselves as a Mac; touch support gives them away.
+  if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return 'ios';
+  if (/Android/.test(ua)) return 'android';
+  return 'other';
+}
+
+let installSkipped = false; // chose "use it in the browser" — this visit only
+let installPrompt = null;   // Chrome's one-tap install, when it offers one
+let installDone = false;
+
+// Chrome on Android announces the app is installable once, early in the page's
+// life, so listen from load. Re-render only the install screen: re-rendering
+// setup would wipe whatever they'd typed into it.
+window.addEventListener('beforeinstallprompt', e => {
+  if (state.profile) return; // already set up — leave Chrome's own prompt alone
+  e.preventDefault();
+  installPrompt = e;
+  if (view.querySelector('#install-screen')) renderInstall();
+});
+window.addEventListener('appinstalled', () => {
+  installPrompt = null;
+  installDone = true;
+  if (view.querySelector('#install-screen')) renderInstall();
+});
+
+function renderInstall() {
+  const kind = phoneKind();
+  const inAppHint = `<p class="small muted" style="margin-top:12px">Opened this from WhatsApp, Telegram or similar? Open the link in ${kind === 'ios' ? 'Safari' : 'Chrome'} first — apps' built-in browsers can't install it.</p>`;
+  const body = {
+    android: installDone ? `
+      <p>✅ Installed. Open <b>Tracker</b> from your home screen and set it up there.</p>` : `
+      ${installPrompt ? `<button class="btn primary block" id="in-install">📲 Install the app</button>
+      <p class="small muted center" style="margin:10px 0 0">or by hand:</p>` : ''}
+      <ol class="install-steps">
+        <li>Tap Chrome's menu <b>⋮</b> at the top right</li>
+        <li>Tap <b>Add to Home screen</b> (or <b>Install app</b>), then <b>Install</b></li>
+        <li>Open <b>Tracker</b> from your home screen and set it up there</li>
+      </ol>
+      <p class="small muted">Using another browser? Look for "Add to Home screen" or "Install" in its menu.</p>
+      ${inAppHint}`,
+    ios: `
+      <ol class="install-steps">
+        <li>Tap the <b>Share</b> button — the square with an arrow pointing up (bottom of Safari; top right in Chrome)</li>
+        <li>Scroll down, tap <b>Add to Home Screen</b>, then <b>Add</b></li>
+        <li>Open <b>Tracker</b> from your home screen and set it up <b>there</b></li>
+      </ol>
+      <div class="note">⚠️ Don't set it up in this browser tab. On iPhone the home-screen app keeps its own separate data, so nothing entered here carries over.</div>
+      ${inAppHint}`,
+    other: `
+      <p>It's made for your phone. Open this same link on your phone and it'll show you how to install it there.</p>`,
+  }[kind];
+
+  view.innerHTML = `
+  <div class="onboard" id="install-screen">
+    <div class="logo">⚡</div>
+    <h1 class="center">Daily Tracker</h1>
+    <p class="center muted" style="margin:6px 0 22px">Install it first — it takes 20 seconds, then it opens like a normal app and works offline.</p>
+    <div class="card">${body}</div>
+    <button class="btn ghost block" id="in-skip" style="margin-top:6px">${installDone ? 'Set up here instead' : 'Use it in the browser instead'}</button>
+    <p class="small muted center" style="margin-top:10px">Your data stays on your phone — no account, and nobody else can see it.</p>
+  </div>`;
+
+  view.querySelector('#in-install')?.addEventListener('click', async () => {
+    const p = installPrompt;
+    installPrompt = null;
+    p.prompt();
+    const { outcome } = await p.userChoice;
+    if (outcome === 'accepted') installDone = true;
+    renderInstall();
+  });
+  view.querySelector('#in-skip').addEventListener('click', () => {
+    installSkipped = true;
+    render();
+  });
 }
 
 // ---------- onboarding ----------

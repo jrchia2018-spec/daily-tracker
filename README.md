@@ -38,6 +38,8 @@ PWAs must be served over **HTTPS** to be installable, so host the folder on any 
 2. On **Android (Chrome)**: open the URL → menu (⋮) → *Add to Home screen* → *Install*.
 3. On **iPhone (Safari)**: open the URL → Share → *Add to Home Screen*.
 
+Opened in a browser before setup, the app shows these steps itself (tailored to Android or iPhone, with one-tap install where Chrome offers it) ahead of the setup questions.
+
 Data is stored per-device (localStorage). When you switch phones, use **Progress → Back up** on the old device and **Import** on the new one. On iPhone, add it to the Home Screen *before* logging anything and only use it from there — the Home Screen app and Safari keep separate data.
 
 ## Project layout
