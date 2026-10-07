@@ -1653,3 +1653,27 @@
 | Proposed Pulau Tekong energy cluster | 200 hectares; ~6GW domestic generation and 2GW electricity imports via 3 sea corridors; third LNG terminal and hydrogen-ready gas plants; consultant by mid-2027, ~2-year study | EMA, 6 Oct 2026 |
 | Singapore energy mix | ~93% of energy from imported natural gas; second LNG terminal at Jurong Port due by end of the decade | EMA, 6 Oct 2026 |
 | Youths investigated over scams | more than 1,000 | MHA/Shanmugam in Parliament, 6 Oct 2026 |
+
+## Global economic variables (8 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Saudi airport attacks | 3 killed, 36 injured across two airports: Abha Intl 6 Oct (2 dead — Moroccan and Algerian residents — 28 wounded), Riyadh King Khalid Intl 7 Oct (1 Sudanese resident dead, 8 wounded) | Saudi GACA, 7 Oct 2026 |
+| Mecca Joint Defence Agreement | signed Aug 2026 by Türkiye, Pakistan, Saudi Arabia; attack on one = attack on all; collective-defence implementation agreed 5 Oct; Turkish parliamentary ratification expected within days; Pakistani forces already stationed in the kingdom; 100+ US advisers on targeting | Reuters/CNN, 7 Oct 2026 |
+| Russia overnight barrage on Ukraine | 70 ballistic missiles and 46 jet-powered drones across 11 regions; >80% of drones downed (vs 50–60% recent average); ≥24 killed nationwide; Pryluky block: 19 dead incl. 5 children, ~30 flats destroyed, ~50 injured | Zelensky/Ukrainian air force, 7 Oct 2026 |
+| Irkutsk plague institute | monitoring complete for "over 90%" of the dead technician's contacts; ~5,000 laboratory tests, no dangerous pathogens found; WHO risk rating moved from "low" to undetermined | Rospotrebnadzor and WHO, 7 Oct 2026 |
+| Nobel chemistry prize 2026 | Henri B. Kagan (France) and Kenso Soai (Tokyo University of Science) for asymmetric catalysis and the spontaneous emergence of homochirality; 12m Swedish kronor (~US$1.2m) shared | Royal Swedish Academy of Sciences, 7 Oct 2026 |
+| US diesel, Los Angeles pumps | US$8.38 a US gallon ≈ S$2.84 a litre, against just over US$5 a gallon earlier in 2026 | CNN (LA-area stations), 7 Oct 2026 |
+| France education budget | €64bn (~S$96bn) in the budget proposal to be debated 12 Nov, a slight increase on last year; 488 detained at the 6 Oct school protests; 18 internal police investigations opened; >500 institutions shut 7 Oct, down 41% on 6 Oct | Lecornu/Nunez/French ministries, 7 Oct 2026 |
+| Thai egg exports | cut 30–50% until December after floods killed ~3m hens in Chachoengsao province | Thai Dept of Internal Trade, 6 Oct 2026 |
+| China–Laos facility | joint "support and training centre" opened 29 Sep at Ban Keun, ~50km north of Vientiane; 8 light attack aircraft (shape matching Hongdu JL-8) and 12+ military vehicles imaged; Laos operates 4 such aircraft per IISS | Vantor satellite imagery via Guardian/Reuters, 7 Oct 2026 |
+
+## Singapore data points (8 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Haze, 8 Oct | 24-hour PSI at 6am: west 161, central 147, east 128, south 120, north 113 — all five regions unhealthy, worst of the episode (central peaked 130 on 6 Oct, 102 on 4 Oct); 1-hour PM2.5 west hit 152 at 4pm 7 Oct, the season's first "high" band reading | NEA via CNA, 8 Oct 2026 |
+| Data centres | 70 in Singapore; about two-thirds cross the Digital Infrastructure Bill licensing thresholds (≥S$100m average annual revenue from Singapore users over 3 years, or ≥10MW electrical capacity); IMDA may fine up to S$1m or 10% of Singapore turnover | Parliament/IMDA, 7 Oct 2026 |
+| H1 2026 GDP growth, regional | Singapore 6.1%; Vietnam above 8%; Malaysia and Indonesia above 5%; ASEAN collectively the world's fourth-largest economy | Vivian Balakrishnan at Milken Institute Asia Summit, 7 Oct 2026 |
+| Egg supply | under 15% of Singapore's eggs come from Thailand; imports from more than 10 countries incl. Malaysia, Indonesia, Ukraine, plus local production; Cold Storage, Sheng Siong and FairPrice report no Thai fresh-egg sourcing or stable supply | SFA, 7 Oct 2026 |
+| COE premium, Cat A | S$130,001 at the close of the first October bidding round, down in most categories | LTA via Straits Times, 7 Oct 2026 |
+| MAS AI guidelines | published 7 Oct 2026, effective in phases from October 2027; further consultation on agentic AI planned for 2027 | MAS, 7 Oct 2026 |
+| SPED teacher attrition | about 1 in 10 special education teachers resigned 2021–2025, against about 1 in 50 mainstream educators | Desmond Lee in Parliament, 7 Oct 2026 |
