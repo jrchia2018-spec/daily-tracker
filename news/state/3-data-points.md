@@ -1677,3 +1677,25 @@
 | COE premium, Cat A | S$130,001 at the close of the first October bidding round, down in most categories | LTA via Straits Times, 7 Oct 2026 |
 | MAS AI guidelines | published 7 Oct 2026, effective in phases from October 2027; further consultation on agentic AI planned for 2027 | MAS, 7 Oct 2026 |
 | SPED teacher attrition | about 1 in 10 special education teachers resigned 2021–2025, against about 1 in 50 mainstream educators | Desmond Lee in Parliament, 7 Oct 2026 |
+
+## Global economic variables (9 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Oil, 8 Oct close | Brent US$104.28 (+4%, session high almost US$106, intraday jump >5%); WTI US$91.49 (+3.6%, high near US$93); heating oil +5% | NBC News/Reuters, 8 Oct 2026 |
+| US aircraft lost or damaged in Iran war | 81, up from 42 in the May version; about half MQ-9 Reapers, plus one F-35A and one E-3 Sentry; CBO costs equipment losses at US$1.9–3.3b through 1 Aug depending on replacement plans; excludes base infrastructure; CENTCOM puts total war cost through 3 Sep at US$43.6b | Congressional Research Service via CNN, 7 Oct 2026 |
+| Seafarer casualties since war began | at least 24 killed across 93 confirmed incidents | IMO via Reuters, 8 Oct 2026 |
+| Tanker Acers | Antigua and Barbuda-flagged oil/chemical tanker, laden, hit by multiple projectiles 94km (58 miles) north of Madinat ash Shamal off Qatar; casualties reported, no count; origin of projectiles unknown | UKMTO/Vanguard, 8 Oct 2026 |
+| US opinion on Iran war | 60% of Americans disapprove of Trump's handling, including one in four Republicans | Reuters/Ipsos, cited 8 Oct 2026 |
+| Kramatorsk bus strike | glide bomb, at least 33 dead, 18 injured (national police) or 22 (Donetsk governor); two dead unidentified; deadliest single strike of 2026, above 33 killed across Kyiv in a July barrage; public transport suspended in Kramatorsk and Sloviansk | Ukrainian police/Zelensky via CNN, 8 Oct 2026 |
+| OpenAI math release | 722 manuscripts in 372 result families (719 after 3 withdrawals) posted to github.com/openai/math on 6 Oct under Apache-2.0, from ~4,000 posed open problems; 235 of 372 families carry Lean formalisations; none peer reviewed; quasi-Riemann claim reported as no zeros above real part 7/8 (some sources 11/12) | OpenAI/Altman, change log 7 Oct 2026 |
+| Italy electoral law | passed lower house 227–164 on a secret ballot, last of four votes; 105 bonus seats (70 Chamber, 35 Senate) for the largest party or coalition clearing 42% in both chambers, up from 40% in earlier drafts; election due 2027 | Italian Chamber of Deputies via Reuters/NBC, 8 Oct 2026 |
+
+## Singapore data points (9 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| COE review | LTA consultation to merge Cat A and B into one passenger-car category with an OMV-keyed feebate; bands from percentile distribution of median OMVs, reviewed annually; three-band or five-band options, the five-band version adding S$7,500 rebate/surcharge steps; Cat E treatment also under consultation; closes 2 November, findings early 2027 | LTA via Straits Times, 8 Oct 2026 |
+| Haze, 9 Oct | 24-hour PSI unhealthy across the island overnight; 1-hour PM2.5 elevated in all five regions at 6.44am; NEA expects conditions may ease during 9 Oct | NEA via CNA/Straits Times, 9 Oct 2026 |
+| Johor schools | all state schools closed two days from 8 October on the Johor Regent's directive; assessments postponed | Johor state government via The Star, 8 Oct 2026 |
+| Indonesia haze suit | four plaintiffs incl. AMAN's Pontianak chapter against President Prabowo Subianto and nine other defendants for "gross negligence"; first hearing 7 Oct with no defendant present, adjourned to 21 Oct; seeks healthcare costs and a national-disaster declaration | Pontianak court filings via Reuters/The Sun, 8 Oct 2026 |
+| Crystal Jade restructuring | Kroll receiver since 29 Sep over Singapore and Hong Kong holding companies; 4 outlets closed 6 Oct (La Mian Xiao Long Bao at Bugis Junction, Toa Payoh, i12 Katong; Crystal Jade GO at Oasis Terraces); ~120 termination notices, ~210 staff and 9 outlets remaining; central kitchen closed 5 Oct, outside receivership; union/e2i identified 400+ openings | Kroll via Straits Times/Mothership, 7–8 Oct 2026 |
+| NSF death, Pulau Tekong | found unconscious ~1.22pm at the foot of a building at BMT School 3; airlifted to SGH arriving 2.05pm, pronounced dead 2.27pm; not involved in training at the time; police investigating a fall from height; age reported as 20 by Mothership, not given by MINDEF | MINDEF/police via Straits Times, 8 Oct 2026 |
