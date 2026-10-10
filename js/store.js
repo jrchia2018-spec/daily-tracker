@@ -1,5 +1,7 @@
 // Central app state, persisted to localStorage.
 
+import { HM_SESSIONS } from './hm-plan.js';
+
 const KEY = 'tracker.v1';
 
 function defaults() {
@@ -116,6 +118,24 @@ function migrate(s) {
   if (!s.migrations.ownerMark) {
     s.owner = !!(s.profile || Object.keys(s.meals || {}).length);
     s.migrations.ownerMark = true;
+    changed = true;
+  }
+
+  // The owner's half-marathon plan (11 Oct 2026), written into their planner
+  // once so every planner feature — logged ✓, missed !, moving a slot — works
+  // on it unchanged. Owner only (needs ownerMark above to have run first).
+  // Never backfills a past day, which would show sessions they never planned
+  // as missed, and never touches a day they've already planned themselves.
+  if (!s.migrations.hmPlan2027) {
+    if (s.owner) {
+      if (!s.plan) s.plan = {};
+      const today = dateKey();
+      for (const x of HM_SESSIONS) {
+        if (x.date < today || s.plan[x.date]) continue;
+        s.plan[x.date] = { [x.slot]: x.kind };
+      }
+    }
+    s.migrations.hmPlan2027 = true;
     changed = true;
   }
   return changed;

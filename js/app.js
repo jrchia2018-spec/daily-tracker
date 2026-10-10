@@ -19,6 +19,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
+import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmSessionsOn, hmTargets } from './hm-plan.js';
 
 const view = document.getElementById('view');
 const tabbar = document.getElementById('tabbar');
@@ -589,8 +590,15 @@ function daySuggestions(today) {
 // nothing is planned, so a rest day adds no clutter.
 function todayPlanCard(today) {
   const day = planFor(today);
+  // The owner's race plan writes out what each session actually is. Shown only
+  // while the slot still holds the kind the plan set — if they've changed it,
+  // the plan's description no longer applies.
+  const written = state.owner ? hmSessionsOn(today) : [];
   const rows = PLAN_SLOTS
-    .map(s => ({ slot: s, kind: planKind(day[s.id]), status: planSlotStatus(today, s.id) }))
+    .map(s => ({
+      slot: s, kind: planKind(day[s.id]), status: planSlotStatus(today, s.id),
+      text: written.find(x => x.kind === day[s.id])?.text,
+    }))
     .filter(r => r.kind);
   if (!rows.length) return '';
   const allDone = rows.every(r => r.status === 'done');
@@ -609,7 +617,9 @@ function todayPlanCard(today) {
         <span class="small" style="color:${r.status === 'done' ? 'var(--green)' : r.status === 'missed' ? 'var(--orange)' : 'var(--muted)'}">
           ${r.status === 'done' ? 'logged ✓' : r.status === 'missed' ? 'not logged' : 'to do'}
         </span>
-      </div>`).join('')}
+      </div>
+      ${r.text ? `<p class="small" style="margin:2px 0 8px">${esc(r.text)}</p>` : ''}
+      ${r.text && r.kind.id === 'run-hard' && r.status !== 'done' && !r.text.startsWith('🏁') ? '<p class="small muted" style="margin:0 0 8px">Under ~5 h sleep last night? Run it easy instead.</p>' : ''}`).join('')}
   </div>`;
 }
 
@@ -1403,6 +1413,11 @@ function renderPlan() {
   const today = dateKey();
   const counts = planCounts(week);
   const warnings = planWarnings(week);
+  // While the owner's race plan runs, the week's target is what that week of
+  // the plan asks for (2 gym, 3–4 runs, nothing in an off week) rather than
+  // the standing 3 + 3.
+  const hm = state.owner ? hmWeekOf(week[0]) : null;
+  const target = hm ? hmTargets(hm) : { gym: 3, run: 3 };
 
   const label = planWeekOffset === 0 ? 'This week'
     : planWeekOffset === 1 ? 'Next week'
@@ -1440,15 +1455,17 @@ function renderPlan() {
       `).join('')}
     </div>
 
+    ${hm && !target.gym && !target.run ? `<p class="small muted" style="margin:12px 0 0">Off week in the race plan — nothing to hit.</p>` : `
     <div class="row between" style="margin-top:12px">
-      <span class="small ${counts.gym === 3 ? '' : 'muted'}">🏋️ <b style="color:${counts.gym === 3 ? 'var(--green)' : 'var(--text)'}">${counts.gym}</b>/3 gym</span>
-      <span class="small ${counts.run === 3 ? '' : 'muted'}">🏃 <b style="color:${counts.run === 3 ? 'var(--green)' : 'var(--text)'}">${counts.run}</b>/3 runs</span>
-    </div>
+      <span class="small ${counts.gym === target.gym ? '' : 'muted'}">🏋️ <b style="color:${counts.gym === target.gym ? 'var(--green)' : 'var(--text)'}">${counts.gym}</b>/${target.gym} gym</span>
+      <span class="small ${counts.run === target.run ? '' : 'muted'}">🏃 <b style="color:${counts.run === target.run ? 'var(--green)' : 'var(--text)'}">${counts.run}</b>/${target.run} runs</span>
+    </div>`}
     ${warnings.length ? `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)">
       ${warnings.map(w => `<p class="small" style="color:var(--orange);margin:0 0 6px">⚠️ ${w}</p>`).join('')}
     </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
     <p class="small muted" style="margin:10px 0 0">Tap any slot to set or change it. ✓ means it was logged, <b>!</b> means the day passed without it — tap to move it.</p>
-  </div>`;
+  </div>
+  ${state.owner && today <= HM_RACE ? hmPlanCard(hm, week, today) : ''}`;
 
   body.querySelector('#pw-prev').addEventListener('click', () => { planWeekOffset--; render(); });
   body.querySelector('#pw-next').addEventListener('click', () => { planWeekOffset++; render(); });
@@ -1458,6 +1475,43 @@ function renderPlan() {
       openPlanModal(k, slot);
     });
   }
+}
+
+// The race plan written out for the week on screen: what each session is,
+// the week's note, and the paces and rules one tap away. Owner only.
+function hmPlanCard(hm, week, today) {
+  const toGo = daysBetween(today, HM_RACE);
+  const header = `
+    <div class="row between" style="margin-bottom:2px">
+      <h2 style="margin:0">🏁 ${HM_TITLE}</h2>
+      <span class="small muted">${toGo === 0 ? 'Race day!' : `${toGo} day${toGo === 1 ? '' : 's'} to go`}</span>
+    </div>
+    <p class="small muted" style="margin:0 0 8px">${HM_GOAL}</p>`;
+  const reference = `
+    <details style="margin-top:10px">
+      <summary class="small" style="cursor:pointer;color:var(--accent);font-weight:600">Paces &amp; rules</summary>
+      <div style="margin-top:8px">
+        ${HM_PACES.map(([z, p]) => `<div class="row between small" style="padding:3px 0"><span class="muted">${z}</span><b>${p}</b></div>`).join('')}
+        ${HM_RULES.map(r => `<p class="small" style="margin:8px 0 0">• ${esc(r)}</p>`).join('')}
+      </div>
+    </details>`;
+  if (!hm) {
+    return `<div class="card">${header}<p class="small muted">${week[0] < '2026-10-12' ? 'The plan starts Monday 12 Oct.' : 'Outside the plan.'}</p>${reference}</div>`;
+  }
+  const dayName = d => fmtDate(d).slice(0, 3);
+  const rows = week.flatMap(k => hmSessionsOn(k).map(s => ({ k, s })));
+  return `
+  <div class="card">
+    ${header}
+    <p class="small" style="margin:0 0 8px"><b>Week ${hm.n} of 23 · ${hm.phase}</b></p>
+    ${hm.note ? `<p class="small" style="margin:0 0 8px">${esc(hm.note)}</p>` : ''}
+    ${rows.map(({ k, s }) => `
+      <div class="item" style="align-items:flex-start;padding:8px 0">
+        <span class="small" style="min-width:34px;${k === today ? 'font-weight:700;color:var(--accent)' : 'color:var(--muted)'}">${dayName(k)}</span>
+        <span class="small" style="flex:1">${s.kind.startsWith('run') ? '🏃' : '🏋️'} ${esc(s.text)}</span>
+      </div>`).join('')}
+    ${reference}
+  </div>`;
 }
 
 function openPlanModal(key, slot) {
