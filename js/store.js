@@ -24,6 +24,7 @@ function defaults() {
     skincareStart: null,  // 'YYYY-MM-DD' — day 0 of the 8-week hold routine, or null
     skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } } — LEGACY per-day counts, still read for days before the ledger starts
     lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
+    forgotten: {},        // { 'food name, lowercased': ms } — saved foods no longer suggested. See forgetFood().
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
     suppList: [],         // [ {id, label, note} ] — a guest's own supplement checklist; the owner's stack is fixed in app.js
     owner: false,         // true only on the phone of the person this app was built for. See migrate() (ownerMark).
@@ -295,13 +296,42 @@ function oneServingOf(m) {
 
 export function loggedFoods() {
   const byName = new Map();
+  const newest = new Map(); // name → when its most recent entry was created
   for (const date of Object.keys(state.meals).sort()) { // ascending: later wins
     for (const m of state.meals[date]) {
       if (!m.name || m.name === 'Quick add') continue;
-      byName.set(m.name.toLowerCase(), { ...oneServingOf(m), lastDate: date });
+      const k = m.name.toLowerCase();
+      byName.set(k, { ...oneServingOf(m), lastDate: date });
+      newest.set(k, Math.max(newest.get(k) || 0, createdAt(m)));
     }
   }
-  return [...byName.values()];
+  return [...byName.entries()].filter(([k]) => !isForgotten(k, newest.get(k))).map(([, f]) => f);
+}
+
+// ---- forgetting a saved food (11 Oct 2026) ----
+//
+// Every food ever logged stays a suggestion forever, so one-off names (the
+// owner's "8 chicken nuggets"-style multipacks) cluttered search and no repo
+// edit could reach them — they live in the phone's history. Forgetting hides
+// a name from Saved and Frequent without touching a single logged day.
+// Logging it again brings it back: they're evidently eating it again.
+
+// When an entry was created, from its id (uid() starts with Date.now() in
+// base 36). Editing an entry keeps its id, so only a NEW log counts.
+export function createdAt(m) {
+  const t = parseInt(String(m.id || '').slice(0, 8), 36);
+  return Number.isFinite(t) ? t : 0;
+}
+
+export function isForgotten(name, newestCreated) {
+  const at = state.forgotten?.[name.toLowerCase()];
+  return at != null && !(newestCreated > at);
+}
+
+export function forgetFood(name) {
+  if (!state.forgotten) state.forgotten = {};
+  state.forgotten[name.toLowerCase()] = Date.now();
+  save();
 }
 
 export function runsOn(key) {

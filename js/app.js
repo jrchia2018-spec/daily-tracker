@@ -2,8 +2,8 @@ import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys, daysBetween,
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
-  foodWaterFor, waterTotalFor, loggedFoods,
-  skincareFor, skincareProgram, skincareWeek, bumpSkincareArea,
+  foodWaterFor, waterTotalFor, loggedFoods, createdAt, isForgotten, forgetFood,
+  skincareFor, bumpSkincareArea,
   activeLesionsOn, activeCountOn, newOnDate, newAreasOn,
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   recentlyCleared,
@@ -109,22 +109,32 @@ function downloadBackup() {
 // isn't on it, so the same contents go as .txt there (Import takes both).
 // Where sharing files isn't supported, it downloads.
 // Only a completed backup is stamped; backing out of the menu changes nothing.
+//
+// On the owner's Android phone (11 Oct 2026) the share menu never opened and
+// it fell back to a download — cause unknown from here. So every attempt
+// records how it went and why (state.backupVia), which travels inside the
+// next backup file: the fallback can then be diagnosed from real data.
 async function backUp() {
-  const json = exportData();
-  if (navigator.canShare) {
+  const via = reason => { state.backupVia = { date: dateKey(), reason, ua: navigator.userAgent.slice(0, 160) }; };
+  if (!navigator.canShare) via('no share support');
+  else {
+    const tried = [];
     for (const [ext, type] of [['json', 'application/json'], ['txt', 'text/plain']]) {
-      const file = new File([json], `tracker-backup-${dateKey()}.${ext}`, { type });
-      if (!navigator.canShare({ files: [file] })) continue;
+      via(`sharing ${ext}`); // recorded BEFORE exporting, so the shared file itself says how it was sent
+      const file = new File([exportData()], `tracker-backup-${dateKey()}.${ext}`, { type });
+      if (!navigator.canShare({ files: [file] })) { tried.push(`${ext} not shareable`); continue; }
       try {
         await navigator.share({ files: [file], title: 'Tracker backup' });
       } catch (e) {
         if (e.name === 'AbortError') return 'cancelled';
+        tried.push(`${ext} share failed: ${e.name}: ${e.message}`);
         break; // refused for some other reason — fall through to a download
       }
       state.lastBackup = dateKey();
       save();
       return 'shared';
     }
+    via(tried.join('; '));
   }
   downloadBackup();
   return 'downloaded';
@@ -750,13 +760,16 @@ function frequentFoods(limit = 8) {
     for (const m of list) {
       if (!m.name || m.name === 'Quick add') continue;
       const k = m.name.toLowerCase();
-      const e = byName.get(k) || { count: 0, last: null, lastDate: '' };
+      const e = byName.get(k) || { count: 0, last: null, lastDate: '', newest: 0 };
       e.count++;
       if (date >= e.lastDate) { e.lastDate = date; e.last = m; }
+      e.newest = Math.max(e.newest, createdAt(m));
       byName.set(k, e);
     }
   }
-  return [...byName.values()]
+  return [...byName.entries()]
+    .filter(([k, e]) => !isForgotten(k, e.newest))
+    .map(([, e]) => e)
     .sort((a, b) => b.count - a.count || b.lastDate.localeCompare(a.lastDate))
     .slice(0, limit)
     .map(e => ({ ...e.last, count: e.count }));
@@ -1108,6 +1121,7 @@ function renderMeals() {
           kcal: f.kcal, protein: f.protein, carbs: f.carbs, fat: f.fat,
           fibre: f.fibre, sodium: f.sodium, water: f.water,
           serving: f.grams ? `${f.grams} g` : '',
+          saved: true,
         });
       });
     }
@@ -1300,9 +1314,17 @@ function openFoodModal(result, existing = null) {
       <button class="btn primary block" id="f-save">${existing ? 'Save changes' : 'Add to log'}</button>
     </div>
     ${existing ? '<button class="btn danger block" id="f-del" style="margin-top:8px">Delete entry</button>' : ''}
+    ${!existing && result?.saved ? `<button class="btn ghost block" id="f-forget" style="margin-top:8px">Forget this saved food</button>
+    <p class="small muted center" style="margin:4px 0 0">Stops suggesting it in Saved and Frequent. Days you've logged keep it, and logging it again brings it back.</p>` : ''}
   `);
 
   const $f = id => m.querySelector('#' + id);
+  $f('f-forget')?.addEventListener('click', () => {
+    forgetFood(result.name);
+    closeModal();
+    render();
+    toast(`Forgot "${result.name}"`);
+  });
   if (per100) {
     $f('f-grams').addEventListener('input', () => {
       const g = Number($f('f-grams').value) || 0;
@@ -2451,9 +2473,12 @@ function openClearedModal(id) {
   });
 }
 
+// Kept across re-renders: every +/− in the tracker re-renders the page, and a
+// collapsing section after each tap would make it unusable.
+let skinTrackerOpen = false;
+
 function renderSkincare() {
   const today = dateKey();
-  const prog = skincareProgram();
   const tonight = SKIN_NIGHT[parseKey(today).getDay()];
   const sc = skincareFor(today);
   const areasToday = newAreasOn(today);        // { areaId: count }
@@ -2468,14 +2493,6 @@ function renderSkincare() {
   const setupMode = !started || ledgerStart() === today;
   const li = steps => steps.map(s => `<li${s.aside ? ' class="skin-aside"' : ''}>${s.t}</li>`).join('');
 
-  // Header: start button before day 0; week/day counter after.
-  const header = prog
-    ? `<span class="badge ${prog.done ? 'green' : ''}">${prog.done ? 'Hold complete' : `Week ${prog.week} of 8`}</span>`
-    : `<span class="badge orange">Not started</span>`;
-  const dayLine = prog
-    ? `Day ${prog.dayNum} · ${prog.done ? '8-week hold finished' : `week ${prog.week}, day ${prog.dayOfWeek} of 7`}`
-    : '8-week hold routine';
-
   // Evening variants, tonight's pick highlighted.
   const variant = (kind, prefix, text) => `
     <div class="${tonight === kind ? 'skin-tonight' : ''}">
@@ -2485,44 +2502,17 @@ function renderSkincare() {
   // makes it carry from day to day without re-entry.
   const count = activeCountOn(today);
   const cleared = recentlyCleared(14);
-  let weekBlock = '';
-  if (prog) {
-    const rows = [];
-    for (let w = 0; w <= prog.weekIndex; w++) {
-      const s = skincareWeek(w);
-      const spots = SKIN_AREAS.filter(a => s.areas[a.id])
-        .map(a => `${a.label.toLowerCase()} ${s.areas[a.id]}`).join(' · ');
-      rows.push(`
-      <div style="font-size:13px;padding:6px 0;border-top:1px solid var(--line)">
-        <div class="row between">
-          <span class="muted">Week ${w + 1}${w === prog.weekIndex ? ' <span style="color:var(--accent)">· now</span>' : ''}</span>
-          <span><b>${s.newTotal}</b> new on <b>${s.newDays}</b>/${s.daysLogged} logged${s.daysLogged < s.daysElapsed ? ` <span class="muted">(of ${s.daysElapsed})</span>` : ''}${s.avg != null ? ` · avg <b>${s.avg}</b>` : ''}</span>
-        </div>
-        ${s.cleared ? `<div style="font-size:12px;margin-top:2px;color:var(--green)"><b>${s.cleared}</b> cleared${s.avgDaysToClear != null ? ` · lasted <b>${s.avgDaysToClear + 1}</b> day${s.avgDaysToClear ? 's' : ''} on average` : ' <span class="muted">(started before tracking, so no duration)</span>'}</div>` : ''}
-        ${spots ? `<div class="muted" style="font-size:12px;margin-top:2px">${spots}</div>` : ''}
-      </div>`);
-    }
-    weekBlock = `<div style="margin-top:14px">
-      <div class="small muted" style="margin-bottom:2px">By week</div>${rows.join('')}</div>`;
-  } else {
-    weekBlock = `<p class="small muted" style="margin-top:12px">Start day 0 to track new-lesion days by week.</p>`;
-  }
 
-  view.innerHTML = `
-  <div class="row between" style="margin-bottom:14px">
-    <div><h1>Skincare</h1><div class="muted small">${dayLine}</div></div>
-    ${header}
-  </div>
-
-  ${prog
-    ? `<div class="row" style="gap:8px;margin-bottom:14px"><button class="btn small" id="skin-reset">Reset day 0</button></div>`
-    : `<button class="btn primary block" id="skin-start" style="margin-bottom:14px">Start day 0 today</button>`}
-
-  <div class="card">
-    <div class="row between" style="margin-bottom:4px">
-      <h2 style="margin:0">🔎 Whiteheads</h2>
-      <span class="small muted">${today === dateKey() ? 'Today' : fmtDate(today)}</span>
-    </div>
+  // The 8-week observation hold ended 19 Sep 2026 and the owner isn't on an
+  // observation period now (11 Oct), so the page is the routine itself. The
+  // spot tracker stays available — collapsed, optional — and keeps all its
+  // data; the hold's week counter, day-0 controls and weekly rollup are gone.
+  const tracker = `
+  <details class="card" id="skin-tracker" ${skinTrackerOpen ? 'open' : ''}>
+    <summary class="row between" style="cursor:pointer;list-style:none">
+      <h2 style="margin:0">🔎 Spot tracker</h2>
+      <span class="small muted">${count ? `${count} active · ` : ''}optional</span>
+    </summary>
     <div style="margin:12px 0 4px">
       <div class="small muted" style="margin-bottom:8px"><b>New</b> spots today — count them per area:</div>
       ${SKIN_AREAS.map(a => {
@@ -2586,8 +2576,10 @@ function renderSkincare() {
         }).join('')}
       </div>` : ''}
     </div>
-    ${weekBlock}
-  </div>
+  </details>`;
+
+  view.innerHTML = `
+  <div style="margin-bottom:14px"><h1>Skincare</h1><div class="muted small">Daily routine</div></div>
 
   <div class="card">
     <h2>🏃 Morning — training days</h2>
@@ -2618,6 +2610,7 @@ function renderSkincare() {
     <ol class="skin-list">${li([
       { t: 'TO Squalane Cleanser (oil cleanse)' },
       { t: 'CeraVe Foaming Cleanser' },
+      { t: 'TO Niacinamide 10% + Zinc' }, // back in the routine from Oct 2026
       { t: 'CeraVe PM Lotion' },
       { t: `Tonight (${fmtDate(today).slice(0, 3)}): ${SKIN_NIGHT_TEXT[tonight]}`, aside: true },
     ])}</ol>
@@ -2632,15 +2625,12 @@ function renderSkincare() {
     <h2>📅 Weekly</h2>
     <ul class="skin-list">
       <li>Innisfree Clay Mask ×1, T-zone only, on a non-BHA night — <span class="muted">optional</span></li>
-      <li>Photos: nose, left 45°, right 45°</li>
-      <li>Log whitehead count and new-lesion days</li>
     </ul>
   </div>
 
   <div class="card">
-    <div class="small muted" style="margin-bottom:8px">Held out for the full 8 weeks</div>
+    <div class="small muted" style="margin-bottom:8px">Not in the routine right now</div>
     <div class="skin-hold">
-      TO Niacinamide 10% + Zinc<br>
       TO Salicylic Acid 2%<br>
       Farmacy 10% Niacinamide Night Mask<br>
       BYOMA Gel Cream<br>
@@ -2649,14 +2639,9 @@ function renderSkincare() {
     </div>
   </div>
 
-  <div class="card">
-    <div class="small muted" style="margin-bottom:8px">Buy before day 0</div>
-    <div class="skin-hold">
-      CeraVe Foaming Cleanser 236ml <span class="muted">— SGD ~$25–30</span><br>
-      Skin1004 Water-Fit Sun Serum <span class="muted">— SGD ~$25</span>
-    </div>
-    <div class="note" style="margin:12px 0 0">Day 0 is the first morning the routine above runs complete. Baseline photos that evening, after cleansing, patted dry, 10 minutes' wait, before any product. Same room, same artificial light, same distance, every week.</div>
-  </div>`;
+  ${tracker}`;
+
+  view.querySelector('#skin-tracker').addEventListener('toggle', e => { skinTrackerOpen = e.target.open; });
 
   for (const b of view.querySelectorAll('[data-clear]')) {
     b.addEventListener('click', () => { resolveLesion(b.dataset.clear, today); render(); toast('Marked gone ✨'); });
@@ -2673,27 +2658,6 @@ function renderSkincare() {
   for (const b of view.querySelectorAll('[data-area-dec]')) {
     b.addEventListener('click', () => { bumpSkincareArea(today, b.dataset.areaDec, -1); render(); });
   }
-  view.querySelector('#skin-start')?.addEventListener('click', () => {
-    state.skincareStart = today;
-    save();
-    render();
-    toast('Day 0 set — 8-week hold started 🧴');
-  });
-  view.querySelector('#skin-reset')?.addEventListener('click', () => {
-    const m = openModal(`
-      <h2>Reset day 0?</h2>
-      <p class="small muted" style="margin-bottom:14px">This clears your start date and the week counter. Your logged whitehead counts stay. You can start again anytime.</p>
-      <button class="btn danger block" id="sr-yes">Reset day 0</button>
-      <button class="btn block" id="sr-no" style="margin-top:8px">Keep it</button>`);
-    m.querySelector('#sr-yes').addEventListener('click', () => {
-      state.skincareStart = null;
-      save();
-      closeModal();
-      render();
-      toast('Day 0 cleared');
-    });
-    m.querySelector('#sr-no').addEventListener('click', closeModal);
-  });
 }
 
 function renderNews() {
