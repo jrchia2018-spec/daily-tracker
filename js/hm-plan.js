@@ -1,7 +1,8 @@
 // The owner's half-marathon plan: sub-1:50 on Sun 21 Mar 2027.
 //
-// Source: "Half Marathon Plan — Sub-1 50 (21 Mar 2027).docx" (8 Oct 2026),
-// with the changes agreed on 11 Oct 2026 folded in:
+// This file IS the plan — the single source of truth since 11 Oct 2026. It
+// began as an outside 8 Oct document, now retired at the owner's request, with
+// the changes agreed on 11 Oct 2026 folded in:
 //   - a quad move (split squats) added to Wednesday's lower-body block
 //   - 2 Nov's 5×800m swapped for threshold work — the plan's own diagnosis is
 //     that endurance, not speed, is the limiter
