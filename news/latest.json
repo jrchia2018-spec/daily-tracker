@@ -1,120 +1,112 @@
 {
  "schema": 1,
- "date": "2026-10-10",
- "generatedAt": "2026-10-10T07:15:49+08:00",
+ "date": "2026-10-11",
+ "generatedAt": "2026-10-11T07:48:00+08:00",
  "coverage": {
-  "from": "2026-10-09T07:00:00+08:00",
-  "to": "2026-10-10T07:00:00+08:00",
-  "label": "Friday 9 October 2026, 0700 SGT → Saturday 10 October 2026, 0700 SGT"
+  "from": "2026-10-10T07:00:00+08:00",
+  "to": "2026-10-11T07:00:00+08:00",
+  "label": "Saturday 10 October 2026, 0700 SGT → Sunday 11 October 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "A SAUDIA CAPTAIN AMONG THREE KILLED AT RIYADH'S AIRPORT, AND THE HOUTHIS NOW SAY WHO MAY FLY OVER SAUDI ARABIA",
+   "headline": "RIYADH'S AIRPORT IS HIT A THIRD TIME, TWELVE DEAD AND 309 WOUNDED, AND TRUMP SAYS WASHINGTON \"MAY\" JOIN THE SAUDI WAR",
    "breaking": true,
    "summary": [
-    "Saudi Arabia's civil aviation authority named the dead from the strikes on King Khalid International: a Saudia captain and two other Saudi nationals, with several people of other nationalities wounded and a parked Saudia aircraft damaged. The airport reopened on 9 October and Saudi media reported air traffic back to normal, after Flightradar24 logged 114 delayed departures on 8 October — 29% of scheduled services.",
-    "The Houthis warned airlines that any aircraft in Saudi airspace is a target except over Mecca and Medina, and said humanitarian flights into Riyadh would need their authorisation. Air India and Air India Express suspended Riyadh services through 10 October and Lufthansa stood down; Britain, France, Germany, Australia and Canada advised against travel to parts of the kingdom. No Iranian statement arrived in the window: the answer Araghchi promised within days has not come, and the US pause on strikes until 3 November held."
+    "Saudi Arabia's civil aviation authority said the third strike this week on King Khalid International killed at least twelve and wounded 309 on Saturday: four Saudis, two Bangladeshis, and one national each from the United States, Jordan, Palestine, Syria, Sudan and Egypt. Two Western officials told Reuters the toll is not final and some wounded are critical. No alert was issued by the kingdom's threat-warning system.",
+    "Operations at the kingdom's busiest airport, serving about 8 million people, were suspended and Flightradar24 showed every Riyadh flight diverted or cancelled, with Kuwait Airways, Etihad and Qatar Airways cancellations into Monday. Nobody claimed it, but the Houthis claimed the week's two earlier strikes, and afterwards their military spokesman reposted his own warning that only pre-approved humanitarian flights may land, adding \"a reminder.\" A projectile also fell near Dammam's King Fahd International, the alternative the capital's traffic has been shifting to. Asked whether Washington would join Saudi strikes on the Houthis, Trump said: \"We may. We're going to look at it... We move very quickly.\" Separately the Pentagon raised the official Iran-war toll to 21 dead and 865 wounded through 9 October — 15 and 417 under Operation Epic Fury, six and 448 under the backdated \"overseas operations\" category — adding a March death in Kuwait and a Navy suicide in September."
    ],
-   "geopolitical": "A non-state actor is now issuing permissions for civil aviation over a G20 state — the same licensing power Iran took over Hormuz shipping, transferred to the air, and the Mecca pact's new guarantors have no answer to it.",
-   "socioeconomic": "Carriers leaving the route and five governments warning their nationals off price Saudi airspace as a war zone, which reaches Umrah traffic, expatriate rotations and every Aramco contractor flying in."
+   "geopolitical": "\"We may\" is the first opening Trump has left to joining the Yemen war, after refusing Riyadh twice in September and offering only intelligence and targeting — and it comes while his published pause on striking Iran runs to 3 November. Fighting the proxy while honouring a truce with its sponsor is the needle he is now threading.",
+   "socioeconomic": "An airport that cannot be defended three times in a week prices Saudi airspace as war risk rather than exception: carriers are cancelling into Monday, days before the kingdom's flagship energy and investment conferences, whose organisers said they would proceed."
   },
   {
-   "headline": "TRUMP LIFTS DIESEL SANCTIONS ON RUSSIA FOR RUSSIAN FUEL, AND KYIV CALLS IT A BIRTHDAY PRESENT",
+   "headline": "TRUMP TELLS UKRAINE TO \"GET A NEW LEADER\" AS HIS RUSSIAN DIESEL DEAL SPLITS HIS OWN PARTY",
    "breaking": true,
    "summary": [
-    "Trump posted that Russia will immediately supply over 300,000 tons of diesel to the American and global market, another 500,000 tons during November and 1,000,000 tons immediately after, with a further 3m tons depending on the state of Russia's refineries. Treasury's OFAC issued General License 135 the same day, permitting the sale and import of Russian diesel, including into the United States, until 7 April 2027 — the first diesel relief to run beyond the standard 30-day window since the invasion began.",
-    "Zelensky told Axios the deal was “not fair and not honest” and looked like a birthday present for Putin, who turned 74 on 7 October, and said neither Witkoff nor Kushner raised a diesel deal in their talks with him. Russia has banned diesel exports since July because Ukrainian strikes on its refineries left it short at home, and critics question how much it can actually ship. New York diesel futures fell to about S$1.58 a litre (US$4.67 a gallon) on the post; US pump diesel still averages S$2.11 a litre (US$6.23 a gallon) against a record US$6.52 on 22 September. Brent traded around US$104, off 0.3%, and WTI touched US$90 before giving back most of its rally."
+    "A day after announcing Putin would supply global markets with Russian diesel, Trump turned on the president who objected: \"I suggest they get a new leader who can make a deal\", accusing Zelensky of hitting Russian refineries because he \"wants to make problems for the world.\" Zelensky had called the deal \"a weak decision of strong partners\" and \"an investment in a war that must be ended, not prolonged\", struck while his delegation sat with Steve Witkoff and Jared Kushner in Miami. A US official said Washington had repeatedly asked Kyiv to stop the refinery strikes, to no effect, and that the envoys told the Ukrainians on Friday that Trump wanted them stopped and would let Russia sell.",
+    "The volumes are smaller than they sound: 300,000 tons now plus 500,000 in November is about 6 million barrels, roughly a day and a half of US demand on EIA figures, against the 800,000 barrels a day Russia's own July export ban removed. Pickering Energy Partners called it a 5–6% supply increase to year-end, \"helpful but not a needle mover\"; diesel futures closed down about 4% on Friday. Republicans broke publicly: Don Bacon and Michael McCaul said buying Russian fuel funds Moscow's war and cuts against the Lindsey O. Graham Sanctioning Russia and Iran Act of 2026, passed weeks ago; Mike Pence called it a betrayal of the late senator's legacy. Meanwhile five Russian glide bombs hit residential blocks in Zaporizhzhia early Saturday: interior minister Ivan Vyhivskyi counted 15 dead including three children, 17 injured and 11 unaccounted for; local authorities put the regional toll at 20, and Sunday was declared a day of mourning."
    ],
-   "geopolitical": "Sanctions relief has been traded for barrels rather than for anything in Ukraine, which tells Moscow that the pressure is priced in fuel and tells Kyiv its leverage in Washington is a pump price.",
-   "socioeconomic": "Diesel sets the cost of freight, farming and construction everywhere, so a licence good to April 2027 is aimed squarely at the cost of living three weeks before the midterms."
+   "geopolitical": "Washington has made a sanctions concession to Moscow conditioned in substance on Ukraine abandoning the one campaign that has actually degraded Russian war finance, and paired it with a public call to change Ukraine's leadership delivered while Ukrainian negotiators were in the room.",
+   "socioeconomic": "A day and a half of American demand will not move the pump price, the problem the deal was meant to solve three weeks before the midterms. What it moves is the credibility of a sanctions architecture Congress had just reinforced by statute."
   },
   {
-   "headline": "THE NOBEL PEACE PRIZE GOES TO NAVI PILLAY, AND WASHINGTON SANCTIONS THE WHOLE COURT HOURS LATER",
-   "breaking": true,
-   "summary": [
-    "The Norwegian Nobel Committee awarded the 2026 Peace Prize to Navi Pillay “for her efforts to promote peace and international law”, its chair calling her one of the most respected international jurists of our time and saying the system of international law is under tremendous pressure and its institutions under attack. Pillay defended opponents of apartheid in South Africa, was nominated by Mandela to the Rwanda tribunal in 1995 and became its president, helping establish that rape can constitute genocide; she then sat on the International Criminal Court, served as UN High Commissioner for Human Rights from 2008 to 2014, is an ad hoc judge of the International Court of Justice, and chaired the UN commission of inquiry that concluded in 2025 that Israel committed genocide in Gaza. She dedicated the award to survivors of international crimes.",
-    "Hours later Rubio announced sanctions on the ICC as an institution, barring transactions with the court to cut off its resources, with Treasury issuing a six-month wind-down waiver for companies already dealing with it; the State Department gave no further detail. Washington has sanctioned more than a dozen judges and court officials since February 2025 over warrants for Israeli leaders. The ICC's deputy prosecutor said the sanctions must be condemned and the court would keep working. Israel's foreign ministry called the prize a grotesque weaponisation of an award, and Trump shared a post saying the committee had demeaned it."
-   ],
-   "geopolitical": "Sanctioning the court rather than its judges moves the target from individuals to the institution, and tests whether the 120-odd states party will fund and bank a court the United States has declared off-limits.",
-   "socioeconomic": "Six months is a wind-down clock for the court's banks, insurers, auditors and software vendors, and its staff's salaries and pensions run through exactly those channels."
-  },
-  {
-   "headline": "ETHIOPIA TELLS THE SECURITY COUNCIL ERITREAN TROOPS ARE INSIDE TIGRAY AND CLAIMS A RIGHT OF SELF-DEFENCE",
-   "breaking": true,
-   "summary": [
-    "Ethiopia told the UN Security Council that Eritrean forces had crossed into Tigray, its foreign minister putting the penetration at up to 60km and its government communication minister demanding that all foreign forces on sovereign territory withdraw immediately, with Addis Ababa invoking its inherent right of self-defence. ACLED recorded the crossing near Zelambesa on Wednesday and a drone attack on the column at Guada as it moved toward Idaga Hamus; residents of Adigrat told Reuters they saw two military vehicles carrying dozens of Eritrean soldiers pass through the town. A foreign security source cited by AFP put the deployment at 5,000 to 8,000 troops.",
-    "Eritrea did not deny the crossing: its information minister accused Ethiopia of a fallacious narrative of self-defence to camouflage a war of aggression. The two states severed relations days ago, and the incursion follows federal forces retaking Mekelle from the TPLF, with analysts reading Asmara's move as an attempt to keep Ethiopian federal troops away from its border. No mediator is in place."
-   ],
-   "geopolitical": "This is now two states shooting at each other rather than a government and a rebel movement, which ends the 2018 peace and puts the question in front of a Security Council with no AU or IGAD process to hand it to.",
-   "socioeconomic": "Fighting astride the Zelambesa–Adigrat corridor sits on the road relief convoys use to reach a Tigray still short of food after two years of war."
-  },
-  {
-   "headline": "A 7.7 EARTHQUAKE WRECKS CENTRAL PANAMA, AND THE CANAL KEEPS RUNNING",
-   "breaking": true,
-   "summary": [
-    "The USGS put the quake at magnitude 7.7 — revised down from a preliminary 8.0 — about 10km deep and centred near Pitaloza Arriba on Panama's southern Pacific coast. A 6.6 followed roughly three hours later, and University of Panama seismologists counted more than 45 aftershocks. Damage concentrated in Veraguas, Herrera and Los Santos: the tower of a historic building collapsed in Penonomé, a hotel at Playa Venao was reduced to rubble, and residents evacuated past crushed vehicles and debris. No deaths were confirmed in the first reports.",
-    "The US tsunami centre issued warnings for Panama, Colombia, Ecuador, Costa Rica, Nicaragua, Guatemala, El Salvador, Mexico and Peru, with no threat expected to the United States. Panama's education ministry closed schools, and the civil protection agency SINAPROC said it was not yet requesting international aid while it assessed damage. The Panama Canal Authority said shipping was unaffected and operating as normal."
-   ],
-   "geopolitical": "A shallow 7.7 on the isthmus with no interruption to transits is the test the canal's operators most needed to pass, with Hormuz shut and Red Sea traffic diverted.",
-   "socioeconomic": "The destruction fell on the agricultural interior rather than Panama City, where the housing stock is poorer and reconstruction is slowest to arrive."
-  },
-  {
-   "headline": "CHINA AGREES TO CUT HYBRID EXPORTS TO EUROPE BY MORE THAN HALF, BUYING OFF A TRADE WAR FOR NOW",
+   "headline": "ISAIAS COMES ASHORE AS THE SEASON'S FIRST HURRICANE, KILLING FOUR AND CUTTING POWER TO HUNDREDS OF THOUSANDS",
    "breaking": false,
    "summary": [
-    "After marathon talks in Beijing, EU trade chief Maroš Šefčovič and commerce minister Wang Wentao announced a shared understanding to moderate China's exports of hybrids and plug-in hybrids to the EU — several million cars over four years, which Šefčovič said opens the prospect of cutting China's exports by more than half. Beijing, which had argued that voluntary restraint could breach WTO rules, describes the outcome as WTO-compliant. The package also expedites rare-earth export licences for EU applicants and improves access for car parts, olive oil and textiles, while price-undertaking talks tied to the EU's anti-subsidy case on Chinese electric vehicles continue.",
-    "Nothing is settled: Šefčovič said Brussels must still approve, and EU national leaders decide next week whether the concessions are enough. Hybrids were the workaround to the EU's tariffs on Chinese electric cars, with shipments to Europe multiplying while the tariffs bit."
+    "Isaias, the first Atlantic hurricane of the 2026 season, made landfall near Destin, Florida, on Friday night as a Category 2 storm and weakened as it crossed the Southeast. Four died, two in Alabama and two in Florida, two of them when trees fell on houses; a Florida household was hospitalised after running an unventilated generator indoors. Outages fell from 834,061 customers at 5am Saturday to roughly 670,000 later in the day, with flash flooding the continuing hazard.",
+    "The storm hit the one piece of infrastructure the war has left no slack in. About 1.3 million barrels a day of Gulf oil production had been shut in by Thursday, and the coastal refineries supply the diesel market Washington spent the week trying to loosen by other means — a G7 reserve release, duty-free red-dyed diesel, now Russian cargoes. Hurricane Simon and Tropical Storm Rachel are tracking towards Mexico, and San Diego is under a rare tropical storm watch."
    ],
-   "geopolitical": "Beijing has conceded a managed export quota it spent two years calling illegal, which shows rare-earth leverage cuts both ways once Europe is willing to trade market access for supply.",
-   "socioeconomic": "Fewer cheap hybrids buys Europe's carmakers time they have not yet used, and the cost lands on buyers who were being offered the segment's cheapest cars."
+   "geopolitical": "A US Gulf refining outage would land on a diesel market already short from the Iran blockade and Russia's export ban — which is why Washington spent the week extracting supply from allies and adversaries alike rather than its own barrels.",
+   "socioeconomic": "US distillate stocks are at their lowest seasonal level since 1996 and pump diesel has been near records all autumn; a week of lost refining would undo more than the 6 million barrels announced from Russia."
+  },
+  {
+   "headline": "INDIA SEALS DELHI AND DETAINS THE \"COCKROACH\" MOVEMENT'S FOUNDER TO STOP A PROTEST AGAINST ITS ELECTION CHIEF",
+   "breaking": false,
+   "summary": [
+    "Abhijeet Dipke, founder of the Cockroach Janta Party, was detained with other leaders as his plane landed in New Delhi on Saturday, shouting \"go ahead and arrest us!\" The influencer Dhruv Rathee, who has 33 million YouTube subscribers, was detained at the protest site. Thousands of security personnel sealed central Delhi, mobile internet was cut, and by mid-afternoon only a handful of protesters remained at Jantar Mantar, anyone shouting slogans taken in. BJP president Nitin Nabin said the movement acts \"at the behest of foreign forces\".",
+    "The target is Election Commission chief Gyanesh Kumar, whose Special Intensive Revision has removed tens of millions of names; opposition parties say eligible voters are being stripped out to benefit the BJP, which the commission and the party deny. The CJP began in May as an internet joke after the chief justice allegedly called unemployed youths \"cockroaches\", and in July forced the education minister out over exam-paper leaks. This target is harder: removing a chief election commissioner needs a parliamentary process and a special majority in both houses the opposition does not have."
+   ],
+   "geopolitical": "A movement beaten by sealing one square and cutting mobile data is being told that what worked on a minister will not reach the electoral machinery — and framing domestic protest as foreign-directed is the template this government has used on civil society before.",
+   "socioeconomic": "The grievance underneath is not procedural: the CJP's constituency is young Indians without work, and the exam-leak campaign worked because it attached that anger to a concrete failure. A roll audit nobody can compel gives it nothing to collect on."
+  },
+  {
+   "headline": "ABBAS PUTS THE PALESTINIAN VOTE OFF ANOTHER YEAR, TO SEPTEMBER 2027",
+   "breaking": false,
+   "summary": [
+    "Mahmoud Abbas issued a presidential decree moving the legislative election from 28 November 2026 to 11 September 2027, and calling a presidential election for the same day. His office, in a statement carried by the official agency Wafa, blamed \"obstacles imposed by Israeli measures\"; the PLO executive committee cited the absence of security in Gaza and the West Bank, and Israel is reported to have refused election officials and international observers access to East Jerusalem and Gaza.",
+    "Abbas was elected in 2005 and the last legislative election was in 2006, so the decree extends a gap approaching two decades. Israel's foreign minister accused him of \"fooling the international community\". It comes despite sustained Western pressure for a vote as the precondition of any reformed Palestinian Authority role in post-war Gaza."
+   ],
+   "geopolitical": "Every external plan for Gaza's administration rests on a Palestinian Authority with a mandate, and that mandate is now deferred past the point where it can underwrite the next phase of those plans.",
+   "socioeconomic": "Pairing the presidential and legislative votes also removes the interim step at which a successor to the 90-year-old president might have been chosen separately, concentrating the succession into a single ballot the authority has twice failed to hold."
   }
  ],
  "singapore": [
   {
-   "headline": "THE HAZE TASK FORCE IS CONVENED AS THE PSI HITS A 2026 HIGH ON GRAND PRIX WEEKEND",
-   "breaking": true,
-   "summary": [
-    "The 24-hour PSI in the central region reached 181 at midday and 192 by 5pm on 9 October, the year's highest and well past the previous peak of 167, with the rest of the island between 123 and 170. NEA attributed it to dense smoke plumes from hotspots in southern and central Sumatra and West Kalimantan, said winds would keep carrying smoke towards Singapore, and forecast readings from unhealthy to the low end of very unhealthy, which begins at 201. Malaysia closed schools in several states the same day.",
-    "The Haze Task Force was convened. Once the PSI passes 200, People's Association grassroots organisations begin handing out N95 masks — two per pack, NRIC required — to Pioneer and Merdeka Generation members, CHAS Blue and Orange cardholders, medical fee exemption cardholders and ComCare recipients, with vending machines at selected transport hubs and social service offices; pregnant women, children aged seven to 16 and people with conditions such as asthma may collect at PA venues. Community Clubs and selected RC and RN centres become haze shelters. Preschools must stop all outdoor and strenuous indoor activity in the very unhealthy band, schools will modify lessons, and MOE will consider closures if the next day's PSI is forecast above 300. The Grand Prix is going ahead with contingency plans that include N95 masks on site."
-   ],
-   "geopolitical": "Every instrument Singapore reached for is domestic — masks, shelters, school rules — because the fires are in another jurisdiction and the regional haze agreement has produced nothing to pull.",
-   "socioeconomic": "The Grand Prix is the year's single largest draw of visitor spending, and it is being run in air its own organisers are stocking respirators for."
-  },
-  {
-   "headline": "SINGAPORE CONDEMNS THE HOUTHI STRIKES ON SAUDI AIRPORTS AS UNACCEPTABLE",
-   "breaking": true,
-   "summary": [
-    "MFA said attacks on civilian aviation infrastructure are unacceptable and cannot be justified, condemning the Houthi strikes that killed three at Riyadh's King Khalid International, and extended condolences. The statement follows Vivian Balakrishnan's framing of Singapore's 2027 ASEAN chairmanship around not becoming another arena for proxy wars, and lands as carriers withdraw from Saudi airspace."
-   ],
-   "geopolitical": "Singapore's interest here is the rule rather than the parties: a small state that lives by freedom of navigation cannot let the principle be conceded in the air after watching it go in Hormuz.",
-   "socioeconomic": "Changi's Europe and Middle East routes already fly around a closed Hormuz; losing Saudi airspace lengthens them again, and the fuel burn shows up in fares."
-  },
-  {
-   "headline": "ST ENGINEERING OPENS A S$170 MILLION AIRFRAME SHOP AT CHANGI CREEK, WITH 500 JOBS, AS THE RETRENCHMENT DEBATE SHIFTS",
+   "headline": "IMH BECOMES A NATIONAL SPECIALTY CENTRE NEXT YEAR AND WILL BE REBUILT BY 2040",
    "breaking": false,
    "summary": [
-    "ST Engineering opened its fourth airframe maintenance, repair and overhaul facility in Singapore, an 84,000 sq m building at Changi Creek with four wide-body bays, which it says lifts its wide-body capacity by 40% — roughly 100 more wide-body aircraft a year — and uses drones, robots and AI for a claimed 25% productivity gain. DPM Gan Kim Yong opened it. More than 500 new roles come with it, from licensed aircraft engineers and production planners to mechanics and warehouse staff, against the 550-plus projected at the 2023 groundbreaking.",
-    "It lands as the policy argument over layoffs moves ground. MPs filed 15 questions on retrenchments at the 6 October sitting, the most this term, and the debate is shifting from what a retrenched worker is owed to how quickly they are placed again; the Employment Act, not comprehensively amended since 2018, is under review with recommendations due by the end of the year."
+    "In his World Mental Health Day message on Saturday, Health Minister Ong Ye Kung said the Institute of Mental Health will be redesignated a national specialty centre and renamed the National Centre for Mental Health Singapore in 2027, taking the standing of the national centres for cancer, heart and eye: leading research, coordinating psychiatric care across hospitals, building sector-wide capabilities. Planning has begun to redevelop and expand IMH on its existing Buangkok site for a bigger, more modern hospital by 2040; it has close to 2,000 beds now.",
+    "Specialist psychiatry also stops being one hospital's job: Changi General, Woodlands and Alexandra hospitals are strengthening their psychiatric capabilities to add national capacity, as hospitals and specialist clinics see more patients, many still in school. Community youth caseloads have more than doubled and the national mindline 1771 takes about 9,000 calls a month. Ong called the rising numbers an encouraging sign more people will seek help, while naming stigma the key barrier still to overcome."
    ],
-   "geopolitical": "Aviation maintenance is the part of the aerospace chain that follows fleets rather than politics, and adding wide-body capacity while Gulf airspace closes puts Changi further ahead of the Middle Eastern hubs it competes with.",
-   "socioeconomic": "These are licensed, non-offshorable trades at a moment when the vacancies being created elsewhere are not, which is the test the Employment Act review is actually facing."
+   "geopolitical": "Singapore is building the institutional form before the building, which makes the 2027 designation rather than the 2040 hospital the decision that determines whether psychiatric care is genuinely distributed across the acute hospitals or stays concentrated at Buangkok.",
+   "socioeconomic": "Demand is arriving a decade and a half before the capacity: 9,000 helpline calls a month and a doubled youth caseload must be absorbed by three regional hospitals and the existing beds until 2040, making workload distribution the binding constraint on waiting times."
   },
   {
-   "headline": "MOTORCYCLISTS GET CAR LANES OUT OF WOODLANDS FROM 15 OCTOBER",
+   "headline": "SINGAPORE OFFERS INDONESIA HELP ON THE FIRES AS THE PSI THREATENS TO CROSS 200",
    "breaking": false,
    "summary": [
-    "ICA will open selected departure car lanes at Woodlands Checkpoint to motorcyclists and pillion riders from 15 October, clearing them by facial recognition. It is open to residents, long-term pass holders and foreign visitors who have entered Singapore before. Facial recognition reached 18 of the checkpoint's automated motorcycle lanes in March and is to cover all 70 arrival and departure lanes eventually; departing drivers queued up to three hours over the National Day weekend."
+    "Environment Minister Grace Fu said on Saturday that Singapore stands ready to assist Indonesia in containing the forest fires, that she has been in touch with her counterpart Jumhur Hidayat, and that technical support has been offered alongside appreciation for Jakarta's containment work. She attributed the severity to El Niño, saying the dry conditions have made the fires much harder to put out.",
+    "The 24-hour PSI reached 192 in the central region on Friday, the year's high and nine points below the very unhealthy band, and ranged from 124 in the north to 174 centrally by 9am Saturday. Some rain was expected over the weekend, but the forecast still allowed readings above 200. Friday's measures stand: N95 packs for lower-income and vulnerable groups, air-conditioned haze shelters, curtailed outdoor activity."
    ],
-   "geopolitical": "Causeway throughput is the one piece of the Johor–Singapore Special Economic Zone that Singapore can improve without Malaysian agreement, and biometric clearance is how it is being done.",
-   "socioeconomic": "Motorcycles are how a large share of daily Causeway commuters cross, most of them Malaysians working in Singapore, so minutes saved per rider compound into hours of labour supply."
+   "geopolitical": "Technical assistance is the instrument Singapore reaches for because the enforcement one has never been used — the Transboundary Haze Pollution Act has not been applied to a named company — and the Pontianak suit against Indonesia's own president is doing the accountability work the ASEAN agreement has not.",
+   "socioeconomic": "The 201 threshold is not symbolic: it triggers mask distribution, preschool activity limits and consideration of school closures above a forecast 300, so a weekend crossing turns an air-quality episode into a working-week disruption."
+  },
+  {
+   "headline": "SINGAPORE AND BRUNEI MARK FIFTY YEARS OF DEFENCE TIES WITH A JOINT PARADE AT MUARA",
+   "breaking": false,
+   "summary": [
+    "Prime Minister Lawrence Wong and Sultan Hassanal Bolkiah reviewed a joint parade of the Singapore Armed Forces and the Royal Brunei Armed Forces at Muara Naval Base on Saturday, marking the golden jubilee of defence relations dating to 1976. It brought together 256 personnel and land, naval and air assets from both forces, with a sail-past by the navy's maritime security and response vessel Protector alongside Brunei vessels, and helicopter flypasts by both countries.",
+    "Defence Minister Chan Chun Sing accompanied the Prime Minister, with MPs Rachel Ong and Zhulkarnain Abdul Rahim. The two leaders then launched a commemorative gallery on the relationship's milestones, part of a year-long programme of bilateral exercises."
+   ],
+   "geopolitical": "Brunei is the one partner that hosts Singaporean training as a matter of course rather than negotiation, and a jubilee staged at a naval base signals which half of that arrangement is being invested in.",
+   "socioeconomic": "Guaranteed overseas training ground substitutes directly for land Singapore does not have: the alternative is competing with housing and industry for the same acreage."
+  },
+  {
+   "headline": "THE PEOPLE'S ASSOCIATION WILL TEACH AI AT THE COMMUNITY CENTRE FOR SEVEN DOLLARS",
+   "breaking": false,
+   "summary": [
+    "The People's Association announced AI @ Your Neighbourhood on Saturday: 25 curated, hands-on courses of two to three hours, at S$7 from November 2026 to October 2027 and S$10 after. The syllabus is deliberately not vocational — photography enhancement and travel planning among the topics — and is aimed at residents with little or no exposure to the technology, seniors and homemakers included, rather than at workplace productivity.",
+    "Partners are AI Singapore, Micron Technology and NTUC LearningHub. Pilots ran at community centres from August with about 60 residents in Buangkok, Bukit Batok East and Geylang Serai. A voice assistant that recommends programmes and facilities in English, Mandarin, Malay and Tamil and handles booking and payment is expected by early 2027."
+   ],
+   "geopolitical": "Using the grassroots network rather than the training-grant system is a choice about who counts as needing AI: the national schemes reach people with employers, and this reaches residents they have no route to.",
+   "socioeconomic": "At S$7 a session price stops being the reason not to attend, which shifts the test to supply — 25 courses and a handful of pilot sites against a population where those furthest from the technology are least likely to enrol themselves."
   }
  ],
  "word": {
-  "word": "derogation",
-  "pos": "noun",
-  "pronunciation": "deh-ruh-GAY-shun",
-  "definition": "A partial repeal or relaxation of a law or rule — an authorised exemption that leaves the rule itself standing.",
-  "etymology": "From Latin derogatio, from derogare, “to repeal part of a law”, built from de- “away” and rogare “to ask, to propose a law”; it entered English in the fifteenth century and survives as the standard term in treaty and sanctions practice for a permitted departure from a rule.",
-  "example": "General License 135 is a derogation, not a repeal: Russian diesel may be sold and imported until 7 April 2027 while the sanctions regime it sits inside remains formally intact."
+  "word": "dilatory",
+  "pos": "adjective",
+  "pronunciation": "DIL-uh-tuh-ree",
+  "definition": "Tending or intended to cause delay; slow to act, often deliberately so in order to gain time.",
+  "etymology": "From Latin dilatorius, from dilator \"a delayer\", from differre (past participle dilatus) \"to carry apart, to postpone\"; it entered English in the fifteenth century and keeps a legal sense — a dilatory plea is filed to defer a matter rather than decide it.",
+  "example": "Abbas's decree is dilatory in the strict sense: it does not refuse the Palestinian election, it moves it from 28 November 2026 to 11 September 2027, on grounds that have not changed in twenty years."
  }
 }
