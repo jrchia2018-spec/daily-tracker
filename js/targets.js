@@ -126,18 +126,31 @@ export function walkingSteps(key) {
   return Math.max(0, raw - Math.round(runKm * STEPS_PER_KM));
 }
 
-// What the day actually cost: resting + walking + workouts. This replaces the
-// old watch "active calories" basis (dropped 8 Aug at the user's request) —
-// it's built from inputs they control rather than one opaque number, at the
-// cost of missing incidental movement the watch would have caught.
-export function dailyBurn(key) {
-  const w = latestWeight() || 70;
-  return baseKcal() + stepKcal(walkingSteps(key), w) + exerciseKcal(key);
+// Energy spent digesting the day's food — the thermic effect, ~10% of what
+// was eaten. Missing until 11 Oct 2026, which made total burn run ~250
+// kcal/day low: the weekly strip showed +240 to +300 a day for weeks on end
+// while the owner's weight never moved. With it, those weeks read +50 to +70.
+const DIGESTION_SHARE = 0.10;
+
+export function digestionKcal(key) {
+  return mealsFor(key).length ? Math.round(DIGESTION_SHARE * mealTotals(key).kcal) : 0;
 }
 
-// Movement only, no resting — for the "burned" figure shown next to intake.
+// What the day actually cost: resting + digestion + walking + workouts. This
+// replaces the old watch "active calories" basis (dropped 8 Aug at the user's
+// request) — it's built from inputs they control rather than one opaque
+// number, at the cost of missing incidental movement the watch would have
+// caught.
+export function dailyBurn(key) {
+  return baseKcal() + digestionKcal(key) + activityKcal(key);
+}
+
+// Movement only — no resting, no digestion — for the "burned" figure shown
+// next to intake on Home. Digestion would make that number start every
+// morning low and climb with each meal, which reads as movement it isn't.
 export function activityKcal(key) {
-  return dailyBurn(key) - baseKcal();
+  const w = latestWeight() || 70;
+  return stepKcal(walkingSteps(key), w) + exerciseKcal(key);
 }
 
 // Linear-regression weight trend in kg/day over entries within the last `days`.

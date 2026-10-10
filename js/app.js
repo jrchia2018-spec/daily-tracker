@@ -15,7 +15,7 @@ import {
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc, PREFERENCE_TARGETS,
   weightTrend, runKcal, bmr,
-  baseKcal, dailyBurn, activityKcal, walkingSteps, stepKcal, exerciseKcal,
+  baseKcal, dailyBurn, activityKcal, digestionKcal, walkingSteps, stepKcal, exerciseKcal,
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
@@ -1873,8 +1873,9 @@ function weekReview(keys) {
 // Eaten vs burned across a week, per day and averaged.
 //
 // Burn is built from inputs the user controls: a resting baseKcal(), plus
-// walking priced from their step count, plus logged workouts. Steps a run
-// already accounts for are deducted first, so a 5km run isn't paid twice.
+// digestion (10% of what was eaten, added 11 Oct), plus walking priced from
+// their step count, plus logged workouts. Steps a run already accounts for
+// are deducted first, so a 5km run isn't paid twice.
 // (Replaced the watch's active-calorie figure on 8 Aug at their request.)
 //
 // This is presentation only. Burned calories still do not extend the daily
@@ -1893,11 +1894,13 @@ function energyBalance(keys) {
     const logged = mealsFor(k).length > 0;
     const hasSteps = wellnessFor(k).steps != null;
     const active = Math.round(activityKcal(k));
+    const digestion = digestionKcal(k);
     return {
       key: k,
       eaten: logged ? Math.round(mealTotals(k).kcal) : null,
       active,
-      total: hasSteps ? rest + active : null,   // null = burn unknown
+      digestion,
+      total: hasSteps ? rest + digestion + active : null,   // null = burn unknown
       hasSteps,
     };
   });
@@ -1909,6 +1912,7 @@ function energyBalance(keys) {
     ebDays: days,
     ebAvgEaten: avg(scored, d => d.eaten),
     ebAvgActive: avg(scored, d => d.active),
+    ebAvgDigestion: avg(scored, d => d.digestion),
     ebAvgTotal: avg(scored, d => d.total),
     ebNet: scored.length ? Math.round(scored.reduce((s, d) => s + (d.eaten - d.total), 0) / scored.length) : null,
     ebSumNet: scored.length ? Math.round(scored.reduce((s, d) => s + (d.eaten - d.total), 0)) : null,
@@ -2034,7 +2038,7 @@ function weeklyReviewCard() {
         </div>`;
       }).join('')}
     </div>
-    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — base ${wr.ebRest} + steps &amp; workouts ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.${wr.ebDaysUnmeasured ? ` <b>${wr.ebDaysUnmeasured} day${wr.ebDaysUnmeasured > 1 ? 's' : ''}</b> had no step count, so ${wr.ebDaysUnmeasured > 1 ? 'they are' : 'it is'} left out — without steps there's no way to tell a big day from a lazy one.` : ''}</p>
+    <p class="small muted" style="margin:-8px 0 0">Avg eaten <b>${wr.ebAvgEaten}</b> vs burned <b>${wr.ebAvgTotal}</b> — base ${wr.ebRest} + digestion ${wr.ebAvgDigestion} + steps &amp; workouts ${wr.ebAvgActive}. Burned is an estimate and doesn't add to your budget.${wr.ebDaysUnmeasured ? ` <b>${wr.ebDaysUnmeasured} day${wr.ebDaysUnmeasured > 1 ? 's' : ''}</b> had no step count, so ${wr.ebDaysUnmeasured > 1 ? 'they are' : 'it is'} left out — without steps there's no way to tell a big day from a lazy one.` : ''}</p>
     ` : ''}
 
     ${wr.sleepAvg != null || wr.sleepTimeAvg != null ? `
