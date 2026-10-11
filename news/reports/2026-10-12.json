@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-10-12",
+ "generatedAt": "2026-10-12T07:15:00+08:00",
+ "coverage": {
+  "from": "2026-10-11T07:00:00+08:00",
+  "to": "2026-10-12T07:00:00+08:00",
+  "label": "Sunday 11 October 2026, 0700 SGT → Monday 12 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "A FOURTH PROJECTILE HITS RIYADH'S AIRPORT, DAMMAM IS STRUCK TOO, AND SAUDI JETS BOMB SANAA AS THE HOUTHIS TELL EVERY AIRLINE TO LEAVE THE KINGDOM",
+   "breaking": true,
+   "summary": [
+    "An unidentified projectile hit Terminal 4 at Riyadh's King Khalid International on Sunday, starting a fire, killing one and wounding eleven, Saudi civil aviation said; air defences intercepted a cruise missile nearby. On Sunday evening the authority confirmed King Fahd International at Dammam — where the capital's traffic had been shifting — was also attacked, with damage still being assessed. Saturday's toll rose to 13 after the Indian embassy said one of its citizens had died of his wounds. The closure was extended and Saudi schools moved online until Thursday.",
+    "The Houthis claimed several of the attacks and told airlines, staff and travellers to stay out of Saudi airports and airspace, which \"have become a theatre of operations for our forces\", warning \"the worst is yet to come\" if Saudi operations in Yemen continued. Britain's embassy advised against all but essential travel to Jeddah and Dammam and against using almost all airports. The coalition's Maj Gen Turki al-Maliki had promised to \"respond firmly\": the Houthis said Saudi jets struck Sanaa on Sunday, hitting a house, killing a child and wounding six, and also hit the capital's airport. Their health ministry puts six weeks of coalition strikes at 91 Yemenis killed and 168 wounded, 60% of them women and children. Trump said he would speak to Crown Prince Mohammed bin Salman and, on joining the campaign, \"we're going to look into it\"; about 200 US advisers are already in the kingdom on intelligence and targeting."
+   ],
+   "geopolitical": "Riyadh has now been answered in kind at Sanaa, which converts a one-way bombardment into an exchange the Mecca pact's guarantors are committed to, while Washington's 200 advisers sit one decision short of belligerency — and Trump's own pause on striking Iran runs to 3 November.",
+   "socioeconomic": "With Dammam hit, the kingdom has no uncontested air gateway left — and a Houthi warning addressed to crews and passengers rather than governments is designed to make insurers and carriers withdraw before any missile does the damage."
+  },
+  {
+   "headline": "TRUMP DECLARES AN \"ENERGY CEASEFIRE\" NEITHER SIDE HAD AGREED TO, AND RUSSIA HITS TWO POWER PLANTS WITHIN HOURS",
+   "breaking": true,
+   "summary": [
+    "\"Effective immediately, there is an ENERGY CEASEFIRE in the War between Russia and Ukraine. Both parties have agreed. Do not break it!\" Trump posted on Sunday morning. A Ukrainian official told CNN \"we just read it as you did\"; Zelensky said Ukraine supported a ceasefire and was \"awaiting details from the American side\". The Kremlin said nothing. Within hours Kharkiv's CHP-5 thermal plant was struck at least twice and set alight, and a drone hit a Kyiv power plant, cutting supply in the capital. Zelensky put the past week at more than 200 strikes on Ukrainian generation and transmission and 17 on gas and oil sites, with more than 150 people killed.",
+    "The declaration followed Friday's Trump–Putin deal to put Russian diesel back into world markets, which Zelensky said would prolong the war and which drew bipartisan criticism in Washington; Trump answered that Ukraine should \"get a new leader who can make a deal\". Zelensky's reply, on ABC's This Week, accepted the premise and set a price: 60 days of total ceasefire and he will organise elections, which he argued cannot otherwise be held lawfully or safely under martial law. On energy he offered the same trade — \"don't attack us, don't kill our children; we will stop attacking your diesel\"."
+   ],
+   "geopolitical": "A ceasefire announced by a third party that neither belligerent has signed is not a ceasefire but a test of who will be blamed for breaking it — and Moscow, by bombing two plants the same day without ever acknowledging the deal, has taken the position that Trump's word does not bind it.",
+   "socioeconomic": "Zelensky has priced his own office at 60 days of quiet, which makes the grid the chip both sides are playing: giving up Kyiv's refinery strikes before Russian attacks stop would leave it entering winter under 200 hits a week with nothing in hand."
+  },
+  {
+   "headline": "ISLAMABAD IMPOSES EMERGENCY AND GOVERNOR'S RULE ON THE ONLY PROVINCE THE OPPOSITION HOLDS",
+   "breaking": true,
+   "summary": [
+    "President Asif Ali Zardari approved a federal cabinet recommendation on Sunday proclaiming an emergency in Khyber Pakhtunkhwa under Article 232 of the constitution and governor's rule under Article 234, transferring the province's executive authority to Governor Faisal Karim Kundi and installing Dr Muhammad Fakhr Alam Irfan as chief secretary. The cabinet cited the provincial government's \"deliberate disengagement from the fight against terrorism\"; Zardari signed after reviewing security intelligence. Khyber Pakhtunkhwa is the only one of Pakistan's four provinces governed by Imran Khan's PTI.",
+    "Talks between Islamabad and the province collapsed on 3 October, the PTI saying it had been shut out of security decisions and opposed military offensives in its own territory while the centre accused it of failing to confront militants. The province's information minister said Chief Minister Sohail Afridi had been taken into custody — a PTI account not independently confirmed and on which the federal government is silent. PTI chairman Gohar Ali Khan called the move undemocratic and said peace cannot be built by weakening provincial autonomy. The party was marching for Khan's release."
+   ],
+   "geopolitical": "Article 234 was written for a breakdown of constitutional government, and using it against a province whose offence is disagreeing about how to fight the Taliban sets a precedent any future centre can reach for: the federation's counter-terrorism policy now overrides an elected provincial mandate.",
+   "socioeconomic": "Governor's rule puts the budget, police and administration of Pakistan's most militancy-exposed province under officials appointed in Islamabad, and does it while the PTI is on the streets — the predictable cost is that security operations in the tribal districts proceed without any local political cover for them."
+  },
+  {
+   "headline": "SEVENTY-TWO GOLD PROSPECTORS ARE KILLED IN AIR STRIKES ON SUDAN'S EGYPTIAN BORDER, AND SUDANESE LAWYERS BLAME EGYPT'S AIR FORCE",
+   "breaking": true,
+   "summary": [
+    "Emergency Lawyers, a Sudanese rights group, said at least 72 people were killed and about 20 wounded in air strikes on Saturday on an artisanal gold-mining site near the Egypt–Sudan border, and attributed them to the Egyptian air force. It called the toll provisional. AFP could not confirm the account and Cairo has not commented. Sudan's de facto leader ordered an investigation.",
+    "The site lies in the resource-rich stretch around the Halayeb triangle, claimed by both countries. Egypt's army said in June that an operation there against \"illegal gold mining and arms smuggling\" was conducted \"within Egyptian territory\" and that it had detained 223 people, 136 of them foreign nationals. Artisanal gold is Sudan's largest surviving export earner after three years of civil war, and the camps it is dug from sit on an unmarked frontier."
+   ],
+   "geopolitical": "If the attribution holds, a state at peace with Sudan has killed dozens of its civilians on territory Khartoum claims, in a war Cairo has positioned itself as mediator in — and Sudan's army-led government, dependent on Egyptian backing against the RSF, has answered with an inquiry rather than a protest.",
+   "socioeconomic": "Artisanal mining is what Sudan's wartime economy runs on, and making the border camps lethal does not stop the digging: it pushes the diggers deeper into smuggling networks and raises the price of the one commodity still funding both sides of the war."
+  },
+  {
+   "headline": "THE JUSTICE DEPARTMENT OPENS AN ANTITRUST INVESTIGATION INTO FIVE TV NETWORKS FOR SUSPENDING WHITE HOUSE POOL COVERAGE",
+   "breaking": false,
+   "summary": [
+    "The Justice Department's Antitrust Division is investigating whether ABC, CBS, CNN, NBC and Fox News violated the Sherman Act by briefly suspending their shared White House television pool, a department spokesperson confirmed. Officials contacted the networks on Friday demanding communications and materials relating to the pool.",
+    "The networks paused pool footage after the White House barred CNN, Politico and MS NOW from the building; a federal judge ordered their access restored, and CNN and MS NOW reporters returned on Thursday. The Reporters Committee for Freedom of the Press called the investigation \"a pretext for seeking records from the networks\". The networks had not responded publicly."
+   ],
+   "geopolitical": "Nothing here is about competition: the instrument is antitrust, the subject is editorial coordination, and the effect is to make the pool — a cooperative arrangement that exists because the White House restricts access — legally hazardous for the outlets that run it.",
+   "socioeconomic": "A Sherman Act inquiry is a discovery device as much as a case, and compelling five newsrooms to hand over their internal deliberations about covering the president carries its cost whether or not anything is ever charged."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "HAZE SUBSIDIES START TODAY, MASK VENDING MACHINES WAIT ON PSI 200, AND JOHOR KEEPS ITS SCHOOLS SHUT ALL WEEK",
+   "breaking": true,
+   "summary": [
+    "Speaking at Bukit Canberra on Sunday, Health Minister Ong Ye Kung said the Haze Subsidy Scheme opens today at all polyclinics and participating Public Health Preparedness Clinics, covering allergic rhinitis, asthma, bronchitis, conjunctivitis, COPD and upper respiratory tract infections. Public Assistance cardholders pay nothing; Pioneer and Merdeka Generation seniors pay no more than S$5 and other eligible citizens no more than S$10 at PHPCs, with all citizens eligible at polyclinics. He said the haze should persist several more weeks, that emergency departments have seen a week-on-week rise in respiratory cases, and that milder symptoms belong in clinics. The 24-hour PSI at 10am Sunday was 151 in the west, 149 central, 136 east, 118 north and 115 south, and all five regions were still unhealthy at dawn today.",
+    "If the 24-hour PSI crosses 200, N95 packs of two will be issued on NRIC from 24-hour vending machines at 37 transport hubs and social service offices, alongside People's Association distribution, to Pioneer and Merdeka Generation seniors, CHAS Blue and Orange and Medical Fee Exemption cardholders and ComCare recipients; pregnant women, children aged seven to 16 and people with medical conditions collect at PA venues. Across the Causeway, Johor extended school closures through 16 October and postponed assessments, with all eight areas reading 151 to 178 at noon Sunday and winds expected from Kalimantan between the 13th and 15th; Firefly cancelled all Seletar–Subang flights. Indonesia's forestry ministry, which counted 437 hotspots on 9 October, thanked Singapore and Malaysia for offering help; its disaster agency's acting spokesman said ground crews would be more useful than aircraft because visibility is too poor to fly. No offer has been accepted."
+   ],
+   "geopolitical": "Singapore and Malaysia have both offered help and been thanked rather than taken up, which restates the Transboundary Haze Pollution Act's problem: the only lever that works across the border is Jakarta's willingness to accept it.",
+   "socioeconomic": "The state is now paying for the haze's medical bill rather than preventing it, and the thresholds say where that ends: subsidised consultations at today's readings, free masks at 200, closed schools and postponed national exams only above 300."
+  },
+  {
+   "headline": "SINGAPORE CALLS THE SAUDI AIRPORT ATTACKS UNJUSTIFIABLE AND TELLS UMRAH TRAVELLERS TO REGISTER",
+   "breaking": false,
+   "summary": [
+    "Acting Minister-in-charge of Muslim Affairs Zaqy Mohamad said on Sunday that targeting civilians and civilian infrastructure \"cannot be justified\" and that every innocent life matters, acknowledging Singaporeans with relatives in Saudi Arabia or plans to perform umrah. He urged those in the kingdom to stay vigilant, follow the Foreign Ministry's advisories and e-register with MFA.",
+    "The standing advisory, dated 22 April 2026, asks Singaporeans to defer travel to Saudi Arabia except to Jeddah, Makkah and Madinah, where it describes the security situation as stable while still advising precautions. It has not been reissued since the attacks on Riyadh and Dammam, both outside those three cities."
+   ],
+   "geopolitical": "Singapore has condemned the method without naming the Houthis, which keeps it consistent with its line on civilian infrastructure in every theatre of this war and avoids taking a side between Riyadh and Tehran while its nationals travel through both.",
+   "socioeconomic": "Umrah is a year-round obligation for thousands of Singaporean Muslims, and the advisory's geography is what matters to them: Jeddah is the gateway to Makkah and Madinah, and it is the one major Saudi airport the advisory still permits."
+  },
+  {
+   "headline": "PCF SPARKLETOTS DOUBLES STAFF DEVELOPMENT TO TWENTY MILLION DOLLARS AND TAKES ENROLMENT PAPERWORK OFF ITS TEACHERS",
+   "breaking": false,
+   "summary": [
+    "At PCF's 40th-anniversary Family Day at Mandai Wildlife Reserve on Sunday, with DPM Gan Kim Yong as guest of honour, Singapore's largest preschool operator said it would double spending on staff development to S$20 million over three years, training about 8,000 educators and 500 leaders in pedagogy, leadership and digital literacy. An expanded centralised model moves parent and enrolment enquiries and transactions to specialist teams rather than centre staff. PCF has not said how the money divides.",
+    "Gan said PCF has supported more than a million children over 40 years, served some 30,000 seniors and reached more than 46,000 vulnerable beneficiaries."
+   ],
+   "geopolitical": "Not applicable: a domestic social-sector decision with no external dimension.",
+   "socioeconomic": "Preschool quality is set by whether experienced teachers stay, and attrition in the sector is driven as much by administrative load as by pay — moving enrolment paperwork to back-office teams is the cheaper half of this announcement and probably the more consequential."
+  },
+  {
+   "headline": "INVESTMENT-LINKED POLICY SALES HAVE MORE THAN DOUBLED IN THREE YEARS WHILE MIS-SELLING CLAIMS CLIMB WITH THEM",
+   "breaking": false,
+   "summary": [
+    "Weighted new business premiums for investment-linked policies have risen three years running after their 2022 fall and sales have more than doubled over that period, Life Insurance Association figures show, with ILP sales at S$723 million in the first quarter of 2026. Complaints have tracked the growth: the industry mediator FIDReC handled 104 ILP claims in the first half of 2026 against 61 a year earlier, and 160 across all of 2025, against an average of 83 a year from 2017 to 2024.",
+    "Industry figures attribute the surge to simpler sign-up journeys and welcome bonuses rather than to better-informed buyers. The claims are mostly about alleged misrepresentation and inadequate disclosure, and MAS has separately moved against describing these policies as \"capital guaranteed\"."
+   ],
+   "geopolitical": "Not applicable: a domestic consumer-protection matter.",
+   "socioeconomic": "A product that is simultaneously insurance and a fund, sold faster through frictionless digital journeys, generates disputes in proportion to how little the buyer understood — and a caseload moving from 83 a year to 104 in six months measures how much of that lands on households."
+  }
+ ],
+ "word": {
+  "word": "ipse dixit",
+  "pos": "noun",
+  "pronunciation": "IP-say DIK-sit",
+  "definition": "An assertion offered without proof, resting on nothing but the authority of the person who made it.",
+  "etymology": "Latin for \"he himself said it\" — Cicero's rendering of the Pythagoreans' habit of settling arguments with autos epha, \"the master said so\". English borrowed it in the sixteenth century and law keeps it as a term of contempt for a conclusion stated rather than demonstrated.",
+  "example": "\"Both parties have agreed. Do not break it!\" was an ipse dixit: Kyiv learned of its own ceasefire by reading the post, Moscow never acknowledged it, and two Ukrainian power plants were burning by evening."
+ }
+}
