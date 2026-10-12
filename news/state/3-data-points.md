@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 13 October 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -1757,3 +1757,22 @@
 | Singapore investment-linked policies | weighted new business premiums up three years running after a 2022 fall, sales more than doubled in three years, S$723m in Q1 2026; FIDReC handled 104 ILP claims in H1 2026 vs 61 in H1 2025, 160 in all of 2025, against an 83/year average 2017-2024 | Life Insurance Association and FIDReC via CNA, 11-12 Oct 2026 |
 | DOJ press-pool inquiry | Antitrust Division examining whether ABC, CBS, CNN, NBC and Fox News breached the Sherman Act by suspending the shared White House TV pool; demands for communications sent Friday 9 Oct | DOJ via CNBC/Reuters/The Hill, 10-11 Oct 2026 |
 | FX reference rate used this run | USD/SGD 1.2807 | Carried from 1 Oct 2026 (exchange-rates.org); still no newer in-window rate sourced — rate APIs unreachable from this environment |
+
+## Added 13 Oct 2026
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | US$106.65/barrel at Monday 12 Oct settle (+US$1.93, +1.8%), highest since 15 Sep 2026; S$136.59 at USD/SGD 1.2807 | Reuters, 12 Oct 2026 |
+| WTI crude | US$93.74/barrel at 12 Oct settle (+US$1.89, +2.0%); S$120.06 at USD/SGD 1.2807 | Reuters, 12 Oct 2026 |
+| Goldman Sachs Brent forecast | December raised to US$90/barrel from US$85, with just over US$20 of the price attributed to risk premium | Goldman Sachs note via Reuters, 12 Oct 2026 |
+| Riyadh airport attacks, cumulative | 14 killed, 300+ injured; King Khalid International closed to Sat 17 Oct; one parked Airbus A320 destroyed and 5+ aircraft damaged since Sept | Saudi authorities via CNA/Guardian, 12 Oct 2026 |
+| Taiz front | 8 Saudi strikes, ~60 fighters dead on Sunday 11 Oct (both sides); governor Nabil Shamsan warns of imminent surgical/ICU supply exhaustion | Guardian, 12 Oct 2026 |
+| Ukraine energy strikes | 6 energy facilities hit on Monday 12 Oct, the day after Trump's announced ceasefire; 3 killed incl. a 13-year-old girl by cluster munitions at Cherkaske, Donetsk | Zelensky/Donetsk military administration via Guardian, 12 Oct 2026 |
+| India electoral-roll deletions | 130m+ names removed since 2025 under the special intensive revision — more than Japan's population | Guardian, 12 Oct 2026 |
+| Minnesota early voting | 127,000+ already voted when HSI searched Rep. Ilhan Omar's home, 12 Oct | Minnesota Secretary of State via CNN, 12 Oct 2026 |
+| Singapore 24-hour PSI | 13 Oct 6am: west 173, central 166, east 148, south 131, north 126 (all unhealthy); hourly PM2.5 peak 110 central; 2026 peak remains 192 central, 9 Oct | NEA via The Straits Times, 13 Oct 2026 |
+| Transboundary Haze Pollution Act | Threshold (PSI 101+ for 24h+ anywhere in Singapore) crossed at least 6 times since 4 Sept 2026; fines up to S$100,000/day capped at S$2m; last notices to Indonesian firms 2015, four investigations still open | NEA/The Straits Times, 12 Oct 2026 |
+| Singapore clinical-trial approvals | Certain lower-risk phase-three trials: 30 days to 15 from early 2027; HSA-ACE priority track from Nov 2026 cuts first health technology assessment decision to 6-9 months post-approval from ~1 year | Ong Ye Kung, Health Regulatory Conference, 12 Oct 2026 |
+| LTA autonomous buses | All six 16-seaters delivered; deployment on SBS Transit services 400 and 191 cancelled; first bus arrived Mar 2026 and passed closed-circuit test | LTA via The Straits Times, 12 Oct 2026 |
+| Global AI job exposure | ~40% of jobs worldwide liable to be augmented, downgraded or eliminated by AI | IMF's Kristalina Georgieva, IMF/World Bank meetings Bangkok, 12 Oct 2026 |
+| EU quota on Chinese hybrids | 350,000 cars/year from December under WTO safeguards, expected to halve China's 6% EU share; ~800,000 likely sold in 2026; China's hybrid exports to the EU tripled to EUR6.7bn in H1 2026 from EUR2.2bn | European Commission via The Guardian, 12 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2807 | Carried from 1 Oct 2026 (exchange-rates.org); still no newer in-window rate sourced — api.data.gov.sg, open.er-api.com and api.frankfurter.app all blocked by the proxy this run |
