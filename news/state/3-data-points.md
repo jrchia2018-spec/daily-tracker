@@ -1776,3 +1776,30 @@
 | Global AI job exposure | ~40% of jobs worldwide liable to be augmented, downgraded or eliminated by AI | IMF's Kristalina Georgieva, IMF/World Bank meetings Bangkok, 12 Oct 2026 |
 | EU quota on Chinese hybrids | 350,000 cars/year from December under WTO safeguards, expected to halve China's 6% EU share; ~800,000 likely sold in 2026; China's hybrid exports to the EU tripled to EUR6.7bn in H1 2026 from EUR2.2bn | European Commission via The Guardian, 12 Oct 2026 |
 | FX reference rate used this run | USD/SGD 1.2807 | Carried from 1 Oct 2026 (exchange-rates.org); still no newer in-window rate sourced — api.data.gov.sg, open.er-api.com and api.frankfurter.app all blocked by the proxy this run |
+
+## Added 14 Oct 2026
+
+| Indicator | Figure | Source |
+|---|---|---|
+| USD/SGD | 1.27998 mid-market (XE, dated 13 Oct 2026 10:51 UTC) — **refreshes the 1.2807 reference carried since 1 Oct**; 1.2800 used for conversions this run | XE via search, 13 Oct 2026 |
+| Brent crude | US$105.69/barrel at 13 Oct settle (-0.9%); S$135.28 at USD/SGD 1.2800 | Financial News/InvestingLive, 13 Oct 2026 |
+| WTI crude | US$94.14/barrel at 13 Oct settle (+0.4%); S$120.50 | Financial News/InvestingLive, 13 Oct 2026 |
+| Iran war cost to US consumers | ~US$265b since late Feb 2026, ~US$2,000/household; ~US$1,100 fuel rising ~US$50/week; several hundred more in borrowing costs (CNN gives US$360, The Hill US$540 — outlets conflict); ~half the average household's 8-month income gain | Mark Zandi, Moody's Analytics, 13 Oct 2026 |
+| US pump petrol | US$4.34/US gallon vs US$2.98 pre-war (+46%) | AAA via CNN, 13 Oct 2026 |
+| Pentagon Iran-war cost | US$45.1b, excluding repairs to damaged bases | Pentagon to lawmakers, Sep 2026 (via CNN, 13 Oct) |
+| IMF global growth | 3.1% 2026 (from 3.0% in July); 3.4% 2027 unchanged; US 2.3% both years; UK 1.3% 2026 (+0.3pt), 1.2% 2027 | IMF World Economic Outlook, 13 Oct 2026 |
+| IMF global inflation | 4.7% 2026; 4.1% 2027 (from 4.0%) | IMF WEO, 13 Oct 2026 |
+| IMF oil assumption | +~41% in 2026, averaging US$96/barrel; assumes Hormuz shipments resume by March 2027 and the AI boom moderates | IMF WEO, 13 Oct 2026 |
+| Middle East & Central Asia growth | -0.3% in 2026 | IMF WEO, 13 Oct 2026 |
+| US strategic petroleum reserve | Recently reported at its lowest level since 1982 | cited in IMF WEO coverage, 13 Oct 2026 |
+| Magnificent seven concentration | >35% of the S&P 500, from 12% a decade ago; combined market cap +>50% in two years | IMF Global Financial Stability Report, 13 Oct 2026 |
+| AI circular financing | US$300b of hyperscaler-to-weaker-AI-firm transactions over three years, plus US$650b of debt, against US$1.4tn of future commitments | IMF GFSR, 13 Oct 2026 |
+| Riyadh airport toll (MFA framing) | "At least 18 killed and more than 300 wounded" in the two weekend KKIA attacks — **conflicts with the 14 dead/300+ injured cumulative airport figure carried 13 Oct**; different basis, both attributed | MFA Singapore, 13 Oct 2026 |
+| Saudi airports hit since July | Riyadh, Abha, Dammam, Khamis Mushait, Najran, Jizan | MFA Singapore, 13 Oct 2026 |
+| SG malware-infected systems | 284,300 in 2025, from 117,300 in 2024 (more than doubled) | CSA Singapore Cyber Landscape, Jun 2026 (cited 13 Oct 2026) |
+| SG haze health impact | MOH: "slight uptick" in ED and polyclinic visits, no ICU admissions or deaths (no figures given); GPs/telemedicine +20–30% haze-linked presentations; Parkway Shenton ~30% of visits vs 20% before | MOH / providers via ST, 13 Oct 2026 |
+| PM2.5 / ED dose-response | +3.2% asthma and lung-disease ED visits over the following two days per 10µg/m³ of PM2.5 above a reference level | local study published 28 Sep 2026 |
+| SG PSI | 128–174 all regions, afternoon 13 Oct; still unhealthy at 6am 14 Oct; unbroken unhealthy run since 5 Oct (longest); first unhealthy day 4 Sep 2026 (first in 3 years); 2026 peak 192 central, 9 Oct | NEA via ST, 13–14 Oct 2026 |
+| Healthcare IT outage | 9½ hours on 13 Oct: network connectivity fault ~7.10am, all three clusters, restored progressively from ~3pm, fully 4.37pm; no indication of a cyber incident | Synapxe, 13 Oct 2026 |
+| Pre-school educators (not run; carried) | ~28,000 in service 2026; ≥2h weekly protected non-contact time required from Nov 2027; >S$75m over five years on working conditions and development | Masagos Zulkifli / ECDA, 13 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2800 | XE mid-market 1.27998, 13 Oct 2026 — first refresh since 1 Oct; frankfurter.dev, open.er-api.com, exchangerate.host and jsdelivr all 403 via the proxy |
