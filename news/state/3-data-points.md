@@ -1803,3 +1803,27 @@
 | Healthcare IT outage | 9½ hours on 13 Oct: network connectivity fault ~7.10am, all three clusters, restored progressively from ~3pm, fully 4.37pm; no indication of a cyber incident | Synapxe, 13 Oct 2026 |
 | Pre-school educators (not run; carried) | ~28,000 in service 2026; ≥2h weekly protected non-contact time required from Nov 2027; >S$75m over five years on working conditions and development | Masagos Zulkifli / ECDA, 13 Oct 2026 |
 | FX reference rate used this run | USD/SGD 1.2800 | XE mid-market 1.27998, 13 Oct 2026 — first refresh since 1 Oct; frankfurter.dev, open.er-api.com, exchangerate.host and jsdelivr all 403 via the proxy |
+
+## Added 15 Oct 2026
+| Indicator | Figure | Source |
+|---|---|---|
+| US CPI (Sep 2026) | 3.7% YoY (from 3.4% in Aug); +0.6% MoM; core 2.6% YoY vs 2.5% consensus | BLS via NYT/BBC, 14 Oct 2026 |
+| US petrol CPI | +9.1% MoM (Aug +3.9%) | BLS, Sep 2026 data, released 14 Oct 2026 |
+| US energy index | +5.2% MoM; +20.4% YoY | BLS, Sep 2026 data, released 14 Oct 2026 |
+| S&P 500 | -1.1% on 14 Oct — steepest fall in more than two months | NYT, 14 Oct 2026 |
+| Next FOMC | 27–28 October 2026; Zandi reads the CPI print as supporting continued hikes | Moody's/Zandi via Qz, 14 Oct 2026 |
+| Brent / WTI | ~US$106 (settle, +~0.4%); WTI ~US$95 (+~1%), three-week high | 14 Oct 2026; intraday quotes vary (US$106.56–107.35) |
+| Starshield speed cap | Terminals stopped working above 100mph (160kmh) from ~1am Tue 13 Oct; restoration announced by Kyiv early 15 Oct SGT | Beskrestnov / Fedorov via Guardian, CNA, 14–15 Oct 2026 |
+| Russian diesel deal volumes | 300,000t immediately, 500,000t in November, a further 1m thereafter | Trump via NBC, 11–13 Oct 2026 |
+| Senators opposing the diesel deal | 12, bipartisan | NYT, 14 Oct 2026 |
+| Hormuz shipping attacks | At least 5 incidents in 48 hours to 14 Oct; 6 vessels attacked on Sunday 11 Oct; at least 12 oil/LNG/LPG tankers 28 Sep–5 Oct (highest week of the war) | UKMTO via Guardian; maritime security sources via ST, 13–14 Oct 2026 |
+| Ships sunk at Hormuz | GFS Pride (Singapore-flagged, built 2008, 21 crew evacuated, hit 13 Oct, sank 14 Oct, 2,500 containers per IRGC); Cape Dao (Antigua and Barbuda, hit 23 Sep, sank 14 Oct) | MPA; IMO/UKMTO via Guardian, 14 Oct 2026 |
+| GFS Giselle | Singapore-flagged, built 2015, hull damage 14 Oct, reached anchorage under own propulsion, all 22 crew safe; operator GFS Ship Management, Dubai | MPA, 14 Oct 2026 |
+| Kenya Ebola | 2 confirmed cases, 1 death; second case a 39-year-old relative, symptomatic 13 Oct inside quarantine; Bundibugyo virus; 113 of 128 contacts traced, 108 quarantined; no travel/trade restrictions | Kenya Ministry of Health, 14 Oct 2026 |
+| DRC Ebola outbreak | >8,000 cases, >4,000 deaths — among the largest recorded; Kenya is the fourth country with a linked case | Kenya MoH / Reuters, 14 Oct 2026 |
+| SG PSI (24h) | West 206 at 6am 15 Oct, peak 207 between 1am and 3am — first entry into very unhealthy (201–300) this episode; central 185, east 171, south 157, north 125 | NEA via ST, 15 Oct 2026 |
+| SG PM2.5 (1h) | West 288 at 3pm 14 Oct — 2026 high; at 6am 15 Oct central 89, east 86, west 83, south 64, north 52 | NEA via ST, 14–15 Oct 2026 |
+| Haze response measures | N95 masks via PA grassroots bodies and vending machines at 37 transport hubs and social service offices; >300 CCs and RC/RN centres open as haze shelters | NEA, 14 Oct 2026 |
+| Transboundary Haze Pollution Act | Enacted 2014; triggered when PSI stays unhealthy (101+) anywhere in Singapore for 24h+; fines up to S$100,000/day capped at S$2m; never yet used | ST, 12–14 Oct 2026 |
+| Mont Blanc height | 4,807.47m — 1.29m lower than 2025, 1.88m above the 2023 low (not run) | surveyors via Guardian, 14 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2800 (carried) | XE mid-market 1.27998, 13 Oct 2026; no refresh attempted this run — all FX endpoints 403 via the proxy on 14 Oct |

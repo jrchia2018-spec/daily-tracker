@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "date": "2026-10-15",
+ "generatedAt": "2026-10-15T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-10-14T07:00:00+08:00",
+  "to": "2026-10-15T07:00:00+08:00",
+  "label": "Wednesday 14 October 2026, 0700 SGT → Thursday 15 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "AMERICA THROTTLES THE SATELLITE NETWORK UKRAINE FIGHTS ON, AND ZELENSKY SAYS HE FEELS BETRAYED",
+   "breaking": true,
+   "summary": [
+    "At about 1am Tuesday Ukraine's Starshield terminals — the military package built by SpaceX but owned and managed by the US government — stopped working above 100mph (160kmh). The cap grounded most long-range strike drones and, Kyiv later established, the interceptor drones that are its best answer to Russia's jet-powered Shaheds. Adviser Serhii Beskrestnov said units learned of the limit from SpaceX customer support after complaining; several combat missions failed.",
+    "Musk disowned the decision: \"Starshield systems are owned and controlled by the US government. Any limits on speed or usage are decided by the US military and ultimately POTUS.\" Two US officials told CNN it was not a high-level policy decision, leaving the cause unexplained. Asked by Piers Morgan if he felt betrayed, Zelensky said \"Really, yes… it's a pity that we are losing a strong partner\", and \"I am sure they knew what they did… This decision will bring a lot of human losses.\" By early Thursday SGT former defence minister Mykhailo Fedorov said speeds up to 160kmh were \"being restored\".",
+    "The outage coincided with a second consecutive night of Russian ballistic missiles arriving without the American launch warning Ukraine has had for years; three power plants supplying Kyiv were bombed. A senior Kyiv official confirmed Washington had threatened to cut the feed — denied by Trump on Tuesday — and told AFP: \"It's obvious they are helping Russia for some reason.\" In London, Burnham pledged faster delivery of British lightweight multi-role missiles."
+   ],
+   "geopolitical": "Washington's leverage over Kyiv has moved from what it supplies to what it can switch off remotely, and the switch was flipped the week Trump demanded an end to Ukrainian strikes on Russian refineries. Every European government must now price the chance that American-managed infrastructure inside its own defences can be degraded with no policy decision anyone will own.",
+   "socioeconomic": "The cap hit air defence harder than offence: the interceptor drones it grounded protect Kyiv's apartment blocks and power plants, so the cost landed on civilians in a city being bombed as the heating season starts. Restoration within a day limits the damage, not the lesson."
+  },
+  {
+   "headline": "ARAMCO'S HEADQUARTERS IS HIT AND TWO CONTAINER SHIPS GO DOWN AT HORMUZ AS IRAN RACES THE AMERICAN CALENDAR",
+   "breaking": true,
+   "summary": [
+    "A Houthi missile struck an Aramco administrative building in Dhahran late Tuesday, starting a limited fire with no injuries, per the Saudi Press Agency; Bloomberg reported it was the executive headquarters, which Yahya Saree had named in his evacuation warning a day earlier. Neither Aramco nor Saudi authorities confirmed which building, but yesterday's open question — projectile or interceptor wreckage — is answered as a strike.",
+    "At sea the campaign reached its wartime peak. The Singapore-flagged GFS Pride sank on Wednesday, a day after being hit; hours later the Antigua and Barbuda-flagged Cape Dao went down near the strait, struck on 23 September. UK Maritime Trade Operations logged at least five incidents in 48 hours and six vessels attacked on Sunday alone. Iran's IRGC said the first ship hit a mine on an \"illegal and dangerous route\"; UKMTO assessed both as hit by unidentified projectiles. Tehran has warned regional governments that opening any export route it has not authorised will be treated as hostile.",
+    "Brent settled around US$106 and WTI near US$95, a three-week high, on risk premium rather than lost barrels — Iranian crude has not loaded since late August under the US blockade. Analysts read the tempo as an attempt to close the strait outright before the 3 November midterms."
+   ],
+   "geopolitical": "The war has split into two campaigns Riyadh cannot answer with the same tools: missiles at its corporate and aviation landmarks, and mines and projectiles against third-country merchant ships in an international strait. Hitting the state oil company's headquarters rather than its terminals humiliates without cutting supply — which is why the next escalation has somewhere to go.",
+   "socioeconomic": "Hull losses on two box ships in a week will reprice war-risk cover for everyone still transiting, pushing capacity onto the Cape and lengthening Asia–Europe lead times. With Brent's premium resting on threats rather than barrels, it can fall as fast as a ceasefire arrives — or jump on one hit to a loading terminal."
+  },
+  {
+   "headline": "AMERICAN INFLATION HITS 3.7% ON FUEL AND WALL STREET TAKES ITS WORST DAY IN TWO MONTHS, THREE WEEKS BEFORE THE MIDTERMS",
+   "breaking": true,
+   "summary": [
+    "September consumer prices rose 3.7% year on year, up from 3.4% in August and 0.6% on the month. Petrol jumped 9.1% after August's 3.9%; the energy index rose 5.2% in the month and 20.4% over twelve months. Core inflation rose to 2.6%, above the 2.5% consensus. It is the last CPI print before the 3 November midterms.",
+    "The S&P 500 fell 1.1%, its steepest drop in more than two months, as the print landed alongside fresh doubts about debt-funded AI capital spending outside the largest firms; Treasury yields rose. Moody's Mark Zandi said the report \"gives more support to the argument that the Fed is going to continue raising rates\" when the FOMC meets on 27–28 October. Trump has blamed Ukrainian strikes on Russian refineries and bought Russian diesel instead; the New York Times' own analysis found the deal unlikely to lower pump prices, and most analysts attribute the shock to Hormuz."
+   ],
+   "geopolitical": "A war fought to restore deterrence is now setting the American interest rate, and the remedy chosen — sanctions relief for Moscow in exchange for diesel — trades away leverage Washington spent four years building. That is the trade twelve senators from both parties asked him to reverse.",
+   "socioeconomic": "Fuel is doing nearly all the work in this number, so the burden falls hardest on households that must drive and cannot substitute. A Fed hike into a fuel shock would raise borrowing costs without touching the cause."
+  },
+  {
+   "headline": "KENYA CONFIRMS A SECOND EBOLA CASE, AND THE CHAIN NOW RUNS INSIDE A QUARANTINED FAMILY",
+   "breaking": true,
+   "summary": [
+    "The health ministry said a 39-year-old man, a close relative of the first patient, fell ill on 13 October while already in quarantine under daily monitoring and has been moved to a treatment centre for supportive care. The first case, a 40-year-old Kenyan who had been living in the Democratic Republic of Congo and travelled through three affected provinces into Uganda before flying to Nairobi, tested positive on 5 October and died the same day.",
+    "The ministry identified the pathogen as Bundibugyo virus and said both cases are linked with no evidence of wider community spread. Of the first patient's 128 contacts, 113 have been traced and 108 are in quarantine. The WHO has been notified and border and airport screening tightened, with no restrictions on travel, trade or gatherings. Kenya is the fourth country to report a case from the Congolese outbreak, which has passed 8,000 cases and 4,000 deaths — among the largest ever recorded."
+   ],
+   "geopolitical": "A case caught inside quarantine is the system working, and Nairobi is proving it by keeping borders and markets open rather than sealing them — a test of whether the International Health Regulations' bargain, transparency in exchange for no punitive closures, survives a capital-city scare.",
+   "socioeconomic": "Bundibugyo is the strain the licensed Ervebo vaccine and approved monoclonals, all matched to Zaire ebolavirus, do not cover, so the response rests on tracing and supportive care alone. That makes the 15 untraced contacts the number that decides whether this is an outbreak or an incident."
+  },
+  {
+   "headline": "FOUR YEARS ON, A UKRAINIAN EX-OFFICER STANDS TRIAL IN HAMBURG FOR BLOWING UP NORD STREAM",
+   "breaking": false,
+   "summary": [
+    "Serhii Kuznetsov, a former Ukrainian military officer arrested in Italy and extradited to Germany, appeared at the Hamburg Higher Regional Court on Wednesday accused of organising the September 2022 destruction of the Nord Stream pipelines. Prosecutors charge him as co-perpetrator of a war crime — an attack on civilian infrastructure — plus causing an explosion, property damage and disruption of public services. He denies involvement; his lawyers sought dismissal, rejecting the war-crime count and arguing there is no evidence he led the undersea operation. Kyiv has consistently denied any role. The trial is expected to run into February. A second Ukrainian suspect, Volodymyr Zhuravliov, was detained in Croatia in August and awaits extradition."
+   ],
+   "geopolitical": "This is the first courtroom accounting for the largest act of infrastructure sabotage in modern Europe, and it opens in the week Berlin is defending Ukraine against American pressure. The war-crime charge is the precedent: if attacking a pipeline qualifies, the category covers the grid strikes conducted nightly in Ukraine and the depot and tanker attacks across the Gulf.",
+   "socioeconomic": "Europe has absorbed the energy cost of the explosions; what the trial reopens is liability, since Nord Stream's insurers and bondholders have waited four years for a finding of fact. A verdict naming a state-linked actor would move claims into litigation."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE'S AIR TURNS 'VERY UNHEALTHY' FOR THE FIRST TIME THIS EPISODE AS SHELTERS OPEN AND MASKS ARE HANDED OUT",
+   "breaking": true,
+   "summary": [
+    "The 24-hour PSI in the west reached 206 at 6am on Thursday after peaking at 207 between 1am and 3am — the first entry into the very unhealthy band (201–300) since the haze began. The rest of the island stayed unhealthy, from 185 in the central region to 125 in the north. The previous afternoon PM2.5 in the west hit 288, the year's highest.",
+    "With the PSI judged likely to pass 200, NEA began distributing N95 masks on Wednesday evening through People's Association grassroots bodies to seniors, pregnant women, children, teenagers and people with conditions such as asthma, with mask vending machines going up at 37 public transport hubs and social service offices. More than 300 community clubs and residents' committee and network centres opened air-conditioned rooms as haze shelters. Some schools suspended outdoor activities, and Firefly extended its Seletar–Subang cancellations to 16 October.",
+    "NEA said dense smoke from fires in Kalimantan would keep drifting over Singapore overnight and today. Grace Fu, the Sustainability and Environment Minister, said Singapore is \"keeping its options open\" on acting against errant companies under the Transboundary Haze Pollution Act. The 2014 law bites when the PSI stays unhealthy anywhere in Singapore for 24 hours or more — crossed several times since air quality first turned unhealthy on 4 September — and carries fines up to S$100,000 a day, capped at S$2 million. Fu called it \"a very difficult year because of El Nino\"."
+   ],
+   "geopolitical": "Fu's refusal to rule out prosecution, while wishing Jakarta well and offering help, is the Act held up rather than used — Singapore has never brought a case under it, and doing so against an Indonesian-linked company would be the sharpest bilateral move short of a formal complaint.",
+   "socioeconomic": "Masks and shelters are the threshold at which haze stops being a discomfort and starts costing output: outdoor work slows, clinic visits rise, and households buy purifiers and run air-conditioning, with retailers reporting a sharp surge since 9 October. Because the PSI is a 24-hour rolling average, the west stays very unhealthy for hours after the smoke thins."
+  },
+  {
+   "headline": "ONE SINGAPORE-REGISTERED SHIP SUNK AND ANOTHER HOLED IN THE STRAIT OF HORMUZ",
+   "breaking": true,
+   "summary": [
+    "MPA said on Wednesday that GFS Pride, hit by an unknown projectile on 13 October while transiting Hormuz, caught fire and has since sunk; all 21 crew were safely evacuated. GFS Giselle was struck on 14 October, suffered hull damage and reached a safe anchorage under its own propulsion with all 22 crew safe. No Singaporeans were aboard either container vessel and no injuries were reported. Both are operated by Dubai-based GFS Ship Management.",
+    "MPA said it is \"deeply concerned about the continued attacks on commercial shipping in the Strait of Hormuz\", called them \"unprovoked, unjustifiable and a breach of international law\", and said all actions affecting shipping must comply with the UN Convention on the Law of the Sea \"and must not endanger the safety of seafarers and ships at sea\". At least 12 oil, LNG and LPG tankers were attacked around the waterway between 28 September and 5 October, the highest weekly count since the war began on 28 February."
+   ],
+   "geopolitical": "The Singapore flag is the most exposed instrument of Singaporean policy in this war: a registry built on the promise that flying it brings the protection of the law of the sea has lost a ship to a belligerent that denies responsibility. MPA's invocation of UNCLOS is the only enforcement available, which is why Iran's mine-strike account matters — it shifts fault to the master's choice of route.",
+   "socioeconomic": "Two hulls in two days will show up as war-risk premiums on Singapore-registered tonnage and in owners' calculations about where to flag, the registry's core commercial asset. For a port whose throughput depends on Asia–Europe transits, the Cape routing that follows is lost volume."
+  },
+  {
+   "headline": "PM WONG SAYS SELF-RADICALISATION IN SINGAPORE IS NOW YOUNGER, MORE VARIED AND NO LONGER MOSTLY ISLAMIST",
+   "breaking": false,
+   "summary": [
+    "Marking 20 years since the Harmony Centre opened at An-Nahdhah Mosque to counter misconceptions about Islam after the September 2001 attacks, Prime Minister Lawrence Wong told about 450 guests that Islamist terrorism has not gone away — ISIS still recruits, propagandises and plots, and Singapore remains an attractive target — but that the radicalisation threat has grown more complex. Self-radicalised cases are rising, many young and not all Islamist: he cited a Protestant Christian youth who planned attacks on mosques, two young men who called themselves \"East Asian supremacists\", and another who identified as a white supremacist despite being ethnically Chinese.",
+    "Wong said overseas events strain cohesion at home when religion and identity entangle with politics, citing Gaza: \"We should not let conflicts elsewhere turn fellow Singaporeans against one another.\" The government would keep acting against inflammatory online comments posted by people who believe anonymity shields them, he said, noting that the Maintenance of Racial Harmony Act came into force in September: \"But laws can only set the boundaries — they cannot by themselves create friendship and trust between people.\""
+   ],
+   "geopolitical": "A threat picture that now includes anti-Muslim and ethnic-supremacist radicalisation changes what Singapore's interfaith architecture is for: built to defend one community from suspicion, it is being repurposed to police hostility running in every direction. Naming Gaza as a cohesion risk concedes that the government's foreign-policy positions are read at home as communal ones.",
+   "socioeconomic": "The cases Wong cited were individuals radicalised online and caught young, which puts the burden on schools, families and platforms rather than security agencies, and makes early reporting by people close to them the only mechanism that works at that stage."
+  }
+ ],
+ "word": {
+  "word": "attenuate",
+  "pos": "verb",
+  "pronunciation": "/əˈtɛnjuˌeɪt/",
+  "definition": "To reduce the force, value or effect of something; of a transmitted signal, to weaken it.",
+  "etymology": "From Latin attenuare, 'to make thin', from ad- ('to') plus tenuis ('thin, slender') — the same root as 'tenuous'; in English from the 16th century, and of signals since the 19th.",
+  "example": "A speed cap applied to Ukraine's Starshield terminals at 1am attenuated the country's air defences before it touched its offence, grounding the interceptor drones that stop Shahed attacks on Kyiv."
+ }
+}
