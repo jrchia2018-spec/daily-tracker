@@ -1827,3 +1827,37 @@
 | Transboundary Haze Pollution Act | Enacted 2014; triggered when PSI stays unhealthy (101+) anywhere in Singapore for 24h+; fines up to S$100,000/day capped at S$2m; never yet used | ST, 12–14 Oct 2026 |
 | Mont Blanc height | 4,807.47m — 1.29m lower than 2025, 1.88m above the 2023 low (not run) | surveyors via Guardian, 14 Oct 2026 |
 | FX reference rate used this run | USD/SGD 1.2800 (carried) | XE mid-market 1.27998, 13 Oct 2026; no refresh attempted this run — all FX endpoints 403 via the proxy on 14 Oct |
+
+## Added 16 Oct 2026
+| Indicator | Figure | Source |
+|---|---|---|
+| US PPI (Sep 2026) | +1.3% MoM, +6.3% YoY vs 0.5%/5.3% forecasts — fastest month since Mar 2022, highest annual rate since Dec 2022 (Aug: +0.5%, 5.6%) | BLS via CNN, 15 Oct 2026 |
+| US core PPI | +0.7% MoM, 5.0% YoY — highest since Jan 2023 | BLS, Sep 2026 data, released 15 Oct 2026 |
+| US goods prices | +2.9% MoM, largest on record in BLS data back to 2009; energy accounted for 80% | BLS via CNN, 15 Oct 2026 |
+| US retail sales (Sep) | +0.8% MoM (Aug +1.3%); +0.2% excluding petrol stations; +6.3% YoY (+4.5% ex-petrol) | Commerce Dept via CNN, 15 Oct 2026 |
+| US food wholesale prices | Fresh/dry vegetables +41%, grains +17.4%, oilseeds +11.4% on August | Brusuelas (RSM) via CNN, 15 Oct 2026 |
+| Brent / WTI | Brent ~-1.5% to ~US$104.40 (S$133.63); WTI ~-1.2% to ~US$93.90 (S$120.19), easing on prospective US tanker-sanctions relief | market reports, 15 Oct 2026 (settlement not confirmed; quotes range US$104–106) |
+| Asian chip selloff | Kospi -7.6% (circuit breaker; SK Hynix -11%, Samsung -9.5%, six-month low); Nikkei -4.9%; Hang Seng -1%; TSMC -2% despite strong earnings | CNN, 15 Oct 2026 |
+| Semiconductor index | Seventh consecutive daily fall; down ~20% from its June 2026 peak | CNN, 15 Oct 2026 |
+| US indices (15 Oct) | S&P 500 +0.33%, Dow +556 pts (+1.08%), Nasdaq +0.08% after -1.4% intraday; Treasury yields sharply lower | CNN, 15 Oct 2026 |
+| CoreWeave | -15.5% on 14 Oct, +6% on 15 Oct; tens of billions of debt; Gartner forecasts >80% of neocloud providers cease operations by 2030 | CNN/Gartner, 14–15 Oct 2026 |
+| Anthropic revenue | Sales +45% to US$17b (S$21.8b) last quarter, after more than doubling in Q2; IPO planned | investor presentation via CNN/Reuters, 15 Oct 2026 |
+| Ukraine Patriot interceptors | Stock exhausted; "almost all the ballistic missiles from the last strike were not intercepted due to lack of the (interceptor) missiles"; 4 intercepts reported on the 14 Oct strike | source to CNN, 15 Oct 2026 |
+| Kyiv strike toll (14 Oct) | 4 killed, 25 injured; three Kyiv power plants and Kharkiv energy sites hit | CNN, 15 Oct 2026 |
+| Russian drone launches | 850+ after midnight on 15 Oct | Zelensky via CNN, 15 Oct 2026 |
+| Aden palace strike | 5 killed (incl. 2 of PM al-Zindani's security detail), 16 injured at al-Maashiq Palace; missiles and drones | Yemen Health Ministry via CNN, 15 Oct 2026 |
+| Yemen war toll (3 Sep–15 Oct) | 120 killed, 307 wounded by Saudi strikes, ~60% women and children (Houthi health ministry claim, unverified); 65 Saudi strikes in 24h to 15 Oct | Sanaa Health Ministry via CNN, 15 Oct 2026 |
+| MOAB | GBU-43/B Massive Ordnance Air Blast, largest non-nuclear US bomb; destroys ~9 city blocks; not a deep-penetration warhead; in strike packages for Iranian energy sites and Pickaxe Mountain | US officials via CNN, 15 Oct 2026 |
+| Black Sea tanker attacks | Wine Trader (San Marino-flagged) and Yara J hit in Romanian territorial waters 14 Oct; 7 of Wine Trader's crew missing; ≥23 sailors killed or missing off Romania/Bulgaria in 10 days; 11 still missing from HS Dignity | Reuters/Guardian, 15 Oct 2026 |
+| Peshawar school collapse | 34 children + 1 female teacher killed (12 of the dead girls), 45 injured (3 critical); 110 pupils in 3 classrooms; 8.48am local, al-Khair school; owner arrested | Lady Reading hospital / police via Guardian, 15 Oct 2026 |
+| Pakistan education spending | Under 1% of ~US$450b (S$576b) GDP; 14 children died in a Lahore tutoring-centre collapse in June 2026 | Guardian, 15 Oct 2026 |
+| Brazil working week | Constitutional amendment passed Senate 75–1; bans six-day weeks (16m workers); maximum cut 44→42h after a 60-day period, →40h 14 months later, affecting 30m+ | Guardian, 15 Oct 2026 |
+| SG PSI (24h) | Central 224 at 7am 16 Oct — 2026 high; very unhealthy from midnight; other regions 146–195. Thursday peak 212 (west, noon) | NEA via CNA/ST, 15–16 Oct 2026 |
+| SG PM2.5 (1h) | 93–149 across all five regions at 7am 16 Oct; west 288 on 14 Oct — highest since 2015 (record 471, west, 11pm 19 Oct 2015) | NEA via CNA, 14–16 Oct 2026 |
+| Haze-linked companies | Greenpeace report (5 Oct) links SGX-listed Bumitama Agri and First Resources, and privately held First Borneo Plantations (Singapore-incorporated ownership links), to plantation areas where fires were detected | Greenpeace via ST, 5 and 15 Oct 2026 |
+| Indonesia on foreign help | FM Arrmanatha Nasir: assistance offered by neighbours is "being processed", Prabowo has approved, under discussion at technical level | ST, 15 Oct 2026 |
+| SG tourism receipts | Q2 2026 S$7.21b, -6.2% YoY and -15.4% QoQ (Q1 S$8.51b); arrivals 3.76m, -6.6%. H1 S$15.71b (-0.3%) on 8.19m arrivals (-1.7%) | STB via ST/BT, 15 Oct 2026 |
+| SG tourism by segment (Q2) | SEG -15.4% to S$1.58b; F&B -9.8%; accommodation -8.4%; shopping -1.5%. Top spend: China S$965.5m, Indonesia S$589.7m, Australia S$526.7m, India S$471.6m, US S$427.2m | STB via ST, 15 Oct 2026 |
+| SG kidney transplant wait list | 433 patients June 2026 — 10-year high, +56% on 2016; average wait >8½ years; ~81 transplants/year 2016–2025 (35 deceased, 46 living donor); Kidney Live Donor Support Fund has 163 beneficiaries (not run) | NKF via ST, 15 Oct 2026 |
+| SG MRT reliability | 3.38m train-km between delays (Oct 2025–Sep 2026) — first time above 3m, sixth month above 2m, triple the 1m target; punctuality 99.36%; TEL 498,000 (not run) | LTA via ST, 15 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2800 (carried) | XE mid-market 1.27998, 13 Oct 2026; refresh attempted 16 Oct — frankfurter.app and open.er-api.com both 403 via the proxy |
