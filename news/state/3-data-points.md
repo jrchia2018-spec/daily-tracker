@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 13 October 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 17 October 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -1861,3 +1861,29 @@
 | SG kidney transplant wait list | 433 patients June 2026 — 10-year high, +56% on 2016; average wait >8½ years; ~81 transplants/year 2016–2025 (35 deceased, 46 living donor); Kidney Live Donor Support Fund has 163 beneficiaries (not run) | NKF via ST, 15 Oct 2026 |
 | SG MRT reliability | 3.38m train-km between delays (Oct 2025–Sep 2026) — first time above 3m, sixth month above 2m, triple the 1m target; punctuality 99.36%; TEL 498,000 (not run) | LTA via ST, 15 Oct 2026 |
 | FX reference rate used this run | USD/SGD 1.2800 (carried) | XE mid-market 1.27998, 13 Oct 2026; refresh attempted 16 Oct — frankfurter.app and open.er-api.com both 403 via the proxy |
+
+## Added 17 Oct 2026
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | US$109.86/barrel at 16 Oct settle (+US$3.94, +3.7%), highest since 19 May 2026; S$140.63 at USD/SGD 1.28 | market reports via web search, 16 Oct 2026 |
+| WTI crude | US$101.41/barrel at 16 Oct settle (+US$3.44, +3.5%), first close above US$100 since 17 Sep 2026; S$129.80 at USD/SGD 1.28 | market reports via web search, 16 Oct 2026 |
+| Hormuz ship attacks | 12 vessels attacked 5–11 Oct, highest week since the war began (10 the week before, six on 11 Oct alone, four more since); UKMTO dating approximate | BBC Verify analysis of UKMTO data, 16 Oct 2026 |
+| Hormuz oil flows | ~12.6m barrels/day on 13 Oct, down from ~15m at end-September | industry data via BBC Verify, 16 Oct 2026 |
+| US FY2026 deficit | US$1.992 trillion, +12% on FY2025's US$1.775tn; third-largest on record after 2020–21; receipts ~US$5.4tn, outlays ~US$7.4tn | US Treasury final FY2026 accounts, 16 Oct 2026 |
+| US debt interest FY2026 | Gross interest a record US$1.36tn (+US$144bn, +12%); net interest above US$1tn — ~two-thirds of the US$217bn rise in the deficit | US Treasury via CNBC/Fox Business, 16 Oct 2026 |
+| US gross federal debt | Above US$40.3 trillion (passed US$40tn in August) | US Treasury via press reports, 16 Oct 2026 |
+| Voided IEEPA tariff refunds | ~US$166bn refunded after the Supreme Court struck the tariffs down in February 2026 | Reuters/CBP via press reports, 16 Oct 2026 |
+| US indices (16 Oct) | Nasdaq Composite -2.1% to 26,140 (worst week since June, ~-4.5%); S&P 500 -1.1% (-~2% weekly); Dow -0.3% | CNN/CBS market reports, 16 Oct 2026 |
+| CoreWeave | -~12% on 16 Oct and ~-24% on the week; bond yields past 15%; CEO stock sales near US$1bn since IPO | Reuters/CNA and SEC filings, 16 Oct 2026 |
+| Transboundary Haze Pollution Act | First notices of this episode: NEA sent preventive measure notices to seven Indonesian companies on 16 Oct, requiring firefighting deployment, no burning and action plans; 2015 investigations into four companies still open; enacted 2014, no prosecution in 11 years | Grace Fu via ST/CNA, 16 Oct 2026 |
+| SG unhealthy-air run | 12 consecutive days of unhealthy PSI from 5 Oct — longest since 2015's 15 days (23 Sep–7 Oct); episode ~6 weeks since 4 Sep, as in 2015 | ST checks of Singstat 24-hour PSI, 16 Oct 2026 |
+| SG PSI (24h) | Central 226 at 8am 16 Oct; Fu warned readings may exceed 300 (hazardous); relief expected only at the inter-monsoon in 3–4 weeks, north-east monsoon ~early December | NEA/Grace Fu via ST, 16 Oct 2026 |
+| SG N95 collection | ~10% of eligible Singaporeans collected since 14 Oct; vending machines at 37 transport hubs and social service offices by 16 Oct | Grace Fu via ST, 16 Oct 2026 |
+| SG haze employer compliance | ~three-quarters of employers inspected had haze measures in place | Jasmin Lau/MOM via ST, 16 Oct 2026 |
+| Brazil Amazon deforestation | -41.8% year on year to 3,335 sq km — lowest since records began 1988, 1,236 sq km below the prior record low; -71.2% since 2022; Pará 33.9%, Mato Grosso 25.5%, Amazonas 15.7%; Roraima +0.4%; Jair Bolsonaro's 2019–23 term +59.5% | Prodes/INPE via The Guardian, 16 Oct 2026 |
+| Brazil Cerrado deforestation | 5,516 sq km, lowest since 2001; -48.4% over four years | Prodes/INPE via The Guardian, 16 Oct 2026 |
+| Ukraine war funding | Zelensky put the 2027 war cost at €155bn and asked the EU for €70bn more; von der Leyen accepted a €70bn gap; December's €90bn plan covers two-thirds of 2026–27 needs; Russia's €210bn frozen in the EU | Zelensky/von der Leyen via The Guardian, 16 Oct 2026 |
+| India voter roll deletions | More than 130 million voters removed in the revision; ~500 protesters reached Connaught Place on 16 Oct | Reuters via CNA, 16 Oct 2026 |
+| SG cardiovascular disease | One in three deaths in 2025; about 23 deaths a day from heart disease and stroke | NHCS via ST, 16 Oct 2026 |
+| CIPHER | Opened 16 Oct at NHCS; 5ml blood reprogrammed into induced pluripotent stem cells; NHCS library of 40+ patient-derived disease models; S$2.5m Tong Ming Chuan Professorship announced | ST, 16 Oct 2026 |
+
