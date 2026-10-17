@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 17 October 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 18 October 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -1887,3 +1887,29 @@
 | SG cardiovascular disease | One in three deaths in 2025; about 23 deaths a day from heart disease and stroke | NHCS via ST, 16 Oct 2026 |
 | CIPHER | Opened 16 Oct at NHCS; 5ml blood reprogrammed into induced pluripotent stem cells; NHCS library of 40+ patient-derived disease models; S$2.5m Tong Ming Chuan Professorship announced | ST, 16 Oct 2026 |
 
+## Global data points (18 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Graham Act (Lindsey O. Graham Sanctioning Russia and Iran Act of 2026) | Senate passage 86–11, signed into law mid-Sep 2026; Russia provisions waived by executive order signed late Fri 16 Oct, two days before effect; no expiry | Reuters/CNA, 17 Oct 2026 |
+| Waived provisions | Tariffs up to 100% on the largest buyers of Russian oil and gas; sanctions on Russia's energy sector, banks and shadow tanker fleet; curbs on Russian sovereign debt and US investment; the clause conditioning relief on a Ukrainian-accepted peace deal | Reuters/CNA/Guardian, 17 Oct 2026 |
+| Russian strikes on Ukrainian energy, 16 Oct | More than 15 power generation and transmission sites | Zelensky via CNA, 17 Oct 2026 |
+| Starshield speed cap | Terminals cut out above 161kmh inside Ukraine; ran beyond 180kmh when driven into the EU | Zelensky via Guardian, 17 Oct 2026 |
+| France protests, 17 Oct | 550,000 nationwide (110,000 Paris) per interior ministry; 800,000 per CGT; 400 arrests rising past 1,000 by late evening; at least 60 officers injured | Interior ministry/CGT via Guardian, CNA, BBC, 17 Oct 2026 |
+| French cost-of-living worry | ~45% worried about rising prices and inflation (survey of 2,000) | October 2026 survey via Guardian, 17 Oct 2026 |
+| Yemen displacement since August | More than 200,000 people | UN via Guardian, 17 Oct 2026 |
+| Aden airport strike, 16 Oct | Two Houthi missiles, ~500m from a Yemenia aircraft preparing to depart, ~100m from the runway midpoint; no casualties | Yemen information ministry via Guardian, 17 Oct 2026 |
+| West Bank settler attacks | 170+ since 27 Sep; at least 4 killed, 100+ injured, thousands of trees damaged | Yesh Din and Palestinian authorities via Guardian, 17 Oct 2026 |
+| Kenya Ebola (Bundibugyo) | 7 confirmed cases (4 new on 17 Oct, 3 of them health workers aged 29/35/32); 128 of 130 contacts traced and quarantined (98.5% vs an 85% benchmark); no approved vaccine or treatment | Kenya health ministry via CNA/Reuters, 17 Oct 2026 |
+| Congo Ebola epidemic | More than 9,000 cases, more than 4,000 deaths (second largest recorded) | Kenya health ministry via CNA, 17 Oct 2026 |
+| USD/SGD | 1.2800 — carried; frankfurter.app and open.er-api.com both 403 through the proxy for a fifth run | Carried rate, last sourced 13 Oct 2026 |
+
+## Singapore data points (18 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Consecutive unhealthy PSI days | 13 — longest unbroken run since 2015; 24-hour PSI unhealthy and hourly PM2.5 high on 17 Oct | Straits Times, 17 Oct 2026 |
+| Haze outlook | One of the worst transboundary haze episodes on record for Singapore, Malaysia and the Philippines; could last weeks to months; current El Nino on track to be the strongest ever observed | Ben Churchill, WMO Asia-Pacific regional director, via Straits Times interview 16 Oct, published 17 Oct 2026 |
+| PSA container throughput | 44.66m TEUs in 2025 — record, from 41.12m in 2024 | SM Lee Hsien Loong, 17 Oct 2026 |
+| Singapore Port Workers Union | Founded 1946; more than 10,000 members at PSA Corporation, PSA International and port logistics firms | SPWU 80th anniversary dinner, 17 Oct 2026 |
+| TCM Accreditation Programme | Voluntary; first 5 providers accredited; valid 3 years for clinics, 2 for practitioners; run by the Academy of Chinese Medicine, Singapore | Ong Ye Kung at the 23rd World Congress of Chinese Medicine, 17 Oct 2026 |
+| TCM Integrative Sandbox | Launched Jan 2025; first call selected 7 acupuncture projects from 18 proposals; second call opens 3 Nov 2026 and the call stays open three more years | MOH, 17 Oct 2026 |
+| PM Wong Middle East visit | Doha 18–20 Oct, Abu Dhabi and Dubai 20–22 Oct; co-chairs the 9th Qatar–Singapore High-Level Joint Committee (established 2006, last met Aug 2023) | PMO, 17 Oct 2026 |
