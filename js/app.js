@@ -1580,7 +1580,7 @@ function renderRuns() {
       <div class="item">
         <div>
           <div class="title">${fmtDate(r.date)}</div>
-          <div class="sub">${r.min ? fmtRunTime(r.min) + ' · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
+          <div class="sub">${r.min ? fmtRunTime(r.min) + ' · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} active kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
         </div>
         <div class="row" style="gap:4px">
           <div class="val">${r1(r.km)} km</div>
@@ -1647,8 +1647,9 @@ function openRunModal() {
       <label class="field"><span>Duration</span><input id="r-min" type="text" inputmode="decimal" placeholder="27.46 or 27:46"></label>
     </div>
     <p class="small" id="r-echo" style="margin:-6px 0 8px;min-height:16px"></p>
-    <label class="field"><span>Calories burnt (optional)</span>
+    <label class="field"><span>Active calories (optional)</span>
       <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate"></label>
+    <p class="small muted" style="margin:-6px 0 10px">${ACTIVE_KCAL_HINT}</p>
     <label class="field"><span>Notes (optional)</span><input id="r-notes" placeholder="easy run, intervals..."></label>
     <button class="btn primary block" id="r-save">Save run</button>
   `);
@@ -1689,7 +1690,7 @@ function openRunModal() {
     closeModal();
     render();
     const used = entry.kcal ?? runKcal(km, latestWeight());
-    toast(`Run logged: ${km} km (${entry.kcal != null ? '' : '~'}${used} kcal)`);
+    toast(`Run logged: ${km} km (${entry.kcal != null ? '' : '~'}${used} active kcal)`);
   });
 }
 
@@ -1729,9 +1730,17 @@ function gymTypeLabel(type) {
   return GYM_TYPES.find(t => t.type === type)?.label || 'Gym';
 }
 
+// The duration field was removed 17 Oct 2026 at the owner's request. A new
+// session without active calories is estimated at 45 min (see gymKcal);
+// sessions logged before keep the minutes they were logged with.
 function blankGymDraft() {
-  return { date: dateKey(), minutes: '', kcal: '' };
+  return { date: dateKey(), kcal: '' };
 }
+
+// The burn model already counts resting energy in its base, so a workout
+// should add only what it cost ABOVE resting — the watch's active figure.
+// Its total would pay for that hour's resting burn twice.
+const ACTIVE_KCAL_HINT = "If your watch shows active and total, use active — your resting burn is already counted.";
 
 // Sessions logged before the push/pull/legs switch have exercises instead
 // of a type; summarise them so old history stays readable.
@@ -1747,12 +1756,10 @@ function renderGym() {
   body.innerHTML = `
   <div class="card">
     <h2>New session</h2>
-    <div class="grid2">
-      <label class="field"><span>Date</span><input id="g-date" type="date" value="${gymDraft.date}"></label>
-      <label class="field"><span>Duration (min)</span><input id="g-min" type="number" inputmode="numeric" placeholder="60" value="${gymDraft.minutes}"></label>
-    </div>
-    <label class="field"><span>Calories burnt (optional)</span>
+    <label class="field"><span>Date</span><input id="g-date" type="date" value="${gymDraft.date}"></label>
+    <label class="field"><span>Active calories (optional)</span>
       <input id="g-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate" value="${gymDraft.kcal}"></label>
+    <p class="small muted" style="margin:-6px 0 0">${ACTIVE_KCAL_HINT}</p>
     <p class="small muted" style="margin:10px 0 8px">Tap to log the session:</p>
     <div class="grid3">
       ${GYM_TYPES.map(t => `
@@ -1768,7 +1775,7 @@ function renderGym() {
     ${sessions.length ? sessions.map(s => `
       <div class="item">
         <div style="flex:1">
-          <div class="title">${s.type ? `${gymTypeLabel(s.type)} day` : fmtDate(s.date)}${s.minutes ? ` <span class="muted small">· ${s.minutes} min</span>` : ''}${s.kcal != null ? ` <span class="muted small">· ${r0(s.kcal)} kcal</span>` : ''}</div>
+          <div class="title">${s.type ? `${gymTypeLabel(s.type)} day` : fmtDate(s.date)}${s.kcal != null ? ` <span class="muted small">· ${r0(s.kcal)} active kcal</span>` : ''}</div>
           ${s.type
             ? `<div class="sub">${fmtDate(s.date)}</div>`
             : (s.exercises || []).map(e => `<div class="sub">${esc(e.name)} — ${setsSummary(e.sets)}</div>`).join('')}
@@ -1781,7 +1788,6 @@ function renderGym() {
   const $g = sel => body.querySelector(sel);
 
   $g('#g-date').addEventListener('change', e => { gymDraft.date = e.target.value; });
-  $g('#g-min').addEventListener('input', e => { gymDraft.minutes = e.target.value; });
   $g('#g-kcal').addEventListener('input', e => { gymDraft.kcal = e.target.value; });
 
   for (const b of body.querySelectorAll('[data-type]')) {
@@ -1789,7 +1795,6 @@ function renderGym() {
       const entry = {
         id: uid(),
         date: gymDraft.date || dateKey(),
-        minutes: Number(gymDraft.minutes) || null,
         type: b.dataset.type,
       };
       if (gymDraft.kcal !== '') entry.kcal = Math.max(0, Number(gymDraft.kcal));

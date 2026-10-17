@@ -74,7 +74,9 @@ export function runKcal(km, weightKg) {
 }
 
 export function gymKcal(minutes, weightKg) {
-  // ~5 METs strength training: kcal/min = 5 * 3.5 * kg / 200
+  // ~5 METs strength training: kcal/min = 5 * 3.5 * kg / 200. Sessions logged
+  // from 17 Oct 2026 carry no duration (the field was removed), so they're
+  // priced at the 45-min default unless active calories were entered.
   return Math.round(((5 * 3.5 * (weightKg || 70)) / 200) * (minutes || 45));
 }
 
