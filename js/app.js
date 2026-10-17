@@ -547,6 +547,29 @@ function fmtSleep(mins) {
   return `${Math.floor(mins / 60)}h ${String(mins % 60).padStart(2, '0')}m`;
 }
 
+// Nap length, stored as minutes (optional, added 17 Oct 2026 — the owner's
+// watch gives a nap's length but no score). Naps are short, so a bare number
+// is read by size: under 5 means hours ("1.5" = 1h 30m), 5 and up means
+// minutes ("45" = 45m). "1:20", "1h20" and "45m" also work. Echoed back
+// before saving, like sleep time.
+function parseNapTime(str) {
+  const s = String(str).trim().toLowerCase();
+  if (!s) return null;
+  const hm = /^(\d{1,2})\s*[:h]\s*(\d{1,2})?\s*m?$/.exec(s);
+  if (hm) return Number(hm[1]) * 60 + Number(hm[2] || 0) || null;
+  const m = /^(\d{1,3})\s*m(in)?$/.exec(s);
+  if (m) return Number(m[1]) || null;
+  if (!/^\d+(\.\d+)?$/.test(s)) return null;
+  const n = parseFloat(s);
+  if (!(n > 0)) return null;
+  if (n < 5) return Math.round(n * 60);
+  return n <= 240 ? Math.round(n) : null;
+}
+
+function fmtNap(mins) {
+  return mins < 60 ? `${mins}m` : fmtSleep(mins);
+}
+
 // Sleep bands, calibrated to actual logged nights rather than generic advice.
 // Weekday sleep is capped by circumstance here, so a 7.5h "good" bar never
 // fired and the card said nothing most days; these bands split the real
@@ -918,6 +941,9 @@ function renderMeals() {
       <p class="small" style="margin:0 0 6px">👟 Steps taken during the day of <b>${fmtDate(mealDate)}</b>:</p>
       <label class="field"><span>Steps</span><input id="mw-active" type="number" inputmode="numeric" value="${w.steps ?? ''}" placeholder="8500"></label>
       ${mealDate === dateKey() ? `<p class="small muted" style="margin:-2px 0 8px">${fmtDate(mealDate)} isn't over yet — the total your watch shows this morning is <b>${fmtDate(addDays(mealDate, -1))}</b>'s, so tap ‹ and enter it there.</p>` : ''}
+      <p class="small" style="margin:0 0 6px">💤 Nap during the day of <b>${fmtDate(mealDate)}</b> <span class="muted">— optional</span>:</p>
+      <label class="field"><span>Nap</span><input id="mw-nap" value="${w.napMins != null ? fmtNap(w.napMins) : ''}" placeholder="45 or 1:20"></label>
+      <p class="small" id="mw-nap-echo" style="margin:-6px 0 8px;min-height:16px"></p>
       <button class="btn small block" id="mw-save">Save check-in</button>
     </details>
   </div>`;
@@ -1027,17 +1053,34 @@ function renderMeals() {
   timeInput.addEventListener('input', paintTimeEcho);
   paintTimeEcho();
 
+  const napInput = view.querySelector('#mw-nap');
+  const napEcho = view.querySelector('#mw-nap-echo');
+  const paintNapEcho = () => {
+    const v = napInput.value.trim();
+    if (!v) { napEcho.textContent = ''; return; }
+    const mins = parseNapTime(v);
+    napEcho.innerHTML = mins == null
+      ? '<span style="color:var(--orange)">Not understood — try 45, 1:20 or 1h20</span>'
+      : `Reading this as <b>${fmtNap(mins)}</b>`;
+  };
+  napInput.addEventListener('input', paintNapEcho);
+  paintNapEcho();
+
   view.querySelector('#mw-save').addEventListener('click', () => {
     const sleep = view.querySelector('#mw-sleep').value;
     const time = view.querySelector('#mw-time').value.trim();
     const active = view.querySelector('#mw-active').value;
+    const napRaw = napInput.value.trim();
     const mins = time === '' ? null : parseSleepTime(time);
     if (time !== '' && mins == null) { toast('Sleep time looks off — try 7:41 or 7.5'); return; }
+    const napMins = napRaw === '' ? null : parseNapTime(napRaw);
+    if (napRaw !== '' && napMins == null) { toast('Nap looks off — try 45 or 1:20'); return; }
     // Cleared fields delete the stored value, so bad entries can be removed.
     const w = { ...wellnessFor(mealDate) };
     if (sleep !== '') w.sleep = clamp(Number(sleep), 0, 100); else delete w.sleep;
     if (mins != null) w.sleepMins = mins; else delete w.sleepMins;
     if (active !== '') w.steps = Math.max(0, Number(active)); else delete w.steps;
+    if (napMins != null) w.napMins = napMins; else delete w.napMins;
     state.wellness[mealDate] = w;
     save();
     render();
@@ -1838,6 +1881,12 @@ function weekReview(keys) {
   const ws = state.weights.filter(x => keys.includes(x.date));
   const sleeps = keys.map(k => wellnessFor(k).sleep).filter(s => s != null);
   const times = keys.map(k => wellnessFor(k).sleepMins).filter(s => s != null);
+  // Naps stay out of the sleep-time average and the bands (both describe the
+  // night); they're reported alongside, with a night-plus-nap figure for the
+  // nights that have a time logged.
+  const naps = keys.map(k => wellnessFor(k).napMins).filter(n => n != null);
+  const withNap = keys.filter(k => wellnessFor(k).sleepMins != null)
+    .map(k => wellnessFor(k).sleepMins + (wellnessFor(k).napMins || 0));
   const actives = keys.map(k => wellnessFor(k).steps).filter(a => a != null);
   const waters = keys.map(k => waterTotalFor(k)).filter(w => w > 0);
   // A week average is only meaningful against the average target over the
@@ -1854,6 +1903,9 @@ function weekReview(keys) {
     sleepMin: sleeps.length ? Math.min(...sleeps) : null,
     sleepMax: sleeps.length ? Math.max(...sleeps) : null,
     sleepTimeAvg: times.length ? Math.round(times.reduce((a, b) => a + b) / times.length) : null,
+    napCount: naps.length,
+    napAvg: naps.length ? Math.round(naps.reduce((a, b) => a + b) / naps.length) : null,
+    sleepWithNapsAvg: naps.length && withNap.length ? Math.round(withNap.reduce((a, b) => a + b) / withNap.length) : null,
     activeAvg: actives.length ? Math.round(actives.reduce((a, b) => a + b) / actives.length) : null,
     checkins: Math.max(sleeps.length, times.length, actives.length),
     loggedDays: logged.length,
@@ -2050,6 +2102,7 @@ function weeklyReviewCard() {
     <div class="macro-bars" style="margin:14px 0">
       ${wr.sleepAvg != null ? meter('Avg sleep score', wr.sleepAvg, 100, wr.sleepAvg >= SLEEP.goodScore ? 'var(--green)' : wr.sleepAvg < SLEEP.roughScore ? 'var(--orange)' : 'var(--accent)', `<b>${wr.sleepAvg}</b><span class="muted"> / 100 · range ${wr.sleepMin}–${wr.sleepMax}</span>`) : ''}
       ${wr.sleepTimeAvg != null ? meter('Avg sleep time', wr.sleepTimeAvg, 480, wr.sleepTimeAvg >= SLEEP.goodMins ? 'var(--green)' : wr.sleepTimeAvg < SLEEP.roughMins ? 'var(--orange)' : 'var(--accent)', `<b>${fmtSleep(wr.sleepTimeAvg)}</b><span class="muted"> / 8h</span>`) : ''}
+      ${wr.napCount ? `<p class="small muted" style="margin:2px 0 0">💤 ${wr.napCount} nap${wr.napCount === 1 ? '' : 's'}, avg <b style="color:var(--text)">${fmtNap(wr.napAvg)}</b>${wr.sleepWithNapsAvg != null ? ` — night + naps averages <b style="color:var(--text)">${fmtSleep(wr.sleepWithNapsAvg)}</b>` : ''}</p>` : ''}
     </div>` : ''}
     <div class="grid3" style="text-align:center;border-top:1px solid var(--line);padding-top:12px">
       ${tile(r1(wr.km), wr.runN ? `km · ${wr.runN} run${wr.runN === 1 ? '' : 's'}` : 'run km')}
