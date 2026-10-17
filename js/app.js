@@ -105,36 +105,35 @@ function downloadBackup() {
 
 // A file left in Downloads dies with the phone, so a backup goes to the
 // phone's share menu instead — straight to Google Drive or a chat with
-// yourself. Android Chrome only shares an allowlist of file types and .json
-// isn't on it, so the same contents go as .txt there (Import takes both).
-// Where sharing files isn't supported, it downloads.
+// yourself. Where sharing files isn't supported, it downloads.
 // Only a completed backup is stamped; backing out of the menu changes nothing.
 //
-// On the owner's Android phone (11 Oct 2026) the share menu never opened and
-// it fell back to a download — cause unknown from here. So every attempt
-// records how it went and why (state.backupVia), which travels inside the
-// next backup file: the fallback can then be diagnosed from real data.
+// It shares as .txt, always, in ONE attempt (same JSON inside; Import, the
+// PC backup script and the checks all take both). Diagnosed 17 Oct 2026 from
+// the owner's own backup: Android Chrome's canShare() accepts a .json file,
+// then share() refuses it — "NotAllowedError: Permission denied" — because
+// .json isn't on Chrome's share allowlist. Trying .txt after that refusal is
+// no use either: the first share() call spends the tap's user activation.
+// Every attempt still records how it went (state.backupVia), which travels
+// inside the next backup file, so a new failure can be read from real data.
 async function backUp() {
   const via = reason => { state.backupVia = { date: dateKey(), reason, ua: navigator.userAgent.slice(0, 160) }; };
   if (!navigator.canShare) via('no share support');
   else {
-    const tried = [];
-    for (const [ext, type] of [['json', 'application/json'], ['txt', 'text/plain']]) {
-      via(`sharing ${ext}`); // recorded BEFORE exporting, so the shared file itself says how it was sent
-      const file = new File([exportData()], `tracker-backup-${dateKey()}.${ext}`, { type });
-      if (!navigator.canShare({ files: [file] })) { tried.push(`${ext} not shareable`); continue; }
+    via('sharing txt'); // recorded BEFORE exporting, so the shared file itself says how it was sent
+    const file = new File([exportData()], `tracker-backup-${dateKey()}.txt`, { type: 'text/plain' });
+    if (!navigator.canShare({ files: [file] })) via('txt not shareable');
+    else {
       try {
         await navigator.share({ files: [file], title: 'Tracker backup' });
+        state.lastBackup = dateKey();
+        save();
+        return 'shared';
       } catch (e) {
         if (e.name === 'AbortError') return 'cancelled';
-        tried.push(`${ext} share failed: ${e.name}: ${e.message}`);
-        break; // refused for some other reason — fall through to a download
+        via(`txt share failed: ${e.name}: ${e.message}`);
       }
-      state.lastBackup = dateKey();
-      save();
-      return 'shared';
     }
-    via(tried.join('; '));
   }
   downloadBackup();
   return 'downloaded';
@@ -621,16 +620,31 @@ function daySuggestions(today) {
 // Today's plan on Home — the finalised version of what the Train tab plans,
 // so the morning glance says what's on without opening anything. Silent when
 // nothing is planned, so a rest day adds no clutter.
+// The race plan's description for one planned slot. The owner rearranges the
+// week around NS (week 1: the hard run moved to Monday, the long run to Sunday
+// night), so sessions are matched by KIND within their plan week, not by
+// date: the n-th planned hard run of the week gets the plan's n-th hard run.
+// A session left on its original day matches exactly as before; one planned
+// beyond what the week holds (a fourth run in a three-run week) gets none.
+function hmTextFor(key, slotId) {
+  const week = hmWeekOf(key);
+  const kind = planFor(key)[slotId];
+  if (!week || !kind) return null;
+  const planned = [];
+  for (const k of weekKeys(parseKey(key))) {
+    for (const s of PLAN_SLOTS) if (planFor(k)[s.id] === kind) planned.push(`${k}|${s.id}`);
+  }
+  const written = week.sessions.filter(s => s.kind === kind).sort((a, b) => a.day - b.day);
+  return written[planned.indexOf(`${key}|${slotId}`)]?.text || null;
+}
+
 function todayPlanCard(today) {
   const day = planFor(today);
-  // The owner's race plan writes out what each session actually is. Shown only
-  // while the slot still holds the kind the plan set — if they've changed it,
-  // the plan's description no longer applies.
-  const written = state.owner ? hmSessionsOn(today) : [];
+  // The owner's race plan writes out what each session actually is.
   const rows = PLAN_SLOTS
     .map(s => ({
       slot: s, kind: planKind(day[s.id]), status: planSlotStatus(today, s.id),
-      text: written.find(x => x.kind === day[s.id])?.text,
+      text: state.owner ? hmTextFor(today, s.id) : null,
     }))
     .filter(r => r.kind);
   if (!rows.length) return '';
