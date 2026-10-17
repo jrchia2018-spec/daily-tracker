@@ -21,7 +21,7 @@ function defaults() {
     catchupDismissed: {}, // { 'YYYY-MM-DD': true } — catch-up reminders the user waved off
     weighinDismissed: {}, // { 'YYYY-MM-DD': true } — weekend weigh-in prompts waved off
     lastBackup: null,     // date string of the last export — drives the backup nudge
-    skincareStart: null,  // 'YYYY-MM-DD' — day 0 of the 8-week hold routine, or null
+    skincareStart: null,  // 'YYYY-MM-DD' — day 0 of the 8-week hold (owner's ran 25 Jul–19 Sep 2026). History only; nothing reads it since 17 Oct.
     skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } } — LEGACY per-day counts, still read for days before the ledger starts
     lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
     forgotten: {},        // { 'food name, lowercased': ms } — saved foods no longer suggested. See forgetFood().
@@ -600,7 +600,7 @@ export function removeCustomSupplement(id) {
   save();
 }
 
-// ---- skincare 8-week hold ----
+// ---- skincare ----
 
 export function skincareFor(key) {
   return state.skincare[key] || {};
@@ -625,15 +625,13 @@ export function newLesionCount(entry) {
   return entry && entry.newLesion ? 1 : 0;
 }
 
-export function hadNewLesion(entry) {
-  return newLesionCount(entry) > 0;
-}
-
 // (setSkincare — the writer for the old per-day skincare map — was removed
 // 5 Oct 2026 as dead code: the whitehead ledger below replaced it on 15 Aug
-// and nothing had called it since. areaCounts/newLesionCount/hadNewLesion
-// above are still live: they READ the three legacy shapes for days that
-// pre-date the ledger.)
+// and nothing had called it since. areaCounts/newLesionCount above are still
+// live: they READ the three legacy shapes for days that pre-date the ledger.
+// skincareProgram/skincareWeek (the 8-week hold's week counter and weekly
+// rollup) and hadNewLesion went on 17 Oct 2026, unused since the Skincare
+// page became routine-only on 11 Oct — in git history if a hold returns.)
 
 // ---- whitehead ledger (15 Aug 2026) ----
 //
@@ -760,69 +758,4 @@ export function lesionDays(l, key = dateKey()) {
 export function bumpSkincareArea(key, id, delta) {
   if (delta > 0) addLesion(key, id);
   else removeLesionAdded(key, id);
-}
-
-// Program position: day 0 is `skincareStart`, week 1 = days 0–6, over 8 weeks.
-export function skincareProgram() {
-  if (!state.skincareStart) return null;
-  const today = dateKey();
-  const dayNum = daysBetween(state.skincareStart, today); // 0 on day 0
-  return {
-    start: state.skincareStart,
-    dayNum,                              // 0-based days since day 0
-    weekIndex: Math.floor(dayNum / 7),   // 0-based week
-    week: Math.floor(dayNum / 7) + 1,    // 1-based week
-    dayOfWeek: (dayNum % 7) + 1,         // 1..7 within the week
-    done: dayNum >= 56,                  // past the 8-week hold
-  };
-}
-
-// New-lesion days, average active count, and a per-area tally for one 0-based
-// program week, counting only days up to today. `daysLogged` distinguishes
-// "no new whiteheads" from "didn't log" — they mean very different things.
-export function skincareWeek(weekIndex) {
-  const first = addDays(state.skincareStart, weekIndex * 7);
-  const today = dateKey();
-  let newDays = 0, newTotal = 0, sum = 0, counted = 0, elapsed = 0, daysLogged = 0;
-  const areas = {};
-  for (let i = 0; i < 7; i++) {
-    const k = addDays(first, i);
-    if (k > today) break;
-    elapsed++;
-    const ledger = onLedger(k);
-    const e = state.skincare[k];
-    // On the ledger every elapsed day is known — an untouched day genuinely
-    // means "nothing changed", not "forgot to log". That ambiguity was the
-    // whole reason daysLogged existed.
-    if (ledger) daysLogged++;
-    else if (e) daysLogged++;
-    else continue;
-
-    const n = newOnDate(k);
-    if (n) newDays++;
-    newTotal += n;
-    // Sum the counts, not the number of distinct areas — two on the chin is 2.
-    for (const [a, c] of Object.entries(newAreasOn(k))) areas[a] = (areas[a] || 0) + c;
-    const act = activeCountOn(k);
-    if (typeof act === 'number') { sum += act; counted++; }
-  }
-
-  // Spots that cleared during this week, and how long they had lasted.
-  // CARRIED spots are excluded from the duration average: they were already
-  // on the face when tracking began, so their `appeared` is the day they were
-  // entered, not the day they started. Averaging them in would understate how
-  // long a whitehead really lasts — the one number this whole tab is for.
-  const last = addDays(first, 6);
-  const clearedList = lesionsAll().filter(l => l.resolved && l.resolved >= first && l.resolved <= last);
-  const timed = clearedList.filter(l => !l.carried);
-  const durSum = timed.reduce((s, l) => s + daysBetween(l.appeared, l.resolved), 0);
-
-  return {
-    first, daysElapsed: elapsed, daysLogged, newDays, newTotal, areas,
-    avg: counted ? Math.round(sum / counted) : null,
-    cleared: clearedList.length,
-    clearedTimed: timed.length,
-    avgDaysToClear: timed.length ? Math.round(durSum / timed.length) : null,
-    onLedger: onLedger(first) || onLedger(last),
-  };
 }
