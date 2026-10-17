@@ -31,6 +31,7 @@ export const HM_RULES = [
   'Hot, humid day: add 10–15 s/km to easy and tempo paces. Run race-pace sessions early so the numbers mean something.',
   'Slept under ~5 h? Run Tuesday\'s session easy instead.',
   'Tired: cut Friday first, then shorten Thursday. Tuesday and Saturday are the sessions that build the race.',
+  'Swapping a session is fine — like for like. Keep the fast running to about the planned distance and no faster than the plan\'s paces. Feeling good? Add an easy km, not more reps. (Swaps on hard days almost always drift harder, and from February that is how shins and Achilles go.)',
   'Missed sessions are never made up. A missed week (ill, injured, exams) counts as an off week plus re-entry, and skips one build week.',
   'An off week moving one week earlier: skip the last training week before it. One week later: repeat the week before it.',
   'Sharp or worsening shin, Achilles or knee pain ends the run — two easy days, no quality until it\'s gone.',

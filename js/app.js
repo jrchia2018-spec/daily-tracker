@@ -1695,21 +1695,49 @@ function pace(r) {
   return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
 }
 
+// Faster than 2:50/km over a whole logged run is beyond any human (the 5k
+// world record is ~2:31/km, the marathon ~2:52/km). It almost always means
+// the pace went into the time box — on 7 Oct 2026, 7.06 km "in 7:49" (the
+// pace) was saved instead of 55:16, and the live pace echo didn't stop it.
+function impossiblePace(min, km) {
+  return km > 0 && min > 0 && min / km < 2.8;
+}
+
 function openRunModal() {
   const m = openModal(`
     <h2>Log a run</h2>
     <label class="field"><span>Date</span><input id="r-date" type="date" value="${dateKey()}"></label>
     <div class="grid2">
       <label class="field"><span>Distance (km)</span><input id="r-km" type="number" inputmode="decimal" step="0.01" placeholder="5.0"></label>
-      <label class="field"><span>Duration</span><input id="r-min" type="text" inputmode="decimal" placeholder="27.46 or 27:46"></label>
+      <label class="field"><span>Total time</span><input id="r-min" type="text" inputmode="decimal" placeholder="55:16 — not pace"></label>
     </div>
     <p class="small" id="r-echo" style="margin:-6px 0 8px;min-height:16px"></p>
     <label class="field"><span>Active calories (optional)</span>
       <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate"></label>
     <p class="small muted" style="margin:-6px 0 10px">${ACTIVE_KCAL_HINT}</p>
     <label class="field"><span>Notes (optional)</span><input id="r-notes" placeholder="easy run, intervals..."></label>
+    <p class="small muted" id="r-notes-hint" style="margin:-6px 0 10px;display:none">Ran something different? Replace it with what you actually did.</p>
     <button class="btn primary block" id="r-save">Save run</button>
   `);
+  // The owner's race plan pre-fills the notes with the day's planned run, so
+  // a session done as planned is just "save", and a swap is recorded by
+  // overwriting it — their notes field had never been used, so the real
+  // sessions (and how often hard days drift harder) were invisible. Follows
+  // the date field until they type in the box themselves.
+  const notesIn = m.querySelector('#r-notes'), dateIn = m.querySelector('#r-date');
+  let notesTouched = false;
+  notesIn.addEventListener('input', () => { notesTouched = true; });
+  const prefillNotes = () => {
+    if (notesTouched || !state.owner) return;
+    const key = dateIn.value || dateKey();
+    const runSlots = PLAN_SLOTS.filter(s => planKind(planFor(key)[s.id])?.group === 'run');
+    const slot = runSlots.find(s => planSlotStatus(key, s.id) !== 'done') || runSlots[0];
+    const text = slot ? hmTextFor(key, slot.id) : null;
+    notesIn.value = text ? `As planned: ${text}` : '';
+    m.querySelector('#r-notes-hint').style.display = text ? '' : 'none';
+  };
+  dateIn.addEventListener('change', prefillNotes);
+  prefillNotes();
   // Echo how the duration was read, with the pace it implies — a pace that
   // looks wrong is the fastest way to spot a mistyped time.
   const durIn = m.querySelector('#r-min'), kmIn = m.querySelector('#r-km'), echo = m.querySelector('#r-echo');
@@ -1722,7 +1750,9 @@ function openRunModal() {
       return;
     }
     const km = Number(kmIn.value);
-    echo.innerHTML = `Reading this as <b>${fmtRunTime(min)}</b>${km > 0 ? ` · pace <b>${pace({ min, km })}</b> /km` : ''}`;
+    echo.innerHTML = km > 0 && impossiblePace(min, km)
+      ? `<span style="color:var(--orange)">That's <b>${pace({ min, km })}</b> /km — faster than a world record. Did you type your pace instead of the total time?</span>`
+      : `Reading this as <b>${fmtRunTime(min)}</b>${km > 0 ? ` · pace <b>${pace({ min, km })}</b> /km` : ''}`;
   };
   durIn.addEventListener('input', paintEcho);
   kmIn.addEventListener('input', paintEcho);
@@ -1732,7 +1762,8 @@ function openRunModal() {
     if (!km) { toast('Distance is required'); return; }
     const durRaw = durIn.value.trim();
     const min = durRaw === '' ? null : parseRunTime(durRaw);
-    if (durRaw !== '' && min == null) { toast('Duration looks off — try 27.46 or 27:46'); return; }
+    if (durRaw !== '' && min == null) { toast('Time looks off — try 27.46 or 27:46'); return; }
+    if (min != null && impossiblePace(min, km)) { toast('That pace is impossible — enter the total time, not the pace'); return; }
     const kcalRaw = m.querySelector('#r-kcal').value;
     const entry = {
       id: uid(),
