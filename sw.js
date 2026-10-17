@@ -1,5 +1,5 @@
 // Basic offline support: cache the app shell, always hit the network for API calls.
-const CACHE = 'tracker-v39';
+const CACHE = 'tracker-v40';
 const SHELL = [
   '.',
   'index.html',

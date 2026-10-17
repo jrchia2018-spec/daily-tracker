@@ -340,7 +340,10 @@ export const MY_FOODS = [
   M('Chicken kebab bowl w/ salad, dressings', 550, 38, 45, 22, 4, 800),
   M('1/2 small bag cinnamon popcorn', 60, 0.5, 9, 2, 0.5, 50),
   M('1 cup strawberry yoghurt', 150, 5, 25, 3, 0, 80),
-  M('Six Hands Chillichanga Salmon Bowl', 509, 39.3, 37, 22.6, 3, 700),
+  // Owner's figures, 17 Oct 2026 (Six Hands publishes none online). The old
+  // 509 / 39.3 / 37 / 22.6 had been copied from The Best Salad in the source
+  // sheet. Fibre and sodium kept: they weren't part of the correction.
+  M('Six Hands Chillichanga Salmon Bowl', 552.6, 30.4, 33.5, 33, 3, 700),
   M('McDonald\'s medium fries', 340, 4, 44, 16, 3, 400),
   M('KOI large bubble milk tea (25% sugar)', 380, 3, 72, 7, 0, 80, 400),
   M('Truffle risotto (1 bowl)', 520, 12, 70, 20, 2, 800),
