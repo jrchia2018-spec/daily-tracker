@@ -1,0 +1,107 @@
+{
+ "schema": 1,
+ "date": "2026-10-19",
+ "generatedAt": "2026-10-19T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-10-18T07:00:00+08:00",
+  "to": "2026-10-19T07:00:00+08:00",
+  "label": "Sunday 18 October 2026, 0700 SGT → Monday 19 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "UKRAINE PUTS 1,000 DRONES OVER ST PETERSBURG AND WASHINGTON SWITCHES THE MISSILE WARNINGS BACK ON",
+   "breaking": true,
+   "summary": [
+    "Ukraine sent more than 1,000 drones at Russia overnight, its largest attack of the war on Putin's home city. Fires burned at the St Petersburg oil terminal, the Ruchyi depot and industrial warehouses; an Ozon logistics centre and a VK data centre were hit, both companies confirming it. Governor Alexander Beglov reported one killed and five hospitalised; Leningrad governor Alexander Drozdenko said 145 drones were downed and about 20,000 people lost power. Moscow claimed 1,015 destroyed nationwide. Russian strikes killed a woman in Zaporizhzhia and wounded a six-year-old girl; Zelensky put Moscow's violations of Trump's unilaterally declared \"energy ceasefire\" at 76, with three killed and tens of thousands cut off.",
+    "On NBC's Meet the Press, Zelensky said US warnings of incoming Russian ballistic missiles — a feed only Washington can supply — \"was blocked for some period of time. And then it was deblocked by the American side. We are very thankful for this.\" The gap ran three days, through ballistic attacks. He maintained the Starlink slowdown was ordered in Washington: \"It was a message from the American government to limit the speed. And technically, SpaceX did it.\" Treasury Secretary Scott Bessent called that \"reckless\" and untrue; Trump posted that Zelensky \"doesn't want to end this war, and probably never did\". Zelensky then spoke to envoys Steve Witkoff and Jared Kushner about Patriot deliveries and warned that formally backing Russia would be a \"historic mistake\". Lithuania told residents to shelter for an hour as NATO jets scrambled and Kaunas airport closed; Kyiv apologised, blaming Russian jamming for diverting its drones."
+   ],
+   "geopolitical": "The intelligence tap is now openly a lever: closed for three days of ballistic strikes, reopened without explanation, which tells Moscow that Ukraine's early warning is a US political decision rather than an alliance commitment.",
+   "socioeconomic": "Both sides are burning each other's winter — Russia working through Ukraine's grid as the cold arrives, Ukraine moving from refineries to the terminal that loads Baltic crude, which puts the feud into fuel prices well beyond either country."
+  },
+  {
+   "headline": "MACRON GOES ON TELEVISION AFTER 2,400 ARRESTS AND ASKS HOW FRENCH PEOPLE COULD DO THIS TO FRANCE",
+   "breaking": true,
+   "summary": [
+    "In a televised address Macron condemned \"unbridled violence\" after the most destructive day of unrest in years: \"Watching these images, we have all asked ourselves how could French people do this to France?\" At least 2,400 were arrested nationwide, a record 855 in Paris, where Socialist deputy mayor Lamia El Aaraje described \"a level of violence that we have never seen before\". Interior Minister Laurent Nuñez put injuries to police, gendarmes and firefighters above 500, later counts near 1,000 with seven badly hurt. Macron separated peaceful marchers demanding better schools and lower prices from \"factious groups from the ultra-left, joined by numerous delinquents\", and said prefects may now ban specific gatherings. Left and right alike called for Nuñez to resign.",
+    "Limoges mayor Guillaume Guérin said those who burned his 19th-century town hall were not demonstrators but \"people organised for war\", had told a caretaker he would be killed, and that by 3.30pm his municipal police \"found themselves no longer able to fight\" having run out of ammunition — \"a colossal failure of the state\". Masked groups stormed Marseille's city hall and a police station and forced Lille's town hall; Marseille mayor Benoît Payan said policing tactics must be examined. Clashes flared again at Place de la République on Sunday before subsiding, and crowds gathered at town halls nationwide in solidarity with local government. Tens of thousands marched in Lisbon over housing and living costs; Milan police used water cannon and teargas."
+   ],
+   "geopolitical": "A president in his final months needs emergency policing powers to hold his own streets, which shrinks what Paris can credibly offer Kyiv or Brussels in the same week Washington dropped its sanctions pressure on Moscow.",
+   "socioeconomic": "The grievance is prices and schools, and it now hits public finances twice: the buildings burned are municipal assets, and Lisbon and Milan show the same rent-and-fuel squeeze producing the same politics across the eurozone."
+  },
+  {
+   "headline": "IRAN SAYS ITS HORMUZ TERMS STILL STAND, AND THE IRGC SAYS A MINE BLEW UP A LOADED SUPERTANKER",
+   "breaking": true,
+   "summary": [
+    "Foreign Minister Abbas Araghchi said on Sunday that Tehran is still reviewing Washington's \"comments\" on the seven-day proposal it tabled in September, and that its conditions for reopening the Strait of Hormuz stand: the US lifts its naval blockade and oil sanctions, releases frozen assets put at no less than US$12 billion and accepts a ceasefire covering Lebanon, after which Iran reopens the strait on day six and talks begin on day seven. It is the first substantive Iranian answer since the reply promised to Washington fell due more than a week ago, and it concedes nothing. Trump's position is unchanged: the strait is open to everyone but Iran.",
+    "The Revolutionary Guards said a supertanker carrying more than two million barrels of crude exploded and caught fire after striking a naval mine in the strait, claiming it had used a route Tehran had not approved, had switched off its tracking and radar, and was under US escort. The IRGC named no vessel, gave no location and offered no crew details; the claim is unverified. It repeated that the strait is closed. UKMTO counts at least ten vessels attacked in or near Hormuz in a week, the most of the war, and a tanker was hit by an unidentified projectile 68 nautical miles off Jubail, all crew safe. A CENTCOM spokesman said the \"vast majority\" of Iranian attempts on shipping fail; Brent's last close was US$109.86."
+   ],
+   "geopolitical": "Tehran has restated a price Washington already rejected while leaving mines in the water, which makes insurance underwriting, not negotiation, the mechanism now setting access to the strait.",
+   "socioeconomic": "A mined two-million-barrel cargo is the risk premium made literal: with Brent near US$110 in the war's eighth month, every week of attacks lifts freight and war-risk cover on everything that must pass Hormuz, Singapore's bunker prices included."
+  },
+  {
+   "headline": "EGYPT'S PARLIAMENT PUTS OFF THE SAUDI DEPLOYMENT VOTE AS ITS DEFENCE COUNCIL APPROVES THE MISSION",
+   "breaking": true,
+   "summary": [
+    "Egypt's House of Representatives sat in closed session for nearly three hours on Sunday, then postponed the vote authorising President Abdel Fattah al-Sisi to send troops to defend Saudi Arabia, deferring it to Tuesday. Members said they wanted detail on what the armed forces would actually do beyond the National Defence Council's statement. Article 152 requires consultation with that council and a two-thirds majority, voting in closed session. The council, chaired by Sisi, separately approved both the deployment and the troops' mission, according to MP Mostafa Bakry. Sisi says any support would be defensive and that Egypt does not seek to \"confront or attack anyone\"; no force size, location or mission has been stated publicly. The Houthis have struck the kingdom near-daily since early October, and the UN counts more than 200,000 displaced since August."
+   ],
+   "geopolitical": "A chamber that rarely refuses Sisi anything is asking for the mission's terms before it votes — the first institutional friction in the Arab coalition forming around Riyadh, and a delay to the threshold at which the first non-Gulf army formally enters the war.",
+   "socioeconomic": "Cairo is weighing a war it cannot afford against the Gulf deposits and investment propping up the pound, which is why the authorisation is being drafted as narrowly defensive before anyone is asked to fund it."
+  },
+  {
+   "headline": "TRUMP ENDORSES NETANYAHU NINE DAYS BEFORE ISRAEL VOTES",
+   "breaking": false,
+   "summary": [
+    "Trump gave Netanyahu his \"Complete and Total Endorsement\" on Truth Social, in a message addressed to \"the Great People of Israel\" praising a \"great warrior prime minister\" who \"did not wilt\" and crediting him with joining the US strikes on Iran in February. Netanyahu replied on X: \"Together we will complete the mission!\" The 27 October election is Israel's first since the Hamas attack of 7 October 2023 and the wars in Gaza, Lebanon and Iran that followed; the prime minister is chosen by coalition-building in the Knesset, and polls suggest no candidate has a clear path. The endorsement may not help — Israeli support for Trump has fallen amid disagreements over Iran — and it continues a break with US practice that has already taken in Hungary, Colombia, Argentina, Japan and Honduras."
+   ],
+   "geopolitical": "Washington is spending its remaining credibility with Israeli voters on the incumbent it needs for the Iran file, in a contest settled by coalition arithmetic that no endorsement reaches.",
+   "socioeconomic": "An eighth month of war that has disrupted energy markets and wrecked regional infrastructure is the backdrop, and the result decides whether the state fighting it keeps the man who began it."
+  },
+  {
+   "headline": "FOUR CANADIAN SOLDIERS KILLED AND 39 IN HOSPITAL AFTER A GRASS FIRE OVERRUNS CFB WAINWRIGHT",
+   "breaking": false,
+   "summary": [
+    "Prime Minister Mark Carney said four Canadian Armed Forces members were killed and dozens seriously hurt by a \"violent, fast-moving\" fire at Canadian Forces Base Wainwright in Alberta, 210km east of Edmonton — \"one of the worst tragedies that our armed forces have experienced on Canadian soil in peacetime\". Thirty-nine people were hospitalised across four hospitals in Edmonton, Red Deer and Calgary, and the military withheld casualty figures until families were notified. Reports attributed the blaze to a grass fire driven by high winds; the military said there was no indication of terrorism and the cause is under investigation. The personnel had come from bases across the country to train at Wainwright, one of Canada's largest, and Carney said reservists and soldiers of the Princess Patricia's Canadian Light Infantry were among those affected."
+   ],
+   "geopolitical": "Canada loses four soldiers at home midway through a readiness and recruitment drive, and the inquiry will land on how prairie training ranges are run rather than on any adversary.",
+   "socioeconomic": "Forty-three casualties from one exercise fell on four hospitals in three cities, and the weight sits on the reserve units and small Alberta towns the base draws from."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "THE HAZE EASES AFTER THE WEST HITS A SEASON-HIGH PSI OF 230, AND FIREFLY CANCELS A 10TH DAY OF FLIGHTS",
+   "breaking": true,
+   "summary": [
+    "The west's 24-hour PSI reached 230 at 10am on Sunday, a season high in the very unhealthy band, easing to 227 by noon while the rest of the island held at 127 to 180. By early Monday it had broken: 92 and moderate in the north, 139 and unhealthy in the west, with one-hour PM2.5 elevated in the western, central, southern and eastern regions. NEA forecast a 24-hour PSI of 101 to 190 for Monday, with showers and south-south-easterly or southerly winds limiting smoke from Kalimantan though some may still come from Sumatra; winds turning east-south-easterly from Tuesday night could bring Kalimantan smoke back overnight. Readings have been unhealthy without a break since 5 October, the longest run since 2015, having first crossed into the band on 4 September.",
+    "Firefly cancelled Subang–Seletar flights for a 10th straight day, 12 services scrapped through 19 October, with passengers rebooked onto Malaysia Airlines from Kuala Lumpur or refunded. At Tekka Centre half the seats were empty at 10am; stallholder Zaiton Bee, 73, said she had gone from about 500 customers a day to 200 against S$4,000 in monthly rent, power and dishwashing costs, in what is normally the Deepavali rush, and is considering closing after a decade."
+   ],
+   "geopolitical": "A fortnight of transboundary smoke has now shut a scheduled international air link for ten days — a measurable cost of the Indonesian fires that NEA's seven enforcement notices are meant to price.",
+   "socioeconomic": "The damage lands on the businesses with the least cushion: an open-air hawker stall losing 60% of its customers through the festive season cannot wait out a haze the WMO says may run for weeks more."
+  },
+  {
+   "headline": "SINGAPORE MAKES THREE UNTREATABLE HAEMORRHAGIC FEVERS NOTIFIABLE FROM 31 OCTOBER",
+   "breaking": false,
+   "summary": [
+    "From 31 October, doctors and clinical laboratories must notify the authorities of every confirmed and suspected case of Crimean-Congo haemorrhagic fever, Lassa fever and Marburg virus disease, added to the Infectious Diseases Act list after amendments in September. The Communicable Diseases Agency said it had been monitoring the three \"as all three diseases are viral haemorrhagic fevers that can cause severe illness and have the potential for human-to-human transmission\", and that notification supports early detection, isolation and contact tracing. The WHO lists no approved vaccine or antiviral for any of them, with candidates in development for Lassa and Marburg; fatality runs up to 40% for CCHF and around 50% for Marburg, while Lassa kills 1% overall but at least 15% of those hospitalised, with foetal death beyond 80% in the third trimester. CDA says the risk to Singapore remains low and unchanged."
+   ],
+   "geopolitical": "Kenya's first Ebola outbreak reached seven cases this week with clinicians among the infected, and Singapore is adding reporting duties for the same class of virus before one arrives rather than after.",
+   "socioeconomic": "The cost is a legal duty on every doctor and laboratory here, which is cheap against the isolation and tracing bill a late-detected case of a 50%-fatality virus would run up."
+  },
+  {
+   "headline": "HOME BUYERS ARE PUTTING MORE OF THEIR OWN MONEY DOWN EVEN AS MORTGAGES PASS A MILLION DOLLARS",
+   "breaking": false,
+   "summary": [
+    "Nearly eight in ten buyers of new private launches took loans of at least S$1 million in the first half of 2026, against four in ten in 2021 — but prices have outrun borrowing. OCBC's figures show new-launch prices up 49% between 2021 and the first half of 2026 against median mortgages up 35%, private resale prices up 36% against mortgages up 32%, and HDB resale prices and mortgages both up 32%. Cash and CPF are filling the gap: the share of OCBC's new-launch buyers maximising the 75% loan-to-value limit fell from 67% in 2021 to 52%, and resale buyers from 66% to 61%. Consumer secured lending head Tok Geok Peng put it down to incomes growing faster than prices, with a median borrower age of about 38. UOB's average private housing loan has passed S$1 million, growing 8% a year since 2023. Debt-servicing ratios are broadly stable and DBS says delinquencies remain extremely low, though mortgagee-sale listings are at a six-year high."
+   ],
+   "geopolitical": "Housing leverage is the channel through which an external rate or fuel shock reaches Singapore households, and banks are reporting the buffer is being built out of savings rather than regulation.",
+   "socioeconomic": "Buyers are absorbing the price rise from their own balance sheets, which keeps bank books clean but spends the CPF and cash meant for retirement — and the six-year high in mortgagee listings is the part of the cohort that has already run out."
+  }
+ ],
+ "word": {
+  "word": "jacquerie",
+  "pos": "noun",
+  "pronunciation": "zhak-uh-REE",
+  "definition": "A revolt of the common people, especially a violent and disorganised one directed at property and local authority.",
+  "etymology": "From the French Jacquerie, the peasant rising of 1358 in the Oise valley, named for Jacques Bonhomme — the condescending generic name French nobles used for any peasant. English borrowed it in the 19th century for any popular insurrection of that character.",
+  "example": "Macron's televised address tried to separate half a million marchers from a jacquerie that burned Limoges' town hall, stormed two more and left 2,400 people under arrest."
+ }
+}

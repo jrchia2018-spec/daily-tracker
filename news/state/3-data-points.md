@@ -1913,3 +1913,31 @@
 | TCM Accreditation Programme | Voluntary; first 5 providers accredited; valid 3 years for clinics, 2 for practitioners; run by the Academy of Chinese Medicine, Singapore | Ong Ye Kung at the 23rd World Congress of Chinese Medicine, 17 Oct 2026 |
 | TCM Integrative Sandbox | Launched Jan 2025; first call selected 7 acupuncture projects from 18 proposals; second call opens 3 Nov 2026 and the call stays open three more years | MOH, 17 Oct 2026 |
 | PM Wong Middle East visit | Doha 18–20 Oct, Abu Dhabi and Dubai 20–22 Oct; co-chairs the 9th Qatar–Singapore High-Level Joint Committee (established 2006, last met Aug 2023) | PMO, 17 Oct 2026 |
+
+## Global data points (19 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Ukraine's St Petersburg strike | 1,000+ drones launched; 1 killed and 5 hospitalised in the city; 145 drones downed over Leningrad region and ~20,000 people without power; Russia claimed 1,015 downed nationwide | Gov. Alexander Beglov, Gov. Alexander Drozdenko and Russian defence ministry via Guardian, 18 Oct 2026 |
+| "Energy ceasefire" violations | 76 Russian violations claimed; 3 killed and tens of thousands without power from Russian strikes | Zelensky via CNA/AFP, 18 Oct 2026 |
+| US missile-warning pause | Blocked 3 days, then "deblocked"; only the US supplies warning of Russian ballistic launches | Zelensky on NBC Meet the Press, 18 Oct 2026 |
+| France unrest | 2,400+ arrests nationwide, a record 855 in Paris; 500+ police, gendarmes and firefighters injured (later counts near 1,000, 7 badly) | Macron address and Interior Minister Laurent Nuñez via Guardian/ABC, 18 Oct 2026 |
+| Iran's seven-day terms | Blockade and oil sanctions lifted, frozen assets of no less than US$12bn released, ceasefire covering Lebanon; strait reopens day six, talks day seven | FM Abbas Araghchi, 18 Oct 2026 |
+| Hormuz shipping attacks | 10+ vessels attacked in or near the strait in a week, the most of the war; IRGC claims a 2m+ barrel supertanker exploded on a naval mine (unverified) | UKMTO and IRGC via wire reports, 17–18 Oct 2026 |
+| Brent crude | US$109.86 (Friday 16 Oct settle; no market data in the weekend window) | Carried from 17 Oct 2026 report |
+| CFB Wainwright fire | 4 Canadian Armed Forces members killed, 39 hospitalised across 4 hospitals; base 210km east of Edmonton; attributed to a grass fire driven by high winds, no indication of terrorism | PM Mark Carney and Alberta health officials via CTV/NBC/Reuters, 18 Oct 2026 |
+| Israeli election | 27 October 2026; first since the 7 Oct 2023 Hamas attack; PM chosen by Knesset coalition-building, polls show no clear path | Reuters via CNA, 18 Oct 2026 |
+| Anthropic public benefit fund | 5% of shares committed, plus 2% per 50% rise in value above an undisclosed baseline; wholly-owned LLC; pending stockholder approval | Anthropic announcement via Reuters, 18 Oct 2026 |
+| USD/SGD | 1.2800 — carried; frankfurter.app and open.er-api.com still 403 through the proxy | Carried rate, last sourced 13 Oct 2026 |
+
+## Singapore data points (19 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Haze peak and easing | West's 24-hour PSI 230 at 10am 18 Oct (season high, very unhealthy), 227 at noon, rest of island 127–180; early 19 Oct 92 (north, moderate) to 139 (west); NEA forecast 101–190 for 19 Oct | NEA via CNA and Straits Times, 18–19 Oct 2026 |
+| Consecutive unhealthy PSI days | Unbroken since 5 Oct (14 days), longest since 2015; first crossed into the band on 4 Sep 2026 | NEA via Straits Times, 18 Oct 2026 |
+| Firefly cancellations | Subang–Seletar suspended a 10th straight day, 12 flights scrapped 17–19 Oct; rebooking via Malaysia Airlines from KL or full refund | Firefly website via Straits Times, 18 Oct 2026 |
+| Haze impact on F&B | Tekka Centre stallholder down from ~500 to ~200 customers a day against S$4,000 monthly costs; half the seats empty at 10am on 16 Oct | Straits Times, 18 Oct 2026 |
+| New notifiable diseases | CCHF, Lassa fever and Marburg virus disease notifiable from 31 Oct (IDA amended Sept); fatality up to 40% (CCHF) and ~50% (Marburg); Lassa 1% overall, 15%+ of hospitalised, foetal death 80%+ in third trimester; no approved vaccine or antiviral | Communicable Diseases Agency and WHO via Straits Times, 19 Oct 2026 |
+| Mortgages above S$1m | ~8 in 10 new private launch buyers in H1 2026 vs 4 in 10 in 2021; UOB average private housing loan now above S$1m, +8%/yr since 2023 | OCBC (Tok Geok Peng) and UOB via Straits Times, 18 Oct 2026 |
+| Prices vs mortgages, 2021–H1 2026 | New launches: prices +49%, median mortgages +35%; private resale +36% vs +32%; HDB resale +32% vs +32% | OCBC via Straits Times, 18 Oct 2026 |
+| Max-LTV borrowers | New launches: 67% (2021) to 52% (H1 2026); private resale 66% to 61%; LTV limit 75%; median borrower age ~38; mortgagee-sale listings at a six-year high | OCBC and DBS via Straits Times, 18 Oct 2026 |
+
