@@ -19,7 +19,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
-import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmSessionsOn, hmTargets } from './hm-plan.js';
+import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmSessionsOn, hmTargets, paceToKmh, hmSessionPaces } from './hm-plan.js';
 
 const view = document.getElementById('view');
 const tabbar = document.getElementById('tabbar');
@@ -1544,7 +1544,7 @@ function renderPlan() {
     </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
     <p class="small muted" style="margin:10px 0 0">Tap any slot to set or change it. ✓ means it was logged, <b>!</b> means the day passed without it — tap to move it.</p>
   </div>
-  ${state.owner && today <= HM_RACE ? hmPlanCard(hm, week, today) : ''}`;
+  ${state.owner && today <= HM_RACE ? hmPlanCard(hm, week, today) + treadmillCard() : ''}`;
 
   body.querySelector('#pw-prev').addEventListener('click', () => { planWeekOffset--; render(); });
   body.querySelector('#pw-next').addEventListener('click', () => { planWeekOffset++; render(); });
@@ -1570,7 +1570,7 @@ function hmPlanCard(hm, week, today) {
     <details style="margin-top:10px">
       <summary class="small" style="cursor:pointer;color:var(--accent);font-weight:600">Paces &amp; rules</summary>
       <div style="margin-top:8px">
-        ${HM_PACES.map(([z, p]) => `<div class="row between small" style="padding:3px 0"><span class="muted">${z}</span><b>${p}</b></div>`).join('')}
+        ${HM_PACES.map(p => `<div class="row between small" style="padding:3px 0"><span class="muted">${p.zone}</span><b>${p.fast}–${p.slow}${p.note ? ` <span class="muted" style="font-weight:400">(${p.note})</span>` : ''}</b></div>`).join('')}
         ${HM_RULES.map(r => `<p class="small" style="margin:8px 0 0">• ${esc(r)}</p>`).join('')}
       </div>
     </details>`;
@@ -1590,6 +1590,31 @@ function hmPlanCard(hm, week, today) {
         <span class="small" style="flex:1">${s.kind.startsWith('run') ? '🏃' : '🏋️'} ${esc(s.text)}</span>
       </div>`).join('')}
     ${reference}
+  </div>`;
+}
+
+// The race plan's paces as treadmill speeds (18 Oct 2026, owner's request) —
+// a treadmill takes km/h, the plan speaks min/km. Zones as ranges, then every
+// exact pace a session names. 1% incline: on a belt there's no air
+// resistance, and ~1% grade restores the outdoor cost at roughly 10.5 km/h
+// and faster (Jones & Doust, 1996); slower than that it barely matters.
+function treadmillCard() {
+  const zones = HM_PACES.map(p => `
+    <div class="row between small" style="padding:5px 0;border-bottom:1px solid var(--line)">
+      <span><b>${p.zone}</b> <span class="muted">${p.fast}–${p.slow}/km</span></span>
+      <b>${paceToKmh(p.slow).toFixed(1)}–${paceToKmh(p.fast).toFixed(1)} km/h</b>
+    </div>`).join('');
+  const exact = hmSessionPaces().map(p => `
+    <div class="small" style="padding:4px 0;text-align:center;border:1px solid var(--line);border-radius:8px">
+      <span class="muted">${p}</span><br><b>${paceToKmh(p).toFixed(1)}</b></div>`).join('');
+  return `
+  <div class="card">
+    <h2 style="margin:0 0 4px">🏃 Treadmill speeds</h2>
+    <p class="small muted" style="margin:0 0 8px">Your plan's paces as km/h. For tempo, race pace and faster, set <b>1% incline</b> — it stands in for the wind resistance a treadmill doesn't have; easy runs are fine at 0–1%. Indoors in air-con, skip the hot-day slowdown.</p>
+    ${zones}
+    <p class="small muted" style="margin:12px 0 6px">Exact paces in the plan (min/km → km/h):</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">${exact}</div>
+    <p class="small muted" style="margin:10px 0 0">Treadmill in mph? Divide km/h by 1.6.</p>
   </div>`;
 }
 

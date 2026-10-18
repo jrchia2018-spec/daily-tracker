@@ -18,14 +18,32 @@ export const HM_RACE = '2027-03-21';
 export const HM_TITLE = 'Half marathon';
 export const HM_GOAL = 'sub-1:50 on Sun 21 Mar';
 
+// Pace zones, min/km — fast end first. Also drive the treadmill chart.
 export const HM_PACES = [
-  ['Easy', '6:15–7:30'],
-  ['Long', '6:15–6:45'],
-  ['Race pace', '5:05–5:12'],
-  ['Tempo', '4:50–4:55'],
-  ['Intervals', '4:25–4:30 (400m in 1:46–1:48)'],
-  ['Fast 200s', '45–48 s each'],
+  { zone: 'Easy', fast: '6:15', slow: '7:30' },
+  { zone: 'Long', fast: '6:15', slow: '6:45' },
+  { zone: 'Race pace', fast: '5:05', slow: '5:12' },
+  { zone: 'Tempo', fast: '4:50', slow: '4:55' },
+  { zone: 'Intervals', fast: '4:25', slow: '4:30', note: '400m in 1:46–1:48' },
+  { zone: 'Fast 200s', fast: '3:45', slow: '4:00', note: '45–48 s each' },
 ];
+
+// "5:10" → treadmill km/h (60 ÷ minutes per km), to the 0.1 a treadmill sets.
+export function paceToKmh(pace) {
+  const [m, s] = pace.split(':').map(Number);
+  return Math.round(600 / (m + s / 60)) / 10;
+}
+
+// Every exact pace a session asks for ("3×2 km @ 5:00", "start at 5:20",
+// "sub-1:55 (5:27/km)"), read from the plan text itself so the treadmill
+// chart can't drift from the plan. Slowest first.
+export function hmSessionPaces() {
+  const found = new Set();
+  for (const w of HM_WEEKS) for (const s of w.sessions) {
+    for (const m of s.text.matchAll(/\b([3-7]):([0-5]\d)\b/g)) found.add(m[0]);
+  }
+  return [...found].sort((a, b) => paceToKmh(a) - paceToKmh(b));
+}
 
 export const HM_RULES = [
   'Hot, humid day: add 10–15 s/km to easy and tempo paces. Run race-pace sessions early so the numbers mean something.',
