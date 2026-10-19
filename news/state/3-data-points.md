@@ -1941,3 +1941,27 @@
 | Prices vs mortgages, 2021–H1 2026 | New launches: prices +49%, median mortgages +35%; private resale +36% vs +32%; HDB resale +32% vs +32% | OCBC via Straits Times, 18 Oct 2026 |
 | Max-LTV borrowers | New launches: 67% (2021) to 52% (H1 2026); private resale 66% to 61%; LTV limit 75%; median borrower age ~38; mortgagee-sale listings at a six-year high | OCBC and DBS via Straits Times, 18 Oct 2026 |
 
+
+## Global data points (20 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Hormuz container ships struck | At least 15 in ten days, by drone, mine and (Sunday) a rocket-propelled grenade from a small boat off Jubail | Guardian, 19 Oct 2026 |
+| Hormuz transits | 254 in the week to 14 Oct (125 outbound, 129 inbound), ~70% below pre-conflict levels | UKMTO via Guardian, 19 Oct 2026 |
+| Brent | ~US$108/bbl Monday morning | Guardian, 19 Oct 2026 |
+| al-Alam camp strike, Shabwa | 3 ballistic missiles, at least 53 killed and 200+ injured; largest single loss of life since the war reignited in September | Yemeni government and Shabwa authorities via Guardian/AFP, 19 Oct 2026 |
+| FII postponement | 10th Future Investment Initiative, due Riyadh 26–29 Oct 2026, pushed to 2027; new date unannounced | FII Institute via Reuters/CNBC, 19 Oct 2026 |
+| France unrest | 2,513 arrested, 67 jailed, ~80% prosecuted, ~70% adults; ~1,000 police and gendarmes injured; ~2,000 shops ransacked; 60,000 officers deployed against 500,000+ demonstrators (200,000 forecast) | Darmanin and Nuñez via Guardian, 19 Oct 2026 |
+| US Patriot deliveries to Ukraine | ~12 interceptors a month, about a quarter of the previous administration's rate | Zelensky via Bloomberg/NYT, 19 Oct 2026 |
+| Starlink sabotage in Europe | Three sites: Vilnius base station (attempted arson, 18 Oct), Bulgarian antennas (10 Oct), Polish facility power system (September) | Lithuanian PM Sinkevičius via Reuters, 18–19 Oct 2026 |
+| Shakahola verdict | Mackenzie and 28 others guilty on 191 counts of murder, 190 victims children; 121 prosecution witnesses; sentencing 6 Nov | High Court Mombasa via Guardian/Al Jazeera, 19 Oct 2026 |
+| China Q3 2026 GDP | +4.5% YoY (Q2 +4.3%), nine-month +4.6% against a 4.5–5% target; industrial production +5.5% Sept, manufacturing output +6.0%, retail sales +1.1%; fixed-asset investment -7.2% (9M), property investment -20.6% | National Bureau of Statistics via Guardian, 19 Oct 2026 |
+
+## Singapore data points (20 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| NWC 2026/27 guidelines | Built-in increase of 6–8% for workers earning up to S$2,800 gross a month, highest since quantitative guidelines began in 2021; 1 Dec 2026–30 Nov 2027; tiers of at least S$135–170 (performed well), at least S$120 (profitable underperformers, and a new tier for unprofitable firms); government accepted 19 Oct | NWC/MOM via Mothership and AsiaOne, 19 Oct 2026 |
+| NWC adoption | Slightly more than a quarter of employers met last year's lower-wage recommendation, down from over 70% before the 2021 expansion; 60%+ of those who fell short still raised wages; PWM and related schemes cover up to 9 in 10 full-time lower-wage workers | MOM PS Stanley Loh via Mothership, 19 Oct 2026 |
+| Haze enforcement | 3 further preventive measure notices (PT Buana Megatama Jaya, PT Mananjung Hayak, PT Baratama Putra Perkasa), taking the total to 10 companies under the Transboundary Haze Pollution Act; exchange queries to 7 listed agri firms (Golden Agri-Resources, Bumitama Agri, First Resources, Wilmar, Kencana Agri, Indofood Agri, TSH Resources) | NEA and Shanmugam via Straits Times/AP, 19 Oct 2026 |
+| Air quality | 3 of 5 regions at moderate PSI by the morning of 20 Oct; Firefly to resume all Subang–Seletar flights 22 Oct | NEA and Firefly via Straits Times, 19–20 Oct 2026 |
+| Qatar LNG | Qatar supplies ~25% of Singapore's LNG imports; QatarEnergy–MTI memorandum on LNG and low-carbon technology renewed 19 Oct; ties to be raised to a strategic partnership (Singapore's second in the Middle East) | MFA/Doha News, 19 Oct 2026 |
+| Tech internships | ~3,000 year-long (10–12 month) credit-bearing internships over three years for ITE, polytechnic and autonomous-university students under IMDA's Bridge2Tech/TIP Alliance+; IMDA funding up to 90% of approved AI, cloud and cybersecurity courses | SMS Tan Kiat How at SCS TechConnect via Straits Times, 19 Oct 2026 |
