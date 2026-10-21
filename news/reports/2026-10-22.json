@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-10-22",
+ "generatedAt": "2026-10-22T07:45:00+08:00",
+ "coverage": {
+  "from": "2026-10-21T07:00:00+08:00",
+  "to": "2026-10-22T07:00:00+08:00",
+  "label": "Wednesday 21 October 2026, 0700 SGT → Thursday 22 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "WITKOFF CALLS PUTIN A HUMANITARIAN, LEAVES WITH AN AMERICAN PRISONER, AND MISSILES HIT KYIV",
+   "breaking": true,
+   "summary": [
+    "Steve Witkoff met Putin for three hours at the Constantine Palace in St Petersburg on Wednesday, his ninth visit to Russia, after Tuesday's Oslo talks with Zelensky. He handed over written proposals — \"some sort of peace deal between Russia and Ukraine, and you'll read that at your leisure\" — and told him: \"You talk so much about my president, President Trump, being a humanitarian. You are a humanitarian also, sir, and I salute that.\" Putin is wanted by the ICC over the deportation of Ukrainian children; the UN has confirmed over 17,500 Ukrainian civilians killed since February 2022. He then ordered the release of Stephen Hubbard, 74, held more than four years on mercenary charges — unilaterally, no exchange. Trump said he asked for it directly last week and gave nothing in return.",
+    "Aide Yury Ushakov said Russia is ready \"in principle\" to resume trilateral talks with the US and Ukraine after 10 November, possibly in Abu Dhabi, on a post-war \"security framework\", while dismissing what Witkoff brought from Kyiv and the Europeans as \"little of actual value\". Zelensky wants it no later than early November and noted Russia has agreed to meetings before and cancelled them. No Russian demand has moved: all of Donbas, a much smaller army, no NATO. Putin also raised US economic cooperation, fertiliser exports and a China meeting on Ukraine; Dmitriev said the diesel deal proceeds despite European objections. Rubio, in India, said the Starshield throttling was Musk's decision and \"that's irrelevant\" to Washington. Missiles struck Kyiv hours after the meeting."
+   ],
+   "geopolitical": "Trump's envoy conferred moral standing on an ICC-indicted head of state and collected a gift that cost Moscow nothing: the price of American goodwill is now flattery rather than concessions, which is why the Kremlin can set talks for after 10 November with every demand intact.",
+   "socioeconomic": "Pairing the release with fertiliser and diesel business tells European capitals that sanctions relief is being traded bilaterally and irreversibly — once those flows re-enter US supply chains, re-imposition becomes a domestic fight."
+  },
+  {
+   "headline": "WASHINGTON DRAWS UP NEW IRAN STRIKE PLANS FOR AFTER THE VOTES AND PULLS ITS FAMILIES OUT OF RIYADH",
+   "breaking": true,
+   "summary": [
+    "The US and Israel have drawn up plans for renewed strikes on Iran's nuclear and military sites to launch after Israel's 27 October election and the US midterms on 3 November, though planners concede a second phase may fare no better than the first. Trump has repeatedly cancelled a return to major combat and said on 8 October there would be no strike before the midterms. Hegseth and CENTCOM are the strongest advocates; most of the administration prefers economic pressure. The case rests on Iranian efforts to rebuild nuclear capacity, unverifiable since Tehran barred IAEA inspectors from the bombed sites.",
+    "The State Department ordered the departure of non-emergency staff and all family members from the Riyadh embassy, citing Houthi attacks on civilian airports and critical infrastructure; employees now need the chief of mission's authorisation to use any Saudi airport. \"This is about the Houthis,\" an official said. Saudi Arabia intercepted at least seven drones on Wednesday, one aimed at the Shaybah oil field, where two expatriate workers were killed and two injured. Washington has raised intelligence and targeting support but still refuses offensive strikes; Britain's Typhoons and Egypt's pledge of \"all necessary and possible forms of support\" are filling that gap."
+   ],
+   "geopolitical": "An ordered departure is the most reliable public signal of expected escalation, and it lands the same day as the planning: allies must assume the war resumes immediately after 3 November, not before it.",
+   "socioeconomic": "Two foreign workers dead at Shaybah moves the risk from airports to the oil fields, and the expatriate labour that runs Gulf energy infrastructure can leave — an exodus would cut Saudi output faster than any missile."
+  },
+  {
+   "headline": "META ORDERED TO PAY US$25 BILLION FOR A \"SYSTEMATIC PATTERN OF DECEPTION\" OVER CAMBRIDGE ANALYTICA",
+   "breaking": false,
+   "summary": [
+    "New Mexico state district judge Francis Mathew ordered Meta to pay US$25 billion on Wednesday, its largest penalty to date, after a September jury verdict that it violated the state's Unfair Practices Act more than 43 million times. Mathew found \"a coherent strategy designed to mislead the public\" and \"a systematic pattern of deception at the core of Facebook's business model\". The case dates to the 2018 disclosure that Cambridge Analytica improperly obtained data on as many as 87 million users to profile American voters. New Mexico sued in 2021 and was not party to the US$18 billion multistate settlement of August, which resolved other states' Cambridge Analytica claims.",
+    "Meta will appeal; chief legal officer C.J. Mahoney said the ruling \"makes it all but impossible to do business in the state of New Mexico\" and called the suit \"a tax on speech\". Earnings the same day showed revenue up 26% to more than US$64 billion but operating income of about US$13 billion against roughly US$23 billion without the August settlement charge. Quarterly capex reached nearly US$35 billion, up 80% year on year, full-year guidance narrowed to US$135-145 billion, with none offered for 2027."
+   ],
+   "geopolitical": "One US state has extracted more than any national regulator has managed, making state courts rather than Brussels or Washington the binding constraint on platform data practices, and handing every other attorney general a template with a number attached.",
+   "socioeconomic": "Meta can absorb US$25 billion, but penalties are now a recurring charge against earnings while capex runs near US$140 billion a year: litigation has become a cost of the business model, not a deterrent to it."
+  },
+  {
+   "headline": "AI FINDS A FLAW IN THE CODE BEHIND 70 PER CENT OF THE WEB, AND GOVERNMENT SITES GO DARK TO PATCH IT",
+   "breaking": false,
+   "summary": [
+    "OpenAI, Google-owned Wiz and the security firm Calif disclosed PHP2Shell on Wednesday: critical bugs in PHP, the language behind roughly 70% of the internet, letting attackers run code remotely, disrupt services and read memory holding passwords and customer data. Found in late August, they were held until the PHP Foundation had a patch. The NSA told organisations running PHP to update or take systems offline; some European government sites went dark while patching.",
+    "Wiz used Google's Gemini 4 Argon, Wiz Atlas and OpenAI's GPT-5.6 Sol, and wrote that \"with frontier AI models and the right tools, a single researcher completed in a week what previously would have taken a world-class team months of work\". The defects had existed for decades, but proving them exploitable \"required an exceptionally complex chain of steps, at the edge of what human researchers could practically achieve\". Wiz rates it on par with Heartbleed, the 2014 bug affecting two-thirds of the web."
+   ],
+   "geopolitical": "The capability that let three firms pre-empt this bug is available to states that would rather keep what they find, so the defensive advantage lasts only as long as the patch cycle.",
+   "socioeconomic": "Decades-old code across the web is now reclassified as exploitable, and the cost falls on everyone running an unpatched site — mostly small operators with no security team — while the capability to audit it sits with the few firms running frontier models."
+  },
+  {
+   "headline": "GUINEA-BISSAU KILLS THE US-FUNDED TRIAL THAT WOULD HAVE WITHHELD HEPATITIS B SHOTS FROM NEWBORNS",
+   "breaking": false,
+   "summary": [
+    "Lead researcher Frederik Schaltz-Buchholzer said on Wednesday it is \"now clear\" the hepatitis B vaccine trial \"will not move forward in Guinea-Bissau\" because \"we were not given the necessary governmental approval\". Health minister Quinhin Nantote had already denied it was proceeding, and the government seized the vaccines when it searched the Bandim Health Project's offices on Monday. Funded with US$1.6 million from the US CDC and US$1.6 million from private backers including the Bill Ackman-backed Pershing Square Foundation, the study was to test the Danish team's hypothesis that hepatitis B vaccine given alongside BCG dampens BCG's broader survival benefit.",
+    "Paul Offit of the Children's Hospital of Philadelphia called that \"fanciful\" — \"there's no evidence for that, and it doesn't make biological sense\" — and said the money should simply buy vaccinations. The WHO recommends a first dose within 24 hours of birth; Guinea-Bissau does not plan a universal birth dose until 2028. Critics said consent was impossible because infants outside the trial would get nothing: in it parents have \"a 50% chance of getting the vaccine for their children. But if they stay out, they have a 0% chance,\" said Danish researcher Henrik Støvring. Schaltz-Buchholzer said the proposal had bred local distrust that the vaccine was being tested on Africans because it was dangerous."
+   ],
+   "geopolitical": "A low-income health ministry stopped a trial its Western funders intended to run, by withholding approval and impounding the doses: host-country consent is an operative veto, not a formality.",
+   "socioeconomic": "The lasting cost is the rumour the proposal created in a country with high hepatitis B prevalence and no birth dose before 2028 — distrust seeded by a trial that never ran will still suppress uptake when the vaccine arrives."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE AND THE UAE OPEN TALKS ON AN ECONOMIC PACT AND PUT ADNOC IN A JOINT ENERGY TASK FORCE",
+   "breaking": false,
+   "summary": [
+    "PM Lawrence Wong was received by President Sheikh Mohamed bin Zayed Al Nahyan at Qasr Al Watan in Abu Dhabi on Tuesday, and the two announced negotiations on a comprehensive economic partnership agreement — an FTA-like deal easing trade and investment flows. It is the second leg of a five-day Middle East trip that began in Qatar on 18 October.",
+    "They also created a joint energy task force spanning trading, infrastructure and downstream activity, pairing Singapore's Ministry of Energy, Trade and Industry with the Abu Dhabi National Oil Company under the Abu Dhabi-Singapore Joint Forum, and welcomed nuclear cooperation under the 2024 EMA-Emirates Nuclear Energy Company deal. PUB renewed and widened its 2018 water pact with Abu Dhabi's Department of Energy, and NEA signed a vector-control agreement with the Abu Dhabi Public Health Centre."
+   ],
+   "geopolitical": "Opening CEPA talks while the Gulf is under missile attack and Washington evacuates embassy families from Riyadh bets that the Emirates stay a durable partner, and buys Singapore a second Gulf relationship outside Doha.",
+   "socioeconomic": "An ADNOC task force reaching from trading to downstream is the hedge behind the diplomacy: Singapore's refining and bunkering complex needs flows that survive a closed Strait of Hormuz, and the nuclear work addresses the same vulnerability later."
+  },
+  {
+   "headline": "CAT A COE HITS S$132,004 AND AGAIN COSTS MORE THAN CAT B, IN THE FIRST TENDER SINCE THE REVIEW",
+   "breaking": false,
+   "summary": [
+    "Category A premiums rose 1.5% to S$132,004 and Category B 1.4% to S$131,901 at Tuesday's tender, the first since LTA proposed merging the two into one passenger-car category with a value-based feebate. It is the fourth time in 2026 that Cat A has closed above Cat B — the inversion the review is meant to end — and it reverses dips in the previous two rounds. Open category fell 0.9% to S$135,790, motorcycles 2.1% to S$10,778.",
+    "Dealers told The Straits Times sales had slowed over the fortnight, the exception being Chinese EV brands, whose buyers are rushing to commit before the EV tax rebate drops by S$10,000 on 1 January 2027. LTA said premiums \"remain elevated across most categories\", pointed to this weekend's Car Expo, and urged buyers and dealers to bid prudently. The consultation closes on 2 November."
+   ],
+   "geopolitical": "Nothing material.",
+   "socioeconomic": "Buyers are bidding against two deadlines — the EV rebate cut and a feebate that would surcharge dearer cars — so a review meant to restrain prices is pulling demand forward and lifting them."
+  },
+  {
+   "headline": "PARENTS JAILED FOR BABY TREVOR'S DEATH, AND MSF CONFIRMS HE WAS NEVER REFERRED TO CHILD PROTECTION",
+   "breaking": false,
+   "summary": [
+    "Neo Jia Ming, 27, was jailed 16 years and Chloe Gan Ci Xuan, 23, 15 years and three months on Tuesday for the abuse that killed their eight-month-old son, hit, shaken and smothered for most of his life, who died in September 2024 after his mother covered his mouth and nose to stop his cries.",
+    "MSF confirmed Trevor was never referred to its Protective Service or any social service agency, despite a KKH admission from 18 to 23 January 2024 for vomiting, reduced feeding and concerns that his mother had shaken him — an episode in which she left him unconscious and went back to sleep. KKH medical board chairman Eileen Lew said the hospital ran thorough evaluations including a brain scan, eye examination and X-ray, drew up a care plan the parents agreed to, facilitated parenting support, then closed the case \"with no outstanding concerns\" — without saying what the plan contained or how long follow-up ran. MSF said the independent review of all child deaths known to social services, announced in November 2025 after Megan Khung's death, does not apply because Trevor died first, though that panel's lessons on infant risk were shared across the social, healthcare and early childhood sectors."
+   ],
+   "geopolitical": "Nothing material.",
+   "socioeconomic": "A hospital that suspected shaking, scanned the baby's brain and still closed the file without a referral is a process failure, not a judgment call — and because Trevor predates the post-Megan Khung reform, the case that would most test the new regime is excluded from it."
+  },
+  {
+   "headline": "SINGAPORE RISES TO 14TH IN THE RULE OF LAW INDEX, FIRST FOR ORDER AND SECOND ON CORRUPTION",
+   "breaking": false,
+   "summary": [
+    "The World Justice Project ranked Singapore 14th of 143 countries for 2026, up two places, first for order and security, second for absence of corruption, and third in East Asia and the Pacific behind New Zealand and Australia. It is among the minority whose score improved; the index draws on 215,000 household and 3,400 expert surveys. Denmark leads; Venezuela ranks last.",
+    "Its global finding is bleaker: \"authoritarianism is no longer an emerging trend — it has become entrenched\", with over 86% of countries suffering a sustained five-year decline in at least one safeguard against authoritarian rule. Civil justice weakened in 64% of countries and criminal justice in 58%, improper government influence central to both, and judicial constraints on executive power fell in 63%. WJP twice noted \"this does not include Singapore\" — but said the freedoms underpinning civic space, public debate and oversight are shrinking in most countries, Singapore among them."
+   ],
+   "geopolitical": "Ranking first on order and second on corruption while most jurisdictions slide is the substance behind Singapore's pitch as a neutral venue for contracts and arbitration, in a year when courts elsewhere are bending to executives.",
+   "socioeconomic": "The one factor that fell is civic space, which investors do not price and residents feel directly: the institutions hold while the room to scrutinise them narrows."
+  }
+ ],
+ "word": {
+  "word": "fulsome",
+  "pos": "adjective",
+  "pronunciation": "FUHL-suhm",
+  "definition": "Excessive to the point of insincerity; cloying or offensive in its abundance, especially of praise.",
+  "etymology": "Middle English fulsom, from ful (full) plus -som, originally meaning abundant; it soured into overfed, then gross, then offensively excessive, the flattering sense settling in the seventeenth century.",
+  "example": "\"You are a humanitarian also, sir, and I salute that\", said to a head of state wanted by the ICC for deporting children, is fulsome in the strict sense: praise so far past what the facts allow that it discredits the speaker rather than its subject."
+ }
+}

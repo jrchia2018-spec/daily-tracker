@@ -1,120 +1,112 @@
 {
  "schema": 1,
- "date": "2026-10-21",
- "generatedAt": "2026-10-21T07:15:00+08:00",
+ "date": "2026-10-22",
+ "generatedAt": "2026-10-22T07:45:00+08:00",
  "coverage": {
-  "from": "2026-10-20T07:00:00+08:00",
-  "to": "2026-10-21T07:00:00+08:00",
-  "label": "Tuesday 20 October 2026, 0700 SGT → Wednesday 21 October 2026, 0700 SGT"
+  "from": "2026-10-21T07:00:00+08:00",
+  "to": "2026-10-22T07:00:00+08:00",
+  "label": "Wednesday 21 October 2026, 0700 SGT → Thursday 22 October 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "THE MISSILE WARNING IS BACK ON AFTER OSLO, AND ZELENSKY OFFERS A REFINERY TRUCE FOR PATRIOTS",
+   "headline": "WITKOFF CALLS PUTIN A HUMANITARIAN, LEAVES WITH AN AMERICAN PRISONER, AND MISSILES HIT KYIV",
    "breaking": true,
    "summary": [
-    "Zelensky said after meeting Steve Witkoff in Norway on Tuesday that the United States has resumed advance warning of Russian ballistic launches: \"Now it works. It's great.\" Jared Kushner joined by video, alongside Norwegian, Finnish, EU and British officials. He said he had offered to halt Ukraine's long-range strikes on Russian oil refineries — Trump's central demand — if Washington releases Patriot interceptors, which the Pentagon has blocked even when allies pay, and that he raised the Starshield slowdown with Marco Rubio.",
-    "He rejected a Putin-floated Trump–Putin–Xi summit next month that would exclude Kyiv: \"There can be nothing about Ukraine without Ukraine.\" Kaja Kallas questioned whether US negotiators had been honest brokers; Rubio, in India, denied any directive to harm Ukraine and said interceptors are simply scarce. Nine people were killed in Ukraine on Tuesday."
+    "Steve Witkoff met Putin for three hours at the Constantine Palace in St Petersburg on Wednesday, his ninth visit to Russia, after Tuesday's Oslo talks with Zelensky. He handed over written proposals — \"some sort of peace deal between Russia and Ukraine, and you'll read that at your leisure\" — and told him: \"You talk so much about my president, President Trump, being a humanitarian. You are a humanitarian also, sir, and I salute that.\" Putin is wanted by the ICC over the deportation of Ukrainian children; the UN has confirmed over 17,500 Ukrainian civilians killed since February 2022. He then ordered the release of Stephen Hubbard, 74, held more than four years on mercenary charges — unilaterally, no exchange. Trump said he asked for it directly last week and gave nothing in return.",
+    "Aide Yury Ushakov said Russia is ready \"in principle\" to resume trilateral talks with the US and Ukraine after 10 November, possibly in Abu Dhabi, on a post-war \"security framework\", while dismissing what Witkoff brought from Kyiv and the Europeans as \"little of actual value\". Zelensky wants it no later than early November and noted Russia has agreed to meetings before and cancelled them. No Russian demand has moved: all of Donbas, a much smaller army, no NATO. Putin also raised US economic cooperation, fertiliser exports and a China meeting on Ukraine; Dmitriev said the diesel deal proceeds despite European objections. Rubio, in India, said the Starshield throttling was Musk's decision and \"that's irrelevant\" to Washington. Missiles struck Kyiv hours after the meeting."
    ],
-   "geopolitical": "The feed went off and back on inside a week, and the price list is now visible: a refinery truce for interceptors. A capability Kyiv cannot replace is now a bargaining chip.",
-   "socioeconomic": "Ukraine's refinery strikes are one of the two causes the IEA blames for diesel at double its pre-war price, so the trade Zelensky offered to save his cities is also the quickest route to cheaper fuel everywhere."
+   "geopolitical": "Trump's envoy conferred moral standing on an ICC-indicted head of state and collected a gift that cost Moscow nothing: the price of American goodwill is now flattery rather than concessions, which is why the Kremlin can set talks for after 10 November with every demand intact.",
+   "socioeconomic": "Pairing the release with fertiliser and diesel business tells European capitals that sanctions relief is being traded bilaterally and irreversibly — once those flows re-enter US supply chains, re-imposition becomes a domestic fight."
   },
   {
-   "headline": "NATO SENDS AIRCRAFT AND RADARS TO THE BLACK SEA AS FIVE MORE CARGO SHIPS ARE HIT",
+   "headline": "WASHINGTON DRAWS UP NEW IRAN STRIKE PLANS FOR AFTER THE VOTES AND PULLS ITS FAMILIES OUT OF RIYADH",
    "breaking": true,
    "summary": [
-    "NATO ambassadors met in the North Atlantic Council on Tuesday and agreed to send maritime patrol aircraft, radar, drones and intelligence personnel to the Black Sea for \"surveillance, reconnaissance, and forensics\". Russia's military said the same day it had struck three cargo vessels in Ukraine's port of Reni and two more bound for Odesa. At least five cargo ships have been hit off Romania and Bulgaria in a fortnight, 23 sailors dead or missing, mostly outside NATO territorial waters; the London market's new high-risk designation now covers the whole sea except Romanian, Bulgarian and Turkish waters.",
-    "Romania has logged 35 unauthorised drone incursions this year against nine in all of 2025, and downed two at the weekend — Geran-4 turboprop drones flying at 450kmh, defence minister Radu Miruță said; Bulgaria has asked NATO for combat aircraft. The risk analyst Ambrey attributes about 80 per cent of the attacks to Russian forces, and the death toll to \"double tap\" strikes pairing aerial with surface drones carrying up to half a tonne of explosives."
+    "The US and Israel have drawn up plans for renewed strikes on Iran's nuclear and military sites to launch after Israel's 27 October election and the US midterms on 3 November, though planners concede a second phase may fare no better than the first. Trump has repeatedly cancelled a return to major combat and said on 8 October there would be no strike before the midterms. Hegseth and CENTCOM are the strongest advocates; most of the administration prefers economic pressure. The case rests on Iranian efforts to rebuild nuclear capacity, unverifiable since Tehran barred IAEA inspectors from the bombed sites.",
+    "The State Department ordered the departure of non-emergency staff and all family members from the Riyadh embassy, citing Houthi attacks on civilian airports and critical infrastructure; employees now need the chief of mission's authorisation to use any Saudi airport. \"This is about the Houthis,\" an official said. Saudi Arabia intercepted at least seven drones on Wednesday, one aimed at the Shaybah oil field, where two expatriate workers were killed and two injured. Washington has raised intelligence and targeting support but still refuses offensive strikes; Britain's Typhoons and Egypt's pledge of \"all necessary and possible forms of support\" are filling that gap."
    ],
-   "geopolitical": "NATO is buying evidence rather than air defence: forensics commit it to proving who fired, not to firing back, so the alliance's likeliest accident — a member's jet against a Russian drone — is untouched.",
-   "socioeconomic": "Insurance, not ordnance, is doing the blockading: with the whole sea bar three coastal strips rated high-risk, Ukraine's grain and the Danube barge trade are priced out of their own export route."
+   "geopolitical": "An ordered departure is the most reliable public signal of expected escalation, and it lands the same day as the planning: allies must assume the war resumes immediately after 3 November, not before it.",
+   "socioeconomic": "Two foreign workers dead at Shaybah moves the risk from airports to the oil fields, and the expatriate labour that runs Gulf energy infrastructure can leave — an exodus would cut Saudi output faster than any missile."
   },
   {
-   "headline": "BRENT HOLDS ABOVE US$111 AS THE IEA SAYS 2027 WILL NOT BE NORMAL, AND BRITAIN REARRESTS TWO OVER FAIRFORD",
-   "breaking": true,
-   "summary": [
-    "\"I don't see any credible pathway that 2027 will be a year of normalisation,\" IEA executive director Fatih Birol told a London summit on Tuesday; Hormuz has been closed once and \"it can be closed again\". Brent traded above US$111, on course for its highest settlement since May. Birol called judging the crisis by crude \"myopic\": diesel has doubled from pre-war levels as refinery maintenance season starts, and \"we are on thin ice\". Its members hold 1.6 billion barrels after March's record 400-million-barrel release. Middle East outflows are just above the pre-war average at 24 million barrels a day, restored Saudi pipeline exports offsetting the strait.",
-    "British counter-terrorism police rearrested a 24-year-old Briton and a 25-year-old dual British-Iranian under Section 3 of the National Security Act — assisting a foreign intelligence service — over last month's RAF Fairford plot. Seven men have now been arrested, five on bail; \"we consider it highly likely that there is Iranian state involvement\", said Laurence Taylor; the US bombers withdrawn from the base have not returned. Pete Hegseth paid an unannounced visit to Israel to see Netanyahu and his defence minister, a week before the election."
-   ],
-   "geopolitical": "Iran no longer has to close the strait to collect on it — the option is priced into every barrel — and the Fairford charges put Tehran's reach inside a NATO country onto a British charge sheet.",
-   "socioeconomic": "Doubled diesel is the figure that reaches households, setting freight, farming and food costs; Washington answered the same day with an US$8 billion farm relief package aimed at fuel and fertiliser bills."
-  },
-  {
-   "headline": "RAF TYPHOONS WILL FLY OVER SAUDI CITIES, AND THE TOLL AT THE YEMENI TRAINING CAMP REACHES 73",
-   "breaking": true,
-   "summary": [
-    "Britain will send Typhoons to fly defensive missions over Saudi cities and critical infrastructure, shooting down Houthi missiles and drones — the largest military commitment of Andy Burnham's premiership. The Ministry of Defence did not say how many aircraft and insisted they \"will not conduct offensive strikes\"; an A400M transport is being added and the Voyager refuelling mission extended by 90 days. Defence secretary Wes Streeting said the UK was \"responding to protect civilians\"; the deployment was justified partly by what Middle East instability is doing to energy prices.",
-    "The toll from Monday's missile strike on a government training camp in Shabwa rose to 73. Nineteen people have been killed in Saudi Arabia since September, 13 of them at Riyadh's King Khalid airport. The Houthis have cut the roads into Taiz, besieging one of Yemen's largest cities, whose officials warn of humanitarian disaster. Washington has sent more than 100 military advisers and intelligence support but no combat forces, and Trump urged Riyadh on Friday to accept Israeli help."
-   ],
-   "geopolitical": "A second Western air force enters the Gulf war on an undefined word. As RUSI's HA Hellyer asked: \"What does defensive mean?\" if a Houthi boat attacks a Saudi ship and a Typhoon is in range.",
-   "socioeconomic": "Britain is spending militarily to defend its own fuel bill, and the cover frees Saudi aircraft for offensive sorties in British airframes — 72 Typhoons delivered, 48 more under negotiation."
-  },
-  {
-   "headline": "SUDAN'S ARMY DRONES KILL MOURNERS IN KORDOFAN AND BURN A FUEL MARKET IN ABYEI",
-   "breaking": true,
-   "summary": [
-    "A drone hit a truck carrying about 200 mourners as it reached a funeral in al-Dabab, West Kordofan, on Sunday, killing 145, with five more in a second strike on the tent where mourners gathered, BBC sources said; the Tasis alliance puts the toll at 80. On Monday at 11am a strike on Amiet Market in Abyei ignited a fuel depot still burning on Tuesday. Abyei's caretaker information minister Yohanna Akol Ngor said \"we have recorded 153 deaths\" and the toll was rising as the fire burned; the BBC was given 73. Médecins Sans Frontières treated more than 20 wounded, several critical, at Ameth Bek Hospital.",
-    "A senior Sudanese officer said the army struck fuel tankers arriving from South Sudan for the Rapid Support Forces and that the dead were RSF members and smugglers: \"We do not target civilians.\" South Sudan's foreign ministry blamed Sudan's military, summoned its ambassador and asked that Abyei be handled diplomatically."
-   ],
-   "geopolitical": "Abyei's status was left open by the 2005 peace agreement and its referendum never held, so a strike there is both counter-smuggling and an attack on territory Juba claims — the clearest path from Sudan's civil war to a war between states.",
-   "socioeconomic": "Interdicting fuel now means bombing where fuel is sold. Amiet is the hub shared by Ngok Dinka farmers and Misseriya herders, and the depot that burned supplied local businesses, not only the front."
-  },
-  {
-   "headline": "EBOLA REACHES NIGERIA, AND THE EPIDEMIC PASSES 9,000 CASES",
+   "headline": "META ORDERED TO PAY US$25 BILLION FOR A \"SYSTEMATIC PATTERN OF DECEPTION\" OVER CAMBRIDGE ANALYTICA",
    "breaking": false,
    "summary": [
-    "Nigeria confirmed its first case of the current Ebola epidemic on Tuesday: a woman in Abuja who had arrived from Uganda, developed symptoms on 7 October and was admitted to a private hospital on 11 October. Health minister Muhammad Pate said 44 contacts had been identified and were being traced. The DRC-centred epidemic stood at 9,066 confirmed cases and 4,381 deaths on 11 October — a crude fatality rate of 48.3 per cent, the deadliest Ebola outbreak on record. Kenya, which reported its first case on 6 October, has now confirmed eight."
+    "New Mexico state district judge Francis Mathew ordered Meta to pay US$25 billion on Wednesday, its largest penalty to date, after a September jury verdict that it violated the state's Unfair Practices Act more than 43 million times. Mathew found \"a coherent strategy designed to mislead the public\" and \"a systematic pattern of deception at the core of Facebook's business model\". The case dates to the 2018 disclosure that Cambridge Analytica improperly obtained data on as many as 87 million users to profile American voters. New Mexico sued in 2021 and was not party to the US$18 billion multistate settlement of August, which resolved other states' Cambridge Analytica claims.",
+    "Meta will appeal; chief legal officer C.J. Mahoney said the ruling \"makes it all but impossible to do business in the state of New Mexico\" and called the suit \"a tax on speech\". Earnings the same day showed revenue up 26% to more than US$64 billion but operating income of about US$13 billion against roughly US$23 billion without the August settlement charge. Quarterly capex reached nearly US$35 billion, up 80% year on year, full-year guidance narrowed to US$135-145 billion, with none offered for 2027."
    ],
-   "geopolitical": "The virus has crossed a border by aircraft twice in a fortnight and has now reached Africa's most populous country. Nigeria's disclosure within a day sets the standard the next government to find a case faces.",
-   "socioeconomic": "Four days passed between admission and diagnosis in a capital-city private hospital. That interval decides how many of the 44 contacts become cases, and it is what surveillance funding buys back."
+   "geopolitical": "One US state has extracted more than any national regulator has managed, making state courts rather than Brussels or Washington the binding constraint on platform data practices, and handing every other attorney general a template with a number attached.",
+   "socioeconomic": "Meta can absorb US$25 billion, but penalties are now a recurring charge against earnings while capex runs near US$140 billion a year: litigation has become a cost of the business model, not a deterrent to it."
+  },
+  {
+   "headline": "AI FINDS A FLAW IN THE CODE BEHIND 70 PER CENT OF THE WEB, AND GOVERNMENT SITES GO DARK TO PATCH IT",
+   "breaking": false,
+   "summary": [
+    "OpenAI, Google-owned Wiz and the security firm Calif disclosed PHP2Shell on Wednesday: critical bugs in PHP, the language behind roughly 70% of the internet, letting attackers run code remotely, disrupt services and read memory holding passwords and customer data. Found in late August, they were held until the PHP Foundation had a patch. The NSA told organisations running PHP to update or take systems offline; some European government sites went dark while patching.",
+    "Wiz used Google's Gemini 4 Argon, Wiz Atlas and OpenAI's GPT-5.6 Sol, and wrote that \"with frontier AI models and the right tools, a single researcher completed in a week what previously would have taken a world-class team months of work\". The defects had existed for decades, but proving them exploitable \"required an exceptionally complex chain of steps, at the edge of what human researchers could practically achieve\". Wiz rates it on par with Heartbleed, the 2014 bug affecting two-thirds of the web."
+   ],
+   "geopolitical": "The capability that let three firms pre-empt this bug is available to states that would rather keep what they find, so the defensive advantage lasts only as long as the patch cycle.",
+   "socioeconomic": "Decades-old code across the web is now reclassified as exploitable, and the cost falls on everyone running an unpatched site — mostly small operators with no security team — while the capability to audit it sits with the few firms running frontier models."
+  },
+  {
+   "headline": "GUINEA-BISSAU KILLS THE US-FUNDED TRIAL THAT WOULD HAVE WITHHELD HEPATITIS B SHOTS FROM NEWBORNS",
+   "breaking": false,
+   "summary": [
+    "Lead researcher Frederik Schaltz-Buchholzer said on Wednesday it is \"now clear\" the hepatitis B vaccine trial \"will not move forward in Guinea-Bissau\" because \"we were not given the necessary governmental approval\". Health minister Quinhin Nantote had already denied it was proceeding, and the government seized the vaccines when it searched the Bandim Health Project's offices on Monday. Funded with US$1.6 million from the US CDC and US$1.6 million from private backers including the Bill Ackman-backed Pershing Square Foundation, the study was to test the Danish team's hypothesis that hepatitis B vaccine given alongside BCG dampens BCG's broader survival benefit.",
+    "Paul Offit of the Children's Hospital of Philadelphia called that \"fanciful\" — \"there's no evidence for that, and it doesn't make biological sense\" — and said the money should simply buy vaccinations. The WHO recommends a first dose within 24 hours of birth; Guinea-Bissau does not plan a universal birth dose until 2028. Critics said consent was impossible because infants outside the trial would get nothing: in it parents have \"a 50% chance of getting the vaccine for their children. But if they stay out, they have a 0% chance,\" said Danish researcher Henrik Støvring. Schaltz-Buchholzer said the proposal had bred local distrust that the vaccine was being tested on Africans because it was dangerous."
+   ],
+   "geopolitical": "A low-income health ministry stopped a trial its Western funders intended to run, by withholding approval and impounding the doses: host-country consent is an operative veto, not a formality.",
+   "socioeconomic": "The lasting cost is the rumour the proposal created in a country with high hepatitis B prevalence and no birth dose before 2028 — distrust seeded by a trial that never ran will still suppress uptake when the vaccine arrives."
   }
  ],
  "singapore": [
   {
-   "headline": "THE ALUMNI PHASE OF PRIMARY ONE SHRINKS BY A FIFTH OR MORE AT THE MOST WANTED SCHOOLS",
-   "breaking": true,
-   "summary": [
-    "From next year's Primary 1 exercise, schools with 180 or more vacancies must reserve 60 places for Phase 2C, open to every child, up from 40. Applying the Education Ministry's 2026 figures, CNA found that at 26 of the 35 schools oversubscribed in Phase 2A — the alumni phase — the extra Phase 2C places would come out of Phase 2A. Red Swastika School, the most oversubscribed this year with 88 applicants for 24 places, would be left with four. Princess Elizabeth Primary would go from 47 places for 137 applicants to 27; Shuqun and Pei Hwa Presbyterian also lose more than a quarter.",
-    "Twelve schools with enough Phase 2A places this year could become oversubscribed: Methodist Girls' School (Primary), 93 applicants for 95 places, would be left with 77. Separately, 12 schools in neighbourhoods where public housing is under 40 per cent of homes within 2km will split Phase 2C into two equal tracks, within and beyond 2km, with no distance priority inside either."
-   ],
-   "geopolitical": "Each widening of Phase 2C is paid for out of an inherited claim. The alumni phase, created in 1999 to build school communities, is now the budget line funding open access — and it bites hardest at neighbourhood primaries, not the old names.",
-   "socioeconomic": "Four places for 88 applicants turns a reasonable expectation into a lottery, and the 2km split removes distance as an advantage in exactly the districts where proximity was bought."
-  },
-  {
-   "headline": "SINGTEL FINED S$1 MILLION FOR THE MARCH OUTAGE THAT CUT 720,000 LINES OVER THREE DAYS",
-   "breaking": true,
-   "summary": [
-    "IMDA fined Singtel S$1 million over mobile outages on 16, 18 and 19 March that hit 720,000 customers and disrupted online payments, ride-hailing and food delivery. A chiller system at a Singtel exchange broke down after a vendor failed to reopen a manual water valve following scheduled maintenance and Singtel did not actively monitor it, so network equipment overheated and shut down; when 5G traffic was redirected to a second exchange, a disabled packet optimiser and a software bug left it unable to carry the load. The incidents \"were within Singtel's control to prevent\" and were not a cyberattack, IMDA said, noting the S$8 million of goodwill rebates it had paid.",
-    "It is Singtel's second S$1 million penalty in ten months: IMDA fined it the same amount in December 2025 over an October 2024 fixed-voice failure that cut 500,000 users off from banks, hospitals and emergency lines for more than four hours. Singapore's largest telco, with about 4.5 million mobile subscribers, accepted the ruling; the biggest telecoms fine here remains S$6 million, in 2014."
-   ],
-   "geopolitical": "A valve left shut by a contractor took down a tenth of the country's mobile base, and the fallback exchange had a disabled optimiser nobody had checked: the regulator is now fining maintenance governance, not outages.",
-   "socioeconomic": "The penalty is an eighth of the rebates Singtel had already paid, a signal rather than a deterrent — and the services that failed, payments and delivery, have no non-digital fallback."
-  },
-  {
-   "headline": "A SIXTEENTH DAY OF UNHEALTHY AIR, THE N95 STOCKPILE OPENED, AND JAKARTA SAYS IT IS STILL CAPABLE",
-   "breaking": true,
-   "summary": [
-    "Singapore is on its 16th day of unhealthy air, past the 14-day stretch of the 2015 crisis. The Health Ministry said on Tuesday it has released the national N95 stockpile to retailers: the masks are on sale at every FairPrice outlet and at Guardian, Unity and Watsons, with Cold Storage, Giant and Sheng Siong to follow this week. Grace Fu said FairPrice had just drawn from the stockpile and asked people to buy only what they need. Manpower told employers to work from hourly PM2.5 readings rather than only the next day's PSI forecast: elderly, pregnant and chronically ill workers should avoid outdoor work above 150 and be barred above 250, with N95s provided where strenuous outdoor work above 150 is unavoidable.",
-    "Indonesia has still not declared the fires a national disaster, the step that would oblige it to accept foreign help. \"For now, we are still capable,\" coordinating minister Dudung Abdurachman said, citing fuel distribution constraints while adding that neighbours' help is welcome: Malaysia's three aircraft and 52 personnel may come, and Singapore's offer is routed through the national disaster agency. Jakarta has deployed 47 aircraft and 60,000 personnel, and its foreign minister said on 15 October that President Prabowo had approved foreign assistance."
-   ],
-   "geopolitical": "Jakarta has approved help in principle and withheld the declaration that would let it arrive, so Singapore's firefighting and cloud-seeding offers sit with an agency rather than a government.",
-   "socioeconomic": "Opening a national stockpile for haze rather than a pandemic, and writing hour-by-hour work rules, makes the smoke an occupational-health regime. The cost lands on construction, landscaping and delivery."
-  },
-  {
-   "headline": "SINGAPORE AND SWEDEN LINE UP HYDROGEN, AMMONIA AND GRID LESSONS FOR THE ASEAN POWER GRID",
+   "headline": "SINGAPORE AND THE UAE OPEN TALKS ON AN ECONOMIC PACT AND PUT ADNOC IN A JOINT ENERGY TASK FORCE",
    "breaking": false,
    "summary": [
-    "Singapore and Sweden agreed on Tuesday, during President Tharman Shanmugaratnam's state visit, to explore hydrogen and ammonia, regional energy interconnectivity and high-voltage direct current technology together, the Energy Market Authority said. \"Sweden's experience with cross-border energy management and regional grid integration is particularly relevant as South-east Asia develops the ASEAN Power Grid,\" Tharman said, having pointed at the state banquet to work already under way on ammonia-fuel-ready power generation. At the KTH Royal Institute of Technology, Tharman and King Carl XVI Gustaf watched KTH and the Lee Kuan Yew School of Public Policy sign an agreement on training public sector leaders."
+    "PM Lawrence Wong was received by President Sheikh Mohamed bin Zayed Al Nahyan at Qasr Al Watan in Abu Dhabi on Tuesday, and the two announced negotiations on a comprehensive economic partnership agreement — an FTA-like deal easing trade and investment flows. It is the second leg of a five-day Middle East trip that began in Qatar on 18 October.",
+    "They also created a joint energy task force spanning trading, infrastructure and downstream activity, pairing Singapore's Ministry of Energy, Trade and Industry with the Abu Dhabi National Oil Company under the Abu Dhabi-Singapore Joint Forum, and welcomed nuclear cooperation under the 2024 EMA-Emirates Nuclear Energy Company deal. PUB renewed and widened its 2018 water pact with Abu Dhabi's Department of Energy, and NEA signed a vector-control agreement with the Abu Dhabi Public Health Centre."
    ],
-   "geopolitical": "The ASEAN Power Grid needs someone who has run power across borders between governments that disagree, which is what Sweden sells — and it is the quietest route by which European nuclear experience reaches a Singapore studying small modular reactors.",
-   "socioeconomic": "Interconnection and HVDC are how imported low-carbon electricity would physically arrive. Hydrogen and ammonia remain the expensive half, which is why this week's deliverable was a study visit."
+   "geopolitical": "Opening CEPA talks while the Gulf is under missile attack and Washington evacuates embassy families from Riyadh bets that the Emirates stay a durable partner, and buys Singapore a second Gulf relationship outside Doha.",
+   "socioeconomic": "An ADNOC task force reaching from trading to downstream is the hedge behind the diplomacy: Singapore's refining and bunkering complex needs flows that survive a closed Strait of Hormuz, and the nuclear work addresses the same vulnerability later."
+  },
+  {
+   "headline": "CAT A COE HITS S$132,004 AND AGAIN COSTS MORE THAN CAT B, IN THE FIRST TENDER SINCE THE REVIEW",
+   "breaking": false,
+   "summary": [
+    "Category A premiums rose 1.5% to S$132,004 and Category B 1.4% to S$131,901 at Tuesday's tender, the first since LTA proposed merging the two into one passenger-car category with a value-based feebate. It is the fourth time in 2026 that Cat A has closed above Cat B — the inversion the review is meant to end — and it reverses dips in the previous two rounds. Open category fell 0.9% to S$135,790, motorcycles 2.1% to S$10,778.",
+    "Dealers told The Straits Times sales had slowed over the fortnight, the exception being Chinese EV brands, whose buyers are rushing to commit before the EV tax rebate drops by S$10,000 on 1 January 2027. LTA said premiums \"remain elevated across most categories\", pointed to this weekend's Car Expo, and urged buyers and dealers to bid prudently. The consultation closes on 2 November."
+   ],
+   "geopolitical": "Nothing material.",
+   "socioeconomic": "Buyers are bidding against two deadlines — the EV rebate cut and a feebate that would surcharge dearer cars — so a review meant to restrain prices is pulling demand forward and lifting them."
+  },
+  {
+   "headline": "PARENTS JAILED FOR BABY TREVOR'S DEATH, AND MSF CONFIRMS HE WAS NEVER REFERRED TO CHILD PROTECTION",
+   "breaking": false,
+   "summary": [
+    "Neo Jia Ming, 27, was jailed 16 years and Chloe Gan Ci Xuan, 23, 15 years and three months on Tuesday for the abuse that killed their eight-month-old son, hit, shaken and smothered for most of his life, who died in September 2024 after his mother covered his mouth and nose to stop his cries.",
+    "MSF confirmed Trevor was never referred to its Protective Service or any social service agency, despite a KKH admission from 18 to 23 January 2024 for vomiting, reduced feeding and concerns that his mother had shaken him — an episode in which she left him unconscious and went back to sleep. KKH medical board chairman Eileen Lew said the hospital ran thorough evaluations including a brain scan, eye examination and X-ray, drew up a care plan the parents agreed to, facilitated parenting support, then closed the case \"with no outstanding concerns\" — without saying what the plan contained or how long follow-up ran. MSF said the independent review of all child deaths known to social services, announced in November 2025 after Megan Khung's death, does not apply because Trevor died first, though that panel's lessons on infant risk were shared across the social, healthcare and early childhood sectors."
+   ],
+   "geopolitical": "Nothing material.",
+   "socioeconomic": "A hospital that suspected shaking, scanned the baby's brain and still closed the file without a referral is a process failure, not a judgment call — and because Trevor predates the post-Megan Khung reform, the case that would most test the new regime is excluded from it."
+  },
+  {
+   "headline": "SINGAPORE RISES TO 14TH IN THE RULE OF LAW INDEX, FIRST FOR ORDER AND SECOND ON CORRUPTION",
+   "breaking": false,
+   "summary": [
+    "The World Justice Project ranked Singapore 14th of 143 countries for 2026, up two places, first for order and security, second for absence of corruption, and third in East Asia and the Pacific behind New Zealand and Australia. It is among the minority whose score improved; the index draws on 215,000 household and 3,400 expert surveys. Denmark leads; Venezuela ranks last.",
+    "Its global finding is bleaker: \"authoritarianism is no longer an emerging trend — it has become entrenched\", with over 86% of countries suffering a sustained five-year decline in at least one safeguard against authoritarian rule. Civil justice weakened in 64% of countries and criminal justice in 58%, improper government influence central to both, and judicial constraints on executive power fell in 63%. WJP twice noted \"this does not include Singapore\" — but said the freedoms underpinning civic space, public debate and oversight are shrinking in most countries, Singapore among them."
+   ],
+   "geopolitical": "Ranking first on order and second on corruption while most jurisdictions slide is the substance behind Singapore's pitch as a neutral venue for contracts and arbitration, in a year when courts elsewhere are bending to executives.",
+   "socioeconomic": "The one factor that fell is civic space, which investors do not price and residents feel directly: the institutions hold while the room to scrutinise them narrows."
   }
  ],
  "word": {
-  "word": "satrapy",
-  "pos": "noun",
-  "pronunciation": "SAT-ruh-pee",
-  "definition": "A province ruled by a governor on behalf of a distant sovereign; by extension, a territory that is nominally its own but whose decisions are taken elsewhere.",
-  "etymology": "From Old Persian khshathrapavan, protector of the realm, the title borne by provincial governors of the Achaemenid empire, through Greek satrapes and Latin satrapia into English in the fourteenth century.",
-  "example": "Kallas's charge that American negotiators have spent a year and a half pushing Kyiv towards surrender, and Zelensky's refusal of a Trump-Putin-Xi summit held without him, are objections to the same thing: being treated as a satrapy rather than a state."
+  "word": "fulsome",
+  "pos": "adjective",
+  "pronunciation": "FUHL-suhm",
+  "definition": "Excessive to the point of insincerity; cloying or offensive in its abundance, especially of praise.",
+  "etymology": "Middle English fulsom, from ful (full) plus -som, originally meaning abundant; it soured into overfed, then gross, then offensively excessive, the flattering sense settling in the seventeenth century.",
+  "example": "\"You are a humanitarian also, sir, and I salute that\", said to a head of state wanted by the ICC for deporting children, is fulsome in the strict sense: praise so far past what the facts allow that it discredits the speaker rather than its subject."
  }
 }

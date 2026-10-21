@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 18 October 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 22 October 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -1996,3 +1996,39 @@
 | Phase 2C distance tracks | 12 schools in areas where public housing is under 40% of homes within 2km split Phase 2C into two equal tracks, within and beyond 2km, with no distance priority inside either | CNA, 21 Oct 2026 |
 | Singtel March outage penalty | S$1m fine; outages 16, 18 and 19 March affecting 720,000 customers; chiller breakdown after a vendor failed to reopen a manual valve, then a disabled packet optimiser and software bug at the fallback exchange; S$8m of goodwill rebates already paid; second S$1m fine in 10 months (Dec 2025, for the Oct 2024 fixed-voice outage affecting 500,000 for 4+ hours); Singtel ~4.5m mobile subscribers; largest-ever telecoms fine S$6m (2014, Bukit Panjang fire) | IMDA via Straits Times, 20 Oct 2026 |
 | Singapore-Sweden energy | EMA and Sweden's Ministry of Climate and Enterprise to explore hydrogen, ammonia, regional energy interconnectivity and HVDC; KTH-LKYSPP agreement on public-sector leadership programmes plus a week-long Stockholm study visit; LKYSPP-Stockholm School of Economics to explore an ASEAN-Nordic policy forum | EMA joint statement and LKYSPP via Straits Times, 20 Oct 2026 |
+
+## Singapore data points (22 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| COE Cat A premium | S$132,004 (+1.5% from S$130,001); above Cat B for the fourth time in 2026 | LTA tender, 21 Oct 2026 |
+| COE Cat B premium | S$131,901 (+1.4% from S$130,100) | LTA tender, 21 Oct 2026 |
+| COE Cat E (open) | S$135,790 (-0.9% from S$137,000) | LTA tender, 21 Oct 2026 |
+| COE commercial vehicle | S$92,200 (+0.3%) | LTA tender, 21 Oct 2026 |
+| COE motorcycle | S$10,778 (-2.1% from S$11,012) | LTA tender, 21 Oct 2026 |
+| EV tax rebate cut | -S$10,000 for new EVs from 1 Jan 2027 | LTA, via ST 21 Oct 2026 |
+| COE consultation close | 2 Nov 2026, 11.59pm | LTA, 21 Oct 2026 |
+| WJP rule of law rank | 14th of 143 (up 2); 1st order and security; 2nd absence of corruption; 3rd in East Asia and Pacific | World Justice Project, 21 Oct 2026 |
+| Haze — PM2.5 | Normal band in all five regions since 1am, after 16 consecutive unhealthy days and a season-high west PSI of 230 | NEA, via ST 22 Oct 2026 |
+| Haze law notices | 10 Indonesian companies served; SGX queries to 7 listed firms | NEA/SGX, via ST 20-21 Oct 2026 |
+| Coastal protection research | +S$135m, on top of S$125m committed in 2023 | ST, 21 Oct 2026 |
+| SE Asia digital economy | US$368b in 2026, +17% YoY | e-Conomy report, via ST 21 Oct 2026 |
+| Vet visits during haze | Up to +15% respiratory/eye cases | ST, 21 Oct 2026 |
+
+## Global economic variables (22 Oct)
+| Variable | Figure | Source |
+|---|---|---|
+| Brent crude | Above US$110/bbl | CNN, 21 Oct 2026 |
+| France 10-year OAT yield | 5.0% (second time this month; briefly above 5% on 2 Oct, a 2002 high) | CNA, 22 Oct 2026 |
+| Meta New Mexico penalty | US$25bn; largest to date against the company | NM state district court (Judge Francis Mathew), 21 Oct 2026 |
+| Meta Unfair Practices Act violations | More than 43 million | NM jury verdict, Sep 2026 |
+| Cambridge Analytica exposure | Up to 87 million Facebook users | Facebook disclosure, 2018 |
+| Meta multistate settlement | US$18bn (youth-harm claims; NM not a party) | Aug 2026 |
+| Meta Q3 revenue | More than US$64bn, +26% YoY | Meta earnings, 21 Oct 2026 |
+| Meta Q3 operating income | ~US$13bn (~US$23bn excluding the settlement charge) | Meta earnings, 21 Oct 2026 |
+| Meta quarterly capex | Nearly US$35bn, +80% YoY; FY guidance US$135-145bn | Meta earnings, 21 Oct 2026 |
+| PHP2Shell exposure | PHP underlies roughly 70% of the internet | OpenAI/Wiz/Calif disclosure, 21 Oct 2026 |
+| Guinea-Bissau trial funding | US$1.6m CDC + US$1.6m private (Pershing Square, Bluebell foundations) | Guardian, 21 Oct 2026 |
+| Shaybah oil field attack | 2 expatriate workers killed, 2 injured; 7+ drones intercepted | Saudi statement, via CNN 21 Oct 2026 |
+| Abyei market strike toll | 153+ | AP/CNN, 20-21 Oct 2026; NYT 22 Oct 2026 |
+| Ukrainian civilian deaths | More than 17,500 confirmed since Feb 2022 | UN, via Guardian 21 Oct 2026 |
+
