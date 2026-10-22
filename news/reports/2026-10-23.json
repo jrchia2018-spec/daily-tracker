@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "date": "2026-10-23",
+ "generatedAt": "2026-10-23T07:30:00+08:00",
+ "coverage": {
+  "from": "2026-10-22T07:00:00+08:00",
+  "to": "2026-10-23T07:00:00+08:00",
+  "label": "Thursday 22 October 2026, 0700 SGT → Friday 23 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "A PERSONALISED CANCER VACCINE CUTS MELANOMA RECURRENCE BY 42 PER CENT, AND ITS MAKERS GO TO THE REGULATORS",
+   "breaking": true,
+   "summary": [
+    "Merck and Moderna released the full phase 3 numbers for intismeran autogene on Thursday, two months after saying only that the trial had succeeded. Among 1,136 patients with resected stage IIB-IV melanoma, those given the vaccine alongside Keytruda had a 42% lower risk of their cancer returning or of dying than those on Keytruda alone, at a median of about two years' follow-up. The shot is built per patient: the removed tumour is sequenced and an mRNA dose made against the markers most likely to provoke an immune response. Nine injections were given three weeks apart, Keytruda intravenously for about a year.",
+    "The data came out early, after reports it had been posted online and withdrawn, and is due to be presented on Saturday at the European Society for Medical Oncology meeting in Madrid. The companies say they are “engaging with regulatory authorities”, read by analysts as an imminent US filing, and are testing the technology in lung and pancreatic cancer. Overall survival is not yet readable — only “a favourable trend”. Moderna shares fell 18% because the effect is smaller than the 49% in the earlier, much smaller phase 2b trial; RBC's Trung Huynh still expects FDA approval next year. Michael Postow of Memorial Sloan Kettering, who treated trial patients, called the efficacy “something that we've never really seen before”."
+   ],
+   "geopolitical": "A therapy manufactured per patient from their own tumour sequence turns cancer care into an industrial supply chain, and the countries with the sequencing and production capacity will set the terms on which everyone else gets access.",
+   "socioeconomic": "No price has been named, and that is the question: an individualised biologic would land on health systems already paying for Keytruda, so the real fight is reimbursement rather than approval."
+  },
+  {
+   "headline": "RUSSIA FIRES 21 BALLISTIC MISSILES AT KYIV HOURS AFTER AGREEING TO TALKS, AND TRUMP ASKS MUSK TO UNTHROTTLE STARSHIELD",
+   "breaking": true,
+   "summary": [
+    "Three waves of ballistic missiles — 21 in all, three with cluster warheads — hit Kyiv overnight, killing at least two people and wounding 22 including four children. Targets included the southern bridge over the Dnipro, energy infrastructure, an ambulance station, a clinic, offices and homes; one strike damaged historic buildings in Pecherskyi, among them a monastery. It came hours after Ushakov said Putin had agreed “in principle” to three-way talks after 10 November. Zelensky: “The choice of weapon was deliberate, the choice of target area was deliberate” — proof of “no real change” in Moscow's position. Foreign minister Sybiha said “appeasement, servility and flattery” would not stop Russia. Kyiv reads the targeting as a campaign to take out the grid before winter.",
+    "Trump said Musk had restored Ukraine's Starlink access — “the bottom line, he put it back” — and would not say whether they had spoken; the Wall Street Journal reported he phoned Musk out of frustration that Starshield speeds were still capped. Zelensky said earlier the same day that speed had not been restored; Ukrainian officials told the Journal it was working better than under the cap but still restricted. When the slowdown was imposed last week, the New York Times reported, dozens of armed drones en route to Russian targets fell from the sky as their feeds went fuzzy; a Kyiv air-defence commander said his interceptors can no longer reach the speeds needed."
+   ],
+   "geopolitical": "Moscow has shown that agreeing to a date costs it nothing: it can accept talks for after the US midterms and bomb the capital the same night, because no consequence attaches to either act.",
+   "socioeconomic": "Ukraine's air defence now depends on a commercial satellite link a single proprietor can throttle and a president's phone call can loosen — a dependency every state buying into private constellations has just watched being exercised."
+  },
+  {
+   "headline": "HOUTHI STRIKE ON DAMMAM AIRPORT KILLS TWO AS THE IRGC THREATENS US BASES AND BRENT CLOSES AT A FIVE-MONTH HIGH",
+   "breaking": true,
+   "summary": [
+    "The toll from the attack on King Fahd International Airport in Dammam, on Saudi Arabia's Gulf coast, rose to two dead and eight injured; the civil aviation authority identified the dead as a Saudi citizen and an Indian national living in the kingdom. The Houthis claimed strikes on an Aramco facility at Yanbu, where a fire broke out, and on the defence ministry in Riyadh, giving no evidence for the latter, having earlier told anyone near an Aramco site to leave as the facilities were legitimate targets. Brent settled at US$113.17, its highest close since 4 May; no confirmed loss of supply underlies the move, which is risk premium.",
+    "The IRGC warned the war “will extend” to American military bases across the region if the US navy keeps escorting ships through Hormuz, and claimed attacks on four more vessels. Araghchi, in the Financial Times, said Iran wants a deal but is “fully prepared to defend ourselves”, and that the strait will not fully reopen until Washington accepts Tehran's terms — blockade lifted, oil sanctions lifted, US$12bn in frozen assets released, a Lebanon ceasefire. Trump accused Iran of inventing attacks on shipping to push the oil price up. Indirect contact continues through Pakistan and Qatar, with neither position moved since September's seven-day proposal."
+   ],
+   "geopolitical": "The IRGC has moved from attacking ships to naming the US bases that host the escorts, which collapses the distinction Washington has relied on between protecting commerce and being at war in the Gulf.",
+   "socioeconomic": "A five-month high with no barrel actually missing means the market is pricing the possible loss of Saudi export infrastructure rather than any present shortfall — and every importer, Singapore included, pays that premium."
+  },
+  {
+   "headline": "MORE THAN 50,000 DIED IN EUROPE'S CITIES THIS SUMMER, TWO-THIRDS OF THEM BECAUSE OF CLIMATE CHANGE",
+   "breaking": false,
+   "summary": [
+    "An estimated 50,391 people died of heat across 854 cities in 30 European countries between June and August, the highest toll in 26 years and well above the 2003 and 2022 heatwaves, according to two peer-reviewed papers in Nature Health. More than 32,600 of those deaths are attributed directly to climate change: the authors compared observed temperatures with those expected in a world without fossil-fuel warming, then applied established temperature-mortality relationships. The summer ran about 2.9°C above the 1991-2020 average, with single days more than 12°C above normal in some countries.",
+    "Death rates were highest among the over-85s, but more than 800 of the dead were aged 20 to 44 and thousands were under 65. The share of heat deaths attributable to fossil-fuel pollution has risen from about 40% earlier this century to roughly two-thirds. Imperial College's Clair Barnes, an author: “the summer of 2026 is likely to have been the worst on record for heat-related mortality across much of Europe.” The cities studied hold about 40% of those countries' population, so the continental total is higher, and the papers land weeks before the UN climate talks in Turkey."
+   ],
+   "geopolitical": "An attributed death toll this size, produced by a method national health authorities have broadly confirmed, hands litigants and claimants a number — which is why attribution science is becoming contested ground at the Turkey talks.",
+   "socioeconomic": "Europe's housing, hospitals and labour rules were built for a cooler climate, and 50,000 deaths in one summer makes cooling, shading and working-hour limits a capital-spending question rather than a health advisory."
+  },
+  {
+   "headline": "UN ADVISERS PUT 96 PER CENT OF THE WORLD'S SHALLOW CORAL REEFS AT EXTREME RISK OF COLLAPSE BEFORE 2075",
+   "breaking": false,
+   "summary": [
+    "An assessment of 127 coral reef regions coordinated by the International Union for Conservation of Nature found 24% of reefs across more than 80 countries already critically endangered — rising to 96% once expected warming is included. Critically endangered means an extremely high risk of collapse before 2075 — a reef unable to sustain itself after near or total loss of its living reef-building coral. The Great Barrier Reef is among them and the western Galápagos reefs have already collapsed. The modelling assumed about 2.7°C of warming by 2100, close to the 2.6°C implied by current policies, and did not fully account for the 2023-2025 bleaching event, the most widespread on record.",
+    "Reefs hold a quarter of all known marine species and underpin food, tourism and shoreline protection for hundreds of millions of people, after 50 years of decline from overfishing, pollution, coastal development and heat. Scientific lead Mishal Gudka of Cordio East Africa: “The risk is real and very concerning. We stand to lose one of the most valuable ecosystems we have.” The authors call it a “wake-up call” rather than a verdict: reefs can still survive with rapid cuts in fossil-fuel use and strong local conservation."
+   ],
+   "geopolitical": "Reef collapse removes the natural breakwater in front of low-lying coastal and island states, shifting shoreline defence from an ecosystem they can protect cheaply to seawalls someone must finance.",
+   "socioeconomic": "Fisheries and reef tourism are the cash economy of much of the tropical coast, and a 2075 collapse horizon starts repricing insurance, coastal property and sovereign risk long before the coral goes."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "THE HAZE CLEARS AFTER 18 DAYS OF UNHEALTHY AIR, AND A SECOND MASK GIVEAWAY OPENS TODAY",
+   "breaking": true,
+   "summary": [
+    "Every part of the island woke on Friday to air in the good-to-moderate band, the first time since 5 October that no region has been out of unhealthy territory for a full 24 hours. At 6am PM2.5 readings were 18 north, 26 south, 27 east, 53 west and 29 central, all within the normal range of 0 to 55; the 24-hour PSI stood at 68 north and south, 71 east, 89 west and 79 central. The west was last out, crossing over only at 3pm on Thursday. The NEA said the reprieve may be brief: with dry conditions over southern Sumatra and Kalimantan and south-easterly winds, it put Friday's 24-hour PSI at 101 to 150, with rain expected to clear things by Sunday.",
+    "The second round of mask distribution begins today, Grace Fu confirming eligibility for Singaporeans aged 60 and above among others. The costs are being counted: vets reported up to 15% more respiratory and eye cases, builders cut outdoor exposure and are seeking time extensions for delayed projects. The question raised again this week is why the Transboundary Haze Pollution Act has never produced a case against an Indonesian company — establishing which firm controls a burning concession is the obstacle."
+   ],
+   "geopolitical": "Jakarta has still not declared a national disaster — the step that would oblige it to accept foreign help — so Singapore's leverage after 18 unhealthy days remains a law it cannot enforce across the border.",
+   "socioeconomic": "The bill lands in construction delay claims, clinic visits and lost outdoor trade rather than any headline number, which is why 18 unhealthy days will not register in quarterly growth even as firms absorb them."
+  },
+  {
+   "headline": "PAP CADRES ELECT THE PARTY'S 39TH CENTRAL EXECUTIVE COMMITTEE ON SUNDAY, PM WONG'S FIRST AS SECRETARY-GENERAL",
+   "breaking": false,
+   "summary": [
+    "Cadres vote on 25 October for the PAP's 39th central executive committee, the first such election for Lawrence Wong since he led the party through GE2025. Observers expect renewal rather than an overhaul, with younger office-holders moving in as some senior figures make way. Three first-term MPs given Cabinet portfolios since the election — Transport Minister Jeffrey Siow, Culture, Community and Youth Minister David Neo and Acting Manpower Minister Jasmin Lau — are not currently on the CEC and are expected to join; Zaqy Mohamad was co-opted in July after becoming acting minister-in-charge of Muslim affairs.",
+    "IPS senior research fellow Teo Kay Key said Wong would by now have a better sense of job fit and team dynamics. Felix Tan called the three ministers' inclusion “a fairly natural progression”; Terra Corporate Affairs' Malminderjit Singh said it would mirror on the party side the succession planning Wong has done in Cabinet. SMU's Eugene Tan noted the next CEC election falls in 2028: “Incremental change is likely the theme. It will be continuity among change.” The post to watch is first assistant secretary-general: Goh Chok Tong gave it to Lee Hsien Loong in 1992 to signal the succession."
+   ],
+   "geopolitical": "The CEC, not the Cabinet, is where the PAP signals who will be in charge after Wong, and foreign capitals read that list as the clearest available forecast of Singapore's policy continuity.",
+   "socioeconomic": "Party and government posts moving together means the people who will own the AI-and-jobs and cost-of-living files through the next term are being locked in now, well ahead of any manifesto."
+  },
+  {
+   "headline": "RETRENCHMENTS ARE BACK AT PANDEMIC LEVELS WHILE THE ECONOMY GROWS, AND GOVTECH CUTS 38 MORE JOBS",
+   "breaking": false,
+   "summary": [
+    "Labour chief Ng Chee Meng said on Thursday that new structural gaps are opening in the workforce even as the economy does relatively well: retrenchments have peaked at about Covid-19 levels — 4,620 in the second quarter of 2026 — while growth has run around 5% a year for three years. He named AI-driven restructuring as one possible cause among many, and flagged the lengthening wait fresh graduates face for a first job. NTUC and KPMG launched a programme, Jumpstart Your Workforce Transformation, to help firms restructure around AI, funded through the NTUC company training committee grant and the Enterprise Workforce Transformation Package, with six new AI courses from NTUC LearningHub. KPMG joins PwC, AWS and Huawei as an NTUC “lead multiplier”; the aim, Ng said, is to avoid “jobless growth”.",
+    "GovTech confirmed the same day that it has retrenched 38 more staff, the second of three rounds, after 93 of its 3,900 went in July; it expects 7% to 9% of the workforce to be affected over two years. Of the group reviewed, 106 officers keep their roles and 106 are eligible for conversion or apprenticeship pathways; severance is a month per year of service capped at 25 years plus three months ex-gratia. The cuts target roles built around traditional project delivery; chairman Chng Kai Fong has argued that systems such as Singpass and CDC vouchers “cannot be specified once, handed to a vendor and considered done”; the agency expects to employ more people by the end, wanting engineers, product managers, designers and cybersecurity staff."
+   ],
+   "geopolitical": "A state that is bringing its critical digital infrastructure back in-house is making a sovereignty argument, not a cost one — the same calculation European governments are making about cloud and identity systems.",
+   "socioeconomic": "Retrenchment at pandemic levels during 5% growth is the clearest sign yet that the labour-market pain is compositional rather than cyclical, and training grants only work if the displaced can reach the jobs being created."
+  }
+ ],
+ "word": {
+  "word": "adjuvant",
+  "pos": "adjective, also noun",
+  "pronunciation": "AJ-uh-vuhnt",
+  "definition": "In medicine, given after a primary treatment — typically surgery — to stop a disease returning; as a noun, a substance that boosts the body's response to a vaccine.",
+  "etymology": "From Latin adiuvare, \"to help\" (ad- \"to\" + iuvare \"to assist\"), via the present participle adiuvans; in English from the 16th century, and in its oncological sense from the 1960s.",
+  "example": "Intismeran autogene was tested in the adjuvant setting — after the tumour had been cut out — and cut the risk of melanoma returning by 42 per cent."
+ }
+}

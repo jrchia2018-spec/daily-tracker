@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 22 October 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 23 October 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -2032,3 +2032,26 @@
 | Abyei market strike toll | 153+ | AP/CNN, 20-21 Oct 2026; NYT 22 Oct 2026 |
 | Ukrainian civilian deaths | More than 17,500 confirmed since Feb 2022 | UN, via Guardian 21 Oct 2026 |
 
+## Global economic variables (23 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent settlement | US$113.17/bbl — highest close since 4 May; no confirmed supply loss behind the move | Market close, 22 Oct 2026 |
+| European heat deaths, summer 2026 | 50,391 estimated across 854 cities in 30 countries (Jun-Aug); highest in 26 years | Two papers, Nature Health, 22 Oct 2026 |
+| — attributed to climate change | 32,600+ of those deaths; attributable share now ~two-thirds, from ~40% earlier this century | Nature Health, 22 Oct 2026 |
+| European summer anomaly | ~2.9°C above the 1991-2020 average; single days 12°C+ above normal in some countries | Nature Health, 22 Oct 2026 |
+| Heat deaths aged 20-44 | 800+ | Nature Health, 22 Oct 2026 |
+| Coral reefs critically endangered | 24% of reefs in 80+ countries now; 96% once expected warming is included (127 regions assessed; 2075 collapse horizon; 2.7°C pathway) | IUCN assessment, 22 Oct 2026 |
+| Melanoma vaccine efficacy | 42% lower risk of recurrence or death vs Keytruda alone, 1,136 patients, stage IIB-IV, median ~2 years' follow-up (phase 2b was 49%) | Merck/Moderna phase 3 readout, 22 Oct 2026 |
+| Dammam King Fahd airport attack | 2 killed (a Saudi citizen, an Indian national), 8 injured | Saudi civil aviation authority, 22 Oct 2026 |
+
+## Singapore data points (23 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Haze episode length | 18 days of unhealthy air (24-hour PSI above 101) from 5 Oct; all regions good-to-moderate for 24h as of 23 Oct | NEA/ST, 23 Oct 2026 |
+| PM2.5, 6am 23 Oct | 18 north, 26 south, 27 east, 53 west, 29 central (normal band 0-55) | NEA, 23 Oct 2026 |
+| 24-hour PSI, 23 Oct | 68 north, 68 south, 71 east, 89 west, 79 central; NEA forecast 101-150 for 23 Oct | NEA, 23 Oct 2026 |
+| Haze health/vet impact | Up to 15% more respiratory or eye cases at some vets | ST, 21 Oct 2026 |
+| Q2 2026 retrenchments | 4,620 — at about Covid-19 peak levels, against ~5% annual growth over three years | Ng Chee Meng (MOM data), 22 Oct 2026 |
+| GovTech layoffs | 38 in round two (93 in July from a 3,900 headcount); 7-9% of workforce expected affected over two years; 106 officers retained, 106 eligible for conversion/apprenticeship | GovTech, 22 Oct 2026 |
+| GovTech severance | One month per year of service (capped at 25 years) + three months ex-gratia + six-week notice | GovTech, Jul 2026 |
+| Newsweek World's Best Smart Hospitals 2027 | CGH 17th, SGH 20th, TTSH 26th, NUH 32nd; 14 Singapore hospitals listed (11 last edition); SKH 208th | Newsweek/Statista, 21 Oct 2026 |
