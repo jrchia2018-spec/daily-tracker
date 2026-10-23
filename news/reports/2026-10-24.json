@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "date": "2026-10-24",
+ "generatedAt": "2026-10-24T07:30:00+08:00",
+ "coverage": {
+  "from": "2026-10-23T07:00:00+08:00",
+  "to": "2026-10-24T07:00:00+08:00",
+  "label": "Friday 23 October 2026, 0700 SGT → Saturday 24 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "BRENT PASSES US$117 AS TEHRAN THREATENS GULF REFINERIES AND EIGHT MINISTERS WARN WASHINGTON OFF A SECOND WAR",
+   "breaking": true,
+   "summary": [
+    "Brent rose about 3.5% on Friday to pass US$117 a barrel, its highest since April, easing later to just over US$116. Tehran had warned it would hit oil facilities, undersea cables, datacentres and AI sites across the Gulf if a new US-Israeli offensive is launched; Richard Hunter of Interactive Investor tied the move to reports Washington is weighing renewed strikes after the 3 November midterms rather than diplomacy. Brent was near US$72 in February, before the war, and touched US$126 in late April.",
+    "Eight foreign ministers met in Istanbul, convened by Turkey and Germany — Turkey, Saudi Arabia, Pakistan, Egypt, France, Germany, the UK and Italy — and urged the US and Israel not to strike. \"Military intervention in Iran is not any kind of solution,\" said Turkey's Hakan Fidan. They also demanded an end to Houthi attacks on Saudi Arabia and the immediate opening of Hormuz.",
+    "The State Department is quietly thinning staff at embassies in Jordan, Lebanon, the UAE and Qatar, days after ordering non-emergency personnel and all families out of Riyadh; the foreign service union says families are being told to leave without confirmed housing support or per diem. Oil from a struck tanker washed up on UAE beaches."
+   ],
+   "geopolitical": "For the first time this year the states that would absorb the retaliation have organised collectively rather than lobbying Washington one by one — the three Mecca pact signatories with four European governments against an American war plan. It isolates the post-midterm strike option among the countries hosting the bases that would be hit back.",
+   "socioeconomic": "The price is set by expectation, not a lost barrel, and it is already in bills. Singapore's Q4 electricity tariff of 28.59 cents/kWh before GST — a 10.4% cut — was fixed on 30 September with Brent far below US$117, and is being priced out of the next review."
+  },
+  {
+   "headline": "GUNMEN KILL SEVEN AT A FUNERAL IN A JORDANIAN CHURCH, AND KING ABDULLAH PROMISES AN IRON FIST",
+   "breaking": true,
+   "summary": [
+    "At least seven people were killed and about 40 injured when gunmen opened fire on mourners at St George's Greek Orthodox Church in Hmoud, in Jordan's southern Karak governorate, on Friday afternoon. Police called it a terrorist attack on Christians at a funeral; the attackers are unidentified and still at large, and footage showed three of them firing in the street before moving to the church. A witness said one carried an AK-47 and the shooting ran several minutes while they shouted \"Allahu Akbar\"; she survived behind the altar, among more than 150 people there. Two of the wounded are critical.",
+    "King Abdullah said \"the blood of Jordanians is precious, and we will strike those who transgress against this country with an iron fist\". Prime Minister Jafar Hassan called the attack the product of \"extremist terrorist ideology rooted in takfir\" and declared three days of mourning. Al-Azhar, the Latin Patriarchate of Jerusalem and Iraq's government condemned it; the US embassy warned of heavier policing in Amman. Sectarian attacks are rare in Jordan, where Christians are about 2% of the population."
+   ],
+   "geopolitical": "Jordan is the most exposed of this war's quiet states — it intercepted Iranian missiles in July, hosts US forces, and is now thinning its US embassy. An unclaimed takfiri massacre inside its borders opens a second, internal front for the one monarchy the region still relies on.",
+   "socioeconomic": "The cost falls on a tourism economy already losing visitors to the regional war, and on a 2% minority whose presence in the Levant has rested on the perception that Jordan, unlike Iraq or Syria, was where this did not happen."
+  },
+  {
+   "headline": "A GUNMAN KILLS ONE AND WOUNDS FIVE NEAR PARIS, AND MACRON CALLS IT A RACIST TERRORIST ATTACK",
+   "breaking": true,
+   "summary": [
+    "A man fired an automatic weapon at a petrol station, a medical centre and a children's playground in Trappes, west of Paris, on Friday, killing one person and wounding five including a 12-year-old girl hit eight times and in serious condition. A 39-year-old suspect, named only as Kevin T, was arrested, and the anti-terrorism prosecutor's office opened an investigation, a step it can take for violence inspired by far-right ideas. Macron said the gunman deliberately spared some people for their skin colour: \"It is the first time we have had a terrorist act that was planned to kill our compatriots, our children, based on the colour of their skin or their religion.\" Trappes's mayor Ali Rabeh called it racist and Islamophobic; two victims were of African and North African origin.",
+    "The attack lands between last Saturday's violent nationwide protests, blamed by far-right politicians on immigration, and more demonstrations this weekend. Macron this week banned \"illegitimate\" protests, with Saturday bans in central Lyon, Marseille, Nice and Toulon, a Paris march confined to the east and major museums closed. PSG's match against Lyon has been moved."
+   ],
+   "geopolitical": "France is the G7 state policing its own streets at this scale, and Washington has been citing its unrest as an argument about immigration — a framing Macron rejected this week. An attack planned to kill people for their skin colour runs the other way, and raises the political cost of the bans he has just imposed.",
+   "socioeconomic": "A second consecutive weekend of shuttered central districts, closed museums and relocated fixtures is a measurable loss to the retail and tourism trade of France's largest urban economies outside Paris."
+  },
+  {
+   "headline": "MELANIA TRUMP BROKERS A CEASEFIRE FOR ONE STARVING OCCUPIED CITY AS UKRAINE SAYS STARSHIELD IS STILL THROTTLED",
+   "breaking": false,
+   "summary": [
+    "The US first lady announced on Friday that she had secured a local ceasefire in Russian-occupied Oleshky as \"exclusive intermediary\", working directly with both governments. Russia's defence ministry said it takes effect at 4am Moscow time on 27 October, Ukraine at 3am Kyiv time the same day. About 1,700 civilians remain, mostly elderly, with food and medicine routes blocked, mined roads and little power; the last official food delivery was in May, and the Nobel laureate Oleksandra Matviichuk said people are eating grass. Civilian teams from both sides will arrange evacuation to whichever country residents choose; Dmitry Peskov credited her \"significant contribution\".",
+    "Ukraine says the Starshield restrictions remain despite Trump's claim that Musk had \"put it back\". A defence ministry source said there is no confirmation limits were lifted and signal loss persists above 161km/h; an officer described 10- to 15-second dropouts and said \"we lost a lot of assets, much more than usual\". Russia launched 176 attack drones overnight, killing at least nine civilians and injuring 76 in a day, and struck energy infrastructure in six regions, cutting power to more than 500,000 people. Zelensky said agreed Patriot interceptor deliveries are still not arriving."
+   ],
+   "geopolitical": "A first lady negotiating directly with the Kremlin, with the Russian defence ministry issuing the implementation order, bypasses the State Department — and produced a dated result in days where Witkoff's ninth visit produced only a 10 November date. Moscow has learned which concessions are cheap: a corridor for 1,700 elderly people costs nothing while the strikes on the grid continue.",
+   "socioeconomic": "For Oleshky it is the first prospect of food since May, and a test of whether a brokered truce can substitute for an occupying power's legal duty to feed the population it controls — which Russia has met by refusing the Red Cross entry."
+  },
+  {
+   "headline": "INDIA CAPS MARK-UPS ON 137 CANCER DRUGS AFTER ITS SUPREME COURT CALLS THE PRICING EXTORTION",
+   "breaking": false,
+   "summary": [
+    "From next month India will cap trade margins at 30% on 137 cancer drugs, which the government expects to cut prices by up to 70%. The case began with Sarojam Radhakrishnan, a retired bank clerk in Kerala diagnosed with breast cancer in 2021, whose treatment cost more than S$840 a month (63,000 rupees); she petitioned the Kerala high court in 2022. At a hearing on 29 September, justices Vikram Nath and Sandeep Mehta called the mark-ups \"carnage\" and \"extortion\", citing a drug supplied to hospitals at S$36 (2,700 rupees) and sold at S$361 (27,000 rupees). The pricing authority found mark-ups averaging 170%, with extremes above 700%. The cap had covered only 42 drugs; the government says the extension saves patients about S$334m (25 billion rupees) a year.",
+    "India records about 1.56m new cancer cases a year, up from 1.39m in 2020, and healthcare spending pushes roughly 55 million Indians below the poverty line annually. The Ayushman Bharat scheme covers about S$6,700 (500,000 rupees) a year per family — the price of one dose of the breast cancer drug Kadcyla, of which patients may need 14. The court has asked why the cap should not extend to all non-patented drugs; campaigners warn hospitals may recover the margin elsewhere."
+   ],
+   "geopolitical": "India supplies most of the world's generic medicines, and this cap was imposed by its own supreme court on the domestic distribution chain rather than conceded in a trade negotiation — establishing that the margin between manufacture and patient is a matter for judges, at a moment when the newest cancer treatments are arriving with no price attached.",
+   "socioeconomic": "The cap targets the step after manufacture, not the maker's price. If costs fall 70% without manufacturers changing anything, it establishes that distribution margins rather than research costs were what bankrupted households."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE TURNS ITS HAZE LAW ON ITS OWN COMPANIES, AND THE AIR GOES UNHEALTHY AGAIN",
+   "breaking": true,
+   "summary": [
+    "The National Environment Agency said on Friday evening that it has issued section 10 notices under the Transboundary Haze Pollution Act to 10 Singapore-registered oil palm and forestry firms, among them Asia Pulp & Paper Company (China), Wilmar International, Golden Agri International, First Resources, Bumitama Agri, Indofood Agri Resources and Kencana Agri. They must produce documents on their concessions, their associated companies in Singapore and Indonesia, and their firefighting. Unlike the preventive-measures notices sent to 10 Indonesian firms on 16 and 19 October, these carry penalties: representatives who do not comply face a $5,000 fine, a month's jail, or both. Conviction under the Act runs to $100,000 a day, capped at $2m. Four of the Indonesian firms named are Asia Pulp & Paper suppliers.",
+    "The Ministry of Law said the same day it will convene a specialist panel of law, audit and investigative firms for cross-border inquiries, with Davinder Singh Chambers coordinating. Companies identified must engage panel professionals, submit audits and give \"unfettered access\"; findings go to the Attorney-General's Chambers. Government bodies face legal limits on what they can do in other jurisdictions; eleven years on, four of the 2015 cases remain open. Air quality turned unhealthy across the island again overnight; NEA forecast showers on Saturday but said haze could keep arriving from Sumatra."
+   ],
+   "geopolitical": "The Act has never produced a case because the evidence sits in Indonesia, where the forestry ministry restricted access to its Sigap concession-mapping platform on 16 October. Pursuing Singapore-registered parents moves the evidence onshore and makes the dispute one about corporate structure rather than satellite imagery — while Jakarta threatens to review gas exports to countries that \"disrespect\" it (Singapore took 3.22 million tonnes of Indonesian gas in 2025).",
+   "socioeconomic": "Wilmar, Golden Agri, First Resources and Bumitama are SGX-listed, and the cost arrives before any finding: the companies pay for their own panel-run audits, and a statutory demand is itself disclosable."
+  },
+  {
+   "headline": "HDB RESALE PRICES FALL FOR A THIRD STRAIGHT QUARTER WHILE PRIVATE HOME PRICES CLIMB 1.4 PER CENT",
+   "breaking": false,
+   "summary": [
+    "HDB figures released on 23 October show resale prices down 0.1% in the third quarter, after 0.1% in the first — the first fall in close to seven years — and 0.3% in the second. Volumes went the other way: 7,645 transactions, up 19.5% on the second quarter's 6,396 and 5.9% above the same quarter of 2025. HDB said it has not seen a significant rise in prices or in flats bought by private property downgraders since the 15-month wait-out period was lifted on 28 July, though Huttons' Lee Sze Teck credited those buyers for the jump in sales of five-room and larger flats.",
+    "The private market moved the other way: prices up 1.4% from 0.5% the previous quarter, transactions down 16.3% to 5,146 units and developer sales down 44.7% to 1,183. Suburban non-landed prices rose 2.3%, the core central region 0.3%, the city fringe was flat."
+   ],
+   "geopolitical": "Public housing is the instrument the governing party is judged on, and the cooling programme has produced three consecutive quarters of flat-to-falling resale prices on rising volumes. That is what the PAP's central executive committee, elected on Sunday, inherits as settled — and why the private market is the harder half.",
+   "socioeconomic": "Half a percent of decline over nine months is a plateau, not a correction: the subsidised market is clearing at flat prices, which is what first-timers needed. Suburban private prices up 2.3% in a quarter widen the step an upgrader must climb while the flat being sold stops appreciating."
+  },
+  {
+   "headline": "FOODPANDA BEGINS HIRING DELIVERY RIDERS AS SALARIED EMPLOYEES ON $1,800 A MONTH",
+   "breaking": false,
+   "summary": [
+    "Foodpanda has started offering bicycle and e-bike riders full employment: a basic salary of $1,800 a month, a $600 bonus spread over six months for those signing up now, and $100 a month for riders using their own vehicle, with e-bikes provided to those without. The scheme, launched on 21 October and confirmed on 23 October, requires a 44-hour week in four-hour shifts and 320 orders a month, with termination possible for missing the quota; Foodpanda says efficient riders reach it in 100 to 110 hours and may use the rest of the time as they wish. Riders get full CPF contributions, medical coverage and seven days of annual leave; Foodpanda says the scheme complements rather than replaces its gig fleet.",
+    "From 1 January 2027 the Platform Workers Act requires platform workers born on or after 1 January 1995 to contribute 15.5% of earnings to CPF and operators 10.5%, rising to 20% and 17% by 2029, matching employee rates. Only citizens and permanent residents may do platform work here."
+   ],
+   "geopolitical": "Singapore legislated CPF for platform workers ahead of most jurisdictions, and this is the first visible operator response: convert part of the fleet to employment rather than absorb a rising per-trip contribution on an open-ended gig pool. Regulators drafting equivalent laws have a case showing which way a platform jumps.",
+   "socioeconomic": "At 44 hours a week, $1,800 is about $9.45 an hour; if the quota really takes 100 to 110 hours a month, the effective rate is nearer $17. Riders are offered predictability, CPF and leave in exchange for a target they can be dismissed for missing."
+  }
+ ],
+ "word": {
+  "word": "takfir",
+  "pos": "noun",
+  "pronunciation": "tak-FEER",
+  "definition": "In Islamic law, the act of declaring another Muslim an unbeliever — and, in modern usage, the doctrine by which extremist groups justify violence against those they so declare.",
+  "etymology": "From Arabic takfīr, verbal noun of kaffara, \"to declare an unbeliever\", from kāfir, \"one who denies\"; in English since the late 20th century, largely through writing on militant movements.",
+  "example": "Jordan's prime minister attributed Friday's massacre at the church in Karak to \"extremist terrorist ideology rooted in takfir\", and said the country would not let its society go down that path."
+ }
+}

@@ -2055,3 +2055,39 @@
 | GovTech layoffs | 38 in round two (93 in July from a 3,900 headcount); 7-9% of workforce expected affected over two years; 106 officers retained, 106 eligible for conversion/apprenticeship | GovTech, 22 Oct 2026 |
 | GovTech severance | One month per year of service (capped at 25 years) + three months ex-gratia + six-week notice | GovTech, Jul 2026 |
 | Newsweek World's Best Smart Hospitals 2027 | CGH 17th, SGH 20th, TTSH 26th, NUH 32nd; 14 Singapore hospitals listed (11 last edition); SKH 208th | Newsweek/Statista, 21 Oct 2026 |
+
+## Global economic variables (24 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | Passed US$117/bbl intraday Friday (+~3.5%), highest since April; eased to just over US$116 (+2.7%) | Guardian/market reports, 23 Oct 2026 |
+| Brent pre-war and peak | ~US$72/bbl in February 2026; US$126 touched late April 2026 | Guardian, 23 Oct 2026 |
+| Istanbul anti-war summit | 8 foreign ministers: Turkey, Saudi Arabia, Pakistan, Egypt, France, Germany, UK, Italy | Guardian, 23 Oct 2026 |
+| US embassy drawdowns | Staffing cuts at Jordan, Lebanon, UAE, Qatar (unannounced); Riyadh ordered departure announced 21 Oct; no change in Kuwait or Bahrain | State Dept via CNN, 23 Oct 2026 |
+| Karak church attack | At least 7 killed, ~40 injured, 2 critical; 150+ people at the church; 3 days of mourning | Jordan public security/CNN, 23 Oct 2026 |
+| Jordan Christian population | ~2% of the total | CNN, 23 Oct 2026 |
+| Trappes shooting | 1 killed, 5 wounded incl. a 12-year-old girl hit 8 times, serious; suspect aged 39 | CNN/BFM, 23 Oct 2026 |
+| Oleshky ceasefire | Effective 27 Oct, 4am Moscow / 3am Kyiv; ~1,700 civilians remain; last official food delivery May 2026 | Russian MoD/Ukrainian officials via CNN, 23 Oct 2026 |
+| Russian overnight strikes | 176 attack drones; 9 civilians killed, 76 injured in 24h; energy hit in 6 regions, 500,000+ without power; 443 Ukrainian drones downed by Russia | Ukrainian Air Force/CNN, 23 Oct 2026 |
+| Starshield throttle | Signal loss persists for ordnance above 161km/h (100mph); 10-15 second dropouts | Ukrainian defence ministry source via CNN, 23 Oct 2026 |
+| India cancer drug cap | 30% trade margin cap extended to 137 drugs from Nov 2026; prices expected to fall up to 70%; saving ~25bn rupees (~S$334m) a year | Dept of Pharmaceuticals via Guardian, 23 Oct 2026 |
+| India drug mark-ups | Averaging 170% on some cancer drugs, extremes above 700%; example 2,700 rupees supply vs 27,000 retail | NPPA/Supreme Court (Nath, Mehta), 29 Sep 2026 via Guardian 23 Oct 2026 |
+| India cancer burden | ~1.56m new cases a year (1.39m in 2020); health spending pushes ~55m Indians below the poverty line annually | Guardian/PHFI, 23 Oct 2026 |
+| Ayushman Bharat cover | 500,000 rupees (~S$6,700) per family per year — one dose of Kadcyla; up to 14 doses may be needed | Guardian, 23 Oct 2026 |
+| FX reference rate used this run | USD/SGD 1.2800 (carried); SGD/INR 74.8 for the India conversions | USD rate XE 13 Oct 2026; SGD/INR mid-market quoted 25-26 Jul 2026 via search — a stale reference, all live FX endpoints 403 through the proxy |
+
+## Singapore data points (24 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| THPA section 10 notices | 10 Singapore-registered firms: Asia Pulp & Paper Company (China), Bumitama Agri, Golden Agri International, First Resources, Indofood Agri Resources, Kencana Agri, TSH Global Plantation, TSH Oversea, Wilmar International | NEA, 23 Oct 2026 |
+| THPA penalties | Non-response: up to $5,000 fine, 1 month's jail, or both (s10); conviction up to $100,000/day capped at $2m | NEA/THPA, 23 Oct 2026 |
+| Indonesian firms noticed | 10 under s9 (no penalty for non-response), 16 and 19 Oct; 4 are APP suppliers | NEA/ST, 23 Oct 2026 |
+| 2015 haze cases | 4 of 6 still open 11 years on | ST, 23 Oct 2026 |
+| MinLaw expert panel | Law, audit and investigative firms; Davinder Singh Chambers appointed to coordinate; named companies must engage panel and fund audits | MinLaw, 23 Oct 2026 |
+| Air quality | Turned unhealthy across the island again overnight 23-24 Oct; showers forecast Saturday, haze may keep arriving from Sumatra | NEA via CNA, 24 Oct 2026 06:31 SGT |
+| Indonesian gas to Singapore | 3.22m tonnes in 2025 (Japan 3.8m, China 3.79m, South Korea 2.27m) | Indonesia Central Statistics Agency via ST, 22 Oct 2026 |
+| HDB resale price index | -0.1% in Q3 2026; -0.1% Q1 (first fall in ~7 years), -0.3% Q2 | HDB, 23 Oct 2026 |
+| HDB resale volume | 7,645 transactions in Q3, +19.5% QoQ (6,396), +5.9% YoY (7,221) | HDB, 23 Oct 2026 |
+| Private home prices | +1.4% in Q3 (from +0.5%); non-landed +1.0%; suburbs +2.3%, core central +0.3%, city fringe flat; average +0.9%/quarter over 9M2026 | URA, 23 Oct 2026 |
+| Private transactions | 5,146 units, -16.3% QoQ; developer sales 1,183, -44.7% QoQ; resale 3,801 vs 3,813 | URA, 23 Oct 2026 |
+| Foodpanda salaried riders | $1,800/month basic + $600 bonus over 6 months; $100/month own-vehicle allowance; 44-hour week, 320 orders/month; quota reachable in 100-110 hours; full CPF, medical, 7 days leave | Foodpanda via ST, 23 Oct 2026 |
+| Platform Workers Act CPF | From 1 Jan 2027: worker 15.5%, operator 10.5% (born on/after 1 Jan 1995); 20% and 17% by 1 Jan 2029 | Platform Workers Act, via ST 23 Oct 2026 |
