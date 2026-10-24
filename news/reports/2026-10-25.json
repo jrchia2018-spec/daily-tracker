@@ -1,0 +1,115 @@
+{
+ "schema": 1,
+ "date": "2026-10-25",
+ "generatedAt": "2026-10-25T07:30:00+08:00",
+ "coverage": {
+  "from": "2026-10-24T07:00:00+08:00",
+  "to": "2026-10-25T07:00:00+08:00",
+  "label": "Saturday 24 October 2026, 0700 SGT → Sunday 25 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "IRAN BARS US WARSHIPS FROM THE GULF AS WASHINGTON MOVES DIPLOMATS' FAMILIES OUT A SECOND TIME",
+   "breaking": true,
+   "summary": [
+    "Iran's armed forces chief of staff Ali Abdollahi said on Saturday that American military ships would not be allowed into the Gulf under any circumstance, dismissed them as \"rusting warships\" and claimed Iranian forces had made the US Navy ineffective in the region. State television said movement of all \"non-compliant\" vessels through Hormuz had been halted and that US escorts would meet \"much more forceful\" action. The IRGC Navy claimed two supertankers carrying 4.5 million barrels struck mines on the southern route Tehran calls unauthorised; no operator confirmed it. Trump threatened \"another little Epic Fury\" if Tehran does not take a deal.",
+    "An unclassified 23 October memo to Secretary of State Marco Rubio, first reported by Axios and attributed to Director of National Intelligence Jay Clayton, says \"Iran has substantially increased efforts to target US personnel\" and that plotting has \"reached advanced stages in both the Middle East and certain other countries\". It names no targets and no countries outside the region; one official cautioned Tehran's ambitions may exceed its reach beyond it.",
+    "The State Department confirmed temporary staffing cuts under restricted-operations status in Lebanon, the UAE, Qatar and Jordan, with none in Kuwait or Bahrain, after this week's ordered departure from Saudi Arabia. Diplomats who had only just returned from the war's first evacuation are leaving again: \"Some had barely settled back in before being told to leave again,\" said Nikki Gamer of the American Foreign Service Association. Iran's ambassador to Islamabad said Tehran would still reopen Hormuz if Washington lifted its naval blockade."
+   ],
+   "geopolitical": "Tehran has moved its claim outward from the strait to the whole Gulf, making the presence of a warship, not the passage of a tanker, the trigger — a thinner margin for an accident than the Hormuz dispute ever was.",
+   "socioeconomic": "A second evacuation of embassy families in a year hollows out American capacity in exactly the capitals any mediation runs through — Amman, Doha, Abu Dhabi, Beirut."
+  },
+  {
+   "headline": "410,000 MARCH ACROSS FRANCE AND NEARLY 1,000 ARE DETAINED AS MACRON'S PROTEST BANS MEET THEIR FIRST SATURDAY",
+   "breaking": true,
+   "summary": [
+    "The interior ministry counted 410,000 demonstrators nationwide. Police put the Paris march at 110,000 even though it was confined to the city's south-east; Marseille drew 17,000 by police count and 100,000 by the unions'. Some 70,000 officers were deployed and major museums, the Louvre among them, closed. Interior Minister Laurent Nuñez said nearly 1,000 people were detained; Paris prosecutors reported 64 arrests and 40 held in custody.",
+    "Police used tear gas in Lyon, Clermont-Ferrand and Strasbourg and water cannon in Nice and Nantes, and rallies were banned outright in Lyon, Nice and Montpellier under Macron's prohibition on demonstrations not called by recognised organisations. Damage was well below last weekend's, when about 3,000 shops were looted or damaged. The grievances remain the cost of living, school funding and policing.",
+    "Italy deployed hundreds of soldiers as thousands marched under heavy security, with a general strike called for 30 October, and violent protests resurfaced in Albania."
+   ],
+   "geopolitical": "The bans passed the narrow test Macron chose — less destruction — and failed the wider one: 410,000 marched anyway, and 70,000 officers moved the marches rather than stopping them.",
+   "socioeconomic": "Enforcement now costs 70,000 police, shuttered museums and closed shopping streets every Saturday, in a country where the cost of living is the grievance."
+  },
+  {
+   "headline": "ISRAEL RAZES A HEBRON NEIGHBOURHOOD AND CORDONS A CITY OF 200,000, FOUR DAYS BEFORE ITS ELECTION",
+   "breaking": true,
+   "summary": [
+    "Bulldozers flattened streets in Farsh al-Hawa, west of Hebron, where two Palestinian gunmen killed two Israeli soldiers and wounded three at a checkpoint on Friday before being shot dead. Residents said soldiers gave them five minutes to leave, announced over loudspeakers at night. Hebron's mayor Youssef al-Jaabari put the displacement at about 250 families, the governor at 150, the municipality at some 500 families or 2,500 people. Palestinian officials said a third of the city was touched; the military said the operation is confined to the gunmen's area and will run several days.",
+    "Netanyahu said the neighbourhood would be \"transform[ed]... completely\", citing the 2025 operations in the Jenin, Tulkarm, Nur Shams and Al-Far'a camps that displaced thousands. He ordered a full West Bank closure, then scaled it back to a cordon around Hebron and Halhul with three screening points to leave by. B'Tselem's Yuli Novak said \"Israel is announcing its next crimes in advance.\"",
+    "Israelis vote on Tuesday in the first election since October 2023; thousands rallied against Netanyahu in Tel Aviv on Saturday, and the last polls before Friday's gag period showed neither bloc reaching a majority."
+   ],
+   "geopolitical": "Razing a neighbourhood and sealing a city of 200,000 over an attack by two men is collective punishment delivered as a closing argument, and the template used on the camps in 2025 is now applied to a major city.",
+   "socioeconomic": "Hebron is the West Bank's commercial centre; a cordon with three screened exits stops 200,000 people trading, working and moving, and the families given five minutes have no house to return to."
+  },
+  {
+   "headline": "MUSK SAYS HE THROTTLED UKRAINE'S STARSHIELD AND THAT KYIV BROKE THE TERMS; KYIV SAYS THE SPEED IS BACK",
+   "breaking": false,
+   "summary": [
+    "Ukraine's defence ministry said on Saturday that Starshield works again on equipment moving above 400km/h, and Zelensky confirmed service had been \"restored to the speeds we had before the restrictions\". The cap had cut the signal above 161km/h, disabling drones in flight; officials were still reporting restrictions on Friday, and a source in Donetsk told CNN the limit persisted locally on Saturday morning.",
+    "Musk then said on X that SpaceX had throttled the service because Ukraine's military used it for offensive drone strikes in breach of Starlink's terms: \"That loophole was closed last week.\" Two days earlier he had written that any limits \"are decided by the US military and ultimately POTUS\", and Defense Secretary Pete Hegseth said the Pentagon had not manipulated the service. Trump had telephoned Musk to ask for full access back. Kyiv read the slowdown as retaliation for refusing to stop striking Russian refineries while Trump pursued a deal to buy Russian diesel."
+   ],
+   "geopolitical": "Who can throttle a sovereign army's communications now has an answer — the owner of the company, after he said the decision lay with the Pentagon and the president, and the Pentagon said it did nothing.",
+   "socioeconomic": "The dependency that produced the cap is untouched, so the bill falls on European procurement: IRIS² and national military satcom are now a demonstrated operational risk, not an industrial-policy argument."
+  },
+  {
+   "headline": "THE JUSTICE DEPARTMENT ORDERS CALIFORNIA COUNTIES TO SET ASIDE 20,000 BALLOTS AND WARNS OF CRIMINAL LIABILITY",
+   "breaking": false,
+   "summary": [
+    "The Justice Department gave California counties 48 hours to identify and set aside mail ballots from more than 20,000 registrants that federal agencies deem \"highly likely\" to be non-citizens after matching the voter roll against immigration records, warning that officials who knowingly count non-citizen ballots could face criminal liability. State lawyers said the data is unreliable, that counties have neither the authority nor the records to verify citizenship, and that the demand could delay certification. The department asked the Ninth Circuit to intervene before a district-court hearing set for 27 October. No court has ordered any ballot set aside and counting continues.",
+    "The department separately sued in Alaska to block certification of the Senate result if the Republican incumbent loses — a theory the Notre Dame election-law scholar Derek Muller called \"strange and unusual\" and likely to be dismissed. The midterms are on 3 November."
+   ],
+   "geopolitical": "A federal department telling county clerks which ballots not to count, under threat of prosecution, inverts the default that states run their own elections — and the instruction stands as precedent whatever the Ninth Circuit decides.",
+   "socioeconomic": "Counties must run a citizenship check they say they lack records for, mid-count, or risk prosecution for counting: slower certification, and lawful ballots held while the case is argued."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "INDONESIA CUTS GAS TO SINGAPORE AS THE HAZE ROW HARDENS; EMA SAYS IT IS UNDER 2% OF DAILY DEMAND",
+   "breaking": true,
+   "summary": [
+    "Djoko Siswanto, head of the upstream regulator SKK Migas, said exports to Singapore would be cut by 31 billion British thermal units a day from 24 October — 15 BBTUD from Natuna, 16 from Sumatra — and that only Singapore is affected because those pipelines run direct. He announced it a day after Energy Minister Bahlil Lahadalia said he would not hesitate to stop exports to countries that do not respect Indonesia. The Energy Market Authority said the cut is under 2% of Singapore's demand of more than 1,000 BBTUD a day, that supplies are sufficient and sources diversified, and that importers may pursue contractual remedies. Jakarta has long planned to taper the trade: the 2022 agreement extended supply only to 2028, at lower volumes.",
+    "Two days after NEA served notices under the Transboundary Haze Pollution Act on 10 Singapore-registered firms including Asia Pulp & Paper, six said they would cooperate; the others did not respond to requests for comment. The Law Ministry is convening a panel of experts for the investigations.",
+    "Air quality fell back into the unhealthy range on Saturday and PM2.5 was still elevated on Sunday morning. Grace Fu said tap water remains safe after videos of blackish rainwater circulated: PUB sampled rainwater, runoff and tap water on 17 October, when the PSI hit 193, and found rainwater slightly more acidic and higher in particles, while treatment removes particles a hundred times smaller than PM2.5."
+   ],
+   "geopolitical": "The dispute's first material retaliation was aimed at the one lever Jakarta holds rather than at the firms Singapore is pursuing, and every other buyer of Indonesian gas will draw the obvious conclusion.",
+   "socioeconomic": "Two per cent is absorbable but not costless: the replacement is spot LNG priced against a war premium, feeding the mix behind the tariff — now 28.59 cents per kWh before GST after a 10.4% cut."
+  },
+  {
+   "headline": "110,000 ALLIANCE MEDINET MEMBERS' DATA TAKEN IN A VENDOR BREACH THAT REACHES THREE INSURERS",
+   "breaking": true,
+   "summary": [
+    "Alliance Healthcare Group said in a bourse filing on Saturday that a third party gained unauthorised access to the membership database of its subsidiary Alliance Medinet, compromising the names, identification numbers and contact details of about 110,000 members. Bank account details of seven members and one member's medical diagnosis may also have been exposed. Other subsidiaries were unaffected; members are being notified by Medinet, its partners or its clients.",
+    "Income Insurance said one corporate account covering about 70 individuals was affected, with no evidence its own systems were compromised. HSBC Life put its exposure at 2,614 individual policyholders and 1,381 members under group corporate policies, also without a breach of its own, and Singlife reported 323 affected customers. Investigations continue."
+   ],
+   "geopolitical": "Identification numbers tied to diagnoses and employers are a category Singapore has seen targeted at scale, and this attacker reached three insurers without breaching any of them.",
+   "socioeconomic": "The insurers carry notification costs for data they did not lose, and the 110,000 members carry permanent fraud exposure, because an identification number cannot be reissued like a card."
+  },
+  {
+   "headline": "SINGAPORE WILL LEGISLATE ON CHILDREN'S SOCIAL MEDIA IN EARLY 2027, AS ITS FIRST APP-STORE AUDIT FINDS 65 HARMFUL APPS",
+   "breaking": false,
+   "summary": [
+    "The Ministry of Digital Development and Information said on Saturday it will legislate early next year on two fronts: age assurance, requiring platforms to apply effective age measures consistent with the Personal Data Protection Act, and safer-by-design features covering inappropriate content, unwanted contact and features such as autoplay and daily time limits. More than 2,000 parents and young people consulted between June and August preferred graduated access by age to an outright ban; the Health Ministry's expert panel flagged direct messaging, infinite scroll, autoplay and algorithmic feeds on 30 July.",
+    "IMDA's first audit under the app-store code that took effect on 1 April reviewed more than 7,000 apps across five designated stores and found 65 carrying harmful content — 59 sexual, four violent, two facilitating vice and organised crime, including a tool that turns uploaded photographs into sexually explicit images — and 24 wrongly age-rated without under-18 restrictions. Age checks were otherwise well implemented. Non-compliance can draw fines of up to S$1 million under the Broadcasting Act."
+   ],
+   "geopolitical": "Singapore lands between Australia's under-16 ban and Europe's duty-of-care approach by mandating design — autoplay off, time limits, contact restrictions — which a platform cannot satisfy with a settings change.",
+   "socioeconomic": "Platforms must pay to verify age without accumulating identity data, and the 65 apps found include the nudification tools whose harm falls on the children the code exists to protect."
+  },
+  {
+   "headline": "230 WORKERS GO UNPAID FOR UP TO TWO MONTHS AS A SEPARATE DEBT TRAP CATCHES DOMESTIC HELPERS",
+   "breaking": false,
+   "summary": [
+    "The Migrant Workers' Centre said it has engaged 230 workers from Process Maintenance Solutions and Jurong Technical & Construction over unpaid salaries, and the Manpower Ministry is investigating both firms. MP Desmond Choo said close to 240 process-sector workers had gone up to two months without pay, almost all sole breadwinners, some having paid as much as S$12,000 to come to Singapore. About 90 are getting daily meals, accommodation is being arranged with MOM, and claims including overtime are going to the Tripartite Alliance for Dispute Management. The Straits Times reported the same day on lenders pursuing foreign domestic workers for far more than they borrowed, including a S$180 loan that became a S$1,040 demand."
+   ],
+   "geopolitical": "Recruitment fees of up to S$12,000 are collected in the source countries, and they are what makes two missed paydays unsurvivable; Singapore can enforce against the employer, not against that debt.",
+   "socioeconomic": "Arrears and loan debt compound in the same month for the same workers, and the meals and housing are charity-funded while the salary claims wait on a tribunal."
+  }
+ ],
+ "word": {
+  "word": "disenfranchisement",
+  "pos": "noun",
+  "pronunciation": "dis-in-FRAN-chyz-mənt",
+  "definition": "The act or state of being deprived of a right, especially the right to vote.",
+  "etymology": "From dis- (\"undo, reverse\") plus enfranchise, from Old French enfranchir, \"to set free\", from franc, \"free\"; the voting sense dates from the seventeenth century, the older disfranchise from the fifteenth.",
+  "example": "No court had ordered a single ballot set aside, but the Justice Department's 48-hour demand put 20,000 California voters a clerk's cautious decision away from disenfranchisement."
+ }
+}

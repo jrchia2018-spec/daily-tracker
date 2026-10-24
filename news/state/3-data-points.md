@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 23 October 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 25 October 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -2091,3 +2091,31 @@
 | Private transactions | 5,146 units, -16.3% QoQ; developer sales 1,183, -44.7% QoQ; resale 3,801 vs 3,813 | URA, 23 Oct 2026 |
 | Foodpanda salaried riders | $1,800/month basic + $600 bonus over 6 months; $100/month own-vehicle allowance; 44-hour week, 320 orders/month; quota reachable in 100-110 hours; full CPF, medical, 7 days leave | Foodpanda via ST, 23 Oct 2026 |
 | Platform Workers Act CPF | From 1 Jan 2027: worker 15.5%, operator 10.5% (born on/after 1 Jan 1995); 20% and 17% by 1 Jan 2029 | Platform Workers Act, via ST 23 Oct 2026 |
+
+## Singapore data points (25 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| Indonesian gas export cut to Singapore | -31 BBTUD from 24 Oct 2026 (15 Natuna, 16 Sumatra); only Singapore affected | SKK Migas chief Djoko Siswanto, 23 Oct 2026, via Mothership/CNBC Indonesia 24 Oct 2026 |
+| Singapore daily gas demand | More than 1,000 BBTUD; the cut is under 2% | EMA, 24 Oct 2026 |
+| Indonesia gas supply agreement | 2022 deal extends supply to 2028 at lower volumes | ST, 24 Oct 2026 |
+| Haze act enforcement | Section 10 notices to 10 Singapore-registered firms; 6 said they would cooperate, others silent; MinLaw expert panel convening | ST, 24 Oct 2026 |
+| Rainwater vs tap water test | 4 PUB samples on 17 Oct at PSI 193 (rainwater Kranji and Ulu Pandan, runoff Yew Tee, tap water); rainwater slightly more acidic, more particles; treatment removes particles 100x smaller than PM2.5 | Grace Fu / PUB, 24 Oct 2026 |
+| Alliance Medinet breach | ~110,000 members' names, ID numbers, contact details; 7 members' bank details; 1 member's diagnosis | Alliance Healthcare Group bourse filing, 24 Oct 2026 |
+| Insurer exposure to the breach | Income Insurance ~70 individuals (1 corporate account); HSBC Life 2,614 individual + 1,381 group members; Singlife 323 customers | ST, 24 Oct 2026 |
+| IMDA first app-store audit | 65 apps with harmful content (59 sexual, 4 violent, 2 vice/organised crime) and 24 misrated of 7,000+ apps across 5 designated stores; review period 1 Apr-31 Dec 2025 | IMDA via ST/Malay Mail, 24 Oct 2026 |
+| App-store code penalties | Up to S$1m fine under the Broadcasting Act; code in force 1 Apr 2026 | IMDA, 24 Oct 2026 |
+| Youth social media legislation | To be introduced early 2027: age assurance (PDPA-consistent) and safer-by-design features (autoplay, daily time limits, content and contact restrictions); 2,000+ parents and youth consulted Jun-Aug 2026 | MDDI, 24 Oct 2026 |
+| Unpaid migrant workers | 230 workers engaged by MWC from 2 firms, up to 2 months unpaid; ~240 per MP Desmond Choo; ~90 on daily meals; some paid up to S$12,000 in recruitment fees | MWC/NTUC 23 Oct, MOM and Choo via ST/Mothership 24 Oct 2026 |
+| Domestic-worker loan terms | One S$180 loan pursued as a S$1,040 demand | ST, 25 Oct 2026 |
+
+## Global economic variables (25 Oct)
+| Indicator | Figure | Source |
+|---|---|---|
+| France protest turnout | 410,000 nationwide; Paris 110,000 (police); Marseille 17,000 police / 100,000 unions; 70,000 officers deployed | French interior ministry, 24 Oct 2026 |
+| France detentions | Nearly 1,000 nationwide; 64 arrests and 40 in custody in Paris | Interior Minister Laurent Nuñez and Paris prosecutors, 24 Oct 2026 |
+| France prior weekend damage | ~3,000 shops looted or damaged | French authorities via BBC/NYT, 24 Oct 2026 |
+| Hebron operation | 150 families (governor) / ~250 (mayor) / ~500 families and 2,500 people (municipality) displaced; city of 200,000 cordoned; 3 screened exits | Hebron officials and IDF/ISA via CNN, Euronews, 24 Oct 2026 |
+| Starshield speed cap | Signal lost above 161km/h under the cap; service confirmed working above 400km/h after restoration | Ukraine defence ministry, 24 Oct 2026 |
+| US ballot order | 48 hours to set aside mail ballots of 20,000+ registrants deemed "highly likely" non-citizens; hearing 27 Oct; midterms 3 Nov | US DOJ and court filings via CNN, 24 Oct 2026 |
+| IRGC tanker claim | 2 supertankers carrying 4.5m barrels said to have struck mines on the southern route; uncorroborated | IRGC Navy via ANI/Tribune, 24 Oct 2026 |
+| Kenya Ebola outbreak | 9 confirmed cases, 2 deaths (second a 65-year-old relative of the index patient); 118 of 135 contacts quarantined; no community spread | Kenya Health Ministry via AA/GBC, 24 Oct 2026 |
