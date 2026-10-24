@@ -1,6 +1,7 @@
 // Central app state, persisted to localStorage.
 
 import { HM_SESSIONS } from './hm-plan.js';
+import { RETIRED_FOR_100G } from './foods-my.js';
 
 const KEY = 'tracker.v1';
 
@@ -143,6 +144,21 @@ function migrate(s) {
       if (!r.where && /treadmill|\bspeed\s*\d/i.test(r.notes || '')) r.where = 'treadmill';
     }
     s.migrations.runWhere = true;
+    changed = true;
+  }
+
+  // Weighed foods moved to per-100 g entries (24 Oct 2026). The old portion
+  // names live on in logged history, where search would keep offering them as
+  // Saved beside their new 100 g entry — so the owner's phone forgets them,
+  // exactly as the forget button would. Logged days are untouched, and
+  // logging one again brings it back. Owner only: guests never had MY_FOODS.
+  if (!s.migrations.gram100) {
+    if (s.owner) {
+      if (!s.forgotten) s.forgotten = {};
+      const now = Date.now();
+      for (const n of RETIRED_FOR_100G) s.forgotten[n.toLowerCase()] = now;
+    }
+    s.migrations.gram100 = true;
     changed = true;
   }
   return changed;
