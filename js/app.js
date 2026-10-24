@@ -121,11 +121,16 @@ async function backUp() {
   if (!navigator.canShare) via('no share support');
   else {
     via('sharing txt'); // recorded BEFORE exporting, so the shared file itself says how it was sent
-    const file = new File([exportData()], `tracker-backup-${dateKey()}.txt`, { type: 'text/plain' });
+    const name = `tracker-backup-${dateKey()}.txt`;
+    const file = new File([exportData()], name, { type: 'text/plain' });
     if (!navigator.canShare({ files: [file] })) via('txt not shareable');
     else {
       try {
-        await navigator.share({ files: [file], title: 'Tracker backup' });
+        // The title IS the file name: Google Drive's "Save to Drive" names the
+        // saved file after the share title, not the file. With 'Tracker backup'
+        // as the title (24 Oct 2026) it saved an undated, extensionless file
+        // that the PC backup script — which looks for tracker-backup-* — missed.
+        await navigator.share({ files: [file], title: name });
         state.lastBackup = dateKey();
         save();
         return 'shared';
