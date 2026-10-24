@@ -28,6 +28,8 @@ function defaults() {
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
     suppList: [],         // [ {id, label, note} ] — a guest's own supplement checklist; the owner's stack is fixed in app.js
     owner: false,         // true only on the phone of the person this app was built for. See migrate() (ownerMark).
+    hmOptIn: false,       // a guest who switched on the copy of the owner's half-marathon plan. See startHmPlan().
+    lastRunWhere: null,   // 'outdoor' | 'treadmill' — the run form starts on the last one used
     plan: {},             // { 'YYYY-MM-DD': { am: kind, pm: kind, night: kind } } — the training plan, sparse. See the planner section below.
     migrations: {},       // { name: true } — one-time data corrections already applied. See migrate().
   };
@@ -128,18 +130,57 @@ function migrate(s) {
   // Never backfills a past day, which would show sessions they never planned
   // as missed, and never touches a day they've already planned themselves.
   if (!s.migrations.hmPlan2027) {
-    if (s.owner) {
-      if (!s.plan) s.plan = {};
-      const today = dateKey();
-      for (const x of HM_SESSIONS) {
-        if (x.date < today || s.plan[x.date]) continue;
-        s.plan[x.date] = { [x.slot]: x.kind };
-      }
-    }
+    if (s.owner) fillHmPlanIn(s);
     s.migrations.hmPlan2027 = true;
     changed = true;
   }
+
+  // Treadmill vs outdoor (24 Oct 2026). Before the toggle existed the owner
+  // said so in the notes ("treadmill", or a belt "speed 9"); mark those. The
+  // rest stay unmarked rather than guessed — editing a run can set them.
+  if (!s.migrations.runWhere) {
+    for (const r of s.runs || []) {
+      if (!r.where && /treadmill|\bspeed\s*\d/i.test(r.notes || '')) r.where = 'treadmill';
+    }
+    s.migrations.runWhere = true;
+    changed = true;
+  }
   return changed;
+}
+
+// Write the half-marathon plan into a planner: from today on, and only on
+// days with nothing planned. Shared by the owner's one-time migration and a
+// friend switching the plan on (a copy of the owner's plan, 24 Oct 2026).
+function fillHmPlanIn(s) {
+  if (!s.plan) s.plan = {};
+  const today = dateKey();
+  for (const x of HM_SESSIONS) {
+    if (x.date < today || s.plan[x.date]) continue;
+    s.plan[x.date] = { [x.slot]: x.kind };
+  }
+}
+
+// A friend opting in to (or out of) the owner's plan. Switching off removes
+// only what the plan put there and is still untouched: future slots holding
+// exactly the plan's session, not yet logged. Anything they moved or added
+// stays theirs.
+export function startHmPlan() {
+  state.hmOptIn = true;
+  fillHmPlanIn(state);
+  save();
+}
+
+export function stopHmPlan() {
+  const today = dateKey();
+  for (const x of HM_SESSIONS) {
+    if (x.date < today || planFor(x.date)[x.slot] !== x.kind) continue;
+    if (planSlotStatus(x.date, x.slot) === 'done') continue;
+    const day = { ...planFor(x.date) };
+    delete day[x.slot];
+    if (Object.keys(day).length) state.plan[x.date] = day; else delete state.plan[x.date];
+  }
+  state.hmOptIn = false;
+  save();
 }
 
 // One chia entry per day, linked to the checklist tick. If the user logged

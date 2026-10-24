@@ -8,7 +8,7 @@ import {
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   recentlyCleared,
   supplementsFor, toggleSupplement, latestWaist, bodyChange, reconcileChia, hasOwnChia,
-  addCustomSupplement, removeCustomSupplement,
+  addCustomSupplement, removeCustomSupplement, startHmPlan, stopHmPlan,
   PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
@@ -19,7 +19,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
-import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmSessionsOn, hmTargets, paceToKmh, hmSessionPaces } from './hm-plan.js';
+import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmTargets, paceToKmh, hmSessionPaces } from './hm-plan.js';
 
 const view = document.getElementById('view');
 const tabbar = document.getElementById('tabbar');
@@ -489,7 +489,7 @@ function renderHome() {
       if (line) line.textContent = 'No briefing in the last 3 days.';
     });
   view.querySelector('#q-meal').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
-  view.querySelector('#q-run').addEventListener('click', openRunModal);
+  view.querySelector('#q-run').addEventListener('click', () => openRunModal()); // not the bare function: it'd receive the click event as a run to edit
   view.querySelector('#q-gym').addEventListener('click', () => { tab = 'train'; trainSub = 'gym'; render(); });
   view.querySelector('#q-weight').addEventListener('click', openWeightModal);
   view.querySelector('#q-checkin').addEventListener('click', () => { tab = 'meals'; mealDate = today; render(); });
@@ -631,6 +631,12 @@ function daySuggestions(today) {
 // date: the n-th planned hard run of the week gets the plan's n-th hard run.
 // A session left on its original day matches exactly as before; one planned
 // beyond what the week holds (a fourth run in a three-run week) gets none.
+// The race plan is the owner's, plus any friend who switched on the copy of
+// it (24 Oct 2026) — everywhere the plan shows, this is the gate.
+function hmActive() {
+  return state.owner || !!state.hmOptIn;
+}
+
 function hmTextFor(key, slotId) {
   const week = hmWeekOf(key);
   const kind = planFor(key)[slotId];
@@ -649,7 +655,7 @@ function todayPlanCard(today) {
   const rows = PLAN_SLOTS
     .map(s => ({
       slot: s, kind: planKind(day[s.id]), status: planSlotStatus(today, s.id),
-      text: state.owner ? hmTextFor(today, s.id) : null,
+      text: hmActive() ? hmTextFor(today, s.id) : null,
     }))
     .filter(r => r.kind);
   if (!rows.length) return '';
@@ -1497,10 +1503,10 @@ function renderPlan() {
   const today = dateKey();
   const counts = planCounts(week);
   const warnings = planWarnings(week);
-  // While the owner's race plan runs, the week's target is what that week of
-  // the plan asks for (2 gym, 3–4 runs, nothing in an off week) rather than
-  // the standing 3 + 3.
-  const hm = state.owner ? hmWeekOf(week[0]) : null;
+  // While the race plan runs, the week's target is what that week of the plan
+  // asks for (2 gym, 3–4 runs, nothing in an off week) rather than the
+  // standing 3 + 3.
+  const hm = hmActive() ? hmWeekOf(week[0]) : null;
   const target = hm ? hmTargets(hm) : { gym: 3, run: 3 };
 
   const label = planWeekOffset === 0 ? 'This week'
@@ -1549,8 +1555,22 @@ function renderPlan() {
     </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
     <p class="small muted" style="margin:10px 0 0">Tap any slot to set or change it. ✓ means it was logged, <b>!</b> means the day passed without it — tap to move it.</p>
   </div>
-  ${state.owner && today <= HM_RACE ? hmPlanCard(hm, week, today) + treadmillCard() : ''}`;
+  ${today > HM_RACE ? '' : hmActive() ? hmPlanCard(hm, week, today) + treadmillCard() : hmOfferCard()}`;
 
+  body.querySelector('#hm-start')?.addEventListener('click', () => {
+    startHmPlan();
+    render();
+    toast('Plan added to your planner from today 🏁');
+  });
+  body.querySelector('#hm-stop')?.addEventListener('click', () => {
+    const m = openModal(`
+      <h2>Stop using the plan?</h2>
+      <p class="small muted" style="margin-bottom:14px">This removes the plan's upcoming sessions from your planner — only ones still exactly where the plan put them. Anything you moved, added or already logged stays.</p>
+      <button class="btn danger block" id="hs-yes">Stop using it</button>
+      <button class="btn block" id="hs-no" style="margin-top:8px">Keep it</button>`);
+    m.querySelector('#hs-yes').addEventListener('click', () => { stopHmPlan(); closeModal(); render(); toast('Plan removed'); });
+    m.querySelector('#hs-no').addEventListener('click', closeModal);
+  });
   body.querySelector('#pw-prev').addEventListener('click', () => { planWeekOffset--; render(); });
   body.querySelector('#pw-next').addEventListener('click', () => { planWeekOffset++; render(); });
   for (const b of body.querySelectorAll('[data-plan]')) {
@@ -1561,8 +1581,25 @@ function renderPlan() {
   }
 }
 
-// The race plan written out for the week on screen: what each session is,
-// the week's note, and the paces and rules one tap away. Owner only.
+// A guest's offer of the plan: a copy of the owner's, switched on by choice
+// (24 Oct 2026, the owner's call) — a friend who doesn't run never has 95
+// sessions dropped into their planner. Says plainly whose fitness and
+// schedule it was built around.
+function hmOfferCard() {
+  return `
+  <div class="card">
+    <h2 style="margin:0 0 6px">🏁 Half marathon plan available</h2>
+    <p class="small" style="margin:0 0 8px">A 23-week plan for a half marathon on <b>Sun 21 Mar 2027</b>, aiming for sub-1:50. Switching it on fills your planner from today, writes out each session, and adds the race paces and a treadmill chart.</p>
+    <p class="small muted" style="margin:0 0 12px">It's a copy of the app owner's plan: the paces come from their fitness, and the off weeks (23–27 Nov, 14–20 Dec, 4–24 Jan) from their schedule — adjust if those don't fit you.</p>
+    <button class="btn primary block" id="hm-start">Use this plan</button>
+  </div>`;
+}
+
+// The race plan written out for the week on screen, the way it's actually
+// PLANNED: each session sits on the day and slot the user put it (matched by
+// kind, as on Home — 24 Oct 2026, they rearrange around NS and the panel
+// still showed the plan's original days). Sessions of the week not placed
+// anywhere are listed separately, so nothing silently drops off.
 function hmPlanCard(hm, week, today) {
   const toGo = daysBetween(today, HM_RACE);
   const header = `
@@ -1579,22 +1616,47 @@ function hmPlanCard(hm, week, today) {
         ${HM_RULES.map(r => `<p class="small" style="margin:8px 0 0">• ${esc(r)}</p>`).join('')}
       </div>
     </details>`;
+  const stopLink = state.owner ? '' : '<button class="btn ghost small block" id="hm-stop" style="margin-top:8px">Stop using this plan</button>';
   if (!hm) {
-    return `<div class="card">${header}<p class="small muted">${week[0] < '2026-10-12' ? 'The plan starts Monday 12 Oct.' : 'Outside the plan.'}</p>${reference}</div>`;
+    return `<div class="card">${header}<p class="small muted">${week[0] < '2026-10-12' ? 'The plan starts Monday 12 Oct.' : 'Outside the plan.'}</p>${reference}${stopLink}</div>`;
   }
   const dayName = d => fmtDate(d).slice(0, 3);
-  const rows = week.flatMap(k => hmSessionsOn(k).map(s => ({ k, s })));
+  const icon = kind => (kind.startsWith('run') ? '🏃' : '🏋️');
+  // What's in the planner this week, in day-and-slot order.
+  const planned = [];
+  for (const k of week) {
+    for (const s of PLAN_SLOTS) {
+      const kind = planFor(k)[s.id];
+      if (kind) planned.push({ k, kind, text: hmTextFor(k, s.id), status: planSlotStatus(k, s.id) });
+    }
+  }
+  // Plan sessions with no planned slot of their kind left to land on.
+  const unplanned = [];
+  for (const kind of new Set(hm.sessions.map(s => s.kind))) {
+    const written = hm.sessions.filter(s => s.kind === kind).sort((a, b) => a.day - b.day);
+    unplanned.push(...written.slice(planned.filter(p => p.kind === kind).length));
+  }
+  const mark = st => (st === 'done' ? ' <span style="color:var(--green)">✓</span>' : st === 'missed' ? ' <span style="color:var(--orange)">!</span>' : '');
   return `
   <div class="card">
     ${header}
     <p class="small" style="margin:0 0 8px"><b>Week ${hm.n} of 23 · ${hm.phase}</b></p>
     ${hm.note ? `<p class="small" style="margin:0 0 8px">${esc(hm.note)}</p>` : ''}
-    ${rows.map(({ k, s }) => `
+    ${planned.map(p => `
       <div class="item" style="align-items:flex-start;padding:8px 0">
-        <span class="small" style="min-width:34px;${k === today ? 'font-weight:700;color:var(--accent)' : 'color:var(--muted)'}">${dayName(k)}</span>
-        <span class="small" style="flex:1">${s.kind.startsWith('run') ? '🏃' : '🏋️'} ${esc(s.text)}</span>
+        <span class="small" style="min-width:34px;${p.k === today ? 'font-weight:700;color:var(--accent)' : 'color:var(--muted)'}">${dayName(p.k)}</span>
+        <span class="small" style="flex:1">${icon(p.kind)} ${p.text ? esc(p.text) : `${planKind(p.kind)?.label || p.kind} <span class="muted">— extra, not in this week's plan</span>`}${mark(p.status)}</span>
       </div>`).join('')}
+    ${unplanned.length ? `
+      <p class="small muted" style="margin:10px 0 2px">Not in your planner yet:</p>
+      ${unplanned.map(s => `
+      <div class="item" style="align-items:flex-start;padding:6px 0">
+        <span class="small muted" style="min-width:34px">—</span>
+        <span class="small muted" style="flex:1">${icon(s.kind)} ${esc(s.text)}</span>
+      </div>`).join('')}` : ''}
+    ${!planned.length && !unplanned.length ? '<p class="small muted" style="margin:0">Nothing planned this week.</p>' : ''}
     ${reference}
+    ${stopLink}
   </div>`;
 }
 
@@ -1664,9 +1726,9 @@ function renderRuns() {
   <div class="card">
     <h2>Recent runs</h2>
     ${recent.length ? recent.map(r => `
-      <div class="item">
+      <div class="item" data-run="${r.id}" style="cursor:pointer">
         <div>
-          <div class="title">${fmtDate(r.date)}</div>
+          <div class="title">${fmtDate(r.date)}${r.where ? ` <span class="badge">${r.where === 'treadmill' ? '🏠 Treadmill' : '☀️ Outdoor'}</span>` : ''}</div>
           <div class="sub">${r.min ? fmtRunTime(r.min) + ' · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} active kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
         </div>
         <div class="row" style="gap:4px">
@@ -1675,11 +1737,16 @@ function renderRuns() {
         </div>
       </div>`).join('')
     : '<p class="muted small">No runs yet. Strava/Garmin sync is planned — manual logging for now.</p>'}
+    ${recent.length ? '<p class="small muted" style="margin:8px 0 0">Tap a run to edit it.</p>' : ''}
   </div>`;
 
-  body.querySelector('#add-run').addEventListener('click', openRunModal);
+  body.querySelector('#add-run').addEventListener('click', () => openRunModal());
+  for (const it of body.querySelectorAll('[data-run]')) {
+    it.addEventListener('click', () => openRunModal(state.runs.find(r => r.id === it.dataset.run)));
+  }
   for (const b of body.querySelectorAll('[data-del]')) {
-    b.addEventListener('click', () => {
+    b.addEventListener('click', e => {
+      e.stopPropagation(); // the row behind it opens the editor
       state.runs = state.runs.filter(r => r.id !== b.dataset.del);
       save(); render();
     });
@@ -1733,32 +1800,57 @@ function impossiblePace(min, km) {
   return km > 0 && min > 0 && min / km < 2.8;
 }
 
-function openRunModal() {
+// Logging a new run, or editing one (24 Oct 2026 — runs had no edit screen,
+// so a typo meant delete and re-log). Where it was run is recorded too: a
+// treadmill and the Singapore heat give very different paces for the same
+// effort, and a bare pace can't tell them apart.
+function openRunModal(existing = null) {
+  const ex = existing;
+  let where = ex ? (ex.where || '') : (state.lastRunWhere || 'outdoor');
   const m = openModal(`
-    <h2>Log a run</h2>
-    <label class="field"><span>Date</span><input id="r-date" type="date" value="${dateKey()}"></label>
+    <h2>${ex ? 'Edit run' : 'Log a run'}</h2>
+    <label class="field"><span>Date</span><input id="r-date" type="date" value="${ex ? ex.date : dateKey()}"></label>
+    <div class="row" style="gap:6px;margin:0 0 10px">
+      <button type="button" class="btn small" data-where="outdoor">☀️ Outdoor</button>
+      <button type="button" class="btn small" data-where="treadmill">🏠 Treadmill</button>
+    </div>
     <div class="grid2">
-      <label class="field"><span>Distance (km)</span><input id="r-km" type="number" inputmode="decimal" step="0.01" placeholder="5.0"></label>
-      <label class="field"><span>Total time</span><input id="r-min" type="text" inputmode="decimal" placeholder="55:16 — not pace"></label>
+      <label class="field"><span>Distance (km)</span><input id="r-km" type="number" inputmode="decimal" step="0.01" placeholder="5.0" value="${ex ? ex.km : ''}"></label>
+      <label class="field"><span>Total time</span><input id="r-min" type="text" inputmode="decimal" placeholder="55:16 — not pace" value="${ex && ex.min ? fmtRunTime(ex.min) : ''}"></label>
     </div>
     <p class="small" id="r-echo" style="margin:-6px 0 8px;min-height:16px"></p>
     <label class="field"><span>Active calories (optional)</span>
-      <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate"></label>
+      <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate" value="${ex?.kcal ?? ''}"></label>
     <p class="small muted" style="margin:-6px 0 10px">${ACTIVE_KCAL_HINT}</p>
-    <label class="field"><span>Notes (optional)</span><input id="r-notes" placeholder="easy run, intervals..."></label>
+    <label class="field"><span>Notes (optional)</span><input id="r-notes" placeholder="easy run, intervals..." value="${esc(ex?.notes || '')}"></label>
     <p class="small muted" id="r-notes-hint" style="margin:-6px 0 10px;display:none">Ran something different? Replace it with what you actually did.</p>
-    <button class="btn primary block" id="r-save">Save run</button>
+    <button class="btn primary block" id="r-save">${ex ? 'Save changes' : 'Save run'}</button>
+    ${ex ? '<button class="btn danger block" id="r-del" style="margin-top:8px">Delete run</button>' : ''}
   `);
+  const paintWhere = () => {
+    for (const b of m.querySelectorAll('[data-where]')) b.classList.toggle('primary', b.dataset.where === where);
+  };
+  for (const b of m.querySelectorAll('[data-where]')) {
+    b.addEventListener('click', () => { where = b.dataset.where; paintWhere(); });
+  }
+  paintWhere();
+  m.querySelector('#r-del')?.addEventListener('click', () => {
+    state.runs = state.runs.filter(r => r.id !== ex.id);
+    save();
+    closeModal();
+    render();
+    toast('Run deleted');
+  });
   // The owner's race plan pre-fills the notes with the day's planned run, so
   // a session done as planned is just "save", and a swap is recorded by
   // overwriting it — their notes field had never been used, so the real
   // sessions (and how often hard days drift harder) were invisible. Follows
   // the date field until they type in the box themselves.
   const notesIn = m.querySelector('#r-notes'), dateIn = m.querySelector('#r-date');
-  let notesTouched = false;
+  let notesTouched = !!ex; // an edited run keeps its own notes
   notesIn.addEventListener('input', () => { notesTouched = true; });
   const prefillNotes = () => {
-    if (notesTouched || !state.owner) return;
+    if (notesTouched || !hmActive()) return;
     const key = dateIn.value || dateKey();
     const runSlots = PLAN_SLOTS.filter(s => planKind(planFor(key)[s.id])?.group === 'run');
     const slot = runSlots.find(s => planSlotStatus(key, s.id) !== 'done') || runSlots[0];
@@ -1786,6 +1878,7 @@ function openRunModal() {
   };
   durIn.addEventListener('input', paintEcho);
   kmIn.addEventListener('input', paintEcho);
+  paintEcho();
 
   m.querySelector('#r-save').addEventListener('click', () => {
     const km = Number(m.querySelector('#r-km').value);
@@ -1795,20 +1888,32 @@ function openRunModal() {
     if (durRaw !== '' && min == null) { toast('Time looks off — try 27.46 or 27:46'); return; }
     if (min != null && impossiblePace(min, km)) { toast('That pace is impossible — enter the total time, not the pace'); return; }
     const kcalRaw = m.querySelector('#r-kcal').value;
+    // Editing keeps the run's id (so its creation time) and anything this form
+    // doesn't show, e.g. minTyped from the 11 Sep time correction — unless the
+    // time itself was changed, which makes the old typed value meaningless.
     const entry = {
-      id: uid(),
+      ...(ex || {}),
+      id: ex ? ex.id : uid(),
       date: m.querySelector('#r-date').value || dateKey(),
       km,
       min,
       notes: m.querySelector('#r-notes').value.trim(),
     };
-    if (kcalRaw !== '') entry.kcal = Math.max(0, Number(kcalRaw));
-    state.runs.push(entry);
+    if (kcalRaw !== '') entry.kcal = Math.max(0, Number(kcalRaw)); else delete entry.kcal;
+    if (where) entry.where = where; else delete entry.where;
+    if (ex && durRaw !== (ex.min ? fmtRunTime(ex.min) : '')) delete entry.minTyped;
+    if (ex) {
+      const i = state.runs.findIndex(r => r.id === ex.id);
+      if (i >= 0) state.runs[i] = entry;
+    } else {
+      state.runs.push(entry);
+    }
+    if (where) state.lastRunWhere = where;
     save();
     closeModal();
     render();
     const used = entry.kcal ?? runKcal(km, latestWeight());
-    toast(`Run logged: ${km} km (${entry.kcal != null ? '' : '~'}${used} active kcal)`);
+    toast(ex ? 'Run updated' : `Run logged: ${km} km (${entry.kcal != null ? '' : '~'}${used} active kcal)`);
   });
 }
 
@@ -1891,7 +1996,7 @@ function renderGym() {
   <div class="card">
     <h2>History</h2>
     ${sessions.length ? sessions.map(s => `
-      <div class="item">
+      <div class="item" data-gym="${s.id}" style="cursor:pointer">
         <div style="flex:1">
           <div class="title">${s.type ? `${gymTypeLabel(s.type)} day` : fmtDate(s.date)}${s.kcal != null ? ` <span class="muted small">· ${r0(s.kcal)} active kcal</span>` : ''}</div>
           ${s.type
@@ -1901,6 +2006,7 @@ function renderGym() {
         <button class="btn danger" data-del="${s.id}">✕</button>
       </div>`).join('')
     : '<p class="muted small">No sessions yet. Pick push, pull or legs above after you train.</p>'}
+    ${sessions.length ? '<p class="small muted" style="margin:8px 0 0">Tap a session to edit it.</p>' : ''}
   </div>`;
 
   const $g = sel => body.querySelector(sel);
@@ -1924,12 +2030,58 @@ function renderGym() {
     });
   }
 
+  for (const it of body.querySelectorAll('[data-gym]')) {
+    it.addEventListener('click', () => openGymModal(state.gym.find(s => s.id === it.dataset.gym)));
+  }
   for (const b of body.querySelectorAll('[data-del]')) {
-    b.addEventListener('click', () => {
+    b.addEventListener('click', e => {
+      e.stopPropagation(); // the row behind it opens the editor
       state.gym = state.gym.filter(s => s.id !== b.dataset.del);
       save(); render();
     });
   }
+}
+
+// Edit a logged gym session (24 Oct 2026): date, push/pull/legs, active
+// calories. Sessions from before push/pull/legs have exercises instead of a
+// type; picking a type here simply gives them one.
+function openGymModal(s) {
+  if (!s) return;
+  let type = s.type || '';
+  const m = openModal(`
+    <h2>Edit gym session</h2>
+    <label class="field"><span>Date</span><input id="ge-date" type="date" value="${s.date}"></label>
+    <div class="grid3" style="margin:0 0 10px">
+      ${GYM_TYPES.map(t => `<button type="button" class="btn small" data-gtype="${t.type}">${t.ico} ${t.label}</button>`).join('')}
+    </div>
+    <label class="field"><span>Active calories (optional)</span>
+      <input id="ge-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate" value="${s.kcal ?? ''}"></label>
+    <p class="small muted" style="margin:-6px 0 10px">${ACTIVE_KCAL_HINT}</p>
+    <button class="btn primary block" id="ge-save">Save changes</button>
+    <button class="btn danger block" id="ge-del" style="margin-top:8px">Delete session</button>
+  `);
+  const paintType = () => { for (const b of m.querySelectorAll('[data-gtype]')) b.classList.toggle('primary', b.dataset.gtype === type); };
+  for (const b of m.querySelectorAll('[data-gtype]')) b.addEventListener('click', () => { type = b.dataset.gtype; paintType(); });
+  paintType();
+  m.querySelector('#ge-save').addEventListener('click', () => {
+    const kcalRaw = m.querySelector('#ge-kcal').value;
+    const entry = { ...s, date: m.querySelector('#ge-date').value || s.date };
+    if (type) entry.type = type;
+    if (kcalRaw !== '') entry.kcal = Math.max(0, Number(kcalRaw)); else delete entry.kcal;
+    const i = state.gym.findIndex(g => g.id === s.id);
+    if (i >= 0) state.gym[i] = entry;
+    save();
+    closeModal();
+    render();
+    toast('Session updated');
+  });
+  m.querySelector('#ge-del').addEventListener('click', () => {
+    state.gym = state.gym.filter(g => g.id !== s.id);
+    save();
+    closeModal();
+    render();
+    toast('Session deleted');
+  });
 }
 
 // ---------- progress ----------

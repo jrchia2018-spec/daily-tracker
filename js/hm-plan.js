@@ -124,10 +124,6 @@ export function hmWeekOf(key) {
   return null;
 }
 
-export function hmSessionsOn(key) {
-  return HM_SESSIONS.filter(s => s.date === key);
-}
-
 // What the week asks for — the planner's weekly target while the plan runs.
 export function hmTargets(week) {
   let gym = 0, run = 0;
