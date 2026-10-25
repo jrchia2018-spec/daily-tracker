@@ -2119,3 +2119,20 @@
 | US ballot order | 48 hours to set aside mail ballots of 20,000+ registrants deemed "highly likely" non-citizens; hearing 27 Oct; midterms 3 Nov | US DOJ and court filings via CNN, 24 Oct 2026 |
 | IRGC tanker claim | 2 supertankers carrying 4.5m barrels said to have struck mines on the southern route; uncorroborated | IRGC Navy via ANI/Tribune, 24 Oct 2026 |
 | Kenya Ebola outbreak | 9 confirmed cases, 2 deaths (second a 65-year-old relative of the index patient); 118 of 135 contacts quarantined; no community spread | Kenya Health Ministry via AA/GBC, 24 Oct 2026 |
+## Updated 26 Oct 2026
+| Indicator | Figure | Source |
+|---|---|---|
+| Serbia election | Student List 52% / 138 of 250 seats; SNS list 39.3% / 104; turnout ~70%, highest since 1992; Vucic's own projection 135-140 vs 105 | Ipsos/CeSID representative sample and Vucic, via France 24 / ABC / CBC, 25 Oct 2026 |
+| Brazil runoff (window close) | Flavio Bolsonaro 50.51% to Lula 49.49% at 25.19% of stations counted, margin under 37,000 votes; no winner declared; voting extended 2h to 7pm Brasilia; overseas count Lula 59.67-40.33 at 817 of 1,351 sections | TSE via Rio Times / France 24 / CBS, 25 Oct 2026 |
+| Brazil first round | Flavio Bolsonaro 47.03% (56,104,268 votes) to Lula 45.16% (53,876,617) | TSE, 4 Oct 2026 |
+| Riyadh airport | Partly reopened after a two-week closure; T1 domestic, T2 international, T3 and T4 shut; 10 Oct attack killed 13 | Saudi authorities via RTE / Star-Advertiser / Tribune, 25 Oct 2026 |
+| Saudi interceptions | 10 Houthi ballistic missiles and 1 drone downed; shrapnel injured 2 and damaged homes and vehicles | Saudi-led coalition via The New Arab / CNBC, 25 Oct 2026 |
+| Brent crude | Just over US$116 at Friday's close; markets shut over the weekend | Friday 23 Oct close, cited 25 Oct 2026 |
+| Israel final polls (120 seats) | Channel 12 Eisenkot bloc 56-50; Channel 13 54-50; Kan 52-50; Maariv 54-48; Direct Polls/i24 outlier 59-47 Netanyahu; Yashar 21-23, Likud 19-21, Arab parties 14-16 | Channel 12/13, Kan, Maariv, Direct Polls via Haaretz / Times of Israel / i24, 23 Oct 2026 |
+| West Bank closure | All land crossings shut on election day (27 Oct); Palestinian worker entry barred Sunday-Monday except industrial zones; ~2,000 displaced in Hebron's Farsh al-Hawa | IDF via Euronews / Al Jazeera / Middle East Eye, 25 Oct 2026 |
+| Indonesia gas cut to Singapore | 17 BBTUD for 18 days from 24 Oct — under 2% of ~1,350 BBTUD total demand, ~1,000 BBTUD of it for power generation | EMA and Tan See Leng via Mothership / AsiaOne, 24-25 Oct 2026 (supersedes the 31 BBTUD figure carried 25 Oct) |
+| PAP 39th CEC | 12 elected by cadres; Tan See Leng and Zaqy Mohamad co-opted; up to 4 co-option slots open; Chee Hong Tat replaced Heng Swee Keat among the elected; ~3,000 activists at Singapore Expo; 6.9m population projection cited | PAP conference via Mothership / AsiaOne / NTUC, 25 Oct 2026 |
+| Exercise Wallaby 2026 | 36th edition, 6 Sep-2 Nov, Shoalwater Bay; ~6,000 personnel, 1,200 platforms; airborne 5G node untethered for the first time (coverage reported as 400m or up to 2km, unresolved) | MINDEF fact sheet 23 Oct and ST/AsiaOne, 25 Oct 2026 |
+| Singapore palliative tie-up | Dover Park Hospice and NTUC Health to train nursing-home staff; 1,600+ residents to benefit | ST via Red Hot Singapore, 25 Oct 2026 |
+| Venezuela | Machado returned after 10 months in exile, first appearance at a church in Lara state; no presidential election scheduled by acting president Delcy Rodriguez; Maduro seized by US forces in January | Al Jazeera / NPR / The Hill, 25 Oct 2026 |
+| CIRRHOClear (held) | Blood microRNA test for cirrhosis risk: 89% sensitivity, 95% specificity in validation; from the 2,000-participant ELEGANCE cohort; commercial launch 17 Oct | Mirxes/NCCS announcement, 17 Oct 2026 |
