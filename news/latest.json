@@ -1,111 +1,110 @@
 {
  "schema": 1,
- "date": "2026-10-26",
- "generatedAt": "2026-10-26T07:30:00+08:00",
+ "date": "2026-10-27",
+ "generatedAt": "2026-10-27T07:21:03+08:00",
  "coverage": {
-  "from": "2026-10-25T07:00:00+08:00",
-  "to": "2026-10-26T07:00:00+08:00",
-  "label": "Sunday 25 October 2026, 0700 SGT → Monday 26 October 2026, 0700 SGT"
+  "from": "2026-10-26T07:00:00+08:00",
+  "to": "2026-10-27T07:00:00+08:00",
+  "label": "Monday 26 October 2026, 0700 SGT → Tuesday 27 October 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "SERBIA'S VUCIC CONCEDES TO A STUDENT MOVEMENT, ENDING 14 YEARS OF ONE-PARTY RULE",
+   "headline": "LULA WINS A FOURTH TERM BY 3.6 POINTS AS BOLSONARO REFUSES TO CONCEDE AND LOSES HIS PASSPORTS",
    "breaking": true,
    "summary": [
-    "Aleksandar Vucic conceded Sunday night's snap parliamentary election to the Student List, the electoral vehicle of the movement that has protested since the Novi Sad station canopy collapsed in 2024 and killed 16 people. \"We still do not have final results, but on the basis of a sample it is clear that we have lost these elections,\" he said, putting the Student List at 135-140 seats and his own list at 105, with no other list entering parliament. An Ipsos/CeSID representative sample gave the Student List 52 per cent and 138 of the 250 seats against 39.3 per cent and 104 for Vucic's SNS-led list; 126 is a majority. Turnout was near 70 per cent, the highest since Yugoslavia broke up in 1992.",
-    "Vucic blamed independent media, unnamed European governments and an \"American deep state\" for the defeat. Crowds celebrated in central Belgrade. Final official results, the Student List's choice of prime minister and the shape of a government have not been published; Vucic's own presidential term is not at stake in this vote."
+    "With 100 per cent counted, Lula took 51.79 per cent against Flavio Bolsonaro's 48.21, a margin of 4.4 million votes; no first-round runner-up had won the second round since democracy returned in the 1980s. Turnout did it: abstention fell to 19.21 per cent from the first round's record 21.08, which had hurt Lula most. He called the result \"a defeat for denialism\" and turns 81 today.",
+    "Bolsonaro called it \"impossible to concede\" and said he would seek annulment over Justice Cristiano Zanin's two-hour voting extension, which his own campaign had also requested. Hours later Justice Alexandre de Moraes cancelled all his passports, ordered them surrendered within 24 hours and barred him from leaving the country, in a money-laundering investigation. His party acknowledged the result, and Folha de S.Paulo reported his lawyers had talked him out of the annulment as legally weak; he has not withdrawn it, and now says he will seek to disqualify Lula's ticket for abuse of economic power."
    ],
-   "geopolitical": "A movement with no party apparatus has removed the most durable elected strongman in the western Balkans by counting votes, which deprives every comparable government in the region of the argument that street pressure can simply be outlasted.",
-   "socioeconomic": "Serbia's governing contracts, state media funding and the Chinese and Emirati investment deals signed under SNS patronage now face a parliament elected on an anti-corruption platform, and the audit risk attaches to the contracts, not just the ministers."
+   "geopolitical": "A Trump-endorsed candidate has lost a runoff he led in the first round, and his refusal to concede runs into the same court that convicted his father for a coup attempt after the last one — contesting a Brazilian result now carries immediate personal cost.",
+   "socioeconomic": "Lula faces a congress elected on the right, so the win preserves Amazon enforcement and the health and spending commitments his rival campaigned to unwind, without delivering a majority to fund them."
   },
   {
-   "headline": "BRAZIL'S RUNOFF ENDS WITHOUT A WINNER AFTER A COURT ADDS TWO HOURS AND THE COUNT IS HALTED",
+   "headline": "SAUDI, TURKISH AND PAKISTANI CHIEFS FLY TO TEHRAN AS NETANYAHU IS REPORTED PRESSING HIS GENERALS FOR A STRIKE",
    "breaking": true,
    "summary": [
-    "Supreme Court justice Cristiano Zanin extended voting by two hours to 7pm Brasilia time after Lula's campaign complained of public transport failures in parts of Bahia; reports differ on whether the order covered the whole country or only affected areas, and Flavio Bolsonaro's campaign had sought extensions in parts of Sao Paulo, Parana and Santa Catarina. The electoral court then paused its national count mid-tally and resumed only after the extended close.",
-    "At the end of the coverage window the TSE had Senator Flavio Bolsonaro on 50.51 per cent to Lula's 49.49 per cent with 25.19 per cent of polling stations counted, a margin of under 37,000 votes; the lead had changed hands twice during the evening and no winner had been declared. Lula leads the overseas count 59.67-40.33 with 817 of 1,351 sections in. The first round on 4 October was 47.03 per cent to 45.16 per cent for Bolsonaro. Two election lawyers told Reuters the extension itself invites legal challenge."
+    "Saudi Defence Minister Prince Khalid bin Salman, Pakistan's army chief General Asim Munir and Turkish intelligence chief Ibrahim Kalin met President Masoud Pezeshkian, Foreign Minister Abbas Araghchi and security council head Mohsen Rezaei in Tehran on Monday to \"de-escalate between the parties\" — the Mecca pact's first joint visit since it formed in August. It produced only an agreement to keep talking, though Rezaei called it \"very good\" and said security \"should be achieved by the countries themselves\". Oman's Badr Albusaidi became the first Gulf minister to call explicitly for a non-aggression pact spanning the six Gulf states, Iraq and Iran, with the US no longer the primary security provider. Egypt's parliament approved defensive military support for Saudi Arabia if asked, and explosions were heard over Riyadh overnight.",
+    "Israel's Channel 12 reported Netanyahu and chief of staff Lieutenant-General Eyal Zamir clashed over a directive that could \"potentially spark an immediate conflagration with Iran\", with Zamir demanding it in writing. Netanyahu and the defence ministry denied it; the IDF said only that its decisions rest on \"security, professional, objective and national considerations\". CNN, confirming the Financial Times, reported he pressed Trump to renew the assault and was refused until after next week's US elections. Netanyahu posted an AI-generated nuclear cloud over Tel Aviv. Israelis vote today."
    ],
-   "geopolitical": "A result this narrow, delivered after a judge changed the closing time mid-vote at one candidate's request, hands the losing side a procedural grievance that is independent of the count — the precise condition under which Brazil's 2022 result was contested.",
-   "socioeconomic": "Brazil enters at least another day without a president-elect while the real, the Petrobras pricing regime and the 2027 fiscal framework all wait on which of two opposed economic programmes won, and the delay itself prices in."
+   "geopolitical": "The states that would absorb the next round are negotiating directly with Tehran, and an Omani minister has put an Iran-inclusive pact on the record — the architecture drafted this week treats Washington as a party to the conflict, not the guarantor of a settlement.",
+   "socioeconomic": "Egypt's conditional pledge widens the pool of states liable to be drawn in, while the cost to Gulf exporters stays fixed in war-risk premiums and the Hormuz blockade rather than in any strike after the midterms."
   },
   {
-   "headline": "TRUMP RULES OUT AN IMMEDIATE IRAN STRIKE AS RIYADH'S AIRPORT REOPENS AND IS ATTACKED WITHIN HOURS",
+   "headline": "ANTHROPIC FILES TO LIST AT UP TO US$2 TRILLION AND PUTS EXISTENTIAL RISK IN ITS RISK FACTORS",
    "breaking": true,
    "summary": [
-    "Asked whether the US could attack Iran as soon as Sunday, Trump said it would not, days after reports that Washington and Israel had drawn up a second strike phase for after the 3 November midterms. He framed the choice to Fox News as \"Do I make a deal with them, or do I finish them off?\", claimed US forces now control the Strait of Hormuz, pointed to expanded sanctions and floated a ban on US diesel exports. Iran's standing offer, restated through Islamabad, is to reopen Hormuz if the naval blockade is lifted.",
-    "King Khalid International in Riyadh partly reopened after a two-week closure caused by the 10 October attack that killed 13, running domestic flights from Terminal 1 and international from Terminal 2, with Terminals 3 and 4 shut. Within hours the Houthis claimed a fresh strike on it, along with Aramco's Yanbu facilities and other airports and energy sites. The Saudi-led coalition said it downed 10 ballistic missiles and a drone; shrapnel injured two people and damaged homes and vehicles. Saudi officials did not address the Houthi claims directly. Markets were shut, leaving Brent at just over US$116 from Friday's close."
+    "The AI company filed for an IPO on Monday, setting a Nasdaq debut under the ticker ANT as soon as 16 November at a reported valuation of up to US$2 trillion, against US$965 billion in May after a US$65 billion raise. First-half revenue grew 1,300 per cent year on year to US$16.3 billion from more than 14,000 enterprise customers, about 250 paying US$10 million or more a year. The net loss exceeds US$80 billion, but over US$72 billion of it is the change in fair value of convertible notes, derivatives and SAFEs; just under US$9 billion was infrastructure and compute. Separately, banks and Blackstone lined up US$63 billion to finance Broadcom AI chips for it.",
+    "The filing carries 93 pages of risk factors — roughly 30 for Snap and 50 for Uber — in four categories of harm from the product itself: misuse such as bioweapons or cyberattacks, loss of human control, authoritarian abuse such as surveillance states, and economic disruption. The founders' letter names \"catastrophic or existential risks to humanity\", and the filing warns liability from extreme harm could exceed its insurance."
    ],
-   "geopolitical": "Trump has now ruled out a strike on a specific day without ruling out the campaign, which leaves the blockade as the standing instrument and makes his \"deal or finish them off\" formulation the whole of declared US policy until the midterms.",
-   "socioeconomic": "Reopening the capital's airport while interceptors are still firing over it tells airlines and insurers that Saudi Arabia will absorb the risk rather than stay closed, and war-risk premiums on Gulf aviation and the Yanbu export route will be set on that basis."
+   "geopolitical": "The sharpest formal warnings about AI catastrophe are now filed with a securities regulator rather than negotiated between governments, which makes US disclosure law the default venue for the subject.",
+   "socioeconomic": "At that price the stock enters the major indices, so tracker and pension portfolios hold debt-financed compute risk by default, while US$9 billion of real spending against US$16.3 billion of revenue shows the business is the enterprise contracts, not the headline deficit."
   },
   {
-   "headline": "MACHADO RETURNS TO VENEZUELA AFTER TEN MONTHS, AND NAMES THE ELECTION NOBODY HAS CALLED",
+   "headline": "TWO UN INQUIRIES REPORT ON THE SAME DAY: GENOCIDAL ACTS CONTINUING IN GAZA, CRIMES AGAINST HUMANITY IN UKRAINE",
    "breaking": true,
    "summary": [
-    "Maria Corina Machado announced her return in a social media post and appeared first at a church in Lara state, where the congregation surrounded her; Edmundo Gonzalez confirmed it. She left Venezuela a month before US forces seized Nicolas Maduro in January, and had been turned back repeatedly when she tried to re-enter in September. Trump said he had no advance notice but hoped she was safe; Rubio welcomed the return.",
-    "Machado has said she will run for president if a vote is held before the end of the year. That is the pressure her presence applies: acting president Delcy Rodriguez has governed without scheduling the election the constitution requires, and the country's best-known opposition figure is now inside it rather than outside."
+    "The Commission of Inquiry on the Occupied Palestinian Territory found Israel \"continuing to commit genocidal acts with the genocidal intent to destroy, in whole or in part, the Palestinians in Gaza\" despite the October 2025 ceasefire. Much of the harm came from expansion during it: Israeli control of Gaza has risen from 53 per cent to at least 60, and fire across the advancing front has killed at least 196 Palestinians, including 18 women, 32 boys and 11 girls. The report also alleges extermination, torture, rape and persecution in the West Bank, with six newly documented cases of sexual violence against male Gazan detainees at Sde Teiman prison. Israel's Geneva mission demanded the commission's dissolution.",
+    "Hours apart, the Independent International Commission of Inquiry on Ukraine told the General Assembly that Russia's strikes on Ukrainian energy infrastructure are war crimes and crimes against humanity, \"carried out with intent\" under a state policy to deprive civilians of energy. It names several senior Russian officials as most responsible. Last winter's attacks cut thermal generation by 70 per cent in the worst-hit areas as temperatures reached -30C."
    ],
-   "geopolitical": "An unscheduled election becomes harder to keep unscheduled once the candidate is physically in the country and un-arrested, and Caracas must now choose between detaining her — with a US administration that removed her predecessor watching — and setting a date.",
-   "socioeconomic": "Venezuelan oil output, sanctions relief and the fate of expropriated assets all hinge on a government with a mandate, and Machado's return restarts the clock that foreign creditors and operators have been waiting on since January."
+   "geopolitical": "Both findings land on parties that treat a halt in fighting as the end of the matter, and both are drafted as evidence for prosecutors rather than appeals to a Security Council that would veto them.",
+   "socioeconomic": "A documented state policy of destroying heating systems turns Ukraine's energy reconstruction from a damage bill into a claim with named defendants, which is what makes frozen Russian assets the live question for whoever pays to rebuild."
   },
   {
-   "headline": "ISRAEL SEALS THE WEST BANK FOR ELECTION DAY WITH BOTH BLOCS SHORT OF A MAJORITY",
+   "headline": "THE NINTH CIRCUIT REFUSES TO SET ASIDE 20,000 CALIFORNIA BALLOTS AS THE DOJ CHARGES COMEY A THIRD TIME",
    "breaking": false,
    "summary": [
-    "The IDF ordered all land crossings with the West Bank closed for Tuesday's election day and barred Palestinian workers from entering Israel, Judea, Samaria and the Jordan Valley from Sunday through Monday, exempting some industrial zones and approved areas. The measures follow the checkpoint shooting that killed two Israeli soldiers near Hebron and the demolitions in Farsh al-Hawa that displaced about 2,000 residents, with the Hebron cordon still in force.",
-    "The final published polls leave the 120-seat Knesset deadlocked. Channel 12 had Gadi Eisenkot's bloc at 56 to Netanyahu's 50, Channel 13 54-50, Kan 52-50 and Maariv 54-48; Direct Polls, for i24, is the outlier at 59-47 for Netanyahu. Eisenkot's Yashar leads on 21-23 seats with Likud second on 19-21, Arab parties are projected at 14-16, and whether Ofer Winter's Amcha Israel clears the threshold decides which arithmetic applies. A US billionaire backer of Trump said Itamar Ben-Gvir and Bezalel Smotrich should not serve in the next government."
+    "A Ninth Circuit panel, sitting by video in an emergency Sunday hearing, denied the Justice Department's appeal to force California to quarantine more than 20,000 mail ballots cast by people the government says are likely non-citizens. Judges Mark Bennett, a Trump appointee, and Gabriel Sanchez, a Biden appointee, held the court could not act before the district court had ruled and called the claimed emergency \"at least in part, a self-constructed one\", blaming the government's late filing. Judge Patrick Bumatay, also a Trump appointee, dissented. The district court hears the case on Tuesday.",
+    "The same day the department charged James Comey a third time over an alleged 2016 leak of a classified document, filed on 5 October as a \"waiverless criminal information\" — a device it says tolls the ten-year limitation period while it seeks an indictment, and which Comey has moved to dismiss. Judge Jesse Furman separately ruled the July 2025 firing of his daughter Maurene Comey, a prosecutor the department conceded was not dismissed for cause, unconstitutional under the separation of powers and the Civil Service Reform Act; the government's theory, he wrote, would \"risk a return to the spoils system\"."
    ],
-   "geopolitical": "Closing the crossings turns a security response into an election-day fact for about three million people who cannot vote in it, and sets the precedent that a West Bank attack is answered with territory-wide closure rather than targeted arrests.",
-   "socioeconomic": "Tens of thousands of permit-holding Palestinian workers lose two to three days of wages at an hour's notice, and the Israeli construction and agriculture sites that depend on them absorb the stoppage during the same week."
+   "geopolitical": "An executive branch sought a court order to set aside votes already cast a week before a national election and lost on timing, not on the merits, which leaves federal power over state counting open for the next attempt.",
+   "socioeconomic": "If the attorney-general must follow the Civil Service Reform Act, every politically motivated dismissal carries reinstatement and back-pay exposure, a cost borne by departmental budgets rather than by whoever ordered it."
   }
  ],
  "singapore": [
   {
-   "headline": "PAP ELECTS ITS 39TH CEC AND LEAVES RENEWAL TO CO-OPTION, AS WONG WARNS CADRES OFF POPULISM",
-   "breaking": false,
+   "headline": "IMDA ACCUSES SIMBA OF DELIBERATE SPECTRUM MISUSE AT MORE THAN 200 SITES AND PUTS ITS LICENCE AT RISK",
+   "breaking": true,
    "summary": [
-    "Party cadres elected 12 members to the PAP's central executive committee at the biennial conference, with Tan See Leng and Zaqy Mohamad co-opted so far and up to four co-option slots still to fill, the route by which the next generation enters the top body. Chee Hong Tat replaced Heng Swee Keat in the elected 12; Lawrence Wong, Lee Hsien Loong, Chan Chun Sing, K Shanmugam, Grace Fu, Edwin Tong, Indranee Rajah, Ong Ye Kung, Vivian Balakrishnan, Desmond Lee and Masagos Zulkifli also feature.",
-    "Addressing about 3,000 activists at Singapore Expo, Wong told them to \"guard against populism\" while taking concerns seriously, citing economic pressure and anxiety behind unrest in France and parts of Asia, and said the party must \"make difficult choices that will stand the test of time\". He said the Workers' Party's positions \"do not always add up to a coherent approach\", pointing to its 2019 call to build fewer flats against its 2023 criticism of undersupply, and its shifts on foreign-worker quotas. WP's Jamus Lim replied that adjusting a position is a mark of wisdom and maturity, not opportunism. Wong acknowledged lower-wage workers' cost worries and retrenched workers in their 40s and 50s: \"We understand these concerns and we will respond to them.\""
+    "Tuas, Simba Telecom's ASX-listed parent, disclosed on 26 October that the Infocomm Media Development Authority had served a show-cause notice, three days after giving the telco its investigation findings. IMDA alleges Simba ran dynamic spectrum sharing at about 133 sites in 2022 and 2023, using 2,100MHz spectrum for 4G as well as the 5G it was authorised for, and used the 2,340-2,360MHz band without authorisation at about 92 sites between 2023 and 2026, plus unauthorised 5G equipment at two sites and a \"deliberate and intentional\" failure to produce documents. The central allegation is intent: the misuse is said to have been approved by senior management. Simba must reply by 16 November.",
+    "The exposure is suspension or cancellation of spectrum rights, a fine of up to S$1 million or 10 per cent of annual Singapore revenue, whichever is higher, and cancellation, suspension or shortening of the licence itself. Tuas shares fell more than 33 per cent after the open to S$1.09 (A$1.21), from a close of A$1.81. The misuse first surfaced in May, when IMDA suspended its review of Simba's S$1.43 billion bid for M1, which then lapsed."
    ],
-   "geopolitical": "Wong has framed the next term against the French and Asian protest wave rather than against the opposition alone, which positions the PAP's case for incumbency as a claim about stability in a year when incumbents elsewhere are losing.",
-   "socioeconomic": "With four co-option seats open and ministerial pay already defended in Parliament, the succession bench is being assembled before the cost-of-living agenda Wong promised is costed — so the people who will have to fund it are still unnamed."
+   "geopolitical": "Not applicable — a domestic regulatory action, though the operator's parent is listed in Australia.",
+   "socioeconomic": "Singapore engineered a fourth mobile operator to hold prices down and its regulator is now weighing whether to remove it: curtail the licence and the cheap-data tier Simba created goes too, bringing consolidation through enforcement rather than the merger IMDA blocked."
   },
   {
-   "headline": "SINGAPORE SAYS POWER PRICES ARE SAFE AND CONTRACTS MUST BE HONOURED AFTER INDONESIA'S GAS CUT",
+   "headline": "SINGAPORE ANSWERS RESOURCE NATIONALISM WITH FIVE POWER PLANTS, SAUDI CRUDE IN THE CAVERNS AND A NUCLEAR TALENT PIPELINE",
    "breaking": false,
    "summary": [
-    "Tan See Leng said Indonesia's reduction — put by EMA at 17 BBTUD for 18 days from 24 October — is \"less than 2 per cent of our needs\" against about 1,350 BBTUD of total demand and roughly 1,000 BBTUD for power generation, and would not affect electricity prices much in the short term, since the unit price tracks global gas indices rather than any single pipeline. He cited sufficient replacement supply including LNG, a standby LNG facility, diesel reserves and a second LNG terminal under construction, and said pipeline renewals are in an \"open season\" bid that will turn on commercial terms, contract length, reliability and track record.",
-    "PM Wong said Singapore expects all parties to honour their commitments and that the importer will assess whether the contract has been breached and pursue remedies if so. The Workers' Party said it regretted the cut and stressed honouring contracts. Separately the haze eased: PM2.5 returned to normal and the 24-hour PSI was in the good-to-moderate band islandwide on Monday morning, after readings were unhealthy in most regions a day earlier."
+    "Opening Singapore International Energy Week on 26 October, two days after Indonesia cut piped gas, Tan See Leng said Singapore \"will not be able to insulate ourselves from global or regional shocks\" and called resource nationalism \"particularly concerning\" where it undermines contracts. Five new power plants arrive between 2026 and 2031, lifting generation capacity 26 per cent from about 12GW, with seven new substations by 2031. Singapore and Saudi Arabia announced joint intent to store Saudi crude at the Jurong Rock Caverns from the second half of 2027, with Aramco to sign a memorandum with EMA and JTC.",
+    "The 3 gigawatt-peak solar target for 2030 is on track, and a S$800 million Decarbonisation Grand Challenge is joined by a new S$75 million Power Decarbonisation Funding Initiative, alongside hydrogen work. Singapore will drill deeper for geothermal after results suggesting its resources could generate more than 60 times annual electricity consumption, and will host an IAEA Integrated Nuclear Infrastructure Review mission, with two new programmes placing public officers and industry staff at global nuclear organisations."
    ],
-   "geopolitical": "Singapore has answered a politically-timed supply cut with contract law rather than reciprocity, which keeps the dispute inside the commercial framework Jakarta would have to break explicitly to escalate — and leaves the open-season bid as the real leverage.",
-   "socioeconomic": "Households are told to expect no bill shock because the shortfall is under 2 per cent and LNG covers it, but the same pegging that insulates them from Indonesia leaves tariffs exposed to a global gas price that a Gulf escalation moves."
+   "geopolitical": "Holding Saudi crude in the Jurong caverns makes Singapore a custodian of someone else's barrels rather than only a buyer, which is a different claim on a supplier's attention than a contract — in a week that showed what contracts are worth under political pressure.",
+   "socioeconomic": "A 26 per cent capacity increase is the only durable answer to a tariff that hit a record 31.91 cents per kWh in the third quarter, but it is funded through that same regulated tariff, so relief arrives years after the bills that prompted it."
   },
   {
-   "headline": "SAF CUTS THE TETHER ON ITS AIRBORNE 5G NODE AND TRIALS A MOBILE COUNTER-DRONE SYSTEM",
+   "headline": "EVERY ACTIVE SAF INFANTRY BATTALION IS NOW A DRONE BATTALION",
    "breaking": false,
    "summary": [
-    "At Exercise Wallaby in Queensland's Shoalwater Bay — the 36th edition, running 6 September to 2 November with about 6,000 personnel and 1,200 platforms — the SAF and DSTA flew their aerial communications node untethered for the first time, after it was tested on a ground-tethered drone in 2025. It carries a 5G cell with the force, extending range and mobility. Alongside it the SAF trialled a mobile counter-drone system that can be repositioned across the battlefield to detect and bring down hostile drones using sensors and jamming. Chief signal officer Colonel Dean Chua said the pair is meant to secure the SAF's own airwaves while degrading an enemy's ability to use them.",
-    "Reported figures for the node's coverage differ, from a 400m bubble to a reach of up to 2km, and MINDEF's fact sheet does not settle it."
+    "All active infantry battalions have been converted into Next Generation Infantry Battalions, unveiled on 26 October at Exercise Wallaby in Rockhampton. Rifle companies are split into more but smaller squads so commanders can run simultaneous missions, and each gains two Steel Net sections flying the Artos strike drone, which detonates on target with the force of a grenade. Each of a company's ten sections carries a pocket-sized Ares for confined spaces, with a Vesper for surveillance to 8km on nearly an hour's endurance and an M6F quadcopter for medium-range reconnaissance; one controller pairs with all four. A new phone-sized Battlefield Management System gives every soldier a shared map updated live from the ground. 5SIR validated the kit in urban operations, using a Vesper to find hostiles in a second-storey room and an Artos through the window before troops entered. DSTA's Dominic Li called it \"bots before boots\"."
    ],
-   "geopolitical": "Both systems answer the same lesson drawn from Ukraine and from the drone attacks on Gulf airports and oil sites this month: the contested layer is the spectrum, and a force that cannot protect its own signal while denying the enemy's cannot operate.",
-   "socioeconomic": "An untethered node is the enabling piece for the SAF's manpower-thin design — fewer soldiers covering more ground only works if the network moves with them — and it is being built by DSTA locally rather than bought."
+   "geopolitical": "A conscript army has rebuilt its basic manoeuvre unit around expendable machines, the clearest statement yet of how Singapore means to keep a credible ground force as the cohort that fills it shrinks.",
+   "socioeconomic": "Four drone types on one controller, taught from basic training onward, turns a capability into a sustainment programme: the recurring bill is attritable airframes and spares rather than the crewed platforms that dominated the old battalion's budget."
   },
   {
-   "headline": "NURSING HOME STAFF TO BE TRAINED IN PALLIATIVE CARE UNDER A DOVER PARK-NTUC HEALTH TIE-UP",
+   "headline": "COE SUPPLY RISES 1.1% WITH CATEGORY A FROZEN AFTER THREE QUARTERS OF CUTS",
    "breaking": false,
    "summary": [
-    "Dover Park Hospice and NTUC Health will train nursing home staff in palliative and end-of-life care, a programme they say will benefit more than 1,600 residents, so that people can be cared for as they die in the home they already live in rather than be moved to a hospital or hospice. Both cited rising demand as Singaporeans live longer with serious illness and more complex needs."
+    "The LTA said on 26 October that 19,298 certificates of entitlement will be available from November 2026 to January 2027, up 1.1 per cent, or 213, from 19,085. Category B, for larger cars and EVs, rises 3.3 per cent to 5,707 after a 6.2 per cent rise last period, while Category A holds at 7,134 — its first period without a cut in four. Commercial vehicles rise to 1,873 and the open category to 1,580, while motorcycles fall to 3,004. At the 21 October tender Category A closed at S$132,004 and Category B at S$131,901, the fourth time this year small-car certificates cost more than large. The consultation on recategorising COEs closes on 2 November."
    ],
-   "geopolitical": "Not applicable — a domestic health-capacity measure with no external dimension.",
-   "socioeconomic": "Every death managed in a nursing home instead of an acute ward frees a hospital bed at a fraction of the cost, which is why training existing staff, rather than building hospice capacity, is the lever a fast-ageing system reaches for first."
+   "geopolitical": "Not applicable — a domestic vehicle-quota adjustment.",
+   "socioeconomic": "Supply tracks deregistrations four quarters back, so it cannot answer current demand: 213 more certificates against premiums above S$130,000 in both car categories leaves Category A dearer than Category B as a structural feature of the quota, which is what next week's consultation has to address."
   }
  ],
  "word": {
-  "word": "apparatchik",
+  "word": "cassation",
   "pos": "noun",
-  "pronunciation": "ah-puh-RAT-chik",
-  "definition": "A functionary of a political party or state machine; someone whose standing comes from the apparatus rather than from any following of their own.",
-  "etymology": "Russian apparatchik, from apparat (the party apparatus) plus the agent suffix -chik; adopted into English in the 1940s for Soviet officials and since generalised to any party machine.",
-  "example": "Serbia's result was read in Belgrade as a verdict on the apparatchiks as much as on Vucic: a movement with no apparatus at all took 138 seats from a party that had little else."
+  "pronunciation": "ka-SAY-shuhn",
+  "definition": "The quashing or annulment of a decision — in law, the setting aside of a judgment or an official result by a higher authority.",
+  "etymology": "From French cassation, from Late Latin cassare, to annul or make void, from Latin cassus, empty; it survives in the Cour de cassation, France's court of final appeal.",
+  "example": "Two bids for cassation failed on the same day: Flavio Bolsonaro's lawyers reportedly talked him out of seeking to annul Lula's 51.79 per cent, and the Ninth Circuit refused to set aside 20,000 California ballots before a district court had ruled."
  }
 }

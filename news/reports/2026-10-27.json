@@ -1,0 +1,110 @@
+{
+ "schema": 1,
+ "date": "2026-10-27",
+ "generatedAt": "2026-10-27T07:21:03+08:00",
+ "coverage": {
+  "from": "2026-10-26T07:00:00+08:00",
+  "to": "2026-10-27T07:00:00+08:00",
+  "label": "Monday 26 October 2026, 0700 SGT → Tuesday 27 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "LULA WINS A FOURTH TERM BY 3.6 POINTS AS BOLSONARO REFUSES TO CONCEDE AND LOSES HIS PASSPORTS",
+   "breaking": true,
+   "summary": [
+    "With 100 per cent counted, Lula took 51.79 per cent against Flavio Bolsonaro's 48.21, a margin of 4.4 million votes; no first-round runner-up had won the second round since democracy returned in the 1980s. Turnout did it: abstention fell to 19.21 per cent from the first round's record 21.08, which had hurt Lula most. He called the result \"a defeat for denialism\" and turns 81 today.",
+    "Bolsonaro called it \"impossible to concede\" and said he would seek annulment over Justice Cristiano Zanin's two-hour voting extension, which his own campaign had also requested. Hours later Justice Alexandre de Moraes cancelled all his passports, ordered them surrendered within 24 hours and barred him from leaving the country, in a money-laundering investigation. His party acknowledged the result, and Folha de S.Paulo reported his lawyers had talked him out of the annulment as legally weak; he has not withdrawn it, and now says he will seek to disqualify Lula's ticket for abuse of economic power."
+   ],
+   "geopolitical": "A Trump-endorsed candidate has lost a runoff he led in the first round, and his refusal to concede runs into the same court that convicted his father for a coup attempt after the last one — contesting a Brazilian result now carries immediate personal cost.",
+   "socioeconomic": "Lula faces a congress elected on the right, so the win preserves Amazon enforcement and the health and spending commitments his rival campaigned to unwind, without delivering a majority to fund them."
+  },
+  {
+   "headline": "SAUDI, TURKISH AND PAKISTANI CHIEFS FLY TO TEHRAN AS NETANYAHU IS REPORTED PRESSING HIS GENERALS FOR A STRIKE",
+   "breaking": true,
+   "summary": [
+    "Saudi Defence Minister Prince Khalid bin Salman, Pakistan's army chief General Asim Munir and Turkish intelligence chief Ibrahim Kalin met President Masoud Pezeshkian, Foreign Minister Abbas Araghchi and security council head Mohsen Rezaei in Tehran on Monday to \"de-escalate between the parties\" — the Mecca pact's first joint visit since it formed in August. It produced only an agreement to keep talking, though Rezaei called it \"very good\" and said security \"should be achieved by the countries themselves\". Oman's Badr Albusaidi became the first Gulf minister to call explicitly for a non-aggression pact spanning the six Gulf states, Iraq and Iran, with the US no longer the primary security provider. Egypt's parliament approved defensive military support for Saudi Arabia if asked, and explosions were heard over Riyadh overnight.",
+    "Israel's Channel 12 reported Netanyahu and chief of staff Lieutenant-General Eyal Zamir clashed over a directive that could \"potentially spark an immediate conflagration with Iran\", with Zamir demanding it in writing. Netanyahu and the defence ministry denied it; the IDF said only that its decisions rest on \"security, professional, objective and national considerations\". CNN, confirming the Financial Times, reported he pressed Trump to renew the assault and was refused until after next week's US elections. Netanyahu posted an AI-generated nuclear cloud over Tel Aviv. Israelis vote today."
+   ],
+   "geopolitical": "The states that would absorb the next round are negotiating directly with Tehran, and an Omani minister has put an Iran-inclusive pact on the record — the architecture drafted this week treats Washington as a party to the conflict, not the guarantor of a settlement.",
+   "socioeconomic": "Egypt's conditional pledge widens the pool of states liable to be drawn in, while the cost to Gulf exporters stays fixed in war-risk premiums and the Hormuz blockade rather than in any strike after the midterms."
+  },
+  {
+   "headline": "ANTHROPIC FILES TO LIST AT UP TO US$2 TRILLION AND PUTS EXISTENTIAL RISK IN ITS RISK FACTORS",
+   "breaking": true,
+   "summary": [
+    "The AI company filed for an IPO on Monday, setting a Nasdaq debut under the ticker ANT as soon as 16 November at a reported valuation of up to US$2 trillion, against US$965 billion in May after a US$65 billion raise. First-half revenue grew 1,300 per cent year on year to US$16.3 billion from more than 14,000 enterprise customers, about 250 paying US$10 million or more a year. The net loss exceeds US$80 billion, but over US$72 billion of it is the change in fair value of convertible notes, derivatives and SAFEs; just under US$9 billion was infrastructure and compute. Separately, banks and Blackstone lined up US$63 billion to finance Broadcom AI chips for it.",
+    "The filing carries 93 pages of risk factors — roughly 30 for Snap and 50 for Uber — in four categories of harm from the product itself: misuse such as bioweapons or cyberattacks, loss of human control, authoritarian abuse such as surveillance states, and economic disruption. The founders' letter names \"catastrophic or existential risks to humanity\", and the filing warns liability from extreme harm could exceed its insurance."
+   ],
+   "geopolitical": "The sharpest formal warnings about AI catastrophe are now filed with a securities regulator rather than negotiated between governments, which makes US disclosure law the default venue for the subject.",
+   "socioeconomic": "At that price the stock enters the major indices, so tracker and pension portfolios hold debt-financed compute risk by default, while US$9 billion of real spending against US$16.3 billion of revenue shows the business is the enterprise contracts, not the headline deficit."
+  },
+  {
+   "headline": "TWO UN INQUIRIES REPORT ON THE SAME DAY: GENOCIDAL ACTS CONTINUING IN GAZA, CRIMES AGAINST HUMANITY IN UKRAINE",
+   "breaking": true,
+   "summary": [
+    "The Commission of Inquiry on the Occupied Palestinian Territory found Israel \"continuing to commit genocidal acts with the genocidal intent to destroy, in whole or in part, the Palestinians in Gaza\" despite the October 2025 ceasefire. Much of the harm came from expansion during it: Israeli control of Gaza has risen from 53 per cent to at least 60, and fire across the advancing front has killed at least 196 Palestinians, including 18 women, 32 boys and 11 girls. The report also alleges extermination, torture, rape and persecution in the West Bank, with six newly documented cases of sexual violence against male Gazan detainees at Sde Teiman prison. Israel's Geneva mission demanded the commission's dissolution.",
+    "Hours apart, the Independent International Commission of Inquiry on Ukraine told the General Assembly that Russia's strikes on Ukrainian energy infrastructure are war crimes and crimes against humanity, \"carried out with intent\" under a state policy to deprive civilians of energy. It names several senior Russian officials as most responsible. Last winter's attacks cut thermal generation by 70 per cent in the worst-hit areas as temperatures reached -30C."
+   ],
+   "geopolitical": "Both findings land on parties that treat a halt in fighting as the end of the matter, and both are drafted as evidence for prosecutors rather than appeals to a Security Council that would veto them.",
+   "socioeconomic": "A documented state policy of destroying heating systems turns Ukraine's energy reconstruction from a damage bill into a claim with named defendants, which is what makes frozen Russian assets the live question for whoever pays to rebuild."
+  },
+  {
+   "headline": "THE NINTH CIRCUIT REFUSES TO SET ASIDE 20,000 CALIFORNIA BALLOTS AS THE DOJ CHARGES COMEY A THIRD TIME",
+   "breaking": false,
+   "summary": [
+    "A Ninth Circuit panel, sitting by video in an emergency Sunday hearing, denied the Justice Department's appeal to force California to quarantine more than 20,000 mail ballots cast by people the government says are likely non-citizens. Judges Mark Bennett, a Trump appointee, and Gabriel Sanchez, a Biden appointee, held the court could not act before the district court had ruled and called the claimed emergency \"at least in part, a self-constructed one\", blaming the government's late filing. Judge Patrick Bumatay, also a Trump appointee, dissented. The district court hears the case on Tuesday.",
+    "The same day the department charged James Comey a third time over an alleged 2016 leak of a classified document, filed on 5 October as a \"waiverless criminal information\" — a device it says tolls the ten-year limitation period while it seeks an indictment, and which Comey has moved to dismiss. Judge Jesse Furman separately ruled the July 2025 firing of his daughter Maurene Comey, a prosecutor the department conceded was not dismissed for cause, unconstitutional under the separation of powers and the Civil Service Reform Act; the government's theory, he wrote, would \"risk a return to the spoils system\"."
+   ],
+   "geopolitical": "An executive branch sought a court order to set aside votes already cast a week before a national election and lost on timing, not on the merits, which leaves federal power over state counting open for the next attempt.",
+   "socioeconomic": "If the attorney-general must follow the Civil Service Reform Act, every politically motivated dismissal carries reinstatement and back-pay exposure, a cost borne by departmental budgets rather than by whoever ordered it."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "IMDA ACCUSES SIMBA OF DELIBERATE SPECTRUM MISUSE AT MORE THAN 200 SITES AND PUTS ITS LICENCE AT RISK",
+   "breaking": true,
+   "summary": [
+    "Tuas, Simba Telecom's ASX-listed parent, disclosed on 26 October that the Infocomm Media Development Authority had served a show-cause notice, three days after giving the telco its investigation findings. IMDA alleges Simba ran dynamic spectrum sharing at about 133 sites in 2022 and 2023, using 2,100MHz spectrum for 4G as well as the 5G it was authorised for, and used the 2,340-2,360MHz band without authorisation at about 92 sites between 2023 and 2026, plus unauthorised 5G equipment at two sites and a \"deliberate and intentional\" failure to produce documents. The central allegation is intent: the misuse is said to have been approved by senior management. Simba must reply by 16 November.",
+    "The exposure is suspension or cancellation of spectrum rights, a fine of up to S$1 million or 10 per cent of annual Singapore revenue, whichever is higher, and cancellation, suspension or shortening of the licence itself. Tuas shares fell more than 33 per cent after the open to S$1.09 (A$1.21), from a close of A$1.81. The misuse first surfaced in May, when IMDA suspended its review of Simba's S$1.43 billion bid for M1, which then lapsed."
+   ],
+   "geopolitical": "Not applicable — a domestic regulatory action, though the operator's parent is listed in Australia.",
+   "socioeconomic": "Singapore engineered a fourth mobile operator to hold prices down and its regulator is now weighing whether to remove it: curtail the licence and the cheap-data tier Simba created goes too, bringing consolidation through enforcement rather than the merger IMDA blocked."
+  },
+  {
+   "headline": "SINGAPORE ANSWERS RESOURCE NATIONALISM WITH FIVE POWER PLANTS, SAUDI CRUDE IN THE CAVERNS AND A NUCLEAR TALENT PIPELINE",
+   "breaking": false,
+   "summary": [
+    "Opening Singapore International Energy Week on 26 October, two days after Indonesia cut piped gas, Tan See Leng said Singapore \"will not be able to insulate ourselves from global or regional shocks\" and called resource nationalism \"particularly concerning\" where it undermines contracts. Five new power plants arrive between 2026 and 2031, lifting generation capacity 26 per cent from about 12GW, with seven new substations by 2031. Singapore and Saudi Arabia announced joint intent to store Saudi crude at the Jurong Rock Caverns from the second half of 2027, with Aramco to sign a memorandum with EMA and JTC.",
+    "The 3 gigawatt-peak solar target for 2030 is on track, and a S$800 million Decarbonisation Grand Challenge is joined by a new S$75 million Power Decarbonisation Funding Initiative, alongside hydrogen work. Singapore will drill deeper for geothermal after results suggesting its resources could generate more than 60 times annual electricity consumption, and will host an IAEA Integrated Nuclear Infrastructure Review mission, with two new programmes placing public officers and industry staff at global nuclear organisations."
+   ],
+   "geopolitical": "Holding Saudi crude in the Jurong caverns makes Singapore a custodian of someone else's barrels rather than only a buyer, which is a different claim on a supplier's attention than a contract — in a week that showed what contracts are worth under political pressure.",
+   "socioeconomic": "A 26 per cent capacity increase is the only durable answer to a tariff that hit a record 31.91 cents per kWh in the third quarter, but it is funded through that same regulated tariff, so relief arrives years after the bills that prompted it."
+  },
+  {
+   "headline": "EVERY ACTIVE SAF INFANTRY BATTALION IS NOW A DRONE BATTALION",
+   "breaking": false,
+   "summary": [
+    "All active infantry battalions have been converted into Next Generation Infantry Battalions, unveiled on 26 October at Exercise Wallaby in Rockhampton. Rifle companies are split into more but smaller squads so commanders can run simultaneous missions, and each gains two Steel Net sections flying the Artos strike drone, which detonates on target with the force of a grenade. Each of a company's ten sections carries a pocket-sized Ares for confined spaces, with a Vesper for surveillance to 8km on nearly an hour's endurance and an M6F quadcopter for medium-range reconnaissance; one controller pairs with all four. A new phone-sized Battlefield Management System gives every soldier a shared map updated live from the ground. 5SIR validated the kit in urban operations, using a Vesper to find hostiles in a second-storey room and an Artos through the window before troops entered. DSTA's Dominic Li called it \"bots before boots\"."
+   ],
+   "geopolitical": "A conscript army has rebuilt its basic manoeuvre unit around expendable machines, the clearest statement yet of how Singapore means to keep a credible ground force as the cohort that fills it shrinks.",
+   "socioeconomic": "Four drone types on one controller, taught from basic training onward, turns a capability into a sustainment programme: the recurring bill is attritable airframes and spares rather than the crewed platforms that dominated the old battalion's budget."
+  },
+  {
+   "headline": "COE SUPPLY RISES 1.1% WITH CATEGORY A FROZEN AFTER THREE QUARTERS OF CUTS",
+   "breaking": false,
+   "summary": [
+    "The LTA said on 26 October that 19,298 certificates of entitlement will be available from November 2026 to January 2027, up 1.1 per cent, or 213, from 19,085. Category B, for larger cars and EVs, rises 3.3 per cent to 5,707 after a 6.2 per cent rise last period, while Category A holds at 7,134 — its first period without a cut in four. Commercial vehicles rise to 1,873 and the open category to 1,580, while motorcycles fall to 3,004. At the 21 October tender Category A closed at S$132,004 and Category B at S$131,901, the fourth time this year small-car certificates cost more than large. The consultation on recategorising COEs closes on 2 November."
+   ],
+   "geopolitical": "Not applicable — a domestic vehicle-quota adjustment.",
+   "socioeconomic": "Supply tracks deregistrations four quarters back, so it cannot answer current demand: 213 more certificates against premiums above S$130,000 in both car categories leaves Category A dearer than Category B as a structural feature of the quota, which is what next week's consultation has to address."
+  }
+ ],
+ "word": {
+  "word": "cassation",
+  "pos": "noun",
+  "pronunciation": "ka-SAY-shuhn",
+  "definition": "The quashing or annulment of a decision — in law, the setting aside of a judgment or an official result by a higher authority.",
+  "etymology": "From French cassation, from Late Latin cassare, to annul or make void, from Latin cassus, empty; it survives in the Cour de cassation, France's court of final appeal.",
+  "example": "Two bids for cassation failed on the same day: Flavio Bolsonaro's lawyers reportedly talked him out of seeking to annul Lula's 51.79 per cent, and the Ninth Circuit refused to set aside 20,000 California ballots before a district court had ruled."
+ }
+}
