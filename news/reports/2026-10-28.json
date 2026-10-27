@@ -1,0 +1,111 @@
+{
+ "schema": 1,
+ "date": "2026-10-28",
+ "generatedAt": "2026-10-28T07:22:00+08:00",
+ "coverage": {
+  "from": "2026-10-27T07:00:00+08:00",
+  "to": "2026-10-28T07:00:00+08:00",
+  "label": "Tuesday 27 October 2026, 0700 SGT → Wednesday 28 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "ISRAEL VOTES ITSELF INTO DEADLOCK: NETANYAHU'S BLOC FALLS FROM 68 SEATS TO 50 AND ARAB PARTIES HOLD THE BALANCE",
+   "breaking": true,
+   "summary": [
+    "Turnout hit 77.7 per cent, the highest since 1999 and far above 2022's pace, and the exit polls at 10pm gave neither side the 61 seats needed. Channel 12 put the change bloc on 52 and Netanyahu's on 50; Channel 13 had 53 to 50. Likud was nonetheless projected the largest single party on 24-25 seats, ahead of Gadi Eisenkot's Yashar on 21-23 and Naftali Bennett's B'Yachad on 12-14. Channel 14 was the lone outlier, giving Netanyahu 60.",
+    "The arithmetic that matters sits outside both blocs: the two Arab parties are projected at 17-18 seats, their strongest showing yet, and Netanyahu has ruled out governing with them. He spent election day accusing Arab citizens of \"trying to steal the elections\". Official results are due within eight days, by 4 November; exit polls have been wrong here before, and two right-wingers who broke with Netanyahu are already being floated as alternative prime ministers from within his own camp."
+   ],
+   "geopolitical": "An eight-month war with Iran has been fought by a government that may now lack the Knesset to continue it, and the reported directive that Chief of Staff Eyal Zamir demanded in writing becomes an inquiry risk rather than an order if Netanyahu goes. Washington's refusal to let Israel renew the assault before 3 November now meets an Israeli government that cannot be formed before then either.",
+   "socioeconomic": "A bloc that cannot reach 61 without parties it refuses to sit with points to weeks of coalition bargaining, and Israel enters it with a war budget and a grim official growth forecast already on the table. Palestinian citizens of Israel, who have no vote in the occupied territories that the next government will administer, have for the first time accumulated enough seats to price their exclusion."
+  },
+  {
+   "headline": "THE OLESHKY TRUCE HOLDS AND WIDENS ACROSS KHERSON AS NORDIC LEADERS BREAK EUROPE'S YEAR-LONG SILENCE WITH PUTIN",
+   "breaking": true,
+   "summary": [
+    "The local ceasefire around the Russian-occupied city of Oleshky began in the early hours, brought forward two days, and both sides said it held: Ukraine's human rights ombudsman's office called it \"fully honoured\" as of 5.30pm. Melania Trump, whom the White House credits with brokering it, said it had been expanded within Kherson Oblast; the ombudsman's communications head said it now covers the whole oblast. Neither gave an end date.",
+    "Finland's Alexander Stubb and Norway's Jonas Gahr Store then spoke to Putin for about 90 minutes, the first call between pro-Ukrainian European leaders and the Russian president in more than a year, described as \"frank and substantive\" and, per Moscow's readout, requested by the Nordic side. Store said Putin gave assurances on humanitarian access. Other European capitals were openly split on whether the call should have happened, and Kyiv said it hoped for \"new momentum\". Separately, Trump is exploring lifting sanctions on the Russian Direct Investment Fund."
+   ],
+   "geopolitical": "A humanitarian corridor negotiated city by city, by a first lady and two Nordic leaders rather than by the bloc, is a working method that bypasses both Brussels and Kyiv's veto on talking to Moscow — and the European split over the call is the real story, because it is the precedent that will be cited next time. Sanctions relief for the RDIF would be the first material US concession of the war, offered while the fighting continues.",
+   "socioeconomic": "A truce that delivers aid into occupied territory and holds for a day is worth more to Kherson's remaining civilians than any communique, but it also normalises Russian administration of the areas it covers. Reopening Russia's sovereign investment vehicle to US capital would restart the deal pipeline that 2022 shut down, ahead of any settlement that might justify it."
+  },
+  {
+   "headline": "FLAVIO BOLSONARO FLEES BRAZIL WITH CANCELLED PASSPORTS AND WASHINGTON PROMISES HIM VISAS",
+   "breaking": true,
+   "summary": [
+    "A day after losing the runoff and being ordered to surrender his passports within 24 hours in a money-laundering investigation, the senator left for the United States. Brazil's Federal Police cancelled the passports when he did not comply, and a senior federal police official said he had not exited through any regular migration point. Argentina said it had no record of him entering.",
+    "A Trump adviser told CNN the president personally approved his entry, and a senior State Department official said: \"The State Department will issue visas to Flavio Bolsonaro and his family and allow them entry into the United States.\" Reports put him en route to Florida. His father Jair did the same thing in 2022, after refusing to concede to the same opponent."
+   ],
+   "geopolitical": "The United States has agreed to admit a sitting senator of an allied democracy who is evading that democracy's supreme court while under criminal investigation, days after Trump called the election rigged. It converts a Brazilian judicial matter into a bilateral one, and gives every future Latin American loser a known exit.",
+   "socioeconomic": "His Senate immunity ends early next year, which was the deadline the money-laundering case was moving towards; from Florida it stops being a deadline. Lula inherits a mandate whose legitimacy the defeated camp is contesting from abroad, with a disqualification case against his ticket still threatened."
+  },
+  {
+   "headline": "EGYPT ORDERS MADA MASR CLOSED AND FINES ITS EDITOR THE MAXIMUM, THEN LIFTS HER OUT OF THE COURTROOM",
+   "breaking": false,
+   "summary": [
+    "The New Cairo Misdemeanour Court convicted editor-in-chief Lina Attalah of running an unlicensed website, fined her 3 million Egyptian pounds (about S$68,000; US$53,000) — the maximum for the offence — ordered the outlet shut and its equipment and devices confiscated. Mada Masr said security personnel lifted her out of the courtroom; Al Jazeera reported she was released once the fine was paid in full, while another outlet had her held pending payment.",
+    "Her lawyers said the judge refused them time to examine the evidence and barred them from calling witnesses, and will appeal the first-instance ruling. During release procedures Attalah learned she had also been sentenced in absentia in 2024 to a year in prison; a retrial hearing in that case is set for 11 November."
+   ],
+   "geopolitical": "Egypt spent the past fortnight positioning itself as the Gulf's mediator and Saudi Arabia's guarantor, and has now shut the last significant independent newsroom in the Arab world's largest country — a reminder to the partners courting Cairo of what domestic stability costs there. Licensing, not sedition, was the instrument, which is harder for allies to object to.",
+   "socioeconomic": "A ruling that closes an outlet over paperwork and confiscates its hardware tells every other Egyptian publisher that the licensing regime, not the penal code, is where the risk now sits. Mada Masr survived a decade of raids and arrests by staying online; the order removes the thing the arrests never managed to."
+  },
+  {
+   "headline": "RAMAPHOSA SENDS 510 SOLDIERS INTO KWAZULU-NATAL AS ANTI-MIGRANT VIOLENCE RUNS INTO AN ELECTION",
+   "breaking": false,
+   "summary": [
+    "The deployment, under the joint security operation Prosper, runs to 30 November at a cost of R34.1 million (about S$2.5 million), with Ramaphosa having notified Parliament in a written notice dated 21 October. Vehicles were torched and shops looted in Durban and Soweto, and a foreign national was allegedly beaten to death by a crowd in Durban last week.",
+    "The government traces the unrest to disinformation about a July Constitutional Court ruling that asylum seekers cannot be shut out of the asylum system on procedural grounds alone. Anti-migrant groups had called for nationwide protests; local government elections are on 4 November."
+   ],
+   "geopolitical": "A state deploying its army against its own citizens to protect foreign nationals, a week before a vote, is an admission that the police cannot hold the line — and a signal to the SADC neighbours whose nationals are the targets. The trigger being a misread court judgment makes the disinformation itself the security problem.",
+   "socioeconomic": "Looted and torched shops in township economies are overwhelmingly migrant-owned and uninsured, so the damage falls on the informal retail network those same townships buy from. A deployment that expires on 30 November leaves whatever the election produces to hold the peace alone."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "MERZ IN SINGAPORE: A FIVE-PILLAR WORK PLAN PUTS DEFENCE AND INDUSTRIAL AI AT THE CENTRE OF THE GERMAN PARTNERSHIP",
+   "breaking": true,
+   "summary": [
+    "PM Lawrence Wong and Chancellor Friedrich Merz announced a refreshed strategic partnership built on a five-pillar joint work plan: defence and security, trade, digitalisation and AI, science and innovation, and climate. The two said they would cooperate on developing and deploying industrial AI where their strengths complement each other, with joint research flagged in AI, advanced manufacturing, green technologies, semiconductors, quantum and space.",
+    "Wong hosted Merz at a joint press conference, a Q&A and an official dinner. Germany is Singapore's largest European trading partner; the agreement follows the Sweden energy and public-policy agreements of 21 October and the Doha agreements of 20 October."
+   ],
+   "geopolitical": "Adding defence and security as a named pillar with Berlin, while Singapore is absorbing an Indonesian gas cut and preparing to chair ASEAN, is diversification away from both Washington and Beijing in the one area Singapore has historically kept bilateral and quiet. It is also Merz's answer to a Europe that has just split over whether to telephone Putin.",
+   "socioeconomic": "Industrial AI is the narrow slice of the AI build-out where Germany's machine-tool base and Singapore's chip and systems capacity actually fit together, and it is the slice least exposed to the consumer-AI valuations wobbling this week. Semiconductors and quantum in the research pillar matter more for jobs here than the headline trade numbers."
+  },
+  {
+   "headline": "SINGAPORE MOVES TO TIGHTEN THE HAZE LAW AFTER DISCOVERING IT CANNOT REACH THE COMPANIES IT NAMES",
+   "breaking": false,
+   "summary": [
+    "Grace Fu said Singapore is studying how to strengthen the Transboundary Haze Pollution Act and will introduce new legislation or amendments where necessary, and is \"prepared to use a wider range of legal, regulatory and economic measures\". She named the two things that have stopped it working: gathering evidence, and securing cooperation from firms abroad — Singapore may need a foreign government's consent to serve notices overseas, and a company can avoid investigation simply by staying outside Singapore.",
+    "The Act, passed in 2014, was invoked in 2015 without a single firm sued or fined. The 23 October notices to 10 Singapore-registered companies were the first use of that power since. Air quality has meanwhile returned to normal, with 24-hour PSI good to moderate and PM2.5 back in range."
+   ],
+   "geopolitical": "A minister conceding that extraterritorial reach depends on the cooperation of the government whose territory is burning is the clearest statement yet of why twelve years of this law produced nothing, and it lands as Singapore takes the ASEAN chair with haze on its agenda. Jakarta has already refused to declare a national disaster.",
+   "socioeconomic": "Amending the Act towards corporate accountability points at the Singapore-listed and Singapore-registered arms of plantation groups rather than at the burning itself, which is where the enforcement leverage actually is. For the 16-plus days of unhealthy air this season the legal remedy remains, for now, exactly what it was in 2015."
+  },
+  {
+   "headline": "SINGAPORE PUTS S$138 MILLION INTO FOOD RESEARCH AND SHIFTS THE TARGET FROM GROWING MORE TO ABSORBING SHOCKS",
+   "breaking": false,
+   "summary": [
+    "The five-year commitment is the third tranche, after S$309 million across 2020 and 2025, and the emphasis has moved: the Singapore Food Agency will fund data-and-modelling forecasting of climate and supply risks, shelf-life extension and stockpile management. Grace Fu said Singapore imports more than 90 per cent of its food and that raising domestic production alone would not insulate it from global disruption — a notable reframing for a country whose food policy has been organised around the 30-by-30 production goal.",
+    "Singapore also hosted a regional meeting on food security, agriculture and forestry the same day."
+   ],
+   "geopolitical": "Funding forecasting and stockpiles rather than yield is an admission that the binding constraint is other governments' export decisions, not Singapore's farm output — the same lesson Indonesia's gas cut delivered on energy a week ago.",
+   "socioeconomic": "Shelf-life extension and stockpile management are the two levers that touch household prices directly, by cutting waste in the import chain and smoothing a supply shock rather than preventing it. At over 90 per cent imported, a modelling capability that sees a shortage coming is worth more per dollar than another vertical farm."
+  },
+  {
+   "headline": "FIFTY-ONE CHILDREN FALL ILL AT TWO MOE KINDERGARTENS AND A THIRD SCHOOL CATERER IS SUSPENDED IN A YEAR",
+   "breaking": false,
+   "summary": [
+    "Fifty-one pupils and two employees across two MOE Kindergartens developed gastroenteritis, and Deli Hub Catering's food business operations were suspended. It is the third such suspension tied to a school or pre-school meal supplier in roughly a year: 60 pupils at River Valley Primary fell ill in January under the central-kitchen meal model, with operator Gourmetz now facing six food-safety charges, and E-Bridge pre-schools reported six incidents in November 2025."
+   ],
+   "geopolitical": "Not applicable — a domestic food-safety matter, though it bears directly on the centralised school-meal model Singapore has been expanding.",
+   "socioeconomic": "Three suspensions in a year across a system built on consolidating school meals into fewer, larger kitchens is the arithmetic of that model: each failure now reaches more children at once. Parents of MOE Kindergarten pupils have no alternative supplier to switch to, which is precisely why the inspection regime carries the whole risk."
+  }
+ ],
+ "word": {
+  "word": "formateur",
+  "pos": "noun",
+  "pronunciation": "for-ma-TUR",
+  "definition": "The person a head of state charges with assembling a governing coalition after an inconclusive election — and who, if successful, usually leads it.",
+  "etymology": "French, \"one who forms\", from Latin formare, to shape or form; adopted as a term of art in Dutch, Belgian and Israeli coalition politics, where no single party expects a majority.",
+  "example": "With Channel 12's exit poll at 52 seats to 50 and the Arab parties on 17-18 that Netanyahu will not sit with, Israel's next formateur may not be the leader of its largest party."
+ }
+}
