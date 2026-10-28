@@ -1,111 +1,112 @@
 {
  "schema": 1,
- "date": "2026-10-28",
- "generatedAt": "2026-10-28T07:22:00+08:00",
+ "date": "2026-10-29",
+ "generatedAt": "2026-10-29T07:13:00+08:00",
  "coverage": {
-  "from": "2026-10-27T07:00:00+08:00",
-  "to": "2026-10-28T07:00:00+08:00",
-  "label": "Tuesday 27 October 2026, 0700 SGT → Wednesday 28 October 2026, 0700 SGT"
+  "from": "2026-10-28T07:00:00+08:00",
+  "to": "2026-10-29T07:00:00+08:00",
+  "label": "Wednesday 28 October 2026, 0700 SGT → Thursday 29 October 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "ISRAEL VOTES ITSELF INTO DEADLOCK: NETANYAHU'S BLOC FALLS FROM 68 SEATS TO 50 AND ARAB PARTIES HOLD THE BALANCE",
+   "headline": "SPAIN'S WORST RAIL DISASTER IN 13 YEARS KILLS 68 AFTER CONTROLLERS SENT A TRAIN INTO ONE ALREADY STOPPED",
    "breaking": true,
    "summary": [
-    "Turnout hit 77.7 per cent, the highest since 1999 and far above 2022's pace, and the exit polls at 10pm gave neither side the 61 seats needed. Channel 12 put the change bloc on 52 and Netanyahu's on 50; Channel 13 had 53 to 50. Likud was nonetheless projected the largest single party on 24-25 seats, ahead of Gadi Eisenkot's Yashar on 21-23 and Naftali Bennett's B'Yachad on 12-14. Channel 14 was the lone outlier, giving Netanyahu 60.",
-    "The arithmetic that matters sits outside both blocs: the two Arab parties are projected at 17-18 seats, their strongest showing yet, and Netanyahu has ruled out governing with them. He spent election day accusing Arab citizens of \"trying to steal the elections\". Official results are due within eight days, by 4 November; exit polls have been wrong here before, and two right-wingers who broke with Netanyahu are already being floated as alternative prime ministers from within his own camp."
+    "A Renfe high-speed service from Madrid to Seville rear-ended a stationary IRYO train near Urda in Toledo province shortly before 9am Wednesday, killing at least 68 of the more than 500 people aboard and injuring over 100. Six Canadians were hurt and one is missing. It is Spain's deadliest rail accident since the 2013 Santiago de Compostela derailment.",
+    "Transport Minister Óscar Puente said a computer failure had halted six moving trains, and that controllers then issued an \"inexplicable\" order letting one proceed toward another stopped miles ahead; the drivers, he said, were not to blame. It is the second fatal collision in nine months on this line involving the same two operators — a January crash in Andalusia killed at least 40 and was traced to a broken rail joint."
    ],
-   "geopolitical": "An eight-month war with Iran has been fought by a government that may now lack the Knesset to continue it, and the reported directive that Chief of Staff Eyal Zamir demanded in writing becomes an inquiry risk rather than an order if Netanyahu goes. Washington's refusal to let Israel renew the assault before 3 November now meets an Israeli government that cannot be formed before then either.",
-   "socioeconomic": "A bloc that cannot reach 61 without parties it refuses to sit with points to weeks of coalition bargaining, and Israel enters it with a war budget and a grim official growth forecast already on the table. Palestinian citizens of Israel, who have no vote in the occupied territories that the next government will administer, have for the first time accumulated enough seats to price their exclusion."
+   "geopolitical": "Spain runs Europe's largest high-speed network and the world's second largest after China's, and sells it as an export and a model for continental rail integration; two mass-casualty collisions on one line in nine months puts that offer in question.",
+   "socioeconomic": "Rail journeys in Spain have surged about 40 per cent as passengers left air and road, and the failure sits at the human override of a system that had already stopped the trains — pointing the regulatory response at control-room authority, not track or rolling stock."
   },
   {
-   "headline": "THE OLESHKY TRUCE HOLDS AND WIDENS ACROSS KHERSON AS NORDIC LEADERS BREAK EUROPE'S YEAR-LONG SILENCE WITH PUTIN",
+   "headline": "ISRAEL'S COUNT REVERSES THE EXIT POLLS: NETANYAHU'S BLOC LEADS ON 53 SEATS, STILL EIGHT SHORT, AND ARAB PARTIES HIT A RECORD 19",
    "breaking": true,
    "summary": [
-    "The local ceasefire around the Russian-occupied city of Oleshky began in the early hours, brought forward two days, and both sides said it held: Ukraine's human rights ombudsman's office called it \"fully honoured\" as of 5.30pm. Melania Trump, whom the White House credits with brokering it, said it had been expanded within Kherson Oblast; the ombudsman's communications head said it now covers the whole oblast. Neither gave an end date.",
-    "Finland's Alexander Stubb and Norway's Jonas Gahr Store then spoke to Putin for about 90 minutes, the first call between pro-Ukrainian European leaders and the Russian president in more than a year, described as \"frank and substantive\" and, per Moscow's readout, requested by the Nordic side. Store said Putin gave assurances on humanitarian access. Other European capitals were openly split on whether the call should have happened, and Kyiv said it hoped for \"new momentum\". Separately, Trump is exploring lifting sanctions on the Russian Direct Investment Fund."
+    "With 85 to 90 per cent of ballots counted, the Central Elections Committee's tally put Netanyahu's bloc on 53 of the Knesset's 120 seats, Gadi Eisenkot's opposition bloc on 48 and the two Arab parties on 19 — their best ever, and a reversal of Tuesday's exit polls, which had the change bloc ahead 52-53 to 50. Neither bloc reaches 61. Three lists fell below the 3.25 per cent threshold, Reservists closest on 2.7 per cent.",
+    "Netanyahu and Eisenkot each told supporters after midnight that they would form the next government. Likud accused the Arab parties of \"stealing\" the election, without evidence, repeating Netanyahu's polling-day claim; far-right national security minister Itamar Ben-Gvir was among the night's clear losers. Official results are due by 4 November, the day after the US midterms, after which President Isaac Herzog must name a candidate for prime minister — his one non-ceremonial power."
    ],
-   "geopolitical": "A humanitarian corridor negotiated city by city, by a first lady and two Nordic leaders rather than by the bloc, is a working method that bypasses both Brussels and Kyiv's veto on talking to Moscow — and the European split over the call is the real story, because it is the precedent that will be cited next time. Sanctions relief for the RDIF would be the first material US concession of the war, offered while the fighting continues.",
-   "socioeconomic": "A truce that delivers aid into occupied territory and holds for a day is worth more to Kherson's remaining civilians than any communique, but it also normalises Russian administration of the areas it covers. Reopening Russia's sovereign investment vehicle to US capital would restart the deal pipeline that 2022 shut down, ahead of any settlement that might justify it."
+   "geopolitical": "Eisenkot can only reach 61 through the Arab parties, which much of his own bloc rejects, or by splitting defectors out of Netanyahu's camp — so the likeliest outcomes are a government led again by the man who fought the war, or a fourth election.",
+   "socioeconomic": "Palestinian citizens of Israel turned out in record numbers and converted it into 19 seats, enough to decide who governs while being the one bloc both sides have ruled out sitting with — a veto held by a group with no route to power."
   },
   {
-   "headline": "FLAVIO BOLSONARO FLEES BRAZIL WITH CANCELLED PASSPORTS AND WASHINGTON PROMISES HIM VISAS",
-   "breaking": true,
-   "summary": [
-    "A day after losing the runoff and being ordered to surrender his passports within 24 hours in a money-laundering investigation, the senator left for the United States. Brazil's Federal Police cancelled the passports when he did not comply, and a senior federal police official said he had not exited through any regular migration point. Argentina said it had no record of him entering.",
-    "A Trump adviser told CNN the president personally approved his entry, and a senior State Department official said: \"The State Department will issue visas to Flavio Bolsonaro and his family and allow them entry into the United States.\" Reports put him en route to Florida. His father Jair did the same thing in 2022, after refusing to concede to the same opponent."
-   ],
-   "geopolitical": "The United States has agreed to admit a sitting senator of an allied democracy who is evading that democracy's supreme court while under criminal investigation, days after Trump called the election rigged. It converts a Brazilian judicial matter into a bilateral one, and gives every future Latin American loser a known exit.",
-   "socioeconomic": "His Senate immunity ends early next year, which was the deadline the money-laundering case was moving towards; from Florida it stops being a deadline. Lula inherits a mandate whose legitimacy the defeated camp is contesting from abroad, with a disqualification case against his ticket still threatened."
-  },
-  {
-   "headline": "EGYPT ORDERS MADA MASR CLOSED AND FINES ITS EDITOR THE MAXIMUM, THEN LIFTS HER OUT OF THE COURTROOM",
+   "headline": "THE FED HOLDS AT 3.75-4% IN A 10-2 SPLIT — AND BOTH DISSENTS WANTED RATES HIGHER",
    "breaking": false,
    "summary": [
-    "The New Cairo Misdemeanour Court convicted editor-in-chief Lina Attalah of running an unlicensed website, fined her 3 million Egyptian pounds (about S$68,000; US$53,000) — the maximum for the offence — ordered the outlet shut and its equipment and devices confiscated. Mada Masr said security personnel lifted her out of the courtroom; Al Jazeera reported she was released once the fine was paid in full, while another outlet had her held pending payment.",
-    "Her lawyers said the judge refused them time to examine the evidence and barred them from calling witnesses, and will appeal the first-instance ruling. During release procedures Attalah learned she had also been sentenced in absentia in 2024 to a year in prison; a retrial hearing in that case is set for 11 November."
+    "The Federal Open Market Committee voted 10-2 on Wednesday to leave its benchmark range at 3.75 to 4 per cent, saying inflation \"remains elevated\" and that it would await the \"accumulation of more information\". Cleveland Fed president Beth Hammack and governor Lisa Cook dissented — both for a hike, not a cut. The committee raised rates 25 basis points in September, its first increase since July 2023.",
+    "Chair Kevin Warsh said politics played \"no role\" in a decision taken six days before the midterms, and restated his rejection of forward guidance \"absent exigent circumstances, absent a crisis\". He confirmed the Fed will hold fewer policy meetings from 2027, one of the eight given to strategy. US equities were mixed into big-tech earnings: Microsoft's cloud growth reassured, while Alphabet fell on a revenue miss and worsening cash burn."
    ],
-   "geopolitical": "Egypt spent the past fortnight positioning itself as the Gulf's mediator and Saudi Arabia's guarantor, and has now shut the last significant independent newsroom in the Arab world's largest country — a reminder to the partners courting Cairo of what domestic stability costs there. Licensing, not sedition, was the instrument, which is harder for allies to object to.",
-   "socioeconomic": "A ruling that closes an outlet over paperwork and confiscates its hardware tells every other Egyptian publisher that the licensing regime, not the penal code, is where the risk now sits. Mada Masr survived a decade of raids and arrests by staying online; the order removes the thing the arrests never managed to."
+   "geopolitical": "A central bank that has gone from cutting to hiking inside a year is absorbing a war-driven energy shock, with Brent around US$114 a barrel, and its refusal to pre-commit removes the one anchor foreign finance ministries had for 2027.",
+   "socioeconomic": "Two dissents for a hike is the signal, not the hold: the committee's hawkish tail thinks 4 per cent is too low with inflation above target, so the next move should be priced as up."
   },
   {
-   "headline": "RAMAPHOSA SENDS 510 SOLDIERS INTO KWAZULU-NATAL AS ANTI-MIGRANT VIOLENCE RUNS INTO AN ELECTION",
+   "headline": "WASHINGTON OPENS ACCESS TO SIX UNAPPROVED PEPTIDES BY SIMPLY PROMISING NOT TO ENFORCE THE LAW",
    "breaking": false,
    "summary": [
-    "The deployment, under the joint security operation Prosper, runs to 30 November at a cost of R34.1 million (about S$2.5 million), with Ramaphosa having notified Parliament in a written notice dated 21 October. Vehicles were torched and shops looted in Durban and Soweto, and a foreign national was allegedly beaten to death by a crowd in Durban last week.",
-    "The government traces the unrest to disinformation about a July Constitutional Court ruling that asylum seekers cannot be shut out of the asylum system on procedural grounds alone. Anti-migrant groups had called for nationwide protests; local government elections are on 4 November."
+    "The Department of Health and Human Services issued an enforcement-discretion policy saying it will not act against state-licensed pharmacies, federal facilities or licensed physicians compounding six peptides — BPC-157, epitalon, KPV, MOTS-c, semax and TB-500. None is FDA-approved, and none is on the agency's bulk-substances list, the lawful route to compounding them, which requires a proposed rule, public comment and a final rule.",
+    "FDA scientists had found insufficient data that the six are safe and effective. An FDA advisory committee backed them in July — a panel including six new appointees with ties to the peptide industry. The policy does newly require side effects to be reported, which was not previously mandated. Peter Lurie of the Center for Science in the Public Interest said the agency was \"turning a blind eye\"; the Partnership for Safe Medicines warned of \"untested dangerous substances\"."
    ],
-   "geopolitical": "A state deploying its army against its own citizens to protect foreign nationals, a week before a vote, is an admission that the police cannot hold the line — and a signal to the SADC neighbours whose nationals are the targets. The trigger being a misread court judgment makes the disinformation itself the security problem.",
-   "socioeconomic": "Looted and torched shops in township economies are overwhelmingly migrant-owned and uninsured, so the damage falls on the informal retail network those same townships buy from. A deployment that expires on 30 November leaves whatever the election produces to hold the peace alone."
+   "geopolitical": "Regulators from Brussels to Singapore defer to FDA decisions precisely because they are evidence-based and hard to reverse; a cabinet secretary routing around his own scientists by declining to prosecute is a template other health ministries can now be lobbied to follow.",
+   "socioeconomic": "Enforcement discretion creates a market without creating a standard: compounders can sell six substances immediately and at scale with no approved label, dosing or manufacturing requirement, and the only data will be adverse events reported after the fact."
+  },
+  {
+   "headline": "AFRICA CDC WARNS THE 'UNPRECEDENTED' EBOLA OUTBREAK COULD REACH BRITAIN AS CASES PASS 10,000",
+   "breaking": false,
+   "summary": [
+    "Dr Jean Kaseya, director general of the Africa Centres for Disease Control and Prevention, said the outbreak's \"unprecedented\" spread means it could reach the United Kingdom and other countries, and could spread like Covid unless more funding is secured for preparedness and treatment. Cases have passed 10,000 with almost 5,000 deaths, more than 4,600 of them in the Democratic Republic of Congo since May. Four countries are dealing with it.",
+    "The strain is Bundibugyo, for which there is no vaccine and no specific treatment; the licensed Ebola vaccines protect against the Zaire strain only. The WHO declared a public health emergency of international concern on 17 May. Nigeria, which confirmed its first case on 20 October, now has none after flying the patient — a 42-year-old Swiss citizen living in Abuja — to Geneva on 26 October; 52 contacts are being monitored and how she was infected is unresolved."
+   ],
+   "geopolitical": "Kaseya's appeal is about money rather than epidemiology, and it lands in a year when the donors who funded the 2014 and 2018 responses have cut global health budgets — so the warning about Britain converts an African funding gap into a European risk calculation.",
+   "socioeconomic": "A strain with no vaccine removes the tool that ended the last two large outbreaks and leaves only contact tracing, which is why 52 monitored contacts and an unexplained transmission chain matter more than the case count."
   }
  ],
  "singapore": [
   {
-   "headline": "MERZ IN SINGAPORE: A FIVE-PILLAR WORK PLAN PUTS DEFENCE AND INDUSTRIAL AI AT THE CENTRE OF THE GERMAN PARTNERSHIP",
+   "headline": "PM WONG PROPOSES A CROSS-BORDER AI INCIDENT REPORTING PILOT, ARGUING SAFETY DATA CANNOT COME ONLY FROM DEVELOPERS",
    "breaking": true,
    "summary": [
-    "PM Lawrence Wong and Chancellor Friedrich Merz announced a refreshed strategic partnership built on a five-pillar joint work plan: defence and security, trade, digitalisation and AI, science and innovation, and climate. The two said they would cooperate on developing and deploying industrial AI where their strengths complement each other, with joint research flagged in AI, advanced manufacturing, green technologies, semiconductors, quantum and space.",
-    "Wong hosted Merz at a joint press conference, a Q&A and an official dinner. Germany is Singapore's largest European trading partner; the agreement follows the Sweden energy and public-policy agreements of 21 October and the Doha agreements of 20 October."
+    "At a virtual leaders' meeting on frontier AI safety co-hosted by Norway and Finland, Prime Minister Lawrence Wong proposed that willing countries and organisations launch a pilot to share AI incident reports, starting with agreed incident categories and fields, then testing secure ways to exchange them. It would cover serious failures and near misses seen by governments, businesses and other users, including cases where no harm occurred and which fall outside existing reporting rules.",
+    "His argument: safety information about frontier models comes from the companies that build them, while the governments and organisations deploying them see failures first-hand. Wong called for a \"practical and flexible\" approach with voluntary participation, rejecting an \"elaborate new international architecture\" in favour of smaller cross-regional groups leading specific workstreams. Finland and Norway said expert-level talks would follow; no timetable was set."
    ],
-   "geopolitical": "Adding defence and security as a named pillar with Berlin, while Singapore is absorbing an Indonesian gas cut and preparing to chair ASEAN, is diversification away from both Washington and Beijing in the one area Singapore has historically kept bilateral and quiet. It is also Merz's answer to a Europe that has just split over whether to telephone Putin.",
-   "socioeconomic": "Industrial AI is the narrow slice of the AI build-out where Germany's machine-tool base and Singapore's chip and systems capacity actually fit together, and it is the slice least exposed to the consumer-AI valuations wobbling this week. Semiconductors and quantum in the research pillar matter more for jobs here than the headline trade numbers."
+   "geopolitical": "Singapore is proposing the one piece of AI governance that requires neither agreeing on values nor binding anyone — a shared incident vocabulary — and doing it at a Nordic-convened meeting rather than a UN or G7 process, a bid to set the plumbing before the blocs set the rules.",
+   "socioeconomic": "If near misses become reportable, the asymmetry that lets a vendor publish its own safety card and nothing else starts to close, and the deployers who carry the operational risk without the data — hospitals, banks, agencies — get a basis for procurement terms they can enforce."
   },
   {
-   "headline": "SINGAPORE MOVES TO TIGHTEN THE HAZE LAW AFTER DISCOVERING IT CANNOT REACH THE COMPANIES IT NAMES",
-   "breaking": false,
+   "headline": "THREE MINISTERS SUMMON THE TEN HAZE-LINKED FIRMS, AND SINGAPORE MOVES TO MAKE REFUSING INVESTIGATORS A CRIME",
+   "breaking": true,
    "summary": [
-    "Grace Fu said Singapore is studying how to strengthen the Transboundary Haze Pollution Act and will introduce new legislation or amendments where necessary, and is \"prepared to use a wider range of legal, regulatory and economic measures\". She named the two things that have stopped it working: gathering evidence, and securing cooperation from firms abroad — Singapore may need a foreign government's consent to serve notices overseas, and a company can avoid investigation simply by staying outside Singapore.",
-    "The Act, passed in 2014, was invoked in 2015 without a single firm sued or fined. The 23 October notices to 10 Singapore-registered companies were the first use of that power since. Air quality has meanwhile returned to normal, with 24-hour PSI good to moderate and PM2.5 back in range."
+    "Deputy Prime Minister Gan Kim Yong, Senior Minister K. Shanmugam and Minister Grace Fu met leaders of the 10 Singapore-registered palm oil and forestry firms served Section 10 notices by the National Environment Agency on 23 October: Asia Pulp & Paper, APP (China), Bumitama Agri, Golden Agri International, First Resources, Indofood Agri Resources, Kencana Agri, TSH Global Plantation, TSH Oversea and Wilmar International. All 10 were represented and pledged full cooperation. Shanmugam said the exercise is \"not to find scapegoats\", with responsibility for the fires still under investigation, but that the government is \"determined to act\".",
+    "Amendments to the Transboundary Haze Pollution Act will be tabled when Parliament next sits. They would require firms linked to the fires to give appointed investigators full access to their information, documents and premises, and make refusal — or failing to cooperate with independent assessors — an offence. NEA would set what assessors examine and receive their reports; the Act cannot currently compel a firm to appoint an investigator. Vivian Balakrishnan separately met President Prabowo Subianto in Jakarta and said both leaders are committed to moving quickly on a joint haze task force."
    ],
-   "geopolitical": "A minister conceding that extraterritorial reach depends on the cooperation of the government whose territory is burning is the clearest statement yet of why twelve years of this law produced nothing, and it lands as Singapore takes the ASEAN chair with haze on its agenda. Jakarta has already refused to declare a national disaster.",
-   "socioeconomic": "Amending the Act towards corporate accountability points at the Singapore-listed and Singapore-registered arms of plantation groups rather than at the burning itself, which is where the enforcement leverage actually is. For the 16-plus days of unhealthy air this season the legal remedy remains, for now, exactly what it was in 2015."
+   "geopolitical": "The amendment is an admission of the Act's core defect — Singapore cannot investigate on Indonesian soil — so the workaround is to criminalise non-cooperation by the Singapore-listed parent: extraterritorial reach through corporate registration rather than a treaty Jakarta would have to sign.",
+   "socioeconomic": "Ten of the region's largest agribusinesses now face a disclosure obligation enforced where they raise capital, turning haze exposure into a listing and financing risk rather than a reputational one; the open question is whether a group can still escape it by moving the relevant subsidiary out of Singapore."
   },
   {
-   "headline": "SINGAPORE PUTS S$138 MILLION INTO FOOD RESEARCH AND SHIFTS THE TARGET FROM GROWING MORE TO ABSORBING SHOCKS",
+   "headline": "HDB DROPS 1,200 PLANNED HOMES AT MAJU FOREST AND GILLMAN BARRACKS TO KEEP MORE TREES STANDING",
    "breaking": false,
    "summary": [
-    "The five-year commitment is the third tranche, after S$309 million across 2020 and 2025, and the emphasis has moved: the Singapore Food Agency will fund data-and-modelling forecasting of climate and supply risks, shelf-life extension and stockpile management. Grace Fu said Singapore imports more than 90 per cent of its food and that raising domestic production alone would not insulate it from global disruption — a notable reframing for a country whose food policy has been organised around the 30-by-30 production goal.",
-    "Singapore also hosted a regional meeting on food security, agriculture and forestry the same day."
+    "Revised plans cut about 400 flats at Maju Forest and about 800 homes at Gillman Barracks, leaving roughly 11,000 homes across the two sites over the next decade. Greenery retained at Maju Forest rises from about 8ha to 10ha, around 45 per cent of the 23ha site; at Gillman Barracks it goes from about 8ha to 12ha. Significant portions of both will be safeguarded as nature parks by the National Parks Board.",
+    "Minister of State Alvin Tan said HDB will build taller blocks where possible to intensify the remaining area. The Nature Society's Lester Tan and the Bird Society's president both called it a compromise and a better balance between development and conservation; some residents said they had hoped to be consulted on the revisions rather than told the outcome."
    ],
-   "geopolitical": "Funding forecasting and stockpiles rather than yield is an admission that the binding constraint is other governments' export decisions, not Singapore's farm output — the same lesson Indonesia's gas cut delivered on energy a week ago.",
-   "socioeconomic": "Shelf-life extension and stockpile management are the two levers that touch household prices directly, by cutting waste in the import chain and smoothing a supply shock rather than preventing it. At over 90 per cent imported, a modelling capability that sees a shortage coming is worth more per dollar than another vertical farm."
+   "geopolitical": "Not applicable — a domestic land-use decision, though it is the clearest case yet of Singapore's biodiversity lobby securing a measurable concession in a planning process.",
+   "socioeconomic": "Twelve hundred units is roughly a year of supply in a mature estate, and the state has chosen to absorb it by building upward rather than releasing more land — so the price of the trees is paid in height and density by the people who move in."
   },
   {
-   "headline": "FIFTY-ONE CHILDREN FALL ILL AT TWO MOE KINDERGARTENS AND A THIRD SCHOOL CATERER IS SUSPENDED IN A YEAR",
+   "headline": "EVERY MOE KINDERGARTEN TO GO FULL-DAY BY 2030, WITH ONE COMBINED FEE REPLACING TWO",
    "breaking": false,
    "summary": [
-    "Fifty-one pupils and two employees across two MOE Kindergartens developed gastroenteritis, and Deli Hub Catering's food business operations were suspended. It is the third such suspension tied to a school or pre-school meal supplier in roughly a year: 60 pupils at River Valley Primary fell ill in January under the central-kitchen meal model, with operator Gourmetz now facing six food-safety charges, and E-Bridge pre-schools reported six incidents in November 2025."
+    "The Ministry of Education will pilot a full-day model at MK@Rivervale and MK@West View in 2027 — both chosen because their premises and staffing already suit it — then move the remaining centres across in phases from 2028, reaching all MOE kindergartens by 2030. Full-day service runs 7am to 7pm on weekdays through school terms and holidays, combining learning, play and care in one MOE-run programme; parents who do not need it keep a half-day option to 12.30pm.",
+    "The structural change is the bill: one combined fee instead of separate kindergarten and KCare charges. Reported pilot fees for Singaporean children run from S$3 to S$425 a month after subsidies for the full day, against S$1 to S$160 for half days. It follows the Prime Minister's National Day Rally pledge in August to bring full-day fees at government-supported preschools down to S$150 a month by 2030."
    ],
-   "geopolitical": "Not applicable — a domestic food-safety matter, though it bears directly on the centralised school-meal model Singapore has been expanding.",
-   "socioeconomic": "Three suspensions in a year across a system built on consolidating school meals into fewer, larger kitchens is the arithmetic of that model: each failure now reaches more children at once. Parents of MOE Kindergarten pupils have no alternative supplier to switch to, which is precisely why the inspection regime carries the whole risk."
+   "geopolitical": "Not applicable — domestic education and family policy.",
+   "socioeconomic": "The split between a half-day kindergarten and a separately-billed care service is the main reason MOE kindergartens were unusable for two working parents, who went to anchor operators instead; one programme and one bill makes the state's cheapest preschool a realistic option for them, and sets the benchmark private operators must price against."
   }
  ],
  "word": {
-  "word": "formateur",
+  "word": "nostrum",
   "pos": "noun",
-  "pronunciation": "for-ma-TUR",
-  "definition": "The person a head of state charges with assembling a governing coalition after an inconclusive election — and who, if successful, usually leads it.",
-  "etymology": "French, \"one who forms\", from Latin formare, to shape or form; adopted as a term of art in Dutch, Belgian and Israeli coalition politics, where no single party expects a majority.",
-  "example": "With Channel 12's exit poll at 52 seats to 50 and the Arab parties on 17-18 that Netanyahu will not sit with, Israel's next formateur may not be the leader of its largest party."
+  "pronunciation": "NOS-trəm (/ˈnɒstrəm/)",
+  "definition": "A medicine of unproven effectiveness, especially one promoted by its own maker; by extension, a pet scheme offered as a cure-all.",
+  "etymology": "From Latin nostrum, 'our own', the neuter of noster. Apothecaries labelled their house preparations nostrum remedium, 'our own remedy'; the word kept the self-certification and lost the authority.",
+  "example": "By declining to prosecute anyone compounding six peptides its own scientists call unproven, Washington has moved the nostrum from the margins of the supplement trade onto the shelves of licensed pharmacies."
  }
 }

@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-10-29",
+ "generatedAt": "2026-10-29T07:13:00+08:00",
+ "coverage": {
+  "from": "2026-10-28T07:00:00+08:00",
+  "to": "2026-10-29T07:00:00+08:00",
+  "label": "Wednesday 28 October 2026, 0700 SGT → Thursday 29 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "SPAIN'S WORST RAIL DISASTER IN 13 YEARS KILLS 68 AFTER CONTROLLERS SENT A TRAIN INTO ONE ALREADY STOPPED",
+   "breaking": true,
+   "summary": [
+    "A Renfe high-speed service from Madrid to Seville rear-ended a stationary IRYO train near Urda in Toledo province shortly before 9am Wednesday, killing at least 68 of the more than 500 people aboard and injuring over 100. Six Canadians were hurt and one is missing. It is Spain's deadliest rail accident since the 2013 Santiago de Compostela derailment.",
+    "Transport Minister Óscar Puente said a computer failure had halted six moving trains, and that controllers then issued an \"inexplicable\" order letting one proceed toward another stopped miles ahead; the drivers, he said, were not to blame. It is the second fatal collision in nine months on this line involving the same two operators — a January crash in Andalusia killed at least 40 and was traced to a broken rail joint."
+   ],
+   "geopolitical": "Spain runs Europe's largest high-speed network and the world's second largest after China's, and sells it as an export and a model for continental rail integration; two mass-casualty collisions on one line in nine months puts that offer in question.",
+   "socioeconomic": "Rail journeys in Spain have surged about 40 per cent as passengers left air and road, and the failure sits at the human override of a system that had already stopped the trains — pointing the regulatory response at control-room authority, not track or rolling stock."
+  },
+  {
+   "headline": "ISRAEL'S COUNT REVERSES THE EXIT POLLS: NETANYAHU'S BLOC LEADS ON 53 SEATS, STILL EIGHT SHORT, AND ARAB PARTIES HIT A RECORD 19",
+   "breaking": true,
+   "summary": [
+    "With 85 to 90 per cent of ballots counted, the Central Elections Committee's tally put Netanyahu's bloc on 53 of the Knesset's 120 seats, Gadi Eisenkot's opposition bloc on 48 and the two Arab parties on 19 — their best ever, and a reversal of Tuesday's exit polls, which had the change bloc ahead 52-53 to 50. Neither bloc reaches 61. Three lists fell below the 3.25 per cent threshold, Reservists closest on 2.7 per cent.",
+    "Netanyahu and Eisenkot each told supporters after midnight that they would form the next government. Likud accused the Arab parties of \"stealing\" the election, without evidence, repeating Netanyahu's polling-day claim; far-right national security minister Itamar Ben-Gvir was among the night's clear losers. Official results are due by 4 November, the day after the US midterms, after which President Isaac Herzog must name a candidate for prime minister — his one non-ceremonial power."
+   ],
+   "geopolitical": "Eisenkot can only reach 61 through the Arab parties, which much of his own bloc rejects, or by splitting defectors out of Netanyahu's camp — so the likeliest outcomes are a government led again by the man who fought the war, or a fourth election.",
+   "socioeconomic": "Palestinian citizens of Israel turned out in record numbers and converted it into 19 seats, enough to decide who governs while being the one bloc both sides have ruled out sitting with — a veto held by a group with no route to power."
+  },
+  {
+   "headline": "THE FED HOLDS AT 3.75-4% IN A 10-2 SPLIT — AND BOTH DISSENTS WANTED RATES HIGHER",
+   "breaking": false,
+   "summary": [
+    "The Federal Open Market Committee voted 10-2 on Wednesday to leave its benchmark range at 3.75 to 4 per cent, saying inflation \"remains elevated\" and that it would await the \"accumulation of more information\". Cleveland Fed president Beth Hammack and governor Lisa Cook dissented — both for a hike, not a cut. The committee raised rates 25 basis points in September, its first increase since July 2023.",
+    "Chair Kevin Warsh said politics played \"no role\" in a decision taken six days before the midterms, and restated his rejection of forward guidance \"absent exigent circumstances, absent a crisis\". He confirmed the Fed will hold fewer policy meetings from 2027, one of the eight given to strategy. US equities were mixed into big-tech earnings: Microsoft's cloud growth reassured, while Alphabet fell on a revenue miss and worsening cash burn."
+   ],
+   "geopolitical": "A central bank that has gone from cutting to hiking inside a year is absorbing a war-driven energy shock, with Brent around US$114 a barrel, and its refusal to pre-commit removes the one anchor foreign finance ministries had for 2027.",
+   "socioeconomic": "Two dissents for a hike is the signal, not the hold: the committee's hawkish tail thinks 4 per cent is too low with inflation above target, so the next move should be priced as up."
+  },
+  {
+   "headline": "WASHINGTON OPENS ACCESS TO SIX UNAPPROVED PEPTIDES BY SIMPLY PROMISING NOT TO ENFORCE THE LAW",
+   "breaking": false,
+   "summary": [
+    "The Department of Health and Human Services issued an enforcement-discretion policy saying it will not act against state-licensed pharmacies, federal facilities or licensed physicians compounding six peptides — BPC-157, epitalon, KPV, MOTS-c, semax and TB-500. None is FDA-approved, and none is on the agency's bulk-substances list, the lawful route to compounding them, which requires a proposed rule, public comment and a final rule.",
+    "FDA scientists had found insufficient data that the six are safe and effective. An FDA advisory committee backed them in July — a panel including six new appointees with ties to the peptide industry. The policy does newly require side effects to be reported, which was not previously mandated. Peter Lurie of the Center for Science in the Public Interest said the agency was \"turning a blind eye\"; the Partnership for Safe Medicines warned of \"untested dangerous substances\"."
+   ],
+   "geopolitical": "Regulators from Brussels to Singapore defer to FDA decisions precisely because they are evidence-based and hard to reverse; a cabinet secretary routing around his own scientists by declining to prosecute is a template other health ministries can now be lobbied to follow.",
+   "socioeconomic": "Enforcement discretion creates a market without creating a standard: compounders can sell six substances immediately and at scale with no approved label, dosing or manufacturing requirement, and the only data will be adverse events reported after the fact."
+  },
+  {
+   "headline": "AFRICA CDC WARNS THE 'UNPRECEDENTED' EBOLA OUTBREAK COULD REACH BRITAIN AS CASES PASS 10,000",
+   "breaking": false,
+   "summary": [
+    "Dr Jean Kaseya, director general of the Africa Centres for Disease Control and Prevention, said the outbreak's \"unprecedented\" spread means it could reach the United Kingdom and other countries, and could spread like Covid unless more funding is secured for preparedness and treatment. Cases have passed 10,000 with almost 5,000 deaths, more than 4,600 of them in the Democratic Republic of Congo since May. Four countries are dealing with it.",
+    "The strain is Bundibugyo, for which there is no vaccine and no specific treatment; the licensed Ebola vaccines protect against the Zaire strain only. The WHO declared a public health emergency of international concern on 17 May. Nigeria, which confirmed its first case on 20 October, now has none after flying the patient — a 42-year-old Swiss citizen living in Abuja — to Geneva on 26 October; 52 contacts are being monitored and how she was infected is unresolved."
+   ],
+   "geopolitical": "Kaseya's appeal is about money rather than epidemiology, and it lands in a year when the donors who funded the 2014 and 2018 responses have cut global health budgets — so the warning about Britain converts an African funding gap into a European risk calculation.",
+   "socioeconomic": "A strain with no vaccine removes the tool that ended the last two large outbreaks and leaves only contact tracing, which is why 52 monitored contacts and an unexplained transmission chain matter more than the case count."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "PM WONG PROPOSES A CROSS-BORDER AI INCIDENT REPORTING PILOT, ARGUING SAFETY DATA CANNOT COME ONLY FROM DEVELOPERS",
+   "breaking": true,
+   "summary": [
+    "At a virtual leaders' meeting on frontier AI safety co-hosted by Norway and Finland, Prime Minister Lawrence Wong proposed that willing countries and organisations launch a pilot to share AI incident reports, starting with agreed incident categories and fields, then testing secure ways to exchange them. It would cover serious failures and near misses seen by governments, businesses and other users, including cases where no harm occurred and which fall outside existing reporting rules.",
+    "His argument: safety information about frontier models comes from the companies that build them, while the governments and organisations deploying them see failures first-hand. Wong called for a \"practical and flexible\" approach with voluntary participation, rejecting an \"elaborate new international architecture\" in favour of smaller cross-regional groups leading specific workstreams. Finland and Norway said expert-level talks would follow; no timetable was set."
+   ],
+   "geopolitical": "Singapore is proposing the one piece of AI governance that requires neither agreeing on values nor binding anyone — a shared incident vocabulary — and doing it at a Nordic-convened meeting rather than a UN or G7 process, a bid to set the plumbing before the blocs set the rules.",
+   "socioeconomic": "If near misses become reportable, the asymmetry that lets a vendor publish its own safety card and nothing else starts to close, and the deployers who carry the operational risk without the data — hospitals, banks, agencies — get a basis for procurement terms they can enforce."
+  },
+  {
+   "headline": "THREE MINISTERS SUMMON THE TEN HAZE-LINKED FIRMS, AND SINGAPORE MOVES TO MAKE REFUSING INVESTIGATORS A CRIME",
+   "breaking": true,
+   "summary": [
+    "Deputy Prime Minister Gan Kim Yong, Senior Minister K. Shanmugam and Minister Grace Fu met leaders of the 10 Singapore-registered palm oil and forestry firms served Section 10 notices by the National Environment Agency on 23 October: Asia Pulp & Paper, APP (China), Bumitama Agri, Golden Agri International, First Resources, Indofood Agri Resources, Kencana Agri, TSH Global Plantation, TSH Oversea and Wilmar International. All 10 were represented and pledged full cooperation. Shanmugam said the exercise is \"not to find scapegoats\", with responsibility for the fires still under investigation, but that the government is \"determined to act\".",
+    "Amendments to the Transboundary Haze Pollution Act will be tabled when Parliament next sits. They would require firms linked to the fires to give appointed investigators full access to their information, documents and premises, and make refusal — or failing to cooperate with independent assessors — an offence. NEA would set what assessors examine and receive their reports; the Act cannot currently compel a firm to appoint an investigator. Vivian Balakrishnan separately met President Prabowo Subianto in Jakarta and said both leaders are committed to moving quickly on a joint haze task force."
+   ],
+   "geopolitical": "The amendment is an admission of the Act's core defect — Singapore cannot investigate on Indonesian soil — so the workaround is to criminalise non-cooperation by the Singapore-listed parent: extraterritorial reach through corporate registration rather than a treaty Jakarta would have to sign.",
+   "socioeconomic": "Ten of the region's largest agribusinesses now face a disclosure obligation enforced where they raise capital, turning haze exposure into a listing and financing risk rather than a reputational one; the open question is whether a group can still escape it by moving the relevant subsidiary out of Singapore."
+  },
+  {
+   "headline": "HDB DROPS 1,200 PLANNED HOMES AT MAJU FOREST AND GILLMAN BARRACKS TO KEEP MORE TREES STANDING",
+   "breaking": false,
+   "summary": [
+    "Revised plans cut about 400 flats at Maju Forest and about 800 homes at Gillman Barracks, leaving roughly 11,000 homes across the two sites over the next decade. Greenery retained at Maju Forest rises from about 8ha to 10ha, around 45 per cent of the 23ha site; at Gillman Barracks it goes from about 8ha to 12ha. Significant portions of both will be safeguarded as nature parks by the National Parks Board.",
+    "Minister of State Alvin Tan said HDB will build taller blocks where possible to intensify the remaining area. The Nature Society's Lester Tan and the Bird Society's president both called it a compromise and a better balance between development and conservation; some residents said they had hoped to be consulted on the revisions rather than told the outcome."
+   ],
+   "geopolitical": "Not applicable — a domestic land-use decision, though it is the clearest case yet of Singapore's biodiversity lobby securing a measurable concession in a planning process.",
+   "socioeconomic": "Twelve hundred units is roughly a year of supply in a mature estate, and the state has chosen to absorb it by building upward rather than releasing more land — so the price of the trees is paid in height and density by the people who move in."
+  },
+  {
+   "headline": "EVERY MOE KINDERGARTEN TO GO FULL-DAY BY 2030, WITH ONE COMBINED FEE REPLACING TWO",
+   "breaking": false,
+   "summary": [
+    "The Ministry of Education will pilot a full-day model at MK@Rivervale and MK@West View in 2027 — both chosen because their premises and staffing already suit it — then move the remaining centres across in phases from 2028, reaching all MOE kindergartens by 2030. Full-day service runs 7am to 7pm on weekdays through school terms and holidays, combining learning, play and care in one MOE-run programme; parents who do not need it keep a half-day option to 12.30pm.",
+    "The structural change is the bill: one combined fee instead of separate kindergarten and KCare charges. Reported pilot fees for Singaporean children run from S$3 to S$425 a month after subsidies for the full day, against S$1 to S$160 for half days. It follows the Prime Minister's National Day Rally pledge in August to bring full-day fees at government-supported preschools down to S$150 a month by 2030."
+   ],
+   "geopolitical": "Not applicable — domestic education and family policy.",
+   "socioeconomic": "The split between a half-day kindergarten and a separately-billed care service is the main reason MOE kindergartens were unusable for two working parents, who went to anchor operators instead; one programme and one bill makes the state's cheapest preschool a realistic option for them, and sets the benchmark private operators must price against."
+  }
+ ],
+ "word": {
+  "word": "nostrum",
+  "pos": "noun",
+  "pronunciation": "NOS-trəm (/ˈnɒstrəm/)",
+  "definition": "A medicine of unproven effectiveness, especially one promoted by its own maker; by extension, a pet scheme offered as a cure-all.",
+  "etymology": "From Latin nostrum, 'our own', the neuter of noster. Apothecaries labelled their house preparations nostrum remedium, 'our own remedy'; the word kept the self-certification and lost the authority.",
+  "example": "By declining to prosecute anyone compounding six peptides its own scientists call unproven, Washington has moved the nostrum from the margins of the supplement trade onto the shelves of licensed pharmacies."
+ }
+}
