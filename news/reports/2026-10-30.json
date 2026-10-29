@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-10-30",
+ "generatedAt": "2026-10-30T07:17:00+08:00",
+ "coverage": {
+  "from": "2026-10-29T07:00:00+08:00",
+  "to": "2026-10-30T07:00:00+08:00",
+  "label": "Thursday 29 October 2026, 0700 SGT → Friday 30 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "BILLIONS DRAIN OUT OF BINANCE'S HOT WALLETS, AND TETHER AND CIRCLE FREEZE US$2.38 BILLION OF IT MID-FLIGHT",
+   "breaking": true,
+   "summary": [
+    "Binance said it was investigating a \"potential security issue\" after large outflows from several Ethereum hot wallets on Thursday, including a transfer of 167,464 ETH from the wallet labelled Binance 14 to an address funded only through the Tornado Cash mixer. The exchange says it has not confirmed any impact on user funds; Binance.US was unaffected. Founder Changpeng Zhao, who no longer runs it, said it \"does look like a hack\" and expects balances to be covered in full.",
+    "Tether froze about US$1.57 billion of USDT and Circle more than US$800 million of USDC, a combined US$2.38 billion, with Circle's Jeremy Allaire saying the company acted alongside law enforcement; co-founder Yi He said Ripple froze a further US$200 million. Estimates of what actually left range from US$1.7 billion to over US$5 billion and none is confirmed. The previous record exchange theft was Bybit's US$1.5 billion in February 2025."
+   ],
+   "geopolitical": "Two private issuers immobilised billions of dollars of settled blockchain value within hours on their own authority — the clearest demonstration yet that dollar stablecoins carry a freeze switch needing no court order, a capability regulators will now assume exists and sanctioned states will assume can be turned on them.",
+   "socioeconomic": "Binance holds the largest share of retail crypto balances in the world, so whether the loss lands on its own reserves or on users is the question that matters to holders; with a large part of the proceeds frozen rather than laundered, recovery and not the headline figure will set the final bill."
+  },
+  {
+   "headline": "LAGARDE QUITS THE ECB EIGHT MONTHS EARLY SO SHE CAN SAY WHAT SHE THINKS, LEAVING THREE BOARD SEATS OPEN AT ONCE",
+   "breaking": true,
+   "summary": [
+    "Christine Lagarde announced in a video message that she will leave the European Central Bank presidency on 7 February, eight months before her term ends, saying she wants \"the freedom of speech, the freedom of expression and the freedom to engage on matters that are not monetary policy matters\". The timing hands the current set of EU leaders the succession before France's presidential election; Klaas Knot, former head of the Dutch central bank, and Pablo Hernández de Cos, now general manager of the Bank for International Settlements, are the names in circulation.",
+    "Her exit opens a third executive-board vacancy: Isabel Schnabel leaves for the IMF on 3 January and chief economist Philip Lane's term ends on 31 May, so one package deal will apportion the bank's top jobs among member states. The same day, the governing council held its benchmark rate at 2.5 per cent against annual inflation of 3.8 per cent."
+   ],
+   "geopolitical": "Rotating the ECB presidency ahead of a French election rather than on its own schedule invites the reading a critic quoted by Reuters gave it — that a departure timed around national politics damages trust in the institution — and puts the euro area's most senior unelected office into the same bargaining round as the other EU top jobs.",
+   "socioeconomic": "A bank holding rates 1.3 percentage points below headline inflation is already making a contested call on whether the Iran-war energy shock passes through, and it will now make it through a winter in which the president, the chief economist and one other board member are all either leaving or newly arrived."
+  },
+  {
+   "headline": "ALPHABET LOSES HALF A TRILLION DOLLARS IN A DAY — ITS WORST EVER — AS THE MARKET STARTS PRICING AI SPENDING AS A COST",
+   "breaking": false,
+   "summary": [
+    "Alphabet fell 12.6 per cent on Thursday, its steepest one-day drop on record — past the 11.63 per cent of March 2020 — wiping roughly US$480 billion of market value, second only to Nvidia's US$589 billion fall in January 2025. The trigger was a rare revenue miss, US$127.6 billion against US$128.2 billion expected, even as Google Cloud revenue doubled to US$30.7 billion. What investors fixed on was capital spending: more than doubled to US$51.4 billion in the quarter, pushing free cash flow to minus US$9.1 billion for a second straight quarter.",
+    "Amazon fell about 10 per cent after hours on soft fourth-quarter guidance and its own cash burn; Intel dropped around 20 per cent after a quarter in which AI demand hurt parts of its business. The Nasdaq closed down 1.4 per cent, the S&P 500 and the Dow about 0.3 per cent."
+   ],
+   "geopolitical": "The data-centre buildout is the material basis of every national AI strategy now being written, Singapore's included, and a capital-markets verdict that the spending is not yet earning its keep is the first constraint on it no government controls.",
+   "socioeconomic": "Negative free cash flow at the most profitable advertising business in history means the buildout is funded from balance sheets and debt rather than earnings — which is what turns an equity repricing into a funding problem for the smaller suppliers, utilities and developers holding long contracts against it."
+  },
+  {
+   "headline": "HONG KONG'S HOUSING SECRETARY RESIGNS AND JOHN LEE BOWS AS A JUDGE'S REPORT BLAMES FOUR DEPARTMENTS FOR 168 FIRE DEATHS",
+   "breaking": false,
+   "summary": [
+    "A judge-led panel's report of more than 1,000 pages into the Wang Fuk Court fire in Tai Po found wide governance and supervisory failings across the building-renovation system, and held four government departments partly responsible. Chief Executive John Lee and seven other senior officials bowed at the news conference; Lee apologised and promised swift, extensive reform of the building industry and its regulation.",
+    "Housing Secretary Winnie Ho resigned, with Lee saying she \"should bear political responsibility\" though no personal wrongdoing was found. The fire broke out on 26 November 2025 and spread through seven 31-storey blocks, killing 168 — the city's deadliest since 1948; seven individuals and two companies have been charged, including with manslaughter, and at least 35 people arrested."
+   ],
+   "geopolitical": "A principal official resigning over a policy failure is close to unknown in post-2020 Hong Kong, where accountability has been owed upward rather than to the public, and Beijing's willingness to let one happen marks the limit of what the current governing arrangement can absorb without a political cost.",
+   "socioeconomic": "The findings land on the renovation-tender chain — the contractors, consultants and owners' corporations that maintain Hong Kong's ageing estates — so reform will raise the cost and lengthen the timetable of refurbishment across tens of thousands of flats already behind schedule."
+  },
+  {
+   "headline": "CHINA EXPELS 33 SENIOR OFFICIALS AT ONCE, INCLUDING THE MAN WHO RAN ITS MILITARY, IN THE BIGGEST PURGE SINCE MAO",
+   "breaking": false,
+   "summary": [
+    "The Fifth Plenum of the 20th Central Committee closed with the party ratifying the expulsion of 33 senior figures, the largest single tranche since Mao. They include Zhang Youxia, until recently vice chairman of the Central Military Commission and the most senior uniformed officer in the country; Liu Zhenli, who ran the Joint Staff Department; former Politburo member Ma Xingrui; former international liaison chief Liu Jianchao; and former industry minister Jin Zhuanglong. Financial regulator Li Yunze lost his party post.",
+    "Zhang Shengmin, the discipline officer who drove the purge of the military's top ranks, was elected to the Politburo. Only 162 of 205 full Central Committee members attended, the highest absence rate of the post-Mao era. The 21st Party Congress, at which Xi Jinping's fourth term would be settled, was set for the second half of next year."
+   ],
+   "geopolitical": "Removing the officer who commanded the People's Liberation Army and the one who ran its joint staff, in the same session, strips out the top of the chain that would plan any Taiwan or South China Sea operation and is the strongest available evidence that Beijing's military leadership is being rebuilt rather than readied.",
+   "socioeconomic": "Taking in a financial regulator and an industry minister alongside the generals shows the discipline machinery running through the agencies that license banks and set industrial policy, which is where foreign investors read political risk — and 43 empty seats at the party's own plenum measures how wide the net has gone."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "MAS CLOSES THE PRIVATE-HIRE LOOPHOLE: CAR LOAN CAPS NOW APPLY TO INDIVIDUALS BUYING PHCS FROM TODAY",
+   "breaking": true,
+   "summary": [
+    "The Monetary Authority of Singapore extended its motor-vehicle financing restrictions to private-hire cars bought by individuals, including sole proprietors, for sales agreements signed on or after 30 October — or, absent an agreement, where the COE is obtained from that date. The caps are the standard ones: 70 per cent of the purchase price including taxes and COE where the open market value is S$20,000 or below, 60 per cent above that, and a seven-year maximum tenure.",
+    "The rules bind banks, finance companies and licensed or exempt moneylenders, and cover hire-purchase and conditional sale agreements. PHCs had been exempt so as not to restrict credit to businesses and drivers who depend on them; MAS said in 2019 it was studying ways to stop buyers using the exemption to borrow beyond the limits."
+   ],
+   "geopolitical": "Nothing external turns on this, beyond the reminder that Singapore enforces household-credit limits by closing definitional gaps rather than raising headline caps — the same instrument used on property loans.",
+   "socioeconomic": "A buyer of a S$180,000 private-hire car who could previously finance almost all of it must now find roughly S$72,000 upfront, which prices out the marginal owner-driver and pushes the fleet further toward companies that lease to drivers — arriving just as the COE review is already squeezing the mass-market end of the market."
+  },
+  {
+   "headline": "ANTI-VIOLENCE HELPLINE REPORTS JUMP 49% IN A YEAR, AND MSF COUNTS HUSBANDS AS ONE IN FIVE SPOUSAL VICTIMS FOR THE FIRST TIME",
+   "breaking": true,
+   "summary": [
+    "The National Anti-Violence and Sexual Harassment Helpline took 16,525 reports in 2025, up from 11,068 in 2024, according to MSF's Domestic Violence Trends Report. Its Protective Service took on 1,917 higher-risk child abuse cases for statutory intervention — 969 children directly abused or neglected, 948 exposed to abuse — with seven to 12-year-olds the largest group. Children accounted for 2,476 of 4,686 new low- and moderate-risk cases. MSF attributes part of the rise to better detection and earlier reporting.",
+    "The report gave a gender breakdown of spousal violence for the first time: 82 per cent of victims were wives and 18 per cent husbands, with 337 cases involving a husband as the victim, up 12 per cent from 302 in 2024."
+   ],
+   "geopolitical": "Not an external story, but publishing a male-victim figure at all puts Singapore ahead of most of the region in measuring a category its family-violence law already covers in gender-neutral terms.",
+   "socioeconomic": "A 49 per cent rise in reports against a far smaller rise in substantiated cases is a capacity problem before it is a crime problem: the load falls on Protective Service caseworkers, Family Service Centres and the Family Justice Courts, with more than half the lower-risk caseload depending on school and preschool staff to spot."
+  },
+  {
+   "headline": "GOOGLE OPENS A HEALTH RESEARCH HUB IN SINGAPORE AND WILL BUILD AN AI HEALTH COACH INTO NHG'S HEALTHBOT",
+   "breaking": false,
+   "summary": [
+    "At its first Google for Health Summit, in Singapore on Thursday, Google said it would set up a health research hub here and run a Population Health Digital Transformation Programme with NHG Health. It pairs a predictive model — NHG's de-identified population health database plus Google's geospatial tools and aggregated climate, environmental, search and behavioural signals — with an AI health coach on NHG HealthBot, running on Gemini Enterprise. A nine-month proof-of-concept opens to a selected group in the first quarter of 2027, expected to include Healthier SG enrollees who have not turned up for screening.",
+    "Separately, NUHS is evaluating a DeepMind \"AI co-clinician\" for doctors. Senior Minister of State Tan Kiat How spoke at the summit; neither organisation has announced a national rollout or published outcome evidence."
+   ],
+   "geopolitical": "A US frontier-model developer putting health research capacity into Singapore, days after the Prime Minister proposed cross-border AI incident reporting, is the practical form of the bet that hosting the companies buys influence over how their systems are governed.",
+   "socioeconomic": "Targeting the Healthier SG enrollees who signed up but never came for screening aims the tool at the exact gap that limits the programme's value, and it means a commercial model will be reading de-identified national health records to decide who gets nudged — which is why the nine-month study, not the announcement, is the thing to judge."
+  },
+  {
+   "headline": "THE MONSOON TURNS AND NEA SAYS THE HAZE RISK FALLS, AFTER TEN UNHEALTHY-OR-WORSE DAYS IN TWELVE",
+   "breaking": false,
+   "summary": [
+    "NEA and the Meteorological Service said inter-monsoon conditions have progressively set in as the Southwest Monsoon weakens, turning a steady southeasterly or southwesterly flow into light, variable winds — so smoke from Sumatran and Kalimantan fires is far less likely to reach Singapore. Showers were forecast for Friday over Sumatra, Kalimantan and Singapore, with the day's 24-hour PSI forecast at 60 to 90, in the Moderate band.",
+    "Between 16 and 28 October air quality reached Unhealthy levels on seven days and Very Unhealthy on three. Preventive Measure Notices under the Transboundary Haze Pollution Act stand against 10 Indonesian companies, seven over Sumatra and three over Kalimantan. The ASEAN Specialist Meteorological Centre warned hotspots stay elevated wherever dry weather persists."
+   ],
+   "geopolitical": "The season ending on a wind shift rather than on anything Singapore or Jakarta did is the argument for the enforcement route the government chose this month — the notices and the planned Act amendments outlast the monsoon, the weather does not.",
+   "socioeconomic": "Three weeks of unhealthy air cost outdoor work hours, school activities and an N95 stockpile release; relief arriving by meteorology means the schools, employers and clinics that improvised through it get no standing protocol out of it unless the Act amendments supply one."
+  }
+ ],
+ "word": {
+  "word": "lustration",
+  "pos": "noun",
+  "pronunciation": "luh-STRAY-shuhn (/lʌˈstreɪʃən/)",
+  "definition": "A ceremonial purification; in modern political usage, the vetting and removal of officials judged compromised or disloyal, carried out as a cleansing of the state.",
+  "etymology": "From Latin lustratio, from lustrare, 'to purify by sacrifice'. Rome's lustrum was the rite closing each five-year census, which is why lustrum also came to mean the five years themselves. Post-communist Europe revived the word in the 1990s for laws screening former secret-police collaborators out of public office.",
+  "example": "Expelling 33 senior figures in one session, the army's former commander among them, the Fifth Plenum turned a discipline review into a lustration — and 43 absent Central Committee members measured how far it had reached."
+ }
+}
