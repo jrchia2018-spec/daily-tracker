@@ -1,0 +1,121 @@
+{
+ "schema": 1,
+ "date": "2026-10-31",
+ "generatedAt": "2026-10-31T07:16:00+08:00",
+ "coverage": {
+  "from": "2026-10-30T07:00:00+08:00",
+  "to": "2026-10-31T07:00:00+08:00",
+  "label": "Friday 30 October 2026, 0700 SGT → Saturday 31 October 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "BINANCE'S LOSS IS PUT AT ABOUT S$8 BILLION, CRYPTO'S LARGEST THEFT, AND THREE FORENSICS FIRMS PIN IT ON NORTH KOREA",
+   "breaking": true,
+   "summary": [
+    "Yesterday's unconfirmed drain is now quantified. TRM Labs put the outflow at about S$8 billion (US$6.36 billion), most of it moved in roughly 20 minutes, and attributed it to TraderTraitor, which it identifies as North Korea's elite crypto-theft unit; Chainalysis and Elliptic independently pointed to Pyongyang. The evidence indicates a compromise of Binance's hot-wallet signing infrastructure, with one account naming a staff laptop as the way in.",
+    "That is roughly four times the US$1.5 billion taken from Bybit in February 2025, the previous record. Binance has suspended deposits and withdrawals and says user funds are safe, without publishing proof; about US$3 billion has been frozen with partners, up from the US$2.38 billion Tether and Circle immobilised on Thursday. Binance has named no perpetrator."
+   ],
+   "geopolitical": "One night has delivered Pyongyang a sum on the order of its annual export earnings, outside every sanctions channel built to stop exactly that — which makes large exchanges' hot wallets a sanctions-evasion route of strategic scale, not a private commercial risk.",
+   "socioeconomic": "The largest exchange has halted withdrawals while asserting solvency it has not demonstrated, so depositors hold an assurance rather than a verifiable reserve — and the US$3 billion recovered was clawed back not by law but by issuers choosing to flip a switch."
+  },
+  {
+   "headline": "A TANKER BURNS IN THE STRAIT OF HORMUZ AND BRENT SETTLES AT A SIX-MONTH HIGH, CLOSING OCTOBER UP 13.6 PER CENT",
+   "breaking": true,
+   "summary": [
+    "The UK Maritime Trade Operations centre said a small boat attached explosive devices to a tanker transiting the strait; the blast set the engine room alight and disabled the vessel. Attribution is open, and the IRGC gave an incompatible account, claiming three tankers struck naval mines on an unauthorised route — unconfirmed by any maritime authority, and Washington called an earlier four-tanker mine claim false. It is the first verified incident in the strait after a week of CENTCOM and Iran's armed forces chief contradicting each other on whether the lanes are mined at all.",
+    "Brent's December contract settled up over 2 per cent at US$117.64 a barrel and WTI at US$104.12, both the highest since late April. October closed with Brent up 13.6 per cent and WTI 15.2 per cent, a fourth consecutive monthly gain. Officials have briefed Trump on military options, with any strike expected after the 3 November midterms, and seven OPEC+ producers meet on Sunday. Gulf exports averaged 15.7 million barrels a day in the week to 26 October."
+   ],
+   "geopolitical": "The two accounts cannot be squared, and that is the operative fact: with CENTCOM insisting the lanes are clear and Tehran that the strait is shut to anyone outside its rules, no agreed description of the waterway exists for an insurer, a navy or a mediator.",
+   "socioeconomic": "A fourth straight double-digit monthly gain stops being a war premium and becomes the level economies plan around — it lands in oil-dependent Asian import bills just as the Fed and ECB are holding rates against inflation they already call elevated."
+  },
+  {
+   "headline": "POLICE RING POLAND'S CONSTITUTIONAL TRIBUNAL AS THE GOVERNMENT SUSPENDS AND MOVES TO PROSECUTE ITS TWO MOST SENIOR JUDGES",
+   "breaking": false,
+   "summary": [
+    "Justice Minister Waldemar Zurek moved to strip the tribunal's president, Bogdan Swieczkowski, and vice-president, Bartlomiej Sochanski, of immunity so criminal charges can be brought; both were suspended, and a substantial police deployment went in around the Warsaw court building. Donald Tusk's government says it is restoring the rule of law, resting on European court rulings that the tribunal is no longer independent — the same basis on which it stopped publishing the court's judgments.",
+    "The tribunal says both remain its lawful leaders and called the operation a coup d'etat in which everyone taking part is committing that crime. The dispute runs back to the contested 2015 appointments, and President Karol Nawrocki has refused since March to swear in five tribunal judges elected by parliament, citing selection defects."
+   ],
+   "geopolitical": "Brussels spent a decade arguing Poland's then-governing party was capturing the constitutional court; a government now invoking those same judgments to suspend judges and send police leaves the EU with no doctrine for who decides when a captured court may be dismantled by the executive.",
+   "socioeconomic": "A court whose leadership is suspended and facing prosecution cannot reliably rule on anything, so every contract, election petition and property claim needing constitutional review in an EU state of 37 million sits behind an unresolved question of which bench is real."
+  },
+  {
+   "headline": "CARNEY COMMITS CANADA TO BECOMING THE EU'S FIRST ASSOCIATE MEMBER AND THE TWO LAUNCH AN ALLIANCE OPEN TO OTHERS",
+   "breaking": false,
+   "summary": [
+    "Closing the Canada-EU summit in Montreal, Mark Carney said unequivocally that Canada is working to become the bloc's first associate member — his most definitive statement yet, and firmer than the 'ever closer association' the EU offered a day earlier. Ursula von der Leyen and Antonio Costa used the term too, though Germany rejects it and nobody has defined what it would confer. Carney called it the deepest partnership short of accession.",
+    "They also announced a new alliance explicitly open to other like-minded countries, with agreements on digital trade and academic exchange, and begin a year of formal negotiations. Pierre Poilievre called it big talk without results, noting nine of the EU's 28 members have not ratified the decade-old CETA agreement."
+   ],
+   "geopolitical": "A G7 economy inside the US security and trade perimeter is negotiating a formal tier of the European Union, and the alliance is drafted to admit others — turning a bilateral hedge into a template, and the question for US allies into one of terms rather than whether.",
+   "socioeconomic": "For business the nine unratified CETA signatures are the story: exporters get a year of negotiation and a digital-trade deal, not market access, and associate membership means little until someone specifies which parts of the single market it reaches."
+  },
+  {
+   "headline": "WASHINGTON CLEARS 500 PATRIOT INTERCEPTORS FOR UKRAINE AT US$2.1 BILLION, PAID FOR BY OTHERS, AGAINST DELIVERIES OF 12 A MONTH",
+   "breaking": false,
+   "summary": [
+    "The State Department approved a possible sale of 500 PAC-3 MSE interceptors — Ukraine's only effective defence against Russian ballistic missiles — at an estimated US$2.1 billion. No US money is involved: Canada, Germany and Norway contribute through the JUMPSTART mechanism, the balance financed by the EU's Ukraine Support Loan. Congress has 30 days to review.",
+    "Zelensky says Ukraine has averaged 12 US Patriot interceptors a month this year, so this reads against the supply problem rather than as relief from it: a notification, not a delivery, with Ukraine's place in the production queue undisclosed and complex interceptors taking years to build. NATO's commander dismissed delay concerns. It lands amid friction over Trump's diesel deal with Russia and his criticism of Ukrainian strikes on Russian refineries."
+   ],
+   "geopolitical": "The United States has moved from supplying Ukraine to licensing supply that European and Canadian money pays for — keeping an American veto over what Kyiv may buy while shifting cost and political exposure to Europe, whatever the midterms produce.",
+   "socioeconomic": "Production, not funding, is the binding constraint on how much of Ukraine's grid survives this winter: against 12 arriving a month, the decisive number is factory output, and allied cash can bid for a place in the queue without enlarging it."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "A COUPLE EXPECTING THEIR SECOND CHILD ARE KILLED IN TAMPINES BY A DISQUALIFIED DRIVER IN A DEREGISTERED CAR ON A CLONED PLATE",
+   "breaking": true,
+   "summary": [
+    "Mohd Emirul Danial Mohd Zulkifly and his wife and pillion rider Nursyarafana Norazman, both 24, died after a crash on Tampines Avenue 12 at about 10.35pm Thursday involving two cars and their motorcycle; a blue Audi crossed the road divider. Syarafana was pregnant with their second child; they leave a six-year-old son.",
+    "The driver, 30, and his passenger, 29, fled without helping the injured and were arrested near West Coast Road on Friday. Police said he was driving while disqualified, in a deregistered vehicle on a cloned number plate. He is to be charged today with dangerous driving causing death and eight further traffic offences."
+   ],
+   "geopolitical": "Nothing international turns on this, but it tests a claim Singapore makes about itself — that enforcement is dense enough that a disqualified driver cannot simply keep driving. Here one did, on copied plates, until two people were dead.",
+   "socioeconomic": "A deregistered car on a cloned plate is invisible to every system the road regime relies on — ERP, enforcement cameras, insurance, COE — so the gap is not the sentence but how long a vehicle can run outside all of it, and who compensates victims of an uninsured driver."
+  },
+  {
+   "headline": "SINGAPORE TELLS THE SECURITY COUNCIL THAT CLOSING A TRANSIT STRAIT BREAKS UNCLOS IN WAR AS IN PEACE",
+   "breaking": false,
+   "summary": [
+    "Speaking for the Oceans Four — Fiji, Jamaica, Malta and Singapore — at a UN Security Council debate on emerging technologies and maritime security, Law Minister Edwin Tong said unlawful restrictions on transit passage through straits used for international navigation violate UNCLOS, and that the convention binds all states in war as in peace, parties or not. He named the Strait of Hormuz, arguing disruption there bears on navigational rights worldwide.",
+    "He warned that AI and autonomous vessels bring risks of weaponisation and cyber attack alongside their navigational uses, and cited recent attacks on civilian ships as a threat to seafarers. Tong is in New York to 4 November for International Law Week and the ICJ elections, where Singapore has nominated Ambassador Rena Lee."
+   ],
+   "geopolitical": "A small trading state cannot enforce transit rights, so it records them — and putting the position to the Security Council for four maritime states rather than one builds the legal account of Hormuz that will be cited when the strait reopens.",
+   "socioeconomic": "The autonomous-shipping warning carries the bill: Singapore is the port that absorbs the losses if remotely operated vessels can be hijacked by code, and it is pressing for rules while the IMO's first framework for them is new enough to shape."
+  },
+  {
+   "headline": "BALAKRISHNAN IS THE FIRST SINGAPOREAN LEADER IN ISLAMABAD IN 22 YEARS AND SAYS SO PLAINLY: 'BETTER LATE THAN NEVER'",
+   "breaking": false,
+   "summary": [
+    "Vivian Balakrishnan made a one-day official visit to Islamabad on Friday, the first by a Singaporean foreign minister in about 22 years — Goh Chok Tong was the last Singaporean leader there, in 2004 — in the 60th year of diplomatic ties. He met Deputy Prime Minister Ishaq Dar and Prime Minister Shehbaz Sharif; they discussed trade and investment flows and resuming direct flights.",
+    "The Singapore Civil Defence Force and Pakistan's National Disaster Management Authority signed a disaster-management memorandum. Balakrishnan praised Pakistan's 'unique but very constructive and valuable role' in regional mediation — its work on the Gulf crisis."
+   ],
+   "geopolitical": "The content is modest and the timing is not: Pakistan has been among the handful of states mediating between Washington and Tehran all year, and Singapore is opening a channel to a mediator just as the Hormuz closure becomes the largest external risk to its economy.",
+   "socioeconomic": "Twenty-two years of ministerial absence is itself the economic fact: trade with a market of 250 million has been left to run on its own, and a disaster memorandum plus talks on flights is groundwork for commerce rather than commerce."
+  },
+  {
+   "headline": "SGH OPENS AN EMERGENCY AND NEUROSCIENCE BUILDING THAT CUTS STROKE TREATMENT FROM 130 MINUTES TO 82",
+   "breaking": false,
+   "summary": [
+    "The 12-storey Singapore General Hospital Emergency Medicine and National Neuroscience Institute building opened on Friday across about 14,000 square metres, six times the space it replaces. Acute stroke patients can be assessed, scanned and treated in as little as 82 minutes against about 130 before, and it houses Singapore's first emergency-department-based angiography suite, so a patient needing endovascular thrombectomy is no longer moved to the main blocks.",
+    "SGH also reported waits for 95 per cent of serious but not life-threatening emergency cases falling from 217 minutes in 2023 to 141 in 2025."
+   ],
+   "geopolitical": "Little direct bearing abroad, though an ED-based angiography suite is the kind of configuration other systems copy rather than invent, and it keeps Singapore's medical-travel case intact while its hospitals strain.",
+   "socioeconomic": "In stroke, saved minutes convert into preserved brain tissue and avoided disability, so 48 minutes off the median cuts future nursing-home and caregiving demand where 21.4 per cent of citizens are already over 65 — the ageing bill paid down before the damage happens."
+  },
+  {
+   "headline": "SINGAPORE WILL PAY SENIORS A STIPEND TO LOOK AFTER OTHER SENIORS, WITH UP TO 700,000 PLACES",
+   "breaking": false,
+   "summary": [
+    "A new programme, Age Well Kakis, will match volunteers aged 50 and over to community-care roles suited to their interests, abilities and availability, and pay a stipend. Up to 700,000 opportunities will be available; the Health Ministry expects about 16,500 seniors to take them up over two years."
+   ],
+   "geopolitical": "Nothing external turns on it except as a model: every super-aged society faces the same shortage of working-age carers, and Singapore is testing whether the cohort just below the care-receiving one can be paid to fill part of it.",
+   "socioeconomic": "Paying a stipend rather than relying on goodwill makes this a low-cost labour channel into community care, not a volunteering drive — and 16,500 expected takers against 700,000 places measures how little of the shortfall it is meant to close, with the working-age share of citizens at 59.3 per cent."
+  }
+ ],
+ "word": {
+  "word": "demurrage",
+  "pos": "noun",
+  "pronunciation": "dih-MUR-ij (/dɪˈmʌrɪdʒ/)",
+  "definition": "The charge a charterer owes a shipowner for keeping a vessel beyond the time agreed for loading or unloading; more broadly, the detention of a ship and the cost of that delay.",
+  "etymology": "From Old French demorage, 'a delay', from demorer, to linger, from Latin demorari (de- plus morari, 'to delay'). It entered English law as a shipping term in the seventeenth century and stayed one, which is why it carries no blame — it simply prices time a ship did not spend sailing.",
+  "example": "A tanker burning in the Strait of Hormuz with its engine room disabled is not only a casualty report; it is demurrage accruing on every vessel behind it, and that cost is what settled Brent at a six-month high."
+ }
+}

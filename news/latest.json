@@ -1,112 +1,121 @@
 {
  "schema": 1,
- "date": "2026-10-30",
- "generatedAt": "2026-10-30T07:17:00+08:00",
+ "date": "2026-10-31",
+ "generatedAt": "2026-10-31T07:16:00+08:00",
  "coverage": {
-  "from": "2026-10-29T07:00:00+08:00",
-  "to": "2026-10-30T07:00:00+08:00",
-  "label": "Thursday 29 October 2026, 0700 SGT → Friday 30 October 2026, 0700 SGT"
+  "from": "2026-10-30T07:00:00+08:00",
+  "to": "2026-10-31T07:00:00+08:00",
+  "label": "Friday 30 October 2026, 0700 SGT → Saturday 31 October 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "BILLIONS DRAIN OUT OF BINANCE'S HOT WALLETS, AND TETHER AND CIRCLE FREEZE US$2.38 BILLION OF IT MID-FLIGHT",
+   "headline": "BINANCE'S LOSS IS PUT AT ABOUT S$8 BILLION, CRYPTO'S LARGEST THEFT, AND THREE FORENSICS FIRMS PIN IT ON NORTH KOREA",
    "breaking": true,
    "summary": [
-    "Binance said it was investigating a \"potential security issue\" after large outflows from several Ethereum hot wallets on Thursday, including a transfer of 167,464 ETH from the wallet labelled Binance 14 to an address funded only through the Tornado Cash mixer. The exchange says it has not confirmed any impact on user funds; Binance.US was unaffected. Founder Changpeng Zhao, who no longer runs it, said it \"does look like a hack\" and expects balances to be covered in full.",
-    "Tether froze about US$1.57 billion of USDT and Circle more than US$800 million of USDC, a combined US$2.38 billion, with Circle's Jeremy Allaire saying the company acted alongside law enforcement; co-founder Yi He said Ripple froze a further US$200 million. Estimates of what actually left range from US$1.7 billion to over US$5 billion and none is confirmed. The previous record exchange theft was Bybit's US$1.5 billion in February 2025."
+    "Yesterday's unconfirmed drain is now quantified. TRM Labs put the outflow at about S$8 billion (US$6.36 billion), most of it moved in roughly 20 minutes, and attributed it to TraderTraitor, which it identifies as North Korea's elite crypto-theft unit; Chainalysis and Elliptic independently pointed to Pyongyang. The evidence indicates a compromise of Binance's hot-wallet signing infrastructure, with one account naming a staff laptop as the way in.",
+    "That is roughly four times the US$1.5 billion taken from Bybit in February 2025, the previous record. Binance has suspended deposits and withdrawals and says user funds are safe, without publishing proof; about US$3 billion has been frozen with partners, up from the US$2.38 billion Tether and Circle immobilised on Thursday. Binance has named no perpetrator."
    ],
-   "geopolitical": "Two private issuers immobilised billions of dollars of settled blockchain value within hours on their own authority — the clearest demonstration yet that dollar stablecoins carry a freeze switch needing no court order, a capability regulators will now assume exists and sanctioned states will assume can be turned on them.",
-   "socioeconomic": "Binance holds the largest share of retail crypto balances in the world, so whether the loss lands on its own reserves or on users is the question that matters to holders; with a large part of the proceeds frozen rather than laundered, recovery and not the headline figure will set the final bill."
+   "geopolitical": "One night has delivered Pyongyang a sum on the order of its annual export earnings, outside every sanctions channel built to stop exactly that — which makes large exchanges' hot wallets a sanctions-evasion route of strategic scale, not a private commercial risk.",
+   "socioeconomic": "The largest exchange has halted withdrawals while asserting solvency it has not demonstrated, so depositors hold an assurance rather than a verifiable reserve — and the US$3 billion recovered was clawed back not by law but by issuers choosing to flip a switch."
   },
   {
-   "headline": "LAGARDE QUITS THE ECB EIGHT MONTHS EARLY SO SHE CAN SAY WHAT SHE THINKS, LEAVING THREE BOARD SEATS OPEN AT ONCE",
+   "headline": "A TANKER BURNS IN THE STRAIT OF HORMUZ AND BRENT SETTLES AT A SIX-MONTH HIGH, CLOSING OCTOBER UP 13.6 PER CENT",
    "breaking": true,
    "summary": [
-    "Christine Lagarde announced in a video message that she will leave the European Central Bank presidency on 7 February, eight months before her term ends, saying she wants \"the freedom of speech, the freedom of expression and the freedom to engage on matters that are not monetary policy matters\". The timing hands the current set of EU leaders the succession before France's presidential election; Klaas Knot, former head of the Dutch central bank, and Pablo Hernández de Cos, now general manager of the Bank for International Settlements, are the names in circulation.",
-    "Her exit opens a third executive-board vacancy: Isabel Schnabel leaves for the IMF on 3 January and chief economist Philip Lane's term ends on 31 May, so one package deal will apportion the bank's top jobs among member states. The same day, the governing council held its benchmark rate at 2.5 per cent against annual inflation of 3.8 per cent."
+    "The UK Maritime Trade Operations centre said a small boat attached explosive devices to a tanker transiting the strait; the blast set the engine room alight and disabled the vessel. Attribution is open, and the IRGC gave an incompatible account, claiming three tankers struck naval mines on an unauthorised route — unconfirmed by any maritime authority, and Washington called an earlier four-tanker mine claim false. It is the first verified incident in the strait after a week of CENTCOM and Iran's armed forces chief contradicting each other on whether the lanes are mined at all.",
+    "Brent's December contract settled up over 2 per cent at US$117.64 a barrel and WTI at US$104.12, both the highest since late April. October closed with Brent up 13.6 per cent and WTI 15.2 per cent, a fourth consecutive monthly gain. Officials have briefed Trump on military options, with any strike expected after the 3 November midterms, and seven OPEC+ producers meet on Sunday. Gulf exports averaged 15.7 million barrels a day in the week to 26 October."
    ],
-   "geopolitical": "Rotating the ECB presidency ahead of a French election rather than on its own schedule invites the reading a critic quoted by Reuters gave it — that a departure timed around national politics damages trust in the institution — and puts the euro area's most senior unelected office into the same bargaining round as the other EU top jobs.",
-   "socioeconomic": "A bank holding rates 1.3 percentage points below headline inflation is already making a contested call on whether the Iran-war energy shock passes through, and it will now make it through a winter in which the president, the chief economist and one other board member are all either leaving or newly arrived."
+   "geopolitical": "The two accounts cannot be squared, and that is the operative fact: with CENTCOM insisting the lanes are clear and Tehran that the strait is shut to anyone outside its rules, no agreed description of the waterway exists for an insurer, a navy or a mediator.",
+   "socioeconomic": "A fourth straight double-digit monthly gain stops being a war premium and becomes the level economies plan around — it lands in oil-dependent Asian import bills just as the Fed and ECB are holding rates against inflation they already call elevated."
   },
   {
-   "headline": "ALPHABET LOSES HALF A TRILLION DOLLARS IN A DAY — ITS WORST EVER — AS THE MARKET STARTS PRICING AI SPENDING AS A COST",
+   "headline": "POLICE RING POLAND'S CONSTITUTIONAL TRIBUNAL AS THE GOVERNMENT SUSPENDS AND MOVES TO PROSECUTE ITS TWO MOST SENIOR JUDGES",
    "breaking": false,
    "summary": [
-    "Alphabet fell 12.6 per cent on Thursday, its steepest one-day drop on record — past the 11.63 per cent of March 2020 — wiping roughly US$480 billion of market value, second only to Nvidia's US$589 billion fall in January 2025. The trigger was a rare revenue miss, US$127.6 billion against US$128.2 billion expected, even as Google Cloud revenue doubled to US$30.7 billion. What investors fixed on was capital spending: more than doubled to US$51.4 billion in the quarter, pushing free cash flow to minus US$9.1 billion for a second straight quarter.",
-    "Amazon fell about 10 per cent after hours on soft fourth-quarter guidance and its own cash burn; Intel dropped around 20 per cent after a quarter in which AI demand hurt parts of its business. The Nasdaq closed down 1.4 per cent, the S&P 500 and the Dow about 0.3 per cent."
+    "Justice Minister Waldemar Zurek moved to strip the tribunal's president, Bogdan Swieczkowski, and vice-president, Bartlomiej Sochanski, of immunity so criminal charges can be brought; both were suspended, and a substantial police deployment went in around the Warsaw court building. Donald Tusk's government says it is restoring the rule of law, resting on European court rulings that the tribunal is no longer independent — the same basis on which it stopped publishing the court's judgments.",
+    "The tribunal says both remain its lawful leaders and called the operation a coup d'etat in which everyone taking part is committing that crime. The dispute runs back to the contested 2015 appointments, and President Karol Nawrocki has refused since March to swear in five tribunal judges elected by parliament, citing selection defects."
    ],
-   "geopolitical": "The data-centre buildout is the material basis of every national AI strategy now being written, Singapore's included, and a capital-markets verdict that the spending is not yet earning its keep is the first constraint on it no government controls.",
-   "socioeconomic": "Negative free cash flow at the most profitable advertising business in history means the buildout is funded from balance sheets and debt rather than earnings — which is what turns an equity repricing into a funding problem for the smaller suppliers, utilities and developers holding long contracts against it."
+   "geopolitical": "Brussels spent a decade arguing Poland's then-governing party was capturing the constitutional court; a government now invoking those same judgments to suspend judges and send police leaves the EU with no doctrine for who decides when a captured court may be dismantled by the executive.",
+   "socioeconomic": "A court whose leadership is suspended and facing prosecution cannot reliably rule on anything, so every contract, election petition and property claim needing constitutional review in an EU state of 37 million sits behind an unresolved question of which bench is real."
   },
   {
-   "headline": "HONG KONG'S HOUSING SECRETARY RESIGNS AND JOHN LEE BOWS AS A JUDGE'S REPORT BLAMES FOUR DEPARTMENTS FOR 168 FIRE DEATHS",
+   "headline": "CARNEY COMMITS CANADA TO BECOMING THE EU'S FIRST ASSOCIATE MEMBER AND THE TWO LAUNCH AN ALLIANCE OPEN TO OTHERS",
    "breaking": false,
    "summary": [
-    "A judge-led panel's report of more than 1,000 pages into the Wang Fuk Court fire in Tai Po found wide governance and supervisory failings across the building-renovation system, and held four government departments partly responsible. Chief Executive John Lee and seven other senior officials bowed at the news conference; Lee apologised and promised swift, extensive reform of the building industry and its regulation.",
-    "Housing Secretary Winnie Ho resigned, with Lee saying she \"should bear political responsibility\" though no personal wrongdoing was found. The fire broke out on 26 November 2025 and spread through seven 31-storey blocks, killing 168 — the city's deadliest since 1948; seven individuals and two companies have been charged, including with manslaughter, and at least 35 people arrested."
+    "Closing the Canada-EU summit in Montreal, Mark Carney said unequivocally that Canada is working to become the bloc's first associate member — his most definitive statement yet, and firmer than the 'ever closer association' the EU offered a day earlier. Ursula von der Leyen and Antonio Costa used the term too, though Germany rejects it and nobody has defined what it would confer. Carney called it the deepest partnership short of accession.",
+    "They also announced a new alliance explicitly open to other like-minded countries, with agreements on digital trade and academic exchange, and begin a year of formal negotiations. Pierre Poilievre called it big talk without results, noting nine of the EU's 28 members have not ratified the decade-old CETA agreement."
    ],
-   "geopolitical": "A principal official resigning over a policy failure is close to unknown in post-2020 Hong Kong, where accountability has been owed upward rather than to the public, and Beijing's willingness to let one happen marks the limit of what the current governing arrangement can absorb without a political cost.",
-   "socioeconomic": "The findings land on the renovation-tender chain — the contractors, consultants and owners' corporations that maintain Hong Kong's ageing estates — so reform will raise the cost and lengthen the timetable of refurbishment across tens of thousands of flats already behind schedule."
+   "geopolitical": "A G7 economy inside the US security and trade perimeter is negotiating a formal tier of the European Union, and the alliance is drafted to admit others — turning a bilateral hedge into a template, and the question for US allies into one of terms rather than whether.",
+   "socioeconomic": "For business the nine unratified CETA signatures are the story: exporters get a year of negotiation and a digital-trade deal, not market access, and associate membership means little until someone specifies which parts of the single market it reaches."
   },
   {
-   "headline": "CHINA EXPELS 33 SENIOR OFFICIALS AT ONCE, INCLUDING THE MAN WHO RAN ITS MILITARY, IN THE BIGGEST PURGE SINCE MAO",
+   "headline": "WASHINGTON CLEARS 500 PATRIOT INTERCEPTORS FOR UKRAINE AT US$2.1 BILLION, PAID FOR BY OTHERS, AGAINST DELIVERIES OF 12 A MONTH",
    "breaking": false,
    "summary": [
-    "The Fifth Plenum of the 20th Central Committee closed with the party ratifying the expulsion of 33 senior figures, the largest single tranche since Mao. They include Zhang Youxia, until recently vice chairman of the Central Military Commission and the most senior uniformed officer in the country; Liu Zhenli, who ran the Joint Staff Department; former Politburo member Ma Xingrui; former international liaison chief Liu Jianchao; and former industry minister Jin Zhuanglong. Financial regulator Li Yunze lost his party post.",
-    "Zhang Shengmin, the discipline officer who drove the purge of the military's top ranks, was elected to the Politburo. Only 162 of 205 full Central Committee members attended, the highest absence rate of the post-Mao era. The 21st Party Congress, at which Xi Jinping's fourth term would be settled, was set for the second half of next year."
+    "The State Department approved a possible sale of 500 PAC-3 MSE interceptors — Ukraine's only effective defence against Russian ballistic missiles — at an estimated US$2.1 billion. No US money is involved: Canada, Germany and Norway contribute through the JUMPSTART mechanism, the balance financed by the EU's Ukraine Support Loan. Congress has 30 days to review.",
+    "Zelensky says Ukraine has averaged 12 US Patriot interceptors a month this year, so this reads against the supply problem rather than as relief from it: a notification, not a delivery, with Ukraine's place in the production queue undisclosed and complex interceptors taking years to build. NATO's commander dismissed delay concerns. It lands amid friction over Trump's diesel deal with Russia and his criticism of Ukrainian strikes on Russian refineries."
    ],
-   "geopolitical": "Removing the officer who commanded the People's Liberation Army and the one who ran its joint staff, in the same session, strips out the top of the chain that would plan any Taiwan or South China Sea operation and is the strongest available evidence that Beijing's military leadership is being rebuilt rather than readied.",
-   "socioeconomic": "Taking in a financial regulator and an industry minister alongside the generals shows the discipline machinery running through the agencies that license banks and set industrial policy, which is where foreign investors read political risk — and 43 empty seats at the party's own plenum measures how wide the net has gone."
+   "geopolitical": "The United States has moved from supplying Ukraine to licensing supply that European and Canadian money pays for — keeping an American veto over what Kyiv may buy while shifting cost and political exposure to Europe, whatever the midterms produce.",
+   "socioeconomic": "Production, not funding, is the binding constraint on how much of Ukraine's grid survives this winter: against 12 arriving a month, the decisive number is factory output, and allied cash can bid for a place in the queue without enlarging it."
   }
  ],
  "singapore": [
   {
-   "headline": "MAS CLOSES THE PRIVATE-HIRE LOOPHOLE: CAR LOAN CAPS NOW APPLY TO INDIVIDUALS BUYING PHCS FROM TODAY",
+   "headline": "A COUPLE EXPECTING THEIR SECOND CHILD ARE KILLED IN TAMPINES BY A DISQUALIFIED DRIVER IN A DEREGISTERED CAR ON A CLONED PLATE",
    "breaking": true,
    "summary": [
-    "The Monetary Authority of Singapore extended its motor-vehicle financing restrictions to private-hire cars bought by individuals, including sole proprietors, for sales agreements signed on or after 30 October — or, absent an agreement, where the COE is obtained from that date. The caps are the standard ones: 70 per cent of the purchase price including taxes and COE where the open market value is S$20,000 or below, 60 per cent above that, and a seven-year maximum tenure.",
-    "The rules bind banks, finance companies and licensed or exempt moneylenders, and cover hire-purchase and conditional sale agreements. PHCs had been exempt so as not to restrict credit to businesses and drivers who depend on them; MAS said in 2019 it was studying ways to stop buyers using the exemption to borrow beyond the limits."
+    "Mohd Emirul Danial Mohd Zulkifly and his wife and pillion rider Nursyarafana Norazman, both 24, died after a crash on Tampines Avenue 12 at about 10.35pm Thursday involving two cars and their motorcycle; a blue Audi crossed the road divider. Syarafana was pregnant with their second child; they leave a six-year-old son.",
+    "The driver, 30, and his passenger, 29, fled without helping the injured and were arrested near West Coast Road on Friday. Police said he was driving while disqualified, in a deregistered vehicle on a cloned number plate. He is to be charged today with dangerous driving causing death and eight further traffic offences."
    ],
-   "geopolitical": "Nothing external turns on this, beyond the reminder that Singapore enforces household-credit limits by closing definitional gaps rather than raising headline caps — the same instrument used on property loans.",
-   "socioeconomic": "A buyer of a S$180,000 private-hire car who could previously finance almost all of it must now find roughly S$72,000 upfront, which prices out the marginal owner-driver and pushes the fleet further toward companies that lease to drivers — arriving just as the COE review is already squeezing the mass-market end of the market."
+   "geopolitical": "Nothing international turns on this, but it tests a claim Singapore makes about itself — that enforcement is dense enough that a disqualified driver cannot simply keep driving. Here one did, on copied plates, until two people were dead.",
+   "socioeconomic": "A deregistered car on a cloned plate is invisible to every system the road regime relies on — ERP, enforcement cameras, insurance, COE — so the gap is not the sentence but how long a vehicle can run outside all of it, and who compensates victims of an uninsured driver."
   },
   {
-   "headline": "ANTI-VIOLENCE HELPLINE REPORTS JUMP 49% IN A YEAR, AND MSF COUNTS HUSBANDS AS ONE IN FIVE SPOUSAL VICTIMS FOR THE FIRST TIME",
-   "breaking": true,
-   "summary": [
-    "The National Anti-Violence and Sexual Harassment Helpline took 16,525 reports in 2025, up from 11,068 in 2024, according to MSF's Domestic Violence Trends Report. Its Protective Service took on 1,917 higher-risk child abuse cases for statutory intervention — 969 children directly abused or neglected, 948 exposed to abuse — with seven to 12-year-olds the largest group. Children accounted for 2,476 of 4,686 new low- and moderate-risk cases. MSF attributes part of the rise to better detection and earlier reporting.",
-    "The report gave a gender breakdown of spousal violence for the first time: 82 per cent of victims were wives and 18 per cent husbands, with 337 cases involving a husband as the victim, up 12 per cent from 302 in 2024."
-   ],
-   "geopolitical": "Not an external story, but publishing a male-victim figure at all puts Singapore ahead of most of the region in measuring a category its family-violence law already covers in gender-neutral terms.",
-   "socioeconomic": "A 49 per cent rise in reports against a far smaller rise in substantiated cases is a capacity problem before it is a crime problem: the load falls on Protective Service caseworkers, Family Service Centres and the Family Justice Courts, with more than half the lower-risk caseload depending on school and preschool staff to spot."
-  },
-  {
-   "headline": "GOOGLE OPENS A HEALTH RESEARCH HUB IN SINGAPORE AND WILL BUILD AN AI HEALTH COACH INTO NHG'S HEALTHBOT",
+   "headline": "SINGAPORE TELLS THE SECURITY COUNCIL THAT CLOSING A TRANSIT STRAIT BREAKS UNCLOS IN WAR AS IN PEACE",
    "breaking": false,
    "summary": [
-    "At its first Google for Health Summit, in Singapore on Thursday, Google said it would set up a health research hub here and run a Population Health Digital Transformation Programme with NHG Health. It pairs a predictive model — NHG's de-identified population health database plus Google's geospatial tools and aggregated climate, environmental, search and behavioural signals — with an AI health coach on NHG HealthBot, running on Gemini Enterprise. A nine-month proof-of-concept opens to a selected group in the first quarter of 2027, expected to include Healthier SG enrollees who have not turned up for screening.",
-    "Separately, NUHS is evaluating a DeepMind \"AI co-clinician\" for doctors. Senior Minister of State Tan Kiat How spoke at the summit; neither organisation has announced a national rollout or published outcome evidence."
+    "Speaking for the Oceans Four — Fiji, Jamaica, Malta and Singapore — at a UN Security Council debate on emerging technologies and maritime security, Law Minister Edwin Tong said unlawful restrictions on transit passage through straits used for international navigation violate UNCLOS, and that the convention binds all states in war as in peace, parties or not. He named the Strait of Hormuz, arguing disruption there bears on navigational rights worldwide.",
+    "He warned that AI and autonomous vessels bring risks of weaponisation and cyber attack alongside their navigational uses, and cited recent attacks on civilian ships as a threat to seafarers. Tong is in New York to 4 November for International Law Week and the ICJ elections, where Singapore has nominated Ambassador Rena Lee."
    ],
-   "geopolitical": "A US frontier-model developer putting health research capacity into Singapore, days after the Prime Minister proposed cross-border AI incident reporting, is the practical form of the bet that hosting the companies buys influence over how their systems are governed.",
-   "socioeconomic": "Targeting the Healthier SG enrollees who signed up but never came for screening aims the tool at the exact gap that limits the programme's value, and it means a commercial model will be reading de-identified national health records to decide who gets nudged — which is why the nine-month study, not the announcement, is the thing to judge."
+   "geopolitical": "A small trading state cannot enforce transit rights, so it records them — and putting the position to the Security Council for four maritime states rather than one builds the legal account of Hormuz that will be cited when the strait reopens.",
+   "socioeconomic": "The autonomous-shipping warning carries the bill: Singapore is the port that absorbs the losses if remotely operated vessels can be hijacked by code, and it is pressing for rules while the IMO's first framework for them is new enough to shape."
   },
   {
-   "headline": "THE MONSOON TURNS AND NEA SAYS THE HAZE RISK FALLS, AFTER TEN UNHEALTHY-OR-WORSE DAYS IN TWELVE",
+   "headline": "BALAKRISHNAN IS THE FIRST SINGAPOREAN LEADER IN ISLAMABAD IN 22 YEARS AND SAYS SO PLAINLY: 'BETTER LATE THAN NEVER'",
    "breaking": false,
    "summary": [
-    "NEA and the Meteorological Service said inter-monsoon conditions have progressively set in as the Southwest Monsoon weakens, turning a steady southeasterly or southwesterly flow into light, variable winds — so smoke from Sumatran and Kalimantan fires is far less likely to reach Singapore. Showers were forecast for Friday over Sumatra, Kalimantan and Singapore, with the day's 24-hour PSI forecast at 60 to 90, in the Moderate band.",
-    "Between 16 and 28 October air quality reached Unhealthy levels on seven days and Very Unhealthy on three. Preventive Measure Notices under the Transboundary Haze Pollution Act stand against 10 Indonesian companies, seven over Sumatra and three over Kalimantan. The ASEAN Specialist Meteorological Centre warned hotspots stay elevated wherever dry weather persists."
+    "Vivian Balakrishnan made a one-day official visit to Islamabad on Friday, the first by a Singaporean foreign minister in about 22 years — Goh Chok Tong was the last Singaporean leader there, in 2004 — in the 60th year of diplomatic ties. He met Deputy Prime Minister Ishaq Dar and Prime Minister Shehbaz Sharif; they discussed trade and investment flows and resuming direct flights.",
+    "The Singapore Civil Defence Force and Pakistan's National Disaster Management Authority signed a disaster-management memorandum. Balakrishnan praised Pakistan's 'unique but very constructive and valuable role' in regional mediation — its work on the Gulf crisis."
    ],
-   "geopolitical": "The season ending on a wind shift rather than on anything Singapore or Jakarta did is the argument for the enforcement route the government chose this month — the notices and the planned Act amendments outlast the monsoon, the weather does not.",
-   "socioeconomic": "Three weeks of unhealthy air cost outdoor work hours, school activities and an N95 stockpile release; relief arriving by meteorology means the schools, employers and clinics that improvised through it get no standing protocol out of it unless the Act amendments supply one."
+   "geopolitical": "The content is modest and the timing is not: Pakistan has been among the handful of states mediating between Washington and Tehran all year, and Singapore is opening a channel to a mediator just as the Hormuz closure becomes the largest external risk to its economy.",
+   "socioeconomic": "Twenty-two years of ministerial absence is itself the economic fact: trade with a market of 250 million has been left to run on its own, and a disaster memorandum plus talks on flights is groundwork for commerce rather than commerce."
+  },
+  {
+   "headline": "SGH OPENS AN EMERGENCY AND NEUROSCIENCE BUILDING THAT CUTS STROKE TREATMENT FROM 130 MINUTES TO 82",
+   "breaking": false,
+   "summary": [
+    "The 12-storey Singapore General Hospital Emergency Medicine and National Neuroscience Institute building opened on Friday across about 14,000 square metres, six times the space it replaces. Acute stroke patients can be assessed, scanned and treated in as little as 82 minutes against about 130 before, and it houses Singapore's first emergency-department-based angiography suite, so a patient needing endovascular thrombectomy is no longer moved to the main blocks.",
+    "SGH also reported waits for 95 per cent of serious but not life-threatening emergency cases falling from 217 minutes in 2023 to 141 in 2025."
+   ],
+   "geopolitical": "Little direct bearing abroad, though an ED-based angiography suite is the kind of configuration other systems copy rather than invent, and it keeps Singapore's medical-travel case intact while its hospitals strain.",
+   "socioeconomic": "In stroke, saved minutes convert into preserved brain tissue and avoided disability, so 48 minutes off the median cuts future nursing-home and caregiving demand where 21.4 per cent of citizens are already over 65 — the ageing bill paid down before the damage happens."
+  },
+  {
+   "headline": "SINGAPORE WILL PAY SENIORS A STIPEND TO LOOK AFTER OTHER SENIORS, WITH UP TO 700,000 PLACES",
+   "breaking": false,
+   "summary": [
+    "A new programme, Age Well Kakis, will match volunteers aged 50 and over to community-care roles suited to their interests, abilities and availability, and pay a stipend. Up to 700,000 opportunities will be available; the Health Ministry expects about 16,500 seniors to take them up over two years."
+   ],
+   "geopolitical": "Nothing external turns on it except as a model: every super-aged society faces the same shortage of working-age carers, and Singapore is testing whether the cohort just below the care-receiving one can be paid to fill part of it.",
+   "socioeconomic": "Paying a stipend rather than relying on goodwill makes this a low-cost labour channel into community care, not a volunteering drive — and 16,500 expected takers against 700,000 places measures how little of the shortfall it is meant to close, with the working-age share of citizens at 59.3 per cent."
   }
  ],
  "word": {
-  "word": "lustration",
+  "word": "demurrage",
   "pos": "noun",
-  "pronunciation": "luh-STRAY-shuhn (/lʌˈstreɪʃən/)",
-  "definition": "A ceremonial purification; in modern political usage, the vetting and removal of officials judged compromised or disloyal, carried out as a cleansing of the state.",
-  "etymology": "From Latin lustratio, from lustrare, 'to purify by sacrifice'. Rome's lustrum was the rite closing each five-year census, which is why lustrum also came to mean the five years themselves. Post-communist Europe revived the word in the 1990s for laws screening former secret-police collaborators out of public office.",
-  "example": "Expelling 33 senior figures in one session, the army's former commander among them, the Fifth Plenum turned a discipline review into a lustration — and 43 absent Central Committee members measured how far it had reached."
+  "pronunciation": "dih-MUR-ij (/dɪˈmʌrɪdʒ/)",
+  "definition": "The charge a charterer owes a shipowner for keeping a vessel beyond the time agreed for loading or unloading; more broadly, the detention of a ship and the cost of that delay.",
+  "etymology": "From Old French demorage, 'a delay', from demorer, to linger, from Latin demorari (de- plus morari, 'to delay'). It entered English law as a shipping term in the seventeenth century and stayed one, which is why it carries no blame — it simply prices time a ship did not spend sailing.",
+  "example": "A tanker burning in the Strait of Hormuz with its engine room disabled is not only a casualty report; it is demurrage accruing on every vessel behind it, and that cost is what settled Brent at a six-month high."
  }
 }
