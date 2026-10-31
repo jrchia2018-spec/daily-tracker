@@ -1,0 +1,122 @@
+{
+ "schema": 1,
+ "date": "2026-11-01",
+ "generatedAt": "2026-11-01T07:48:00+08:00",
+ "coverage": {
+  "from": "2026-10-31T07:00:00+08:00",
+  "to": "2026-11-01T07:00:00+08:00",
+  "label": "Saturday 31 October 2026, 0700 SGT → Sunday 1 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "THE FBI PUTS THE RECORD CRYPTO THEFT ON NORTH KOREA, AND BINANCE SAYS IT HAS ALREADY REPLACED 90 PER CENT OF IT",
+   "breaking": true,
+   "summary": [
+    "The FBI said on Saturday that TraderTraitor — the North Korean unit it named for the US$1.5 billion Bybit theft of February 2025 — took the US$6.3 billion from Binance, putting government attribution behind the three forensics firms that said so a day earlier.",
+    "Binance says it has replaced about 90 per cent of the stolen amount by buying new tokens with company money, has set aside roughly US$6.34 billion internally, and remained on track to reopen withdrawals on Sunday. Recovery figures conflict: Binance puts frozen assets at about US$3 billion, including over US$2.3 billion by Tether and Circle; TRM Labs puts the freeze at about US$2.7 billion, with the attacker still holding some US$2.4 billion."
+   ],
+   "geopolitical": "Attribution converts a theft into a state act: in about twenty minutes Pyongyang took more hard currency than a year of its exports earns, through a venue no sanctions regime regulates. The instruments built for banks, shippers and arms brokers do not reach a signing key.",
+   "socioeconomic": "Binance absorbed a US$6.3 billion hole because it is the largest exchange in the world; no smaller custodian could have. The residual tenth, some US$630 million, is what customers would have carried anywhere else."
+  },
+  {
+   "headline": "A FEDERAL JUDGE BARS THE JUSTICE AND HOMELAND SECURITY DEPARTMENTS FROM PRESSURING ELECTION OFFICIALS, THREE DAYS BEFORE THE MIDTERMS",
+   "breaking": true,
+   "summary": [
+    "US District Judge Trina Thompson granted a temporary restraining order on Friday evening barring the Justice Department and Homeland Security from demanding that election officials in any state segregate ballots, purge voter rolls or halt ballot processing, and from threatening them with prosecution or otherwise coercing them. Officials administering the midterm lawfully, she wrote, “do not violate federal criminal law even if a particular ballot belongs to a registered voter alleged by Defendants to be ineligible to vote”.",
+    "The order runs to 16 November and requires the administration to disclose any search warrants, subpoenas or other demands for election materials tied to its lists. The Justice Department appealed on Saturday. Unions and civil rights groups including the NAACP and LULAC brought the case in the Northern District of California under the Voting Rights Act; at its centre is a DHS operation matching state voter rolls against federal records, which election officials say wrongly flags US citizens. More than 50 million Americans have already voted early."
+   ],
+   "geopolitical": "Who administers American elections — the states — has been answered by a district court three days out, with an appeal already filed, so Tuesday's operative rule may be set by an appellate panel ruling at speed.",
+   "socioeconomic": "Processing continues for the fifty million ballots already cast, and no official faces prosecution for counting them. The lists survive the order; only the coercion built on them is paused, and only to 16 November."
+  },
+  {
+   "headline": "THE COST-OF-LIVING REVOLT CROSSES BORDERS: 320,000 MARCH IN FRANCE, A NEW YOUTH MOVEMENT FILLS GERMAN CITIES, AND ITALY JOINS",
+   "breaking": true,
+   "summary": [
+    "France's interior ministry counted 320,000 protesters nationwide on Saturday, 70,000 in Paris, in the third mass mobilisation after those of 17 and 24 October. Marches that began peacefully, many in Halloween costume, ended in clashes in Paris, Marseille, Lyon and Toulouse. Interior Minister Laurent Nuñez warned that masked faces could bring fines; Macron denied considering any suspension of social media platforms but said they must be “vigilant”.",
+    "In Germany a youth movement calling itself “Gen Z regelt” — Gen Z has got this — drew tens of thousands in Berlin, Frankfurt, Cologne and Munich against living costs, underfunded schools and universities, environmental policy and a possible return of conscription. Water cannon were used in Cologne and Hamburg, Molotov cocktails thrown at emergency workers in Frankfurt, and part of the Zeil shopping street closed after a gun shop's windows were broken. Anti-government protests also swept Italy."
+   ],
+   "geopolitical": "Three national grievances now share a calendar and an idiom, which is what turns flashpoints into a movement. Governments that could treat each country's unrest as domestic one that coordinates across borders and picks its own date.",
+   "socioeconomic": "Conscription sitting in the German list beside rent and tuition is the detail that matters: Europe's rearmament has reached the point where its domestic bill is contested by the cohort that would be called up."
+  },
+  {
+   "headline": "COP17 CLOSES WITH THE YEREVAN PATHWAY AGREED AND THE MONEY DEFERRED AGAIN",
+   "breaking": false,
+   "summary": [
+    "The UN biodiversity talks in Yerevan closed on 31 October by adopting the “Yerevan Pathway”, which asks countries to revise national biodiversity plans — subject to available funding — with attention to gaps in marine, coastal and inland-water ecosystems, and to accelerate work towards the existing target of cutting environmentally harmful subsidies by at least US$500 billion a year by 2030.",
+    "Post-2030 finance stalled: governments agreed criteria for a future permanent financial mechanism but not its structure, settling instead for a voluntary broadening of the donor base, formal reviews of the Global Environment Facility and the GBFF, and an invitation to wealthy emerging economies including China to take donor status. More than US$1.8 billion was announced over the conference, six contributors pledging US$60.13 million to the GBFF. Canada's Steven Guilbeault said the package falls short of the 2030 commitments; the EU called the finance outcome timid."
+   ],
+   "geopolitical": "The fight that stalled the talks is the one that stalls climate finance — whether states that became rich recently should pay like those that became rich early — and inviting China to volunteer is a way of not deciding it.",
+   "socioeconomic": "“Subject to available funding” is the operative phrase: the 2030 targets are formally conditional on money nobody has committed, and US$1.8 billion of announcements is a rounding error against the US$500 billion of annual subsidies the same text proposes to cut."
+  },
+  {
+   "headline": "BRITAIN'S PRIME MINISTER OPENS THE DOOR TO A FORMAL APOLOGY FOR SLAVERY AND SHUTS IT ON REPARATIONS",
+   "breaking": false,
+   "summary": [
+    "Writing before this week's Commonwealth heads of government meeting in Antigua and Barbuda, Prime Minister Andy Burnham said he is willing to hear calls for a formal state apology for Britain's role in the Atlantic slave trade, as part of a structured dialogue with the countries affected. He ruled out reparations, arguing Britons today cannot be held liable for wrongs committed under different laws in a different age. At the 2024 Samoa summit the UK refused to apologise at all.",
+    "Antigua's Prime Minister Gaston Browne, the summit host, welcomed the offer of practical help but said the region's position on reparatory justice is unchanged; Barbados's Mia Mottley welcomed the opening while restating her government's position. One Caribbean official called the statement disappointing and said it would not quell the demands of the 15 CARICOM states."
+   ],
+   "geopolitical": "An apology without money is the settlement CARICOM has spent a decade refusing, so Burnham has conceded the symbol most likely to be rejected and withheld the substance.",
+   "socioeconomic": "Ruling out reparations fixes Britain's liability at zero and moves the negotiation to “practical help” — development finance, debt terms, climate adaptation — whose value is undefined and can be quietly reduced later."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "FIVE OF THE TEN HAZE-NOTICED COMPANIES AGREE TO OPEN THEMSELVES TO ASSESSORS, AND TWO MORE SIGNAL THEY WILL",
+   "breaking": true,
+   "summary": [
+    "NEA said on 31 October it had met Wilmar International, Golden Agri-Resources, APP Company, APP Company (China) and Indofood Agri Resources, all of which agreed to engage assessors and cooperate with the panel examining whether Singapore-registered firms are connected to the Indonesian fires behind this year's haze. It will meet a sixth, Kencana Agri, which says it is willing to engage assessors voluntarily, and welcomed First Resources' statement that it is prepared to appoint an investigation firm and a law firm.",
+    "The ten firms issued notices under the Transboundary Haze Pollution Act were summoned to a closed-door meeting on 28 October with Senior Minister K. Shanmugam, Deputy Prime Minister Gan Kim Yong and Minister for Sustainability and the Environment Grace Fu. Three — Bumitama Agri, TSH Global Plantation and TSH Oversea — have not been reported as agreeing."
+   ],
+   "geopolitical": "Singapore has persuaded plantation groups operating in another country to submit to a fact-finding run from here without invoking the Act's compulsory powers — the only way it was ever going to reach conduct across the Strait. Seven of ten in three days beats what enforcement would have yielded, and the holdouts are visible.",
+   "socioeconomic": "Cooperation comes on the companies' own terms: they appoint and pay their own assessors and keep much of the timetable, and material gathered this way may be harder to use against them later."
+  },
+  {
+   "headline": "PROJECT WOLBACHIA PASSES HALF OF ALL SINGAPORE HOUSEHOLDS IN ITS TENTH YEAR",
+   "breaking": false,
+   "summary": [
+    "Senior Minister of State Janil Puthucheary marked the programme's tenth anniversary at Our Tampines Hub on 31 October: releases of Wolbachia-carrying male mosquitoes now cover more than 840,000 households, about 53 per cent of the total, after the Ang Mo Kio launch on 6 October. That meets NEA's 50 per cent target and covers most areas at risk of large dengue outbreaks.",
+    "Tampines, the first release site, recorded about 1,200 dengue cases in 2020 and 77 in 2025; national cases fell to 4,036 in 2025, a seven-year low, and NEA reports mosquito populations at release sites falling by up to 90 per cent. It cautioned that dengue is not over: cases rose in the third quarter of 2026 and DENV-3 is now the dominant serotype."
+   ],
+   "geopolitical": "This is the largest sustained Wolbachia suppression programme of its kind anywhere, and what Singapore publishes becomes the evidence other dense tropical cities use to decide whether to commit a decade and a production facility to the method.",
+   "socioeconomic": "The serotype shift is the test: a population with little acquired immunity to DENV-3 is the condition under which a mild dengue year becomes a severe one, and the coming quarters show whether suppression at 53 per cent holds."
+  },
+  {
+   "headline": "THE EMPLOYMENT CLAIMS TRIBUNAL PUBLISHES ITS JUDGMENTS FOR THE FIRST TIME SINCE 2017, AND WORKERS BEGIN CITING THEM",
+   "breaking": false,
+   "summary": [
+    "The Employment Claims Tribunal has released 17 judgments publicly in 2026, its first since it was established in 2017. In one, a magistrate awarded the maximum S$30,000 to an audit manager dismissed in a “sudden and unjustified” manner at the end of six-month probation, finding the employer had failed to justify its claim she had not passed. Under the tripartite guidelines an employer citing poor performance bears the burden of proving it, and the dismissal is wrongful if it cannot.",
+    "Employment lawyers said the publications clarify how the guidelines and statutes interact, and that workers are more aware of their recourse because of them. One, a 39-year-old dismissed for poor performance shortly after probation, filed with the Tripartite Alliance for Dispute Management through NTUC after reading about that case; hers settled in mediation for three months' salary."
+   ],
+   "geopolitical": "A tribunal that decided in private for nine years now produces reasoning that can be read and cited, turning employment law here from guidance about what should happen into a record of what tribunals do — before a dismissal rather than after it.",
+   "socioeconomic": "The figures are public too, and modest: S$30,000 is the ceiling and three months' salary was the settlement, so publication raises the odds of a claim far more than the cost of losing one."
+  },
+  {
+   "headline": "TOA PAYOH WEST GETS A SECOND TOWN CENTRE, MORE THAN 6,000 HOMES AND THE TOWN'S FIRST SHOPPING MALL",
+   "breaking": false,
+   "summary": [
+    "National Development Minister Chee Hong Tat, also the area's MP, unveiled the Toa Payoh West masterplan on 31 October: more than 6,000 new homes over the coming decade, mostly public with some private; a mixed-use development housing Toa Payoh's first shopping mall, intended as the town's “second heart” alongside Toa Payoh Central; a 1.2ha wellness park; and a “central green valley” of parks linking residents to Caldecott MRT station. A school is being studied for the families moving in.",
+    "The first tranche arrives immediately: Toa Payoh Hillside, a 1,600-unit Build-To-Order project beside Caldecott MRT, launches at HDB's November sales exercise."
+   ],
+   "geopolitical": "Rejuvenating one of the oldest HDB towns is how Singapore adds supply without land it does not have, and doing it in a mature central estate says the older towns are to be densified, not merely maintained.",
+   "socioeconomic": "Only 1,600 units are real this month; the rest is a decade away, in a market where a five-room resale flat in nearby Queenstown just set a record at S$1.818 million."
+  },
+  {
+   "headline": "THIRTY-FIVE COMMUNITY HEALTH POSTS UPGRADED AS SINGAPORE'S FIRST SUPER-AGED YEAR CLOSES",
+   "breaking": false,
+   "summary": [
+    "Singapore's three public healthcare clusters — NUHS, NHG Health and SingHealth — upgraded 35 community health posts in 2026, with more to follow. The posts sit inside active ageing centres and places of worship; enhanced ones add frailty screening, telehealth consultations, medication reviews, caregiver support and post-discharge follow-up. NHG Health upgraded 27 across Woodlands, Sembawang, Yishun and Toa Payoh, moving them from monthly to weekly operation, with another 12 due by March 2027.",
+    "Health Minister Ong Ye Kung announced the upgrade in October 2025, starting in the north. It lands in the year Singapore crossed the super-aged threshold, with 21.4 per cent of citizens aged 65 or older."
+   ],
+   "geopolitical": "This is the delivery end of Healthier SG, and the bet is explicit: chronic illness found and managed minutes from home costs the state less than the admission it prevents.",
+   "socioeconomic": "The substantive change is frequency, not facilities — weekly instead of monthly opening is what makes a post usable by someone who cannot plan a month ahead, and an active ageing centre is the cheapest place to catch frailty early."
+  }
+ ],
+ "word": {
+  "word": "suasion",
+  "pos": "noun",
+  "pronunciation": "SWAY-zhuhn (/ˈsweɪʒən/)",
+  "definition": "Persuasion as a means of influence — the act of urging or advising — used in contrast to force, and especially in the phrase “moral suasion”: pressure applied by appeal rather than by compulsion.",
+  "etymology": "From Latin suasio, from suadere, “to advise or urge”, the root that also gives English persuade and dissuade. It entered the language in the fourteenth century and has since narrowed: persuasion describes the result, suasion the method — carrying the implication that the harder instrument was available and was not used.",
+  "example": "NEA obtained five companies' agreement to open themselves to haze assessors by suasion rather than by invoking the compulsory powers of the Transboundary Haze Pollution Act, which is why the firms will appoint and pay their own investigators."
+ }
+}

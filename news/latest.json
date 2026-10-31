@@ -1,121 +1,122 @@
 {
  "schema": 1,
- "date": "2026-10-31",
- "generatedAt": "2026-10-31T07:16:00+08:00",
+ "date": "2026-11-01",
+ "generatedAt": "2026-11-01T07:48:00+08:00",
  "coverage": {
-  "from": "2026-10-30T07:00:00+08:00",
-  "to": "2026-10-31T07:00:00+08:00",
-  "label": "Friday 30 October 2026, 0700 SGT → Saturday 31 October 2026, 0700 SGT"
+  "from": "2026-10-31T07:00:00+08:00",
+  "to": "2026-11-01T07:00:00+08:00",
+  "label": "Saturday 31 October 2026, 0700 SGT → Sunday 1 November 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "BINANCE'S LOSS IS PUT AT ABOUT S$8 BILLION, CRYPTO'S LARGEST THEFT, AND THREE FORENSICS FIRMS PIN IT ON NORTH KOREA",
+   "headline": "THE FBI PUTS THE RECORD CRYPTO THEFT ON NORTH KOREA, AND BINANCE SAYS IT HAS ALREADY REPLACED 90 PER CENT OF IT",
    "breaking": true,
    "summary": [
-    "Yesterday's unconfirmed drain is now quantified. TRM Labs put the outflow at about S$8 billion (US$6.36 billion), most of it moved in roughly 20 minutes, and attributed it to TraderTraitor, which it identifies as North Korea's elite crypto-theft unit; Chainalysis and Elliptic independently pointed to Pyongyang. The evidence indicates a compromise of Binance's hot-wallet signing infrastructure, with one account naming a staff laptop as the way in.",
-    "That is roughly four times the US$1.5 billion taken from Bybit in February 2025, the previous record. Binance has suspended deposits and withdrawals and says user funds are safe, without publishing proof; about US$3 billion has been frozen with partners, up from the US$2.38 billion Tether and Circle immobilised on Thursday. Binance has named no perpetrator."
+    "The FBI said on Saturday that TraderTraitor — the North Korean unit it named for the US$1.5 billion Bybit theft of February 2025 — took the US$6.3 billion from Binance, putting government attribution behind the three forensics firms that said so a day earlier.",
+    "Binance says it has replaced about 90 per cent of the stolen amount by buying new tokens with company money, has set aside roughly US$6.34 billion internally, and remained on track to reopen withdrawals on Sunday. Recovery figures conflict: Binance puts frozen assets at about US$3 billion, including over US$2.3 billion by Tether and Circle; TRM Labs puts the freeze at about US$2.7 billion, with the attacker still holding some US$2.4 billion."
    ],
-   "geopolitical": "One night has delivered Pyongyang a sum on the order of its annual export earnings, outside every sanctions channel built to stop exactly that — which makes large exchanges' hot wallets a sanctions-evasion route of strategic scale, not a private commercial risk.",
-   "socioeconomic": "The largest exchange has halted withdrawals while asserting solvency it has not demonstrated, so depositors hold an assurance rather than a verifiable reserve — and the US$3 billion recovered was clawed back not by law but by issuers choosing to flip a switch."
+   "geopolitical": "Attribution converts a theft into a state act: in about twenty minutes Pyongyang took more hard currency than a year of its exports earns, through a venue no sanctions regime regulates. The instruments built for banks, shippers and arms brokers do not reach a signing key.",
+   "socioeconomic": "Binance absorbed a US$6.3 billion hole because it is the largest exchange in the world; no smaller custodian could have. The residual tenth, some US$630 million, is what customers would have carried anywhere else."
   },
   {
-   "headline": "A TANKER BURNS IN THE STRAIT OF HORMUZ AND BRENT SETTLES AT A SIX-MONTH HIGH, CLOSING OCTOBER UP 13.6 PER CENT",
+   "headline": "A FEDERAL JUDGE BARS THE JUSTICE AND HOMELAND SECURITY DEPARTMENTS FROM PRESSURING ELECTION OFFICIALS, THREE DAYS BEFORE THE MIDTERMS",
    "breaking": true,
    "summary": [
-    "The UK Maritime Trade Operations centre said a small boat attached explosive devices to a tanker transiting the strait; the blast set the engine room alight and disabled the vessel. Attribution is open, and the IRGC gave an incompatible account, claiming three tankers struck naval mines on an unauthorised route — unconfirmed by any maritime authority, and Washington called an earlier four-tanker mine claim false. It is the first verified incident in the strait after a week of CENTCOM and Iran's armed forces chief contradicting each other on whether the lanes are mined at all.",
-    "Brent's December contract settled up over 2 per cent at US$117.64 a barrel and WTI at US$104.12, both the highest since late April. October closed with Brent up 13.6 per cent and WTI 15.2 per cent, a fourth consecutive monthly gain. Officials have briefed Trump on military options, with any strike expected after the 3 November midterms, and seven OPEC+ producers meet on Sunday. Gulf exports averaged 15.7 million barrels a day in the week to 26 October."
+    "US District Judge Trina Thompson granted a temporary restraining order on Friday evening barring the Justice Department and Homeland Security from demanding that election officials in any state segregate ballots, purge voter rolls or halt ballot processing, and from threatening them with prosecution or otherwise coercing them. Officials administering the midterm lawfully, she wrote, “do not violate federal criminal law even if a particular ballot belongs to a registered voter alleged by Defendants to be ineligible to vote”.",
+    "The order runs to 16 November and requires the administration to disclose any search warrants, subpoenas or other demands for election materials tied to its lists. The Justice Department appealed on Saturday. Unions and civil rights groups including the NAACP and LULAC brought the case in the Northern District of California under the Voting Rights Act; at its centre is a DHS operation matching state voter rolls against federal records, which election officials say wrongly flags US citizens. More than 50 million Americans have already voted early."
    ],
-   "geopolitical": "The two accounts cannot be squared, and that is the operative fact: with CENTCOM insisting the lanes are clear and Tehran that the strait is shut to anyone outside its rules, no agreed description of the waterway exists for an insurer, a navy or a mediator.",
-   "socioeconomic": "A fourth straight double-digit monthly gain stops being a war premium and becomes the level economies plan around — it lands in oil-dependent Asian import bills just as the Fed and ECB are holding rates against inflation they already call elevated."
+   "geopolitical": "Who administers American elections — the states — has been answered by a district court three days out, with an appeal already filed, so Tuesday's operative rule may be set by an appellate panel ruling at speed.",
+   "socioeconomic": "Processing continues for the fifty million ballots already cast, and no official faces prosecution for counting them. The lists survive the order; only the coercion built on them is paused, and only to 16 November."
   },
   {
-   "headline": "POLICE RING POLAND'S CONSTITUTIONAL TRIBUNAL AS THE GOVERNMENT SUSPENDS AND MOVES TO PROSECUTE ITS TWO MOST SENIOR JUDGES",
-   "breaking": false,
+   "headline": "THE COST-OF-LIVING REVOLT CROSSES BORDERS: 320,000 MARCH IN FRANCE, A NEW YOUTH MOVEMENT FILLS GERMAN CITIES, AND ITALY JOINS",
+   "breaking": true,
    "summary": [
-    "Justice Minister Waldemar Zurek moved to strip the tribunal's president, Bogdan Swieczkowski, and vice-president, Bartlomiej Sochanski, of immunity so criminal charges can be brought; both were suspended, and a substantial police deployment went in around the Warsaw court building. Donald Tusk's government says it is restoring the rule of law, resting on European court rulings that the tribunal is no longer independent — the same basis on which it stopped publishing the court's judgments.",
-    "The tribunal says both remain its lawful leaders and called the operation a coup d'etat in which everyone taking part is committing that crime. The dispute runs back to the contested 2015 appointments, and President Karol Nawrocki has refused since March to swear in five tribunal judges elected by parliament, citing selection defects."
+    "France's interior ministry counted 320,000 protesters nationwide on Saturday, 70,000 in Paris, in the third mass mobilisation after those of 17 and 24 October. Marches that began peacefully, many in Halloween costume, ended in clashes in Paris, Marseille, Lyon and Toulouse. Interior Minister Laurent Nuñez warned that masked faces could bring fines; Macron denied considering any suspension of social media platforms but said they must be “vigilant”.",
+    "In Germany a youth movement calling itself “Gen Z regelt” — Gen Z has got this — drew tens of thousands in Berlin, Frankfurt, Cologne and Munich against living costs, underfunded schools and universities, environmental policy and a possible return of conscription. Water cannon were used in Cologne and Hamburg, Molotov cocktails thrown at emergency workers in Frankfurt, and part of the Zeil shopping street closed after a gun shop's windows were broken. Anti-government protests also swept Italy."
    ],
-   "geopolitical": "Brussels spent a decade arguing Poland's then-governing party was capturing the constitutional court; a government now invoking those same judgments to suspend judges and send police leaves the EU with no doctrine for who decides when a captured court may be dismantled by the executive.",
-   "socioeconomic": "A court whose leadership is suspended and facing prosecution cannot reliably rule on anything, so every contract, election petition and property claim needing constitutional review in an EU state of 37 million sits behind an unresolved question of which bench is real."
+   "geopolitical": "Three national grievances now share a calendar and an idiom, which is what turns flashpoints into a movement. Governments that could treat each country's unrest as domestic one that coordinates across borders and picks its own date.",
+   "socioeconomic": "Conscription sitting in the German list beside rent and tuition is the detail that matters: Europe's rearmament has reached the point where its domestic bill is contested by the cohort that would be called up."
   },
   {
-   "headline": "CARNEY COMMITS CANADA TO BECOMING THE EU'S FIRST ASSOCIATE MEMBER AND THE TWO LAUNCH AN ALLIANCE OPEN TO OTHERS",
+   "headline": "COP17 CLOSES WITH THE YEREVAN PATHWAY AGREED AND THE MONEY DEFERRED AGAIN",
    "breaking": false,
    "summary": [
-    "Closing the Canada-EU summit in Montreal, Mark Carney said unequivocally that Canada is working to become the bloc's first associate member — his most definitive statement yet, and firmer than the 'ever closer association' the EU offered a day earlier. Ursula von der Leyen and Antonio Costa used the term too, though Germany rejects it and nobody has defined what it would confer. Carney called it the deepest partnership short of accession.",
-    "They also announced a new alliance explicitly open to other like-minded countries, with agreements on digital trade and academic exchange, and begin a year of formal negotiations. Pierre Poilievre called it big talk without results, noting nine of the EU's 28 members have not ratified the decade-old CETA agreement."
+    "The UN biodiversity talks in Yerevan closed on 31 October by adopting the “Yerevan Pathway”, which asks countries to revise national biodiversity plans — subject to available funding — with attention to gaps in marine, coastal and inland-water ecosystems, and to accelerate work towards the existing target of cutting environmentally harmful subsidies by at least US$500 billion a year by 2030.",
+    "Post-2030 finance stalled: governments agreed criteria for a future permanent financial mechanism but not its structure, settling instead for a voluntary broadening of the donor base, formal reviews of the Global Environment Facility and the GBFF, and an invitation to wealthy emerging economies including China to take donor status. More than US$1.8 billion was announced over the conference, six contributors pledging US$60.13 million to the GBFF. Canada's Steven Guilbeault said the package falls short of the 2030 commitments; the EU called the finance outcome timid."
    ],
-   "geopolitical": "A G7 economy inside the US security and trade perimeter is negotiating a formal tier of the European Union, and the alliance is drafted to admit others — turning a bilateral hedge into a template, and the question for US allies into one of terms rather than whether.",
-   "socioeconomic": "For business the nine unratified CETA signatures are the story: exporters get a year of negotiation and a digital-trade deal, not market access, and associate membership means little until someone specifies which parts of the single market it reaches."
+   "geopolitical": "The fight that stalled the talks is the one that stalls climate finance — whether states that became rich recently should pay like those that became rich early — and inviting China to volunteer is a way of not deciding it.",
+   "socioeconomic": "“Subject to available funding” is the operative phrase: the 2030 targets are formally conditional on money nobody has committed, and US$1.8 billion of announcements is a rounding error against the US$500 billion of annual subsidies the same text proposes to cut."
   },
   {
-   "headline": "WASHINGTON CLEARS 500 PATRIOT INTERCEPTORS FOR UKRAINE AT US$2.1 BILLION, PAID FOR BY OTHERS, AGAINST DELIVERIES OF 12 A MONTH",
+   "headline": "BRITAIN'S PRIME MINISTER OPENS THE DOOR TO A FORMAL APOLOGY FOR SLAVERY AND SHUTS IT ON REPARATIONS",
    "breaking": false,
    "summary": [
-    "The State Department approved a possible sale of 500 PAC-3 MSE interceptors — Ukraine's only effective defence against Russian ballistic missiles — at an estimated US$2.1 billion. No US money is involved: Canada, Germany and Norway contribute through the JUMPSTART mechanism, the balance financed by the EU's Ukraine Support Loan. Congress has 30 days to review.",
-    "Zelensky says Ukraine has averaged 12 US Patriot interceptors a month this year, so this reads against the supply problem rather than as relief from it: a notification, not a delivery, with Ukraine's place in the production queue undisclosed and complex interceptors taking years to build. NATO's commander dismissed delay concerns. It lands amid friction over Trump's diesel deal with Russia and his criticism of Ukrainian strikes on Russian refineries."
+    "Writing before this week's Commonwealth heads of government meeting in Antigua and Barbuda, Prime Minister Andy Burnham said he is willing to hear calls for a formal state apology for Britain's role in the Atlantic slave trade, as part of a structured dialogue with the countries affected. He ruled out reparations, arguing Britons today cannot be held liable for wrongs committed under different laws in a different age. At the 2024 Samoa summit the UK refused to apologise at all.",
+    "Antigua's Prime Minister Gaston Browne, the summit host, welcomed the offer of practical help but said the region's position on reparatory justice is unchanged; Barbados's Mia Mottley welcomed the opening while restating her government's position. One Caribbean official called the statement disappointing and said it would not quell the demands of the 15 CARICOM states."
    ],
-   "geopolitical": "The United States has moved from supplying Ukraine to licensing supply that European and Canadian money pays for — keeping an American veto over what Kyiv may buy while shifting cost and political exposure to Europe, whatever the midterms produce.",
-   "socioeconomic": "Production, not funding, is the binding constraint on how much of Ukraine's grid survives this winter: against 12 arriving a month, the decisive number is factory output, and allied cash can bid for a place in the queue without enlarging it."
+   "geopolitical": "An apology without money is the settlement CARICOM has spent a decade refusing, so Burnham has conceded the symbol most likely to be rejected and withheld the substance.",
+   "socioeconomic": "Ruling out reparations fixes Britain's liability at zero and moves the negotiation to “practical help” — development finance, debt terms, climate adaptation — whose value is undefined and can be quietly reduced later."
   }
  ],
  "singapore": [
   {
-   "headline": "A COUPLE EXPECTING THEIR SECOND CHILD ARE KILLED IN TAMPINES BY A DISQUALIFIED DRIVER IN A DEREGISTERED CAR ON A CLONED PLATE",
+   "headline": "FIVE OF THE TEN HAZE-NOTICED COMPANIES AGREE TO OPEN THEMSELVES TO ASSESSORS, AND TWO MORE SIGNAL THEY WILL",
    "breaking": true,
    "summary": [
-    "Mohd Emirul Danial Mohd Zulkifly and his wife and pillion rider Nursyarafana Norazman, both 24, died after a crash on Tampines Avenue 12 at about 10.35pm Thursday involving two cars and their motorcycle; a blue Audi crossed the road divider. Syarafana was pregnant with their second child; they leave a six-year-old son.",
-    "The driver, 30, and his passenger, 29, fled without helping the injured and were arrested near West Coast Road on Friday. Police said he was driving while disqualified, in a deregistered vehicle on a cloned number plate. He is to be charged today with dangerous driving causing death and eight further traffic offences."
+    "NEA said on 31 October it had met Wilmar International, Golden Agri-Resources, APP Company, APP Company (China) and Indofood Agri Resources, all of which agreed to engage assessors and cooperate with the panel examining whether Singapore-registered firms are connected to the Indonesian fires behind this year's haze. It will meet a sixth, Kencana Agri, which says it is willing to engage assessors voluntarily, and welcomed First Resources' statement that it is prepared to appoint an investigation firm and a law firm.",
+    "The ten firms issued notices under the Transboundary Haze Pollution Act were summoned to a closed-door meeting on 28 October with Senior Minister K. Shanmugam, Deputy Prime Minister Gan Kim Yong and Minister for Sustainability and the Environment Grace Fu. Three — Bumitama Agri, TSH Global Plantation and TSH Oversea — have not been reported as agreeing."
    ],
-   "geopolitical": "Nothing international turns on this, but it tests a claim Singapore makes about itself — that enforcement is dense enough that a disqualified driver cannot simply keep driving. Here one did, on copied plates, until two people were dead.",
-   "socioeconomic": "A deregistered car on a cloned plate is invisible to every system the road regime relies on — ERP, enforcement cameras, insurance, COE — so the gap is not the sentence but how long a vehicle can run outside all of it, and who compensates victims of an uninsured driver."
+   "geopolitical": "Singapore has persuaded plantation groups operating in another country to submit to a fact-finding run from here without invoking the Act's compulsory powers — the only way it was ever going to reach conduct across the Strait. Seven of ten in three days beats what enforcement would have yielded, and the holdouts are visible.",
+   "socioeconomic": "Cooperation comes on the companies' own terms: they appoint and pay their own assessors and keep much of the timetable, and material gathered this way may be harder to use against them later."
   },
   {
-   "headline": "SINGAPORE TELLS THE SECURITY COUNCIL THAT CLOSING A TRANSIT STRAIT BREAKS UNCLOS IN WAR AS IN PEACE",
+   "headline": "PROJECT WOLBACHIA PASSES HALF OF ALL SINGAPORE HOUSEHOLDS IN ITS TENTH YEAR",
    "breaking": false,
    "summary": [
-    "Speaking for the Oceans Four — Fiji, Jamaica, Malta and Singapore — at a UN Security Council debate on emerging technologies and maritime security, Law Minister Edwin Tong said unlawful restrictions on transit passage through straits used for international navigation violate UNCLOS, and that the convention binds all states in war as in peace, parties or not. He named the Strait of Hormuz, arguing disruption there bears on navigational rights worldwide.",
-    "He warned that AI and autonomous vessels bring risks of weaponisation and cyber attack alongside their navigational uses, and cited recent attacks on civilian ships as a threat to seafarers. Tong is in New York to 4 November for International Law Week and the ICJ elections, where Singapore has nominated Ambassador Rena Lee."
+    "Senior Minister of State Janil Puthucheary marked the programme's tenth anniversary at Our Tampines Hub on 31 October: releases of Wolbachia-carrying male mosquitoes now cover more than 840,000 households, about 53 per cent of the total, after the Ang Mo Kio launch on 6 October. That meets NEA's 50 per cent target and covers most areas at risk of large dengue outbreaks.",
+    "Tampines, the first release site, recorded about 1,200 dengue cases in 2020 and 77 in 2025; national cases fell to 4,036 in 2025, a seven-year low, and NEA reports mosquito populations at release sites falling by up to 90 per cent. It cautioned that dengue is not over: cases rose in the third quarter of 2026 and DENV-3 is now the dominant serotype."
    ],
-   "geopolitical": "A small trading state cannot enforce transit rights, so it records them — and putting the position to the Security Council for four maritime states rather than one builds the legal account of Hormuz that will be cited when the strait reopens.",
-   "socioeconomic": "The autonomous-shipping warning carries the bill: Singapore is the port that absorbs the losses if remotely operated vessels can be hijacked by code, and it is pressing for rules while the IMO's first framework for them is new enough to shape."
+   "geopolitical": "This is the largest sustained Wolbachia suppression programme of its kind anywhere, and what Singapore publishes becomes the evidence other dense tropical cities use to decide whether to commit a decade and a production facility to the method.",
+   "socioeconomic": "The serotype shift is the test: a population with little acquired immunity to DENV-3 is the condition under which a mild dengue year becomes a severe one, and the coming quarters show whether suppression at 53 per cent holds."
   },
   {
-   "headline": "BALAKRISHNAN IS THE FIRST SINGAPOREAN LEADER IN ISLAMABAD IN 22 YEARS AND SAYS SO PLAINLY: 'BETTER LATE THAN NEVER'",
+   "headline": "THE EMPLOYMENT CLAIMS TRIBUNAL PUBLISHES ITS JUDGMENTS FOR THE FIRST TIME SINCE 2017, AND WORKERS BEGIN CITING THEM",
    "breaking": false,
    "summary": [
-    "Vivian Balakrishnan made a one-day official visit to Islamabad on Friday, the first by a Singaporean foreign minister in about 22 years — Goh Chok Tong was the last Singaporean leader there, in 2004 — in the 60th year of diplomatic ties. He met Deputy Prime Minister Ishaq Dar and Prime Minister Shehbaz Sharif; they discussed trade and investment flows and resuming direct flights.",
-    "The Singapore Civil Defence Force and Pakistan's National Disaster Management Authority signed a disaster-management memorandum. Balakrishnan praised Pakistan's 'unique but very constructive and valuable role' in regional mediation — its work on the Gulf crisis."
+    "The Employment Claims Tribunal has released 17 judgments publicly in 2026, its first since it was established in 2017. In one, a magistrate awarded the maximum S$30,000 to an audit manager dismissed in a “sudden and unjustified” manner at the end of six-month probation, finding the employer had failed to justify its claim she had not passed. Under the tripartite guidelines an employer citing poor performance bears the burden of proving it, and the dismissal is wrongful if it cannot.",
+    "Employment lawyers said the publications clarify how the guidelines and statutes interact, and that workers are more aware of their recourse because of them. One, a 39-year-old dismissed for poor performance shortly after probation, filed with the Tripartite Alliance for Dispute Management through NTUC after reading about that case; hers settled in mediation for three months' salary."
    ],
-   "geopolitical": "The content is modest and the timing is not: Pakistan has been among the handful of states mediating between Washington and Tehran all year, and Singapore is opening a channel to a mediator just as the Hormuz closure becomes the largest external risk to its economy.",
-   "socioeconomic": "Twenty-two years of ministerial absence is itself the economic fact: trade with a market of 250 million has been left to run on its own, and a disaster memorandum plus talks on flights is groundwork for commerce rather than commerce."
+   "geopolitical": "A tribunal that decided in private for nine years now produces reasoning that can be read and cited, turning employment law here from guidance about what should happen into a record of what tribunals do — before a dismissal rather than after it.",
+   "socioeconomic": "The figures are public too, and modest: S$30,000 is the ceiling and three months' salary was the settlement, so publication raises the odds of a claim far more than the cost of losing one."
   },
   {
-   "headline": "SGH OPENS AN EMERGENCY AND NEUROSCIENCE BUILDING THAT CUTS STROKE TREATMENT FROM 130 MINUTES TO 82",
+   "headline": "TOA PAYOH WEST GETS A SECOND TOWN CENTRE, MORE THAN 6,000 HOMES AND THE TOWN'S FIRST SHOPPING MALL",
    "breaking": false,
    "summary": [
-    "The 12-storey Singapore General Hospital Emergency Medicine and National Neuroscience Institute building opened on Friday across about 14,000 square metres, six times the space it replaces. Acute stroke patients can be assessed, scanned and treated in as little as 82 minutes against about 130 before, and it houses Singapore's first emergency-department-based angiography suite, so a patient needing endovascular thrombectomy is no longer moved to the main blocks.",
-    "SGH also reported waits for 95 per cent of serious but not life-threatening emergency cases falling from 217 minutes in 2023 to 141 in 2025."
+    "National Development Minister Chee Hong Tat, also the area's MP, unveiled the Toa Payoh West masterplan on 31 October: more than 6,000 new homes over the coming decade, mostly public with some private; a mixed-use development housing Toa Payoh's first shopping mall, intended as the town's “second heart” alongside Toa Payoh Central; a 1.2ha wellness park; and a “central green valley” of parks linking residents to Caldecott MRT station. A school is being studied for the families moving in.",
+    "The first tranche arrives immediately: Toa Payoh Hillside, a 1,600-unit Build-To-Order project beside Caldecott MRT, launches at HDB's November sales exercise."
    ],
-   "geopolitical": "Little direct bearing abroad, though an ED-based angiography suite is the kind of configuration other systems copy rather than invent, and it keeps Singapore's medical-travel case intact while its hospitals strain.",
-   "socioeconomic": "In stroke, saved minutes convert into preserved brain tissue and avoided disability, so 48 minutes off the median cuts future nursing-home and caregiving demand where 21.4 per cent of citizens are already over 65 — the ageing bill paid down before the damage happens."
+   "geopolitical": "Rejuvenating one of the oldest HDB towns is how Singapore adds supply without land it does not have, and doing it in a mature central estate says the older towns are to be densified, not merely maintained.",
+   "socioeconomic": "Only 1,600 units are real this month; the rest is a decade away, in a market where a five-room resale flat in nearby Queenstown just set a record at S$1.818 million."
   },
   {
-   "headline": "SINGAPORE WILL PAY SENIORS A STIPEND TO LOOK AFTER OTHER SENIORS, WITH UP TO 700,000 PLACES",
+   "headline": "THIRTY-FIVE COMMUNITY HEALTH POSTS UPGRADED AS SINGAPORE'S FIRST SUPER-AGED YEAR CLOSES",
    "breaking": false,
    "summary": [
-    "A new programme, Age Well Kakis, will match volunteers aged 50 and over to community-care roles suited to their interests, abilities and availability, and pay a stipend. Up to 700,000 opportunities will be available; the Health Ministry expects about 16,500 seniors to take them up over two years."
+    "Singapore's three public healthcare clusters — NUHS, NHG Health and SingHealth — upgraded 35 community health posts in 2026, with more to follow. The posts sit inside active ageing centres and places of worship; enhanced ones add frailty screening, telehealth consultations, medication reviews, caregiver support and post-discharge follow-up. NHG Health upgraded 27 across Woodlands, Sembawang, Yishun and Toa Payoh, moving them from monthly to weekly operation, with another 12 due by March 2027.",
+    "Health Minister Ong Ye Kung announced the upgrade in October 2025, starting in the north. It lands in the year Singapore crossed the super-aged threshold, with 21.4 per cent of citizens aged 65 or older."
    ],
-   "geopolitical": "Nothing external turns on it except as a model: every super-aged society faces the same shortage of working-age carers, and Singapore is testing whether the cohort just below the care-receiving one can be paid to fill part of it.",
-   "socioeconomic": "Paying a stipend rather than relying on goodwill makes this a low-cost labour channel into community care, not a volunteering drive — and 16,500 expected takers against 700,000 places measures how little of the shortfall it is meant to close, with the working-age share of citizens at 59.3 per cent."
+   "geopolitical": "This is the delivery end of Healthier SG, and the bet is explicit: chronic illness found and managed minutes from home costs the state less than the admission it prevents.",
+   "socioeconomic": "The substantive change is frequency, not facilities — weekly instead of monthly opening is what makes a post usable by someone who cannot plan a month ahead, and an active ageing centre is the cheapest place to catch frailty early."
   }
  ],
  "word": {
-  "word": "demurrage",
+  "word": "suasion",
   "pos": "noun",
-  "pronunciation": "dih-MUR-ij (/dɪˈmʌrɪdʒ/)",
-  "definition": "The charge a charterer owes a shipowner for keeping a vessel beyond the time agreed for loading or unloading; more broadly, the detention of a ship and the cost of that delay.",
-  "etymology": "From Old French demorage, 'a delay', from demorer, to linger, from Latin demorari (de- plus morari, 'to delay'). It entered English law as a shipping term in the seventeenth century and stayed one, which is why it carries no blame — it simply prices time a ship did not spend sailing.",
-  "example": "A tanker burning in the Strait of Hormuz with its engine room disabled is not only a casualty report; it is demurrage accruing on every vessel behind it, and that cost is what settled Brent at a six-month high."
+  "pronunciation": "SWAY-zhuhn (/ˈsweɪʒən/)",
+  "definition": "Persuasion as a means of influence — the act of urging or advising — used in contrast to force, and especially in the phrase “moral suasion”: pressure applied by appeal rather than by compulsion.",
+  "etymology": "From Latin suasio, from suadere, “to advise or urge”, the root that also gives English persuade and dissuade. It entered the language in the fourteenth century and has since narrowed: persuasion describes the result, suasion the method — carrying the implication that the harder instrument was available and was not used.",
+  "example": "NEA obtained five companies' agreement to open themselves to haze assessors by suasion rather than by invoking the compulsory powers of the Transboundary Haze Pollution Act, which is why the firms will appoint and pay their own investigators."
  }
 }
