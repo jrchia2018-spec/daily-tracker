@@ -1,0 +1,122 @@
+{
+ "schema": 1,
+ "date": "2026-11-02",
+ "generatedAt": "2026-11-02T07:15:00+08:00",
+ "coverage": {
+  "from": "2026-11-01T07:00:00+08:00",
+  "to": "2026-11-02T07:00:00+08:00",
+  "label": "Sunday 1 November 2026, 0700 SGT → Monday 2 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "IRAN PUTS A TWO-DAY PRICE ON HORMUZ AS QATAR COMPRESSES THE SEQUENCE AND THE GULF WAITS ON WASHINGTON",
+   "breaking": true,
+   "summary": [
+    "<p>Indirect US–Iran talks ran a third straight day in Doha on Sunday, Qatari mediators having met Iranian officials in Tehran on Friday before moving the venue. Foreign Minister Abbas Araqchi called the talks “ongoing and progressing”, said a “two-day proposal” had reached no conclusion, and confirmed no meeting with American representatives is planned.</p>",
+    "<p>The proposal is a 48-hour swap. On day one Washington acts — lifting the blockade on oil shipping, ceasing to block the asset release, ending oil sanctions; on day two Hormuz reopens and traffic returns to its former state. Qatar cut Iran’s original seven-day timetable to five and is now pressing for two, and is separately brokering the release of more than US$6 billion of Iranian money held in Doha out of roughly US$12 billion — the step Tehran treats as the test of American intent.</p>",
+    "<p>Gulf officials said they are braced for the worst while awaiting Washington’s answer, which may come before Tuesday’s midterms. Trump has said there will be no strikes before the vote and has not ruled them out after; Rubio said talks “have actually never stopped”. No verified strike, Hormuz incident or diplomatic breach occurred in the window — the fourth quiet day in six.</p>"
+   ],
+   "geopolitical": "The two-day sequence inverts the MOU’s architecture: no fourteen points, no working groups in Switzerland, just a demand that the United States move first on a 48-hour clock. A stopwatch turns an open negotiation into a yes or no an administration three days from an election must give.",
+   "socioeconomic": "Hormuz is now priced on an American decision rather than Iranian restraint, so war-risk premiums track a cable from Washington, not a warship in the Gulf. Shipowners cannot hedge a 48-hour reopening with no date on it."
+  },
+  {
+   "headline": "GERMANY’S COST-OF-LIVING PROTESTS TURN TO LOOTING AND FRANCE OPENS AN ATTEMPTED-MURDER CASE",
+   "breaking": true,
+   "summary": [
+    "<p>Saturday’s nationwide German marches, called by the new youth movement Gen Z regelt, broke into violence overnight. Hesse’s interior minister Roman Poseck said hooded rioters damaged 17 shops in Frankfurt and looted five, that 1,300 officers were deployed and more than 100 injured, and that 54 people aged 13 to 29 were arrested. Police used water cannon in Berlin, Cologne and Hamburg against crowds throwing fireworks, stones and bottles at emergency workers; NDR reported 120 arrests in Hamburg. Poseck alleged around 100 identified left-wing extremists had infiltrated the marches, and federal ministers promised a tough response.</p>",
+    "<p>In France, where more than 320,000 marched on a third national date, the Paris prefecture said several hundred rioters attacked security forces and prosecutors opened an attempted-murder investigation into petrol bombs thrown at riot police. Demonstrations also ran in Switzerland, Portugal and Albania. The German movement’s demands are school and university underfunding, living costs, spending cuts and a possible return of conscription.</p>"
+   ],
+   "geopolitical": "The infiltration claim is the hinge. Treating Saturday as a public-order problem with a hundred extremists in it lets Berlin answer with policing; conceding it as politics means answering on conscription, which no governing coalition rearming at this pace wants to put to the cohort that would be called up.",
+   "socioeconomic": "Seventeen damaged shopfronts in one city is a small bill. The durable cost is that a movement about rent and tuition now carries a security file, which is the cheapest reason a government can find for not costing its demands."
+  },
+  {
+   "headline": "UKRAINE RESUMES REFINERY STRIKES AS THE KHERSON TRUCE EXPIRES, AND MOSCOW OPENS A TERRORISM CASE",
+   "breaking": true,
+   "summary": [
+    "<p>The humanitarian ceasefire that had held in the Kherson region since 27 October — the longest local pause of the war — ended at 22:59 Ukrainian time on Sunday. Kyiv’s military evacuated 167 people from threatened areas during the day, including 22 children and 21 with limited mobility; the ombudsman said the Oleshky mission is over and the regional administration would not say how many left the occupied town. Russian strikes on energy infrastructure in four regions had left hundreds of thousands of homes without power, some restored on Sunday.</p>",
+    "<p>Ukraine has also ended the roughly two-week pause in refinery strikes that Washington asked for. Russian Deputy Prime Minister Alexander Novak confirmed hits on three refineries and a gas-chemical complex, among them Rosneft’s Novokuybyshevsk and the Kstovo plant; the manufacturer Fire Point acknowledged involvement in both. Moscow opened a terrorism case over Kstovo and the Kremlin said Kyiv was “simply ignoring” American wishes. Trump had pressed Kyiv for weeks to stop, blaming the strikes for diesel prices.</p>"
+   ],
+   "geopolitical": "Restarting the refinery campaign three days before the midterms, against an explicit American request, measures how little leverage Washington now has over Ukrainian targeting. Kyiv has judged the cost of ignoring Trump lower than the cost of letting its grid be hit for free.",
+   "socioeconomic": "The exchange has settled into grid for refinery: Russian refining capacity against Ukrainian households in winter. Both sides are now destroying the assets their own populations need to get through it."
+  },
+  {
+   "headline": "A JUDGE THROWS OUT THE PRE-EMPTIVE BID TO BLOCK AN ALASKA SENATE RESULT THE ADMINISTRATION MIGHT LOSE",
+   "breaking": true,
+   "summary": [
+    "<p>Judge Sharon Gleason of the US District Court in Anchorage dismissed on Sunday the Justice Department’s suit seeking to bar certification of Alaska’s Senate result if the Republican incumbent Dan Sullivan loses. The action turned on a teacher, Daniel J. Sullivan Jr., whose name also appears on the ballot, and argued the resulting confusion would favour the Democratic challenger. Gleason held that many Alaskans had already voted and there is no way to establish which Sullivan they meant.</p>",
+    "<p>Trump has said he ordered the suit personally. The department intends to appeal; Sullivan said he will accept the result either way, and the department is separately running a criminal inquiry into the alleged plot to place the second Sullivan on the ballot. The ruling lands two days after a California court barred federal officials from pressuring state election administrators.</p>"
+   ],
+   "geopolitical": "A government asking a court in advance to withhold certification of a race it fears losing is a new instrument, and it has failed twice in three days before two district judges. The question is whether an appellate panel, handed both cases at once, lets any of it run on Tuesday.",
+   "socioeconomic": "Alaska’s count proceeds on its own schedule and nobody administering it now faces an order to stop. Unsettled is who bears the cost of contesting results pre-emptively in every state where the margin is close."
+  },
+  {
+   "headline": "TWO DOZEN INDIAN OPPOSITION PARTIES DEMAND THE ELECTION CHIEF RESIGN OVER THE VOTER ROLLS",
+   "breaking": true,
+   "summary": [
+    "<p>Tens of thousands gathered at Ramlila Maidan in New Delhi on Sunday under the slogan “Vote Bachao, Desh Bachao” — save the vote, save the nation — drawing leaders and supporters from nearly two dozen parties of the opposition INDIA bloc. Rahul Gandhi, Mamata Banerjee and Akhilesh Yadav led the attack on the Election Commission’s Special Intensive Revision of the electoral rolls, alleging “vote chori”, and the rally repeated the demand that Chief Election Commissioner Gyanesh Kumar resign.</p>",
+    "<p>Gandhi put the number of names removed since the general election at about 13.5 crore — roughly 135 million — a figure no independent audit has confirmed. The BJP dismissed the rally as a politically motivated attempt to discredit a constitutional institution. Police reported no serious incident despite a heavy deployment. Opposition figures have floated an impeachment motion against Kumar; none has been filed.</p>"
+   ],
+   "geopolitical": "An election commission whose independence is openly doubted by twenty-four parties at home is a weaker reference abroad, and India has spent a decade offering its commission as the model for running elections at scale. That export now carries a domestic asterisk.",
+   "socioeconomic": "A hundred and thirty-five million is a claim, not a count, and the opposition has not shown its working. What is not in dispute is who carries the burden of a roll revision: people asked for documents they may never have had, where registration was always thinnest."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "OIL PATCHES OFF SEBAROK, SEMAKAU AND SELAT PAUH SEND MPA’S SPILL CONTRACTORS OUT WITH NO SOURCE IDENTIFIED",
+   "breaking": true,
+   "summary": [
+    "<p>The Maritime and Port Authority was alerted to oil in the water off Pulau Sebarok at about 10.25am on Sunday. Aerial surveillance then confirmed several patches off Sebarok, Pulau Semakau and Selat Pauh, and found none near the West Coast, Sentosa, the Southern Islands or the East Coast.</p>",
+    "<p>MPA activated its oil spill response contractors and directed terminals in the area to deploy their own; other agencies were put on notice to take precautionary shoreline measures. The authority said there was no impact on navigational traffic or port operations, and that surveillance is continuing while it investigates where the oil came from.</p>"
+   ],
+   "geopolitical": "Singapore sells itself as the port where a spill is contained in hours, and that claim is the quiet part of why the world’s largest bunkering business sits here rather than in a cheaper harbour. It is tested by response time, not by volume.",
+   "socioeconomic": "Until the source is identified nobody is liable, so the cleanup is being run by MPA’s contractors and the terminals. Semakau is the landfill island, and the waters around it hold the replanted mangrove and seagrass that were the condition of building it there."
+  },
+  {
+   "headline": "EVERY POLICE CALL WILL COME FROM ONE NUMBER FROM TODAY, AFTER IMPERSONATION LOSSES MORE THAN DOUBLED",
+   "breaking": false,
+   "summary": [
+    "<p>From Monday every outgoing Singapore Police Force call comes from a single number, 6000-0999, followed immediately by a verification SMS on the gov.sg sender ID. The force is the first agency to adopt a dedicated line against government-official impersonation scams.</p>",
+    "<p>Reported impersonation cases ran to at least 3,230 between January and September, with losses of at least S$142.5 million, against 1,010 cases and S$61.4 million in the same nine months of 2025. In October alone at least 59 cases began with a caller posing as staff of the telco SIMBA before transferring victims to a fake police or MAS officer, costing at least S$1.3 million. Total scam losses in the first half of 2026 were S$410.6 million.</p>"
+   ],
+   "geopolitical": "The calls originate outside Singapore and the numbers are spoofed, so there is no one to arrest and no network to seize. Publishing one authentic identity concedes that interdiction has failed and that the only controllable variable left is what the public can verify.",
+   "socioeconomic": "A number the whole population has to learn is a cost shifted onto households, and cheap against S$142.5 million in nine months. It also creates one point of failure: the scam that works next is the one that spoofs 6000-0999."
+  },
+  {
+   "headline": "181,800 INTEGRATED SHIELD RIDERS DROPPED OR DOWNGRADED IN A YEAR AS SINGAPOREANS PRICE THEMSELVES OUT OF TOP-UP COVER",
+   "breaking": false,
+   "summary": [
+    "<p>A total of 181,800 Integrated Shield Plan riders were dropped or downgraded in 2025, against 103,400 in 2024 and 84,800 in 2023 on Health Ministry figures; the number given up outright rose about 72 per cent. Riders are the top-up policies that cover the deductible and co-insurance an Integrated Shield Plan leaves with the patient.</p>",
+    "<p>The ministry says it does not track why policyholders downgrade or discontinue, and that it is too early to read trends from the switching figures. Commentators attribute the surge to this year’s rider rule changes and successive premium increases, neither of which the ministry’s data confirms as the cause.</p>"
+   ],
+   "geopolitical": "Singapore’s answer to medical inflation is to push cost back towards the insured and let claims discipline do the rest — the opposite of the direction most advanced systems take when premiums bite. Whether it holds is now a question of household behaviour, not policy design.",
+   "socioeconomic": "Dropping a rider restores a deductible and co-insurance the holder had paid to remove, so almost two hundred thousand people chose a known future bill over a rising certain one. That is self-insurance against inflation they cannot price."
+  },
+  {
+   "headline": "SINGAPORE WARNS AT MANAMA THAT A CLOSED HORMUZ IS A PRECEDENT FOR MALACCA",
+   "breaking": false,
+   "summary": [
+    "<p>Senior Minister of State for Defence Zaqy Mohamad told the 22nd IISS Manama Dialogue in Bahrain on Sunday that “we must not allow insecurity to become the new normal”. The lesson of Hormuz, he said, is not that the world has become too interconnected but that “our security cooperation has not always kept pace with our interdependence”.</p>",
+    "<p>He warned specifically that measures restricting transit through Hormuz or the Bab el-Mandeb could erode navigational rights in the Straits of Malacca and Singapore, argued that mutual dependence alone guarantees nothing, and cited Singapore’s Information Fusion Centre, which now shares maritime security information with 58 international partners across 163 linkages.</p>"
+   ],
+   "geopolitical": "Singapore’s stake in the Gulf is the rule, not the oil. If a coastal state can throttle a strait for leverage and be negotiated with rather than reversed, the doctrine that keeps Malacca open is the one being rewritten, and no navy Singapore can build substitutes for it.",
+   "socioeconomic": "The 58 partners and 163 linkages are the argument that the cheap half of maritime security is information. The expensive half — hulls that can escort — is what the Gulf has shown nobody has enough of."
+  },
+  {
+   "headline": "GAN KIM YONG TO LEAD SINGAPORE AT A COMMONWEALTH SUMMIT CONSUMED BY THE REPARATIONS QUESTION",
+   "breaking": false,
+   "summary": [
+    "<p>The Prime Minister’s Office said on Sunday that Deputy Prime Minister Gan Kim Yong will lead Singapore’s delegation to the Commonwealth Heads of Government Meeting in St John’s, Antigua and Barbuda, from 2 to 5 November. The summit opens with reparatory justice as its live dispute: London has agreed to structured dialogue on it after insisting it stay off the formal agenda, having ruled out payments.</p>"
+   ],
+   "geopolitical": "Sending a deputy prime minister rather than the prime minister is a judgment about what the meeting will produce. Singapore’s interest in the Commonwealth is procedural — fifty-six states of very different size arguing under the same rules — and that is served by the body surviving the argument, not by either answer to it.",
+   "socioeconomic": "For a small open economy the summit’s value is the trade and standards work around it, which is the first thing crowded out when a communiqué fight takes the week."
+  }
+ ],
+ "word": {
+  "word": "vitiate",
+  "pos": "verb",
+  "pronunciation": "VISH-ee-ayt",
+  "definition": "To impair the quality or effectiveness of something; in law, to destroy the validity of an act or instrument.",
+  "etymology": "From Latin vitiare, to spoil or corrupt, from vitium, a fault or defect — the same root that gives English vice.",
+  "example": "India’s opposition told a Delhi maidan that the roll revision had vitiated the electoral register itself; in Anchorage the same afternoon, a judge found the reverse — that a second candidate of the same name does not vitiate a count already half cast."
+ }
+}
