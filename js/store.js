@@ -26,6 +26,7 @@ function defaults() {
     skincare: {},         // { 'YYYY-MM-DD': { whiteheads: n, newLesion: bool } } — LEGACY per-day counts, still read for days before the ledger starts
     lesions: [],          // [ {id, area, appeared, resolved|null, carried} ] — one record per whitehead, from 15 Aug 2026. See the ledger section below.
     forgotten: {},        // { 'food name, lowercased': ms } — saved foods no longer suggested. See forgetFood().
+    foodEdits: {},        // { 'food name, lowercased': {per100} | {one} } — figures changed from search, for good. See withFoodEdit().
     supplements: {},      // { 'YYYY-MM-DD': ['whey', 'creatine', ...] } — ticked that day
     suppList: [],         // [ {id, label, note} ] — a guest's own supplement checklist; the owner's stack is fixed in app.js
     owner: false,         // true only on the phone of the person this app was built for. See migrate() (ownerMark).
@@ -337,14 +338,17 @@ export function mealTotals(key) {
 // new base — and re-logging it halved it again. Exactly the compounding the
 // servings redesign was built to end. Search must always offer ONE serving.
 const MACRO_FIELDS = ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water'];
-function oneServingOf(m) {
+export function oneServingOf(m) {
   const n = m.servings || 1;
   const out = { ...m, servings: 1 };
   for (const f of MACRO_FIELDS) {
-    // per1 is authoritative where present; otherwise divide the totals back
-    // out. Entries predating the servings feature have neither per1 nor
-    // servings and are already per-serving, so n === 1 leaves them alone.
-    if (m.per1 && m.per1[f] != null) out[f] = m.per1[f];
+    // base = the food's own figures, kept on an entry whose figures were
+    // changed for that entry alone, so the change doesn't become the food's.
+    // Otherwise per1 is authoritative where present; failing that, divide the
+    // totals back out. Entries predating the servings feature have neither
+    // per1 nor servings and are already per-serving, so n === 1 leaves them.
+    if (m.base) out[f] = m.base[f];
+    else if (m.per1 && m.per1[f] != null) out[f] = m.per1[f];
     else if (typeof m[f] === 'number' && n !== 1) out[f] = Math.round((m[f] / n) * 10) / 10;
   }
   if (typeof m.grams === 'number' && n !== 1) out.grams = Math.round((m.grams / n) * 10) / 10;
@@ -388,6 +392,38 @@ export function isForgotten(name, newestCreated) {
 export function forgetFood(name) {
   if (!state.forgotten) state.forgotten = {};
   state.forgotten[name.toLowerCase()] = Date.now();
+  save();
+}
+
+// ---- changing a food for good (1 Nov 2026) ----
+//
+// The owner's rule: figures changed in the day's log are a one-off, figures
+// changed from the search box are permanent. A permanent change can't go in
+// the food lists (they're code) and can't rely on the log (search prefers the
+// database by name), so it's kept here by name and laid over whatever search
+// finds: {per100} for weighed foods, {one} = one serving for portion foods.
+// Logged days are never touched.
+
+export function withFoodEdit(food) {
+  const e = state.foodEdits?.[food.name.toLowerCase()];
+  if (!e) return food;
+  const out = { ...food, edited: true, per100: e.per100 || null, ...e.one };
+  if (e.per100 && food.grams) {
+    for (const f of MACRO_FIELDS) {
+      if (e.per100[f] != null) out[f] = Math.round(e.per100[f] * food.grams) / 100;
+    }
+  }
+  return out;
+}
+
+export function setFoodEdit(name, edit) {
+  if (!state.foodEdits) state.foodEdits = {};
+  state.foodEdits[name.toLowerCase()] = edit;
+  save();
+}
+
+export function clearFoodEdit(name) {
+  delete state.foodEdits?.[name.toLowerCase()];
   save();
 }
 

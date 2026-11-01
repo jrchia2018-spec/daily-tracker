@@ -3,6 +3,7 @@ import {
   mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods, createdAt, isForgotten, forgetFood,
+  oneServingOf, withFoodEdit, setFoodEdit, clearFoodEdit,
   skincareFor, bumpSkincareArea,
   activeLesionsOn, activeCountOn, newOnDate, newAreasOn,
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
@@ -19,7 +20,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
-import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmTargets, paceToKmh, hmSessionPaces } from './hm-plan.js';
+import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmTargets, paceToKmh, hmSessionPaces, hmSessionKm } from './hm-plan.js';
 
 const view = document.getElementById('view');
 const tabbar = document.getElementById('tabbar');
@@ -820,7 +821,9 @@ function frequentFoods(limit = 8) {
     .map(([, e]) => e)
     .sort((a, b) => b.count - a.count || b.lastDate.localeCompare(a.lastDate))
     .slice(0, limit)
-    .map(e => ({ ...e.last, count: e.count }));
+    // A weighed food keeps its last portion. A portion food goes back to one
+    // serving: its entry holds totals, and that entry alone may have been changed.
+    .map(e => withFoodEdit({ ...(e.last.per100 ? e.last : oneServingOf(e.last)), count: e.count }));
 }
 
 // The daily supplement stack (settled 1 Aug 2026). Edit this list to change
@@ -1189,7 +1192,7 @@ function renderMeals() {
           kcal: f.kcal, protein: f.protein, carbs: f.carbs, fat: f.fat,
           fibre: f.fibre, sodium: f.sodium, water: f.water,
           serving: f.grams ? `${f.grams} g` : '',
-          saved: true,
+          saved: true, edited: f.edited,
         });
       });
     }
@@ -1209,7 +1212,7 @@ function renderMeals() {
         try {
           const remote = await searchFood(query);
           if (my !== seq) return; // a newer keystroke superseded this request
-          shown = [...localFoodMatches(query), ...remote.slice(0, 10)];
+          shown = [...localFoodMatches(query), ...remote.slice(0, 10).map(withFoodEdit)];
           paint(false);
         } catch {
           if (my === seq) paint(false);
@@ -1249,7 +1252,7 @@ function localFoodMatches(query) {
     used.add(k);
   }
   for (const b of builtin) if (!used.has(b.name.toLowerCase())) out.push(b);
-  return out;
+  return out.map(withFoodEdit); // figures changed from search outrank both
 }
 
 // dir 'cap': exceeding the target is bad (red). dir 'floor': reaching it is
@@ -1378,15 +1381,24 @@ function openFoodModal(result, existing = null) {
       <label class="field"><span>Water (ml)</span><input id="f-water" type="number" inputmode="decimal" value="${init.water}"></label>
     </div>
     <p class="small muted" style="margin:-4px 0 10px">Figures above are for <b>one serving</b> — changing servings won't alter them. Water counts drinks and soup broth toward your water target; leave blank for solid food.</p>
+    ${existing ? '<p class="small muted" style="margin:-6px 0 10px">Changes here are for <b>this entry only</b>. To change the food for good, do it from the search box.</p>'
+      : result ? '<p class="small muted" style="margin:-6px 0 10px">Changes here <b>stick</b>: this food keeps your figures from now on. Just this once? Add it, then tap it in the day\'s log.</p>' : ''}
     <div class="row" style="margin-top:6px">
       <button class="btn primary block" id="f-save">${existing ? 'Save changes' : 'Add to log'}</button>
     </div>
     ${existing ? '<button class="btn danger block" id="f-del" style="margin-top:8px">Delete entry</button>' : ''}
     ${!existing && result?.saved ? `<button class="btn ghost block" id="f-forget" style="margin-top:8px">Forget this saved food</button>
     <p class="small muted center" style="margin:4px 0 0">Stops suggesting it in Saved and Frequent. Days you've logged keep it, and logging it again brings it back.</p>` : ''}
+    ${!existing && result?.edited ? '<button class="btn ghost block" id="f-unedit" style="margin-top:8px">Restore original figures</button>' : ''}
   `);
 
   const $f = id => m.querySelector('#' + id);
+  $f('f-unedit')?.addEventListener('click', () => {
+    clearFoodEdit(result.name);
+    closeModal();
+    render();
+    toast(`Original figures back for "${result.name}"`);
+  });
   $f('f-forget')?.addEventListener('click', () => {
     forgetFood(result.name);
     closeModal();
@@ -1434,15 +1446,36 @@ function openFoodModal(result, existing = null) {
     const gramsOne = Number($f('f-grams').value) || null;
     const per1Out = {};
     for (const f of MACROS) per1Out[f] = Number($f('f-' + f).value) || 0;
+    // Figures typed over by hand, not read from the food or rescaled by the
+    // Amount box. In the day's log they're for this entry alone; from search
+    // they're the food's from now on (a new name is just a new food). Either
+    // way the entry keeps the food's own figures as `base`, for search.
+    const gramsMoved = per100 && (gramsOne || 0) !== (Number(grams) || 0);
+    const was = f => (gramsMoved && per100[f] != null ? r1((per100[f] * (gramsOne || 0)) / 100) : Number(init[f]) || 0);
+    const typed = MACROS.filter(f => per1Out[f] !== was(f));
+    const fromSearch = !existing && result && name.toLowerCase() === result.name.toLowerCase();
+    const permanent = fromSearch && typed.length > 0 && (!per100 || gramsOne != null);
+    let per100Out = per100;
+    if (permanent && per100) {
+      per100Out = { ...per100 };
+      for (const f of typed) per100Out[f] = Math.round((per1Out[f] * 10000) / gramsOne) / 100;
+      setFoodEdit(name, { per100: per100Out });
+    } else if (permanent) {
+      setFoodEdit(name, { one: per1Out });
+    }
     const entry = {
       id: existing?.id || uid(),
       name,
       grams: gramsOne == null ? null : r1(gramsOne * n),
-      per100,
+      per100: per100Out,
       per1: per1Out,
       servings: n,
     };
     for (const f of MACROS) entry[f] = r1(per1Out[f] * n);
+    if (existing?.base) entry.base = existing.base;
+    else if (typed.length && (existing || fromSearch)) {
+      entry.base = Object.fromEntries(MACROS.map(f => [f, Number(init[f]) || 0]));
+    }
     const list = state.meals[mealDate] || (state.meals[mealDate] = []);
     if (existing) {
       const i = list.findIndex(x => x.id === existing.id);
@@ -1457,7 +1490,7 @@ function openFoodModal(result, existing = null) {
     save();
     closeModal();
     render();
-    toast(existing ? 'Updated' : `Added ${name}`);
+    toast(existing ? 'Updated' : permanent ? `Added — "${name}" keeps these figures` : `Added ${name}`);
   });
 
   $f('f-del')?.addEventListener('click', () => {
@@ -1549,7 +1582,7 @@ function renderPlan() {
     <div class="row between" style="margin-top:12px">
       <span class="small ${counts.gym === target.gym ? '' : 'muted'}">🏋️ <b style="color:${counts.gym === target.gym ? 'var(--green)' : 'var(--text)'}">${counts.gym}</b>/${target.gym} gym</span>
       <span class="small ${counts.run === target.run ? '' : 'muted'}">🏃 <b style="color:${counts.run === target.run ? 'var(--green)' : 'var(--text)'}">${counts.run}</b>/${target.run} runs</span>
-    </div>`}
+    </div>${hm ? hmKmLine(hm, week, today) : ''}`}
     ${warnings.length ? `<div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)">
       ${warnings.map(w => `<p class="small" style="color:var(--orange);margin:0 0 6px">⚠️ ${w}</p>`).join('')}
     </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
@@ -1579,6 +1612,28 @@ function renderPlan() {
       openPlanModal(k, slot);
     });
   }
+}
+
+// How far behind the plan the week's running is right now. Only sessions whose
+// day has passed count as owed, plus today's once today's run is in, so a
+// morning look doesn't call a run still to come a shortfall. Sessions count
+// where they're planned; every logged run counts, planned or not.
+function hmKmLine(hm, week, today) {
+  let planned = 0, logged = 0;
+  for (const k of week) {
+    if (k > today) break;
+    logged += runsOn(k).reduce((t, r) => t + (r.km || 0), 0);
+    for (const s of PLAN_SLOTS) {
+      if (k < today || planSlotStatus(k, s.id) === 'done') planned += hmSessionKm(hmTextFor(k, s.id) || '') || 0;
+    }
+  }
+  if (!planned && !logged) return '';
+  const short = r1(planned - logged);
+  const whole = hm.sessions.reduce((t, s) => t + (hmSessionKm(s.text) || 0), 0);
+  const word = short > 0 ? `${short} km short` : short < 0 ? `${-short} km ahead` : 'On track';
+  return `
+    <p class="small" style="margin:8px 0 0">📏 <b style="color:${short > 0 ? 'var(--orange)' : 'var(--green)'}">${word}</b>
+      <span class="muted">— ${r1(logged)} logged, ${r1(planned)} planned${week[6] < today ? '' : ' so far'} · ${r1(whole)} for the week</span></p>`;
 }
 
 // A guest's offer of the plan: a copy of the owner's, switched on by choice

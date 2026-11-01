@@ -45,6 +45,15 @@ export function hmSessionPaces() {
   return [...found].sort((a, b) => paceToKmh(a) - paceToKmh(b));
 }
 
+// A session's whole distance, read from its text for the same reason. Sessions
+// with reps end "— 7 km"; the rest lead with it ("6 km easy"). A time-only
+// session ("15 min shakeout") has none.
+export function hmSessionKm(text) {
+  if (text.startsWith('🏁')) return 21.1;
+  const m = /—\s*(\d+(?:\.\d+)?) km\b/.exec(text) || /^(?:CHECKPOINT: )?(\d+(?:\.\d+)?) km\b/.exec(text);
+  return m ? Number(m[1]) : null;
+}
+
 export const HM_RULES = [
   'Hot, humid day: add 10–15 s/km to easy and tempo paces. Run race-pace sessions early so the numbers mean something.',
   'Slept under ~5 h? Run Tuesday\'s session easy instead.',
