@@ -15,8 +15,8 @@ import {
 } from './store.js';
 import {
   ACTIVITY, GOAL_RATES, computeTargets, maybeAutoRecalc, PREFERENCE_TARGETS,
-  weightTrend, runKcal, bmr,
-  baseKcal, dailyBurn, activityKcal, digestionKcal, walkingSteps, stepKcal, exerciseKcal,
+  weightTrend, runKcal,
+  baseKcal, activityKcal, digestionKcal,
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
@@ -799,10 +799,9 @@ function dayCell(key, today) {
 
 // ---------- meals ----------
 
-// Most-logged foods from the last 60 days; the most recent entry for each
-// name is kept as the template (so last-used portion size is remembered).
 // All-time most-logged foods (no time window — a food you logged months ago
-// still surfaces here, so nothing you've eaten is ever forgotten).
+// still surfaces here, so nothing you've eaten is ever forgotten). The most
+// recent entry for each name is kept as the template.
 function frequentFoods(limit = 8) {
   const byName = new Map();
   for (const [date, list] of Object.entries(state.meals)) {

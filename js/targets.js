@@ -138,15 +138,6 @@ export function digestionKcal(key) {
   return mealsFor(key).length ? Math.round(DIGESTION_SHARE * mealTotals(key).kcal) : 0;
 }
 
-// What the day actually cost: resting + digestion + walking + workouts. This
-// replaces the old watch "active calories" basis (dropped 8 Aug at the user's
-// request) — it's built from inputs they control rather than one opaque
-// number, at the cost of missing incidental movement the watch would have
-// caught.
-export function dailyBurn(key) {
-  return baseKcal() + digestionKcal(key) + activityKcal(key);
-}
-
 // Movement only — no resting, no digestion — for the "burned" figure shown
 // next to intake on Home. Digestion would make that number start every
 // morning low and climb with each meal, which reads as movement it isn't.

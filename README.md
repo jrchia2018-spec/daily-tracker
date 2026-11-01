@@ -55,11 +55,12 @@ js/targets.js         BMR/TDEE, macro targets, weekly adaptive recalculation
 js/food.js            Open Food Facts search client
 js/foods.js           built-in food search (basics + SG + personal list + aliases)
 js/foods-sg.js        Singapore hawker/local food database
-js/foods-my.js        personal food list (per-portion macros)
+js/foods-my.js        personal food list (per portion; weighed foods per 100 g)
 js/hm-plan.js         the owner's half-marathon plan (the single source of truth for it)
 sw.js                 service worker (offline cache)
 manifest.webmanifest  PWA install metadata
 tools/serve.ps1       tiny PowerShell static server for local dev
+tools/backup-repo.ps1 dated snapshots of this repo, plus the phone's data backups, to OneDrive and Google Drive
 news/AGENT.md         runbook for the automated morning-briefing agent
 news/reports/         one JSON report per day (the app reads these directly)
 news/state/           the briefing agent's memory between runs
