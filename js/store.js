@@ -12,7 +12,7 @@ function defaults() {
     targetHistory: [],    // [ {from: 'YYYY-MM-DD', targets: {...}} ] — superseded target sets, oldest first
     meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat, fibre, sodium} ] }
     runs: [],             // [ {id, date, km, min, notes} ]
-    gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
+    gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'|'upper'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
     waists: [],           // [ {date, cm} ] sorted by date — separates recomp from a stall when weight is flat
     wellness: {},         // { 'YYYY-MM-DD': {sleep, sleepMins, steps, activeKcal} } — sleep score + duration = that morning's; steps = that day's total. activeKcal is LEGACY (the watch's active-calorie figure, collected until 8 Aug); kept so old days still read, no longer used in any calculation.
@@ -604,10 +604,18 @@ export const PLAN_KINDS = [
   { id: 'push', label: 'Push', group: 'gym', short: 'Push' },
   { id: 'pull', label: 'Pull', group: 'gym', short: 'Pull' },
   { id: 'legs', label: 'Legs', group: 'gym', short: 'Legs' },
+  { id: 'upper', label: 'Upper', group: 'gym', short: 'Upper' },
   { id: 'run-easy', label: 'Easy run', group: 'run', short: 'Easy' },
   { id: 'run-hard', label: 'Hard run', group: 'run', short: 'Hard' },
   { id: 'run-long', label: 'Long run', group: 'run', short: 'Long' },
 ];
+
+// Upper is only ever offered on a phone whose own plan file uses it, so nobody
+// else's planner or gym page gains a button. Sessions already logged as Upper
+// keep their name after a plan is stopped.
+export function planUsesUpper() {
+  return !!state.customPlan?.weeks.some(w => w.sessions.some(s => s.kind === 'upper'));
+}
 
 // Runs that leave the legs wrecked. A long run isn't "high intensity" in the
 // pace sense, but it costs the legs as much as a hard one, so it clashes with

@@ -10,7 +10,7 @@ import {
   recentlyCleared,
   supplementsFor, toggleSupplement, latestWaist, bodyChange, reconcileChia, hasOwnChia,
   addCustomSupplement, removeCustomSupplement, startHmPlan, stopHmPlan, activePlan, loadPlanFile,
-  PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind,
+  PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind, planUsesUpper,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
 import {
@@ -1773,7 +1773,7 @@ function openPlanModal(key, slot) {
     <h2>${fmtDate(key)} — ${slotLabel}</h2>
     ${st === 'missed' ? '<p class="small" style="color:var(--orange);margin-bottom:10px">This one was planned but never logged. Clear it, or move it by setting a different slot.</p>' : ''}
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0">
-      ${PLAN_KINDS.map(k => `
+      ${PLAN_KINDS.filter(k => k.id !== 'upper' || planUsesUpper() || current === 'upper').map(k => `
         <button class="btn ${current === k.id ? 'primary' : ''}" data-kind="${k.id}">
           ${k.group === 'gym' ? '🏋️' : '🏃'} ${k.label}</button>`).join('')}
     </div>
@@ -2027,7 +2027,14 @@ const GYM_TYPES = [
   { type: 'push', label: 'Push', ico: '🫸', sub: 'chest · shoulders · triceps' },
   { type: 'pull', label: 'Pull', ico: '🫷', sub: 'back · biceps' },
   { type: 'legs', label: 'Legs', ico: '🦵', sub: 'quads · hams · glutes' },
+  { type: 'upper', label: 'Upper', ico: '💪', sub: 'chest · back · arms' },
 ];
+
+// The buttons to offer. Upper only where the phone's own plan uses it; the full
+// list above stays in use for naming and counting sessions already logged.
+function gymChoices(current) {
+  return GYM_TYPES.filter(t => t.type !== 'upper' || planUsesUpper() || current === 'upper');
+}
 
 function gymTypeLabel(type) {
   return GYM_TYPES.find(t => t.type === type)?.label || 'Gym';
@@ -2065,7 +2072,7 @@ function renderGym() {
     <p class="small muted" style="margin:-6px 0 0">${ACTIVE_KCAL_HINT}</p>
     <p class="small muted" style="margin:10px 0 8px">Tap to log the session:</p>
     <div class="grid3">
-      ${GYM_TYPES.map(t => `
+      ${gymChoices().map(t => `
       <button class="btn" data-type="${t.type}" style="flex-direction:column;padding:14px 6px">
         <span class="ico" style="font-size:22px">${t.ico}</span>
         <b>${t.label}</b>
@@ -2132,7 +2139,7 @@ function openGymModal(s) {
     <h2>Edit gym session</h2>
     <label class="field"><span>Date</span><input id="ge-date" type="date" value="${s.date}"></label>
     <div class="grid3" style="margin:0 0 10px">
-      ${GYM_TYPES.map(t => `<button type="button" class="btn small" data-gtype="${t.type}">${t.ico} ${t.label}</button>`).join('')}
+      ${gymChoices(s.type).map(t => `<button type="button" class="btn small" data-gtype="${t.type}">${t.ico} ${t.label}</button>`).join('')}
     </div>
     <label class="field"><span>Active calories (optional)</span>
       <input id="ge-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate" value="${s.kcal ?? ''}"></label>
