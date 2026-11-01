@@ -11,15 +11,14 @@
 //   - an upgrade rule after the 2 Mar race-pace run, and a heat rule on race day
 //   - a hard session after a sub-5h night runs easy instead
 //
-// Owner only: guests never see it and their planner is never filled from it.
+// The owner's, plus any friend who switches on a copy. A friend can instead
+// load a plan of their own from a file: that lives only on their phone (see
+// loadPlanFile in store.js), in the same shape as HM_PLAN at the end of this
+// file, and every function here takes the plan's weeks for that reason.
 // Static data, deliberately free of imports — store.js reads it at load time.
 
-export const HM_RACE = '2027-03-21';
-export const HM_TITLE = 'Half marathon';
-export const HM_GOAL = 'sub-1:50 on Sun 21 Mar';
-
 // Pace zones, min/km — fast end first. Also drive the treadmill chart.
-export const HM_PACES = [
+const HM_PACES = [
   { zone: 'Easy', fast: '6:15', slow: '7:30' },
   { zone: 'Long', fast: '6:15', slow: '6:45' },
   { zone: 'Race pace', fast: '5:05', slow: '5:12' },
@@ -37,9 +36,9 @@ export function paceToKmh(pace) {
 // Every exact pace a session asks for ("3×2 km @ 5:00", "start at 5:20",
 // "sub-1:55 (5:27/km)"), read from the plan text itself so the treadmill
 // chart can't drift from the plan. Slowest first.
-export function hmSessionPaces() {
+export function hmSessionPaces(weeks) {
   const found = new Set();
-  for (const w of HM_WEEKS) for (const s of w.sessions) {
+  for (const w of weeks) for (const s of w.sessions) {
     for (const m of s.text.matchAll(/\b([3-7]):([0-5]\d)\b/g)) found.add(m[0]);
   }
   return [...found].sort((a, b) => paceToKmh(a) - paceToKmh(b));
@@ -54,7 +53,7 @@ export function hmSessionKm(text) {
   return m ? Number(m[1]) : null;
 }
 
-export const HM_RULES = [
+const HM_RULES = [
   'Hot, humid day: add 10–15 s/km to easy and tempo paces. Run race-pace sessions early so the numbers mean something.',
   'Slept under ~5 h? Run Tuesday\'s session easy instead.',
   'Tired: cut Friday first, then shorten Thursday. Tuesday and Saturday are the sessions that build the race.',
@@ -81,7 +80,7 @@ const JAN = 'Off 4–24 Jan. If you can run at all, two 30-min easy runs a week 
 
 // One entry per Monday. Distances on Tuesdays include a 2 km warm-up and
 // 1–2 km cool-down.
-export const HM_WEEKS = [
+const HM_WEEKS = [
   { mon: '2026-10-12', phase: 'Base', sessions: [push(), tue('10×200m fast (45–48 s), walk back — 5 km'), lower(3), thu('5 km easy'), sat('8 km easy')] },
   { mon: '2026-10-19', phase: 'Base', sessions: [push(), tue('6×400m @ 4:25, 90 s rest — 6 km'), lower(3), thu('6 km easy'), sat('9 km easy')] },
   { mon: '2026-10-26', phase: 'Base', sessions: [push(), tue('20 min tempo @ 4:55 — 7 km'), lower(3), thu('6 km easy'), sat('10 km easy')] },
@@ -113,6 +112,11 @@ export const HM_WEEKS = [
     S(6, 'am', 'run-hard', '🏁 RACE. km 1–5 @ 5:15, km 6–15 @ 5:10, then 5:05 or faster (≈1:48:55). Pace off the course km markers, not your watch. Gels at 40 and 75 min; water at every station in the first half. Hot and humid? Start at 5:20 instead. Vaporfly 4.')] },
 ];
 
+export const HM_PLAN = {
+  title: 'Half marathon', goal: 'sub-1:50 on Sun 21 Mar', race: '2027-03-21',
+  paces: HM_PACES, rules: HM_RULES, weeks: HM_WEEKS,
+};
+
 // Local date arithmetic (no imports — see the header).
 function addDaysKey(key, n) {
   const [y, m, d] = key.split('-').map(Number);
@@ -120,14 +124,15 @@ function addDaysKey(key, n) {
   return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`;
 }
 
-// Every session with its date, for filling the planner and finding a day's.
-export const HM_SESSIONS = HM_WEEKS.flatMap((w, i) =>
-  w.sessions.map(s => ({ ...s, date: addDaysKey(w.mon, s.day), week: i })));
+// Every session with its date, for filling the planner.
+export function hmSessions(weeks) {
+  return weeks.flatMap((w, i) => w.sessions.map(s => ({ ...s, date: addDaysKey(w.mon, s.day), week: i })));
+}
 
 // The plan week containing a date (any day Mon–Sun), with its 1-based number.
-export function hmWeekOf(key) {
-  for (let i = 0; i < HM_WEEKS.length; i++) {
-    const w = HM_WEEKS[i];
+export function hmWeekOf(key, weeks) {
+  for (let i = 0; i < weeks.length; i++) {
+    const w = weeks[i];
     if (key >= w.mon && key <= addDaysKey(w.mon, 6)) return { ...w, n: i + 1, sun: addDaysKey(w.mon, 6) };
   }
   return null;

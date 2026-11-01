@@ -9,7 +9,7 @@ import {
   addLesion, resolveLesion, unresolveLesion, lesionDays, ledgerStart, lesionsAll,
   recentlyCleared,
   supplementsFor, toggleSupplement, latestWaist, bodyChange, reconcileChia, hasOwnChia,
-  addCustomSupplement, removeCustomSupplement, startHmPlan, stopHmPlan,
+  addCustomSupplement, removeCustomSupplement, startHmPlan, stopHmPlan, activePlan, loadPlanFile,
   PLAN_SLOTS, PLAN_KINDS, planFor, setPlanSlot, planSlotStatus, planWarnings, planCounts, planKind,
   WAIST_NOISE_CM, WEIGHT_NOISE_KG, BODY_MIN_POINTS, BODY_MIN_SPAN_DAYS, BODY_STALL_SPAN_DAYS,
 } from './store.js';
@@ -20,7 +20,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
-import { HM_RACE, HM_TITLE, HM_GOAL, HM_PACES, HM_RULES, hmWeekOf, hmTargets, paceToKmh, hmSessionPaces, hmSessionKm } from './hm-plan.js';
+import { hmWeekOf, hmTargets, paceToKmh, hmSessionPaces, hmSessionKm } from './hm-plan.js';
 
 const view = document.getElementById('view');
 const tabbar = document.getElementById('tabbar');
@@ -639,7 +639,7 @@ function hmActive() {
 }
 
 function hmTextFor(key, slotId) {
-  const week = hmWeekOf(key);
+  const week = hmWeekOf(key, activePlan().weeks);
   const kind = planFor(key)[slotId];
   if (!week || !kind) return null;
   const planned = [];
@@ -1539,7 +1539,7 @@ function renderPlan() {
   // While the race plan runs, the week's target is what that week of the plan
   // asks for (2 gym, 3–4 runs, nothing in an off week) rather than the
   // standing 3 + 3.
-  const hm = hmActive() ? hmWeekOf(week[0]) : null;
+  const hm = hmActive() ? hmWeekOf(week[0], activePlan().weeks) : null;
   const target = hm ? hmTargets(hm) : { gym: 3, run: 3 };
 
   const label = planWeekOffset === 0 ? 'This week'
@@ -1588,12 +1588,26 @@ function renderPlan() {
     </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
     <p class="small muted" style="margin:10px 0 0">Tap any slot to set or change it. ✓ means it was logged, <b>!</b> means the day passed without it — tap to move it.</p>
   </div>
-  ${today > HM_RACE ? '' : hmActive() ? hmPlanCard(hm, week, today) + treadmillCard() : hmOfferCard()}`;
+  ${today > activePlan().race ? '' : hmActive() ? hmPlanCard(hm, week, today) + treadmillCard() : hmOfferCard()}`;
 
   body.querySelector('#hm-start')?.addEventListener('click', () => {
     startHmPlan();
     render();
     toast('Plan added to your planner from today 🏁');
+  });
+  const planFile = body.querySelector('#hm-file');
+  body.querySelector('#hm-load')?.addEventListener('click', () => planFile.click());
+  planFile?.addEventListener('change', async () => {
+    const f = planFile.files[0];
+    if (!f) return;
+    try {
+      loadPlanFile(await f.text());
+      render();
+      toast('Plan added to your planner from today 🏁');
+    } catch {
+      toast("That isn't a plan file");
+    }
+    planFile.value = '';
   });
   body.querySelector('#hm-stop')?.addEventListener('click', () => {
     const m = openModal(`
@@ -1647,8 +1661,17 @@ function hmOfferCard() {
     <p class="small" style="margin:0 0 8px">A 23-week plan for a half marathon on <b>Sun 21 Mar 2027</b>, aiming for sub-1:50. Switching it on fills your planner from today, writes out each session, and adds the race paces and a treadmill chart.</p>
     <p class="small muted" style="margin:0 0 12px">It's a copy of the app owner's plan: the paces come from their fitness, and the off weeks (23–27 Nov, 14–20 Dec, 4–24 Jan) from their schedule — adjust if those don't fit you.</p>
     <button class="btn primary block" id="hm-start">Use this plan</button>
+    ${planFileButton}
   </div>`;
 }
+
+// For a friend sent a plan of their own (see loadPlanFile in store.js). Never
+// on the owner's phone, whose plan is the one built into the app.
+const planFileButton = `
+  <button class="btn ghost small block" id="hm-load" style="margin-top:8px">Sent a plan file? Load it</button>
+  <input id="hm-file" type="file" accept=".txt,.json,text/plain,application/json" class="hidden">`;
+
+const paceRange = (p, f = x => x) => (p.fast === p.slow ? f(p.fast) : `${f(p.slow)}–${f(p.fast)}`);
 
 // The race plan written out for the week on screen, the way it's actually
 // PLANNED: each session sits on the day and slot the user put it (matched by
@@ -1656,24 +1679,25 @@ function hmOfferCard() {
 // still showed the plan's original days). Sessions of the week not placed
 // anywhere are listed separately, so nothing silently drops off.
 function hmPlanCard(hm, week, today) {
-  const toGo = daysBetween(today, HM_RACE);
+  const plan = activePlan();
+  const toGo = daysBetween(today, plan.race);
   const header = `
     <div class="row between" style="margin-bottom:2px">
-      <h2 style="margin:0">🏁 ${HM_TITLE}</h2>
+      <h2 style="margin:0">🏁 ${esc(plan.title)}</h2>
       <span class="small muted">${toGo === 0 ? 'Race day!' : `${toGo} day${toGo === 1 ? '' : 's'} to go`}</span>
     </div>
-    <p class="small muted" style="margin:0 0 8px">${HM_GOAL}</p>`;
+    <p class="small muted" style="margin:0 0 8px">${esc(plan.goal)}</p>`;
   const reference = `
     <details style="margin-top:10px">
       <summary class="small" style="cursor:pointer;color:var(--accent);font-weight:600">Paces &amp; rules</summary>
       <div style="margin-top:8px">
-        ${HM_PACES.map(p => `<div class="row between small" style="padding:3px 0"><span class="muted">${p.zone}</span><b>${p.fast}–${p.slow}${p.note ? ` <span class="muted" style="font-weight:400">(${p.note})</span>` : ''}</b></div>`).join('')}
-        ${HM_RULES.map(r => `<p class="small" style="margin:8px 0 0">• ${esc(r)}</p>`).join('')}
+        ${plan.paces.map(p => `<div class="row between small" style="padding:3px 0"><span class="muted">${esc(p.zone)}</span><b>${p.fast === p.slow ? p.fast : `${p.fast}–${p.slow}`}${p.note ? ` <span class="muted" style="font-weight:400">(${esc(p.note)})</span>` : ''}</b></div>`).join('')}
+        ${plan.rules.map(r => `<p class="small" style="margin:8px 0 0">• ${esc(r)}</p>`).join('')}
       </div>
     </details>`;
-  const stopLink = state.owner ? '' : '<button class="btn ghost small block" id="hm-stop" style="margin-top:8px">Stop using this plan</button>';
+  const stopLink = state.owner ? '' : `<button class="btn ghost small block" id="hm-stop" style="margin-top:8px">Stop using this plan</button>${planFileButton}`;
   if (!hm) {
-    return `<div class="card">${header}<p class="small muted">${week[0] < '2026-10-12' ? 'The plan starts Monday 12 Oct.' : 'Outside the plan.'}</p>${reference}${stopLink}</div>`;
+    return `<div class="card">${header}<p class="small muted">${week[0] < plan.weeks[0].mon ? `The plan starts ${fmtDate(plan.weeks[0].mon)}.` : 'Outside the plan.'}</p>${reference}${stopLink}</div>`;
   }
   const dayName = d => fmtDate(d).slice(0, 3);
   const icon = kind => (kind.startsWith('run') ? '🏃' : '🏋️');
@@ -1695,7 +1719,7 @@ function hmPlanCard(hm, week, today) {
   return `
   <div class="card">
     ${header}
-    <p class="small" style="margin:0 0 8px"><b>Week ${hm.n} of 23 · ${hm.phase}</b></p>
+    <p class="small" style="margin:0 0 8px"><b>Week ${hm.n} of ${plan.weeks.length} · ${esc(hm.phase)}</b></p>
     ${hm.note ? `<p class="small" style="margin:0 0 8px">${esc(hm.note)}</p>` : ''}
     ${planned.map(p => `
       <div class="item" style="align-items:flex-start;padding:8px 0">
@@ -1721,12 +1745,13 @@ function hmPlanCard(hm, week, today) {
 // resistance, and ~1% grade restores the outdoor cost at roughly 10.5 km/h
 // and faster (Jones & Doust, 1996); slower than that it barely matters.
 function treadmillCard() {
-  const zones = HM_PACES.map(p => `
+  const plan = activePlan();
+  const zones = plan.paces.map(p => `
     <div class="row between small" style="padding:5px 0;border-bottom:1px solid var(--line)">
-      <span><b>${p.zone}</b> <span class="muted">${p.fast}–${p.slow}/km</span></span>
-      <b>${paceToKmh(p.slow).toFixed(1)}–${paceToKmh(p.fast).toFixed(1)} km/h</b>
+      <span><b>${esc(p.zone)}</b> <span class="muted">${p.fast === p.slow ? p.fast : `${p.fast}–${p.slow}`}/km</span></span>
+      <b>${paceRange(p, x => paceToKmh(x).toFixed(1))} km/h</b>
     </div>`).join('');
-  const exact = hmSessionPaces().map(p => `
+  const exact = hmSessionPaces(plan.weeks).map(p => `
     <div class="small" style="padding:4px 0;text-align:center;border:1px solid var(--line);border-radius:8px">
       <span class="muted">${p}</span><br><b>${paceToKmh(p).toFixed(1)}</b></div>`).join('');
   return `
@@ -1734,8 +1759,8 @@ function treadmillCard() {
     <h2 style="margin:0 0 4px">🏃 Treadmill speeds</h2>
     <p class="small muted" style="margin:0 0 8px">Your plan's paces as km/h. For tempo, race pace and faster, set <b>1% incline</b> — it stands in for the wind resistance a treadmill doesn't have; easy runs are fine at 0–1%. Indoors in air-con, skip the hot-day slowdown.</p>
     ${zones}
-    <p class="small muted" style="margin:12px 0 6px">Exact paces in the plan (min/km → km/h):</p>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">${exact}</div>
+    ${exact ? `<p class="small muted" style="margin:12px 0 6px">Exact paces in the plan (min/km → km/h):</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">${exact}</div>` : ''}
     <p class="small muted" style="margin:10px 0 0">Treadmill in mph? Divide km/h by 1.6.</p>
   </div>`;
 }

@@ -1,6 +1,6 @@
 // Central app state, persisted to localStorage.
 
-import { HM_SESSIONS } from './hm-plan.js';
+import { HM_PLAN, hmSessions } from './hm-plan.js';
 import { RETIRED_FOR_100G } from './foods-my.js';
 
 const KEY = 'tracker.v1';
@@ -31,6 +31,7 @@ function defaults() {
     suppList: [],         // [ {id, label, note} ] — a guest's own supplement checklist; the owner's stack is fixed in app.js
     owner: false,         // true only on the phone of the person this app was built for. See migrate() (ownerMark).
     hmOptIn: false,       // a guest who switched on the copy of the owner's half-marathon plan. See startHmPlan().
+    customPlan: null,     // a guest's own race plan, loaded from a file — on this phone only. See loadPlanFile().
     lastRunWhere: null,   // 'outdoor' | 'treadmill' — the run form starts on the last one used
     plan: {},             // { 'YYYY-MM-DD': { am: kind, pm: kind, night: kind } } — the training plan, sparse. See the planner section below.
     migrations: {},       // { name: true } — one-time data corrections already applied. See migrate().
@@ -132,7 +133,7 @@ function migrate(s) {
   // Never backfills a past day, which would show sessions they never planned
   // as missed, and never touches a day they've already planned themselves.
   if (!s.migrations.hmPlan2027) {
-    if (s.owner) fillHmPlanIn(s);
+    if (s.owner) fillHmPlanIn(s, HM_PLAN);
     s.migrations.hmPlan2027 = true;
     changed = true;
   }
@@ -165,31 +166,37 @@ function migrate(s) {
   return changed;
 }
 
-// Write the half-marathon plan into a planner: from today on, and only on
-// days with nothing planned. Shared by the owner's one-time migration and a
-// friend switching the plan on (a copy of the owner's plan, 24 Oct 2026).
-function fillHmPlanIn(s) {
+// The race plan this phone runs: the owner's, or a friend's own from a file.
+export function activePlan() {
+  return state.customPlan || HM_PLAN;
+}
+
+// Write a race plan into a planner: from today on, and only on days with
+// nothing planned before it started. Shared by the owner's one-time migration
+// and a friend switching a plan on. A day can hold two sessions (a run in the
+// morning, gym at night), so "already planned" is judged before filling.
+function fillHmPlanIn(s, plan) {
   if (!s.plan) s.plan = {};
   const today = dateKey();
-  for (const x of HM_SESSIONS) {
-    if (x.date < today || s.plan[x.date]) continue;
-    s.plan[x.date] = { [x.slot]: x.kind };
+  const taken = new Set(Object.keys(s.plan));
+  for (const x of hmSessions(plan.weeks)) {
+    if (x.date < today || taken.has(x.date)) continue;
+    s.plan[x.date] = { ...s.plan[x.date], [x.slot]: x.kind };
   }
 }
 
-// A friend opting in to (or out of) the owner's plan. Switching off removes
-// only what the plan put there and is still untouched: future slots holding
-// exactly the plan's session, not yet logged. Anything they moved or added
-// stays theirs.
+// A friend opting in to (or out of) a plan. Switching off removes only what
+// the plan put there and is still untouched: future slots holding exactly the
+// plan's session, not yet logged. Anything they moved or added stays theirs.
 export function startHmPlan() {
   state.hmOptIn = true;
-  fillHmPlanIn(state);
+  fillHmPlanIn(state, activePlan());
   save();
 }
 
 export function stopHmPlan() {
   const today = dateKey();
-  for (const x of HM_SESSIONS) {
+  for (const x of hmSessions(activePlan().weeks)) {
     if (x.date < today || planFor(x.date)[x.slot] !== x.kind) continue;
     if (planSlotStatus(x.date, x.slot) === 'done') continue;
     const day = { ...planFor(x.date) };
@@ -197,7 +204,29 @@ export function stopHmPlan() {
     if (Object.keys(day).length) state.plan[x.date] = day; else delete state.plan[x.date];
   }
   state.hmOptIn = false;
+  state.customPlan = null;
   save();
+}
+
+// A friend's own plan, from a file passed to them privately (1 Nov 2026). The
+// repo is public and every phone runs the same code, so a plan meant for one
+// person can't ship with the app: the file IS the delivery, and the plan then
+// lives only in that phone's storage (and its backups). It replaces any plan
+// already running, the same way stopping that one would.
+export function loadPlanFile(text) {
+  const p = JSON.parse(text);
+  const isDate = d => /^\d{4}-\d{2}-\d{2}$/.test(d);
+  const isPace = v => /^\d:\d\d$/.test(v);
+  const fine = p?.trackerPlan === 1 && isDate(p.race) && typeof p.title === 'string' && typeof p.goal === 'string'
+    && Array.isArray(p.paces) && p.paces.every(z => typeof z.zone === 'string' && isPace(z.fast) && isPace(z.slow))
+    && Array.isArray(p.rules) && p.rules.every(r => typeof r === 'string')
+    && Array.isArray(p.weeks) && p.weeks.length > 0 && p.weeks.every(w => isDate(w.mon) && typeof w.phase === 'string'
+      && Array.isArray(w.sessions) && w.sessions.every(s => Number.isInteger(s.day) && s.day >= 0 && s.day <= 6
+        && PLAN_SLOTS.some(x => x.id === s.slot) && kindOf(s.kind) && typeof s.text === 'string'));
+  if (!fine) throw new Error('Not a plan file');
+  if (state.hmOptIn) stopHmPlan();
+  state.customPlan = { title: p.title, goal: p.goal, race: p.race, paces: p.paces, rules: p.rules, weeks: p.weeks };
+  startHmPlan();
 }
 
 // One chia entry per day, linked to the checklist tick. If the user logged
@@ -622,7 +651,9 @@ export function planWarnings(keys) {
   const kindsOn = k => Object.values(planFor(k)).map(kindOf).filter(Boolean);
 
   // Legs and a leg-heavy run on back-to-back days — both tax the same legs.
-  for (let i = 0; i < keys.length; i++) {
+  // A friend's own plan sets its own spacing, which can be exactly this on
+  // purpose (hard days together), so it would be a warning every single week.
+  for (let i = 0; i < keys.length && !state.customPlan; i++) {
     const a = keys[i], b = keys[i + 1];
     if (!b) break;
     const aK = kindsOn(a), bK = kindsOn(b);
