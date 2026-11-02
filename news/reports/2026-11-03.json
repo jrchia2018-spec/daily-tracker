@@ -1,0 +1,122 @@
+{
+ "schema": 1,
+ "date": "2026-11-03",
+ "generatedAt": "2026-11-03T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-11-02T07:00:00+08:00",
+  "to": "2026-11-03T07:00:00+08:00",
+  "label": "Monday 2 November 2026, 0700 SGT → Tuesday 3 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "WASHINGTON OPENS A NAMED CHANNEL TO TEHRAN AND THE WAR PREMIUM COLLAPSES: BRENT DOWN 6.5 PER CENT",
+   "breaking": true,
+   "summary": [
+    "<p>Abbas Araqchi, quoted by IRNA, said consultations through mediators were “very intensive”, that Tehran had tabled its conditions, and that “everything depends on the political rationality of Washington”. Axios reported that Vice-President JD Vance had written to national security chief Mohsen Rezaei about new talks, the highest-level American move in months, and reports said Supreme Leader Mojtaba Khamenei had granted his government “powers” to negotiate. The terms are still the 48-hour swap, with Qatar brokering more than US$6 billion of frozen Iranian money.</p>",
+    "<p>Brent fell more than 6.5 per cent to as low as US$105.55 a barrel, its lowest since 16 October, and US crude more than seven per cent. IAG rose 4.2 per cent, United Airlines seven, and the 10-year gilt yield fell 10 basis points. Trump had told an Iowa rally on Sunday that Iran would get “the hammer” without progress. No strike or Hormuz incident was verified in the window, a fifth quiet day in seven.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> A named letter from the vice-president to Rezaei is the first direct American approach since the ceasefire was declared over on 9 July: it moves the file off Qatari mediation onto a channel Washington owns, and can be dropped as cheaply after Tuesday.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> What fell was the war premium, not the barrel. A seven-dollar move on a letter tells importers nothing physical has changed in the strait, and Singapore’s fuel, freight and airfare costs still turn on Washington’s answer.</p>"
+  },
+  {
+   "headline": "RUSSIA BOMBS A MONDAY AID QUEUE IN ZAPORIZHZHIA HOURS AFTER THE WAR’S LONGEST TRUCE EXPIRES",
+   "breaking": true,
+   "summary": [
+    "<p>At least nine FAB-3000 guided bombs hit a school in Komyshuvakha, Zaporizhzhia region, used every Monday to distribute humanitarian aid: the first wave struck as people arrived, a second hit the shelter they had taken cover in. Ukraine’s State Emergency Service put the toll at 24, including two rescuers and four police officers, with five injured; Reuters counted 26, and a Zaporizhzhia city official said 27 were missing. Zelensky called it “utterly horrific”.</p>",
+    "<p>The Kherson humanitarian ceasefire, in force from 27 October and the war’s longest local pause, expired at 22:59 on Sunday with neither side reporting a violation; fighting resumed within hours. Kyiv says Moscow refused an extension and used the pause to fortify positions, which Dmitry Peskov called “a completely normal practice” while judging the Oleshky mission successful.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> The pause proved the two bureaucracies can cooperate and that cooperating buys nothing: Moscow banked an evacuation and a fortified line, then bombed a known aid point, which removes the case for extending local truces anywhere on the front.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Aid distribution on a published weekly schedule is now a targeting pattern, so the cost falls on front-line civilians whose food depends on being in the same place at the same hour every Monday.</p>"
+  },
+  {
+   "headline": "SHOP FREEZERS IN SEVEN COUNTRIES ARE TURNED UP TO 50C AND BRUSSELS CALLS IT AN ATTACK ON THE FOOD CHAIN",
+   "breaking": true,
+   "summary": [
+    "<p>Refrigeration in supermarkets across at least seven European countries, among them Belgium, Luxembourg, the Netherlands and Sweden, was driven as high as 50C overnight into Monday, and shops dumped whole aisles of stock. Ahold Delhaize reported dozens of Belgian and Luxembourg stores hit, Sweden’s ICA an overnight incident, Colruyt five shops, Intermarché 15 and Carrefour Belgium about 15 of its 700. Sabcobel, which runs Delhaize’s refrigeration, said evaporators had been switched to defrost mode and technicians mobilised from 1am.</p>",
+    "<p>It is the second wave in a month, after an October attack that seized cooling in as many as 700 French supermarkets, starting fires and causing losses in the tens of millions of euros. EU food and agriculture commissioner Christophe Hansen called it “a deliberate attempt to disrupt our food supply chain and undermine consumers’ confidence in it”. Sweden’s cybersecurity chief John Billow cited “quite a lot of exposed operational technology devices” needing patching; the US Army is investigating similar disruptions.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> Hansen’s wording moves this from crime to hybrid attack, which means an internet-facing thermostat in a Swedish shop is now handled as critical infrastructure by the agencies that investigate sabotage.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The loss lands twice in a month on grocers’ thinnest margins, and the remedy is the operational-technology patching the sector deferred for a decade because nobody treated a fridge as a computer.</p>"
+  },
+  {
+   "headline": "THE SUPREME COURT ENDS THE CALIFORNIA BALLOT CASE IN ONE SENTENCE AS A SECOND JUDGE CALLS A PROSECUTION WEAPONISATION",
+   "breaking": true,
+   "summary": [
+    "<p>Hours after Solicitor-General D. John Sauer asked it to set aside ballots cast by more than 20,000 Californian registrants the government calls “likely not U.S. citizens”, the Supreme Court refused in a one-sentence order with no reasoning and no noted dissents. On Friday the Ninth Circuit had barred the administration 2-1 from intervening in the state’s mail-ballot count, holding that if it wants different procedures it “should take that suggestion to Congress, not the courts”. Tens of millions of early votes are already cast.</p>",
+    "<p>The same day, Magistrate Judge Zia Faruqui dismissed for want of probable cause the false-statements case against two former senior FBI intelligence officials, Nikki Floris and Bradley Benavides, saying it could not be seen “as anything other than weaponisation” and had become “marketing material for people not to join the FBI”. The case agent testified that Director Kash Patel demanded the investigation the day after a Trump primetime address. It is the third government defeat in five days.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> An unexplained, undissented refusal from a court with six Republican appointees is the strongest signal available to allied governments that the pre-emptive election litigation has no judicial constituency, whatever is claimed after Tuesday.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Faruqui’s “marketing material” line is a labour-market point: prosecuting officials over disfavoured answers to Congress raises the price of federal technical work, and that recruitment cost outlasts the election.</p>"
+  },
+  {
+   "headline": "BRITAIN MAKES SETTLEMENT EARNED RATHER THAN AUTOMATIC, AND APPLIES THE RULE BACKWARDS",
+   "breaking": false,
+   "summary": [
+    "<p>Home Secretary Shabana Mahmood told the Commons that indefinite leave to remain, “until now given almost automatically”, “from today must be earned”. Migrants earning under £50,000 (about S$85,500) will wait 10 years rather than five; those above £50,271, and doctors, nurses and teachers, five; those above £125,000, three. Refugees face 10 years, with a further 10-year penalty for entering illegally and up to 30 for those not in work, and none who have drawn public funds qualify at all.</p>",
+    "<p>Under cabinet and health-union pressure Mahmood exempted care workers earning over £25,000 who arrived before May 2025, letting an estimated 280,000 people and dependants apply after five years; Chris Philp put that concession’s cost at up to £10 billion and Nigel Farage called it “the beginning of the capitulation”. The rules apply retrospectively to more than half a million people already in Britain and need no parliamentary vote. The Law Society said they undermine legal certainty; Diane Abbott warned of a second Windrush.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> Britain becomes the first G7 state to price permanent residence by salary band, handing every competing immigration system a template for charging low-paid essential workers five more years of their lives.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The gain is a projected benefits saving, booked against half a million people who made their plans under the old rule — and the NHS and care sectors that recruited them abroad keep their staff only because the carve-out survived.</p>"
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "MOM INVESTIGATES 45 CHANGI FIRMS AFTER FINDING EMPLOYMENT PASS HOLDERS HANDLING BAGGAGE",
+   "breaking": true,
+   "summary": [
+    "<p>The Manpower Ministry is investigating about 45 companies involved in Changi Airport operations for suspected work-pass offences including false declarations and illegal deployment, and has identified about 270 workers whose deployment may have breached pass rules. All were employed by contractors and sub-contractors of ground handler SATS. An inspection found Employment Pass holders — a pass generally requiring at least S$5,600 a month — doing baggage handling, with preliminary findings that their declared salaries and occupations were false.</p>",
+    "<p>MOM has directed SATS to strengthen oversight of its contractors, verify that deployment matches passes and rectify compliance gaps, and issued an advisory to other firms in SATS’ operations on their obligations under the Employment of Foreign Manpower Act. SATS said a routine internal audit had already found work-pass irregularities among some contractors’ workers and that it acted against those falling short of its contractual standards.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> Singapore markets its work-pass regime abroad as a precise instrument for matching skills to jobs; 270 mis-deployed workers under one ground handler puts that precision in the declaration, not the deployment.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The EP salary floor exists to stop cheaper foreign labour taking skilled roles, so using the pass for baggage handling undercuts both that floor and the contracting chain Changi’s turnaround times rest on.</p>"
+  },
+  {
+   "headline": "A GLOBAL PASSENGER-PROCESSING OUTAGE TAKES CHANGI’S SELF-CHECK-IN DOWN FOR TWO AND A HALF HOURS",
+   "breaking": true,
+   "summary": [
+    "<p>Self-service check-in kiosks at all four Changi terminals stopped processing check-ins and printing boarding passes from about 8.30am on Monday. Changi Airport Group blamed “a global disruption in Advance Passenger Processing systems” and said other airports were similarly affected. Airlines checked passengers in manually; Garuda Indonesia’s Terminal 3 kiosks were dark and passengers on the 11.45am Jakarta service were put through an accelerated bag drop. Service resumed at about 11am.</p>",
+    "<p>Advance Passenger Processing is the pre-departure exchange between airlines and border authorities that decides whether a passenger may be boarded at all. While it is down no kiosk can issue a boarding pass, and the work falls back on rostered counter staff.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> Border pre-clearance is shared plumbing between states and carriers, so one upstream fault degraded several countries’ sovereign immigration checks at once — a dependency Singapore neither owns nor can patch.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Changi’s cost model assumes self-service; two and a half hours of manual fallback show that the counter staffing designed out of the terminals is also their only surge capacity.</p>"
+  },
+  {
+   "headline": "THE JOHOR-SINGAPORE SEZ’S FIRST MINISTERIAL COMMITTEE PUTS S$28 BILLION OF APPROVALS ON THE BOARD",
+   "breaking": false,
+   "summary": [
+    "<p>The Johor-Singapore Cooperation Ministerial Committee met for the first time on Monday at Gardens by the Bay and said the special economic zone had drawn RM88.83 billion (S$28.1 billion) of approved investments between January 2025 and June 2026, on Malaysian Investment Development Authority figures. About 45 per cent, roughly RM40.3 billion, has been implemented, creating 12,796 jobs against 28,755 projected across all approved projects.</p>",
+    "<p>National Development Minister Chee Hong Tat called the meeting “very productive” and “the beginning of many more to come”, and said many of the investors were Singaporean. Malaysia’s Economy Minister Akmal Nasir said both sides had agreed to hold a joint investment forum for the zone by the first quarter of 2027.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> A standing ministerial committee that has to publish numbers is what turns a leaders’ memorandum into an institution, and it is harder for either government to walk away from quietly than a signing photograph.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The honest measure is 12,796 jobs created against 28,755 promised: the zone’s value to Singapore firms is cheaper Johor land and labour, and the implementation gap is where that advantage arrives or does not.</p>"
+  },
+  {
+   "headline": "SINGAPORE’S OWN CONSULTATION FINDS PARENTS WANT TIERED SOCIAL-MEDIA ACCESS, NOT A BAN",
+   "breaking": false,
+   "summary": [
+    "<p>About 80 per cent of parents and nearly 70 per cent of young people favour age-appropriate, tiered access to social media over an outright ban, the Ministry of Digital Development and Information said after engaging more than 2,000 parents and youths. The ministry said this reinforces its proposed approach, pairing age assurance with platform design changes — curbs on inappropriate content and unwanted contact, limits on features such as autoplay and daily screen time — eased as users grow older. Legislation is due next year.</p>",
+    "<p>Experts told CNA that restrictions alone will not keep children safe. The contrast with Australia is now in court: its under-16 ban, in force nearly 11 months across ten platforms and credited with suspending more than five million accounts, is being challenged in the High Court by Reddit and the Digital Freedom Project as a burden on the implied freedom of political communication.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> Singapore has taken the regulatory middle while Australia’s blanket ban is tested constitutionally; if the ban survives, the tiered model becomes the harder regional position to hold, not the safer one.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Age assurance puts the compliance cost on platforms rather than enforcement cost on households, but it also makes verified age a condition of ordinary teenage life online, with the identity data retention that implies.</p>"
+  },
+  {
+   "headline": "ONLY FIVE OF 47 PROPERTIES SEIZED IN THE S$3 BILLION LAUNDERING CASE HAVE FOUND BUYERS",
+   "breaking": false,
+   "summary": [
+    "<p>A four-bedroom New Futura unit in Leonie Hill Road, owned by the wife of case suspect Wang Bingang, sold on 28 October for S$8.5 million on a sole bid — 13 per cent below its S$9.8 million guide price, but S$500,000 above a similar River Valley unit in July 2025. It is the fifth of 47 properties auctioned since 17 September to sell; four others, in Wallich Residence and Martin Modern, went on 23 September for S$16.28 million in total.</p>",
+    "<p>More than half of the 80-plus properties seized by the Commercial Affairs Department are now on the block, with Deloitte appointed to liquidate them. Agents blame guide prices anchored to pre-seizure valuations, the 60 per cent additional buyer’s stamp duty on foreigners, and competition from cheaper new prime launches. ETC’s only sale from nine lots on 23 September was a Kaki Bukit factory, opened at S$3.63 million and closed above S$3.2 million after a month of private treaty.</p>"
+   ],
+   "geopolitical": "<p><strong>Geopolitical.</strong> The test of an anti-laundering regime is whether seized foreign wealth converts back into value, and Singapore’s 60 per cent duty on foreign buyers is now the main obstacle to reselling assets taken from foreigners.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Every unsold unit keeps its carrying costs with the state and leaves the recovery provisional: S$3 billion seized is not S$3 billion recovered, and the difference is being set one sole bid at a time.</p>"
+  }
+ ],
+ "word": {
+  "word": "pretermit",
+  "pos": "verb",
+  "pronunciation": "pree-tuh-MIT",
+  "definition": "To pass over or leave out deliberately; in law, to decline to address a question, or to omit an heir from a will.",
+  "etymology": "From Latin praetermittere — praeter, “past, beyond”, plus mittere, “to send” — literally to let something go by.",
+  "example": "The Supreme Court pretermitted every argument on both sides, disposing of the government’s bid to set aside Californian ballots in a single sentence with no noted dissents."
+ }
+}

@@ -1,122 +1,122 @@
 {
  "schema": 1,
- "date": "2026-11-02",
- "generatedAt": "2026-11-02T07:15:00+08:00",
+ "date": "2026-11-03",
+ "generatedAt": "2026-11-03T07:20:00+08:00",
  "coverage": {
-  "from": "2026-11-01T07:00:00+08:00",
-  "to": "2026-11-02T07:00:00+08:00",
-  "label": "Sunday 1 November 2026, 0700 SGT → Monday 2 November 2026, 0700 SGT"
+  "from": "2026-11-02T07:00:00+08:00",
+  "to": "2026-11-03T07:00:00+08:00",
+  "label": "Monday 2 November 2026, 0700 SGT → Tuesday 3 November 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "IRAN PUTS A TWO-DAY PRICE ON HORMUZ AS QATAR COMPRESSES THE SEQUENCE AND THE GULF WAITS ON WASHINGTON",
+   "headline": "WASHINGTON OPENS A NAMED CHANNEL TO TEHRAN AND THE WAR PREMIUM COLLAPSES: BRENT DOWN 6.5 PER CENT",
    "breaking": true,
    "summary": [
-    "<p>Indirect US–Iran talks ran a third straight day in Doha on Sunday, Qatari mediators having met Iranian officials in Tehran on Friday before moving the venue. Foreign Minister Abbas Araqchi called the talks “ongoing and progressing”, said a “two-day proposal” had reached no conclusion, and confirmed no meeting with American representatives is planned.</p>",
-    "<p>The proposal is a 48-hour swap. On day one Washington acts — lifting the blockade on oil shipping, ceasing to block the asset release, ending oil sanctions; on day two Hormuz reopens and traffic returns to its former state. Qatar cut Iran’s original seven-day timetable to five and is now pressing for two, and is separately brokering the release of more than US$6 billion of Iranian money held in Doha out of roughly US$12 billion — the step Tehran treats as the test of American intent.</p>",
-    "<p>Gulf officials said they are braced for the worst while awaiting Washington’s answer, which may come before Tuesday’s midterms. Trump has said there will be no strikes before the vote and has not ruled them out after; Rubio said talks “have actually never stopped”. No verified strike, Hormuz incident or diplomatic breach occurred in the window — the fourth quiet day in six.</p>"
+    "<p>Abbas Araqchi, quoted by IRNA, said consultations through mediators were “very intensive”, that Tehran had tabled its conditions, and that “everything depends on the political rationality of Washington”. Axios reported that Vice-President JD Vance had written to national security chief Mohsen Rezaei about new talks, the highest-level American move in months, and reports said Supreme Leader Mojtaba Khamenei had granted his government “powers” to negotiate. The terms are still the 48-hour swap, with Qatar brokering more than US$6 billion of frozen Iranian money.</p>",
+    "<p>Brent fell more than 6.5 per cent to as low as US$105.55 a barrel, its lowest since 16 October, and US crude more than seven per cent. IAG rose 4.2 per cent, United Airlines seven, and the 10-year gilt yield fell 10 basis points. Trump had told an Iowa rally on Sunday that Iran would get “the hammer” without progress. No strike or Hormuz incident was verified in the window, a fifth quiet day in seven.</p>"
    ],
-   "geopolitical": "The two-day sequence inverts the MOU’s architecture: no fourteen points, no working groups in Switzerland, just a demand that the United States move first on a 48-hour clock. A stopwatch turns an open negotiation into a yes or no an administration three days from an election must give.",
-   "socioeconomic": "Hormuz is now priced on an American decision rather than Iranian restraint, so war-risk premiums track a cable from Washington, not a warship in the Gulf. Shipowners cannot hedge a 48-hour reopening with no date on it."
+   "geopolitical": "<p><strong>Geopolitical.</strong> A named letter from the vice-president to Rezaei is the first direct American approach since the ceasefire was declared over on 9 July: it moves the file off Qatari mediation onto a channel Washington owns, and can be dropped as cheaply after Tuesday.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> What fell was the war premium, not the barrel. A seven-dollar move on a letter tells importers nothing physical has changed in the strait, and Singapore’s fuel, freight and airfare costs still turn on Washington’s answer.</p>"
   },
   {
-   "headline": "GERMANY’S COST-OF-LIVING PROTESTS TURN TO LOOTING AND FRANCE OPENS AN ATTEMPTED-MURDER CASE",
+   "headline": "RUSSIA BOMBS A MONDAY AID QUEUE IN ZAPORIZHZHIA HOURS AFTER THE WAR’S LONGEST TRUCE EXPIRES",
    "breaking": true,
    "summary": [
-    "<p>Saturday’s nationwide German marches, called by the new youth movement Gen Z regelt, broke into violence overnight. Hesse’s interior minister Roman Poseck said hooded rioters damaged 17 shops in Frankfurt and looted five, that 1,300 officers were deployed and more than 100 injured, and that 54 people aged 13 to 29 were arrested. Police used water cannon in Berlin, Cologne and Hamburg against crowds throwing fireworks, stones and bottles at emergency workers; NDR reported 120 arrests in Hamburg. Poseck alleged around 100 identified left-wing extremists had infiltrated the marches, and federal ministers promised a tough response.</p>",
-    "<p>In France, where more than 320,000 marched on a third national date, the Paris prefecture said several hundred rioters attacked security forces and prosecutors opened an attempted-murder investigation into petrol bombs thrown at riot police. Demonstrations also ran in Switzerland, Portugal and Albania. The German movement’s demands are school and university underfunding, living costs, spending cuts and a possible return of conscription.</p>"
+    "<p>At least nine FAB-3000 guided bombs hit a school in Komyshuvakha, Zaporizhzhia region, used every Monday to distribute humanitarian aid: the first wave struck as people arrived, a second hit the shelter they had taken cover in. Ukraine’s State Emergency Service put the toll at 24, including two rescuers and four police officers, with five injured; Reuters counted 26, and a Zaporizhzhia city official said 27 were missing. Zelensky called it “utterly horrific”.</p>",
+    "<p>The Kherson humanitarian ceasefire, in force from 27 October and the war’s longest local pause, expired at 22:59 on Sunday with neither side reporting a violation; fighting resumed within hours. Kyiv says Moscow refused an extension and used the pause to fortify positions, which Dmitry Peskov called “a completely normal practice” while judging the Oleshky mission successful.</p>"
    ],
-   "geopolitical": "The infiltration claim is the hinge. Treating Saturday as a public-order problem with a hundred extremists in it lets Berlin answer with policing; conceding it as politics means answering on conscription, which no governing coalition rearming at this pace wants to put to the cohort that would be called up.",
-   "socioeconomic": "Seventeen damaged shopfronts in one city is a small bill. The durable cost is that a movement about rent and tuition now carries a security file, which is the cheapest reason a government can find for not costing its demands."
+   "geopolitical": "<p><strong>Geopolitical.</strong> The pause proved the two bureaucracies can cooperate and that cooperating buys nothing: Moscow banked an evacuation and a fortified line, then bombed a known aid point, which removes the case for extending local truces anywhere on the front.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Aid distribution on a published weekly schedule is now a targeting pattern, so the cost falls on front-line civilians whose food depends on being in the same place at the same hour every Monday.</p>"
   },
   {
-   "headline": "UKRAINE RESUMES REFINERY STRIKES AS THE KHERSON TRUCE EXPIRES, AND MOSCOW OPENS A TERRORISM CASE",
+   "headline": "SHOP FREEZERS IN SEVEN COUNTRIES ARE TURNED UP TO 50C AND BRUSSELS CALLS IT AN ATTACK ON THE FOOD CHAIN",
    "breaking": true,
    "summary": [
-    "<p>The humanitarian ceasefire that had held in the Kherson region since 27 October — the longest local pause of the war — ended at 22:59 Ukrainian time on Sunday. Kyiv’s military evacuated 167 people from threatened areas during the day, including 22 children and 21 with limited mobility; the ombudsman said the Oleshky mission is over and the regional administration would not say how many left the occupied town. Russian strikes on energy infrastructure in four regions had left hundreds of thousands of homes without power, some restored on Sunday.</p>",
-    "<p>Ukraine has also ended the roughly two-week pause in refinery strikes that Washington asked for. Russian Deputy Prime Minister Alexander Novak confirmed hits on three refineries and a gas-chemical complex, among them Rosneft’s Novokuybyshevsk and the Kstovo plant; the manufacturer Fire Point acknowledged involvement in both. Moscow opened a terrorism case over Kstovo and the Kremlin said Kyiv was “simply ignoring” American wishes. Trump had pressed Kyiv for weeks to stop, blaming the strikes for diesel prices.</p>"
+    "<p>Refrigeration in supermarkets across at least seven European countries, among them Belgium, Luxembourg, the Netherlands and Sweden, was driven as high as 50C overnight into Monday, and shops dumped whole aisles of stock. Ahold Delhaize reported dozens of Belgian and Luxembourg stores hit, Sweden’s ICA an overnight incident, Colruyt five shops, Intermarché 15 and Carrefour Belgium about 15 of its 700. Sabcobel, which runs Delhaize’s refrigeration, said evaporators had been switched to defrost mode and technicians mobilised from 1am.</p>",
+    "<p>It is the second wave in a month, after an October attack that seized cooling in as many as 700 French supermarkets, starting fires and causing losses in the tens of millions of euros. EU food and agriculture commissioner Christophe Hansen called it “a deliberate attempt to disrupt our food supply chain and undermine consumers’ confidence in it”. Sweden’s cybersecurity chief John Billow cited “quite a lot of exposed operational technology devices” needing patching; the US Army is investigating similar disruptions.</p>"
    ],
-   "geopolitical": "Restarting the refinery campaign three days before the midterms, against an explicit American request, measures how little leverage Washington now has over Ukrainian targeting. Kyiv has judged the cost of ignoring Trump lower than the cost of letting its grid be hit for free.",
-   "socioeconomic": "The exchange has settled into grid for refinery: Russian refining capacity against Ukrainian households in winter. Both sides are now destroying the assets their own populations need to get through it."
+   "geopolitical": "<p><strong>Geopolitical.</strong> Hansen’s wording moves this from crime to hybrid attack, which means an internet-facing thermostat in a Swedish shop is now handled as critical infrastructure by the agencies that investigate sabotage.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The loss lands twice in a month on grocers’ thinnest margins, and the remedy is the operational-technology patching the sector deferred for a decade because nobody treated a fridge as a computer.</p>"
   },
   {
-   "headline": "A JUDGE THROWS OUT THE PRE-EMPTIVE BID TO BLOCK AN ALASKA SENATE RESULT THE ADMINISTRATION MIGHT LOSE",
+   "headline": "THE SUPREME COURT ENDS THE CALIFORNIA BALLOT CASE IN ONE SENTENCE AS A SECOND JUDGE CALLS A PROSECUTION WEAPONISATION",
    "breaking": true,
    "summary": [
-    "<p>Judge Sharon Gleason of the US District Court in Anchorage dismissed on Sunday the Justice Department’s suit seeking to bar certification of Alaska’s Senate result if the Republican incumbent Dan Sullivan loses. The action turned on a teacher, Daniel J. Sullivan Jr., whose name also appears on the ballot, and argued the resulting confusion would favour the Democratic challenger. Gleason held that many Alaskans had already voted and there is no way to establish which Sullivan they meant.</p>",
-    "<p>Trump has said he ordered the suit personally. The department intends to appeal; Sullivan said he will accept the result either way, and the department is separately running a criminal inquiry into the alleged plot to place the second Sullivan on the ballot. The ruling lands two days after a California court barred federal officials from pressuring state election administrators.</p>"
+    "<p>Hours after Solicitor-General D. John Sauer asked it to set aside ballots cast by more than 20,000 Californian registrants the government calls “likely not U.S. citizens”, the Supreme Court refused in a one-sentence order with no reasoning and no noted dissents. On Friday the Ninth Circuit had barred the administration 2-1 from intervening in the state’s mail-ballot count, holding that if it wants different procedures it “should take that suggestion to Congress, not the courts”. Tens of millions of early votes are already cast.</p>",
+    "<p>The same day, Magistrate Judge Zia Faruqui dismissed for want of probable cause the false-statements case against two former senior FBI intelligence officials, Nikki Floris and Bradley Benavides, saying it could not be seen “as anything other than weaponisation” and had become “marketing material for people not to join the FBI”. The case agent testified that Director Kash Patel demanded the investigation the day after a Trump primetime address. It is the third government defeat in five days.</p>"
    ],
-   "geopolitical": "A government asking a court in advance to withhold certification of a race it fears losing is a new instrument, and it has failed twice in three days before two district judges. The question is whether an appellate panel, handed both cases at once, lets any of it run on Tuesday.",
-   "socioeconomic": "Alaska’s count proceeds on its own schedule and nobody administering it now faces an order to stop. Unsettled is who bears the cost of contesting results pre-emptively in every state where the margin is close."
+   "geopolitical": "<p><strong>Geopolitical.</strong> An unexplained, undissented refusal from a court with six Republican appointees is the strongest signal available to allied governments that the pre-emptive election litigation has no judicial constituency, whatever is claimed after Tuesday.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Faruqui’s “marketing material” line is a labour-market point: prosecuting officials over disfavoured answers to Congress raises the price of federal technical work, and that recruitment cost outlasts the election.</p>"
   },
   {
-   "headline": "TWO DOZEN INDIAN OPPOSITION PARTIES DEMAND THE ELECTION CHIEF RESIGN OVER THE VOTER ROLLS",
-   "breaking": true,
+   "headline": "BRITAIN MAKES SETTLEMENT EARNED RATHER THAN AUTOMATIC, AND APPLIES THE RULE BACKWARDS",
+   "breaking": false,
    "summary": [
-    "<p>Tens of thousands gathered at Ramlila Maidan in New Delhi on Sunday under the slogan “Vote Bachao, Desh Bachao” — save the vote, save the nation — drawing leaders and supporters from nearly two dozen parties of the opposition INDIA bloc. Rahul Gandhi, Mamata Banerjee and Akhilesh Yadav led the attack on the Election Commission’s Special Intensive Revision of the electoral rolls, alleging “vote chori”, and the rally repeated the demand that Chief Election Commissioner Gyanesh Kumar resign.</p>",
-    "<p>Gandhi put the number of names removed since the general election at about 13.5 crore — roughly 135 million — a figure no independent audit has confirmed. The BJP dismissed the rally as a politically motivated attempt to discredit a constitutional institution. Police reported no serious incident despite a heavy deployment. Opposition figures have floated an impeachment motion against Kumar; none has been filed.</p>"
+    "<p>Home Secretary Shabana Mahmood told the Commons that indefinite leave to remain, “until now given almost automatically”, “from today must be earned”. Migrants earning under £50,000 (about S$85,500) will wait 10 years rather than five; those above £50,271, and doctors, nurses and teachers, five; those above £125,000, three. Refugees face 10 years, with a further 10-year penalty for entering illegally and up to 30 for those not in work, and none who have drawn public funds qualify at all.</p>",
+    "<p>Under cabinet and health-union pressure Mahmood exempted care workers earning over £25,000 who arrived before May 2025, letting an estimated 280,000 people and dependants apply after five years; Chris Philp put that concession’s cost at up to £10 billion and Nigel Farage called it “the beginning of the capitulation”. The rules apply retrospectively to more than half a million people already in Britain and need no parliamentary vote. The Law Society said they undermine legal certainty; Diane Abbott warned of a second Windrush.</p>"
    ],
-   "geopolitical": "An election commission whose independence is openly doubted by twenty-four parties at home is a weaker reference abroad, and India has spent a decade offering its commission as the model for running elections at scale. That export now carries a domestic asterisk.",
-   "socioeconomic": "A hundred and thirty-five million is a claim, not a count, and the opposition has not shown its working. What is not in dispute is who carries the burden of a roll revision: people asked for documents they may never have had, where registration was always thinnest."
+   "geopolitical": "<p><strong>Geopolitical.</strong> Britain becomes the first G7 state to price permanent residence by salary band, handing every competing immigration system a template for charging low-paid essential workers five more years of their lives.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The gain is a projected benefits saving, booked against half a million people who made their plans under the old rule — and the NHS and care sectors that recruited them abroad keep their staff only because the carve-out survived.</p>"
   }
  ],
  "singapore": [
   {
-   "headline": "OIL PATCHES OFF SEBAROK, SEMAKAU AND SELAT PAUH SEND MPA’S SPILL CONTRACTORS OUT WITH NO SOURCE IDENTIFIED",
+   "headline": "MOM INVESTIGATES 45 CHANGI FIRMS AFTER FINDING EMPLOYMENT PASS HOLDERS HANDLING BAGGAGE",
    "breaking": true,
    "summary": [
-    "<p>The Maritime and Port Authority was alerted to oil in the water off Pulau Sebarok at about 10.25am on Sunday. Aerial surveillance then confirmed several patches off Sebarok, Pulau Semakau and Selat Pauh, and found none near the West Coast, Sentosa, the Southern Islands or the East Coast.</p>",
-    "<p>MPA activated its oil spill response contractors and directed terminals in the area to deploy their own; other agencies were put on notice to take precautionary shoreline measures. The authority said there was no impact on navigational traffic or port operations, and that surveillance is continuing while it investigates where the oil came from.</p>"
+    "<p>The Manpower Ministry is investigating about 45 companies involved in Changi Airport operations for suspected work-pass offences including false declarations and illegal deployment, and has identified about 270 workers whose deployment may have breached pass rules. All were employed by contractors and sub-contractors of ground handler SATS. An inspection found Employment Pass holders — a pass generally requiring at least S$5,600 a month — doing baggage handling, with preliminary findings that their declared salaries and occupations were false.</p>",
+    "<p>MOM has directed SATS to strengthen oversight of its contractors, verify that deployment matches passes and rectify compliance gaps, and issued an advisory to other firms in SATS’ operations on their obligations under the Employment of Foreign Manpower Act. SATS said a routine internal audit had already found work-pass irregularities among some contractors’ workers and that it acted against those falling short of its contractual standards.</p>"
    ],
-   "geopolitical": "Singapore sells itself as the port where a spill is contained in hours, and that claim is the quiet part of why the world’s largest bunkering business sits here rather than in a cheaper harbour. It is tested by response time, not by volume.",
-   "socioeconomic": "Until the source is identified nobody is liable, so the cleanup is being run by MPA’s contractors and the terminals. Semakau is the landfill island, and the waters around it hold the replanted mangrove and seagrass that were the condition of building it there."
+   "geopolitical": "<p><strong>Geopolitical.</strong> Singapore markets its work-pass regime abroad as a precise instrument for matching skills to jobs; 270 mis-deployed workers under one ground handler puts that precision in the declaration, not the deployment.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The EP salary floor exists to stop cheaper foreign labour taking skilled roles, so using the pass for baggage handling undercuts both that floor and the contracting chain Changi’s turnaround times rest on.</p>"
   },
   {
-   "headline": "EVERY POLICE CALL WILL COME FROM ONE NUMBER FROM TODAY, AFTER IMPERSONATION LOSSES MORE THAN DOUBLED",
-   "breaking": false,
+   "headline": "A GLOBAL PASSENGER-PROCESSING OUTAGE TAKES CHANGI’S SELF-CHECK-IN DOWN FOR TWO AND A HALF HOURS",
+   "breaking": true,
    "summary": [
-    "<p>From Monday every outgoing Singapore Police Force call comes from a single number, 6000-0999, followed immediately by a verification SMS on the gov.sg sender ID. The force is the first agency to adopt a dedicated line against government-official impersonation scams.</p>",
-    "<p>Reported impersonation cases ran to at least 3,230 between January and September, with losses of at least S$142.5 million, against 1,010 cases and S$61.4 million in the same nine months of 2025. In October alone at least 59 cases began with a caller posing as staff of the telco SIMBA before transferring victims to a fake police or MAS officer, costing at least S$1.3 million. Total scam losses in the first half of 2026 were S$410.6 million.</p>"
+    "<p>Self-service check-in kiosks at all four Changi terminals stopped processing check-ins and printing boarding passes from about 8.30am on Monday. Changi Airport Group blamed “a global disruption in Advance Passenger Processing systems” and said other airports were similarly affected. Airlines checked passengers in manually; Garuda Indonesia’s Terminal 3 kiosks were dark and passengers on the 11.45am Jakarta service were put through an accelerated bag drop. Service resumed at about 11am.</p>",
+    "<p>Advance Passenger Processing is the pre-departure exchange between airlines and border authorities that decides whether a passenger may be boarded at all. While it is down no kiosk can issue a boarding pass, and the work falls back on rostered counter staff.</p>"
    ],
-   "geopolitical": "The calls originate outside Singapore and the numbers are spoofed, so there is no one to arrest and no network to seize. Publishing one authentic identity concedes that interdiction has failed and that the only controllable variable left is what the public can verify.",
-   "socioeconomic": "A number the whole population has to learn is a cost shifted onto households, and cheap against S$142.5 million in nine months. It also creates one point of failure: the scam that works next is the one that spoofs 6000-0999."
+   "geopolitical": "<p><strong>Geopolitical.</strong> Border pre-clearance is shared plumbing between states and carriers, so one upstream fault degraded several countries’ sovereign immigration checks at once — a dependency Singapore neither owns nor can patch.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Changi’s cost model assumes self-service; two and a half hours of manual fallback show that the counter staffing designed out of the terminals is also their only surge capacity.</p>"
   },
   {
-   "headline": "181,800 INTEGRATED SHIELD RIDERS DROPPED OR DOWNGRADED IN A YEAR AS SINGAPOREANS PRICE THEMSELVES OUT OF TOP-UP COVER",
+   "headline": "THE JOHOR-SINGAPORE SEZ’S FIRST MINISTERIAL COMMITTEE PUTS S$28 BILLION OF APPROVALS ON THE BOARD",
    "breaking": false,
    "summary": [
-    "<p>A total of 181,800 Integrated Shield Plan riders were dropped or downgraded in 2025, against 103,400 in 2024 and 84,800 in 2023 on Health Ministry figures; the number given up outright rose about 72 per cent. Riders are the top-up policies that cover the deductible and co-insurance an Integrated Shield Plan leaves with the patient.</p>",
-    "<p>The ministry says it does not track why policyholders downgrade or discontinue, and that it is too early to read trends from the switching figures. Commentators attribute the surge to this year’s rider rule changes and successive premium increases, neither of which the ministry’s data confirms as the cause.</p>"
+    "<p>The Johor-Singapore Cooperation Ministerial Committee met for the first time on Monday at Gardens by the Bay and said the special economic zone had drawn RM88.83 billion (S$28.1 billion) of approved investments between January 2025 and June 2026, on Malaysian Investment Development Authority figures. About 45 per cent, roughly RM40.3 billion, has been implemented, creating 12,796 jobs against 28,755 projected across all approved projects.</p>",
+    "<p>National Development Minister Chee Hong Tat called the meeting “very productive” and “the beginning of many more to come”, and said many of the investors were Singaporean. Malaysia’s Economy Minister Akmal Nasir said both sides had agreed to hold a joint investment forum for the zone by the first quarter of 2027.</p>"
    ],
-   "geopolitical": "Singapore’s answer to medical inflation is to push cost back towards the insured and let claims discipline do the rest — the opposite of the direction most advanced systems take when premiums bite. Whether it holds is now a question of household behaviour, not policy design.",
-   "socioeconomic": "Dropping a rider restores a deductible and co-insurance the holder had paid to remove, so almost two hundred thousand people chose a known future bill over a rising certain one. That is self-insurance against inflation they cannot price."
+   "geopolitical": "<p><strong>Geopolitical.</strong> A standing ministerial committee that has to publish numbers is what turns a leaders’ memorandum into an institution, and it is harder for either government to walk away from quietly than a signing photograph.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> The honest measure is 12,796 jobs created against 28,755 promised: the zone’s value to Singapore firms is cheaper Johor land and labour, and the implementation gap is where that advantage arrives or does not.</p>"
   },
   {
-   "headline": "SINGAPORE WARNS AT MANAMA THAT A CLOSED HORMUZ IS A PRECEDENT FOR MALACCA",
+   "headline": "SINGAPORE’S OWN CONSULTATION FINDS PARENTS WANT TIERED SOCIAL-MEDIA ACCESS, NOT A BAN",
    "breaking": false,
    "summary": [
-    "<p>Senior Minister of State for Defence Zaqy Mohamad told the 22nd IISS Manama Dialogue in Bahrain on Sunday that “we must not allow insecurity to become the new normal”. The lesson of Hormuz, he said, is not that the world has become too interconnected but that “our security cooperation has not always kept pace with our interdependence”.</p>",
-    "<p>He warned specifically that measures restricting transit through Hormuz or the Bab el-Mandeb could erode navigational rights in the Straits of Malacca and Singapore, argued that mutual dependence alone guarantees nothing, and cited Singapore’s Information Fusion Centre, which now shares maritime security information with 58 international partners across 163 linkages.</p>"
+    "<p>About 80 per cent of parents and nearly 70 per cent of young people favour age-appropriate, tiered access to social media over an outright ban, the Ministry of Digital Development and Information said after engaging more than 2,000 parents and youths. The ministry said this reinforces its proposed approach, pairing age assurance with platform design changes — curbs on inappropriate content and unwanted contact, limits on features such as autoplay and daily screen time — eased as users grow older. Legislation is due next year.</p>",
+    "<p>Experts told CNA that restrictions alone will not keep children safe. The contrast with Australia is now in court: its under-16 ban, in force nearly 11 months across ten platforms and credited with suspending more than five million accounts, is being challenged in the High Court by Reddit and the Digital Freedom Project as a burden on the implied freedom of political communication.</p>"
    ],
-   "geopolitical": "Singapore’s stake in the Gulf is the rule, not the oil. If a coastal state can throttle a strait for leverage and be negotiated with rather than reversed, the doctrine that keeps Malacca open is the one being rewritten, and no navy Singapore can build substitutes for it.",
-   "socioeconomic": "The 58 partners and 163 linkages are the argument that the cheap half of maritime security is information. The expensive half — hulls that can escort — is what the Gulf has shown nobody has enough of."
+   "geopolitical": "<p><strong>Geopolitical.</strong> Singapore has taken the regulatory middle while Australia’s blanket ban is tested constitutionally; if the ban survives, the tiered model becomes the harder regional position to hold, not the safer one.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Age assurance puts the compliance cost on platforms rather than enforcement cost on households, but it also makes verified age a condition of ordinary teenage life online, with the identity data retention that implies.</p>"
   },
   {
-   "headline": "GAN KIM YONG TO LEAD SINGAPORE AT A COMMONWEALTH SUMMIT CONSUMED BY THE REPARATIONS QUESTION",
+   "headline": "ONLY FIVE OF 47 PROPERTIES SEIZED IN THE S$3 BILLION LAUNDERING CASE HAVE FOUND BUYERS",
    "breaking": false,
    "summary": [
-    "<p>The Prime Minister’s Office said on Sunday that Deputy Prime Minister Gan Kim Yong will lead Singapore’s delegation to the Commonwealth Heads of Government Meeting in St John’s, Antigua and Barbuda, from 2 to 5 November. The summit opens with reparatory justice as its live dispute: London has agreed to structured dialogue on it after insisting it stay off the formal agenda, having ruled out payments.</p>"
+    "<p>A four-bedroom New Futura unit in Leonie Hill Road, owned by the wife of case suspect Wang Bingang, sold on 28 October for S$8.5 million on a sole bid — 13 per cent below its S$9.8 million guide price, but S$500,000 above a similar River Valley unit in July 2025. It is the fifth of 47 properties auctioned since 17 September to sell; four others, in Wallich Residence and Martin Modern, went on 23 September for S$16.28 million in total.</p>",
+    "<p>More than half of the 80-plus properties seized by the Commercial Affairs Department are now on the block, with Deloitte appointed to liquidate them. Agents blame guide prices anchored to pre-seizure valuations, the 60 per cent additional buyer’s stamp duty on foreigners, and competition from cheaper new prime launches. ETC’s only sale from nine lots on 23 September was a Kaki Bukit factory, opened at S$3.63 million and closed above S$3.2 million after a month of private treaty.</p>"
    ],
-   "geopolitical": "Sending a deputy prime minister rather than the prime minister is a judgment about what the meeting will produce. Singapore’s interest in the Commonwealth is procedural — fifty-six states of very different size arguing under the same rules — and that is served by the body surviving the argument, not by either answer to it.",
-   "socioeconomic": "For a small open economy the summit’s value is the trade and standards work around it, which is the first thing crowded out when a communiqué fight takes the week."
+   "geopolitical": "<p><strong>Geopolitical.</strong> The test of an anti-laundering regime is whether seized foreign wealth converts back into value, and Singapore’s 60 per cent duty on foreign buyers is now the main obstacle to reselling assets taken from foreigners.</p>",
+   "socioeconomic": "<p><strong>Socioeconomic.</strong> Every unsold unit keeps its carrying costs with the state and leaves the recovery provisional: S$3 billion seized is not S$3 billion recovered, and the difference is being set one sole bid at a time.</p>"
   }
  ],
  "word": {
-  "word": "vitiate",
+  "word": "pretermit",
   "pos": "verb",
-  "pronunciation": "VISH-ee-ayt",
-  "definition": "To impair the quality or effectiveness of something; in law, to destroy the validity of an act or instrument.",
-  "etymology": "From Latin vitiare, to spoil or corrupt, from vitium, a fault or defect — the same root that gives English vice.",
-  "example": "India’s opposition told a Delhi maidan that the roll revision had vitiated the electoral register itself; in Anchorage the same afternoon, a judge found the reverse — that a second candidate of the same name does not vitiate a count already half cast."
+  "pronunciation": "pree-tuh-MIT",
+  "definition": "To pass over or leave out deliberately; in law, to decline to address a question, or to omit an heir from a will.",
+  "etymology": "From Latin praetermittere — praeter, “past, beyond”, plus mittere, “to send” — literally to let something go by.",
+  "example": "The Supreme Court pretermitted every argument on both sides, disposing of the government’s bid to set aside Californian ballots in a single sentence with no noted dissents."
  }
 }
