@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T07:20:00+08:00",
+  "coverage": {
+    "from": "2026-11-03T07:00:00+08:00",
+    "to": "2026-11-04T07:00:00+08:00",
+    "label": "Tuesday 3 November 2026, 0700 SGT → Wednesday 4 November 2026, 0700 SGT"
+  },
+  "global": [
+    {
+      "headline": "THE US STRIKES QESHM ISLAND WHILE TEHRAN PUTS A PRICE OF SEVEN CONDITIONS ON HORMUZ",
+      "breaking": true,
+      "summary": [
+        "Central Command confirmed limited strikes on Iran’s Qeshm Island late on Monday, calling them defensive and aimed at batteries that had fired on US aircraft the day before — at least the fourth such exchange since major hostilities stopped. Tehran first blamed Israel, which denied a role. Deputy foreign minister Kazem Gharibabadi said “we are still in a state of war”. Hours earlier JD Vance had called diplomacy promising; mediators believe two days will show whether indirect talks have a basis. Mohsen Rezaei, who received Vance’s letter, wrote that the US reply “was not convincing” and that the strait reopens only if Washington answers seven conditions: a regional ceasefire, release of frozen assets, an end to oil sanctions and the naval blockade, reparations, US withdrawal and an end to interference. There is still no direct contact.",
+        "The New York Times reported that Israel has given Washington intelligence claiming Iran is weighing chemical-weapons use against regional adversaries. US officials are split, some taking it seriously, others reading an attempt to pull Washington back into large-scale operations and seeing echoes of the 2002 Iraq assessments. Gulf officials were sceptical; Iran denies holding such weapons. Brent settled at US$103.60, down US$1.17, a second straight fall after October’s gain of more than 10 per cent."
+      ],
+      "geopolitical": "The channel Washington opened last week now has a published price. Converting a ceasefire into seven deliverables moves the dispute from process to terms, and terms can be refused in public.",
+      "socioeconomic": "Oil has handed back most of the war premium in two sessions on an opening nobody has signed: real relief for cargoes already fixed, no basis for a budget."
+    },
+    {
+      "headline": "TRUMP SAYS THE US WILL END ITS US$4 BILLION A YEAR OF MILITARY AID TO ISRAEL AT YEAR’S END",
+      "breaking": true,
+      "summary": [
+        "Trump told Fox News on the morning of Election Day that the United States is cutting off US$4 billion in aid to Israel at the end of the year because “they don’t need it”. He framed it as removing a Democratic talking point, naming Michigan Senate nominee Abdul El-Sayed, and said he had “reached an agreement” with Benjamin Netanyahu, whose office did not confirm this. The US gives Israel US$3.8 billion a year under a ten-year memorandum signed in 2018 and due to run to 2028; Israel spends it on American weapons, and Congress appropriates it.",
+        "It came a week after Israel’s election, with Netanyahu and Gadi Eisenkot both bidding to form a coalition, and after Trump had endorsed Netanyahu in terms Vance did not echo. Aaron David Miller, a former US Middle East negotiator, called the timing awkward and said Israel had become deeply polarising inside the Republican party. Former officials questioned whether the cut survives renewed operations against Iran."
+      ],
+      "geopolitical": "Ending the memorandum two years early turns the pillar of the relationship from a standing ten-year commitment into an annual political decision — a bigger change than the sum, and one every holder of a long-term US guarantee will price.",
+      "socioeconomic": "The aid is spent with American arms makers, so the cut lands on their order books as squarely as on Israel’s, and would force Israel to fund mid-war procurement itself."
+    },
+    {
+      "headline": "THE KOMYSHUVAKHA AID HUB’S TOLL REACHES 33 AS RUSSIA ALSO HITS A HOSPICE, A HOSPITAL AND THE GRID",
+      "breaking": true,
+      "summary": [
+        "At least nine bombs hit the building in Komyshuvakha, Zaporizhzhia region, which Volodymyr Zelensky called one of the deadliest attacks of the war: 33 confirmed dead, 50 unaccounted for. Governor Mykhailo Semikin said the EU-funded reinforced basement, built last year to keep classes running and since used as an aid hub, collapsed under the bombs and caught fire. Danielle Bell of the UN human rights monitoring mission said the distribution’s timing and location were well publicised, so Russian forces either knew or failed to take the most basic steps to find out, and either way the attack “seems to have violated the most fundamental principles of international humanitarian law”. The BBC counted at least 38 killed in 24 hours, including strikes on a hospice and a hospital.",
+        "The attack preceded a barrage of hundreds of drones and dozens of cruise and ballistic missiles against the energy system, three drones aimed at a substation serving the Khmelnytskyi nuclear plant; energy minister Denys Shmyhal informed the IAEA."
+      ],
+      "geopolitical": "Striking a distribution whose time and place were advertised removes the assumption that publicity protects aid — the assumption the local truces now being used as settlement building blocks rest on.",
+      "socioeconomic": "Aiming drones at a substation feeding a nuclear plant shifts the cost of these raids from repair bills to reactor safety margins, with winter demand still ahead."
+    },
+    {
+      "headline": "AMERICANS VOTE WITH TURNOUT PAST 2022 LEVELS AS THE JUSTICE DEPARTMENT SENDS TARGET LETTERS ON POLLING DAY",
+      "breaking": false,
+      "summary": [
+        "Voting for control of Congress ran through the window, turnout surging past 2022 levels with records in Florida, Georgia, Michigan and North Carolina, and cost of living dominant. The first polls closed at 18:00 Eastern, after the window, so no mainland result fell inside it; Guam reported first, Republicans taking the governorship and Democrats flipping the non-voting delegate. Westchester county addressed malfunctions affecting up to 250,000 ballots; federal monitors went to all 50 states, with a late surge into Los Angeles.",
+        "The Justice Department sent target letters, which warn of imminent charges, to more than a dozen people mostly aligned with the Democratic party, among them the leadership of the Elias Law Group, over the recruitment of a second candidate named Dan Sullivan to run against Alaska’s Republican incumbent of that name. Chairman Marc Elias called it a “sham investigation”. More than 100 grand jury subpoenas and preservation letters have gone out; US attorney Michael Heyman says the effort safeguards votes. Ron DeSantis accused his own party of “gaslighting” voters over the Iran war and fuel prices."
+      ],
+      "geopolitical": "Allies are watching not the result but whether this administration accepts an adverse count; monitors in every state and target letters to the opposition’s lawyers on polling day set the terms for reading it.",
+      "socioeconomic": "Cost of living displaced the war as the campaign’s organising issue, and it was a Republican governor who named fuel prices — the Hormuz premium reaching voters through the pump."
+    },
+    {
+      "headline": "THE FREEZER ATTACKS REACH TEN COUNTRIES AND BRITISH MEAT PROCESSORS, AND LONDON WARNS OF MORE",
+      "breaking": false,
+      "summary": [
+        "The BBC counted supermarket refrigeration cyber-attacks in ten countries, with problems from Estonia and Sweden to Portugal and Italy and retailers discarding stock; the tally a day earlier was seven. In Britain the Association of Independent Meat Suppliers said a few of its roughly 300 members were hit, fridges heating overnight. The National Cyber Security Centre called the national impact minimal but warned of a real prospect of an unprecedented rise in incidents. Reporting on October’s French attack found legacy controllers exposed to the internet with default passwords still set.",
+        "Separately, seven flights over Poland, Spain, Bulgaria and Italy were searched or diverted after bomb threats that all proved false — a second multi-country disruption of European logistics in one day, remotely caused and unattributed."
+      ],
+      "geopolitical": "Neither shop refrigeration nor airline dispatch sits inside Europe’s critical-infrastructure regime, and a fortnight of unattributed disruption has made that the Commission’s question rather than a drafting detail.",
+      "socioeconomic": "The loss is spoiled stock and lost trading days, concentrated among independent processors least able to absorb it, against a slow remedy: replacing internet-facing controllers still carrying shipped passwords."
+    }
+  ],
+  "singapore": [
+    {
+      "headline": "RENA LEE IS THE FIRST SINGAPOREAN ELECTED TO THE INTERNATIONAL COURT OF JUSTICE",
+      "breaking": true,
+      "summary": [
+        "Ambassador for International Law Rena Lee, 57, was elected to the International Court of Justice on 3 November with absolute majorities in both chambers in the first round: 151 of 191 votes in the UN General Assembly and 13 of 15 in the Security Council. She serves a nine-year term from 2027 to 2036. She is the first Singaporean and the first woman from South-east Asia on the bench, and only the second South-east Asian elected since 1945, after Judge Cesar Bengzon of the Philippines, whose term ended in 1976.",
+        "Lee chaired the high seas treaty negotiations and has over 30 years in international law. Singapore fielded a candidate for the first time; Vivian Balakrishnan and Edwin Tong attended the New York polling."
+      ],
+      "geopolitical": "A seat gives a small state a hand in developing the law its sovereignty rests on, for nine years and regardless of its weight.",
+      "socioeconomic": "The return is reputational capital for a jurisdiction that sells dispute resolution: arbitration work competes on the credibility of its lawyers, and a judge on the world court is the strongest reference available."
+    },
+    {
+      "headline": "PARLIAMENT PUTS NUMBERS ON THE HAZE: EMERGENCY VISITS UP A FIFTH, POLYCLINICS UP A QUARTER, 113,000 SUBSIDISED",
+      "breaking": false,
+      "summary": [
+        "Health Minister Ong Ye Kung said in a written reply on 3 November that emergency departments recorded about 20 per cent more attendances for conditions potentially haze-related between early September and mid-October, the daily average rising from about 360 to 440. Polyclinic attendances rose about 25 per cent, from about 4,000 to 5,000 a day, the largest increase among adults aged 18 to 64. The 24-hour Pollutant Standards Index first entered the unhealthy range this year on 4 September, at 101 in the central region. More than 113,000 people used the haze subsidy between 12 and 24 October — over 72,000 visits to private GP clinics and over 41,000 to polyclinics, capped at S$10 — with claims still coming in.",
+        "Minister of State for Manpower Dinesh Vasu Dash said employers must bear the cost of short-term haze suspensions with no deduction from salary or leave; Foo Cexiang said platform operators must not cut incentives, withhold jobs or dock pay when deliveries take longer. Grace Fu said Singapore will ratify the ASEAN Agreement on Transboundary Haze Pollution within days and use its 2027 ASEAN chairmanship to establish the regional coordinating centre, to be based in Indonesia and needing six ratifications; Vietnam approved in mid-2026. Nearly 30 per cent of eligible Singaporeans had collected free N95 masks by 29 October, after the eligibility age fell from 67 to 60."
+      ],
+      "geopolitical": "The centre is to sit where the fires burn, which is both why it would work and why it has taken 24 years without the ratifications to exist. Chairing ASEAN in 2027 is Singapore’s only lever.",
+      "socioeconomic": "The bill is now allocated — suspensions to employers, treatment to the state — but platform workers, whose earnings fall with the hours they prudently skip, get advisories against penalties rather than protected income."
+    },
+    {
+      "headline": "MOST RESPONDENTS BACK MERGING THE CAR COE CATEGORIES, AND SIOW SAYS THE FLEET CANNOT GROW MUCH FURTHER",
+      "breaking": false,
+      "summary": [
+        "Transport Minister Jeffrey Siow told Parliament on 3 November that most respondents to the Land Transport Authority consultation, which closed on 2 November, backed merging COE Categories A and B and preferred a five-band structure of rebates and surcharges set by open market value over a three-band one. The three-band option gives the lowest band a S$15,000 rebate, the middle band nothing and the top band a S$15,000 surcharge; five bands insert steps of S$7,500 to blunt the cliff effect, where crossing a boundary costs a buyer disproportionately. The aim is a permanent price distinction between mass-market and luxury cars. Nothing is decided; the review is due in the first half of 2027.",
+        "Siow said Singapore cannot grow its car population much further, and that COE rules must hold numbers down while supporting public transport, which receives about S$6 billion to S$7 billion a year. Edward Chia asked whether the adjustments could be a percentage of the COE price rather than fixed sums; Siow said that would cut cliff effects further but has drawbacks."
+      ],
+      "geopolitical": "Singapore’s quota is what dense cities study when they want to cap vehicle numbers without rationing by queue, and it is the band design, not the quota, that is portable.",
+      "socioeconomic": "A feebate redistributes inside a fixed quota rather than enlarging it: mass-market buyers gain up to S$15,000 and luxury buyers pay it, while the total cost of a car is set by the number of certificates, which is not under review."
+    },
+    {
+      "headline": "FROM JANUARY 2027 THE POLICE MAY USE ERP 2 ON-BOARD UNIT DATA TO INVESTIGATE CRIME",
+      "breaking": false,
+      "summary": [
+        "Senior Minister of State for Home Affairs Goh Pei Ming told Parliament on 3 November that data stored on next-generation Electronic Road Pricing on-board units is expected to be used to prevent, detect and solve crime. Every Singapore-registered vehicle on the road must carry the unit from 1 January 2027, and ERP 2 fixes position by satellite rather than by gantry. Access will be bound by the same legal and data-governance safeguards as every other Home Team sensor, Goh said, and police will keep vehicle-specific data only as long as investigations or court proceedings require.",
+        "Sun Xueling said the units carry a high level of security and encryption, meet international standards and Infocomm Media Development Authority rules, and that motorists cannot access the data stored in them directly. The LTA said in September the system would be used against offences including illegal cross-border taxi services, deregistered vehicles and off-peak cars driven outside permitted hours, with enhancements needed before any use against speeding."
+      ],
+      "geopolitical": "A state-mandated satellite positioning unit in every vehicle, readable by police, is a design other governments will cite, and what travels is the safeguard chosen: retention limited by investigative need under internal data rules, not a warrant.",
+      "socioeconomic": "A device sold as a tolling upgrade now also produces evidence its owner cannot read and the state can, and from 1 January 2027 every vehicle owner pays for the fitting whatever they make of the second use."
+    }
+  ],
+  "word": {
+    "word": "shibboleth",
+    "pos": "noun",
+    "pronunciation": "SHIB-uh-leth",
+    "definition": "A belief or custom held by a group as an article of faith, often unexamined; also a test word that identifies who belongs.",
+    "etymology": "From Hebrew shibboleth, an ear of corn or a flowing stream. In Judges 12:6 the Gileadites made men at the Jordan say it; those who could not manage the first sound were identified as Ephraimites.",
+    "example": "Four billion dollars a year of military aid to Israel had been a shibboleth of American politics until Trump said, on the morning of the midterms, that it would end because “they don’t need it”."
+  }
+}
