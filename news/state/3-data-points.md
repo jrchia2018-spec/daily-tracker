@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 4 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 5 November 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -2284,3 +2284,31 @@
 | ERP 2 data in investigations | From Jan 2027 OBU data expected to be used to prevent, detect and solve crime; OBU mandatory on all Singapore-registered vehicles from 1 Jan 2027; retention limited to what investigations or court proceedings require; motorists cannot read stored data | Goh Pei Ming and Sun Xueling in Parliament via ST, 3 Nov 2026 |
 | SIA/Amadeus breach (carried, not run) | About 46,000 SIA booking records illegally accessed at Amadeus (names, booking references, itineraries, booking classes); about 620 also e-mail, phone, travel-document details and KrisFlyer numbers; no bank or card data, no bookings modified; Malaysia Airlines, Cathay Pacific, JAL, Korean Air and Asiana also hit; data processed Aug 2023-Sep 2026 | SIA/Amadeus via ST, 3 Nov 2026 |
 | Israeli chemical-weapons claim | Israel passed Washington intelligence that Iran is weighing chemical-weapons use against regional adversaries; US officials divided, some citing echoes of the 2002 Iraq assessments; Gulf officials sceptical; Iran denies | NYT via Haaretz/Al Arabiya/JPost, 3 Nov 2026 |
+
+## Global economic variables (5 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude | Settled US$94.62/bbl, -US$8.98 (-8.7%) — biggest one-day fall since April, first close below US$100 since 7 Oct; traded as high as US$118 on Fri 30 Oct; -14%+ on the week. No verified same-day USD/SGD rate, so no SGD conversion given | Reuters/Rigzone/Dow Jones via web search, 4 Nov 2026 |
+| WTI crude | Settled US$88.12/bbl, -8.3% | Reuters via web search, 4 Nov 2026 |
+| Brent positioning | Trend-following CTA long positions cut to ~55% from 73% during the session | Rigzone, 4 Nov 2026 |
+| Dow Jones | +1,569 points (+3.0%) to 53,356 — biggest post-midterm one-day gain since 1982, best session since Apr 2025 | CNN/CFRA Research/Motley Fool, 4 Nov 2026 |
+| S&P 500 / Nasdaq | +1.58% / +1.44% — S&P's second-biggest post-midterm gain since 1982 (after 2018); Nasdaq's biggest since 2018 | CNN/CFRA Research, 4 Nov 2026 |
+| US Senate | Democrats flip ≥7 Republican seats (Iowa, Kansas, Ohio, Maine, North Carolina, South Carolina, Texas); NBC projects 54-44; Alaska and Mississippi uncalled | AP/NBC via web search, 4 Nov 2026 |
+| US House | Democrats ≥240 seats (CNN), 60+ races unprojected; other outlets project up to 258 | CNN/NBC via web search, 4 Nov 2026 |
+| Israel coalition recommendations | Eisenkot 48, Netanyahu 46; Likud largest single bloc at 27 seats; nominee gets 28 days, extendable by 14 | Ynet/AP/Anadolu via web search, 4 Nov 2026 |
+| Komyshuvakha aid-hub strike | At least 40 confirmed dead, 30+ unaccounted for (33 a day earlier); three-tonne FAB bomb; bodycam placed at site by BBC Verify | Zelenskyy/Ukrainian national police via BBC/CNA, 4-5 Nov 2026 |
+| EFS cold-room attack | 3 French blood service sites; reached 2 Nov via a refrigeration supplier; no blood products lost; ANSSI and health ministry engaged. Le Canard enchaîné reports supplier Coolworld and 110C, unconfirmed by EFS | EFS/CNBC/Help Net Security/Connexion, 4 Nov 2026 |
+
+## Singapore data points (5 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| COE Cat A | S$139,001 — all-time high, +S$6,997 (+5.30%), above the S$133,009 record of 9 Sep 2026; 2,018 bids for 1,189 COEs | LTA first November bidding exercise, 4 Nov 2026 |
+| COE Cat B | S$132,334, +S$433; 1,163 bids for 959 COEs | LTA, 4 Nov 2026 |
+| COE Cat C / D / E | C S$92,000; D (motorcycles) S$10,689, fourth consecutive fall; E (open) S$135,998 — Cat A now above both B and E | LTA, 4 Nov 2026 |
+| Next COE exercise | Opens 16 Nov 2026 12pm; results 18 Nov 2026 4pm | LTA, 4 Nov 2026 |
+| November 2026 BTO exercise | 7,964 flats, 7 projects (Bedok, Geylang, Sembawang, Tengah, Toa Payoh, Yishun): 3 Standard, 3 Plus, 1 Prime. From ~S$131,000 before grants; 4-room Standard ~S$232,000 after grants; waits 34-45 months; >1 in 3 units two-room Flexi (target 20,000 in 2026-2028). Applications 4-11 Nov, close 11.59pm | HDB, 4 Nov 2026 |
+| BTO income ceilings | First exercise under raised ceilings: S$16,000 families, S$8,000 singles | HDB via AsiaOne/Goody Feed, 4 Nov 2026 |
+| New MRT stations | Bedok South, Sungei Bedok (TEL stage 5) and Xilin (DTL3 extension) open 26 Dec 2026; Sungei Bedok the TEL-DTL interchange. Havelock-Changi Business Park falls from ~70 min with a bus transfer to ~45 min without | LTA / Transport Minister Jeffrey Siow, 4 Nov 2026 |
+| RTS Link | Woodlands North-Bukit Chagar cross-border link now expected February 2027 | Siow via Malay Mail/AsiaOne, 4 Nov 2026 |
+| GovTech AI-agent register | Being built for ~150,000 public officers, recording agent owner and purpose; IMDA working with GoDaddy, Infoblox, Cloudflare and Google on DNS-based agent identity | SMS Jasmin Lau in Parliament, 4 Nov 2026 |
+| THPA amendments (passed, outside window) | Maximum fine raised tenfold to S$20m; arrest powers; power to restrict errant entities' business and financial dealings; scope extended to the risk of haze. Passed without dissent after a ~6-hour debate with 24 MPs | NST/The Sun-AFP/ST via web search, 3-4 Nov 2026 |

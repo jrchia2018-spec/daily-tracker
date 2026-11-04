@@ -1,112 +1,114 @@
 {
-  "schema": 1,
-  "date": "2026-11-04",
-  "generatedAt": "2026-11-04T07:20:00+08:00",
-  "coverage": {
-    "from": "2026-11-03T07:00:00+08:00",
-    "to": "2026-11-04T07:00:00+08:00",
-    "label": "Tuesday 3 November 2026, 0700 SGT → Wednesday 4 November 2026, 0700 SGT"
+ "schema": 1,
+ "date": "2026-11-05",
+ "generatedAt": "2026-11-05T07:12:00+08:00",
+ "coverage": {
+  "from": "2026-11-04T07:00:00+08:00",
+  "to": "2026-11-05T07:00:00+08:00",
+  "label": "Wednesday 4 November 2026, 0700 SGT → Thursday 5 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "DEMOCRATS TAKE BOTH CHAMBERS AND THE DOW HAS ITS BEST POST-MIDTERM DAY SINCE 1982",
+   "breaking": true,
+   "summary": [
+    "The Associated Press called the House for the Democrats early on Wednesday, completing a sweep of Congress after the Senate fell overnight. The party flipped at least seven Republican Senate seats — Iowa, Kansas, Ohio, Maine, North Carolina, South Carolina and Texas — with NBC projecting 54 to 44 and Alaska and Mississippi uncalled; CNN put the Democrats at a minimum of 240 House seats with more than 60 races unprojected. Hakeem Jeffries, on course to be the first Black speaker, claimed “a mandate for dramatic change” and Chuck Schumer promised “legislative razor wire”. Trump declined to take blame, saying “if I were on the ballot, we would have won” and that his rallies drew such love that candidates “weren’t able to transfer it”. Republicans told the BBC his focus on his legacy had cost them; Vance posted that “the reason we lost is the war”.",
+    "Markets read the result as certainty rather than risk. The Dow rose 1,569 points, or 3 per cent, to 53,356 — its biggest post-midterm one-day gain since 1982. The S&P 500 added 1.58 per cent and the Nasdaq 1.44 per cent, with AI-linked stocks lagging. Administration officials began preparing for oversight: committee control from January carries subpoena power, and Democrats have named investigations of the president and his family as an early priority."
+   ],
+   "geopolitical": "Trump keeps the foreign-policy pen but loses the purse and the subpoena: from January every decision on Iran is taken opposite a chamber that can defund it or compel testimony about it, and allies from Ottawa to Jerusalem spent Wednesday recalculating what a two-year lame duck can deliver.",
+   "socioeconomic": "The biggest post-midterm rally in 44 years was bought on the expectation that nothing large now passes — a wager against new spending and further tax cuts alike."
   },
-  "global": [
-    {
-      "headline": "THE US STRIKES QESHM ISLAND WHILE TEHRAN PUTS A PRICE OF SEVEN CONDITIONS ON HORMUZ",
-      "breaking": true,
-      "summary": [
-        "Central Command confirmed limited strikes on Iran’s Qeshm Island late on Monday, calling them defensive and aimed at batteries that had fired on US aircraft the day before — at least the fourth such exchange since major hostilities stopped. Tehran first blamed Israel, which denied a role. Deputy foreign minister Kazem Gharibabadi said “we are still in a state of war”. Hours earlier JD Vance had called diplomacy promising; mediators believe two days will show whether indirect talks have a basis. Mohsen Rezaei, who received Vance’s letter, wrote that the US reply “was not convincing” and that the strait reopens only if Washington answers seven conditions: a regional ceasefire, release of frozen assets, an end to oil sanctions and the naval blockade, reparations, US withdrawal and an end to interference. There is still no direct contact.",
-        "The New York Times reported that Israel has given Washington intelligence claiming Iran is weighing chemical-weapons use against regional adversaries. US officials are split, some taking it seriously, others reading an attempt to pull Washington back into large-scale operations and seeing echoes of the 2002 Iraq assessments. Gulf officials were sceptical; Iran denies holding such weapons. Brent settled at US$103.60, down US$1.17, a second straight fall after October’s gain of more than 10 per cent."
-      ],
-      "geopolitical": "The channel Washington opened last week now has a published price. Converting a ceasefire into seven deliverables moves the dispute from process to terms, and terms can be refused in public.",
-      "socioeconomic": "Oil has handed back most of the war premium in two sessions on an opening nobody has signed: real relief for cargoes already fixed, no basis for a budget."
-    },
-    {
-      "headline": "TRUMP SAYS THE US WILL END ITS US$4 BILLION A YEAR OF MILITARY AID TO ISRAEL AT YEAR’S END",
-      "breaking": true,
-      "summary": [
-        "Trump told Fox News on the morning of Election Day that the United States is cutting off US$4 billion in aid to Israel at the end of the year because “they don’t need it”. He framed it as removing a Democratic talking point, naming Michigan Senate nominee Abdul El-Sayed, and said he had “reached an agreement” with Benjamin Netanyahu, whose office did not confirm this. The US gives Israel US$3.8 billion a year under a ten-year memorandum signed in 2018 and due to run to 2028; Israel spends it on American weapons, and Congress appropriates it.",
-        "It came a week after Israel’s election, with Netanyahu and Gadi Eisenkot both bidding to form a coalition, and after Trump had endorsed Netanyahu in terms Vance did not echo. Aaron David Miller, a former US Middle East negotiator, called the timing awkward and said Israel had become deeply polarising inside the Republican party. Former officials questioned whether the cut survives renewed operations against Iran."
-      ],
-      "geopolitical": "Ending the memorandum two years early turns the pillar of the relationship from a standing ten-year commitment into an annual political decision — a bigger change than the sum, and one every holder of a long-term US guarantee will price.",
-      "socioeconomic": "The aid is spent with American arms makers, so the cut lands on their order books as squarely as on Israel’s, and would force Israel to fund mid-war procurement itself."
-    },
-    {
-      "headline": "THE KOMYSHUVAKHA AID HUB’S TOLL REACHES 33 AS RUSSIA ALSO HITS A HOSPICE, A HOSPITAL AND THE GRID",
-      "breaking": true,
-      "summary": [
-        "At least nine bombs hit the building in Komyshuvakha, Zaporizhzhia region, which Volodymyr Zelensky called one of the deadliest attacks of the war: 33 confirmed dead, 50 unaccounted for. Governor Mykhailo Semikin said the EU-funded reinforced basement, built last year to keep classes running and since used as an aid hub, collapsed under the bombs and caught fire. Danielle Bell of the UN human rights monitoring mission said the distribution’s timing and location were well publicised, so Russian forces either knew or failed to take the most basic steps to find out, and either way the attack “seems to have violated the most fundamental principles of international humanitarian law”. The BBC counted at least 38 killed in 24 hours, including strikes on a hospice and a hospital.",
-        "The attack preceded a barrage of hundreds of drones and dozens of cruise and ballistic missiles against the energy system, three drones aimed at a substation serving the Khmelnytskyi nuclear plant; energy minister Denys Shmyhal informed the IAEA."
-      ],
-      "geopolitical": "Striking a distribution whose time and place were advertised removes the assumption that publicity protects aid — the assumption the local truces now being used as settlement building blocks rest on.",
-      "socioeconomic": "Aiming drones at a substation feeding a nuclear plant shifts the cost of these raids from repair bills to reactor safety margins, with winter demand still ahead."
-    },
-    {
-      "headline": "AMERICANS VOTE WITH TURNOUT PAST 2022 LEVELS AS THE JUSTICE DEPARTMENT SENDS TARGET LETTERS ON POLLING DAY",
-      "breaking": false,
-      "summary": [
-        "Voting for control of Congress ran through the window, turnout surging past 2022 levels with records in Florida, Georgia, Michigan and North Carolina, and cost of living dominant. The first polls closed at 18:00 Eastern, after the window, so no mainland result fell inside it; Guam reported first, Republicans taking the governorship and Democrats flipping the non-voting delegate. Westchester county addressed malfunctions affecting up to 250,000 ballots; federal monitors went to all 50 states, with a late surge into Los Angeles.",
-        "The Justice Department sent target letters, which warn of imminent charges, to more than a dozen people mostly aligned with the Democratic party, among them the leadership of the Elias Law Group, over the recruitment of a second candidate named Dan Sullivan to run against Alaska’s Republican incumbent of that name. Chairman Marc Elias called it a “sham investigation”. More than 100 grand jury subpoenas and preservation letters have gone out; US attorney Michael Heyman says the effort safeguards votes. Ron DeSantis accused his own party of “gaslighting” voters over the Iran war and fuel prices."
-      ],
-      "geopolitical": "Allies are watching not the result but whether this administration accepts an adverse count; monitors in every state and target letters to the opposition’s lawyers on polling day set the terms for reading it.",
-      "socioeconomic": "Cost of living displaced the war as the campaign’s organising issue, and it was a Republican governor who named fuel prices — the Hormuz premium reaching voters through the pump."
-    },
-    {
-      "headline": "THE FREEZER ATTACKS REACH TEN COUNTRIES AND BRITISH MEAT PROCESSORS, AND LONDON WARNS OF MORE",
-      "breaking": false,
-      "summary": [
-        "The BBC counted supermarket refrigeration cyber-attacks in ten countries, with problems from Estonia and Sweden to Portugal and Italy and retailers discarding stock; the tally a day earlier was seven. In Britain the Association of Independent Meat Suppliers said a few of its roughly 300 members were hit, fridges heating overnight. The National Cyber Security Centre called the national impact minimal but warned of a real prospect of an unprecedented rise in incidents. Reporting on October’s French attack found legacy controllers exposed to the internet with default passwords still set.",
-        "Separately, seven flights over Poland, Spain, Bulgaria and Italy were searched or diverted after bomb threats that all proved false — a second multi-country disruption of European logistics in one day, remotely caused and unattributed."
-      ],
-      "geopolitical": "Neither shop refrigeration nor airline dispatch sits inside Europe’s critical-infrastructure regime, and a fortnight of unattributed disruption has made that the Commission’s question rather than a drafting detail.",
-      "socioeconomic": "The loss is spoiled stock and lost trading days, concentrated among independent processors least able to absorb it, against a slow remedy: replacing internet-facing controllers still carrying shipped passwords."
-    }
-  ],
-  "singapore": [
-    {
-      "headline": "RENA LEE IS THE FIRST SINGAPOREAN ELECTED TO THE INTERNATIONAL COURT OF JUSTICE",
-      "breaking": true,
-      "summary": [
-        "Ambassador for International Law Rena Lee, 57, was elected to the International Court of Justice on 3 November with absolute majorities in both chambers in the first round: 151 of 191 votes in the UN General Assembly and 13 of 15 in the Security Council. She serves a nine-year term from 2027 to 2036. She is the first Singaporean and the first woman from South-east Asia on the bench, and only the second South-east Asian elected since 1945, after Judge Cesar Bengzon of the Philippines, whose term ended in 1976.",
-        "Lee chaired the high seas treaty negotiations and has over 30 years in international law. Singapore fielded a candidate for the first time; Vivian Balakrishnan and Edwin Tong attended the New York polling."
-      ],
-      "geopolitical": "A seat gives a small state a hand in developing the law its sovereignty rests on, for nine years and regardless of its weight.",
-      "socioeconomic": "The return is reputational capital for a jurisdiction that sells dispute resolution: arbitration work competes on the credibility of its lawyers, and a judge on the world court is the strongest reference available."
-    },
-    {
-      "headline": "PARLIAMENT PUTS NUMBERS ON THE HAZE: EMERGENCY VISITS UP A FIFTH, POLYCLINICS UP A QUARTER, 113,000 SUBSIDISED",
-      "breaking": false,
-      "summary": [
-        "Health Minister Ong Ye Kung said in a written reply on 3 November that emergency departments recorded about 20 per cent more attendances for conditions potentially haze-related between early September and mid-October, the daily average rising from about 360 to 440. Polyclinic attendances rose about 25 per cent, from about 4,000 to 5,000 a day, the largest increase among adults aged 18 to 64. The 24-hour Pollutant Standards Index first entered the unhealthy range this year on 4 September, at 101 in the central region. More than 113,000 people used the haze subsidy between 12 and 24 October — over 72,000 visits to private GP clinics and over 41,000 to polyclinics, capped at S$10 — with claims still coming in.",
-        "Minister of State for Manpower Dinesh Vasu Dash said employers must bear the cost of short-term haze suspensions with no deduction from salary or leave; Foo Cexiang said platform operators must not cut incentives, withhold jobs or dock pay when deliveries take longer. Grace Fu said Singapore will ratify the ASEAN Agreement on Transboundary Haze Pollution within days and use its 2027 ASEAN chairmanship to establish the regional coordinating centre, to be based in Indonesia and needing six ratifications; Vietnam approved in mid-2026. Nearly 30 per cent of eligible Singaporeans had collected free N95 masks by 29 October, after the eligibility age fell from 67 to 60."
-      ],
-      "geopolitical": "The centre is to sit where the fires burn, which is both why it would work and why it has taken 24 years without the ratifications to exist. Chairing ASEAN in 2027 is Singapore’s only lever.",
-      "socioeconomic": "The bill is now allocated — suspensions to employers, treatment to the state — but platform workers, whose earnings fall with the hours they prudently skip, get advisories against penalties rather than protected income."
-    },
-    {
-      "headline": "MOST RESPONDENTS BACK MERGING THE CAR COE CATEGORIES, AND SIOW SAYS THE FLEET CANNOT GROW MUCH FURTHER",
-      "breaking": false,
-      "summary": [
-        "Transport Minister Jeffrey Siow told Parliament on 3 November that most respondents to the Land Transport Authority consultation, which closed on 2 November, backed merging COE Categories A and B and preferred a five-band structure of rebates and surcharges set by open market value over a three-band one. The three-band option gives the lowest band a S$15,000 rebate, the middle band nothing and the top band a S$15,000 surcharge; five bands insert steps of S$7,500 to blunt the cliff effect, where crossing a boundary costs a buyer disproportionately. The aim is a permanent price distinction between mass-market and luxury cars. Nothing is decided; the review is due in the first half of 2027.",
-        "Siow said Singapore cannot grow its car population much further, and that COE rules must hold numbers down while supporting public transport, which receives about S$6 billion to S$7 billion a year. Edward Chia asked whether the adjustments could be a percentage of the COE price rather than fixed sums; Siow said that would cut cliff effects further but has drawbacks."
-      ],
-      "geopolitical": "Singapore’s quota is what dense cities study when they want to cap vehicle numbers without rationing by queue, and it is the band design, not the quota, that is portable.",
-      "socioeconomic": "A feebate redistributes inside a fixed quota rather than enlarging it: mass-market buyers gain up to S$15,000 and luxury buyers pay it, while the total cost of a car is set by the number of certificates, which is not under review."
-    },
-    {
-      "headline": "FROM JANUARY 2027 THE POLICE MAY USE ERP 2 ON-BOARD UNIT DATA TO INVESTIGATE CRIME",
-      "breaking": false,
-      "summary": [
-        "Senior Minister of State for Home Affairs Goh Pei Ming told Parliament on 3 November that data stored on next-generation Electronic Road Pricing on-board units is expected to be used to prevent, detect and solve crime. Every Singapore-registered vehicle on the road must carry the unit from 1 January 2027, and ERP 2 fixes position by satellite rather than by gantry. Access will be bound by the same legal and data-governance safeguards as every other Home Team sensor, Goh said, and police will keep vehicle-specific data only as long as investigations or court proceedings require.",
-        "Sun Xueling said the units carry a high level of security and encryption, meet international standards and Infocomm Media Development Authority rules, and that motorists cannot access the data stored in them directly. The LTA said in September the system would be used against offences including illegal cross-border taxi services, deregistered vehicles and off-peak cars driven outside permitted hours, with enhancements needed before any use against speeding."
-      ],
-      "geopolitical": "A state-mandated satellite positioning unit in every vehicle, readable by police, is a design other governments will cite, and what travels is the safeguard chosen: retention limited by investigative need under internal data rules, not a warrant.",
-      "socioeconomic": "A device sold as a tolling upgrade now also produces evidence its owner cannot read and the state can, and from 1 January 2027 every vehicle owner pays for the fitting whatever they make of the second use."
-    }
-  ],
-  "word": {
-    "word": "shibboleth",
-    "pos": "noun",
-    "pronunciation": "SHIB-uh-leth",
-    "definition": "A belief or custom held by a group as an article of faith, often unexamined; also a test word that identifies who belongs.",
-    "etymology": "From Hebrew shibboleth, an ear of corn or a flowing stream. In Judges 12:6 the Gileadites made men at the Jordan say it; those who could not manage the first sound were identified as Ephraimites.",
-    "example": "Four billion dollars a year of military aid to Israel had been a shibboleth of American politics until Trump said, on the morning of the midterms, that it would end because “they don’t need it”."
+  {
+   "headline": "TEHRAN READS THE VOTE AS ‘NO TO WAR’ AND BRENT GIVES UP THE WAR PREMIUM",
+   "breaking": true,
+   "summary": [
+    "Mohammad Bagher Ghalibaf, parliament speaker and Iran’s chief negotiator, posted that Americans had voted “NO TO WAR”, from conscience or from the cost of living, and that “we endorse this message” — adding that if Washington betrays that will, “our NO comes with a Nightmare”, and that the ball is in America’s court to prevent war. Trump rejected the reading: the war was necessary to stop Iran “having a nuclear weapon”, “I would have done nothing different”, and voters had backed the campaign while disliking that it “drove the gasoline up a little bit short term”. There is still no direct contact: the two-day window mediators set on Tuesday passed without a US answer to Mohsen Rezaei’s seven conditions for reopening Hormuz. The New York Times reported growing calls inside Iran for a nuclear weapon.",
+    "Brent settled at US$94.62, down US$8.98 or 8.7 per cent — its biggest one-day fall since April and its first close below US$100 since 7 October; WTI fell 8.3 per cent to US$88.12. Brent traded at US$118 on Friday and is down more than 14 per cent for the week; trend-following funds cut longs to about 55 per cent from 73 per cent in the session. Analysts called it a bet, not a deal: Rapidan’s Bob McNally said “Iran is hardened”."
+   ],
+   "geopolitical": "Both capitals now claim the same electorate — Tehran as an instruction to end the war, Trump as a complaint about petrol — and only one of them must act before January, when the Congress that pays for the campaign changes hands.",
+   "socioeconomic": "Nine dollars came off a barrel on a reading of an election, not a reopened strait: the relief reaches pumps and freight rates within weeks, and reverses on one incident in the Gulf."
+  },
+  {
+   "headline": "A DEAD POLICEMAN’S BODYCAM SHOWS THE KOMYSHUVAKHA SHELTER STRUCK AS THE TOLL REACHES 40",
+   "breaking": true,
+   "summary": [
+    "Ukraine’s national police released footage from a camera worn by an officer killed at Komyshuvakha, in the Zaporizhzhia region, on Monday. It shows residents moving towards an underground shelter after the first strike on the school, a radio warning of more glide bombs incoming, an officer shouting “Quickly, go to the shelter!” — then the shelter being hit and the recording ending. BBC Verify confirmed it was filmed where emergency services later recorded the aftermath. Police said a three-tonne FAB bomb hit the building, used as an aid distribution point, and that the second wave arrived as rescuers did, which is why the dead include police and rescue workers. Zelensky said at least 40 are confirmed dead and more than 30 unaccounted for, up from 33 a day earlier."
+   ],
+   "geopolitical": "The second strike is the whole point: footage of rescuers being hit while responding moves this from a targeting failure to the pattern humanitarian law names, and it lands while Kyiv argues that Russian local truces are worth nothing.",
+   "socioeconomic": "Aid distribution in the frontline belt now sets publicity against survival: a collection point has to be advertised to work, and being advertised is what the UN mission says exposed this one."
+  },
+  {
+   "headline": "HERZOG OPENS CONSULTATIONS WITH NEITHER NETANYAHU NOR EISENKOT HOLDING A MAJORITY",
+   "breaking": false,
+   "summary": [
+    "President Isaac Herzog began consultations with party delegations on Wednesday, having accepted the certified results of the 27 October election, taking the smaller parties first and leaving Likud and Gadi Eisenkot’s Yashar until Thursday. Ynet counted 48 recommendations for Eisenkot to 46 for Netanyahu, with Ra’am backing Eisenkot and Yisrael Beytenu recommending him while ruling out reliance on Arab parties. Netanyahu argues Likud’s 27 seats, the largest single bloc, entitle him to the mandate; Eisenkot, Bennett and Liberman have all refused to serve under him, and his pardon request in his corruption trial sits inside Herzog’s calculation. Herzog warned that “not every commitment and promise can be fulfilled” if another election is to be avoided. The nominee has 28 days, extendable by 14. The election commission separately rejected Netanyahu’s claims of voting fraud."
+   ],
+   "geopolitical": "The coalition arithmetic decides who negotiates a relationship Washington has already repriced — the US$3.8 billion-a-year aid memorandum is due to lapse on 31 December on Trump’s own announcement — and the midterms removed the congressional majority that might have blocked it.",
+   "socioeconomic": "Weeks of bargaining with another election as the alternative keeps Israel on a caretaker footing, postponing every fiscal choice left by a year of war-level defence spending."
+  },
+  {
+   "headline": "THE COLD-STORAGE ATTACKS REACH FRANCE’S BLOOD SERVICE",
+   "breaking": false,
+   "summary": [
+    "The Établissement français du sang said attackers reached the systems controlling cold rooms at three of its sites on Monday through one of its refrigeration suppliers, setting temperature and defrost thresholds to very high values. No blood products were lost, stock was moved as a precaution, and collection and hospital deliveries continued. ANSSI, the national cyber agency, and the health ministry are working with the EFS. Le Canard enchaîné named the supplier as Coolworld and reported room temperatures reaching 110C; the EFS confirmed neither. The campaign hit up to 700 French supermarkets in October and ten countries and British meat processors this week; it has now moved from food retail into the health system. Investigators keep finding the same weakness: operational-technology controllers reachable from the internet, in the French case with default passwords. Nobody has been attributed."
+   ],
+   "geopolitical": "A fortnight of attacks on refrigeration has crossed from groceries into the blood supply with no state named: a capability demonstrated against a hospital input, and the only answer on offer is a contractor’s patch.",
+   "socioeconomic": "The exposed asset was not the blood bank but its supplier’s remote-monitoring link, so every cold-chain operator now carries a vendor whose credentials are part of its own risk."
   }
+ ],
+ "singapore": [
+  {
+   "headline": "THE CAT A COE PREMIUM HITS A RECORD S$139,001 AND PASSES THE BIGGER-CAR CATEGORY",
+   "breaking": false,
+   "summary": [
+    "In the first November bidding exercise, which closed on Wednesday, the Category A premium for smaller and less powerful cars rose S$6,997, or 5.3 per cent, to S$139,001 — an all-time high, beating the S$133,009 set on 9 September, on 2,018 bids for 1,189 certificates. Category B rose S$433 to S$132,334 on 1,163 bids for 959 certificates, and the open Category E closed at S$135,998, so Cat A now costs more than both. Category C was S$92,000; motorcycle premiums fell a fourth consecutive round to S$10,689. The next exercise opens on 16 November."
+   ],
+   "geopolitical": "Singapore is the example cities cite when they want to cap vehicle numbers by price rather than by queue, and an inversion in which the entry category outbids the luxury one is the part of the model that does not travel.",
+   "socioeconomic": "The cheaper car now carries the dearer certificate, a day after the transport minister said the fleet cannot grow much further. Buyers shut out of Cat B are bidding inside Cat A — the distortion the proposed merger of the categories is meant to end, in a review not due until the first half of 2027."
+  },
+  {
+   "headline": "HDB LAUNCHES 7,964 FLATS IN THE FIRST EXERCISE UNDER THE HIGHER INCOME CEILINGS",
+   "breaking": false,
+   "summary": [
+    "The Housing Board opened applications on Wednesday for 7,964 Build-To-Order flats across seven projects in Bedok, Geylang, Sembawang, Tengah, Toa Payoh and Yishun — three Standard, three Plus, one Prime. It is the first launch since household income ceilings were raised to S$16,000 for families and S$8,000 for singles. Prices start at about S$131,000 before grants, with four-room Standard flats around S$232,000 after grants, and waits of 34 to 45 months. More than one in three units are two-room Flexi flats, offered in all seven projects, against a target of 20,000 between 2026 and 2028. Applications close at 11.59pm on 11 November."
+   ],
+   "geopolitical": "A state developer that sets both the ceiling and the queue is the counter-model to the mortgage subsidies most high-income cities use.",
+   "socioeconomic": "Lifting the ceiling admits households that earned too much to queue without adding flats to this exercise: the relief is eligibility, the cost is longer odds for everyone already balloting. A two-room Flexi share above a third shows where the demographic weight now sits."
+  },
+  {
+   "headline": "THREE STATIONS OPEN ON 26 DECEMBER AND STITCH THE EAST INTO THE THOMSON-EAST COAST LINE",
+   "breaking": false,
+   "summary": [
+    "Bedok South, Sungei Bedok and Xilin open for passenger service on 26 December, the Land Transport Authority said. Bedok South and Sungei Bedok complete Thomson-East Coast Line stage 5, Xilin extends Downtown Line 3, and Sungei Bedok becomes the interchange between them. Transport Minister Jeffrey Siow said they join two major corridors and cut the Havelock to Changi Business Park journey from about 70 minutes with a bus transfer to roughly 45 without one, and that eastern residents will be able to ride the TEL into the city, north to Woodlands and — once the cross-border link to Bukit Chagar opens, now expected in February 2027 — into Johor."
+   ],
+   "geopolitical": "The December opening pays off in February, when Woodlands North connects to Bukit Chagar: the east is being wired into a cross-border commute before that commute exists, which makes Singapore’s rail timetable part of Johor’s labour market.",
+   "socioeconomic": "Twenty-five minutes off a daily cross-island trip, and one fewer transfer, changes where people take jobs rather than where they live, and it lands on the Bedok and Changi Business Park corridor first."
+  },
+  {
+   "headline": "SINGAPORE LOOKS AT THE DOMAIN NAME SYSTEM TO IDENTIFY AI AGENTS, AND WEIGHS A NATIONAL REGISTRY",
+   "breaking": false,
+   "summary": [
+    "Senior Minister of State Jasmin Lau told Parliament on Wednesday that the Infocomm Media Development Authority is working with GoDaddy, Infoblox, Cloudflare and Google on whether the domain name system — the internet’s address book — can be adapted to identify and verify AI agents across platforms and organisations. That work will feed a decision on whether further common infrastructure, including a national registry, is needed. She was answering an adjournment motion by Tin Pei Ling, who proposed a registry letting any party check an agent’s identity and mandate. GovTech is separately building a register of AI agents for about 150,000 public officers, recording who owns each and what it does."
+   ],
+   "geopolitical": "Identity for autonomous software is being settled now: putting agent verification inside DNS uses infrastructure that is already global, rather than a national licence regime no one abroad would honour.",
+   "socioeconomic": "The question Lau framed is who answers for an agent’s actions. Pinning each agent to an accountable owner is the precondition for letting agents transact at all, and the government is testing that on its own 150,000 officers first."
+  },
+  {
+   "headline": "SHANMUGAM AND FADLI FAWZI CLASH OVER A HOME TEAM MEETING WITH ISRAELI OFFICIALS",
+   "breaking": false,
+   "summary": [
+    "In an 18-minute exchange in Parliament on Wednesday, Senior Minister K. Shanmugam rejected Workers’ Party MP Fadli Fawzi’s argument that Singapore should have raised West Bank settlements and settler violence, and restated their illegality under international law, at an operational meeting with Israeli officials. Shanmugam said the questions sought to cast the government as unprincipled and soft on Israel and read international relations through race and religion; Fadli rejected that characterisation. He asked whether the same principle would require raising Singapore’s concerns in operational talks with other Middle Eastern or Asian states. The questions follow a 7 September Haaretz report of a visit by a delegation including the Israel Prison Service, which claimed the death penalty was discussed — a claim Shanmugam calls categorically false and for which he said no public-interest ground was met for a POFMA correction direction, adding that he does not take Haaretz “very seriously”."
+   ],
+   "geopolitical": "Singapore’s practice is to keep working-level security contact separate from positions on conduct, stating the positions at the UN instead. The exchange tests whether that separation holds when the partner is Israel, two days after Washington said it would stop funding it.",
+   "socioeconomic": "The argument was less about settlements than about who speaks for Malay-Muslim constituents on foreign policy, which is why a question about a prisons meeting was answered with a charge about race and religion."
+  }
+ ],
+ "word": {
+  "word": "gerrymander",
+  "pos": "verb; also noun",
+  "pronunciation": "JERR-ee-man-der",
+  "definition": "To redraw the boundaries of an electoral district so as to favour one party; the district so drawn.",
+  "etymology": "Coined in Boston in 1812 from Elbridge Gerry, the Massachusetts governor who signed a redistricting bill, and salamander, the shape a newspaper cartoonist saw in the resulting district.",
+  "example": "The cycle that opened with mid-decade redistricting closed with a Democrat taking a redrawn Californian seat from a long-serving Republican, a reminder that a gerrymander is a prediction and predictions can be wrong."
+ }
 }
