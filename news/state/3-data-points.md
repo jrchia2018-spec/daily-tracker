@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 5 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 6 November 2026)
 
 ## Singapore macro
 | Indicator | Figure | Source |
@@ -2312,3 +2312,35 @@
 | RTS Link | Woodlands North-Bukit Chagar cross-border link now expected February 2027 | Siow via Malay Mail/AsiaOne, 4 Nov 2026 |
 | GovTech AI-agent register | Being built for ~150,000 public officers, recording agent owner and purpose; IMDA working with GoDaddy, Infoblox, Cloudflare and Google on DNS-based agent identity | SMS Jasmin Lau in Parliament, 4 Nov 2026 |
 | THPA amendments (passed, outside window) | Maximum fine raised tenfold to S$20m; arrest powers; power to restrict errant entities' business and financial dealings; scope extended to the risk of haze. Passed without dissent after a ~6-hour debate with 24 MPs | NST/The Sun-AFP/ST via web search, 3-4 Nov 2026 |
+
+## Global economic variables (6 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| S&P 500 | 7,353.73, -334.89 (-4.4%) — worst day since April 2025; more than erased 4 Nov's post-election gain | AP via CBC/Yahoo Finance, 5 Nov 2026 |
+| Dow Jones | 51,523.06, -1,833.06 (-3.4%) | AP, 5 Nov 2026 |
+| Nasdaq composite | 24,315.00, -1,421.52 (-5.5%) — into correction territory | AP/NBC, 5 Nov 2026 |
+| Nasdaq 100 | -6.3%, ~US$2.3 trillion of market value erased | NBC News, 5 Nov 2026 |
+| Nvidia | -9.3%, heaviest single drag on the S&P 500; largest one-day fall since April 2025 | AP/NBC, 5 Nov 2026 |
+| Kospi | -5.3% | AP via CNA, 5 Nov 2026 |
+| Brent crude | ~US$94/bbl through Thursday — second session below US$100 (4 Nov close US$94.62, -8.7%) | FinanceFeeds/live trackers, 5 Nov 2026 |
+| UK Bank Rate | 4.00%, +25bp from 3.75% — first increase since 2023; MPC 8-1, dissenter wanted +50bp to 4.25%. Inflation seen ~5% by mid-2027; next decision 17 Dec 2026 | Bank of England via CNBC/Euronews/Guardian, 5 Nov 2026 |
+
+## Global data points (6 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| California death row | All 548 death sentences commuted to life without parole — largest commutation in US history; ~a quarter of all US death sentences. Cases involving more than one felony conviction require state Supreme Court approval | Newsom open letter via Washington Post/Bloomberg/Forbes/CBS, 5 Nov 2026 |
+| European bomb-threat wave (2nd) | At least 18 flights, routes and airports hit; Guardian counted 25 flights disrupted; no explosives found. Aer Lingus EI402 Dublin-Rome diverted to Évreux air base; Ryanair Stansted-Sofia diverted to Plovdiv; Finnair Helsinki-Rome and Helsinki-Vienna threatened; searches at Prague and Madrid | BBC/Guardian/NYT/Al Jazeera/NBC, 5 Nov 2026 |
+| Iran nuclear track | Tehran reviewing "concrete proposals" (contents undisclosed); Qatar ran two rounds in Tehran and a third in Doha and carried an Iranian proposal to Washington; no Iranian decision reported | NYT (five officials) via JPost/Media Line, 5 Nov 2026 |
+| South Korea Cheonghae Unit | Area extended to open water south of Duqm, Oman, ~650km (350nm) from Hormuz's southern entrance; Hormuz and Gulf of Oman excluded; +75 personnel to ~395; maritime patrol aircraft and EOD team for unmanned minesweeping; needs National Assembly consent | Korea Herald/Seoul Economic Daily/Guardian, 5 Nov 2026 |
+| Baltic cable sabotage | Finland jailed two men for damaging an undersea cable in the Baltic | NYT, 5 Nov 2026 |
+
+## Singapore data points (6 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| HBOC genetic testing | Means-tested subsidies up to 70% from 1 Dec 2026 at NCCS, NCIS and TTSH cancer SOCs, for citizens and PRs, plus downstream drug treatment and intensified surveillance; test offered to immediate family of carriers; ~2,000 people/year expected to benefit; ~1 in 150 carry a BRCA1/2-type mutation | MOH, 5 Nov 2026 |
+| Haze measures stood down | N95 distribution and haze shelters end 6pm 7 Nov; daily evening updates, outdoor-worker measures and the inter-agency Haze Task Force also end 7 Nov; haze subsidy and PHPC schemes stand down 12 Nov | NEA via Bloomberg/AsiaOne/ST, 5 Nov 2026 |
+| PAP 39th CEC | Four co-opted 5 Nov: Jeffrey Siow, Sim Ann, Ng Chee Meng, Chan Hui Yuh (Siow and Chan first-timers; Siow not elected by cadres on 25 Oct). Top eight posts unchanged — Desmond Lee chairman, Masagos Zulkifli vice-chairman, Lawrence Wong secretary-general, Chan Chun Sing assistant secretary-general; no second ASG named | PAP release/ST/Mothership, 5 Nov 2026 |
+| SAF procurement standard | CAAS will buy only CORSIA-eligible sustainable aviation fuel cutting lifecycle emissions >=40%; first tender 20,000-30,000 tonnes closing mid-Dec 2026; blended deliveries from June 2027; targets 1% of Changi/Seletar uplift in 2027 and 3-5% by 2030 | CAAS via Xinhua/TNGlobal/ST, 5 Nov 2026 |
+| SG for Humanity (not run) | MCCY network with Humanity Matters, Mercy Relief, Rahmatan Lil Alamin Foundation and Singapore Red Cross to coordinate Gaza aid; >S$25m contributed since Oct 2023; Zaqy Mohamad to visit Egypt; no new routes or timetable | MCCY/AsiaOne, 5 Nov 2026 |
+| IHH Healthcare (not run) | ~380-400 jobs to go across Singapore, Malaysia and Hong Kong (~0.5% of 76,000 staff) in a business-support consolidation; clinical and patient-facing roles unaffected | IHH statement 4 Nov via ST, reported 5 Nov 2026 |
+
