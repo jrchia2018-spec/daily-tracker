@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-11-06",
+ "generatedAt": "2026-11-06T07:25:00+08:00",
+ "coverage": {
+  "from": "2026-11-05T07:00:00+08:00",
+  "to": "2026-11-06T07:00:00+08:00",
+  "label": "Thursday 5 November 2026, 0700 SGT → Friday 6 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "IRAN IS WEIGHING ‘CONCRETE PROPOSALS’ ON ITS NUCLEAR PROGRAMME AS SEOUL MOVES ITS NAVY TOWARD HORMUZ",
+   "breaking": true,
+   "summary": [
+    "Five officials, one American and two Iranian, told the New York Times that Tehran is reviewing “concrete proposals” on the future of its nuclear programme; the contents are undisclosed. Qatar ran two rounds of talks in Tehran over the past week, hosted a third in Doha, and carried an Iranian proposal to Washington; it says the terms are still being examined and no Iranian decision has been reported. Sequencing is the sticking point. Mohsen Rezaei, who heads the Supreme National Security Council, says publicly there will be no nuclear talks until Washington accepts the seven conditions set on 3 November, while the officials describe him as more open in private. It is the first time since Phase 2 stalled that written terms exist on both sides.",
+    "South Korea decided the same day to extend its Cheonghae anti-piracy unit’s area to open water south of Duqm in Oman, about 650km from the strait’s southern entrance. Hormuz and the Gulf of Oman are excluded; a maritime patrol aircraft and an explosive ordnance disposal team for unmanned minesweeping are added, and 75 more personnel take the deployment to about 395. The aircraft may not monitor Iranian territory, territorial waters or the strait’s interior. Seoul left open joining mine clearance inside Hormuz once the war ends; the motion needs National Assembly consent. Tehran had warned against any deployment. Brent traded near US$94, a second day below US$100."
+   ],
+   "geopolitical": "Qatar is now the channel, and the dispute has moved from conditions shouted in public to documents passed in private — but nothing is agreed, and the gap is order: seven conditions first, or the nuclear file first. Rezaei saying one thing on camera and another in the room is how a government tests a deal behind a hard line, and also how such tests collapse.",
+   "socioeconomic": "Seoul’s package is what an energy importer does when it no longer trusts anyone else to keep its sea lane open — and it stops 650km short of the water that matters. No entry, no surveillance of Iran, no mine clearance before the war ends: it buys presence, not transit."
+  },
+  {
+   "headline": "AN AI SELL-OFF ERASES THE POST-MIDTERM RALLY AND PUTS THE NASDAQ INTO CORRECTION",
+   "breaking": true,
+   "summary": [
+    "The S&P 500 fell 334.89 points, or 4.4 per cent, to 7,353.73 — its worst day since April 2025. The Dow lost 1,833.06 to 51,523.06 and the Nasdaq composite 1,421.52 to 24,315.00, down 5.5 per cent and into correction. The Nasdaq 100 fell 6.3 per cent, erasing about US$2.3 trillion in market value. Nvidia dropped 9.3 per cent, the heaviest drag on the index. South Korea’s Kospi fell 5.3 per cent. The move more than wiped out Wednesday’s post-election surge, the best session in three months.",
+    "Two explanations ran together: borrowing costs have made the next wave of data-centre construction dearer than the returns justify — IREN delayed some Microsoft AI infrastructure deliveries the same day — and the midterm result put regulation back on the table, with candidates hostile to data centres among the winners. Google nonetheless confirmed a US$17 billion Wyoming data centre."
+   ],
+   "geopolitical": "An American election has repriced capital expenditure on three continents in two sessions, and the Kospi’s 5.3 per cent fall is the transmission line: Korean and Taiwanese chipmakers sell into the build-out US politics has just put in doubt. Governments courting data centres for growth must now price political risk in Washington alongside their own.",
+   "socioeconomic": "If data-centre construction slows, the largest single contributor to recent US investment growth slows with it, and the Asian export orders behind it go first. The paper value is the headline; the order books are the part that shows up in employment."
+  },
+  {
+   "headline": "HOAX BOMB THREATS DIVERT EUROPEAN FLIGHTS FOR THE SECOND TIME IN A WEEK",
+   "breaking": true,
+   "summary": [
+    "At least 18 flights, routes and airports across Europe were hit by bomb threats on Thursday, the Guardian counting disruption to 25 flights. No explosives were found anywhere. Aer Lingus EI402, Dublin to Rome, was diverted over France to the Évreux military air base and searched by a bomb squad; a Ryanair service from Stansted to Sofia diverted to Plovdiv. Finnair reported “unfounded or hoax” threats against its Helsinki flights to Rome and Vienna, and aircraft were searched at Prague and Madrid. Airports in Madrid, Milan, Bucharest, Warsaw and London were among those targeted.",
+    "It was the second wave in a week; earlier threats forced diversions, drew an Italian air force escort and briefly closed a Polish airport. Nobody has been identified or blamed. The threats land while European governments accuse Russia of preparing hybrid attacks, and Finland jailed two men on Thursday for damaging a Baltic undersea cable. An aviation security specialist told Al Jazeera that bomb threats are routine but this many diversions is not."
+   ],
+   "geopolitical": "Cheap, deniable, repeated and aimed at civil infrastructure is what hybrid pressure looks like, and the absence of attribution is the point rather than a gap in the reporting. Every response has been national — a French air base, a Bulgarian airport, a Finnish airline. No European mechanism treats a coordinated hoax campaign as an attack.",
+   "socioeconomic": "A phone call costs nothing; a diversion costs an airline fuel, landing fees, crew hours against duty limits and a night of hotels for displaced passengers. Repeated twice a week, that stops being incidental and starts being priced into fares."
+  },
+  {
+   "headline": "NEWSOM COMMUTES ALL 548 CALIFORNIA DEATH SENTENCES",
+   "breaking": false,
+   "summary": [
+    "Governor Gavin Newsom announced in an open letter that he is using his constitutional clemency power to commute all 548 California death sentences to life without the possibility of parole. It is the largest commutation in American history and empties the country’s largest death row — roughly a quarter of all death sentences in the United States.",
+    "It is not uniformly final: the state constitution requires Supreme Court approval for clemency to anyone convicted of more than one felony, so a portion of the cases must go to that court, and outlets differ on whether the commutations are done or merely begun. California has not executed anyone since 2006; Newsom imposed a moratorium in 2019 and San Quentin’s death row was later dismantled, leaving the sentences nominal in practice but intact in law. Victims’ advocates objected that the decision tells bereaved families the killers matter more."
+   ],
+   "geopolitical": "Removing a quarter of the American death-row population strips the most-cited example from the arguments European and Commonwealth courts hear whenever extradition to the United States is contested — and by state action no federal administration can reverse, since clemency granted cannot be withdrawn by a successor.",
+   "socioeconomic": "Condemned prisoners occupy a separate, dearer custody regime and an appellate track running for decades; 548 people moving to life without parole collapses both into ordinary imprisonment. The saving is permanent, as is the loss of whatever plea leverage a capital charge gave prosecutors."
+  },
+  {
+   "headline": "THE BANK OF ENGLAND RAISES RATES FOR THE FIRST TIME IN THREE YEARS AND BLAMES THE WAR",
+   "breaking": false,
+   "summary": [
+    "The Monetary Policy Committee lifted Bank Rate a quarter point to 4 per cent, its first increase since 2023, on an 8-1 vote, with the dissenter wanting half a point. The Bank said the inflationary pressure already in the pipeline was now sufficient to warrant the move, and pointed to energy costs driven by the Middle East conflict. It expects inflation to reach about 5 per cent by the middle of 2027.",
+    "Governor Andrew Bailey said further rises look likely unless the conflict is resolved, while insisting this was not the start of an inevitable long sequence of hikes. The next decision is on 17 December."
+   ],
+   "geopolitical": "The first major central bank to raise rates and name a war Britain is not fighting as the reason has converted the Iran conflict from a headline risk into a mortgage payment — and left the path of UK rates partly set in Doha and Tehran.",
+   "socioeconomic": "Borrowers meet dearer credit on the way into an inflation path heading for 5 per cent, so real incomes are squeezed from both ends at once. Savers get the first positive real return in years, the narrow upside of a tightening nobody chose."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SUBSIDISED GENETIC TESTING FOR INHERITED BREAST AND OVARIAN CANCER STARTS ON 1 DECEMBER",
+   "breaking": false,
+   "summary": [
+    "From 1 December the Health Ministry will apply means-tested subsidies of up to 70 per cent to genetic testing for hereditary breast and ovarian cancer, and to what follows a positive result — certain drug treatments and intensified surveillance. Testing is for citizens and permanent residents at cancer specialist outpatient clinics at the National Cancer Centre Singapore, the National University Cancer Institute Singapore and Tan Tock Seng Hospital, with extra help for Pioneer and Merdeka Generation seniors, and MediSave may offset the remainder.",
+    "Anyone who tests positive will have the test offered to immediate family members — the step that turns one diagnosis into a family’s worth of information. MOH expects about 2,000 people a year to benefit, patients and relatives together, and estimates one in 150 carry a mutation in genes such as BRCA1 or BRCA2. MediShield Life coverage is also being extended to risk-reducing mastectomy and to removal of the fallopian tubes and ovaries."
+   ],
+   "geopolitical": "Few health systems subsidise cascade testing — paying to test a carrier’s relatives rather than only the patient in front of them — and a super-aged state doing it at 70 per cent sets a reference point regional ministries will be asked about.",
+   "socioeconomic": "Cost has been the reason people decline a test whose result changes their surveillance for life; taking up to 70 per cent off moves spending from treating cancers to finding the people who will get them. The constraint shifts from price to counselling capacity at three hospitals."
+  },
+  {
+   "headline": "THE PAP CO-OPTS JEFFREY SIOW TO ITS CENTRAL EXECUTIVE COMMITTEE AND CHANGES NOTHING AT THE TOP",
+   "breaking": false,
+   "summary": [
+    "The 39th Central Executive Committee named its office holders and co-opted four members: Transport Minister Jeffrey Siow, Second Minister for Foreign Affairs and Home Affairs Sim Ann, labour chief Ng Chee Meng, and Serangoon branch chair Chan Hui Yuh, who stood in Aljunied GRC in GE2025. Siow and Chan are first-time members; Siow was not among those cadres elected on 25 October, when Tan See Leng and Zaqy Mohamad were co-opted. All eight top posts were retained: Desmond Lee as chairman, Masagos Zulkifli as vice-chairman, Lawrence Wong as secretary-general, Chan Chun Sing as assistant secretary-general.",
+    "Analysts read continuity rather than renewal. Eugene Tan noted the leadership echoed the cadres’ voting pattern, and that declining to name a second assistant secretary-general avoids speculation about who follows Gan Kim Yong as deputy prime minister. Felix Tan said renewal may be more gradual than expected, with younger leaders placed in party headquarters posts rather than senior CEC roles. The next internal elections fall in 2028."
+   ],
+   "geopolitical": "Co-opting the transport and second foreign affairs ministers puts the two portfolios most exposed to the war — shipping and aviation, and diplomacy — inside the party’s decision-making body for the rest of the term.",
+   "socioeconomic": "Co-option is how the party seats a minister cadres did not elect, and holding the top eight unchanged a year after GE2025 signals stability over visible succession. The cost is that the generation after Wong is being trained at headquarters, out of public view."
+  },
+  {
+   "headline": "THE HAZE RESPONSE IS STOOD DOWN AFTER THE MONSOON TURNS",
+   "breaking": false,
+   "summary": [
+    "The National Environment Agency will end free N95 mask distribution through vending machines and community clubs at 6pm on Saturday 7 November, close the haze shelters at community clubs and designated Residents’ Committee and Residents’ Network centres, stop the daily evening updates, lift the measures for outdoor workers and stand down the inter-agency Haze Task Force. The haze subsidy scheme and the Public Health Preparedness Clinic scheme follow on 12 November.",
+    "The agency cited inter-monsoon conditions and more frequent showers, which have cut the risk of transboundary haze. At its peak the episode pushed emergency department attendances up about a fifth and polyclinic visits up a quarter, and more than 113,000 people used the S$10 subsidised consultation."
+   ],
+   "geopolitical": "The haze ended because the weather changed, not because anything upstream did — which is the argument for the two instruments Singapore spent the week building: the amended Transboundary Haze Pollution Act and the ASEAN haze centre it wants established under its 2027 chairmanship.",
+   "socioeconomic": "After 12 November a respiratory consultation costs full price again, and those who used the S$10 visit most — outdoor workers, the elderly, families with asthmatic children — feel the withdrawal. The scheme is cheap to restart, which is the case for having built it."
+  },
+  {
+   "headline": "SINGAPORE SETS A 40 PER CENT EMISSIONS FLOOR FOR THE GREEN JET FUEL IT BUYS",
+   "breaking": false,
+   "summary": [
+    "The Civil Aviation Authority of Singapore will only buy sustainable aviation fuel that cuts lifecycle emissions by at least 40 per cent and is eligible under the International Civil Aviation Organization’s CORSIA scheme. Its first tender, for 20,000 to 30,000 tonnes, closes by mid-December; suppliers must be able to deliver through Changi’s existing fuel infrastructure, and blended deliveries are expected from June 2027.",
+    "The purchases are funded by the levy on departing tickets, which applies to tickets sold from 1 October for flights leaving from 1 January after being deferred this year when war-driven fuel prices spiked. The target is for sustainable fuel to make up 1 per cent of jet fuel uplifted at Changi and Seletar in 2027, rising to 3 to 5 per cent by 2030."
+   ],
+   "geopolitical": "A hub that fuels much of the region’s long-haul flying has defined what counts as sustainable fuel in dollar terms, and a 40 per cent floor plus CORSIA eligibility will serve as the regional specification whether neighbouring regulators adopt it or not.",
+   "socioeconomic": "Passengers are already paying the levy; the floor decides whether they are buying emissions reductions or paperwork. At 1 per cent of uplift in 2027 the climate effect is small and the precedent is the asset."
+  }
+ ],
+ "word": {
+  "word": "canard",
+  "pos": "noun",
+  "pronunciation": "kuh-NARD",
+  "definition": "An unfounded rumour or false story, especially one spread to deceive or alarm.",
+  "etymology": "From French canard, “duck”, short for vendre un canard à moitié — “to half-sell a duck”, an old idiom for cheating someone.",
+  "example": "At least eighteen European flights were searched or diverted on Thursday over a canard, and every one of those costs fell on the airline rather than the caller."
+ }
+}
