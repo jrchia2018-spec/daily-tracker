@@ -10,6 +10,11 @@
 //     plan's steepest stretch): a shorter checkpoint, and drop 26 Feb's run
 //   - an upgrade rule after the 2 Mar race-pace run, and a heat rule on race day
 //   - a hard session after a sub-5h night runs easy instead
+// 5 Nov 2026, the owner's request: a 5k time trial (Tue 10 Nov) and a 10k
+// (Tue 29 Dec, that Saturday's long run cut to 12 km to make room) to reset
+// the paces from, and the Alphafly instead of the Vaporfly. No half-marathon
+// trial: an all-out 21 km costs about two weeks in the build, and the 20 Feb
+// checkpoint already answers the same question.
 //
 // The owner's, plus any friend who switches on a copy. A friend can instead
 // load a plan of their own from a file: that lives only on their phone (see
@@ -76,6 +81,7 @@ const fri = text => S(4, 'am', 'run-easy', text);
 const sat = (text, kind = 'run-long') => S(5, 'am', kind, text);
 
 const PEAK_FOOD = 'Biggest training weeks: don\'t cut food. Extra carbs around Tuesday and Saturday.';
+const TT_NOTE = 'Early, before the heat; a flat route or the treadmill at 1%. Put the time and average HR in the run notes: the paces get reset from them.';
 const JAN = 'Off 4–24 Jan. If you can run at all, two 30-min easy runs a week — it decides how steep February is. Never restart on 25 Jan at December volume.';
 
 // One entry per Monday. Distances on Tuesdays include a 2 km warm-up and
@@ -85,14 +91,14 @@ const HM_WEEKS = [
   { mon: '2026-10-19', phase: 'Base', sessions: [push(), tue('6×400m @ 4:25, 90 s rest — 6 km'), lower(3), thu('6 km easy'), sat('9 km easy')] },
   { mon: '2026-10-26', phase: 'Base', sessions: [push(), tue('20 min tempo @ 4:55 — 7 km'), lower(3), thu('6 km easy'), sat('10 km easy')] },
   { mon: '2026-11-02', phase: 'Base', sessions: [push(), tue('3×8 min @ 4:55, 2 min jog — 7 km'), lower(3), thu('7 km easy'), sat('11 km easy')] },
-  { mon: '2026-11-09', phase: 'Base', sessions: [push(), tue('2×10 min @ 4:50, 2 min jog — 7 km'), lower(3), thu('7 km easy + 6 strides (20 s relaxed-fast, 60–90 s walk)'), sat('13 km easy')] },
+  { mon: '2026-11-09', phase: 'Base', sessions: [push(), tue(`5k TIME TRIAL: 2 km easy + 4 strides, then 5 km all-out at even pace (first km no faster than the rest), 1 km easy — 8 km. ${TT_NOTE}`), lower(3), thu('7 km easy + 6 strides (20 s relaxed-fast, 60–90 s walk)'), sat('13 km easy')] },
   { mon: '2026-11-16', phase: 'Base', sessions: [push(), tue('3×1.6 km @ 4:55, 2 min jog — 8 km'), lower(3), thu('7 km easy'), sat('14 km easy')] },
   { mon: '2026-11-23', phase: 'Off', sessions: [], note: 'Off week (23–27 Nov). Free on Sat 28 or Sun 29? 30–40 min easy, no quality.' },
   { mon: '2026-11-30', phase: 'Re-entry', sessions: [push(), tue('5 km easy', 'run-easy'), lower(3), thu('6 km easy + strides'), sat('11 km easy')] },
   { mon: '2026-12-07', phase: 'Build', sessions: [push(), tue('25 min tempo @ 4:50 — 8 km'), lower(3), thu('7 km easy'), sat('15 km easy — practise a gel')] },
   { mon: '2026-12-14', phase: 'Off', sessions: [], note: 'Off week (14–20 Dec).' },
   { mon: '2026-12-21', phase: 'Re-entry', sessions: [push(), tue('6 km easy', 'run-easy'), lower(3), thu('6 km easy + strides'), sat('12 km easy')] },
-  { mon: '2026-12-28', phase: 'Build', sessions: [push(), tue('6×800m @ 4:30, 2 min jog — 8 km'), lower(3), thu('7 km easy'), sat('15 km easy — practise a gel')] },
+  { mon: '2026-12-28', phase: 'Build', sessions: [push(), tue(`10k TIME TRIAL: 2 km easy + 4 strides, then 10 km at even effort, 1 km easy — 13 km. ${TT_NOTE}`), lower(3), thu('7 km easy'), sat('12 km easy — practise a gel')] },
   { mon: '2027-01-04', phase: 'Off', sessions: [], note: JAN },
   { mon: '2027-01-11', phase: 'Off', sessions: [], note: JAN },
   { mon: '2027-01-18', phase: 'Off', sessions: [], note: JAN },
@@ -100,16 +106,16 @@ const HM_WEEKS = [
   { mon: '2027-02-01', phase: 'Rebuild', sessions: [push(), tue('6×400m @ 4:25, 90 s rest — 6 km'), lower(3), thu('6 km easy'), fri('3 km easy'), sat('12 km easy')] },
   { mon: '2027-02-08', phase: 'Specific', note: PEAK_FOOD, sessions: [push(), tue('3×2 km @ 5:00, 90 s jog — 9 km'), lower(3), thu('7 km easy'), fri('4 km easy'), sat('14 km — practise a gel')] },
   { mon: '2027-02-15', phase: 'Specific', note: PEAK_FOOD, sessions: [push(), tue('25 min tempo @ 4:50 — 9 km'), lower(3), thu('7 km easy'), fri('5 km easy'),
-    sat('CHECKPOINT: 17 km, last 6 @ 5:10, in the Vaporfly. No running in January? Make it 16 km, last 5 @ 5:10. Held 5:12 or faster with control → stay on sub-1:50. Slower than 5:20, or had to stop → retarget sub-1:55 (5:27/km) and run every later race-pace segment at 5:20–5:27.')] },
+    sat('CHECKPOINT: 17 km, last 6 @ 5:10, in the Alphafly. No running in January? Make it 16 km, last 5 @ 5:10. Held 5:12 or faster with control → stay on sub-1:50. Slower than 5:20, or had to stop → retarget sub-1:55 (5:27/km) and run every later race-pace segment at 5:20–5:27.')] },
   { mon: '2027-02-22', phase: 'Peak', note: PEAK_FOOD, sessions: [push(), tue('2×4 km @ 5:05, 3 min jog — 11 km'), lower(2), thu('7 km easy'),
     fri('5 km easy — drop it if January had no running'), sat('19 km easy — protect this one above everything. Gels.')] },
   { mon: '2027-03-01', phase: 'Specific', note: PEAK_FOOD, sessions: [push(),
-    tue('8 km continuous @ 5:10 — 12 km, in the Vaporfly. Felt controlled? Aim faster than 1:48: start the race at 5:10, not 5:15.'),
+    tue('8 km continuous @ 5:10 — 12 km, in the Alphafly. Felt controlled? Aim faster than 1:48: start the race at 5:10, not 5:15.'),
     lower(2), thu('7 km easy'), fri('4 km easy'), sat('14 km easy')] },
   { mon: '2027-03-08', phase: 'Taper', note: 'Running drops this week — keep eating normally, don\'t diet into the race.', sessions: [push(), tue('5×1 km @ 4:55, 90 s jog — 8 km'), lower(2), thu('6 km easy'), sat('10 km easy')] },
   { mon: '2027-03-15', phase: 'Race week', note: 'No gym after Monday. Breakfast 2–3 h before the start on Sunday.', sessions: [
     push('Light push — the last gym session'), tue('6 km with 3 km @ 5:10'), thu('4 km easy + 4 strides'), sat('15 min shakeout', 'run-easy'),
-    S(6, 'am', 'run-hard', '🏁 RACE. km 1–5 @ 5:15, km 6–15 @ 5:10, then 5:05 or faster (≈1:48:55). Pace off the course km markers, not your watch. Gels at 40 and 75 min; water at every station in the first half. Hot and humid? Start at 5:20 instead. Vaporfly 4.')] },
+    S(6, 'am', 'run-hard', '🏁 RACE. km 1–5 @ 5:15, km 6–15 @ 5:10, then 5:05 or faster (≈1:48:55). Pace off the course km markers, not your watch. Gels at 40 and 75 min; water at every station in the first half. Hot and humid? Start at 5:20 instead. Alphafly.')] },
 ];
 
 export const HM_PLAN = {

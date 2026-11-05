@@ -12,6 +12,7 @@ function defaults() {
     targetHistory: [],    // [ {from: 'YYYY-MM-DD', targets: {...}} ] — superseded target sets, oldest first
     meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat, fibre, sodium} ] }
     runs: [],             // [ {id, date, km, min, notes} ]
+    activities: [],       // [ {id, date, name, kcal, steps?} ] — anything logged by active calories alone (a hike, a swim). See activitiesOn().
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'|'upper'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
     waists: [],           // [ {date, cm} ] sorted by date — separates recomp from a stall when weight is flat
@@ -462,6 +463,12 @@ export function runsOn(key) {
 
 export function gymOn(key) {
   return state.gym.filter(g => g.date === key);
+}
+
+// Exercise with no distance to track (5 Nov 2026, owner's request — "eg
+// hiking"): just what it was and the watch's active calories.
+export function activitiesOn(key) {
+  return (state.activities || []).filter(a => a.date === key);
 }
 
 export function wellnessFor(key) {

@@ -1,6 +1,6 @@
 import {
   state, save, uid, dateKey, addDays, parseKey, fmtDate, weekKeys, daysBetween,
-  mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, waterFor, addWater,
+  mealsFor, mealTotals, runsOn, gymOn, activitiesOn, latestWeight, wellnessFor, waterFor, addWater,
   exportData, importData, clamp, targetsFor, recordTargetChange,
   foodWaterFor, waterTotalFor, loggedFoods, createdAt, isForgotten, forgetFood,
   oneServingOf, withFoodEdit, setFoodEdit, clearFoodEdit,
@@ -1510,16 +1510,127 @@ function renderTrain() {
     <button id="st-plan" class="${trainSub === 'plan' ? 'active' : ''}">📅 Plan</button>
     <button id="st-runs" class="${trainSub === 'runs' ? 'active' : ''}">🏃 Runs</button>
     <button id="st-gym" class="${trainSub === 'gym' ? 'active' : ''}">🏋️ Gym</button>
+    <button id="st-other" class="${trainSub === 'other' ? 'active' : ''}">🥾 Other</button>
   </div>
   <div id="train-body"></div>`;
 
   view.querySelector('#st-plan').addEventListener('click', () => { trainSub = 'plan'; render(); });
   view.querySelector('#st-runs').addEventListener('click', () => { trainSub = 'runs'; render(); });
   view.querySelector('#st-gym').addEventListener('click', () => { trainSub = 'gym'; render(); });
+  view.querySelector('#st-other').addEventListener('click', () => { trainSub = 'other'; render(); });
 
   if (trainSub === 'plan') renderPlan();
   else if (trainSub === 'runs') renderRuns();
+  else if (trainSub === 'other') renderOther();
   else renderGym();
+}
+
+// Anything else that burned energy — a hike, a swim, a game — logged by its
+// active calories alone, with no distance to track. Counts in the day's burn
+// like a run or a gym session. Walks and hikes are already in the day's step
+// count, so their own steps (optional) are taken back out of it.
+const STEPS_HINT = 'Walk or hike? Add its steps from your watch, or they count twice: once in your daily steps and again here.';
+
+// The same fields serve the page and the edit sheet, which are on screen
+// together — so each gets its own id prefix (p).
+function activityFields(p, a = {}) {
+  const names = [...new Set((state.activities || []).map(x => x.name))];
+  return `
+    <label class="field"><span>Date</span><input id="${p}-date" type="date" value="${a.date || dateKey()}"></label>
+    <label class="field"><span>What was it?</span>
+      <input id="${p}-name" list="${p}-names" placeholder="Hike" value="${esc(a.name || '')}"></label>
+    <datalist id="${p}-names">${names.map(n => `<option value="${esc(n)}">`).join('')}</datalist>
+    <label class="field"><span>Active calories</span>
+      <input id="${p}-kcal" type="number" inputmode="numeric" placeholder="off your watch" value="${a.kcal ?? ''}"></label>
+    <p class="small muted" style="margin:-6px 0 10px">${ACTIVE_KCAL_HINT}</p>
+    <label class="field"><span>Steps during it (optional)</span>
+      <input id="${p}-steps" type="number" inputmode="numeric" placeholder="walks and hikes only" value="${a.steps ?? ''}"></label>
+    <p class="small muted" style="margin:-6px 0 10px">${STEPS_HINT}</p>`;
+}
+
+// Reads the form; null (after saying why) when it can't be saved.
+function readActivity(root, p, id) {
+  const kcalRaw = root.querySelector(`#${p}-kcal`).value;
+  if (kcalRaw === '' || !(Number(kcalRaw) >= 0)) { toast('Enter the active calories'); return null; }
+  const a = {
+    id,
+    date: root.querySelector(`#${p}-date`).value || dateKey(),
+    name: root.querySelector(`#${p}-name`).value.trim() || 'Activity',
+    kcal: Math.round(Number(kcalRaw)),
+  };
+  const steps = root.querySelector(`#${p}-steps`).value;
+  if (steps !== '' && Number(steps) > 0) a.steps = Math.round(Number(steps));
+  return a;
+}
+
+function renderOther() {
+  const body = view.querySelector('#train-body');
+  const list = [...(state.activities || [])].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
+  body.innerHTML = `
+  <div class="card">
+    <h2>Log an activity</h2>
+    <p class="small muted" style="margin:-4px 0 10px">For exercise with no distance to track: a hike, a swim, a game. It counts in the day's burn like a run.</p>
+    ${activityFields('a')}
+    <button class="btn primary block" id="a-save">Log it</button>
+  </div>
+  <div class="card">
+    <h2>History</h2>
+    ${list.length ? list.map(a => `
+      <div class="item" data-act="${a.id}" style="cursor:pointer">
+        <div style="flex:1">
+          <div class="title">${esc(a.name)} <span class="muted small">· ${r0(a.kcal)} active kcal</span></div>
+          <div class="sub">${fmtDate(a.date)}${a.steps ? ` · ${a.steps.toLocaleString()} steps` : ''}</div>
+        </div>
+        <button class="btn danger" data-del="${a.id}">✕</button>
+      </div>`).join('') + '<p class="small muted" style="margin:8px 0 0">Tap one to edit it.</p>'
+    : '<p class="muted small">Nothing logged yet.</p>'}
+  </div>`;
+
+  body.querySelector('#a-save').addEventListener('click', () => {
+    const a = readActivity(body, 'a', uid());
+    if (!a) return;
+    if (!state.activities) state.activities = [];
+    state.activities.push(a);
+    save();
+    render();
+    toast(`${a.name} logged 💪`);
+  });
+  for (const it of body.querySelectorAll('[data-act]')) {
+    it.addEventListener('click', () => openActivityModal(state.activities.find(a => a.id === it.dataset.act)));
+  }
+  for (const b of body.querySelectorAll('[data-del]')) {
+    b.addEventListener('click', e => {
+      e.stopPropagation(); // the row behind it opens the editor
+      state.activities = state.activities.filter(a => a.id !== b.dataset.del);
+      save(); render();
+    });
+  }
+}
+
+function openActivityModal(a) {
+  if (!a) return;
+  const m = openModal(`
+    <h2>Edit activity</h2>
+    ${activityFields('ae', a)}
+    <button class="btn primary block" id="ae-save">Save changes</button>
+    <button class="btn danger block" id="ae-del" style="margin-top:8px">Delete activity</button>`);
+  m.querySelector('#ae-save').addEventListener('click', () => {
+    const entry = readActivity(m, 'ae', a.id);
+    if (!entry) return;
+    const i = state.activities.findIndex(x => x.id === a.id);
+    if (i >= 0) state.activities[i] = entry;
+    save();
+    closeModal();
+    render();
+    toast('Activity updated');
+  });
+  m.querySelector('#ae-del').addEventListener('click', () => {
+    state.activities = state.activities.filter(x => x.id !== a.id);
+    save();
+    closeModal();
+    render();
+    toast('Activity deleted');
+  });
 }
 
 // Weekly training plan: 7 days x 3 slots. Deliberately a grid of taps rather
@@ -2189,6 +2300,7 @@ function weekReview(keys) {
   }
   const runs = state.runs.filter(r => keys.includes(r.date));
   const gym = state.gym.filter(g => keys.includes(g.date));
+  const others = keys.flatMap(k => activitiesOn(k));
   const byType = {};
   for (const g of gym) if (g.type) byType[g.type] = (byType[g.type] || 0) + 1;
   const ws = state.weights.filter(x => keys.includes(x.date));
@@ -2236,6 +2348,8 @@ function weekReview(keys) {
     runN: runs.length,
     gymN: gym.length,
     ppl: GYM_TYPES.map(g => (byType[g.type] ? `${byType[g.type]}× ${g.label.toLowerCase()}` : null)).filter(Boolean).join(' · '),
+    others: others.map(a => a.name),
+    othersKcal: others.reduce((s, a) => s + (a.kcal || 0), 0),
     weightDelta: ws.length >= 2 ? ws[ws.length - 1].kg - ws[0].kg : null,
   };
 }
@@ -2424,6 +2538,7 @@ function weeklyReviewCard() {
         ? tile('—', 'kg change', 'var(--muted)')
         : tile((dKg > 0 ? '+' : '') + r1(dKg), 'kg this week', dKg <= 0 ? 'var(--green)' : 'var(--orange)')}
     </div>
+    ${wr.others.length ? `<p class="small muted" style="margin:10px 0 0;text-align:center">🥾 ${esc(wr.others.join(', '))} · ${r0(wr.othersKcal)} active kcal</p>` : ''}
     <div class="totals-strip" style="margin-top:12px">
       ${wr.activeAvg == null
         ? tile('—', 'avg steps', 'var(--muted)')

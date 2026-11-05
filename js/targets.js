@@ -1,6 +1,6 @@
 // Calorie/macro target calculation and weekly adaptive adjustment.
 
-import { state, save, dateKey, addDays, parseKey, daysBetween, mealsFor, mealTotals, runsOn, gymOn, latestWeight, wellnessFor, clamp, targetsFor, recordTargetChange } from './store.js';
+import { state, save, dateKey, addDays, parseKey, daysBetween, mealsFor, mealTotals, runsOn, gymOn, activitiesOn, latestWeight, wellnessFor, clamp, targetsFor, recordTargetChange } from './store.js';
 
 export const ACTIVITY = {
   sedentary: { factor: 1.2, label: 'Sedentary (desk job, little exercise)' },
@@ -116,16 +116,20 @@ export function exerciseKcal(key) {
   let total = 0;
   for (const r of runsOn(key)) total += loggedOr(r, runKcal(r.km, w));
   for (const g of gymOn(key)) total += loggedOr(g, gymKcal(g.minutes || 45, w));
+  for (const a of activitiesOn(key)) total += a.kcal || 0; // logged figure only — nothing to estimate from
   return total;
 }
 
 // Steps left once the ones a logged run already covers are removed. Without
 // this a 5km run is paid for twice: once inside the day's step count and
 // again as exercise. Each metre should be counted once, at running cost.
+// A hike or walk logged with its own steps is taken out the same way; one
+// logged without them is counted twice, which the form says.
 export function walkingSteps(key) {
   const raw = wellnessFor(key).steps || 0;
   const runKm = runsOn(key).reduce((s, r) => s + (r.km || 0), 0);
-  return Math.max(0, raw - Math.round(runKm * STEPS_PER_KM));
+  const covered = activitiesOn(key).reduce((s, a) => s + (a.steps || 0), 0);
+  return Math.max(0, raw - Math.round(runKm * STEPS_PER_KM) - covered);
 }
 
 // Energy spent digesting the day's food — the thermic effect, ~10% of what
