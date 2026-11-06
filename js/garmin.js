@@ -115,17 +115,27 @@ const prettyType = t => (t || 'Activity').replace(/([a-z])([A-Z])/g, (_, a, b) =
 // Laps into splits. A lap within 10 s/km of the stretch before it joins it,
 // so the auto-laps of a steady run read as one split while reps, recoveries,
 // warm-up and cool-down stay apart. One split means a steady run: none kept.
+// Each split's heart rate is its laps' average, weighted by time.
 export function lapsToSplits(laps) {
   const out = [];
   for (const l of laps || []) {
     const km = (l.distance || 0) / 1000, secs = l.moving_time || l.elapsed_time || 0;
     if (km < 0.05 || !secs) continue;
+    const hr = l.average_heartrate > 0 ? l.average_heartrate : 0;
     const last = out[out.length - 1];
-    if (last && Math.abs(last.secs / last.km - secs / km) <= 10) { last.km += km; last.secs += secs; }
-    else out.push({ km, secs });
+    if (last && Math.abs(last.secs / last.km - secs / km) <= 10) {
+      last.km += km; last.secs += secs;
+      if (hr) { last.hrSum += hr * secs; last.hrSecs += secs; }
+    } else {
+      out.push({ km, secs, hrSum: hr * secs, hrSecs: hr ? secs : 0 });
+    }
   }
   return out.length > 1
-    ? out.map(s => ({ reps: 1, km: Math.round(s.km * 100) / 100, pace: Math.round(s.secs / s.km) }))
+    ? out.map(s => {
+      const split = { reps: 1, km: Math.round(s.km * 100) / 100, pace: Math.round(s.secs / s.km) };
+      if (s.hrSecs) split.hr = Math.round(s.hrSum / s.hrSecs);
+      return split;
+    })
     : null;
 }
 
@@ -155,7 +165,14 @@ async function findWorkouts(creds, today) {
       kcal: activeFrom(a.calories, a.elapsed_time || secs),
       where: a.trainer || a.type === 'VirtualRun' ? 'treadmill' : 'outdoor',
     };
-    if (w.kind === 'run') {
+    // Outdoors, Garmin's GPS pace and heart rate are the record. On a
+    // treadmill the watch only guesses distance from the wrist, so the owner
+    // types the belt's pace and their heart rate (7 Nov 2026): a Garmin
+    // treadmill run brings its time and calories, and the run form does the rest.
+    if (w.kind === 'run' && w.where === 'treadmill') {
+      w.typeIn = true;
+    } else if (w.kind === 'run') {
+      if (a.average_heartrate > 0) w.hr = Math.round(a.average_heartrate);
       try { w.splits = lapsToSplits((await icuGet(creds, `${encodeURIComponent(id)}/intervals`, ACTIVITY))?.icu_intervals); } catch { /* laps are a bonus */ }
     }
     if (w.kind === 'other' && ON_FOOT.has(a.type) && km > 0) w.steps = Math.round(km * STEPS_PER_KM);
@@ -178,6 +195,7 @@ export function importWorkouts(items) {
     if (w.kind === 'run') {
       const r = { ...base, km: w.km, min: w.min, notes: '', where: w.where };
       if (w.kcal != null) r.kcal = w.kcal;
+      if (w.hr) r.hr = w.hr;
       if (w.splits) r.splits = w.splits;
       state.runs.push(r);
     } else if (w.kind === 'gym') {
@@ -195,4 +213,13 @@ export function importWorkouts(items) {
   pending = pending.filter(p => !items.some(i => i.w.icu === p.icu));
   save();
   return added;
+}
+
+// A Garmin treadmill run finished in the run form, or skipped.
+export function markGarminSeen(id) {
+  if (!state.icuSeen) state.icuSeen = [];
+  state.icuSeen.push(id);
+  state.icuSeen = state.icuSeen.slice(-300);
+  pending = pending.filter(p => p.icu !== id);
+  save();
 }
