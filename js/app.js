@@ -20,6 +20,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
+import { icuCreds, clearIcuCreds, lastPulled, connectIcu, pullFromGarmin } from './garmin.js';
 import { hmWeekOf, hmTargets, paceToKmh, hmSessionPaces, hmSessionKm } from './hm-plan.js';
 
 const view = document.getElementById('view');
@@ -959,6 +960,7 @@ function renderMeals() {
     ${fromFood ? `<p class="small muted" style="margin:6px 0 0">${fmtWater(waterFor(mealDate))} logged + ${fmtWater(fromFood)} from drinks and soup</p>` : ''}
     <details ${empty && mealDate === dateKey() ? 'open' : ''}>
       <summary class="small" style="cursor:pointer;margin-top:10px;color:var(--accent);font-weight:600">🌅 Check-in — sleep &amp; steps${empty ? '' : ' <span class="muted">(saved ✓)</span>'}</summary>
+      ${icuCreds() ? '<button class="btn small" id="mw-garmin" style="margin-top:10px">⌚ Fill from Garmin</button>' : ''}
       <p class="small" style="margin:10px 0 6px">😴 Sleep from the night of <b>${fmtDate(addDays(mealDate, -1))}</b> to the morning of <b>${fmtDate(mealDate)}</b>${mealDate === dateKey() ? ' — last night' : ''}:</p>
       <div class="grid2">
         <label class="field"><span>Sleep score</span><input id="mw-sleep" type="number" inputmode="numeric" min="0" max="100" value="${w.sleep ?? ''}" placeholder="78"></label>
@@ -1092,6 +1094,8 @@ function renderMeals() {
   };
   napInput.addEventListener('input', paintNapEcho);
   paintNapEcho();
+
+  view.querySelector('#mw-garmin')?.addEventListener('click', () => garminPull(true));
 
   view.querySelector('#mw-save').addEventListener('click', () => {
     const sleep = view.querySelector('#mw-sleep').value;
@@ -2670,6 +2674,8 @@ function renderProgress() {
     <button class="btn small" id="p-edit" style="margin-top:10px">Edit profile</button>
   </div>
 
+  ${garminCard()}
+
   <div class="card">
     <h2>Data</h2>
     <div class="row">
@@ -2699,6 +2705,24 @@ function renderProgress() {
     render();
     toast('Backup downloaded 💾');
   });
+  view.querySelector('#g-connect')?.addEventListener('click', async () => {
+    const athlete = view.querySelector('#g-athlete').value, key = view.querySelector('#g-key').value;
+    if (!athlete.trim() || !key.trim()) { toast('Enter both the athlete ID and the API key'); return; }
+    try {
+      await connectIcu(athlete, key);
+      render();
+      toast('Connected to Garmin ⌚');
+      garminPull(true);
+    } catch (e) {
+      toast(e.message === 'refused' ? 'intervals.icu refused that ID and key — check both' : "Couldn't reach intervals.icu — try again");
+    }
+  });
+  view.querySelector('#g-pull')?.addEventListener('click', () => garminPull(true));
+  view.querySelector('#g-off')?.addEventListener('click', () => {
+    clearIcuCreds();
+    render();
+    toast('Garmin disconnected — the key is gone from this phone');
+  });
   const fileInput = view.querySelector('#d-file');
   view.querySelector('#d-import').addEventListener('click', () => fileInput.click());
   fileInput.addEventListener('change', async () => {
@@ -2712,6 +2736,48 @@ function renderProgress() {
       toast('Import failed — not a valid backup file');
     }
   });
+}
+
+// Garmin, through intervals.icu (see garmin.js). Connected, it fills sleep
+// and steps by itself whenever the app opens or comes back to the front.
+function garminCard() {
+  if (icuCreds()) {
+    const at = lastPulled();
+    return `
+  <div class="card">
+    <h2>⌚ Garmin</h2>
+    <p class="small muted">Connected through intervals.icu. Sleep, sleep score and steps fill themselves in when you open the app — only into empty boxes, so anything you type stays yours.${at ? ` Last checked ${fmtDate(dateKey(new Date(at)))}, ${new Date(at).toTimeString().slice(0, 5)}.` : ''}</p>
+    <div class="row" style="gap:8px;margin-top:10px">
+      <button class="btn small" id="g-pull">Check now</button>
+      <button class="btn small" id="g-off">Disconnect</button>
+    </div>
+  </div>`;
+  }
+  return `
+  <div class="card">
+    <h2>⌚ Garmin</h2>
+    <p class="small muted" style="margin-bottom:10px">Fill in sleep and steps from your watch, through a free intervals.icu account connected to Garmin. Both of these are on intervals.icu under Settings → Developer Settings.</p>
+    <label class="field"><span>Athlete ID</span><input id="g-athlete" placeholder="i123456" autocomplete="off" autocapitalize="off"></label>
+    <label class="field"><span>API key</span><input id="g-key" type="password" autocomplete="off"></label>
+    <button class="btn small primary" id="g-connect">Connect</button>
+    <p class="small muted" style="margin-top:8px">The key stays on this phone only: never in a backup file, never sent anywhere but intervals.icu. Treat it like a password.</p>
+  </div>`;
+}
+
+// force = a tap, which says what happened either way; the automatic checks
+// stay quiet unless they filled something. A fill never redraws the screen
+// under someone mid-typing or with a sheet open — it shows on the next draw.
+async function garminPull(force = false) {
+  try {
+    const filled = await pullFromGarmin({ force });
+    if (filled == null) return;
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || '') || !modalRoot.classList.contains('hidden');
+    if (filled.length && !typing) render();
+    if (filled.length) toast(`⌚ Filled in from Garmin: ${filled.map(d => fmtDate(d).slice(0, 3)).join(', ')}`);
+    else if (force) toast('Nothing new from Garmin yet');
+  } catch (e) {
+    if (force) toast(e.message === 'refused' ? 'intervals.icu refused the key — reconnect under Progress' : "Couldn't reach intervals.icu");
+  }
 }
 
 function openWeightModal() {
@@ -3240,3 +3306,5 @@ if (navigator.storage?.persisted) {
 const startupNote = maybeAutoRecalc();
 render();
 if (startupNote) toast('📈 Targets auto-updated');
+garminPull();
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') garminPull(); });

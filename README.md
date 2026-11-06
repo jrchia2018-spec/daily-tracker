@@ -17,6 +17,7 @@ Live at: https://jrchia2018-spec.github.io/daily-tracker/
 - **Train → Runs** — distance, total time, outdoor or treadmill, optional active calories and notes (pre-filled with the planned session on plan days); automatic pace, a guard against typing the pace as the time, weekly mileage plus an 8-week chart. Tap a run to edit it.
 - **Train → Gym** — one-tap push / pull / legs logging with optional active calories. Tap a session to edit it.
 - **Progress** — weight and waist cards, targets (Mifflin-St Jeor + activity factor; auto mode blends in *observed* expenditure; fibre, sodium and water you set yourself stay put), and a visual weekly review: 7-day intake chart against target, meters for calories/protein/sodium/sleep, protein and water tick rows, eaten vs burned (resting base + digestion + steps + workouts — information only, never added to the budget), training and check-in stats.
+- **Progress → Garmin** — connect a free [intervals.icu](https://intervals.icu) account (which Garmin syncs to) with its athlete ID and API key, and the morning check-in fills itself: sleep time and score, and the steps of days already over. Only empty boxes are filled. The key stays in that phone's storage and never goes into a backup file.
 - **Skincare** — the daily routine (morning on training/rest days, evening with tonight's variant highlighted) and an optional spot tracker.
 - **News** — automated daily briefing (global + Singapore + word of the day), published to `news/reports/` by a scheduled cloud agent at 7am SGT (9am retry). The tab shows today, yesterday and the day before, with explicit "not published" states. See `news/AGENT.md` for the pipeline runbook.
 - Works offline after first load (service worker). **Progress → Data → Back up** sends a backup through the phone's share menu (to Google Drive, a chat with yourself, etc.); **Import** restores it on any phone. Home nudges after a week without one.
@@ -58,6 +59,7 @@ js/foods.js           built-in food search (basics + SG + personal list + aliase
 js/foods-sg.js        Singapore hawker/local food database
 js/foods-my.js        personal food list (per portion; weighed foods per 100 g)
 js/hm-plan.js         the owner's half-marathon plan (the single source of truth for it)
+js/garmin.js          Garmin sleep and steps through intervals.icu (key kept out of app state)
 sw.js                 service worker (offline cache)
 manifest.webmanifest  PWA install metadata
 tools/serve.ps1       tiny PowerShell static server for local dev
