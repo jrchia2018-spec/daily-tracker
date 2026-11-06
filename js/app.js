@@ -20,7 +20,7 @@ import {
 } from './targets.js';
 import { searchFood, parseServingGrams } from './food.js';
 import { searchCommonFoods } from './foods.js';
-import { icuCreds, clearIcuCreds, lastPulled, connectIcu, pullFromGarmin } from './garmin.js';
+import { icuCreds, clearIcuCreds, lastPulled, connectIcu, pullFromGarmin, garminPending, importWorkouts } from './garmin.js';
 import { hmWeekOf, hmTargets, paceToKmh, hmSessionPaces, hmSessionKm } from './hm-plan.js';
 
 const view = document.getElementById('view');
@@ -374,6 +374,8 @@ function renderHome() {
 
   ${showNote ? `<div class="note">📈 ${esc(state.lastAutoNote)} <button class="btn ghost small" id="dismiss-note">Dismiss</button></div>` : ''}
 
+  ${garminBanner()}
+
   ${backupOverdue() ? `<div class="note" style="background:rgba(255,176,84,.1);border-color:rgba(255,176,84,.3)">💾 ${backupOverdue() === 'never' ? 'No backup yet' : `Last backup ${backupOverdue()} days ago`} — your data lives only on this phone. <button class="btn ghost small" id="backup-now">Back up now</button></div>` : ''}
 
   <div class="card">
@@ -469,6 +471,7 @@ function renderHome() {
     <p class="small muted" id="home-news-line" style="margin-top:6px">Loading briefing…</p>
   </div>`;
 
+  view.querySelector('#gw-review')?.addEventListener('click', openGarminReview);
   view.querySelector('#theme-btn').addEventListener('click', () => {
     applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
     render();
@@ -1510,6 +1513,7 @@ function openFoodModal(result, existing = null) {
 function renderTrain() {
   view.innerHTML = `
   <h1 style="margin-bottom:14px">Train</h1>
+  ${garminBanner()}
   <div class="subtabs">
     <button id="st-plan" class="${trainSub === 'plan' ? 'active' : ''}">📅 Plan</button>
     <button id="st-runs" class="${trainSub === 'runs' ? 'active' : ''}">🏃 Runs</button>
@@ -1522,6 +1526,7 @@ function renderTrain() {
   view.querySelector('#st-runs').addEventListener('click', () => { trainSub = 'runs'; render(); });
   view.querySelector('#st-gym').addEventListener('click', () => { trainSub = 'gym'; render(); });
   view.querySelector('#st-other').addEventListener('click', () => { trainSub = 'other'; render(); });
+  view.querySelector('#gw-review')?.addEventListener('click', openGarminReview);
 
   if (trainSub === 'plan') renderPlan();
   else if (trainSub === 'runs') renderRuns();
@@ -1732,6 +1737,7 @@ function renderPlan() {
     m.querySelector('#hs-yes').addEventListener('click', () => { stopHmPlan(); closeModal(); render(); toast('Plan removed'); });
     m.querySelector('#hs-no').addEventListener('click', closeModal);
   });
+  wireTreadmill(body);
   body.querySelector('#pw-prev').addEventListener('click', () => { planWeekOffset--; render(); });
   body.querySelector('#pw-next').addEventListener('click', () => { planWeekOffset++; render(); });
   for (const b of body.querySelectorAll('[data-plan]')) {
@@ -1784,8 +1790,6 @@ function hmOfferCard() {
 const planFileButton = `
   <button class="btn ghost small block" id="hm-load" style="margin-top:8px">Sent a plan file? Load it</button>
   <input id="hm-file" type="file" accept=".txt,.json,text/plain,application/json" class="hidden">`;
-
-const paceRange = (p, f = x => x) => (p.fast === p.slow ? f(p.fast) : `${f(p.slow)}–${f(p.fast)}`);
 
 // The race plan written out for the week on screen, the way it's actually
 // PLANNED: each session sits on the day and slot the user put it (matched by
@@ -1854,29 +1858,65 @@ function hmPlanCard(hm, week, today) {
 }
 
 // The race plan's paces as treadmill speeds (18 Oct 2026, owner's request) —
-// a treadmill takes km/h, the plan speaks min/km. Zones as ranges, then every
-// exact pace a session names. 1% incline: on a belt there's no air
+// a treadmill takes km/h, the plan speaks min/km. A slider since 7 Nov (their
+// request): slide to any pace and read the speed, with the plan's zones and
+// exact session paces as one-tap jumps. 1% incline: on a belt there's no air
 // resistance, and ~1% grade restores the outdoor cost at roughly 10.5 km/h
 // and faster (Jones & Doust, 1996); slower than that it barely matters.
+const TM_SLOW = 480, TM_FAST = 210, TM_STEP = 5; // 8:00 to 3:30 /km, 5 s apart
+const paceSecs = p => { const [m, s] = p.split(':').map(Number); return m * 60 + s; };
+const secsPace = t => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+
 function treadmillCard() {
   const plan = activePlan();
-  const zones = plan.paces.map(p => `
-    <div class="row between small" style="padding:5px 0;border-bottom:1px solid var(--line)">
-      <span><b>${esc(p.zone)}</b> <span class="muted">${p.fast === p.slow ? p.fast : `${p.fast}–${p.slow}`}/km</span></span>
-      <b>${paceRange(p, x => paceToKmh(x).toFixed(1))} km/h</b>
-    </div>`).join('');
-  const exact = hmSessionPaces(plan.weeks).map(p => `
-    <div class="small" style="padding:4px 0;text-align:center;border:1px solid var(--line);border-radius:8px">
-      <span class="muted">${p}</span><br><b>${paceToKmh(p).toFixed(1)}</b></div>`).join('');
+  let start = paceSecs(plan.paces.find(p => /race/i.test(p.zone))?.fast || '5:10');
+  try { start = Number(localStorage.getItem('tracker.tmPace')) || start; } catch { /* default */ }
+  start = clamp(Math.round(start / TM_STEP) * TM_STEP, TM_FAST, TM_SLOW);
+  const chip = (secs, label) => `<button type="button" class="btn small" data-tm="${secs}">${label}</button>`;
+  const exact = hmSessionPaces(plan.weeks);
   return `
   <div class="card">
-    <h2 style="margin:0 0 4px">🏃 Treadmill speeds</h2>
-    <p class="small muted" style="margin:0 0 8px">Your plan's paces as km/h. For tempo, race pace and faster, set <b>1% incline</b> — it stands in for the wind resistance a treadmill doesn't have; easy runs are fine at 0–1%. Indoors in air-con, skip the hot-day slowdown.</p>
-    ${zones}
-    ${exact ? `<p class="small muted" style="margin:12px 0 6px">Exact paces in the plan (min/km → km/h):</p>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">${exact}</div>` : ''}
-    <p class="small muted" style="margin:10px 0 0">Treadmill in mph? Divide km/h by 1.6.</p>
+    <h2 style="margin:0 0 4px">🏃 Treadmill speed</h2>
+    <p class="small muted" style="margin:0 0 10px">Slide to a pace for the speed to set. For tempo, race pace and faster, set <b>1% incline</b> — it stands in for the wind resistance a treadmill doesn't have; easy runs are fine at 0–1%. Indoors in air-con, skip the hot-day slowdown.</p>
+    <div style="text-align:center">
+      <div><b id="tm-pace" style="font-size:26px">${secsPace(start)}</b> <span class="muted">/km</span>
+        <span class="muted" style="margin:0 6px">→</span>
+        <b id="tm-kmh" style="font-size:26px">${paceToKmh(secsPace(start)).toFixed(1)}</b> <span class="muted">km/h</span></div>
+      <div class="small muted"><span id="tm-mph"></span> mph · <span id="tm-zone"></span></div>
+    </div>
+    <input id="tm-slider" type="range" min="0" max="${(TM_SLOW - TM_FAST) / TM_STEP}" step="1" value="${(TM_SLOW - start) / TM_STEP}"
+      style="width:100%;margin:12px 0 2px;accent-color:var(--accent)" aria-label="Pace">
+    <div class="row between small muted" style="margin-bottom:10px"><span>slower</span><span>faster</span></div>
+    <p class="small muted" style="margin:0 0 6px">Jump to a zone:</p>
+    <div class="row" style="gap:6px;flex-wrap:wrap">${plan.paces.map(p => chip(Math.round((paceSecs(p.fast) + paceSecs(p.slow)) / 2 / TM_STEP) * TM_STEP, esc(p.zone))).join('')}</div>
+    ${exact.length ? `<p class="small muted" style="margin:10px 0 6px">Paces your sessions name:</p>
+    <div class="row" style="gap:6px;flex-wrap:wrap">${exact.map(p => chip(paceSecs(p), p)).join('')}</div>` : ''}
   </div>`;
+}
+
+function wireTreadmill(root) {
+  const slider = root.querySelector('#tm-slider');
+  if (!slider) return;
+  const zones = activePlan().paces;
+  const paint = () => {
+    const secs = TM_SLOW - Number(slider.value) * TM_STEP;
+    const kmh = paceToKmh(secsPace(secs));
+    root.querySelector('#tm-pace').textContent = secsPace(secs);
+    root.querySelector('#tm-kmh').textContent = kmh.toFixed(1);
+    root.querySelector('#tm-mph').textContent = (kmh / 1.609).toFixed(1);
+    const z = zones.find(p => secs >= paceSecs(p.fast) && secs <= paceSecs(p.slow));
+    root.querySelector('#tm-zone').textContent = z ? `${z.zone} zone` : 'between your zones';
+    try { localStorage.setItem('tracker.tmPace', String(secs)); } catch { /* fine */ }
+  };
+  slider.addEventListener('input', paint);
+  for (const b of root.querySelectorAll('[data-tm]')) {
+    b.addEventListener('click', () => {
+      const secs = clamp(Number(b.dataset.tm), TM_FAST, TM_SLOW);
+      slider.value = String(Math.round((TM_SLOW - secs) / TM_STEP));
+      paint();
+    });
+  }
+  paint();
 }
 
 function openPlanModal(key, slot) {
@@ -1923,14 +1963,15 @@ function renderRuns() {
       <div class="item" data-run="${r.id}" style="cursor:pointer">
         <div>
           <div class="title">${fmtDate(r.date)}${r.where ? ` <span class="badge">${r.where === 'treadmill' ? '🏠 Treadmill' : '☀️ Outdoor'}</span>` : ''}</div>
-          <div class="sub">${r.min ? fmtRunTime(r.min) + ' · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} active kcal` : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
+          <div class="sub">${r.min ? fmtRunTime(r.min) + ' · ' + pace(r) + ' /km' : ''}${r.kcal != null ? ` · ${r0(r.kcal)} active kcal` : ''}${r.icu ? ' · ⌚' : ''}${r.notes ? ' · ' + esc(r.notes) : ''}</div>
+          ${r.splits?.length ? `<div class="sub">${esc(splitsText(r.splits))}</div>` : ''}
         </div>
         <div class="row" style="gap:4px">
           <div class="val">${r1(r.km)} km</div>
           <button class="btn danger" data-del="${r.id}">✕</button>
         </div>
       </div>`).join('')
-    : '<p class="muted small">No runs yet. Strava/Garmin sync is planned — manual logging for now.</p>'}
+    : '<p class="muted small">No runs yet. Log one here, or connect Garmin under Progress.</p>'}
     ${recent.length ? '<p class="small muted" style="margin:8px 0 0">Tap a run to edit it.</p>' : ''}
   </div>`;
 
@@ -1994,6 +2035,34 @@ function impossiblePace(min, km) {
   return km > 0 && min > 0 && min / km < 2.8;
 }
 
+// A pace typed the way the owner writes them in notes: "4:59", "4.59" (two
+// digits after the dot are seconds), or "4'59". Seconds per km, or null.
+function parsePace(str) {
+  const x = /^(\d{1,2})[:.'](\d{2})$/.exec(String(str).trim());
+  if (!x || Number(x[2]) >= 60) return null;
+  const secs = Number(x[1]) * 60 + Number(x[2]);
+  return secs >= 150 && secs <= 900 ? secs : null;
+}
+
+// A split's distance: "800m" or "800" (no run has an 800 km split) is metres,
+// "0.8" or "3" or "3km" is kilometres.
+function parseSplitKm(str) {
+  const x = /^(\d+(?:\.\d+)?)\s*(m|km)?$/i.exec(String(str).trim());
+  if (!x) return null;
+  const n = Number(x[1]);
+  const km = x[2]?.toLowerCase() === 'm' || (!x[2] && n >= 50) ? n / 1000 : n;
+  return km > 0 && km <= 50 ? Math.round(km * 1000) / 1000 : null;
+}
+
+const fmtSplitKm = km => (km < 1 ? `${Math.round(km * 1000)} m` : `${Math.round(km * 100) / 100} km`);
+
+// "1 km @ 7:00 · 3 km @ 4:59 · 2×400 m @ 3:55" — how a run's splits read in history.
+function splitsText(splits, max = 6) {
+  const parts = (splits || []).map(s =>
+    `${s.reps > 1 ? `${s.reps}×` : ''}${fmtSplitKm(s.km)}${s.pace ? ` @ ${secsPace(s.pace)}` : ''}`);
+  return parts.length > max ? `${parts.slice(0, max).join(' · ')} · +${parts.length - max} more` : parts.join(' · ');
+}
+
 // Logging a new run, or editing one (24 Oct 2026 — runs had no edit screen,
 // so a typo meant delete and re-log). Where it was run is recorded too: a
 // treadmill and the Singapore heat give very different paces for the same
@@ -2008,11 +2077,16 @@ function openRunModal(existing = null) {
       <button type="button" class="btn small" data-where="outdoor">☀️ Outdoor</button>
       <button type="button" class="btn small" data-where="treadmill">🏠 Treadmill</button>
     </div>
-    <div class="grid2">
+    <div class="grid3">
       <label class="field"><span>Distance (km)</span><input id="r-km" type="number" inputmode="decimal" step="0.01" placeholder="5.0" value="${ex ? ex.km : ''}"></label>
-      <label class="field"><span>Total time</span><input id="r-min" type="text" inputmode="decimal" placeholder="55:16 — not pace" value="${ex && ex.min ? fmtRunTime(ex.min) : ''}"></label>
+      <label class="field"><span>Total time</span><input id="r-min" type="text" inputmode="decimal" placeholder="55:16" value="${ex && ex.min ? fmtRunTime(ex.min) : ''}"></label>
+      <label class="field"><span>Avg pace</span><input id="r-pace" type="text" inputmode="decimal" placeholder="5:36" value="${ex && ex.min && ex.km ? pace(ex) : ''}"></label>
     </div>
-    <p class="small" id="r-echo" style="margin:-6px 0 8px;min-height:16px"></p>
+    <p class="small muted" style="margin:-6px 0 4px">Fill in time <b>or</b> pace: the other works itself out.</p>
+    <p class="small" id="r-echo" style="margin:0 0 8px;min-height:16px"></p>
+    <div id="r-splits"></div>
+    <button type="button" class="btn small" id="r-split-add" style="margin:0 0 4px">+ Add a split</button>
+    <p class="small muted" id="r-split-hint" style="margin:0 0 10px">Pace changed a lot? Add each part, e.g. <b>1</b> km @ <b>7:00</b>, then <b>3</b> km @ <b>4:59</b>. Reps go in the first box: <b>4</b> × <b>400</b> @ <b>3:55</b>.</p>
     <label class="field"><span>Active calories (optional)</span>
       <input id="r-kcal" type="number" inputmode="numeric" placeholder="off your watch — leave blank to estimate" value="${ex?.kcal ?? ''}"></label>
     <p class="small muted" style="margin:-6px 0 10px">${ACTIVE_KCAL_HINT}</p>
@@ -2054,12 +2128,32 @@ function openRunModal(existing = null) {
   };
   dateIn.addEventListener('change', prefillNotes);
   prefillNotes();
-  // Echo how the duration was read, with the pace it implies — a pace that
-  // looks wrong is the fastest way to spot a mistyped time.
-  const durIn = m.querySelector('#r-min'), kmIn = m.querySelector('#r-km'), echo = m.querySelector('#r-echo');
+  // Time and pace fill each other (7 Nov 2026, their request: logging paces
+  // was the hard part). Whichever was typed last leads; changing the
+  // distance recomputes the other one. Echo how the time was read, with the
+  // pace it implies — a pace that looks wrong is the fastest way to spot a
+  // mistyped time.
+  const durIn = m.querySelector('#r-min'), kmIn = m.querySelector('#r-km'), paceIn = m.querySelector('#r-pace');
+  const echo = m.querySelector('#r-echo');
+  let lead = 'time';
+  const sync = () => {
+    const km = Number(kmIn.value);
+    if (!(km > 0)) return;
+    if (lead === 'pace') {
+      const p = parsePace(paceIn.value);
+      if (p != null) durIn.value = fmtRunTime((p * km) / 60);
+    } else {
+      const min = parseRunTime(durIn.value);
+      paceIn.value = min != null ? pace({ min, km }) : '';
+    }
+  };
   const paintEcho = () => {
     const v = durIn.value.trim();
-    if (!v) { echo.textContent = ''; return; }
+    if (!v) {
+      echo.innerHTML = paceIn.value.trim() && parsePace(paceIn.value) == null
+        ? '<span style="color:var(--orange)">Pace not understood — try 5:36 or 5.36</span>' : '';
+      return;
+    }
     const min = parseRunTime(v);
     if (min == null) {
       echo.innerHTML = '<span style="color:var(--orange)">Not understood — try 27.46, 27:46 or 1:50:00</span>';
@@ -2070,11 +2164,66 @@ function openRunModal(existing = null) {
       ? `<span style="color:var(--orange)">That's <b>${pace({ min, km })}</b> /km — faster than a world record. Did you type your pace instead of the total time?</span>`
       : `Reading this as <b>${fmtRunTime(min)}</b>${km > 0 ? ` · pace <b>${pace({ min, km })}</b> /km` : ''}`;
   };
-  durIn.addEventListener('input', paintEcho);
-  kmIn.addEventListener('input', paintEcho);
+  durIn.addEventListener('input', () => { lead = 'time'; sync(); paintEcho(); });
+  paceIn.addEventListener('input', () => { lead = 'pace'; sync(); paintEcho(); });
+  kmIn.addEventListener('input', () => { sync(); paintEcho(); paintSplits(); });
   paintEcho();
 
+  // Splits, for a run whose pace changed a lot. Each row: reps (blank = 1),
+  // distance, pace. If the distance or time box is empty, the splits fill
+  // it; if both are filled (off the watch), the splits are kept as the
+  // detail and can cover less than the whole run — recoveries, say.
+  const splitsBox = m.querySelector('#r-splits');
+  const splitRow = (s = {}) => `
+    <div class="split-row" style="display:grid;grid-template-columns:52px 1fr 1fr 36px;gap:6px;margin-bottom:6px;align-items:center">
+      <input data-s="reps" type="number" inputmode="numeric" min="1" placeholder="1×" value="${s.reps > 1 ? s.reps : ''}">
+      <input data-s="km" type="text" inputmode="decimal" placeholder="km or 400m" value="${s.km ? (s.km < 1 ? Math.round(s.km * 1000) : s.km) : ''}">
+      <input data-s="pace" type="text" inputmode="decimal" placeholder="pace 4:59" value="${s.pace ? secsPace(s.pace) : ''}">
+      <button type="button" class="btn small" data-s-del aria-label="Remove split">✕</button>
+    </div>`;
+  const readSplits = () => [...splitsBox.querySelectorAll('.split-row')].map(r => ({
+    reps: Math.max(1, Math.round(Number(r.querySelector('[data-s="reps"]').value) || 1)),
+    km: parseSplitKm(r.querySelector('[data-s="km"]').value),
+    pace: parsePace(r.querySelector('[data-s="pace"]').value),
+    blankPace: !r.querySelector('[data-s="pace"]').value.trim(),
+  })).filter(s => s.km != null);
+  const splitHint = m.querySelector('#r-split-hint');
+  const hintHelp = splitHint.innerHTML;
+  const paintSplits = () => {
+    const rows = splitsBox.querySelectorAll('.split-row').length;
+    const ss = readSplits();
+    if (!rows) { splitHint.innerHTML = hintHelp; return; }
+    const km = ss.reduce((t, s) => t + s.reps * s.km, 0);
+    const timed = ss.every(s => s.pace != null);
+    const secs = ss.reduce((t, s) => t + s.reps * s.km * (s.pace || 0), 0);
+    const bad = ss.some(s => s.pace == null && !s.blankPace);
+    const total = Number(kmIn.value);
+    splitHint.innerHTML = bad ? '<span style="color:var(--orange)">A pace isn\'t understood — try 4:59 or 4.59</span>'
+      : ss.length ? `Splits: <b>${Math.round(km * 100) / 100} km</b>${timed && km ? ` in <b>${fmtRunTime(secs / 60)}</b> (avg ${secsPace(Math.round(secs / km))} /km)` : ''}${total > 0 && Math.abs(total - km) > 0.05 ? ` — the other ${Math.round((total - km) * 100) / 100} km was in between` : ''}.`
+        : 'Distance like 3 or 400m, pace like 4:59.';
+  };
+  const addSplit = s => {
+    splitsBox.insertAdjacentHTML('beforeend', splitRow(s));
+    const row = splitsBox.lastElementChild;
+    for (const i of row.querySelectorAll('input')) i.addEventListener('input', paintSplits);
+    row.querySelector('[data-s-del]').addEventListener('click', () => { row.remove(); paintSplits(); });
+  };
+  for (const s of ex?.splits || []) addSplit(s);
+  m.querySelector('#r-split-add').addEventListener('click', () => {
+    addSplit();
+    splitsBox.lastElementChild.querySelector('[data-s="km"]').focus();
+    paintSplits();
+  });
+  if (ex?.splits?.length) paintSplits();
+
   m.querySelector('#r-save').addEventListener('click', () => {
+    const splits = readSplits().map(({ reps, km, pace: p }) => ({ reps, km, pace: p }));
+    if (splits.some((s, i) => s.pace == null && !readSplits()[i].blankPace)) { toast("A split's pace looks off — try 4:59"); return; }
+    const splitKm = Math.round(splits.reduce((t, s) => t + s.reps * s.km, 0) * 100) / 100;
+    if (!Number(kmIn.value) && splitKm) kmIn.value = splitKm;
+    if (!durIn.value.trim() && splits.length && splits.every(s => s.pace != null)) {
+      durIn.value = fmtRunTime(splits.reduce((t, s) => t + s.reps * s.km * s.pace, 0) / 60);
+    }
     const km = Number(m.querySelector('#r-km').value);
     if (!km) { toast('Distance is required'); return; }
     const durRaw = durIn.value.trim();
@@ -2095,6 +2244,7 @@ function openRunModal(existing = null) {
     };
     if (kcalRaw !== '') entry.kcal = Math.max(0, Number(kcalRaw)); else delete entry.kcal;
     if (where) entry.where = where; else delete entry.where;
+    if (splits.length) entry.splits = splits; else delete entry.splits;
     if (ex && durRaw !== (ex.min ? fmtRunTime(ex.min) : '')) delete entry.minTyped;
     if (ex) {
       const i = state.runs.findIndex(r => r.id === ex.id);
@@ -2769,15 +2919,85 @@ function garminCard() {
 // under someone mid-typing or with a sheet open — it shows on the next draw.
 async function garminPull(force = false) {
   try {
-    const filled = await pullFromGarmin({ force });
-    if (filled == null) return;
+    const before = garminPending().length;
+    const got = await pullFromGarmin({ force });
+    if (got == null) return;
+    const { filled, workouts } = got;
     const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || '') || !modalRoot.classList.contains('hidden');
-    if (filled.length && !typing) render();
-    if (filled.length) toast(`⌚ Filled in from Garmin: ${filled.map(d => fmtDate(d).slice(0, 3)).join(', ')}`);
+    if ((filled.length || workouts !== before) && !typing) render();
+    const said = [];
+    if (filled.length) said.push(`filled in ${filled.map(d => fmtDate(d).slice(0, 3)).join(', ')}`);
+    if (workouts > before) said.push(`${workouts} workout${workouts === 1 ? '' : 's'} to review`);
+    if (said.length) toast(`⌚ Garmin: ${said.join(' · ')}`);
     else if (force) toast('Nothing new from Garmin yet');
   } catch (e) {
     if (force) toast(e.message === 'refused' ? 'intervals.icu refused the key — reconnect under Progress' : "Couldn't reach intervals.icu");
   }
+}
+
+// New workouts from Garmin wait here until reviewed — nothing is added
+// without a tap. Shown on Home and Train.
+function garminBanner() {
+  const n = garminPending().length;
+  return n ? `<div class="note">⌚ <b>${n} new workout${n === 1 ? '' : 's'} from Garmin</b> <button class="btn ghost small" id="gw-review">Review</button></div>` : '';
+}
+
+// The gym type for a Garmin strength session: Garmin can't tell push from
+// pull, so it starts on whatever that day's planner says, and must be picked
+// if nothing is planned.
+function plannedGymType(key) {
+  for (const s of PLAN_SLOTS) {
+    const k = planKind(planFor(key)[s.id]);
+    if (k?.group === 'gym') return k.id;
+  }
+  return '';
+}
+
+// Something already logged by hand that looks like the same workout — so the
+// first weeks don't double up. Unticked by default; ticking adds it anyway.
+function loggedTwin(w) {
+  if (w.kind === 'run') return state.runs.find(r => r.date === w.date && Math.abs(r.km - w.km) <= Math.max(0.3, 0.1 * w.km));
+  if (w.kind === 'gym') return state.gym.find(g => g.date === w.date);
+  return (state.activities || []).find(a => a.date === w.date && a.name.toLowerCase() === w.name.toLowerCase());
+}
+
+function openGarminReview() {
+  const list = garminPending().map(w => ({ w, twin: loggedTwin(w), gymType: w.kind === 'gym' ? plannedGymType(w.date) : '' }));
+  if (!list.length) return;
+  const icon = { run: '🏃', gym: '🏋️', other: '🥾' };
+  const kcalText = w => (w.kcal != null ? `${r0(w.kcal)} active kcal <span class="muted">(Garmin's total ${r0(w.totalKcal)}, minus resting)</span>` : 'no calories from Garmin');
+  const m = openModal(`
+    <h2>⌚ New from Garmin</h2>
+    <p class="small muted" style="margin-bottom:10px">Tick what to add. Anything left unticked won't be offered again.</p>
+    ${list.map(({ w, twin, gymType }, i) => `
+      <div class="item" style="align-items:flex-start;gap:10px">
+        <input type="checkbox" data-take="${i}" ${twin ? '' : 'checked'} style="margin-top:4px;width:20px;height:20px">
+        <div style="flex:1">
+          <div class="title">${icon[w.kind]} ${w.kind === 'run' ? `${w.where === 'treadmill' ? 'Treadmill run' : 'Run'} · ${r1(w.km)} km` : esc(w.kind === 'gym' ? 'Gym session' : w.name)} <span class="muted small">· ${fmtDate(w.date)}</span></div>
+          <div class="sub">${w.kind === 'run' && w.min ? `${fmtRunTime(w.min)} · ${pace(w)} /km · ` : ''}${kcalText(w)}${w.steps ? ` · ~${w.steps.toLocaleString()} steps taken out of the day's count` : ''}</div>
+          ${w.splits ? `<div class="sub">${esc(splitsText(w.splits))}</div>` : ''}
+          ${twin ? `<div class="sub" style="color:var(--orange)">Looks already logged by hand${w.kind === 'run' ? ` (${r1(twin.km)} km)` : ''} — tick to add it anyway.</div>` : ''}
+          ${w.kind === 'gym' ? `<div class="row" style="gap:6px;flex-wrap:wrap;margin-top:6px">${gymChoices(gymType).map(t => `<button type="button" class="btn small ${t.type === gymType ? 'primary' : ''}" data-gt="${i}" data-type="${t.type}">${t.ico} ${t.label}</button>`).join('')}</div>` : ''}
+        </div>
+      </div>`).join('')}
+    <button class="btn primary block" id="gw-add" style="margin-top:10px">Add ticked</button>
+    <button class="btn block" id="gw-later" style="margin-top:8px">Later</button>`);
+  for (const b of m.querySelectorAll('[data-gt]')) {
+    b.addEventListener('click', () => {
+      const i = Number(b.dataset.gt);
+      list[i].gymType = b.dataset.type;
+      for (const o of m.querySelectorAll(`[data-gt="${i}"]`)) o.classList.toggle('primary', o === b);
+    });
+  }
+  m.querySelector('#gw-later').addEventListener('click', closeModal);
+  m.querySelector('#gw-add').addEventListener('click', () => {
+    const items = list.map((x, i) => ({ ...x, take: m.querySelector(`[data-take="${i}"]`).checked }));
+    if (items.some(x => x.take && x.w.kind === 'gym' && !x.gymType)) { toast('Pick push, pull or legs for the gym session'); return; }
+    const added = importWorkouts(items);
+    closeModal();
+    render();
+    toast(added ? `Added ${added} from Garmin ⌚` : 'Skipped — they won\'t be offered again');
+  });
 }
 
 function openWeightModal() {

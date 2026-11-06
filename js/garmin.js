@@ -7,18 +7,20 @@
 // it lives in its own localStorage entry on this phone, outside every backup
 // file. A restore on a new phone means entering it again.
 //
-// For now this fills the morning check-in: last night's sleep time and score,
-// and the steps of any day that's already over. It only ever fills an EMPTY
-// field — a figure someone typed is theirs. Weight is left alone: what Garmin
-// holds isn't the fasted weekend weigh-in the weight trend relies on.
-// Workouts come later, once a synced run shows whether intervals.icu's
-// calories are active or total.
+// It fills the morning check-in: last night's sleep time and score, and the
+// steps of any day that's already over. It only ever fills an EMPTY field — a
+// figure someone typed is theirs. Weight is left alone: what Garmin holds
+// isn't the fasted weekend weigh-in the weight trend relies on. Since 7 Nov it
+// also finds new workouts, which wait for a tap to review before anything is
+// added (see the workouts section below).
 
-import { state, save, dateKey, addDays, wellnessFor } from './store.js';
+import { state, save, uid, dateKey, addDays, wellnessFor } from './store.js';
+import { baseKcal, STEPS_PER_KM } from './targets.js';
 
 const CREDS = 'tracker.icu';
 const PULLED = 'tracker.icuPulled';
 const BASE = 'https://intervals.icu/api/v1/athlete/';
+const ACTIVITY = 'https://intervals.icu/api/v1/activity/';
 const EVERY_MS = 30 * 60 * 1000; // opening the app checks at most this often
 
 export function icuCreds() {
@@ -38,8 +40,8 @@ export function lastPulled() {
   try { return Number(localStorage.getItem(PULLED)) || null; } catch { return null; }
 }
 
-async function icuGet(creds, path) {
-  const res = await fetch(BASE + encodeURIComponent(creds.athlete) + path, {
+async function icuGet(creds, path, base = BASE + encodeURIComponent(creds.athlete)) {
+  const res = await fetch(base + path, {
     headers: { Authorization: 'Basic ' + btoa('API_KEY:' + creds.key) },
     cache: 'no-store',
   });
@@ -82,13 +84,115 @@ export function applyWellness(records, today = dateKey()) {
 }
 
 // The past week, so a missed morning catches up by itself. Returns the dates
-// filled, or null when not connected or checked too recently.
+// filled and how many workouts wait for review, or null when not connected or
+// checked too recently. A failed workout check never costs the sleep fill.
 export async function pullFromGarmin({ force = false } = {}) {
   const creds = icuCreds();
   if (!creds) return null;
   if (!force && Date.now() - (lastPulled() || 0) < EVERY_MS) return null;
   const today = dateKey();
   const filled = applyWellness(await wellness(creds, addDays(today, -7), today), today);
+  try { pending = await findWorkouts(creds, today); } catch { /* keep what was found before */ }
   try { localStorage.setItem(PULLED, String(Date.now())); } catch { /* next open just checks again */ }
-  return filled;
+  return { filled, workouts: pending.length };
+}
+
+// ---- workouts (7 Nov 2026) ----
+//
+// intervals.icu's calories are Garmin's TOTAL for the session (the owner
+// checked against Garmin Connect, 7 Nov), resting energy included. This app
+// counts resting once, in its daily base, so the session's share of that
+// base comes off: base per minute × the session's minutes.
+export function activeFrom(totalKcal, secs) {
+  if (!(totalKcal > 0)) return null;
+  return Math.max(0, Math.round(totalKcal - (baseKcal() / 1440) * ((secs || 0) / 60)));
+}
+
+const RUN_TYPES = new Set(['Run', 'VirtualRun', 'TrailRun']);
+const ON_FOOT = new Set(['Walk', 'Hike']);
+const prettyType = t => (t || 'Activity').replace(/([a-z])([A-Z])/g, (_, a, b) => `${a} ${b.toLowerCase()}`);
+
+// Laps into splits. A lap within 10 s/km of the stretch before it joins it,
+// so the auto-laps of a steady run read as one split while reps, recoveries,
+// warm-up and cool-down stay apart. One split means a steady run: none kept.
+export function lapsToSplits(laps) {
+  const out = [];
+  for (const l of laps || []) {
+    const km = (l.distance || 0) / 1000, secs = l.moving_time || l.elapsed_time || 0;
+    if (km < 0.05 || !secs) continue;
+    const last = out[out.length - 1];
+    if (last && Math.abs(last.secs / last.km - secs / km) <= 10) { last.km += km; last.secs += secs; }
+    else out.push({ km, secs });
+  }
+  return out.length > 1
+    ? out.map(s => ({ reps: 1, km: Math.round(s.km * 100) / 100, pace: Math.round(s.secs / s.km) }))
+    : null;
+}
+
+// Found on the last check, not yet reviewed. Not stored: the next check
+// rebuilds it, and anything reviewed is remembered in state.icuSeen.
+let pending = [];
+export const garminPending = () => pending;
+
+function already(id) {
+  return (state.icuSeen || []).includes(id)
+    || [...state.runs, ...state.gym, ...(state.activities || [])].some(x => x.icu === id);
+}
+
+async function findWorkouts(creds, today) {
+  const list = await icuGet(creds, `/activities?oldest=${addDays(today, -7)}&newest=${today}`);
+  const out = [];
+  for (const a of list || []) {
+    const id = a?.id != null ? String(a.id) : null;
+    if (!id || !a.start_date_local || already(id)) continue; // Strava imports come back as empty stubs
+    const km = a.distance > 0 ? Math.round(a.distance / 10) / 100 : 0;
+    const secs = a.moving_time || a.elapsed_time || 0;
+    const w = {
+      icu: id, date: a.start_date_local.slice(0, 10), type: a.type, name: prettyType(a.type),
+      kind: RUN_TYPES.has(a.type) && km > 0 ? 'run' : a.type === 'WeightTraining' ? 'gym' : 'other',
+      km, min: Math.round((secs / 60) * 10000) / 10000,
+      totalKcal: a.calories > 0 ? a.calories : null,
+      kcal: activeFrom(a.calories, a.elapsed_time || secs),
+      where: a.trainer || a.type === 'VirtualRun' ? 'treadmill' : 'outdoor',
+    };
+    if (w.kind === 'run') {
+      try { w.splits = lapsToSplits((await icuGet(creds, `${encodeURIComponent(id)}/intervals`, ACTIVITY))?.icu_intervals); } catch { /* laps are a bonus */ }
+    }
+    if (w.kind === 'other' && ON_FOOT.has(a.type) && km > 0) w.steps = Math.round(km * STEPS_PER_KM);
+    out.push(w);
+  }
+  return out.sort((x, y) => x.date.localeCompare(y.date));
+}
+
+// items: [{ w, take, gymType }]. Every reviewed workout is remembered, taken
+// or not, so a skipped one never comes back. Taken ones become ordinary
+// entries (marked with their intervals.icu id), editable like any other.
+export function importWorkouts(items) {
+  if (!state.icuSeen) state.icuSeen = [];
+  if (!state.activities) state.activities = [];
+  let added = 0;
+  for (const { w, take, gymType } of items) {
+    state.icuSeen.push(w.icu);
+    if (!take) continue;
+    const base = { id: uid(), date: w.date, icu: w.icu };
+    if (w.kind === 'run') {
+      const r = { ...base, km: w.km, min: w.min, notes: '', where: w.where };
+      if (w.kcal != null) r.kcal = w.kcal;
+      if (w.splits) r.splits = w.splits;
+      state.runs.push(r);
+    } else if (w.kind === 'gym') {
+      const g = { ...base, type: gymType };
+      if (w.kcal != null) g.kcal = w.kcal;
+      state.gym.push(g);
+    } else {
+      const o = { ...base, name: w.name, kcal: w.kcal ?? 0 };
+      if (w.steps) o.steps = w.steps;
+      state.activities.push(o);
+    }
+    added++;
+  }
+  state.icuSeen = state.icuSeen.slice(-300);
+  pending = pending.filter(p => !items.some(i => i.w.icu === p.icu));
+  save();
+  return added;
 }

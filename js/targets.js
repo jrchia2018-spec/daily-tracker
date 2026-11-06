@@ -96,7 +96,7 @@ export function baseKcal() {
 
 // Steps per km at a walking stride, used both to price steps and to work out
 // how many of the day's steps a logged run already accounts for.
-const STEPS_PER_KM = 1300;
+export const STEPS_PER_KM = 1300;
 
 // Net cost of walking, i.e. ABOVE resting — resting is already in baseKcal(),
 // so using a gross figure here (as most step trackers report) would double

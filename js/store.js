@@ -11,7 +11,8 @@ function defaults() {
     targets: null,        // {calories, protein, carbs, fat, mode: 'auto'|'manual', updatedAt}
     targetHistory: [],    // [ {from: 'YYYY-MM-DD', targets: {...}} ] — superseded target sets, oldest first
     meals: {},            // { 'YYYY-MM-DD': [ {id, name, brand, grams, per100, kcal, protein, carbs, fat, fibre, sodium} ] }
-    runs: [],             // [ {id, date, km, min, notes} ]
+    runs: [],             // [ {id, date, km, min, notes, where?, kcal?, splits?: [{reps, km, pace: s/km|null}], icu?} ]
+    icuSeen: [],          // intervals.icu activity ids already reviewed (taken or skipped), newest 300. See garmin.js.
     activities: [],       // [ {id, date, name, kcal, steps?} ] — anything logged by active calories alone (a hike, a swim). See activitiesOn().
     gym: [],              // [ {id, date, minutes, type: 'push'|'pull'|'legs'|'upper'} ] (pre-PPL entries have exercises: [{name, sets: [{w, r}]}] instead)
     weights: [],          // [ {date, kg} ] sorted by date
