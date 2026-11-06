@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-11-07",
+ "generatedAt": "2026-11-07T07:25:00+08:00",
+ "coverage": {
+  "from": "2026-11-06T07:00:00+08:00",
+  "to": "2026-11-07T07:00:00+08:00",
+  "label": "Friday 6 November 2026, 0700 SGT → Saturday 7 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "SATELLITE IMAGES SHOW IRAN REBUILDING ITS MISSILE SITES UNDERGROUND AS THE WAR’S POLITICAL BILL REACHES THE PENTAGON",
+   "breaking": true,
+   "summary": [
+    "November satellite imagery analysed for BBC Verify shows earthworks and new buildings at Garmdareh in Karaj and at Shahroud, and repairs or construction at at least 12 other military sites, among them missile complexes and airbases. The Karaj images appear to show “a new portal for an underground facility”, says Sam Lair of the Foreign Policy Research Institute; Janes reported tunnel entrances there, the completion of major work at Taleqan 2 inside the Parchin complex, and new roofs on destroyed buildings at the Kermanshah missile base. The firm MAIAR described a consistent pattern of moving infrastructure underground.",
+    "The war’s political cost landed on Defence Secretary Pete Hegseth, who posted a “We Stand, We Fight” video on Thursday as expectations rose that the lame-duck Republican House will vote to impeach him next week. Trump called his performance “fantastic” and said he was not considering dismissing him; almost no one else in Washington defended him publicly. Asked what he would do about Iran, Trump said only “you’ll know soon enough”. Tehran’s written proposal is still with Washington through Qatar, and a senior Iranian official repeated that substantive talks begin only once the seven conditions of 3 November are met; Mohsen Rezaei said after meeting Putin in Moscow that neither the strait nor the talks open first."
+   ],
+   "geopolitical": "Hardening the sites underground lowers what any further American strike can buy — an argument both against striking and for striking soon — and is the first physical evidence that Tehran is planning for a long war rather than a settlement.",
+   "socioeconomic": "A defence secretary facing an impeachment vote cannot credibly carry an escalation decision, so the practical effect is delay, and delay keeps the strait shut."
+  },
+  {
+   "headline": "TRUMP PROMISES A ‘BIG, BEAUTIFUL’ SECURITY DEAL FOR ALL OF EUROPE AFTER MEETING PUTIN’S ENVOY",
+   "breaking": true,
+   "summary": [
+    "Trump met Kirill Dmitriev, the sanctioned head of Russia’s sovereign wealth fund and Putin’s envoy, at a White House event Melania Trump organised to mark the Oleshky ceasefire, then promised an agreement that “is going to involve more than Ukraine, and I could even say it might involve all of Europe”. He gave no terms. Jared Kushner posted that “a broader European security architecture” was needed, with “greater military transparency” and “reciprocal measures to reduce escalation risks”, mentioning neither Russia’s invasion nor the hybrid attacks Europe blames on Moscow.",
+    "Several European officials told CNN they did not know what Trump was describing. Zelensky said he learned of the framework in a Thursday call with Kushner and Steve Witkoff preparing US-led Russia-Ukraine talks in Abu Dhabi next week: “For me, it’s not simple and it can be dangerous.” Ending the war comes first, he said, and security guarantees second. NATO confirmed it met the US, Ukraine and European counterparts in Brussels on Thursday before the trilateral, and Trump spoke to Chancellor Merz. The toll from Monday’s bombing of the Komyshuvakha aid point reached at least 53, and Zelensky warned that Russia is preparing another."
+   ],
+   "geopolitical": "A deal negotiated over Europe’s head about Europe’s own security would give Moscow what it has sought since 1991, a say in NATO’s eastern posture; Kyiv’s objection is sequence, because guarantees agreed before a ceasefire are guarantees Russia can price into its next offensive.",
+   "socioeconomic": "Abu Dhabi now has the venue the Kremlin floated in October, so there is a fixed date for talks rather than a rolling one — and reconstruction finance, war-risk insurance and the grain trade all turn on whether it holds."
+  },
+  {
+   "headline": "STEPHEN MILLER TAKES OVER THE WHITE HOUSE AS THREE JUSTICE DEPARTMENT OFFICIALS WALK OUT",
+   "breaking": false,
+   "summary": [
+    "Trump confirmed on Friday that Stephen Miller, 41, his deputy chief of staff and the architect of the immigration crackdown, becomes White House chief of staff on Monday, and that Susie Wiles, 69, the first woman in the job, had been ousted after resigning on Thursday night. “Stephen’s been with me from the beginning. He gets it,” Trump said. Miller drove family separation and the travel ban on Muslim-majority countries in the first term and the push to end birthright citizenship in this one; more than a hundred congressional Democrats once signed a letter calling him a “documented white nationalist”. Chris Whipple, a historian of the office, called the appointment “almost a declaration of war by Trump”.",
+    "Three senior Justice Department officials have left since the midterms: Jason Reding Quinõnes, the US attorney in southern Florida who ran the “grand conspiracy” investigation into Trump’s opponents, pushed out under pressure from Attorney-General Todd Blanche; John Eisenberg of the National Security Division on Friday; and Harmeet Dhillon of the Civil Rights Division on Thursday. Officials said the firebrands had become liabilities now that Democrats hold oversight, and that successors will be hard to confirm in a Democratic Senate, leaving acting appointees to run the divisions for the rest of the term."
+   ],
+   "geopolitical": "Putting the administration’s most combative aide in the gatekeeper’s chair answers whether Trump would accommodate the new Congress, and allies will discount any American commitment that needs Senate ratification over the next two years.",
+   "socioeconomic": "Immigration enforcement is the policy Miller has always run personally, so those most exposed are the migrants and employers already living with the raids; at Justice, the prosecutions of Trump’s opponents have lost their drivers before they lost their indictments."
+  },
+  {
+   "headline": "PARAGUAY’S SENATE REMOVES ITS PRESIDENT 44-1 OVER A COLLAPSED BANK",
+   "breaking": false,
+   "summary": [
+    "Paraguay’s Senate voted 44 of 45 on Friday to remove President Santiago Peña, and Vice-President Pedro Alliana was sworn in soon afterwards. Peña had resigned on Thursday after Ueno Bank, a private institution he has been linked to, was shut overnight in a solvency crisis that left millions of customers unable to reach their money; the lower chamber then voted unanimously to impeach him for “serious and systematic dereliction of duty”. The charges came from 35 opposition lawmakers and dissidents in his own right-wing Colorado Party, which holds majorities in both chambers.",
+    "The vote strips his parliamentary immunity, and the attorney-general has opened three criminal cases against him and other former officials over the bank. Lawmakers refused his request for 72 more hours to prepare a defence. Peña took office in August 2023 at 44 for a five-year term and was among Washington’s closest allies in the region; the State Department said the relationship remains strong."
+   ],
+   "geopolitical": "A Colorado supermajority removing its own president in two days shows that the party, not the presidency, is Paraguay’s durable institution — and it costs Washington its most reliable vote in South America while Brazil and Venezuela are out of reach.",
+   "socioeconomic": "The depositors are the unresolved part: a bank wound up overnight has frozen the savings of millions in a country of seven million, and nothing in the impeachment restores access or says who absorbs the loss."
+  },
+  {
+   "headline": "THE EUROPEAN COMMISSION TELLS TIKTOK ITS ‘FOR YOU’ FEED BREAKS THE LAW",
+   "breaking": false,
+   "summary": [
+    "The European Commission issued preliminary findings on Friday that TikTok’s “For You” feed breaches the Digital Services Act by drawing users into harmful “rabbit holes”. “This design can be harmful when such endless and repeated exposure involves, for example, content about sadness, isolation or body image,” it said, concluding that the effect falls hardest on minors and vulnerable adults and that TikTok’s mitigations, the “not interested” button among them, are insufficient. Officials said it was the first time EU regulators had directly challenged a major platform’s engagement-based recommender, and that they are looking beyond TikTok.",
+    "It is the third set of preliminary findings against the company this year, after February’s on addictive design and July’s on minors’ accounts. They are not final: TikTok may reply and offer remedies, and a confirmed breach carries a fine of up to 6 per cent of global annual turnover."
+   ],
+   "geopolitical": "Regulating the recommender rather than the content is the move platforms have most resisted; if it survives, it becomes the template for every jurisdiction with a minors’ online-safety bill, Singapore’s 2027 legislation included.",
+   "socioeconomic": "A fine is survivable; a ruling that engagement optimisation is itself unlawful is not, because it reaches the mechanism that sets the advertising price on roughly 150 million European users."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "GRAB IS ORDERED TO STOP TESTING DRIVERLESS CARS AT JUNCTIONS AFTER ONE NEARLY HIT A GIRL IN PUNGGOL",
+   "breaking": true,
+   "summary": [
+    "The Land Transport Authority has directed Grab to pause autonomous-vehicle testing at junctions like the one in Punggol Field Walk where a girl stepping onto a crossing was nearly struck by an AV turning left on a green light. A video posted on Facebook on the night of 5 November, now past 260,000 views, shows the vehicle slowing but not stopping as she steps off the kerb, and a woman pulling her back. LTA, informed the same day, said preliminary data shows the vehicle had detected and was tracking both pedestrians, began braking and steered right when the child moved, after which the onboard safety operator took over. It will review whether the programmed response to that scenario should change.",
+    "The vehicle was testing a new route for an enhanced on-demand service in Punggol due to open to the wider public in the fourth quarter of this year. Grab, whose two public shuttle routes have run since 1 April with WeRide, said it is reviewing the incident with LTA. An AV hit a road divider on the same stretch in January."
+   ],
+   "geopolitical": "Singapore sells itself as the place autonomous vehicles can deploy early because the regulator is close enough to intervene in days; a pause issued within a day of a video, with nobody hurt, is that claim being tested in public.",
+   "socioeconomic": "The expansion was weeks away, so the cost here is schedule: the service meant to show driverless shuttles doing ordinary Punggol journeys now waits on an investigation into the one manoeuvre those journeys mostly require."
+  },
+  {
+   "headline": "M1 AND DOCTOR ANYWHERE BOTH DISCLOSE DATA BREACHES IN ONE EVENING",
+   "breaking": true,
+   "summary": [
+    "M1 said on 6 November that it was breached on 30 October, exposing customer names, identity card details, dates of birth, mobile numbers, e-mail addresses and home addresses. No payment card, banking or account-access data was taken, it said; the breach is contained and those affected will be written to, though it did not say how many. The Personal Data Protection Commission is investigating.",
+    "Hours later the telemedicine provider Doctor Anywhere disclosed a “malicious cyber incident involving unauthorised access by an unknown third party”, which it learned of on 29 October. The data taken includes names, e-mail addresses, identity card and passport numbers, dates of birth, emergency contacts and bank account details; passwords, card details and clinical records were not affected, and Ensign InfoSecurity validated its fixes on 30 October. Affected users, including clients of its corporate-benefits subsidiary Adept Health, are being notified, and the police and the PDPC have been told. Neither company has given a number."
+   ],
+   "geopolitical": "Both breaches happened in late October and surfaced the same evening, which points less at one attacker than at a disclosure clock — and Singapore’s runs slower than the European and Australian regimes that force a notified figure within days.",
+   "socioeconomic": "Identity card numbers with addresses, and in the second case bank account details, are exactly what the scam syndicates working on Singaporeans buy, and neither firm can yet say how many people must now treat every unsolicited call as hostile."
+  },
+  {
+   "headline": "THE CAUSEWAY TAXI QUOTA REACHES 500 AND TWO MORE OPERATORS WIN CROSS-BORDER LICENCES",
+   "breaking": false,
+   "summary": [
+    "From 16 November each country’s quota of cross-border taxis rises from 300 to 500, completing a target the two transport ministries set on 5 December 2025. CDG Zig and the Malaysian ride-hailing operator Kumpool will also be licensed to carry passengers across the Causeway, joining Grab, until now the only one allowed to. In a joint statement on 6 November the ministries called it a commitment to cross-border connectivity and to business and people-to-people ties.",
+    "The system was overhauled on 4 May, when the quota went from 200 to 300 with higher fixed fares, more designated pick-up points and permission to drop passengers anywhere in Singapore or Johor. A four-seater from Ban San Street Terminal in Bugis to Larkin Sentral in Johor Bahru, or anywhere within 35km of it, costs S$80, up from S$60; the return is RM240 (S$76), up from RM120."
+   ],
+   "geopolitical": "Road capacity is the binding constraint on the Johor-Singapore Special Economic Zone, and with the rail link now expected only in February 2027 the two governments are expanding the one cross-border mode they can change by issuing licences.",
+   "socioeconomic": "Two new operators against a fixed quota is competition on service, not price, because the fares are set — and at S$80 a four-seater this stays a business and group fare rather than a commuter one."
+  },
+  {
+   "headline": "THE FIRST DATA CENTRE BUILT UNDER SINGAPORE’S STRICTER GREEN RULES OPENS IN JALAN TUKANG",
+   "breaking": false,
+   "summary": [
+    "Equinix opened SG6 in Jalan Tukang on 6 November, a nine-storey building costing US$290 million (S$370 million) that will hold about 1,550 server cabinets and 20 megawatts of computing capacity when complete. It is the first of the four projects chosen after the 2022 lifting of a three-year moratorium on new data centres to come into service; they were judged on sustainability, strategic contribution and economic value rather than scale.",
+    "SG6 is designed for a power usage effectiveness of 1.2 against the 1.3 ceiling in the government’s pilot call for applications, where a figure nearer 1 means less energy spent on anything but computing. Equinix chose efficient chillers, tuned pumps and right-sized cooling, runs the halls at about 27°C rather than the usual 25°C, and supports liquid cooling for dense chips. Senior Minister of State for Digital Development and Information Tan Kiat How said efficiency is what creates room for more digital activity despite the limits on land, power and water."
+   ],
+   "geopolitical": "Singapore is rationing a resource its regional rivals sell freely, and allocating it on a PUE figure rather than on megawatts is how it means to stay a hub without becoming where the cheapest compute lands.",
+   "socioeconomic": "Twenty megawatts is a small addition on purpose: each efficiency gain is electricity not bought on a grid whose tariff still follows imported gas, and in the week the global AI trade repriced, the constraint looks like a hedge."
+  }
+ ],
+ "word": {
+  "word": "camarilla",
+  "pos": "noun",
+  "pronunciation": "kam-uh-RIL-uh",
+  "definition": "A small group of unofficial advisers around a ruler, wielding influence without formal accountability.",
+  "etymology": "From Spanish camarilla, “little chamber”, a diminutive of cámara (Latin camera); first used of the private circle of courtiers who governed around Ferdinand VII of Spain in the 1820s.",
+  "example": "Elevating Stephen Miller to chief of staff while three Justice Department divisions lost their heads in three days left the camarilla stronger and the departments weaker."
+ }
+}

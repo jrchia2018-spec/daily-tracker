@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 6 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 7 November 2026)
 
 > **Working file.** It holds the standing reference table plus dated sections from the last 30 days. Older sections are in `archive/3-data-points-YYYY-MM.md`, which runs do not read. Pruning rule: `news/AGENT.md` step 5.
 
@@ -48,39 +48,6 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Singapore births, 2025 | ~29,864 total (27,393 resident, 2,471 non-resident) — below 30,000 for the first time since independence; -11% YoY; median first-time-mother age 32.1 (up from 31.3 in 2021) | Registry of Births and Deaths via wire reports, 27 Jul 2026 |
 | Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
 | Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
-
-## Global data points (7 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Brent | US$100.58 (+0.26%) | 6 Oct 2026 close |
-| WTI | US$89.44 (+0.01%) | 6 Oct 2026 close |
-| S&P 500 | record close 7,818.93, +44.98 (+0.58%) | 6 Oct 2026 close |
-| US 10-year Treasury yield | 5.275% (-3.6bp), after touching above 5.3%, highest since 2002; 30-year 5.647% | 6 Oct 2026 close |
-| Iranian crude loadings | September the first month with none since tracking began in 2013; last loading 25 Aug 2026 | Kpler via CNN, 6 Oct 2026 |
-| Iranian oil outside US blockade zone | 10m barrels, down from 100m in July; onshore stocks ~70m barrels, near pandemic peak | Kpler via CNN, 6 Oct 2026 |
-| Iranian crude production | ~2m bpd, half pre-war level | Kpler via CNN, 6 Oct 2026 |
-| Iran GDP | contracted at a 10% annual rate Mar–Jun 2026 | Iranian government data via CNN, 6 Oct 2026 |
-| Iran inflation | 90% annual rate last month; 73% average over the past year — highest since WWII | CNN, 6 Oct 2026 |
-| VLCC day rate | S$2.05m (US$1.6m) a day, 24x the 2025 cost | Clarksons via CNN, 6 Oct 2026 |
-| US pump diesel | S$2.14/litre (US$6.32/US gallon) national average; record US$6.53 on 22 Sep; US$3.76 pre-war; federal duty US$0.244/gallon deferred to year-end | AAA/EIA via CNBC and CNN, 6 Oct 2026 |
-| DR Congo Ebola outbreak | ~8,400 cases, 4,000+ deaths in 2026 — fastest-growing Ebola outbreak on record; Bundibugyo strain, no licensed vaccine or treatment | DRC government data via Al Jazeera/AP, 6 Oct 2026 |
-| Ebola country spread | 4 countries: DR Congo, Uganda (20 cases), France (1), Kenya (1 case, 1 death) | Kenya MOH/WHO via AP, 6 Oct 2026 |
-| India electoral roll deletions | 130m+ names removed since 2025 under the Special Intensive Revision; a third of voters in one region | Semafor/NYT, 6 Oct 2026 |
-| France school protests | 250,000+ nationwide in 40+ cities; ~500 detained 6 Oct; 6,000+ in custody over recent weeks, mostly minors with no prior record | French interior ministry via NPR, 6 Oct 2026 |
-| Quebec election (5 Oct) | PQ 59 seats/28.02%, PLQ 40/24.22%, PCQ 19/20.67%, QS 9/12.43%, CAQ 0/13.35% of 127 seats; 64 needed for majority; turnout 66.9% | CBC/Élections Québec, 6 Oct 2026 |
-| Nobel physics prize 2026 | Francis Halzen, 82 (U. Wisconsin–Madison), sole laureate, for IceCube and the discovery of high-energy astrophysical neutrinos; IceCube = 5,160 sensors over 1 km³, completed 2011, US$271m NSF-funded | Royal Swedish Academy of Sciences, 6 Oct 2026 |
-| USD/SGD | 1.2807 (carried from 1 Oct 2026; no fresher rate found on 7 Oct) | exchange-rates.org, 1 Oct 2026 |
-
-## Singapore data points (7 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| MRT-property review | 191 officers in rail-planning agencies reviewed over 2007–2014 transactions; 8 cases referred to police | Chan Chun Sing in Parliament, 6 Oct 2026 |
-| President's salary | S$1,568,900 → S$2,568,200 a year (+~64%), effective 15 Oct 2026 | Parliament, 6 Oct 2026 |
-| Speaker's salary | S$550,000 → S$900,000 a year; Deputy Speakers S$135,000 a year | Parliament, 6 Oct 2026 |
-| Political office-holder bonuses, 2016–2025 | individual performance bonus 2.5–6 months; national bonus 0.75–5.63 months; NPAA 1 month; AVC typically ~1 month | Chan Chun Sing in Parliament, 6 Oct 2026 |
-| Proposed Pulau Tekong energy cluster | 200 hectares; ~6GW domestic generation and 2GW electricity imports via 3 sea corridors; third LNG terminal and hydrogen-ready gas plants; consultant by mid-2027, ~2-year study | EMA, 6 Oct 2026 |
-| Singapore energy mix | ~93% of energy from imported natural gas; second LNG terminal at Jurong Port due by end of the decade | EMA, 6 Oct 2026 |
-| Youths investigated over scams | more than 1,000 | MHA/Shanmugam in Parliament, 6 Oct 2026 |
 
 ## Global economic variables (8 Oct)
 | Indicator | Figure | Source |
@@ -769,3 +736,34 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | SAF procurement standard | CAAS will buy only CORSIA-eligible sustainable aviation fuel cutting lifecycle emissions >=40%; first tender 20,000-30,000 tonnes closing mid-Dec 2026; blended deliveries from June 2027; targets 1% of Changi/Seletar uplift in 2027 and 3-5% by 2030 | CAAS via Xinhua/TNGlobal/ST, 5 Nov 2026 |
 | SG for Humanity (not run) | MCCY network with Humanity Matters, Mercy Relief, Rahmatan Lil Alamin Foundation and Singapore Red Cross to coordinate Gaza aid; >S$25m contributed since Oct 2023; Zaqy Mohamad to visit Egypt; no new routes or timetable | MCCY/AsiaOne, 5 Nov 2026 |
 | IHH Healthcare (not run) | ~380-400 jobs to go across Singapore, Malaysia and Hong Kong (~0.5% of 76,000 staff) in a business-support consolidation; clinical and patient-facing roles unaffected | IHH statement 4 Nov via ST, reported 5 Nov 2026 |
+
+## Global economic variables (7 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| US non-farm payrolls, Oct | +165,000 against a +65,000 consensus; unemployment 4.1% (from 4.2%, consensus 4.2%). Aug revised up 53,000 to 186,000 and Sep to 60,000 from 29,000, +84,000 between them; three-month average 137,000; year-to-date average 86,100/month (2024 and pre-pandemic averages ~120,000) | BLS/FactSet via CNN, 6 Nov 2026 |
+| US wages and duration, Oct | Average hourly earnings +3.1% YoY, from an upwardly revised 3.2%; unemployment duration the highest since Dec 2021; unemployment at or under 4.5% for a record 60 months | BLS via CNN, 6 Nov 2026 |
+| US payroll gains by sector, Oct | Professional and business services +70,000; healthcare and social assistance +55,100; durable goods manufacturing +25,000; transportation and warehousing +24,500; temporary help +18,600 | BLS via CNN, 6 Nov 2026 |
+| Nasdaq | +1.1% on Fri 6 Nov after -5.5% on Thu 5 Nov; still in correction, down more than 10% over the past month | AFP via CNA, 6 Nov 2026 |
+| Fed expectations | Markets widely expect a 25bp increase at the December meeting; the dollar rose against the euro and other majors on the jobs data | AFP via CNA, 6 Nov 2026 |
+| Brent crude | No same-day settlement could be verified from any reachable source; no figure recorded for 6 Nov | Attempted via web search, 6 Nov 2026 |
+
+## Global data points (7 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| Iran military reconstruction | November imagery: earthworks and new buildings at Garmdareh (Karaj) and Shahroud; repairs or construction at at least 12 other military sites including missile complexes and airbases; apparent new portal for an underground facility and tunnel entrances at Karaj; major work complete at Taleqan 2 inside Parchin; new roofs on destroyed buildings at Kermanshah missile base | MAIAR, Janes and FPRI analysts via BBC Verify, 6 Nov 2026 |
+| Paraguay | Senate voted 44 of 45 to remove President Santiago Peña; VP Pedro Alliana sworn in the same day; impeachment charges brought by 35 lawmakers for "serious and systematic dereliction of duty"; three criminal cases opened by the attorney-general; Ueno Bank shut overnight 5 Nov in a solvency crisis; Peña in office since Aug 2023 on a five-year term | CNN/Guardian/NYT, 6 Nov 2026 |
+| Komyshuvakha aid-point strike | At least 53 dead (40 two days earlier) | Zelensky via CNN, 6 Nov 2026 |
+| TikTok DSA findings | Preliminary findings that the "For You" feed breaches the DSA via harmful "rabbit holes"; third set against TikTok in 2026 (Feb on addictive design, Jul on minors' accounts); confirmed breach carries a fine of up to 6% of global annual turnover; first EU challenge to a major platform's engagement-based recommender | European Commission via Guardian/The Record, 6 Nov 2026 |
+| South Africa local elections (not run) | ANC 31.8% nationally with 80%+ counted, ~14 points below 2021; DA 24.1%; MK 9.3%; turnout 54.5% (46% in 2021); ANC projected to lose largest-party status in Gauteng and KwaZulu-Natal. Johannesburg, just over half counted: DA 40%, ANC 17.5%, ActionSA 15.5%; the city admits a R220bn (£9.9bn) infrastructure backlog. Final results due Sun 8 Nov | IEC via Guardian, 6 Nov 2026 |
+| Kenya (not run) | Paul Mackenzie sentenced to 200 years over the deaths of 190 children in the Shakahola starvation case (BBC reported it as a life sentence for 191 murders) | Guardian/CNA/BBC, 6 Nov 2026 |
+
+## Singapore data points (7 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| Grab AV near-accident | Punggol Field Walk; video posted the night of 5 Nov, 260,000+ views and 1,000+ reactions. LTA informed 5 Nov, directed Grab to pause testing at such junctions pending investigation; preliminary data shows the vehicle detected and tracked both pedestrians, began braking and steered right, then the onboard safety operator took over. Route was being tested for an enhanced on-demand Punggol service due to open to the wider public in Q4 2026; two public shuttle routes have run since 1 Apr with WeRide; an AV hit a road divider on the same stretch in January | LTA and Grab via ST, 6 Nov 2026 |
+| M1 data breach | Occurred 30 Oct, disclosed 6 Nov: names, identity card details, dates of birth, mobile numbers, e-mail and home addresses. No payment card, banking or account-access data; contained, services unaffected; number affected not disclosed; PDPC investigating | M1 and PDPC via ST, 6 Nov 2026 |
+| Doctor Anywhere data breach | Known to the company 29 Oct, disclosed the evening of 6 Nov: names, e-mail addresses, identity card and passport numbers, dates of birth, emergency contacts, bank account details. No passwords, login credentials, card details or identity-document images; clinical records unaffected; Ensign InfoSecurity validated fixes 30 Oct; police and PDPC notified; includes clients of subsidiary Adept Health; number affected not disclosed | Doctor Anywhere via ST, 6 Nov 2026 |
+| Cross-border taxis | Quota per country rises 300 to 500 on 16 Nov, completing the 500 target set in the 5 Dec 2025 joint statement; CDG Zig and Malaysian operator Kumpool licensed for cross-border ride-hail alongside Grab. The 4 May overhaul raised the quota 200 to 300, lifted fixed fares, added designated pick-up points and allowed drop-offs anywhere in Singapore or Johor. Four-seater Ban San Street Terminal to Larkin Sentral or within 35km: S$80 (was S$60); return RM240 (S$76), was RM120 | Singapore and Malaysian transport ministries joint statement via ST, 6 Nov 2026 |
+| Equinix SG6 | Opened 6 Nov in Jalan Tukang; US$290m (S$370m); nine storeys; ~1,550 server cabinets and 20MW of capacity when fully built; designed PUE 1.2 against the 1.3 ceiling in the government's pilot Data Centre Call for Application; halls run at ~27°C vs ~25°C typical; liquid-cooling capable. First of four projects selected after the 2022 lifting of the three-year data-centre moratorium; selection criteria were sustainability, strategic contribution and economic value | Equinix and SMS Tan Kiat How via ST, 6 Nov 2026 |
+| Personal AI agent advisory (not run) | CSA, GovTech and IMDA joint advisory issued 6 Nov, five precautionary steps: connect only necessary apps; avoid giving agents access to banking, government and healthcare accounts; never share card details, passwords or OTPs; prefer one-time approval over "always allow"; set permissions in app settings rather than chat instructions. Issued after the Singapore launch of Meta Muse | CSA/GovTech/IMDA via ST, 6 Nov 2026 |
+| CSA control-systems warning (not run) | CSA urged Singapore firms to restrict web access to operational-technology control systems after the European supermarket refrigeration attacks | CSA via ST, 6 Nov 2026 |

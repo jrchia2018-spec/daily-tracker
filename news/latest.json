@@ -1,112 +1,112 @@
 {
  "schema": 1,
- "date": "2026-11-06",
- "generatedAt": "2026-11-06T07:25:00+08:00",
+ "date": "2026-11-07",
+ "generatedAt": "2026-11-07T07:25:00+08:00",
  "coverage": {
-  "from": "2026-11-05T07:00:00+08:00",
-  "to": "2026-11-06T07:00:00+08:00",
-  "label": "Thursday 5 November 2026, 0700 SGT → Friday 6 November 2026, 0700 SGT"
+  "from": "2026-11-06T07:00:00+08:00",
+  "to": "2026-11-07T07:00:00+08:00",
+  "label": "Friday 6 November 2026, 0700 SGT → Saturday 7 November 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "IRAN IS WEIGHING ‘CONCRETE PROPOSALS’ ON ITS NUCLEAR PROGRAMME AS SEOUL MOVES ITS NAVY TOWARD HORMUZ",
+   "headline": "SATELLITE IMAGES SHOW IRAN REBUILDING ITS MISSILE SITES UNDERGROUND AS THE WAR’S POLITICAL BILL REACHES THE PENTAGON",
    "breaking": true,
    "summary": [
-    "Five officials, one American and two Iranian, told the New York Times that Tehran is reviewing “concrete proposals” on the future of its nuclear programme; the contents are undisclosed. Qatar ran two rounds of talks in Tehran over the past week, hosted a third in Doha, and carried an Iranian proposal to Washington; it says the terms are still being examined and no Iranian decision has been reported. Sequencing is the sticking point. Mohsen Rezaei, who heads the Supreme National Security Council, says publicly there will be no nuclear talks until Washington accepts the seven conditions set on 3 November, while the officials describe him as more open in private. It is the first time since Phase 2 stalled that written terms exist on both sides.",
-    "South Korea decided the same day to extend its Cheonghae anti-piracy unit’s area to open water south of Duqm in Oman, about 650km from the strait’s southern entrance. Hormuz and the Gulf of Oman are excluded; a maritime patrol aircraft and an explosive ordnance disposal team for unmanned minesweeping are added, and 75 more personnel take the deployment to about 395. The aircraft may not monitor Iranian territory, territorial waters or the strait’s interior. Seoul left open joining mine clearance inside Hormuz once the war ends; the motion needs National Assembly consent. Tehran had warned against any deployment. Brent traded near US$94, a second day below US$100."
+    "November satellite imagery analysed for BBC Verify shows earthworks and new buildings at Garmdareh in Karaj and at Shahroud, and repairs or construction at at least 12 other military sites, among them missile complexes and airbases. The Karaj images appear to show “a new portal for an underground facility”, says Sam Lair of the Foreign Policy Research Institute; Janes reported tunnel entrances there, the completion of major work at Taleqan 2 inside the Parchin complex, and new roofs on destroyed buildings at the Kermanshah missile base. The firm MAIAR described a consistent pattern of moving infrastructure underground.",
+    "The war’s political cost landed on Defence Secretary Pete Hegseth, who posted a “We Stand, We Fight” video on Thursday as expectations rose that the lame-duck Republican House will vote to impeach him next week. Trump called his performance “fantastic” and said he was not considering dismissing him; almost no one else in Washington defended him publicly. Asked what he would do about Iran, Trump said only “you’ll know soon enough”. Tehran’s written proposal is still with Washington through Qatar, and a senior Iranian official repeated that substantive talks begin only once the seven conditions of 3 November are met; Mohsen Rezaei said after meeting Putin in Moscow that neither the strait nor the talks open first."
    ],
-   "geopolitical": "Qatar is now the channel, and the dispute has moved from conditions shouted in public to documents passed in private — but nothing is agreed, and the gap is order: seven conditions first, or the nuclear file first. Rezaei saying one thing on camera and another in the room is how a government tests a deal behind a hard line, and also how such tests collapse.",
-   "socioeconomic": "Seoul’s package is what an energy importer does when it no longer trusts anyone else to keep its sea lane open — and it stops 650km short of the water that matters. No entry, no surveillance of Iran, no mine clearance before the war ends: it buys presence, not transit."
+   "geopolitical": "Hardening the sites underground lowers what any further American strike can buy — an argument both against striking and for striking soon — and is the first physical evidence that Tehran is planning for a long war rather than a settlement.",
+   "socioeconomic": "A defence secretary facing an impeachment vote cannot credibly carry an escalation decision, so the practical effect is delay, and delay keeps the strait shut."
   },
   {
-   "headline": "AN AI SELL-OFF ERASES THE POST-MIDTERM RALLY AND PUTS THE NASDAQ INTO CORRECTION",
+   "headline": "TRUMP PROMISES A ‘BIG, BEAUTIFUL’ SECURITY DEAL FOR ALL OF EUROPE AFTER MEETING PUTIN’S ENVOY",
    "breaking": true,
    "summary": [
-    "The S&P 500 fell 334.89 points, or 4.4 per cent, to 7,353.73 — its worst day since April 2025. The Dow lost 1,833.06 to 51,523.06 and the Nasdaq composite 1,421.52 to 24,315.00, down 5.5 per cent and into correction. The Nasdaq 100 fell 6.3 per cent, erasing about US$2.3 trillion in market value. Nvidia dropped 9.3 per cent, the heaviest drag on the index. South Korea’s Kospi fell 5.3 per cent. The move more than wiped out Wednesday’s post-election surge, the best session in three months.",
-    "Two explanations ran together: borrowing costs have made the next wave of data-centre construction dearer than the returns justify — IREN delayed some Microsoft AI infrastructure deliveries the same day — and the midterm result put regulation back on the table, with candidates hostile to data centres among the winners. Google nonetheless confirmed a US$17 billion Wyoming data centre."
+    "Trump met Kirill Dmitriev, the sanctioned head of Russia’s sovereign wealth fund and Putin’s envoy, at a White House event Melania Trump organised to mark the Oleshky ceasefire, then promised an agreement that “is going to involve more than Ukraine, and I could even say it might involve all of Europe”. He gave no terms. Jared Kushner posted that “a broader European security architecture” was needed, with “greater military transparency” and “reciprocal measures to reduce escalation risks”, mentioning neither Russia’s invasion nor the hybrid attacks Europe blames on Moscow.",
+    "Several European officials told CNN they did not know what Trump was describing. Zelensky said he learned of the framework in a Thursday call with Kushner and Steve Witkoff preparing US-led Russia-Ukraine talks in Abu Dhabi next week: “For me, it’s not simple and it can be dangerous.” Ending the war comes first, he said, and security guarantees second. NATO confirmed it met the US, Ukraine and European counterparts in Brussels on Thursday before the trilateral, and Trump spoke to Chancellor Merz. The toll from Monday’s bombing of the Komyshuvakha aid point reached at least 53, and Zelensky warned that Russia is preparing another."
    ],
-   "geopolitical": "An American election has repriced capital expenditure on three continents in two sessions, and the Kospi’s 5.3 per cent fall is the transmission line: Korean and Taiwanese chipmakers sell into the build-out US politics has just put in doubt. Governments courting data centres for growth must now price political risk in Washington alongside their own.",
-   "socioeconomic": "If data-centre construction slows, the largest single contributor to recent US investment growth slows with it, and the Asian export orders behind it go first. The paper value is the headline; the order books are the part that shows up in employment."
+   "geopolitical": "A deal negotiated over Europe’s head about Europe’s own security would give Moscow what it has sought since 1991, a say in NATO’s eastern posture; Kyiv’s objection is sequence, because guarantees agreed before a ceasefire are guarantees Russia can price into its next offensive.",
+   "socioeconomic": "Abu Dhabi now has the venue the Kremlin floated in October, so there is a fixed date for talks rather than a rolling one — and reconstruction finance, war-risk insurance and the grain trade all turn on whether it holds."
   },
   {
-   "headline": "HOAX BOMB THREATS DIVERT EUROPEAN FLIGHTS FOR THE SECOND TIME IN A WEEK",
-   "breaking": true,
-   "summary": [
-    "At least 18 flights, routes and airports across Europe were hit by bomb threats on Thursday, the Guardian counting disruption to 25 flights. No explosives were found anywhere. Aer Lingus EI402, Dublin to Rome, was diverted over France to the Évreux military air base and searched by a bomb squad; a Ryanair service from Stansted to Sofia diverted to Plovdiv. Finnair reported “unfounded or hoax” threats against its Helsinki flights to Rome and Vienna, and aircraft were searched at Prague and Madrid. Airports in Madrid, Milan, Bucharest, Warsaw and London were among those targeted.",
-    "It was the second wave in a week; earlier threats forced diversions, drew an Italian air force escort and briefly closed a Polish airport. Nobody has been identified or blamed. The threats land while European governments accuse Russia of preparing hybrid attacks, and Finland jailed two men on Thursday for damaging a Baltic undersea cable. An aviation security specialist told Al Jazeera that bomb threats are routine but this many diversions is not."
-   ],
-   "geopolitical": "Cheap, deniable, repeated and aimed at civil infrastructure is what hybrid pressure looks like, and the absence of attribution is the point rather than a gap in the reporting. Every response has been national — a French air base, a Bulgarian airport, a Finnish airline. No European mechanism treats a coordinated hoax campaign as an attack.",
-   "socioeconomic": "A phone call costs nothing; a diversion costs an airline fuel, landing fees, crew hours against duty limits and a night of hotels for displaced passengers. Repeated twice a week, that stops being incidental and starts being priced into fares."
-  },
-  {
-   "headline": "NEWSOM COMMUTES ALL 548 CALIFORNIA DEATH SENTENCES",
+   "headline": "STEPHEN MILLER TAKES OVER THE WHITE HOUSE AS THREE JUSTICE DEPARTMENT OFFICIALS WALK OUT",
    "breaking": false,
    "summary": [
-    "Governor Gavin Newsom announced in an open letter that he is using his constitutional clemency power to commute all 548 California death sentences to life without the possibility of parole. It is the largest commutation in American history and empties the country’s largest death row — roughly a quarter of all death sentences in the United States.",
-    "It is not uniformly final: the state constitution requires Supreme Court approval for clemency to anyone convicted of more than one felony, so a portion of the cases must go to that court, and outlets differ on whether the commutations are done or merely begun. California has not executed anyone since 2006; Newsom imposed a moratorium in 2019 and San Quentin’s death row was later dismantled, leaving the sentences nominal in practice but intact in law. Victims’ advocates objected that the decision tells bereaved families the killers matter more."
+    "Trump confirmed on Friday that Stephen Miller, 41, his deputy chief of staff and the architect of the immigration crackdown, becomes White House chief of staff on Monday, and that Susie Wiles, 69, the first woman in the job, had been ousted after resigning on Thursday night. “Stephen’s been with me from the beginning. He gets it,” Trump said. Miller drove family separation and the travel ban on Muslim-majority countries in the first term and the push to end birthright citizenship in this one; more than a hundred congressional Democrats once signed a letter calling him a “documented white nationalist”. Chris Whipple, a historian of the office, called the appointment “almost a declaration of war by Trump”.",
+    "Three senior Justice Department officials have left since the midterms: Jason Reding Quinõnes, the US attorney in southern Florida who ran the “grand conspiracy” investigation into Trump’s opponents, pushed out under pressure from Attorney-General Todd Blanche; John Eisenberg of the National Security Division on Friday; and Harmeet Dhillon of the Civil Rights Division on Thursday. Officials said the firebrands had become liabilities now that Democrats hold oversight, and that successors will be hard to confirm in a Democratic Senate, leaving acting appointees to run the divisions for the rest of the term."
    ],
-   "geopolitical": "Removing a quarter of the American death-row population strips the most-cited example from the arguments European and Commonwealth courts hear whenever extradition to the United States is contested — and by state action no federal administration can reverse, since clemency granted cannot be withdrawn by a successor.",
-   "socioeconomic": "Condemned prisoners occupy a separate, dearer custody regime and an appellate track running for decades; 548 people moving to life without parole collapses both into ordinary imprisonment. The saving is permanent, as is the loss of whatever plea leverage a capital charge gave prosecutors."
+   "geopolitical": "Putting the administration’s most combative aide in the gatekeeper’s chair answers whether Trump would accommodate the new Congress, and allies will discount any American commitment that needs Senate ratification over the next two years.",
+   "socioeconomic": "Immigration enforcement is the policy Miller has always run personally, so those most exposed are the migrants and employers already living with the raids; at Justice, the prosecutions of Trump’s opponents have lost their drivers before they lost their indictments."
   },
   {
-   "headline": "THE BANK OF ENGLAND RAISES RATES FOR THE FIRST TIME IN THREE YEARS AND BLAMES THE WAR",
+   "headline": "PARAGUAY’S SENATE REMOVES ITS PRESIDENT 44-1 OVER A COLLAPSED BANK",
    "breaking": false,
    "summary": [
-    "The Monetary Policy Committee lifted Bank Rate a quarter point to 4 per cent, its first increase since 2023, on an 8-1 vote, with the dissenter wanting half a point. The Bank said the inflationary pressure already in the pipeline was now sufficient to warrant the move, and pointed to energy costs driven by the Middle East conflict. It expects inflation to reach about 5 per cent by the middle of 2027.",
-    "Governor Andrew Bailey said further rises look likely unless the conflict is resolved, while insisting this was not the start of an inevitable long sequence of hikes. The next decision is on 17 December."
+    "Paraguay’s Senate voted 44 of 45 on Friday to remove President Santiago Peña, and Vice-President Pedro Alliana was sworn in soon afterwards. Peña had resigned on Thursday after Ueno Bank, a private institution he has been linked to, was shut overnight in a solvency crisis that left millions of customers unable to reach their money; the lower chamber then voted unanimously to impeach him for “serious and systematic dereliction of duty”. The charges came from 35 opposition lawmakers and dissidents in his own right-wing Colorado Party, which holds majorities in both chambers.",
+    "The vote strips his parliamentary immunity, and the attorney-general has opened three criminal cases against him and other former officials over the bank. Lawmakers refused his request for 72 more hours to prepare a defence. Peña took office in August 2023 at 44 for a five-year term and was among Washington’s closest allies in the region; the State Department said the relationship remains strong."
    ],
-   "geopolitical": "The first major central bank to raise rates and name a war Britain is not fighting as the reason has converted the Iran conflict from a headline risk into a mortgage payment — and left the path of UK rates partly set in Doha and Tehran.",
-   "socioeconomic": "Borrowers meet dearer credit on the way into an inflation path heading for 5 per cent, so real incomes are squeezed from both ends at once. Savers get the first positive real return in years, the narrow upside of a tightening nobody chose."
+   "geopolitical": "A Colorado supermajority removing its own president in two days shows that the party, not the presidency, is Paraguay’s durable institution — and it costs Washington its most reliable vote in South America while Brazil and Venezuela are out of reach.",
+   "socioeconomic": "The depositors are the unresolved part: a bank wound up overnight has frozen the savings of millions in a country of seven million, and nothing in the impeachment restores access or says who absorbs the loss."
+  },
+  {
+   "headline": "THE EUROPEAN COMMISSION TELLS TIKTOK ITS ‘FOR YOU’ FEED BREAKS THE LAW",
+   "breaking": false,
+   "summary": [
+    "The European Commission issued preliminary findings on Friday that TikTok’s “For You” feed breaches the Digital Services Act by drawing users into harmful “rabbit holes”. “This design can be harmful when such endless and repeated exposure involves, for example, content about sadness, isolation or body image,” it said, concluding that the effect falls hardest on minors and vulnerable adults and that TikTok’s mitigations, the “not interested” button among them, are insufficient. Officials said it was the first time EU regulators had directly challenged a major platform’s engagement-based recommender, and that they are looking beyond TikTok.",
+    "It is the third set of preliminary findings against the company this year, after February’s on addictive design and July’s on minors’ accounts. They are not final: TikTok may reply and offer remedies, and a confirmed breach carries a fine of up to 6 per cent of global annual turnover."
+   ],
+   "geopolitical": "Regulating the recommender rather than the content is the move platforms have most resisted; if it survives, it becomes the template for every jurisdiction with a minors’ online-safety bill, Singapore’s 2027 legislation included.",
+   "socioeconomic": "A fine is survivable; a ruling that engagement optimisation is itself unlawful is not, because it reaches the mechanism that sets the advertising price on roughly 150 million European users."
   }
  ],
  "singapore": [
   {
-   "headline": "SUBSIDISED GENETIC TESTING FOR INHERITED BREAST AND OVARIAN CANCER STARTS ON 1 DECEMBER",
-   "breaking": false,
+   "headline": "GRAB IS ORDERED TO STOP TESTING DRIVERLESS CARS AT JUNCTIONS AFTER ONE NEARLY HIT A GIRL IN PUNGGOL",
+   "breaking": true,
    "summary": [
-    "From 1 December the Health Ministry will apply means-tested subsidies of up to 70 per cent to genetic testing for hereditary breast and ovarian cancer, and to what follows a positive result — certain drug treatments and intensified surveillance. Testing is for citizens and permanent residents at cancer specialist outpatient clinics at the National Cancer Centre Singapore, the National University Cancer Institute Singapore and Tan Tock Seng Hospital, with extra help for Pioneer and Merdeka Generation seniors, and MediSave may offset the remainder.",
-    "Anyone who tests positive will have the test offered to immediate family members — the step that turns one diagnosis into a family’s worth of information. MOH expects about 2,000 people a year to benefit, patients and relatives together, and estimates one in 150 carry a mutation in genes such as BRCA1 or BRCA2. MediShield Life coverage is also being extended to risk-reducing mastectomy and to removal of the fallopian tubes and ovaries."
+    "The Land Transport Authority has directed Grab to pause autonomous-vehicle testing at junctions like the one in Punggol Field Walk where a girl stepping onto a crossing was nearly struck by an AV turning left on a green light. A video posted on Facebook on the night of 5 November, now past 260,000 views, shows the vehicle slowing but not stopping as she steps off the kerb, and a woman pulling her back. LTA, informed the same day, said preliminary data shows the vehicle had detected and was tracking both pedestrians, began braking and steered right when the child moved, after which the onboard safety operator took over. It will review whether the programmed response to that scenario should change.",
+    "The vehicle was testing a new route for an enhanced on-demand service in Punggol due to open to the wider public in the fourth quarter of this year. Grab, whose two public shuttle routes have run since 1 April with WeRide, said it is reviewing the incident with LTA. An AV hit a road divider on the same stretch in January."
    ],
-   "geopolitical": "Few health systems subsidise cascade testing — paying to test a carrier’s relatives rather than only the patient in front of them — and a super-aged state doing it at 70 per cent sets a reference point regional ministries will be asked about.",
-   "socioeconomic": "Cost has been the reason people decline a test whose result changes their surveillance for life; taking up to 70 per cent off moves spending from treating cancers to finding the people who will get them. The constraint shifts from price to counselling capacity at three hospitals."
+   "geopolitical": "Singapore sells itself as the place autonomous vehicles can deploy early because the regulator is close enough to intervene in days; a pause issued within a day of a video, with nobody hurt, is that claim being tested in public.",
+   "socioeconomic": "The expansion was weeks away, so the cost here is schedule: the service meant to show driverless shuttles doing ordinary Punggol journeys now waits on an investigation into the one manoeuvre those journeys mostly require."
   },
   {
-   "headline": "THE PAP CO-OPTS JEFFREY SIOW TO ITS CENTRAL EXECUTIVE COMMITTEE AND CHANGES NOTHING AT THE TOP",
-   "breaking": false,
+   "headline": "M1 AND DOCTOR ANYWHERE BOTH DISCLOSE DATA BREACHES IN ONE EVENING",
+   "breaking": true,
    "summary": [
-    "The 39th Central Executive Committee named its office holders and co-opted four members: Transport Minister Jeffrey Siow, Second Minister for Foreign Affairs and Home Affairs Sim Ann, labour chief Ng Chee Meng, and Serangoon branch chair Chan Hui Yuh, who stood in Aljunied GRC in GE2025. Siow and Chan are first-time members; Siow was not among those cadres elected on 25 October, when Tan See Leng and Zaqy Mohamad were co-opted. All eight top posts were retained: Desmond Lee as chairman, Masagos Zulkifli as vice-chairman, Lawrence Wong as secretary-general, Chan Chun Sing as assistant secretary-general.",
-    "Analysts read continuity rather than renewal. Eugene Tan noted the leadership echoed the cadres’ voting pattern, and that declining to name a second assistant secretary-general avoids speculation about who follows Gan Kim Yong as deputy prime minister. Felix Tan said renewal may be more gradual than expected, with younger leaders placed in party headquarters posts rather than senior CEC roles. The next internal elections fall in 2028."
+    "M1 said on 6 November that it was breached on 30 October, exposing customer names, identity card details, dates of birth, mobile numbers, e-mail addresses and home addresses. No payment card, banking or account-access data was taken, it said; the breach is contained and those affected will be written to, though it did not say how many. The Personal Data Protection Commission is investigating.",
+    "Hours later the telemedicine provider Doctor Anywhere disclosed a “malicious cyber incident involving unauthorised access by an unknown third party”, which it learned of on 29 October. The data taken includes names, e-mail addresses, identity card and passport numbers, dates of birth, emergency contacts and bank account details; passwords, card details and clinical records were not affected, and Ensign InfoSecurity validated its fixes on 30 October. Affected users, including clients of its corporate-benefits subsidiary Adept Health, are being notified, and the police and the PDPC have been told. Neither company has given a number."
    ],
-   "geopolitical": "Co-opting the transport and second foreign affairs ministers puts the two portfolios most exposed to the war — shipping and aviation, and diplomacy — inside the party’s decision-making body for the rest of the term.",
-   "socioeconomic": "Co-option is how the party seats a minister cadres did not elect, and holding the top eight unchanged a year after GE2025 signals stability over visible succession. The cost is that the generation after Wong is being trained at headquarters, out of public view."
+   "geopolitical": "Both breaches happened in late October and surfaced the same evening, which points less at one attacker than at a disclosure clock — and Singapore’s runs slower than the European and Australian regimes that force a notified figure within days.",
+   "socioeconomic": "Identity card numbers with addresses, and in the second case bank account details, are exactly what the scam syndicates working on Singaporeans buy, and neither firm can yet say how many people must now treat every unsolicited call as hostile."
   },
   {
-   "headline": "THE HAZE RESPONSE IS STOOD DOWN AFTER THE MONSOON TURNS",
+   "headline": "THE CAUSEWAY TAXI QUOTA REACHES 500 AND TWO MORE OPERATORS WIN CROSS-BORDER LICENCES",
    "breaking": false,
    "summary": [
-    "The National Environment Agency will end free N95 mask distribution through vending machines and community clubs at 6pm on Saturday 7 November, close the haze shelters at community clubs and designated Residents’ Committee and Residents’ Network centres, stop the daily evening updates, lift the measures for outdoor workers and stand down the inter-agency Haze Task Force. The haze subsidy scheme and the Public Health Preparedness Clinic scheme follow on 12 November.",
-    "The agency cited inter-monsoon conditions and more frequent showers, which have cut the risk of transboundary haze. At its peak the episode pushed emergency department attendances up about a fifth and polyclinic visits up a quarter, and more than 113,000 people used the S$10 subsidised consultation."
+    "From 16 November each country’s quota of cross-border taxis rises from 300 to 500, completing a target the two transport ministries set on 5 December 2025. CDG Zig and the Malaysian ride-hailing operator Kumpool will also be licensed to carry passengers across the Causeway, joining Grab, until now the only one allowed to. In a joint statement on 6 November the ministries called it a commitment to cross-border connectivity and to business and people-to-people ties.",
+    "The system was overhauled on 4 May, when the quota went from 200 to 300 with higher fixed fares, more designated pick-up points and permission to drop passengers anywhere in Singapore or Johor. A four-seater from Ban San Street Terminal in Bugis to Larkin Sentral in Johor Bahru, or anywhere within 35km of it, costs S$80, up from S$60; the return is RM240 (S$76), up from RM120."
    ],
-   "geopolitical": "The haze ended because the weather changed, not because anything upstream did — which is the argument for the two instruments Singapore spent the week building: the amended Transboundary Haze Pollution Act and the ASEAN haze centre it wants established under its 2027 chairmanship.",
-   "socioeconomic": "After 12 November a respiratory consultation costs full price again, and those who used the S$10 visit most — outdoor workers, the elderly, families with asthmatic children — feel the withdrawal. The scheme is cheap to restart, which is the case for having built it."
+   "geopolitical": "Road capacity is the binding constraint on the Johor-Singapore Special Economic Zone, and with the rail link now expected only in February 2027 the two governments are expanding the one cross-border mode they can change by issuing licences.",
+   "socioeconomic": "Two new operators against a fixed quota is competition on service, not price, because the fares are set — and at S$80 a four-seater this stays a business and group fare rather than a commuter one."
   },
   {
-   "headline": "SINGAPORE SETS A 40 PER CENT EMISSIONS FLOOR FOR THE GREEN JET FUEL IT BUYS",
+   "headline": "THE FIRST DATA CENTRE BUILT UNDER SINGAPORE’S STRICTER GREEN RULES OPENS IN JALAN TUKANG",
    "breaking": false,
    "summary": [
-    "The Civil Aviation Authority of Singapore will only buy sustainable aviation fuel that cuts lifecycle emissions by at least 40 per cent and is eligible under the International Civil Aviation Organization’s CORSIA scheme. Its first tender, for 20,000 to 30,000 tonnes, closes by mid-December; suppliers must be able to deliver through Changi’s existing fuel infrastructure, and blended deliveries are expected from June 2027.",
-    "The purchases are funded by the levy on departing tickets, which applies to tickets sold from 1 October for flights leaving from 1 January after being deferred this year when war-driven fuel prices spiked. The target is for sustainable fuel to make up 1 per cent of jet fuel uplifted at Changi and Seletar in 2027, rising to 3 to 5 per cent by 2030."
+    "Equinix opened SG6 in Jalan Tukang on 6 November, a nine-storey building costing US$290 million (S$370 million) that will hold about 1,550 server cabinets and 20 megawatts of computing capacity when complete. It is the first of the four projects chosen after the 2022 lifting of a three-year moratorium on new data centres to come into service; they were judged on sustainability, strategic contribution and economic value rather than scale.",
+    "SG6 is designed for a power usage effectiveness of 1.2 against the 1.3 ceiling in the government’s pilot call for applications, where a figure nearer 1 means less energy spent on anything but computing. Equinix chose efficient chillers, tuned pumps and right-sized cooling, runs the halls at about 27°C rather than the usual 25°C, and supports liquid cooling for dense chips. Senior Minister of State for Digital Development and Information Tan Kiat How said efficiency is what creates room for more digital activity despite the limits on land, power and water."
    ],
-   "geopolitical": "A hub that fuels much of the region’s long-haul flying has defined what counts as sustainable fuel in dollar terms, and a 40 per cent floor plus CORSIA eligibility will serve as the regional specification whether neighbouring regulators adopt it or not.",
-   "socioeconomic": "Passengers are already paying the levy; the floor decides whether they are buying emissions reductions or paperwork. At 1 per cent of uplift in 2027 the climate effect is small and the precedent is the asset."
+   "geopolitical": "Singapore is rationing a resource its regional rivals sell freely, and allocating it on a PUE figure rather than on megawatts is how it means to stay a hub without becoming where the cheapest compute lands.",
+   "socioeconomic": "Twenty megawatts is a small addition on purpose: each efficiency gain is electricity not bought on a grid whose tariff still follows imported gas, and in the week the global AI trade repriced, the constraint looks like a hedge."
   }
  ],
  "word": {
-  "word": "canard",
+  "word": "camarilla",
   "pos": "noun",
-  "pronunciation": "kuh-NARD",
-  "definition": "An unfounded rumour or false story, especially one spread to deceive or alarm.",
-  "etymology": "From French canard, “duck”, short for vendre un canard à moitié — “to half-sell a duck”, an old idiom for cheating someone.",
-  "example": "At least eighteen European flights were searched or diverted on Thursday over a canard, and every one of those costs fell on the airline rather than the caller."
+  "pronunciation": "kam-uh-RIL-uh",
+  "definition": "A small group of unofficial advisers around a ruler, wielding influence without formal accountability.",
+  "etymology": "From Spanish camarilla, “little chamber”, a diminutive of cámara (Latin camera); first used of the private circle of courtiers who governed around Ferdinand VII of Spain in the 1820s.",
+  "example": "Elevating Stephen Miller to chief of staff while three Justice Department divisions lost their heads in three days left the camarilla stronger and the departments weaker."
  }
 }
