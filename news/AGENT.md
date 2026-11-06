@@ -28,7 +28,9 @@ Coverage window: **yesterday 07:00 SGT → today 07:00 SGT** (exactly 24 hours).
 
 ## 1. Read state
 
-Read every file in `news/state/` (sections 1–9). Sections 1, 2, 9 are your task, format rules, and standing instructions. Sections 3–5 are current data, the dominant arc, and open threads. Sections 7–8 are the used word lists.
+Read the nine numbered files at the top level of `news/state/` (sections 1–9), in full. Sections 1, 2, 9 are your task, format rules, and standing instructions. Sections 3–5 are current data, the dominant arc, and open threads. Section 6 is the changelog. Sections 7–8 are the used word lists.
+
+**Do not read `news/state/archive/`.** It holds older state moved out by the pruning rule in step 5 and is history, not working memory. If you need one specific older fact (a figure from two months ago, say), search the archive for it with `grep` and read only the matching lines.
 
 ## 2. Already-published and gap check
 
@@ -55,7 +57,7 @@ Follow the search procedure in `news/state/2-format-rules.md`:
   - Mothership: `https://mothership.sg/feed/`
 
   Use the feeds to pick stories, then research the chosen stories more deeply via web search. If a feed fails, fall back to web search for that source (e.g. "Straits Times top stories <date>"). Only run fewer/no SG stories if feeds AND search both return nothing usable.
-- Check the no-repeat log in `5-open-threads.md`: no story repeated from a prior report unless there is a significant new development that day.
+- Check the no-repeat logs in `5-open-threads.md` (the last 14 days of them): no story repeated from a prior report unless there is a significant new development that day. If a candidate looks familiar but is not in those logs, check `news/reports/`.
 - Fewer stories beats padding — under 5 global or under 5 SG is fine.
 
 ## 4. Write the report
@@ -71,10 +73,32 @@ Produce `news/reports/<YYYY-MM-DD>.json` and copy it to `news/latest.json`. Matc
 ## 5. Update state (after writing the report, before committing)
 
 - `7-words-a-m.md` / `8-words-n-z.md`: append today's word with `[added <date>]`. Append-only — never remove or reorder existing words.
-- `4-dominant-arc.md`: fold in today's arc developments; keep it a current-state document, not a diff.
-- `5-open-threads.md`: add/resolve/update threads; replace the no-repeat log with today's covered items (keep the previous report's items too if the gap rule was applied).
-- `3-data-points.md`: update any figure with a newer sourced number; always include the source date.
-- `6-changelog.md`: note any judgment calls, ambiguities resolved, or corrections that should later fold into the rules.
+- `4-dominant-arc.md`: add today's arc developments as dated entries under "Recent developments". Update the "Open questions" list in place: add today's new questions at the bottom under today's date, delete any that were answered, and re-date an older question that a development moved. Do not write a separate daily "Open questions added" line, and do not re-list the standing questions.
+- `5-open-threads.md`: add a "Threads opened <date>" section for today's new threads, and end it with a "No-repeat log (covered <date>)" bullet listing what today's report covered. Resolve or update older threads where the news moved them.
+- `3-data-points.md`: add today's figures in a dated section; always include the source date. When a slow-moving Singapore indicator in the "Standing reference" table gets a newer sourced figure, replace that row in place.
+- `6-changelog.md`: add a dated section noting any judgment calls, ambiguities resolved, or corrections that should later fold into the rules.
+
+### Prune and archive (every run, after the updates above)
+
+The four working files above are read in full every morning, so they keep only recent material. Older material moves to `news/state/archive/`. **Nothing is ever deleted.**
+
+| Working file | Always keep | Keep while recent | Move to the archive |
+|---|---|---|---|
+| `3-data-points.md` | the Standing reference table | dated sections from the last **30 days** | dated sections older than 30 days |
+| `4-dominant-arc.md` | Background | entries from the last **14 days**; the Open questions list (rule below) | older entries; retired questions |
+| `5-open-threads.md` | the No-repeat log note; Long-running threads | "Threads opened" sections from the last **14 days**, each with its no-repeat log | older sections |
+| `6-changelog.md` | the Lessons list | entries from the last **14 days** | older entries |
+
+How to do it:
+
+- **Age** is today's date (step 0) minus the date in the section heading or entry label. On 6 Nov 2026, for example, the 14-day files keep entries dated 23 Oct onwards and `3-data-points.md` keeps sections dated 7 Oct onwards.
+- **Move, don't delete.** Cut the section or entry word for word and append it to the end of `news/state/archive/<file name without .md>-<YYYY-MM>.md`, where YYYY-MM is the month of the entry's own date (for example a 24 Oct arc entry goes to `archive/4-dominant-arc-2026-10.md`). If that file does not exist yet, create it with the same header as the existing archive files. Never edit or delete text already in the archive.
+- **Before archiving a thread section**, copy any thread whose watch item names a specific date still ahead (a vote, a deadline, a decision day) into "Long-running threads", word for word, prefixed with "(opened <date>)". Delete a long-running line once its date has passed or the thread resolves; the original is already in the archive.
+- **Before archiving a changelog entry**, if it records a lesson that still applies (a workaround, a source quirk, a parsing fix) and that lesson is not already in this runbook or `2-format-rules.md`, add it to "Lessons not yet folded into the rules" in one line. Keep that list to about ten lines.
+- **Open questions** each start with the date they were added or last moved. A question answered today is deleted from the list and appended to this month's arc archive with "answered <date>:" and the answer in one clause. A question whose date is more than 14 days old moves to the archive, unless it names a specific date that has not yet passed: mark it "(holds to <date>)" and move it once that date passes.
+- **Standing reference rows**: when you replace a row with a newer figure, append the old row to this month's data-points archive so the older figure is kept.
+- **Size check.** If any working file is still over about 175 KB after pruning, give its size in today's changelog entry so the owner can shorten that window. Do not change the windows yourself.
+- **Pruning is date-based, so a skipped run catches up the next day.** If time is short, or if publishing falls back to the GitHub API tools in step 6, skip the archive move for that run: publishing the report comes first.
 
 ## 6. Publish
 

@@ -67,4 +67,5 @@ tools/backup-repo.ps1 dated snapshots of this repo, plus the phone's data backup
 news/AGENT.md         runbook for the automated morning-briefing agent
 news/reports/         one JSON report per day (the app reads these directly)
 news/state/           the briefing agent's memory between runs
+news/state/archive/   older state moved out by the pruning rule (runs do not read it)
 ```
