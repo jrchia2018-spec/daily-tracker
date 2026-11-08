@@ -165,6 +165,32 @@ function migrate(s) {
     s.migrations.gram100 = true;
     changed = true;
   }
+
+  // The owner fell sick on 7 Nov 2026, back by Wed 11 Nov (see hm-plan.js).
+  // Their planner follows: that Sat's push and Sun's long run are dropped
+  // (missed sessions are never made up), Mon 9's push moves to Fri 13, and
+  // Tue 10's hard run goes (the 5k trial is now Tue 17, already a hard slot).
+  // Only a slot still holding exactly that session, with nothing logged that
+  // day, is touched; anything they've moved themselves stays theirs.
+  if (!s.migrations.sickNov2026) {
+    if (s.owner && s.plan) {
+      const logged = (key, kind) => (kind === 'push'
+        ? (s.gym || []).some(g => g.date === key && g.type === 'push')
+        : (s.runs || []).some(r => r.date === key));
+      const take = (key, slot, kind) => {
+        if (s.plan[key]?.[slot] !== kind || logged(key, kind)) return false;
+        delete s.plan[key][slot];
+        if (!Object.keys(s.plan[key]).length) delete s.plan[key];
+        return true;
+      };
+      take('2026-11-07', 'am', 'push');
+      take('2026-11-08', 'am', 'run-long');
+      if (take('2026-11-09', 'night', 'push') && !s.plan['2026-11-13']) s.plan['2026-11-13'] = { night: 'push' };
+      take('2026-11-10', 'am', 'run-hard');
+    }
+    s.migrations.sickNov2026 = true;
+    changed = true;
+  }
   return changed;
 }
 
