@@ -49,30 +49,6 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
 | Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
 
-## Global economic variables (8 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Saudi airport attacks | 3 killed, 36 injured across two airports: Abha Intl 6 Oct (2 dead — Moroccan and Algerian residents — 28 wounded), Riyadh King Khalid Intl 7 Oct (1 Sudanese resident dead, 8 wounded) | Saudi GACA, 7 Oct 2026 |
-| Mecca Joint Defence Agreement | signed Aug 2026 by Türkiye, Pakistan, Saudi Arabia; attack on one = attack on all; collective-defence implementation agreed 5 Oct; Turkish parliamentary ratification expected within days; Pakistani forces already stationed in the kingdom; 100+ US advisers on targeting | Reuters/CNN, 7 Oct 2026 |
-| Russia overnight barrage on Ukraine | 70 ballistic missiles and 46 jet-powered drones across 11 regions; >80% of drones downed (vs 50–60% recent average); ≥24 killed nationwide; Pryluky block: 19 dead incl. 5 children, ~30 flats destroyed, ~50 injured | Zelensky/Ukrainian air force, 7 Oct 2026 |
-| Irkutsk plague institute | monitoring complete for "over 90%" of the dead technician's contacts; ~5,000 laboratory tests, no dangerous pathogens found; WHO risk rating moved from "low" to undetermined | Rospotrebnadzor and WHO, 7 Oct 2026 |
-| Nobel chemistry prize 2026 | Henri B. Kagan (France) and Kenso Soai (Tokyo University of Science) for asymmetric catalysis and the spontaneous emergence of homochirality; 12m Swedish kronor (~US$1.2m) shared | Royal Swedish Academy of Sciences, 7 Oct 2026 |
-| US diesel, Los Angeles pumps | US$8.38 a US gallon ≈ S$2.84 a litre, against just over US$5 a gallon earlier in 2026 | CNN (LA-area stations), 7 Oct 2026 |
-| France education budget | €64bn (~S$96bn) in the budget proposal to be debated 12 Nov, a slight increase on last year; 488 detained at the 6 Oct school protests; 18 internal police investigations opened; >500 institutions shut 7 Oct, down 41% on 6 Oct | Lecornu/Nunez/French ministries, 7 Oct 2026 |
-| Thai egg exports | cut 30–50% until December after floods killed ~3m hens in Chachoengsao province | Thai Dept of Internal Trade, 6 Oct 2026 |
-| China–Laos facility | joint "support and training centre" opened 29 Sep at Ban Keun, ~50km north of Vientiane; 8 light attack aircraft (shape matching Hongdu JL-8) and 12+ military vehicles imaged; Laos operates 4 such aircraft per IISS | Vantor satellite imagery via Guardian/Reuters, 7 Oct 2026 |
-
-## Singapore data points (8 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Haze, 8 Oct | 24-hour PSI at 6am: west 161, central 147, east 128, south 120, north 113 — all five regions unhealthy, worst of the episode (central peaked 130 on 6 Oct, 102 on 4 Oct); 1-hour PM2.5 west hit 152 at 4pm 7 Oct, the season's first "high" band reading | NEA via CNA, 8 Oct 2026 |
-| Data centres | 70 in Singapore; about two-thirds cross the Digital Infrastructure Bill licensing thresholds (≥S$100m average annual revenue from Singapore users over 3 years, or ≥10MW electrical capacity); IMDA may fine up to S$1m or 10% of Singapore turnover | Parliament/IMDA, 7 Oct 2026 |
-| H1 2026 GDP growth, regional | Singapore 6.1%; Vietnam above 8%; Malaysia and Indonesia above 5%; ASEAN collectively the world's fourth-largest economy | Vivian Balakrishnan at Milken Institute Asia Summit, 7 Oct 2026 |
-| Egg supply | under 15% of Singapore's eggs come from Thailand; imports from more than 10 countries incl. Malaysia, Indonesia, Ukraine, plus local production; Cold Storage, Sheng Siong and FairPrice report no Thai fresh-egg sourcing or stable supply | SFA, 7 Oct 2026 |
-| COE premium, Cat A | S$130,001 at the close of the first October bidding round, down in most categories | LTA via Straits Times, 7 Oct 2026 |
-| MAS AI guidelines | published 7 Oct 2026, effective in phases from October 2027; further consultation on agentic AI planned for 2027 | MAS, 7 Oct 2026 |
-| SPED teacher attrition | about 1 in 10 special education teachers resigned 2021–2025, against about 1 in 50 mainstream educators | Desmond Lee in Parliament, 7 Oct 2026 |
-
 ## Global economic variables (9 Oct)
 | Indicator | Figure | Source |
 |---|---|---|
@@ -767,3 +743,28 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Equinix SG6 | Opened 6 Nov in Jalan Tukang; US$290m (S$370m); nine storeys; ~1,550 server cabinets and 20MW of capacity when fully built; designed PUE 1.2 against the 1.3 ceiling in the government's pilot Data Centre Call for Application; halls run at ~27°C vs ~25°C typical; liquid-cooling capable. First of four projects selected after the 2022 lifting of the three-year data-centre moratorium; selection criteria were sustainability, strategic contribution and economic value | Equinix and SMS Tan Kiat How via ST, 6 Nov 2026 |
 | Personal AI agent advisory (not run) | CSA, GovTech and IMDA joint advisory issued 6 Nov, five precautionary steps: connect only necessary apps; avoid giving agents access to banking, government and healthcare accounts; never share card details, passwords or OTPs; prefer one-time approval over "always allow"; set permissions in app settings rather than chat instructions. Issued after the Singapore launch of Meta Muse | CSA/GovTech/IMDA via ST, 6 Nov 2026 |
 | CSA control-systems warning (not run) | CSA urged Singapore firms to restrict web access to operational-technology control systems after the European supermarket refrigeration attacks | CSA via ST, 6 Nov 2026 |
+
+## Global economic variables (8 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| Brent crude, last settlement before the weekend | US$98.32/bbl (Jan contract), +3 cents; WTI Dec US$90.83, +31 cents; week about -13.2%, the biggest weekly fall since 2022. Week's Brent settles: Mon 104.77, Tue 103.60, Wed 94.62, Thu 98.29, Fri 98.32 | ICE/NYMEX via Bloomberg and Xinhua, 6 Nov 2026 |
+| Qatari Hormuz-for-inspections package | US lifts the naval blockade, ends oil sanctions and releases ~US$8bn of frozen Iranian assets; Iran admits IAEA inspectors to the struck nuclear facilities and reopens Hormuz on day two of a 48-hour sequence, on a route coordinated with Oman and jointly registered with the IMO; no agreement reached, no rejection by either side | Guardian, 7 Nov 2026 |
+| US Rewards for Justice offer on Iran | up to US$20m, plus possible relocation, for information on nuclear facilities, equipment, technologies and associated personnel including scientists; tips via Signal, Telegram and Tor; no criteria published | State Department and CENTCOM, 6-7 Nov 2026 |
+| Israeli government formation | factions holding 67 Knesset seats recommended Eisenkot, 46 Netanyahu, 7 recommended nobody; the 67 includes the Arab-led parties' record 19 seats, which Eisenkot has ruled out, leaving 48 of the 61 needed; Likud 27; 28 days extendable by up to 14; 3 days for Herzog to reassign on failure | President's Residence via Times of Israel and Washington Post, 7 Nov 2026 |
+| Lp(a)HORIZON, pelacarsen (Novartis) | Lp(a) lowered ~78%; primary endpoint 12.3% on drug vs 12.1% on placebo over 4.7 years in roughly 8,300 patients with established cardiovascular disease; adverse events more common on drug | Cleveland Clinic, AHA Scientific Sessions and NEJM, 7 Nov 2026 |
+| ZEUS, ziltivekimab (Novo Nordisk) | 3-point MACE in 561 patients (17.6%) vs 565 (17.7%); HR 0.99, 95% CI 0.88-1.11, against a design powered for a >=20% reduction; IL-6 and hsCRP fell as expected; serious infections higher on drug | AHA Scientific Sessions late-breaking science, 7 Nov 2026 |
+| Russian strike on Kyiv and region | 36 ballistic missiles, 4 intercepted; 172 drones, 149 downed; Northern Bridge over the Dnipro hit; power links carrying electricity from two nuclear plants into Kyiv damaged; facilities hit in at least 3 districts of Kyiv region | Ukrainian air force, energy ministry and Mayor Klitschko, 7 Nov 2026 |
+| New Zealand general election, preliminary count | National-ACT-NZ First on 67-68 of a projected 131 seats, majority 66; Opportunity Party ~6% of the party vote and 7 provisional seats; ~399,000-700,000 special votes uncounted, about 14% of the total; official result 27 Nov | NZ preliminary count via ABC, Al Jazeera and Newsweek, 7 Nov 2026 |
+| Krakow Main Market Square shooting | 6 killed, 15-16 injured; 3 relatives (two women, one man) found dead at the suspect's home; attacker aged 24-25, shot by police; defence minister called it "an act of terror" | Polish police and PM Tusk via CBS, NPR and CBC, 7 Nov 2026 |
+| Yemen, 24-hour toll | more than 50 killed: at least 25-27 killed and 30 wounded at Bani Hushaysh near Sanaa, which the Houthi-run health ministry blames on Saudi jets (al-Masirah put it at 22), and 30 in a market in government-held Taiz the day before; deadliest since fighting resumed in August 2026 | AP and Irish Times, 7 Nov 2026 |
+| DR Congo, ADF attack at Cantine-Aloya | at least 33 civilians killed ~50km west of Beni on the night of 5-6 Nov; health post burnt; 1 confirmed and 5 suspected Ebola patients fled, including 3 high-risk contacts; North Kivu carries half of all new infections; outbreak past 10,000 cases and 5,000 deaths | Reuters and local civil society via NYT, 7 Nov 2026 |
+| South Africa local elections, count | ANC 31.0-31.7%, DA 24.1-24.4%, MK 9.3-9.6% at 83-97% of voting districts, against the ANC's 45.59% in 2021; Johannesburg DA ~39-40% to ANC ~16.8%; Eastern Cape ANC 45.2%, down 16.8 points; IEC declaration set for 8 Nov, with two weeks from declaration to form coalitions | IEC counts via eNCA, Rateweb, CNBC Africa and Citizen, 6-7 Nov 2026 |
+
+## Singapore data points (8 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| OCBC Q3 2026 | net profit S$2.04bn, up 3% and ahead of estimates; low double-digit loan growth guided for the year; Great Eastern makes group earnings lumpier when bond markets move sharply | OCBC via CNA, 7 Nov 2026 |
+| DBS and UOB outlook | DBS says net interest income has bottomed, guides mid-single-digit total income growth for 2027, with its Q3 miss traced to markets trading income; UOB described as structurally squeezed, thinner margins with costs still rising | analysts via CNA, 7 Nov 2026 |
+| Migrant wage claims | 230+ workers, mostly Bangladeshi, interviewed by construction and process firms at MOM's Sengkang West onboarding centre on 6 Nov while October claims stay open; workers from Process Maintenance Solutions and Jurong Technical & Construction; nearly all of one firm's ~120 affected workers paid; MWC unpaid-wage reports doubled in the first 10 months of 2026 against the same period in both 2024 and 2025 | Straits Times and NTUC/MWC, 7 Nov 2026 |
+| GemBet shell-company network | one invoice billed S$80 for "pre-owned gaming equipment" from a Singapore-registered company at a Punggol residential address; PayNow routes payments through one of three such firms; 9 arrests to date; betting with an unlawful operator carries a fine up to S$10,000, 6 months' jail, or both | Straits Times investigation, 8 Nov 2026 |
+| SMRT escalator trial | month-long trial from 29 Oct at City Hall and Raffles Place; at City Hall, walking the right-hand side took ~20 seconds against ~30 standing; all 10 commuters interviewed preferred keeping left; TfL's three-week Holborn trial reported capacity gains up to 30% | SMRT and CNA observations 6-7 Nov, 7 Nov 2026 |

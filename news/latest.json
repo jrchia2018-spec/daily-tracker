@@ -1,112 +1,120 @@
 {
  "schema": 1,
- "date": "2026-11-07",
- "generatedAt": "2026-11-07T07:25:00+08:00",
+ "date": "2026-11-08",
+ "generatedAt": "2026-11-08T09:13:00+08:00",
  "coverage": {
-  "from": "2026-11-06T07:00:00+08:00",
-  "to": "2026-11-07T07:00:00+08:00",
-  "label": "Friday 6 November 2026, 0700 SGT → Saturday 7 November 2026, 0700 SGT"
+  "from": "2026-11-07T07:00:00+08:00",
+  "to": "2026-11-08T07:00:00+08:00",
+  "label": "Saturday 7 November 2026, 0700 SGT → Sunday 8 November 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "SATELLITE IMAGES SHOW IRAN REBUILDING ITS MISSILE SITES UNDERGROUND AS THE WAR’S POLITICAL BILL REACHES THE PENTAGON",
+   "headline": "QATAR PUTS NUCLEAR INSPECTIONS INTO THE HORMUZ BARGAIN AS WASHINGTON STRIKES AGAIN AND BIDS $20 MILLION FOR WHAT IT CALLS DESTROYED",
    "breaking": true,
    "summary": [
-    "November satellite imagery analysed for BBC Verify shows earthworks and new buildings at Garmdareh in Karaj and at Shahroud, and repairs or construction at at least 12 other military sites, among them missile complexes and airbases. The Karaj images appear to show “a new portal for an underground facility”, says Sam Lair of the Foreign Policy Research Institute; Janes reported tunnel entrances there, the completion of major work at Taleqan 2 inside the Parchin complex, and new roofs on destroyed buildings at the Kermanshah missile base. The firm MAIAR described a consistent pattern of moving infrastructure underground.",
-    "The war’s political cost landed on Defence Secretary Pete Hegseth, who posted a “We Stand, We Fight” video on Thursday as expectations rose that the lame-duck Republican House will vote to impeach him next week. Trump called his performance “fantastic” and said he was not considering dismissing him; almost no one else in Washington defended him publicly. Asked what he would do about Iran, Trump said only “you’ll know soon enough”. Tehran’s written proposal is still with Washington through Qatar, and a senior Iranian official repeated that substantive talks begin only once the seven conditions of 3 November are met; Mohsen Rezaei said after meeting Putin in Moscow that neither the strait nor the talks open first."
+    "The Qatari proposal now trades the Strait of Hormuz for the nuclear file rather than deferring it. Under terms reported on Saturday, Washington would lift the naval blockade, end oil sanctions and release about US$8 billion of frozen Iranian money; Tehran would admit IAEA inspectors to the nuclear facilities struck by US and Israeli bombs, and reopen the strait on the second day of a two-stage, 48-hour sequence, using a route coordinated with Oman and jointly registered with the International Maritime Organisation. No agreement has been reached, and neither government has rejected it.",
+    "Trump said the United States had carried out fresh \"minor strikes\" on Iran after two missiles hit Qeshm Island; Iranian state media said a US MQ-9 drone was shot down over the island on Saturday. The State Department's Rewards for Justice programme offered up to US$20 million for information on Iran's nuclear facilities, equipment and scientists — awkwardly beside Trump's claim that the programme was obliterated. Supreme Leader Mojtaba Khamenei warned on Wednesday against \"the slightest inclination towards submission\", and Mohsen Rezaei, whose seven conditions of 3 November remain unanswered, wrote that Iran had defeated Trump on the battlefield, in the strait and in Washington. Brent's last settlement before the weekend was US$98.32 and WTI US$90.83, closing a fall of about 13 per cent, the worst week since 2022."
    ],
-   "geopolitical": "Hardening the sites underground lowers what any further American strike can buy — an argument both against striking and for striking soon — and is the first physical evidence that Tehran is planning for a long war rather than a settlement.",
-   "socioeconomic": "A defence secretary facing an impeachment vote cannot credibly carry an escalation decision, so the practical effect is delay, and delay keeps the strait shut."
+   "geopolitical": "Deferring the nuclear file was the original MOU's central device; folding inspections of bombed sites into the price of the strait abandons it and makes verification the thing Iran sells — exactly what its hardliners call submission.",
+   "socioeconomic": "A 13 per cent weekly fall in crude the war itself created shows the market now treats a deal as likelier than another offensive — relief that reaches pumps and freight only if the second day arrives."
   },
   {
-   "headline": "TRUMP PROMISES A ‘BIG, BEAUTIFUL’ SECURITY DEAL FOR ALL OF EUROPE AFTER MEETING PUTIN’S ENVOY",
+   "headline": "HERZOG HANDS THE MANDATE TO EISENKOT, AND NETANYAHU LOSES THE FIRST ATTEMPT",
    "breaking": true,
    "summary": [
-    "Trump met Kirill Dmitriev, the sanctioned head of Russia’s sovereign wealth fund and Putin’s envoy, at a White House event Melania Trump organised to mark the Oleshky ceasefire, then promised an agreement that “is going to involve more than Ukraine, and I could even say it might involve all of Europe”. He gave no terms. Jared Kushner posted that “a broader European security architecture” was needed, with “greater military transparency” and “reciprocal measures to reduce escalation risks”, mentioning neither Russia’s invasion nor the hybrid attacks Europe blames on Moscow.",
-    "Several European officials told CNN they did not know what Trump was describing. Zelensky said he learned of the framework in a Thursday call with Kushner and Steve Witkoff preparing US-led Russia-Ukraine talks in Abu Dhabi next week: “For me, it’s not simple and it can be dangerous.” Ending the war comes first, he said, and security guarantees second. NATO confirmed it met the US, Ukraine and European counterparts in Brussels on Thursday before the trilateral, and Trump spoke to Chancellor Merz. The toll from Monday’s bombing of the Komyshuvakha aid point reached at least 53, and Zelensky warned that Russia is preparing another."
+    "President Isaac Herzog announced on Saturday that he will task Yashar leader Gadi Eisenkot, the former armed forces chief, with forming Israel's next government, with the formal ceremony on Sunday. Factions holding 67 Knesset seats recommended Eisenkot, 46 recommended Benjamin Netanyahu and one faction of seven recommended nobody. Eisenkot has 28 days, extendable by 14; if he fails, Herzog must decide within three days whether to pass the mandate on, probably to Netanyahu.",
+    "The arithmetic is worse than the recommendations suggest. The 67 includes the Arab-led parties, which won a record 19 seats on 27 October and with whom Eisenkot has ruled out sitting — leaving him 48, thirteen short. Neither Bennett's nor Liberman's party has committed to joining or guaranteeing confidence, though he could govern with fewer than 61 seats if he survives the vote. Netanyahu, who claims the mandate on Likud's 27 seats, had his fraud claims rejected by the election commission."
    ],
-   "geopolitical": "A deal negotiated over Europe’s head about Europe’s own security would give Moscow what it has sought since 1991, a say in NATO’s eastern posture; Kyiv’s objection is sequence, because guarantees agreed before a ceasefire are guarantees Russia can price into its next offensive.",
-   "socioeconomic": "Abu Dhabi now has the venue the Kremlin floated in October, so there is a fixed date for talks rather than a rolling one — and reconstruction finance, war-risk insurance and the grain trade all turn on whether it holds."
+   "geopolitical": "The prime minister who has run the war since February would be replaced mid-negotiation by the general who commanded the army before it, just as Washington weighs Tehran's terms — a change of Israeli signature on anything Qatar brokers.",
+   "socioeconomic": "Four weeks of caretaker government arrive with US$4 billion of American military aid due to stop on 31 December, so those budget decisions fall to whoever wins a confidence vote, not the outgoing cabinet."
   },
   {
-   "headline": "STEPHEN MILLER TAKES OVER THE WHITE HOUSE AS THREE JUSTICE DEPARTMENT OFFICIALS WALK OUT",
-   "breaking": false,
+   "headline": "RUSSIA TAKES OUT KYIV'S POWER AND WATER WITH 36 BALLISTIC MISSILES DAYS BEFORE THE ABU DHABI TALKS",
+   "breaking": true,
    "summary": [
-    "Trump confirmed on Friday that Stephen Miller, 41, his deputy chief of staff and the architect of the immigration crackdown, becomes White House chief of staff on Monday, and that Susie Wiles, 69, the first woman in the job, had been ousted after resigning on Thursday night. “Stephen’s been with me from the beginning. He gets it,” Trump said. Miller drove family separation and the travel ban on Muslim-majority countries in the first term and the push to end birthright citizenship in this one; more than a hundred congressional Democrats once signed a letter calling him a “documented white nationalist”. Chris Whipple, a historian of the office, called the appointment “almost a declaration of war by Trump”.",
-    "Three senior Justice Department officials have left since the midterms: Jason Reding Quinõnes, the US attorney in southern Florida who ran the “grand conspiracy” investigation into Trump’s opponents, pushed out under pressure from Attorney-General Todd Blanche; John Eisenberg of the National Security Division on Friday; and Harmeet Dhillon of the Civil Rights Division on Thursday. Officials said the firebrands had become liabilities now that Democrats hold oversight, and that successors will be hard to confirm in a Democratic Senate, leaving acting appointees to run the divisions for the rest of the term."
+    "Russia fired 36 ballistic missiles at Kyiv and the surrounding region overnight, of which Ukraine's air force intercepted four, alongside 172 drones, 149 of them downed. The energy ministry said strikes on facilities outside the capital, including the systems carrying power from two nuclear plants into the city, caused serious damage; the regional governor reported hits in at least three districts. Mayor Vitali Klitschko said missiles struck the Northern Bridge over the Dnipro and that heating and water were disrupted as well as electricity; water pressure was later stabilised. Moscow said it had targeted military-industrial, energy and transport infrastructure.",
+    "Zelensky said Russia was preparing for the trilateral talks by firing ballistic missiles at critical infrastructure. The US-led Russia-Ukraine round in Abu Dhabi is due next week, and the strike follows another large wave on 5 November that the grid operator called one of the year's worst."
    ],
-   "geopolitical": "Putting the administration’s most combative aide in the gatekeeper’s chair answers whether Trump would accommodate the new Congress, and allies will discount any American commitment that needs Senate ratification over the next two years.",
-   "socioeconomic": "Immigration enforcement is the policy Miller has always run personally, so those most exposed are the migrants and employers already living with the raids; at Justice, the prosecutions of Trump’s opponents have lost their drivers before they lost their indictments."
+   "geopolitical": "Four interceptions out of thirty-six is the operative fact of the Abu Dhabi round: Moscow can turn off a capital city on the eve of talks and Kyiv cannot stop it, which prices every guarantee Zelensky is offered.",
+   "socioeconomic": "Three million people in Kyiv enter the cold months with power, heat and water hanging on substations two nuclear plants feed through, on top of the scheduled blackouts already running nationwide."
   },
   {
-   "headline": "PARAGUAY’S SENATE REMOVES ITS PRESIDENT 44-1 OVER A COLLAPSED BANK",
-   "breaking": false,
+   "headline": "NEW ZEALAND'S ELECTION ENDS WITHOUT A WINNER AND A THREE-WEEK-OLD PARTY HOLDS THE BALANCE",
+   "breaking": true,
    "summary": [
-    "Paraguay’s Senate voted 44 of 45 on Friday to remove President Santiago Peña, and Vice-President Pedro Alliana was sworn in soon afterwards. Peña had resigned on Thursday after Ueno Bank, a private institution he has been linked to, was shut overnight in a solvency crisis that left millions of customers unable to reach their money; the lower chamber then voted unanimously to impeach him for “serious and systematic dereliction of duty”. The charges came from 35 opposition lawmakers and dissidents in his own right-wing Colorado Party, which holds majorities in both chambers.",
-    "The vote strips his parliamentary immunity, and the attorney-general has opened three criminal cases against him and other former officials over the bank. Lawmakers refused his request for 72 more hours to prepare a defence. Peña took office in August 2023 at 44 for a five-year term and was among Washington’s closest allies in the region; the State Department said the relationship remains strong."
+    "Neither bloc won Saturday's general election outright. The preliminary count put Christopher Luxon's National-led coalition with ACT and NZ First at 67 or 68 of a projected 131 seats, against a 66-seat majority, with Luxon calling it too close to call while claiming a pathway to govern. Qiulae Wong's Opportunity Party took about 6 per cent of the party vote and a provisional seven seats, enough to decide the government from outside either bloc.",
+    "Between roughly 399,000 and 700,000 special votes are uncounted, about 14 per cent of the total, and they have historically favoured the left. The official result is not due until 27 November, with the coalition governing as caretaker until then. Both major parties lost share to minor parties."
    ],
-   "geopolitical": "A Colorado supermajority removing its own president in two days shows that the party, not the presidency, is Paraguay’s durable institution — and it costs Washington its most reliable vote in South America while Brazil and Venezuela are out of reach.",
-   "socioeconomic": "The depositors are the unresolved part: a bank wound up overnight has frozen the savings of millions in a country of seven million, and nothing in the impeachment restores access or says who absorbs the loss."
+   "geopolitical": "A Five Eyes government sits in caretaker limbo for three weeks over AUKUS Pillar II and its China trade balance, with the deciding votes held by a party that has never sat in parliament.",
+   "socioeconomic": "Caretaker convention blocks any new fiscal decision in an economy that has been in and out of recession, and a hung parliament makes whatever budget follows a negotiated document rather than a programme."
   },
   {
-   "headline": "THE EUROPEAN COMMISSION TELLS TIKTOK ITS ‘FOR YOU’ FEED BREAKS THE LAW",
+   "headline": "A DRUG CUT INHERITED CHOLESTEROL RISK BY 78 PER CENT AND CHANGED NOTHING, COLLAPSING CARDIOLOGY'S BIGGEST BET",
    "breaking": false,
    "summary": [
-    "The European Commission issued preliminary findings on Friday that TikTok’s “For You” feed breaches the Digital Services Act by drawing users into harmful “rabbit holes”. “This design can be harmful when such endless and repeated exposure involves, for example, content about sadness, isolation or body image,” it said, concluding that the effect falls hardest on minors and vulnerable adults and that TikTok’s mitigations, the “not interested” button among them, are insufficient. Officials said it was the first time EU regulators had directly challenged a major platform’s engagement-based recommender, and that they are looking beyond TikTok.",
-    "It is the third set of preliminary findings against the company this year, after February’s on addictive design and July’s on minors’ accounts. They are not final: TikTok may reply and offer remedies, and a confirmed breach carries a fine of up to 6 per cent of global annual turnover."
+    "Novartis's pelacarsen lowered lipoprotein(a) by about 78 per cent over 4.7 years in the phase 3 Lp(a)HORIZON trial and did not reduce heart attacks, strokes or cardiovascular death: the primary endpoint occurred in 12.3 per cent of patients on the drug against 12.1 per cent on placebo, in roughly 8,300 people with existing cardiovascular disease and high Lp(a). Adverse events were more common on the drug. Cleveland Clinic ran the trial, presented at the American Heart Association's Scientific Sessions in Chicago and published in the New England Journal of Medicine; researchers described themselves as stunned.",
+    "It was the meeting's second failure. Novo Nordisk's ziltivekimab, an interleukin-6 inhibitor, also missed in the phase 3 ZEUS trial — major cardiovascular events in 17.6 per cent against 17.7 per cent on placebo, a hazard ratio of 0.99, despite confirmed falls in IL-6 and hsCRP — with more serious infections on the drug. Lp(a) is genetically determined, unaffected by statins and raised in a fifth of the population; Amgen, Eli Lilly and Merck still have outcome trials running."
    ],
-   "geopolitical": "Regulating the recommender rather than the content is the move platforms have most resisted; if it survives, it becomes the template for every jurisdiction with a minors’ online-safety bill, Singapore’s 2027 legislation included.",
-   "socioeconomic": "A fine is survivable; a ruling that engagement optimisation is itself unlawful is not, because it reaches the mechanism that sets the advertising price on roughly 150 million European users."
+   "geopolitical": "Two decades of genetic epidemiology pointed at Lp(a) and inflammation as the next targets after LDL; both hypotheses failed on the same stage in one week, resetting what regulators and national screening programmes can be asked to fund.",
+   "socioeconomic": "Lowering a number in the blood is not the same as preventing an event, and the people who feel it are the one in five adults told an inherited risk would soon be treatable, who now have statins and blood-pressure control and nothing else."
   }
  ],
  "singapore": [
   {
-   "headline": "GRAB IS ORDERED TO STOP TESTING DRIVERLESS CARS AT JUNCTIONS AFTER ONE NEARLY HIT A GIRL IN PUNGGOL",
-   "breaking": true,
-   "summary": [
-    "The Land Transport Authority has directed Grab to pause autonomous-vehicle testing at junctions like the one in Punggol Field Walk where a girl stepping onto a crossing was nearly struck by an AV turning left on a green light. A video posted on Facebook on the night of 5 November, now past 260,000 views, shows the vehicle slowing but not stopping as she steps off the kerb, and a woman pulling her back. LTA, informed the same day, said preliminary data shows the vehicle had detected and was tracking both pedestrians, began braking and steered right when the child moved, after which the onboard safety operator took over. It will review whether the programmed response to that scenario should change.",
-    "The vehicle was testing a new route for an enhanced on-demand service in Punggol due to open to the wider public in the fourth quarter of this year. Grab, whose two public shuttle routes have run since 1 April with WeRide, said it is reviewing the incident with LTA. An AV hit a road divider on the same stretch in January."
-   ],
-   "geopolitical": "Singapore sells itself as the place autonomous vehicles can deploy early because the regulator is close enough to intervene in days; a pause issued within a day of a video, with nobody hurt, is that claim being tested in public.",
-   "socioeconomic": "The expansion was weeks away, so the cost here is schedule: the service meant to show driverless shuttles doing ordinary Punggol journeys now waits on an investigation into the one manoeuvre those journeys mostly require."
-  },
-  {
-   "headline": "M1 AND DOCTOR ANYWHERE BOTH DISCLOSE DATA BREACHES IN ONE EVENING",
-   "breaking": true,
-   "summary": [
-    "M1 said on 6 November that it was breached on 30 October, exposing customer names, identity card details, dates of birth, mobile numbers, e-mail addresses and home addresses. No payment card, banking or account-access data was taken, it said; the breach is contained and those affected will be written to, though it did not say how many. The Personal Data Protection Commission is investigating.",
-    "Hours later the telemedicine provider Doctor Anywhere disclosed a “malicious cyber incident involving unauthorised access by an unknown third party”, which it learned of on 29 October. The data taken includes names, e-mail addresses, identity card and passport numbers, dates of birth, emergency contacts and bank account details; passwords, card details and clinical records were not affected, and Ensign InfoSecurity validated its fixes on 30 October. Affected users, including clients of its corporate-benefits subsidiary Adept Health, are being notified, and the police and the PDPC have been told. Neither company has given a number."
-   ],
-   "geopolitical": "Both breaches happened in late October and surfaced the same evening, which points less at one attacker than at a disclosure clock — and Singapore’s runs slower than the European and Australian regimes that force a notified figure within days.",
-   "socioeconomic": "Identity card numbers with addresses, and in the second case bank account details, are exactly what the scam syndicates working on Singaporeans buy, and neither firm can yet say how many people must now treat every unsolicited call as hostile."
-  },
-  {
-   "headline": "THE CAUSEWAY TAXI QUOTA REACHES 500 AND TWO MORE OPERATORS WIN CROSS-BORDER LICENCES",
+   "headline": "SM LEE TELLS AUSTRALIA TO BUY ITSELF ROOM BY GOING DEEPER INTO SOUTHEAST ASIA, NOT BY PICKING A SIDE",
    "breaking": false,
    "summary": [
-    "From 16 November each country’s quota of cross-border taxis rises from 300 to 500, completing a target the two transport ministries set on 5 December 2025. CDG Zig and the Malaysian ride-hailing operator Kumpool will also be licensed to carry passengers across the Causeway, joining Grab, until now the only one allowed to. In a joint statement on 6 November the ministries called it a commitment to cross-border connectivity and to business and people-to-people ties.",
-    "The system was overhauled on 4 May, when the quota went from 200 to 300 with higher fixed fares, more designated pick-up points and permission to drop passengers anywhere in Singapore or Johor. A four-seater from Ban San Street Terminal in Bugis to Larkin Sentral in Johor Bahru, or anywhere within 35km of it, costs S$80, up from S$60; the return is RM240 (S$76), up from RM120."
+    "Delivering the ABC's Boyer Lecture, \"Engaging Asia from Down Under\", Senior Minister Lee Hsien Loong argued that Australia should deepen its economic, security and people-to-people ties with Southeast Asia to strengthen its own competitiveness and resilience in a fragmented world, and that doing so would give it more room to pursue its own interests amid US-China rivalry. He urged Australian businesses to invest more in ASEAN economies, said Australia should maintain its defence presence in the region, and pressed it to keep contact and pragmatic working arrangements with countries where relations are more complicated.",
+    "He framed the aim as helping countries \"see each other as partners in development, and not solely through the prism of US-China rivalry\". The lecture closes the ABC's 2026 series on Australia-Asia engagement."
    ],
-   "geopolitical": "Road capacity is the binding constraint on the Johor-Singapore Special Economic Zone, and with the rail link now expected only in February 2027 the two governments are expanding the one cross-border mode they can change by issuing licences.",
-   "socioeconomic": "Two new operators against a fixed quota is competition on service, not price, because the fares are set — and at S$80 a four-seater this stays a business and group fare rather than a commuter one."
+   "geopolitical": "Singapore is making the hedging case to the ally most exposed to it: an Australia with its own stake in Southeast Asia is a second voice against regional alignment choices, worth more to Singapore than any bilateral agreement.",
+   "socioeconomic": "Australian capital is under-invested in ASEAN relative to its trade with China, and the practical ask — direct investment and a sustained defence presence — pays Singapore whichever way Washington turns after January."
   },
   {
-   "headline": "THE FIRST DATA CENTRE BUILT UNDER SINGAPORE’S STRICTER GREEN RULES OPENS IN JALAN TUKANG",
+   "headline": "SINGAPORE'S BANKS ARE TOLD THE EASY YEARS ARE OVER AND 2027 WILL HAVE TO BE EARNED",
    "breaking": false,
    "summary": [
-    "Equinix opened SG6 in Jalan Tukang on 6 November, a nine-storey building costing US$290 million (S$370 million) that will hold about 1,550 server cabinets and 20 megawatts of computing capacity when complete. It is the first of the four projects chosen after the 2022 lifting of a three-year moratorium on new data centres to come into service; they were judged on sustainability, strategic contribution and economic value rather than scale.",
-    "SG6 is designed for a power usage effectiveness of 1.2 against the 1.3 ceiling in the government’s pilot call for applications, where a figure nearer 1 means less energy spent on anything but computing. Equinix chose efficient chillers, tuned pumps and right-sized cooling, runs the halls at about 27°C rather than the usual 25°C, and supports liquid cooling for dense chips. Senior Minister of State for Digital Development and Information Tan Kiat How said efficiency is what creates room for more digital activity despite the limits on land, power and water."
+    "Analysts told CNA that the three local banks face a tougher 2027 despite the prospect of higher interest rates, because the boom years did the work for them and growth must now be generated internally. DBS was called the steadiest: management says net interest income has bottomed and expects mid-single-digit total income growth next year, with its third-quarter miss traced to markets trading income. UOB's difficulties were described as structural, with thinner margins and costs still rising. OCBC posted third-quarter net profit of S$2.04 billion, up 3 per cent and ahead of estimates, expects low double-digit loan growth this year and says it is well placed for higher rates, though Great Eastern makes group earnings lumpier when bond markets move sharply. The assessment lands a day after the AI sell-off hit Singapore tech stocks, read as a correction rather than the end of the boom."
    ],
-   "geopolitical": "Singapore is rationing a resource its regional rivals sell freely, and allocating it on a PUE figure rather than on megawatts is how it means to stay a hub without becoming where the cheapest compute lands.",
-   "socioeconomic": "Twenty megawatts is a small addition on purpose: each efficiency gain is electricity not bought on a grid whose tariff still follows imported gas, and in the week the global AI trade repriced, the constraint looks like a hedge."
+   "geopolitical": "The banks' margin story now runs through the Middle East: the Bank of England raised rates this week citing conflict-driven energy costs, and that inflation path, not local loan demand, decides whether higher-for-longer helps or hurts them.",
+   "socioeconomic": "The three are over half the Straits Times Index and the core of most Singaporean portfolios and CPF equity exposure, so a year of manufacturing growth rather than collecting it is a dividend question for households."
+  },
+  {
+   "headline": "AN OFFSHORE BETTING SITE IS STILL RENTING SINGAPORE SHELL COMPANIES AND BILLING THE BETS AS SECOND-HAND GAMING GEAR",
+   "breaking": false,
+   "summary": [
+    "A Straits Times investigation found that Curacao-based GemBet still recruits people in Singapore to register shell companies and issue fake invoices so that bets look like ordinary purchases, four months after the arrangement was first exposed. One invoice billed S$80 for pre-owned gaming equipment from a Singapore-registered company operating out of a Punggol residential address; choosing PayNow routes a bettor's money through one of these firms rather than to the site. Nine people have previously been arrested over the site. GemBet, said to be run by a syndicate with links to Cyprus, calls the local firms legitimate affiliates and will not say how much of its money comes from Singapore.",
+    "Singapore Pools is the only licensed operator for lotteries, sports betting and remote gambling; betting with an unlawful operator carries a fine of up to S$10,000, six months' jail, or both."
+   ],
+   "geopolitical": "The structure works because a Singapore company registration and a PayNow handle read abroad as evidence of legitimacy, making the ease of incorporating here an export of reputational cover rather than an enforcement problem.",
+   "socioeconomic": "The people exposed are the mules, who sign for companies and invoices in their own names for a fee while the operator keeps its distance; nine arrests have not changed the economics of recruiting the next ten."
+  },
+  {
+   "headline": "UNPAID WORKERS ARE MATCHED WITH NEW EMPLOYERS WHILE THEIR CLAIMS ARE STILL OPEN, AND THE CASELOAD HAS DOUBLED",
+   "breaking": false,
+   "summary": [
+    "More than 230 migrant workers, mostly Bangladeshi, were interviewed by construction and process firms at a job-matching session on 6 November at the Manpower Ministry's onboarding centre in Sengkang West, where they are temporarily housed while their October salary claims remain pending. They come from two process-sector companies under ministry investigation for unpaid wages, Process Maintenance Solutions and Jurong Technical & Construction. Some have been paid: a source at one firm said nearly all of its roughly 120 affected workers had received their back pay. The Migrant Workers' Centre would not say where the claims stand.",
+    "The number of workers reporting unpaid wages to the centre has doubled in the first ten months of 2026 against the same period in both 2024 and 2025. NTUC and the centre have rolled out financial aid alongside the job support."
+   ],
+   "geopolitical": "Bangladesh's labour-sending ministries watch these cases closely because recruitment debt is incurred before departure, and a doubling of wage claims in Singapore is an argument in every bilateral talk on placement fees.",
+   "socioeconomic": "Housing claimants at a government centre and finding them employers before the claims resolve keeps men earning instead of waiting, but the test is whether the two firms pay, not whether the workers are re-employed."
+  },
+  {
+   "headline": "SMRT ASKS COMMUTERS TO STAND ON BOTH SIDES OF THE ESCALATOR AND FINDS THEM UNWILLING",
+   "breaking": false,
+   "summary": [
+    "A month-long trial that began on 29 October at City Hall and Raffles Place asks commuters to stand on both sides of escalators and hold the handrail, announced over station speakers and on new signage. SMRT Trains president Lam Sheau Kai said the aim is to cut slips, trips and falls while testing whether filling both sides of each step uses capacity more efficiently. Observations on 6 and 7 November found most commuters still standing on the left and walking up on the right, and all ten commuters CNA interviewed preferred the existing convention: at City Hall those who walked took about 20 seconds against 30 for those standing. Transport for London's comparable Holborn trial reported capacity gains of up to 30 per cent but could not stop passengers drifting back to a walking lane."
+   ],
+   "geopolitical": "Not foreign policy, but a clean test of persuasion in a system that usually legislates — the instrument Singapore is relying on for social-media use and sodium labelling, measured against a thirty-year habit.",
+   "socioeconomic": "Escalator falls are a rising cost in a country that entered its super-aged year in 2026, and the trial sets one commuter's 10 seconds against the station's throughput."
   }
  ],
  "word": {
-  "word": "camarilla",
+  "word": "epiphenomenon",
   "pos": "noun",
-  "pronunciation": "kam-uh-RIL-uh",
-  "definition": "A small group of unofficial advisers around a ruler, wielding influence without formal accountability.",
-  "etymology": "From Spanish camarilla, “little chamber”, a diminutive of cámara (Latin camera); first used of the private circle of courtiers who governed around Ferdinand VII of Spain in the 1820s.",
-  "example": "Elevating Stephen Miller to chief of staff while three Justice Department divisions lost their heads in three days left the camarilla stronger and the departments weaker."
+  "pronunciation": "ep-ee-fuh-NOM-uh-non",
+  "definition": "A secondary phenomenon that accompanies or arises from another process without causing it.",
+  "etymology": "From Greek epi-, \"upon, in addition\", and phainomenon, \"thing appearing\", from phainesthai, \"to appear\"; adopted in nineteenth-century medicine for symptoms incidental to a disease, and later in philosophy of mind.",
+  "example": "Cutting lipoprotein(a) by 78 per cent without preventing a single extra heart attack suggests the particle may be an epiphenomenon of cardiovascular risk rather than a cause of it."
  }
 }
