@@ -1,0 +1,115 @@
+{
+ "schema": 1,
+ "date": "2026-11-09",
+ "generatedAt": "2026-11-09T09:35:00+08:00",
+ "coverage": {
+  "from": "2026-11-08T07:00:00+08:00",
+  "to": "2026-11-09T07:00:00+08:00",
+  "label": "Sunday 8 November 2026, 0700 SGT → Monday 9 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "TRUMP CALLS A SECOND IRAN CAMPAIGN “HIGHLY UNLIKELY” AS RUBIO SAYS THE TALKS ARE GOING NOWHERE",
+   "breaking": true,
+   "summary": [
+    "Trump said on Sunday that sending American forces back to war with Iran is “highly unlikely” so long as the talks on Tehran's nuclear programme and the reopening of Hormuz progress, repeating it five times in a 20-minute CNN interview. “It depends on whether or not they sign a very strong agreement,” he said, citing 301 per cent Iranian inflation. He also said three carriers are in the region “fully locked and loaded”, Iran's air defences are destroyed, and 38 bridges and power plants have been identified that could be dropped “in literally one hour”. Iran retains 10 per cent of its missile capacity and 15 per cent of its drones, he said.",
+    "Marco Rubio, leaving for the G7 foreign ministers' meeting in Paris, read the same talks the other way: not “on the verge of a breakthrough”, and unproductive “because the Iranian demands are simply not just unacceptable, but in some cases outrageous and ridiculous”. Washington's week went the other way too: the US$20 million reward for information on the nuclear programme, and a new task force against Tehran's overland weapons routes.",
+    "Houthi missiles damaged an Aramco administrative building in Riyadh's King Abdullah Financial District on Sunday; the energy ministry reported falling shrapnel and no casualties, windows were blown out across several floors, and the coalition said it destroyed two cruise and two ballistic missiles over the city. It followed the Houthi health ministry's claim that Saudi airstrikes killed at least 33 people near Sanaa. Iran separately hanged three men — Hassan Dioband, Hamid Kazemi and Reza Zanganeh — over an attack on a Karaj electricity substation during January's protests, convicted of cooperating with the United States and Israel."
+   ],
+   "geopolitical": "A reassurance good for one Sunday, delivered with a disclosed target list and three carriers in position, is not de-escalation: what moved this week was the pressure, not the price.",
+   "socioeconomic": "The capacity and inflation figures are the argument that waiting costs Iran more than America, but nothing changes for shippers while Hormuz stays contested."
+  },
+  {
+   "headline": "A DRONE RETURNS TO THE ZAPORIZHZHIA AID SITE AS RUSSIA'S TARGET BECOMES THE UKRAINIAN ECONOMY",
+   "breaking": true,
+   "summary": [
+    "The school in Komyshuvakha used as a shelter and aid centre, bombed on Monday with a toll now at least 55, was struck again on Sunday by a drone while crews were still searching the rubble — the second attack on the same rescue operation in a week.",
+    "Russian strikes rose from 3,650 in January to 5,532 in October on ACLED's count, with more than 2,700 civilians killed in 2026, the highest since the war's opening months. Steel plants at Kryvyi Rih and Zaporizhzhia were hit between August and October and shut down, Kryvyi Rih warning of “serious socio-economic consequences”; Ports on the Black Sea and Danube, railways, warehouses and shops are now routine targets, and daylight strikes trigger alerts that stop businesses and offices operating legally. Putin, said John Lough of the New Eurasian Strategies Centre, cannot win in Donbas after a relatively successful Ukrainian summer and “has concluded the only way to break that is to actually break the economy”. Ukraine's strikes inside Russia reached 2,302 in October.",
+    "A United Nations panel concluded last week that Russia's deliberate attacks on civilian energy infrastructure in the 2025-2026 winter were war crimes and crimes against humanity. The United States mediates fresh talks in Abu Dhabi next week."
+   ],
+   "geopolitical": "Striking the same site while rescuers worked, days before an American-brokered round, rules out any reading of the aid-point bombing as an error.",
+   "socioeconomic": "Destroying the tax base rather than the trench line shifts the cost of Ukraine's survival onto European budgets, the part allied capitals have been slowest to price."
+  },
+  {
+   "headline": "A HOUSE VOTE TO IMPEACH THE DEFENCE SECRETARY OVER THE IRAN WAR COULD COME WITHIN DAYS",
+   "breaking": true,
+   "summary": [
+    "Hakeem Jeffries, the House minority leader and presumptive majority leader from January, declared himself a “hard yes” on impeaching Pete Hegseth on Sunday: the defence secretary “has abused his power, undermined our national security, and engineered this reckless and costly war of choice in Iran, which has skyrocketed prices on the American people”. The vehicle is a Republican one. Thomas Massie of Kentucky, an outgoing congressman, plans to reintroduce his resolution as early as Monday with eight articles, among them violating the War Powers Resolution of 1973. Democrats settle their position on Tuesday, when the House returns for the first time since the midterms.",
+    "Republican criticism has turned explicit since the election: one Republican close to the White House said he had been “either dishonest or incorrect” about timelines, goals and objectives from the beginning. Trump still refuses to replace him; Hegseth calls the articles “sham” and “the politics of personal destruction”.",
+    "Attorney-General Todd Blanche said “there could be” investigations of the Democrats preparing to conduct oversight, and Trump posted that “America took a giant step back in History” with the election result."
+   ],
+   "geopolitical": "Impeaching a sitting defence secretary in a lame-duck House run by his own party would put the conduct of the Iran war on the congressional record before January, with the man who would execute any new strike as the defendant.",
+   "socioeconomic": "The charge sheet is partly economic — that the war raised American prices — which makes the vote a referendum on the petrol pump as much as on the War Powers Resolution."
+  },
+  {
+   "headline": "THE ANC FALLS BELOW A THIRD AND TWO-THIRDS OF SOUTH AFRICA'S COUNCILS ARE LEFT HUNG",
+   "breaking": false,
+   "summary": [
+    "The Electoral Commission confirmed the final local-government results on Sunday evening after three days of counting. The African National Congress took 30.76 per cent and 3,246 council seats, down 14.83 points from the 45.59 per cent of 2021; the Democratic Alliance 24.64 per cent and 1,695 seats, uMkhonto weSizwe about 9.7 per cent and 785, ActionSA 5.67 per cent and 313, on turnout of about 52 per cent.",
+    "The structural result is that 142 of the country's 213 municipal councils have no outright majority, against 70 in 2021. The DA finished ahead in Johannesburg on 34.79 per cent and Ekurhuleni on 30.68 per cent, and ActionSA strengthened in Tshwane. A revote was ordered at a station in Douglas, Northern Cape, after supporters stormed the counting centre and destroyed ballots; the elections were otherwise found credible."
+   ],
+   "geopolitical": "The party that ended apartheid is now one among several at every level of the state, and the bargaining model it accepted nationally in 2024 has been forced down to the councils that deliver services.",
+   "socioeconomic": "Water, electricity and refuse budgets in 142 councils will now be written by negotiation between parties with no shared programme, in a country where municipal failure is already the main cause of service collapse."
+  },
+  {
+   "headline": "POLAND CALLS THE KRAKÓW SHOOTING A TERRORIST OFFENCE AND LOOKS AT ITS OWN GUN LICENCES",
+   "breaking": false,
+   "summary": [
+    "The National Prosecutor's Office classified Saturday's attack on Kraków's Main Market Square as a terrorist offence on Sunday, prosecutor Tomasz Waszczuk saying the findings so far point to far-right motives. Six were killed in the square, among them a British man, and 15 to 17 wounded. Police confirmed the three bodies found at the suspect's home in Ostrowiec Świętokrzyski, about 150km away, as his parents and his 21-year-old sister, taking the toll to nine; six murder charges are being prepared and could rise to nine.",
+    "The suspect, 24, was shot by police and is in hospital under guard, not yet formally detained. He had no criminal record and held a firearms licence, and police say he probably used a weapon covered by it, reported as an AR-15. Two officers who detained him were wounded, one critically. In July the Supreme Audit Office flagged gaps in firearms oversight, including missing periodic medical and psychological checks for some permit holders; police record over a million registered civilian firearms and 50,709 new licences in 2025."
+   ],
+   "geopolitical": "A terrorist designation with a far-right motive puts the Polish services on ground German counter-terrorism has held since Hanau, in a country that has treated the threat as external.",
+   "socioeconomic": "The exposure is the permit, not the border: a licensed holder with no record using a legally held rifle is the case July's audit said the checks were missing."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "A SECOND DRIVERLESS OPERATOR IS PULLED OFF A PUNGGOL JUNCTION THREE DAYS AFTER THE FIRST",
+   "breaking": true,
+   "summary": [
+    "ComfortDelGro has been directed to suspend testing of U-turns for its autonomous vehicles at a junction in Punggol Field after a near-accident there on 5 November, which came to light when a dashcam video was posted on Facebook on 8 November. The footage shows it pulling out from the stop line into the path of the oncoming car filming it, both then slowing. The Land Transport Authority is investigating and told the company to pause U-turns at the junction as a precaution. The route was being tested for ComfortDelGro's enhanced on-demand service, not its existing shuttle route; its vehicles are built by the Chinese firm Pony.ai, and it runs one of three driverless routes in Punggol.",
+    "The same day produced the earlier incident in which a Grab vehicle almost hit a girl while turning left at Punggol Field Walk, nearby, after which Grab was told to pause testing at certain junctions. ComfortDelGro said it is examining the circumstances with its technology partner and the authority."
+   ],
+   "geopolitical": "Two of the three operators in Singapore's showcase deployment have been halted at junctions within three days, and regional regulators weighing Chinese-built driverless fleets will read the LTA's response, not the operators'.",
+   "socioeconomic": "Both pauses were triggered by members of the public posting video rather than by operator reporting, and both hit routes meant for the on-demand expansion due to open this quarter."
+  },
+  {
+   "headline": "GRACE FU SAYS THE MIDDLE EAST WAR HAS MADE COP31 HARDER, AND GOES TO ANTALYA WITHOUT A CO-CHAIR'S SEAT",
+   "breaking": false,
+   "summary": [
+    "Before flying to Antalya for the 31st United Nations climate conference, which runs from Monday to 20 November, Sustainability and Environment Minister Grace Fu said the talks will be tougher than in previous years. “The world is more fragmented than before... We are talking about the Middle East crisis that has caused inflation around the world,” she said, with governments focused on social unrest, inflation, jobs and security. Energy security pulls countries in opposite directions — some reviving or extending coal plants, others accelerating renewables — and talks on moving away from fossil fuels will be “as difficult, if not more difficult, than before”.",
+    "Fu has co-chaired negotiations at previous conferences but will not this year, leaving her more time to put Singapore's position; its country pavilion is meant to start projects rather than restate roadmaps. The UN Environment Programme warned this year that warming is set to exceed the Paris Agreement's 1.5C threshold; the United States formally left that agreement on 27 January 2026, though US lawmakers will attend."
+   ],
+   "geopolitical": "Giving up the co-chair's chair moves Singapore from broker to advocate at the one forum where a small state has had influence out of proportion to its emissions, in the year the 1.5C limit goes.",
+   "socioeconomic": "Fu is naming the channel the Bank of England cited raising Bank Rate to 4 per cent last week: war-driven energy costs now crowd out climate spending inside national budgets, not only at the talks."
+  },
+  {
+   "headline": "THIS YEAR'S HAZE COST SINGAPORE S$2.32 BILLION — MORE THAN 2015, DESPITE FEWER HAZY DAYS",
+   "breaking": false,
+   "summary": [
+    "The 2026 haze, the worst in more than a decade, cost the economy S$2.32 billion as at 31 October, about 4 per cent more than 2015, on a preliminary estimate by Nanyang Technological University's Euston Quah and the Singapore University of Social Sciences' Eugene Or. They used the peer-reviewed framework Quah built in 2015 with NTU's Chia Wai Mun and SUSS's Tan Tsiat Siong, which put that year's cost at S$1.83 billion, or S$2.23 billion in September 2026 prices. It is larger despite fewer hazy days and a lower average Pollutant Standards Index reading: a bigger population, higher incomes and visitor spending and updated health data raised the health burden and tourism losses, while lost time and mask spending fell.",
+    "The scale “strengthens the case for funding prevention alongside tougher penalties”, they argue, floating a “victim-pays” complement in which affected countries help finance alternatives to burning: paying less than the damage avoided leaves them better off, with responsible firms still held accountable. But “a S$2.32 billion haze bill does not automatically justify a S$2.32 billion prevention budget”, they wrote, suggesting phased funding tied to results."
+   ],
+   "geopolitical": "A costed number is what the Transboundary Haze Pollution Act cannot supply: enforcement stops at firms Singapore can reach, while cost-sharing talks with Jakarta need a damage figure.",
+   "socioeconomic": "The bill rose because the country is richer and more crowded than in 2015, so the same smoke costs more every time it returns — and the money goes on health and tourism, not masks."
+  },
+  {
+   "headline": "IMH BECOMES A NATIONAL CENTRE IN APRIL, WITH 100-BED WARDS AT THREE REGIONAL HOSPITALS BY THE EARLY 2030s",
+   "breaking": false,
+   "summary": [
+    "The Institute of Mental Health will be renamed the National Centre for Mental Health in April 2027, and chief executive Jamie Mervyn Lim, in his first interview since taking the job nine months ago, said this is not the same work under a different banner. The mandate expands to coordinating care across the health clusters, government agencies and community partners under the national framework's four tiers, from mental wellness to high-acuity care. IMH is the country's only psychiatric hospital while community provision is scattered across the social service sector; without tiering, he said, it becomes the only door people can think of. An office set up on 1 October pulls community programmes, partnerships and outreach into one team.",
+    "By the early 2030s Changi General, Woodlands and Alexandra hospitals will each open psychiatric wards of around 100 beds, freeing IMH for the most complex cases across ten areas including addiction medicine, crisis de-escalation and forensic psychiatry; its own redevelopment runs in phases to 2040."
+   ],
+   "geopolitical": "Designating a national centre rather than adding beds in one place is the model Singapore used for cancer and heart disease, and the question every regional system with a single asylum-era institution now faces.",
+   "socioeconomic": "About 300 psychiatric beds across three regional hospitals is the first hard number attached to distributed care, arriving in the country's first super-aged year, with suicide still the leading cause of death for those aged 10 to 29."
+  }
+ ],
+ "word": {
+  "word": "temporise",
+  "pos": "verb",
+  "pronunciation": "TEM-puh-ryze",
+  "definition": "To act evasively in order to gain time, avoid commitment or put off a decision.",
+  "etymology": "From French temporiser, via medieval Latin temporizare, “to pass one's time”, from Latin tempus, tempor-, “time”; in English from the sixteenth century, first meaning to comply with the times.",
+  "example": "To say five times that a second campaign is “highly unlikely” while three carriers sit locked and loaded and the Secretary of State calls Tehran's demands ridiculous is to temporise, not to decide."
+ }
+}
