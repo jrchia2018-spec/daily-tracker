@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "date": "2026-11-10",
+ "generatedAt": "2026-11-10T07:40:00+08:00",
+ "coverage": {
+  "from": "2026-11-09T07:00:00+08:00",
+  "to": "2026-11-10T07:00:00+08:00",
+  "label": "Monday 9 November 2026, 0700 SGT → Tuesday 10 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "THE FBI OPENS AN INQUIRY INTO NVIDIA’S CHIEF EXECUTIVE AND US$192 BILLION LEAVES THE COMPANY",
+   "breaking": true,
+   "summary": [
+    "Trump said in the White House briefing room on Monday that the FBI is examining Jensen Huang’s affair with Alice Huang, an executive of the Singapore-registered firm Megaspeed whom US officials suspect of feeding intelligence to China and helping smuggle advanced AI chips there. Huang denied knowing she was an operative when the two spoke that day, Trump said — “and I really believe him” — and he had not known of the concerns when he took Huang to Beijing in the spring. Huang, 63, told staff he had been “unfaithful”; the board has put independent directors and outside counsel on reports he was the “target of a foreign intelligence effort”, while saying it has “no reason to believe that either national security or NVIDIA secrets were compromised”.",
+    "Nvidia fell as much as 8.8 per cent and closed down about 4.3, erasing roughly US$192 billion, on a day the S&P 500 rose 2.35 per cent for its best session since April. The stock is 25 per cent below last month’s peak and about 7 per cent of the index. The New York Times reported that Commerce’s Bureau of Industry and Security halted its own Megaspeed chip-smuggling case after Nvidia’s general counsel emailed investigators in August 2025, the file passing to the Justice Department; Commerce says it acted “by the book” and Megaspeed denies any diversion. Congressional Democrats demanded answers on AI export policy."
+   ],
+   "geopolitical": "The company that decides who can train frontier models has a chief executive under FBI examination over a relationship with someone suspected of routing its chips into China — handing the majorities that take subpoena power in January the export-control case they have lacked.",
+   "socioeconomic": "Nvidia is about a fourteenth of the index most retirement savings sit in, and it has no named successor. Monday priced the AI trade apart for the first time: the market up 2.35 per cent, Nvidia down 4.3."
+  },
+  {
+   "headline": "WASHINGTON REJECTS TEHRAN’S CONDITIONS, THEN SAYS IT NO LONGER NEEDS TO STRIKE",
+   "breaking": true,
+   "summary": [
+    "Appearing unannounced in the briefing room on Monday after meeting Qatar’s prime minister, Trump went past Sunday’s “highly unlikely”: “At this point, it won’t be necessary, taking the military action.” If anything changed the United States is “fully locked and loaded”, “but we don’t think there’ll be any reason to use it”. On CBS’s 60 Minutes he said he was “not looking to” escalate and did not disagree with Vance that the war cost Republicans the midterms — while saying he would order February’s strikes again, “an emphatic yes”.",
+    "Tehran answered Rubio’s “outrageous and ridiculous” by defending its compressed timetable. Foreign ministry spokesman Esmaeil Baghaei called the two-day sequence the most reasonable offer available: is it unreasonable, he asked, to demand that sanctions and the naval blockade be lifted before talks start and that the war end on all fronts? He said US pressure on Baghdad to close most of Iraq’s crossings with Iran should not damage ties with Iraq, and dismissed the new US task force against Iranian overland trade as a diversion from the election losses.",
+    "Brent edged up 3 cents to US$98.35 and WTI 0.5 per cent to US$91.30 by 12.27pm Singapore time, after last week’s 16 per cent fall, the steepest since the start of the pandemic. JPMorgan put the global surplus at 1.1 million barrels a day in September, widening to 1.4 million in October. US pump prices are about US$4.01 a gallon against US$2.98 before the war."
+   ],
+   "geopolitical": "The refusal and the de-escalation landed the same day: Washington has rejected the sequence Tehran offered while withdrawing the threat meant to force it, leaving the naval blockade as the only instrument in play.",
+   "socioeconomic": "A 16 per cent weekly fall and a 1.4 million barrel surplus unwind the war premium on a promise rather than a barrel: nothing has reopened, Hormuz traffic has not resumed, and one verified incident in the strait puts the discount back."
+  },
+  {
+   "headline": "FRANCE NAMES IRAN’S REVOLUTIONARY GUARDS FOR THE SUPERMARKET FREEZER SABOTAGE AND GOES FOR EU SANCTIONS",
+   "breaking": true,
+   "summary": [
+    "Foreign Minister Jean-Noël Barrot said on Monday that Iran was behind last month’s attack that drove refrigeration at around 700 French retailers into defrost, spoiling fresh and frozen stock and setting some equipment alight. He called it “an attack of unprecedented scale and unprecedented aggressiveness” and the first large-scale cyberattack carried out for sabotage on French territory. France has summoned Iran’s ambassador and intends retaliatory sanctions “at a European level”. Tehran did not immediately respond.",
+    "The Paris prosecutor’s office cited “the use of Farsi and IP addresses pointing to devices located in Iran” and opened an investigation into the head of Shahid Kaveh, a cyber unit affiliated with the Revolutionary Guards, his two deputies and anyone else responsible. This month’s wave against supermarkets in Sweden, Belgium and Ireland — part of a campaign that has reached ten countries, British meat processors and the blood cold rooms of the Établissement français du sang — is not yet formally linked and remains unclaimed."
+   ],
+   "geopolitical": "A NATO member has attributed physical sabotage on its own soil to Iran and taken it to the EU sanctions table on the day Washington said strikes were no longer necessary, so European and American Iran policy now move in opposite directions.",
+   "socioeconomic": "What failed was internet-reachable refrigeration controllers owned by grocers, several with default passwords, not utility plant: the equipment that broke sits outside the EU’s critical-infrastructure regime, so the loss falls on retail margins and insurers."
+  },
+  {
+   "headline": "CHINA EXTENDS THE TARIFF TRUCE BY TWO MONTHS, THE DAY BEFORE IT LAPSED",
+   "breaking": false,
+   "summary": [
+    "The State Council said on Monday that the suspension of the additional 24 per cent tariff on US imports continues for two months from 1.01pm Singapore time on 10 November, the day the truce was due to expire, with a 10 per cent tariff remaining. The Commerce Ministry extended export-control waivers on certain critical minerals and related technologies to 10 January 2027 and suspended measures against 11 US firms on its unreliable-entities list and 16 on its export-control list. The pause on special port fees for US-linked vessels runs to the same date, and the inquiry into shipping and shipbuilding supply chains stays on hold.",
+    "Rare-earth controls introduced in April 2025 and sharply widened that October had been paused for a year after the Xi-Trump meeting in South Korea; that pause now runs to January. Beijing framed the extension as upholding the “outcomes and consensus” of September’s Washington summit, where the two sides floated a US$60 billion (S$76.8 billion) package of reciprocal tariff cuts including about US$17 billion of US farm goods China bought in 2024 — still unfinalised. Trump and Xi are expected to meet at the APEC summit in Shenzhen later this month."
+   ],
+   "geopolitical": "Two months is not a settlement and the date is the point: the next expiry falls just after a Democratic Congress is seated, so Beijing keeps the rare-earth lever cocked through the period when Washington’s trade authority is least settled.",
+   "socioeconomic": "For manufacturers the operative line is the critical-minerals waiver: magnet, battery and chip-tool supply chains get one more order cycle of certainty, enough to keep lines running and far too short to justify relocating them."
+  },
+  {
+   "headline": "THE FDA PUTS A VISION-LOSS WARNING ON EVERY GLP-1 DRUG",
+   "breaking": false,
+   "summary": [
+    "The US Food and Drug Administration on Monday required every medicine with GLP-1 receptor-agonist activity — Eli Lilly’s Mounjaro and Zepbound, Novo Nordisk’s Ozempic, Wegovy and Rybelsus among them — to add non-arteritic anterior ischaemic optic neuropathy to the “warnings and precautions” section of its labelling. NAION is a common cause of sudden, painless vision loss, caused by reduced blood flow to the front of the optic nerve and in some cases permanent; the mechanism is not understood. The agency said it had evaluated trial, animal and post-marketing data.",
+    "The European Medicines Agency’s safety committee said last year that NAION may affect up to 1 in 10,000 people taking semaglutide for at least a year, the first regulatory confirmation of the effect, and four Danish patients were compensated for vision loss. A 2025 study of nearly 175,000 diabetic patients on semaglutide against as many on other classes found the risk more than doubled after two years. Novo said the data do not establish cause and effect; Lilly said the communication is class-wide. Citi’s Geoff Meacham expects prescribing to change little."
+   ],
+   "geopolitical": "Europe confirmed the signal a year ago and Washington has now followed — the second time in a year the EMA has set a finding the FDA then adopted. Because dozens of regulators mirror FDA labelling, the warning travels to markets that ran no review of their own.",
+   "socioeconomic": "Tens of millions take these drugs, so a risk of up to 1 in 10,000 a year is still thousands of cases of possible permanent blindness. The label moves consent, insurer documentation and liability — not, on the analysts’ reading, prescription volumes."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "THE WAR’S FUEL BILL ENDS WITH A SHIP UNDER ARREST IN SINGAPORE WATERS",
+   "breaking": true,
+   "summary": [
+    "The Maritime and Port Authority said on Monday that the Odyssey — sold by Florida’s Villa Vie Residences as a cabin you could buy or rent for life aboard a continuous voyage around the world — has been arrested “pursuant to a court order” and lies in Singapore port waters with no passengers aboard, its crew “reported to be well” and their welfare managed by the vessel’s creditors. Court records show the arrest at Changi General Purpose Anchorage on Sunday morning with Helmsman LLC as arresting solicitor; a source told CBS News it was probably begun by a fuel supplier, Villa Vie reportedly owing a regional supplier about S$640,000 (US$500,000). The 200m ship carried 203 guests and 156 crew and is now under its lender’s control.",
+    "Villa Vie suspended the three-year voyage in late October and gave residents at Sihanoukville Autonomous Port seven hours to pack; about 98 were still in Cambodia on 4 November. It blamed “extraordinary increases” in fuel costs from the war with Iran, per-cabin monthly fuel going from about S$2,300 (US$1,800) to an estimated S$7,700 to S$10,200 (US$6,000 to US$8,000) in parts of Asia. Some residents had sold everything they owned; one paid S$448,000 (US$350,000) for a cabin, converted at 1.28."
+   ],
+   "geopolitical": "The war’s shipping economics are being settled in Singapore’s courts rather than Cambodia’s or Florida’s, because arrest jurisdiction follows the bunkering hub: the admiralty docket here is becoming the record of which operators the fuel price broke.",
+   "socioeconomic": "The fuel supplier has a claim against the hull; the residents have one against a company that has stopped paying. In a judicial sale the lien ranks first, so a lifetime cabin is worth whatever is left once the bunkers are paid."
+  },
+  {
+   "headline": "THREE IN FOUR PARENTS CALL TUITION NECESSARY, AND 77 PER CENT WOULD EASE THE PRESSURE IF THE PSLE WERE OPTIONAL",
+   "breaking": false,
+   "summary": [
+    "A survey released on 9 November by the advocacy group EveryChild.SG found three in four parents polled believe tuition outside primary school is necessary for their children to do well, at a median S$600 a month per child. Seventy-two per cent wanted to put less academic pressure on their children but feared they would lose out at the PSLE, and 77 per cent would ease it if a secondary place were guaranteed under a system that made the exam optional; 80 per cent thought a “through-train” route would make learning more enjoyable. NielsenIQ polled 4,007 citizens and permanent residents, mainly online between January and February, 2,002 of them parents of primary-school children.",
+    "Spending tracks income: a median S$300 a month per primary-school child in households earning S$5,000 or less, S$600 between S$5,000 and S$15,000, and S$1,000 between S$15,000 and S$20,000. An Institute of Policy Studies study in September put the overall median at S$500. Confidence in the schools is high — eight in 10 agreed Singapore’s primary education ranks among the best in the developed world. Founder Pooja Bhandari, a former civil servant who started the group in 2023, said the task now is “addressing the pressures and inequalities that have emerged alongside” that record."
+   ],
+   "geopolitical": "Education is the policy Singapore exports most confidently in regional forums, and the survey complicates the pitch: the same parents who rate the system world-class pay S$600 a month to supplement it — a finding about the exam’s allocative role rather than about teaching.",
+   "socioeconomic": "The gradient is the result. The top band surveyed spends more than three times what the bottom spends per child, so household income converts into PSLE outcomes before any school intervenes."
+  },
+  {
+   "headline": "KKH GETS CRITICALLY ILL CHILDREN MOVING INSIDE 72 HOURS, AND 60 PER CENT NOW DO",
+   "breaking": false,
+   "summary": [
+    "KK Women’s and Children’s Hospital has built the recovery programme in its children’s intensive care unit, Let’s MoveEM, around getting patients moving within 72 hours of admission, alongside family involvement, nutrition and delirium screening. Early mobilisation of patients on respiratory support has risen from 44 per cent when the programme launched in April 2021 to 60 per cent in 2024. Senior consultant Joel Lim, who heads the unit, said some are now mobilised within hours, while those too sick are not attempted. Clinicians say early movement reduces delirium, shortens intensive-care stays and lowers the later problems with breathing, swallowing, movement and learning that follow long immobility.",
+    "Twelve-year-old Michelle Poh, admitted in January 2026 with severe acute respiratory distress syndrome after a 2024 bone-marrow transplant for thalassaemia and placed on extracorporeal membrane oxygenation, left intensive care within two months and returned to school. Eight-month-old Michelle Ng, born with ALCAPA — a rare defect in which the left coronary artery joins the pulmonary artery instead of the aorta, which can cause a heart attack if untreated — has spent most of her life in the unit. The programme exists because more children now survive what would once have killed them."
+   ],
+   "geopolitical": "Paediatric intensive care is one of the services the region refers into Singapore, and survival is no longer the differentiator — what a unit can return a child to is. A measurable mobilisation rate is the kind of figure referral decisions turn on.",
+   "socioeconomic": "Intensive-care bed-days are the most expensive in the system and the downstream saving is larger still: each avoided case of post-intensive-care impairment removes years of therapy, special-needs support and lost parental working time from the public bill."
+  }
+ ],
+ "word": {
+  "word": "kompromat",
+  "pos": "noun",
+  "pronunciation": "KOM-pruh-mat",
+  "definition": "Compromising material gathered about a person, especially from private life, and held for use as leverage or blackmail.",
+  "etymology": "From Russian компромат, a clipping of компрометирующий материал, “compromising material” — Soviet intelligence jargon of the mid-twentieth century; the first element traces to French compromettre.",
+  "example": "An affair with an executive of a firm suspected of routing restricted chips into China is kompromat whether or not a secret ever changed hands: the leverage is the fact of it, which is why the FBI, a company board and an incoming Congress are all asking the same question."
+ }
+}
