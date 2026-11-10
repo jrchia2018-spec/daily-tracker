@@ -1,0 +1,100 @@
+{
+ "schema": 1,
+ "date": "2026-11-11",
+ "generatedAt": "2026-11-11T07:45:00+08:00",
+ "coverage": {
+  "from": "2026-11-10T07:00:00+08:00",
+  "to": "2026-11-11T07:00:00+08:00",
+  "label": "Tuesday 10 November 2026, 0700 SGT → Wednesday 11 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "RUSSIA AND UKRAINE SIT DOWN IN ABU DHABI, AND WASHINGTON PUTS EUROPE’S SECURITY ARCHITECTURE ON THE TABLE",
+   "breaking": true,
+   "summary": [
+    "Trilateral talks opened in Abu Dhabi on Tuesday, the first substantive Moscow-Kyiv negotiations since February and the first since the US joined Israel’s strikes on Iran. Jared Kushner and Steve Witkoff led for Washington, Rustem Umerov, head of Ukraine’s foreign intelligence service, for Kyiv; the UAE’s foreign minister Sheikh Abdullah bin Zayed hosted, and neither Zelenskyy nor Putin attended. US officials want a “final end” to the war. Rubio called the day “very productive”, Zelenskyy “constructive and fairly substantive”, saying security guarantees and “the foundations for their long-term implementation” were discussed in detail. No ceasefire was on the table; a second day was set for Wednesday.",
+    "The American proposal includes a new “long-term security architecture” between Russia and Europe: officials said negotiators could revive the NATO-Russia Council suspended in 2022, and lift sanctions, to reach a deal. European representatives met Ukrainian and US officials separately, insisting any arrangement “must respect sovereignty, territorial integrity, independent decision-making, and provide credible security guarantees for Ukraine”; the Kremlin said they would not join the trilateral format. Rubio said widening the table was a goal “at some point”: “Europe’s at the table. They’re with us.”"
+   ],
+   "geopolitical": "No sitting US administration has previously taken up Putin’s oldest demand — renegotiating the NATO-Russia balance rather than only Ukraine’s borders. That is what European governments fear, and why they want the room rather than a readout.",
+   "socioeconomic": "Sanctions relief is openly a chip to trade while Russia strikes Ukraine’s grid into winter, so these two days decide whether Ukrainians fight the heating season or negotiate it."
+  },
+  {
+   "headline": "WASHINGTON SAYS ECONOMIC STRANGULATION HAS REPLACED THE BOMBING, AND PULLS ITS TANKERS OUT OF ENGLAND ON AN IRANIAN THREAT",
+   "breaking": true,
+   "summary": [
+    "Rubio told G7 foreign ministers in Paris that major combat operations against Iran are no longer needed because sanctions and the naval blockade are doing the work: “we don’t need to conduct military strikes if we’re achieving the same objective through economic means and economic pressure”. He rejected the stalemate charge — “It’s not a stalemate” — a day after Trump said action “won’t be necessary”; European ministers had pressed him against escalation. Brent settled 1.17 per cent lower at US$91.49 after touching US$89.16, its lowest since 31 August and 22 per cent below the US$118 of 30 October; WTI settled at US$86.04.",
+    "The non-military campaign is not quiet. Ten US KC-135 refuelling aircraft left RAF Mildenhall on Monday for bases in Germany, Spain and Scotland after a threat judged credible, and Mildenhall and Lakenheath went to FPCON Charlie, the second-highest alert; US agencies have picked up “varied, extensive, and specific” Iranian plots against American targets, some inside the United States. A New York grand jury indicted Mohammad Dawood Al-Saadi, a Kataib Hezbollah commander already jailed in Brooklyn, with IRGC operative Mohsen Mohajeri and Mohammad Ali Al-Hassani, over September’s attempt to drive fuel-laden vans into RAF Fairford, which Al-Saadi directed by coded calls to his family. Tehran called France’s attribution of the supermarket cold-chain sabotage “baseless and one-sided”."
+   ],
+   "geopolitical": "Swapping bombardment for blockade keeps the war going without the escalation Vance blames for losing both chambers, but it moves the fighting onto allied soil and leaves Europe carrying the risk of a campaign it is told not to escalate.",
+   "socioeconomic": "A fifth of the war premium has left crude in under a fortnight, the clearest gain consumers have had from this war — and it removes the pressure that pushed Tehran toward the Qatari package, so the cheaper barrel buys Washington less leverage."
+  },
+  {
+   "headline": "AMERICAN INFLATION OVERSHOOTS AGAIN AND THE ARGUMENT AT THE FED TURNS TO THE SIZE OF DECEMBER’S RISE",
+   "breaking": true,
+   "summary": [
+    "US consumer prices rose 0.4 per cent in October against the 0.3 expected, core 0.3 for a third straight month, nearly a third of it shelter. No annual figure exists — last year’s shutdown destroyed the base — but economists put the rate near 4 per cent against September’s 3.7. Food rose 0.5 per cent, almost a fifth of the monthly rise, as record diesel costs passed through: baby food and formula jumped 5.1 per cent, the most in nearly 30 years of the series. AI-driven chip prices lifted electronics, smartphones 1.4 per cent and televisions 3.3. Prices again outran pay.",
+    "Hours earlier Fed Governor Christopher Waller said in London he would consider a half-point rise in December if core kept printing 0.3: “Hiking only 25 basis points would put our credibility at risk.” Dallas Fed President Lorie Logan wants at least two more quarter-point increases, at a pace that could be faster than the autumn’s. The two-year Treasury yield jumped 17 basis points, its biggest day since April 2025, and the 10-year rose 10 to 4.98 per cent after briefly passing 5. Traders price a 91 per cent chance of a quarter-point rise next month and 9 of a half point, against 77 per cent and a 23 per cent chance of no move a week ago."
+   ],
+   "geopolitical": "The war’s energy shock has stopped being an energy shock: it is in rents, formula and beef, which makes tightening unavoidable and hands the Fed’s credibility to a conflict the administration says it is winding down.",
+   "socioeconomic": "A 10-year yield at 5 per cent sets mortgage rates, so the squeeze compounds: dearer borrowing pushes buyers into a rental market where prices rose another 0.3 per cent in October, the largest single contributor to the inflation the rises are meant to cure."
+  },
+  {
+   "headline": "ANTHROPIC PRICES THE LARGEST LISTING EVER ATTEMPTED WHILE NVIDIA’S BOARD HIRES OUTSIDE COUNSEL",
+   "breaking": false,
+   "summary": [
+    "Anthropic set an IPO range of US$70 to US$78 a share — up to US$64.4 billion (S$82.4 billion) raised at a fully diluted US$1.4 trillion (S$1.79 trillion), below the roughly US$100 billion floated weeks ago but still the biggest listing in history, expected late next week. Third-quarter revenue was US$17 billion against US$1.4 billion a year earlier. The five-year-old company has had one profitable quarter, is committed to nearly US$900 billion of compute and data-centre spending, and took a quarter of this year’s sales from five customers, some of them competitors; its prospectus promises “an age of miracles” and warns it may doom humanity.",
+    "Nvidia named Wachtell, Lipton — former acting US attorney Joon Kim leading — to investigate Jensen Huang’s affair. CNN reported that Rubio briefed Trump on the intelligence aboard Air Force One in May, before Huang joined the flight to Beijing, contradicting Monday’s denial; the White House said those sources “have no idea what they’re talking about”. Officials briefed the Gang of Eight on Monday, nearly a year after the FBI first warned lawmakers about Alice Huang, and Democrats promised investigations from January. Nvidia fell 5.5 per cent to its lowest close since 30 March; the AI hosts Iren, Nebius and CoreWeave lost 10, 7 and 3 per cent and are down at least 40 per cent since the Nasdaq’s 6 October high, GE Vernova fell more than 6 after SoftBank revised equipment orders for its Ohio data centre, and Nscale weighed delaying a US$35 billion listing."
+   ],
+   "geopolitical": "A chief executive who shaped US chip-export policy was, on this account, known to be compromised when the president took him to Beijing — so January’s subpoenas will be about the government’s own decisions on who may buy advanced chips.",
+   "socioeconomic": "The sector is asking public markets for US$64 billion in the week its own suppliers began deferring: with five buyers behind a quarter of Anthropic’s revenue, the listing prices a buildout its contractors are no longer sure of."
+  },
+  {
+   "headline": "CHINA’S TRADE SURPLUS PASSES US$1 TRILLION A MONTH EARLIER THAN LAST YEAR, CARRIED BY THE AI BUILDOUT",
+   "breaking": false,
+   "summary": [
+    "Customs data on Tuesday put China’s surplus at US$1.04 trillion for the first ten months — above a trillion for a second year running, a month sooner than in 2025. October exports rose 35.2 per cent year on year in dollar terms against a forecast 33.5, barely below September’s 36.3; imports rose 41.6 per cent against 32 expected. The AI infrastructure race is doing the lifting and covering for weakness at home: car exports grew again while domestic vehicle sales fell for a twelfth straight month, household wealth still depressed by the property slump. Macquarie expects exports to accelerate this quarter, then slow from the first quarter of 2027.",
+    "The figures land two days after Beijing extended its tariff truce with Washington by two months, and a week before Xi and Trump are expected to meet at APEC in Shenzhen. EU leaders want further curbs, and because the agreed limits on Chinese hybrid-vehicle exports have yet to take effect, factories are expected to front-load shipments into the bloc. Tariff risk will stay elevated through 2027, Trivium China’s Joe Peissel said, as Chinese manufacturers keep expanding abroad."
+   ],
+   "geopolitical": "The truce buys two months while the imbalance it was meant to address grows at record pace, and the next expiry falls on 10 January, days after a Democratic Congress is seated — so Shenzhen must produce something durable or the surplus becomes the argument for tariffs.",
+   "socioeconomic": "An economy covering weak consumption with exports is betting on someone else’s capital spending, and Macquarie’s own forecast has the AI boom slowing within a quarter of the new year — exposing China’s factories, not only Silicon Valley’s balance sheets."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SPH MEDIA, A SCHOOL MEAL APP AND THE BLOOD BANK: A WEEK OF BREACHES, AND A FIRST SUSPECTED AI-ENABLED ATTACK",
+   "breaking": true,
+   "summary": [
+    "SPH Media said on Tuesday that attacks on five of its systems, detected between 4 and 8 November and judged a concerted effort by one threat actor, exposed 9 per cent of its database — predominantly e-mail addresses, with some names, mailing addresses and phone numbers. No payment card, financial or banking data was taken; accounts and the news sites were unaffected. Preliminary investigation suggests AI-enabled attacks, arising from software bugs and system configuration. It has reported to the PDPC, CSA and IMDA and filed a police report; IMDA and the PDPC are investigating and have told it to find the root cause.",
+    "The same day SATS disclosed that an unauthorised external party exploited a vulnerability in Tappee, a school meal-ordering app built by the vendor Serial Multivision and used in four schools it would not name, exposing pupils’ names, concession card numbers, financial assistance status and some health details; the app is suspended and ordering continues through the schools. The Health Sciences Authority said Singapore’s sole blood bank service does not use the storage and monitoring systems attackers hit at three French blood banks on 4 November by raising cold-room temperatures remotely. The CSA also awarded about S$5.6 million to 13 projects under CyberCall 2025, among them CloudsineAI software that maps what an AI agent can reach and flags policy breaches; Minister of State Rahayu Mahzam said attackers already use AI for greater speed and scale."
+   ],
+   "geopolitical": "France’s refrigeration sabotage and a Singapore media breach are not one actor but one category: the exposed layer is the vendor, the configuration and now the agent — and HSA’s answer, that the compromised systems are not used here, is an inventory check rather than a defence.",
+   "socioeconomic": "Pupils’ financial-assistance status was lost through a third-party app, which puts the question to procurement rather than the schools; the PDPC now has the national newspaper group and a listed caterer’s vendor open at once."
+  },
+  {
+   "headline": "THREE MILLION SINGAPOREANS RECEIVE THE LAST ASSURANCE PACKAGE CASH, S$100 TO S$250, FROM 8 DECEMBER",
+   "breaking": false,
+   "summary": [
+    "The Finance Ministry said on Tuesday that about three million adult Singaporeans will receive S$100 to S$250 from 8 December, the final disbursement of the enhanced Assurance Package announced at Budget 2023. Citizens aged 21 and above in 2027 qualify, on assessable income and property: no more than one property brings S$250 at income of S$39,000 or below and S$150 from S$39,001 to S$100,000, while income above S$100,000, or more than one property, brings S$100. Linking PayNow to an NRIC by 24 November pays on 8 December; bank details submitted by 30 November pay by GIRO on 17 December. Recipients will have received up to S$2,250 across 2022-2026. The package began at Budget 2020 with S$6 billion to cushion the GST increase and was topped up to S$9.6 billion in 2023."
+   ],
+   "geopolitical": "Cost-of-living anger has just cost an American administration both chambers and put crowds on European streets; Singapore is closing a five-year transfer programme on schedule instead, which is a choice about who pays for a consumption-tax rise and when.",
+   "socioeconomic": "S$250 is about five weeks of the S$600 median monthly tuition bill reported here this week, and the scheme ends with core inflation still expected to stay elevated into early 2027 — so Budget 2027 inherits what replaces it."
+  },
+  {
+   "headline": "SINGAPORE PUTS S$30 MILLION BEHIND EMPLOYERS WHO HIRE WORKERS WITH DISABILITIES AND RAISES THE WAGE OFFSET",
+   "breaking": false,
+   "summary": [
+    "Health Minister Ong Ye Kung, also Coordinating Minister for Social Policies, announced about S$30 million on Tuesday for a new funding tier, the Stronger Support – Enabling Employment Grant, for enterprises employing a meaningful number of people with moderate support needs. Senior Parliamentary Secretary Eric Chua said the Enabling Employment Credit, which offsets the salaries of workers with disabilities, will be raised and paid quarterly. Ong said inclusive hiring must become common industry practice rather than rest on goodwill alone, and that with business costs rising and role redesign and workplace modifications adding more, “the Government must be prepared to lean in and help defray some of these costs”. A record 193 recipients were recognised at the Enabling Mark Awards; the measures follow October’s taskforce report on families with persons with disabilities."
+   ],
+   "geopolitical": "In a country whose working-age share of citizens has fallen to 59.3 per cent, paying employers to redesign jobs is labour policy as much as welfare — the logic already applied to older workers, extended to a group whose employment rate is not published as a headline figure.",
+   "socioeconomic": "Quarterly rather than annual payment of the offset is a cash-flow measure aimed at small firms, where most inclusive hiring happens; whether S$30 million moves it depends on the modification costs the taskforce documented but the government has not priced publicly."
+  }
+ ],
+ "word": {
+  "word": "obviate",
+  "pos": "verb",
+  "pronunciation": "OB-vee-ayt",
+  "definition": "To remove or prevent a difficulty so that it no longer has to be dealt with; to render unnecessary.",
+  "etymology": "From Latin obviare, “to meet, to withstand” — ob- “against” plus via “way”, literally to go against something in its path; English since the sixteenth century, and in careful use the need is removed, not merely deferred.",
+  "example": "Rubio’s claim in Paris was that the blockade obviates the bombing — the same objective by economic means, so no strike is needed; the ten aircraft flown out of RAF Mildenhall the same week suggest the threat has been relocated rather than obviated."
+ }
+}
