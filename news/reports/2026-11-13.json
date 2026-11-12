@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-11-13",
+ "generatedAt": "2026-11-13T07:16:00+08:00",
+ "coverage": {
+  "from": "2026-11-12T07:00:00+08:00",
+  "to": "2026-11-13T07:00:00+08:00",
+  "label": "Thursday 12 November 2026, 0700 SGT → Friday 13 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "JENSEN HUANG RESIGNS FROM NVIDIA WITH NO SUCCESSOR PREPARED, AND THE FINANCE CHIEF TAKES THE WORLD’S MOST IMPORTANT CHAIR",
+   "breaking": true,
+   "summary": [
+    "Jensen Huang resigned on Thursday as Nvidia’s president, chief executive and director, effective immediately, a day after the board was reported to be preparing his removal over two extramarital affairs. The 8-K filing calls it a resignation; CNBC reported the board decided the night before to remove him. Chief financial officer Colette Kress becomes interim chief executive while keeping the finance job, and Harvey C. Jones becomes Nvidia’s first board chair in its history — Huang had held no chair above him. Nvidia confirmed it had no prearranged succession plan and has opened a search covering internal and external candidates. The shares fell as much as 14 per cent during the session before closing down about 4 per cent, and allegations of a third affair surfaced hours after the filing."
+   ],
+   "geopolitical": "The man who personally negotiated which American chips reach China is gone, and no one has inherited that authority. Washington now sets export policy against a caretaker finance chief with no mandate, at the moment Commerce is under scrutiny for refusing to list the Singapore-registered firm at the centre of the affair.",
+   "socioeconomic": "A board with no bench applies a governance discount to the largest holding in most index funds, including those behind CPF-linked and retirement portfolios, and Kress holding both the finance and chief executive roles concentrates reporting and signing authority in one person while an outside inquiry runs."
+  },
+  {
+   "headline": "PUTIN GIVES THE AMERICANS NOTHING ON TERRITORY AND PROMISES TO SHOOT AT ANY PEACEKEEPERS, THEN THE ENVOYS FLY TO DUBLIN",
+   "breaking": true,
+   "summary": [
+    "Jared Kushner and Steve Witkoff spent about two hours with Vladimir Putin in the Kremlin on Thursday. The Russian president refused to soften his demand for full control of the four Ukrainian regions Moscow claims to have annexed and warned that Russia would target any foreign troops sent to Ukraine, calling their presence a continuation of the war. Witkoff said afterwards that Putin had agreed to European negotiators joining the next round; Putin’s aide Yuri Ushakov confirmed only that trilateral talks would continue. The envoys then met Volodymyr Zelenskyy for just under an hour at Casement Aerodrome outside Dublin, where he was attending a summit of more than 40 European states with NATO’s Mark Rutte; Zelenskyy said Europe would be included. Ukraine reported fresh disruption to its Starshield satellite service, and its SBU said drones struck the corvette Naro-Fominsk near Gogland in the Gulf of Finland during a raid on the Ust-Luga oil terminal; Estonia’s defence minister cited an explosion aboard at about 05.30 and Finland confirmed detecting one without naming a culprit."
+   ],
+   "geopolitical": "Europe’s seat at the table is now a claim made by an American envoy and declined by a Russian one, which means the only agreed format remains the one that excludes the states expected to guarantee any settlement.",
+   "socioeconomic": "The Gulf of Finland is a narrow lane carrying tankers and subsea data cables, and a drone strike inside it moves Baltic war-risk premiums and cable insurance onto a shipping route that had been treated as civilian."
+  },
+  {
+   "headline": "AN ISRAELI STRIKE ON GAZA’S LARGEST REMAINING HOSPITAL KILLS A SURGEON IN HIS WARD",
+   "breaking": true,
+   "summary": [
+    "An Israeli airstrike hit Nasser hospital in Khan Younis early on Thursday, killing six people including a surgeon and a disabled man and wounding 28, the hospital director said; witnesses said the missile struck a building holding the surgical wards and intensive care. The Israeli military said it struck a Hamas commander and other fighters at the complex and that Hamas had established a command centre there, without providing evidence; Hamas called it “a heinous crime targeting a civilian medical facility”. It is the deadliest strike in Gaza since last month’s Israeli election; Nasser is the largest of the few hospitals still functioning in the south."
+   ],
+   "geopolitical": "The ceasefire architecture has a Board of Peace that chided Israel over flood relief this week and has now watched a strike on a protected site pass without consequence, which sets the price of a violation at nothing.",
+   "socioeconomic": "Southern Gaza has roughly one million people and one large hospital; degrading its surgical and intensive-care capacity converts survivable injuries into deaths for months, independently of the strike’s own toll."
+  },
+  {
+   "headline": "TRUMP TAKES HIS VICE-PRESIDENT OFF THE IRAN FILE AND SAYS HE DOES NOT NEED A DEAL AT ALL",
+   "breaking": false,
+   "summary": [
+    "Trump wrote on Truth Social on Thursday that the United States does not “need a deal” with Tehran and told JD Vance, who has led the negotiations since June, to turn his focus to crime and corruption in Democratic-run cities instead. He later conceded it would be “a defeat” to walk away with the present Iranian government still in power. Oil rose on the post, two days after Rubio told the G7 that the blockade had replaced the need for strikes and a day after Ghalibaf’s adviser said the Americans had set a fortnight for a decision on military action. In London the same day a jury convicted Mostafa Sepahvand, 41, and Farhad Javadi Manesh, 46, of assisting Iran’s intelligence services, having been recruited through social media to conduct surveillance between August 2024 and March last year on UK-based journalists Tehran sought to “eliminate”."
+   ],
+   "geopolitical": "Removing the negotiator without naming a replacement ends the talks in substance while leaving no channel to receive an Iranian concession, so the only instruments still operating are the blockade and the strike option.",
+   "socioeconomic": "Brent has fallen for two weeks on the expectation that pressure would end in a settlement; pricing the negotiation at zero puts that decline at risk, and with it the energy component of the inflation print that has markets at 91 per cent for a December rise."
+  },
+  {
+   "headline": "AMERICA’S LARGEST CANCER CHARITY REVERSES ITSELF AND TELLS MEN TO GET SCREENED FOR PROSTATE CANCER ON A SCHEDULE",
+   "breaking": false,
+   "summary": [
+    "The American Cancer Society published a new early-detection guideline on Thursday recommending PSA blood testing every two years for average-risk men aged 50 to 69 — a B-grade recommendation on moderate-strength evidence — and annual testing from 45 for Black men and for men with a strong family history, the interval there set by how many first-degree relatives were affected and at what age. It advises against screening at 75 and older, excepting very healthy men of 75 to 79 with a rising PSA, and tells clinicians to repeat an elevated test and use MRI or a validated biomarker before deciding on biopsy. The society had previously recommended only shared decision-making, with no direct call to screen; it now diverges from the US Preventive Services Task Force, whose 2018 guidance stops at informed decision-making for men aged 55 to 69 and advises against screening past 70."
+   ],
+   "geopolitical": "ACS guidelines are copied into insurer coverage rules and national programmes well beyond the United States, so a reversal by the body that led the retreat from PSA testing a decade ago travels further than the trial data behind it.",
+   "socioeconomic": "Biennial testing of every man from 50 adds tens of millions of tests and a downstream load of MRIs and biopsies; the earlier start for Black men writes the gap in prostate mortality into the schedule itself rather than leaving it to a conversation."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE SAYS IT BARRED ALICE HUANG IN FEBRUARY, FOUND TOO LITTLE TO CHARGE HER, AND GOT LITTLE HELP FROM THE AMERICANS",
+   "breaking": true,
+   "summary": [
+    "The Home Affairs Ministry said on Thursday that police gave Alice Huang — Huang Le — a stern warning, returned her passport on 26 February and barred her from re-entering Singapore the same day she left, having found insufficient evidence to charge her over possible inaccurate declarations while assessing that she had knowingly misled police to downplay her role at Megaspeed. MHA said she was not based here and was never investigated for espionage, and that investigations into Megaspeed International and six other individuals continue over servers shipped through Singapore. Singapore first learned of American interest when the Bureau of Industry and Security checked Megaspeed on 24 June 2025 with Huang present; it raised Supermicro’s limited cooperation with the US Justice Department and FBI in July 2025 and has had only limited assistance from American authorities since. Megaspeed said it has cooperated with US inspections and retained American counsel."
+   ],
+   "geopolitical": "This is the Republic saying publicly that the country demanding tighter chip controls declined to share the evidence needed to enforce them — an unusually direct rebuke of Washington, issued the day its chipmaker’s chief executive resigned over the same woman.",
+   "socioeconomic": "Six people and a locally incorporated company remain under investigation over transshipment, which is the business Singapore sells: every additional month without a charge or a clearance raises the compliance cost of routing hardware through the port."
+  },
+  {
+   "headline": "THE HEALTHCARE BREACH COUNT REACHES SIX ORGANISATIONS AND THE LATEST EXPOSES THE NRIC NUMBERS OF THE STAFF THEMSELVES",
+   "breaking": true,
+   "summary": [
+    "The Agency for Integrated Care said the personal data of up to 4,064 employees of public healthcare institutions and community care providers — names, contact numbers, e-mail addresses and NRIC numbers — may have been accessed by an unauthorised party in an incident detected on 10 November. It took its Advance Care Planning system offline, restored it on Thursday, filed a police report, notified the Cyber Security Agency and will contact those affected within three days; it found no sign medical records or patient data were touched. The Health Ministry’s first consolidated statement, issued the same day, named six affected entities — AIC, Alliance Medinet, Doctor Anywhere, Fullerton Health, Minmed and Dementia Singapore’s CARA app — said patient care was not disrupted and that there is no evidence so far that patient safety was compromised, and that it is following up with each on the full implications."
+   ],
+   "geopolitical": "Six organisations in a fortnight is a sector pattern rather than six accidents, and it lands as Singapore asks ASEAN partners to adopt the cross-border incident-reporting pilot PM Wong proposed in October.",
+   "socioeconomic": "The exposed records here belong to clinicians and care workers, not patients, which turns a privacy failure into a workforce-safety one: NRIC numbers and contact details are the raw material for impersonation scams aimed at the people who hold patients’ trust."
+  },
+  {
+   "headline": "ATTRIBUTION SCIENTISTS PUT NUMBERS ON THE HAZE THAT SHUT SINGAPORE’S SCHOOLS, AND MOST OF THE DROUGHT WAS EL NIÑO",
+   "breaking": false,
+   "summary": [
+    "A World Weather Attribution study released on Thursday found El Niño largely responsible for the extreme lack of rain across the Indonesian archipelago from July to October, cutting seasonal rainfall by roughly half, with human-caused warming accounting for about a further 15 per cent. Climate change’s larger fingerprint was on heat: the season ran about 1.6°C hotter than it would otherwise have been, and the combination made 2026-like fire weather roughly three times more likely and more intense. Fires have burned about 2.88 million hectares in Indonesia this year and sickened hundreds of thousands there. The authors also pointed to peatland drainage and deforestation leaving the landscape primed to ignite — the part no climate cycle explains."
+   ],
+   "geopolitical": "Singapore has been pressing Jakarta on prevention funding and cost-sharing since the S$2.32 billion damage estimate; a peer-reviewed split between El Niño, warming and drained peat gives those talks a number for the share that land management, not weather, controls.",
+   "socioeconomic": "A threefold rise in the odds of a 2026-grade fire season turns mask stockpiles, haze shelters and school closures from contingency into a budgeted recurring cost, and prices drained peat as an avoidable component rather than bad luck."
+  },
+  {
+   "headline": "A SECOND CYCLIST IS KILLED BY A TIPPER TRUCK WITHIN A DAY, AND BOTH DIED AT ROAD LEVEL IN MORNING TRAFFIC",
+   "breaking": false,
+   "summary": [
+    "A 24-year-old cyclist died on Tanah Merah Coast Road in Changi on Thursday after colliding with a tipper truck; police were alerted about 8am and an SCDF paramedic pronounced him dead at the scene, and the 38-year-old driver is assisting investigations. It was the second such death in 24 hours: on Wednesday a 37-year-old woman cycling at the junction of Amber Road and Amber Gardens was killed by a tipper truck, and that 47-year-old driver was arrested for driving without reasonable consideration causing death. Cyclist accidents rose about 25 per cent to 772 in 2025, the year total road deaths reached a decade high of 149."
+   ],
+   "geopolitical": "Not applicable: this is a domestic road-safety matter with no external dimension.",
+   "socioeconomic": "Two deaths in a day involving the same vehicle class points at construction haulage sharing junctions and coastal arterials with cyclists — a routing and scheduling problem rather than a rider-behaviour one, and not one another safety campaign reaches."
+  },
+  {
+   "headline": "THE SCHEME THAT PAYS FOR A POORER CHILD’S AMBITION GOES ISLANDWIDE, FUNDED AT $100,000 A DIVISION",
+   "breaking": false,
+   "summary": [
+    "The Social and Family Development Ministry said on Thursday that Gift-A-Family, which pairs lower-income households with sponsors who fund what the family itself has set as its goal, will expand nationwide with the National Council of Social Service and the People’s Association, reaching eligible ComLink+ and vulnerable families at every Social Service Office by 2028. Community Chest, NCSS’s philanthropic arm, is seeding it with $100,000 per division each year from 2026 to 2028, $4.2 million in all. Families set goals with their ComLink+ coaches; the scheme funds children’s and parents’ interests — sport, music, vocational training — alongside academic enrichment and therapeutic programmes. Begun as a Boon Lay pilot in 2022 and since extended to Clementi, Jurong East, Bukit Merah, Queenstown and Tampines, it has supported more than 180 families and individuals."
+   ],
+   "geopolitical": "Not applicable: this is domestic social policy.",
+   "socioeconomic": "At $4.2 million over three years, this is deliberately small money doing what transfers cannot — funding an aspiration the family named rather than a need the state assessed. The constraint is the pairing: matching every ComLink+ family to a sponsoring Singaporean needs volunteers at a scale no budget line can appropriate."
+  }
+ ],
+ "word": {
+  "word": "sede vacante",
+  "pos": "adjective or adverbial phrase (Latin)",
+  "pronunciation": "SAY-day va-KAN-tay",
+  "definition": "With the office vacant; describing the interval during which a position of authority is unfilled and the institution is run by caretakers with deliberately limited powers.",
+  "etymology": "Church Latin for “the seat being vacant”, from sedes, a seat or see, and vacare, to be empty. Used of a diocese or the papacy between an incumbent’s departure and a successor’s election, when the administrator may keep things running but may change nothing.",
+  "example": "Nvidia is sede vacante: Colette Kress holds the chief executive’s seat without a mandate, Harvey Jones becomes the first chair in the company’s history, and nobody can say who decides which chips reach China until the search ends."
+ }
+}
