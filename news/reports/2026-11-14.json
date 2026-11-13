@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "date": "2026-11-14",
+ "generatedAt": "2026-11-14T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-11-13T07:00:00+08:00",
+  "to": "2026-11-14T07:00:00+08:00",
+  "label": "Friday 13 November 2026, 0700 SGT → Saturday 14 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "EVERY DEPARTING FLIGHT IN AMERICA IS STOPPED AFTER AIR TRAFFIC CONTROL LOSES ITS COMMUNICATIONS",
+   "breaking": true,
+   "summary": [
+    "The Federal Aviation Administration grounded all departing flights nationwide on Friday afternoon “due to extraordinary circumstances and for reasons of safety”, blaming a temporary telecommunications outage. Kansas City Air Route Traffic Control Center stopped its departures at about 3.30pm Eastern; the FAA command centre extended it countrywide around 4pm. Transportation Secretary Sean Duffy said the failure was affecting all Air Route Traffic Control Centers and that technicians were investigating. Aircraft already airborne could land; nothing on the ground could leave. FlightAware counted more than 10,300 flights delayed and 1,300 cancelled by 5.45pm Eastern, against about 7,000 disrupted two hours earlier. The White House said there was no indication of a nefarious act; Homeland Security Secretary Markwayne Mullin called the stop a precaution, unconnected to the Microsoft outage running at the same time. The order was still in force as this window closed, with reports pointing to 11pm Eastern, and no cause identified on the record."
+   ],
+   "geopolitical": "A communications fault, not an attack, halted every commercial departure in the world's largest aviation market — three years after the 2023 NOTAM database failure grounded the same airspace. Anyone cataloguing American single points of failure now has a second demonstration.",
+   "socioeconomic": "The cost falls on carriers and passengers, not the agency: crews and aircraft end the day in the wrong cities, and a stop running into the night rolls into the next morning. Friday's producer-price data showed airfares already passing fuel costs through."
+  },
+  {
+   "headline": "MICROSOFT’S OFFICE SOFTWARE STAYS BROKEN INTO A SECOND DAY AND THE COMPANY SAYS IT IS “DEEPLY SORRY”",
+   "breaking": true,
+   "summary": [
+    "The outage that began about noon Eastern on Thursday ran close to 24 hours, taking down Outlook, Teams, Copilot, OneDrive, SharePoint, Word and Excel for users in 74 countries by Al Jazeera's count, with nearly 130,000 reports logged on Down Detector. Microsoft pointed to servers becoming unexpectedly unavailable under elevated load, said repeatedly there was no evidence of malicious activity, and conceded on Thursday that its fixes had not produced “the anticipated relief”. By Friday midday Eastern it reported sustained recovery with email queues “approaching normal levels”, and users began receiving waves of delayed mail. The company said it was deeply sorry and promised a post-incident report; no root cause has been published. Schools, hospitals, government offices and businesses lost a working day. Singapore was affected, though Singpass, emergency lines and core banking services were not."
+   ],
+   "geopolitical": "Governments, armed forces and school systems that moved their correspondence into one vendor's cloud found they hold no independent fallback — the argument European regulators drafting operational-resilience and sovereign-cloud rules have been making without a demonstration. They now have one.",
+   "socioeconomic": "Two days of lost output across 74 countries is a concentration cost no customer priced and cannot in practice insure, since service-level credits are a fraction of the loss. Experts called it a stark reminder of how far the world depends on a few providers."
+  },
+  {
+   "headline": "IRAN SENDS DRONES AT BAHRAIN FOR THE FIRST TIME SINCE SEPTEMBER WHILE WASHINGTON SETTLES INTO WAITING",
+   "breaking": true,
+   "summary": [
+    "The Revolutionary Guard said its aerospace force had “targeted and destroyed the early warning radar of the aggressor US military in Bahrain”, retaliation for an American air attack hours earlier on a communications tower at Sirik in southern Iran. US Central Command called the radar claim false, said two one-way attack drones aimed at Bahrain were shot down, and reported no injuries or damage. It is Iran's first attempt on a military installation in a Gulf state in more than two months, a period it spent disrupting Hormuz shipping while American strikes near the strait continued; it also claimed downing a US MQ-1 offshore. The attack came a day after President Trump wrote that “we don't need a deal with Iran” and took Vice-President Vance off the file. Mossad director Roman Gofman saw CIA director John Ratcliffe in Washington on Friday, as Netanyahu presses for a return to war and, two Israeli sources say, weighs a unilateral strike that would still need Trump's approval."
+   ],
+   "geopolitical": "With the American track shut and economic pressure declared sufficient, the initiative has passed to the two actors who want escalation: the Guard, which will hit a Gulf host again, and Netanyahu, who lost his majority and is canvassing Washington for a strike. Eisenkot demanded a briefing because a caretaker premier could present Israel with a war as a fait accompli.",
+   "socioeconomic": "The war's bill reached American producers on Friday: October's Producer Price Index rose 0.3 per cent on the month and 6.5 per cent on the year, the fastest annual rate since November 2022, with core PPI at 5 per cent, food up 1.3 per cent in a month and wholesale vegetables up 26.7 per cent, as diesel pushed trucking freight nearly 25 per cent above a year ago."
+  },
+  {
+   "headline": "THE TREASURY SECRETARY BLAMES A CABINET COLLEAGUE ON TELEVISION AND TRUMP’S ADVISERS WEIGH SACKING HIM",
+   "breaking": false,
+   "summary": [
+    "Scott Bessent told CNBC that the Treasury, the State Department, the Pentagon and the US Trade Representative had all favoured blacklisting Megaspeed, the Singapore-incorporated buyer of more than US$4 billion of Nvidia chips, and that the failure lay elsewhere: “Commerce…has the pen. You would have to ask them about their internal processes.” He was frustrated, he said, because Trump had made clear China should not receive Nvidia chips above a set performance level and “any leakage… hurts our great companies in the AI race”. He did not deny this week's reported Situation Room confrontation with Commerce Secretary Howard Lutnick, saying only that conversations there are not repeated. Some of Trump's advisers have begun discussing whether Lutnick should be dismissed and the president has fielded calls raising alarms, though the White House said on Thursday that Trump retains complete confidence. Senior officials including Lutnick were briefed months ago on Jensen Huang's relationship with the Megaspeed executive Alice Huang; CNN reported that intercepts about the affair prompted a classified memo from Secretary of State Marco Rubio. Commerce has added no company to the entity list in over a year."
+   ],
+   "geopolitical": "Export control is the central instrument of American technology policy toward China, and it has been shown to carry an effective veto inside one department, held for a year against every other agency with a seat. Allies asked to mirror those controls are enforcing a list Washington will not add to.",
+   "socioeconomic": "The blame is public because the money is: a chief executive has gone, the shares carried heavy losses across the week, and who authorised what now reaches the cabinet. A Commerce secretary dismissed over chip licensing would make the export-control regime itself a market variable."
+  },
+  {
+   "headline": "EUROPE NAMES WHO WILL SPEAK FOR IT, AND MOSCOW REVIVES ITS DEMAND THAT NATO PULL BACK",
+   "breaking": false,
+   "summary": [
+    "At an informal summit in Dublin, EU leaders settled Europe's representation for the next round of Russia-Ukraine talks: the E5 of Britain, France, Germany, Italy and Poland, with the European Council and the Commission. They declined to appoint a single envoy, leaving foreign policy chief Kaja Kallas, who had sought the job and said plainly that “Russians do not want me”, without it. The leaders stated that Europe's own security architecture is not a subject for a Ukraine-Russia negotiation, and Kallas warned that Moscow is setting traps Europe should avoid. The Kremlin has still not confirmed it will sit with Europeans: Steve Witkoff said after Thursday's Kremlin meeting that Putin had agreed, while aide Yuri Ushakov would not, saying only that Europeans must choose between peace and continued war. Reporting on a Russian paper circulated without letterhead has Moscow demanding NATO rule out further enlargement and any military activity in eastern Europe, the South Caucasus and Central Asia."
+   ],
+   "geopolitical": "Europe answered who sits in the chair and lost the question that matters: five states plus two institutions is a committee, and Moscow's revived demand aims past Ukraine at the alliance's eastern deployments. If it holds, the negotiation is about NATO's presence and Kyiv is the venue.",
+   "socioeconomic": "The states that would bear a NATO drawdown, Poland and the Baltics above all, hold two of the five seats between them — their only real guarantee against being traded. Their defence budgets, and the EUR 70 billion hole in Ukraine's 2027 financing, are the price of a deal."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "A FIFTH PERSON IS CHARGED OVER NVIDIA SERVERS, WITH 41 COUNTS AND 917 MACHINES",
+   "breaking": false,
+   "summary": [
+    "Shi Bingzhe, 34, a Chinese national who was a director of Superphi and chief operating officer of NJ Global Financial, was handed 41 charges on 13 November, all for acquiring the benefits of criminal conduct. Charge sheets state he let the two companies take 917 servers from Aperia International across 41 transactions between May 2024 and February 2025, with reasonable grounds to believe the machines were proceeds of Aperia's crimes. Superphi faces six charges, NJ Global Financial 35. Prosecutors asked for bail of $300,000 and electronic tagging, citing the seriousness of the offences; his lawyer argued against tagging and said he had cooperated, and the judge allowed it. Five individuals and six companies have now been charged in a case built on fraud by false representation in server purchases, which began with a US inquiry into whether the Chinese start-up DeepSeek bought restricted Nvidia chips through third countries. Police hold a disposal-prohibition order over a good class bungalow worth about $55 million and have seized about $1 million from linked accounts."
+   ],
+   "geopolitical": "This is the case Singapore can actually prosecute — fraud on declarations, not espionage — and it advanced in court on the day Washington's cabinet argued publicly about a blacklist never written. Eleven defendants here against no entity-list addition there is the Republic's answer on enforcement.",
+   "socioeconomic": "Nvidia billed 22 per cent of third-quarter revenue to entities in Singapore, its largest market after the United States, while the government's position since February 2025 is that physical deliveries here are under 1 per cent. That gap is the risk of being an invoicing hub."
+  },
+  {
+   "headline": "CYBER INCIDENTS HAVE TRIPLED SINCE SEPTEMBER AND CSA TELLS EVERY ORGANISATION TO ACT NOW",
+   "breaking": false,
+   "summary": [
+    "The Cyber Security Agency said on 13 November that reported cyber incidents have averaged three times the January-to-August monthly rate since September, and urged every organisation, of any size or sector, to patch, enforce multi-factor authentication, monitor systems and ready business-continuity plans. At least 12 incidents involving Singapore organisations or their service providers were reported between 24 October and 13 November, most with confirmed or possible exposure of personal data from names and contact details to identity-card numbers and travel itineraries; six were healthcare or community-care bodies. CSA said these do not appear to be a coordinated campaign against Singapore but reflect opportunistic global attacks, that some involved compromised third-party suppliers, and that attackers' growing use of artificial intelligence could accelerate the exploitation of vulnerabilities, cutting the time defenders have. Chief executive Gwenda Fong said cyber security belongs on the agenda of business leaders who have no IT team. The Personal Data Protection Commission, reporting a rise in significant breaches this past week, said firms should collect less data; commissioner Denise Wong asked for “urgent attention”."
+   ],
+   "geopolitical": "Naming the cause as opportunistic scanning rather than a campaign is deliberate: it removes the option of treating the fortnight as an attack on Singapore and puts the obligation on every operator. It also concedes that supply-chain compromise is now the common route in.",
+   "socioeconomic": "With six healthcare bodies among the 12, the exposed asset is identity data that cannot be reissued, and the PDPC's answer — collect less — is a data-minimisation standard arriving by advisory, not by rule. Until it is a rule, over-collection costs the people whose records leak."
+  },
+  {
+   "headline": "RETRENCHMENTS HIT THEIR HIGHEST SINCE THE PANDEMIC AND NINE IN TEN OF THOSE LAID OFF ARE PMETS",
+   "breaking": false,
+   "summary": [
+    "In her first local media interview since taking the ministry in July's reshuffle, Acting Manpower Minister Jasmin Lau said retrenchments rose from 4,620 in the second quarter of 2026 to a preliminary 4,800 in the third, the highest since the pandemic, and are expected to stay near that level. She said this signals no downturn or recession — unemployment is low, vacancies and employment growth strong, most graduates still get an offer within six months — but it does mean more career transitions, alongside slower hiring and “job hugging”. The composition has changed: professionals, managers, executives and technicians are about six in ten of the workforce but nine in ten of those retrenched, against 60 to 70 per cent a decade ago. MOM plans longer traineeships with job outcomes for fresh graduates, wider transition support, more help for seniors, stronger protections for white-collar workers and a harder push on flexible work, adjusting existing schemes rather than adding another list of acronyms. Under the review of the main labour law it is weighing restrictions on an employer's access to foreign workers or grants if it withholds retrenchment benefits it can afford."
+   ],
+   "geopolitical": "Lau attributed much of the pressure to tariffs and the Middle East war, placing a domestic labour intervention inside the same arc as Hormuz and the blockade. The growth sectors she named — financial services, infocomm, advanced manufacturing — compete internationally, so the churn arrives with the growth.",
+   "socioeconomic": "Tying foreign-worker quotas and grants to the payment of retrenchment benefits would convert a guideline into a priced obligation — the first time severance carried an enforcement lever rather than an appeal to good practice."
+  },
+  {
+   "headline": "A SINGAPORE-FLAGGED BULK CARRIER HITS A BRIDGE OVER THE DELAWARE RIVER AND MPA OPENS AN INQUIRY",
+   "breaking": false,
+   "summary": [
+    "The Maritime and Port Authority said the Singapore-registered bulk carrier Strategic Alliance “came into contact” with the Tacony-Palmyra Bridge in New Jersey at about 2.15am Singapore time on 13 November, with no injuries to crew or civilians and no marine pollution. The 1.1km steel bridge, which carries three lanes over the Delaware River, was left unable to close, cutting traffic between Philadelphia and New Jersey until it reopened. The vessel was moored safely in Pennsylvania, and MPA said it will investigate with the United States authorities and the ship's manager."
+   ],
+   "geopolitical": "Flag-state responsibility is the point: an incident in American waters becomes a Singapore regulatory matter, investigated jointly, and the registry's standing rests on how that is handled. The comparison the industry will not avoid is the Dali, which killed six in Baltimore in 2024 under the same flag.",
+   "socioeconomic": "The world's second-largest ship registry sells confidence, and two bridge strikes by Singapore-flagged vessels inside three years is a cost measured in insurance rather than repairs. A movable span stuck open is also a road closure, which is where the loss fell."
+  }
+ ],
+ "word": {
+  "word": "imputation",
+  "pos": "noun",
+  "pronunciation": "im-pyoo-TAY-shun",
+  "definition": "The charging of a fault or crime to someone, often by implication rather than direct statement.",
+  "etymology": "From Latin imputare, “to enter in an account, to charge to” — in- (“into”) plus putare (“to reckon”). It came into English in the 15th century as a bookkeeping term for an entry made against someone, and kept the sense of an assigned debt.",
+  "example": "Bessent never used the word blame on CNBC, but the imputation was unmistakable: every department but Commerce had wanted Megaspeed blacklisted, and Commerce held the pen."
+ }
+}
