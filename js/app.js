@@ -1333,15 +1333,49 @@ function openPasteModal() {
   });
 }
 
+// A food whose name states its own weight — "Chicken kebab, grilled, 180g",
+// "Milo peng, large (~450ml)", "70g boiled minced pork" — is a weighed food
+// too (14 Nov 2026, the owner's clarification of "adjust the weights to
+// 100g"): that weight goes in the Amount box and the macros follow it. Only
+// when the name holds exactly one weight and it's the whole food's: "20g jam"
+// or "80g salmon" in a longer name is one ingredient, so scaling the whole
+// food by it would be wrong. "15g protein" is a nutrient, and "(15g each)"
+// is per piece of several.
+const WEIGHT_RE = /(\d+(?:\.\d+)?)\s*(g|ml)\b(?!\s*(?:protein|carbs?|fat|fibre|fiber|sugar|sodium))/gi;
+const WHOLE_FOOD_AFTER = /^\s*(?:$|[),./]|(?:bottle|can|cup|cube|serving|portion|pack|packet|tub|box|bowl|bar|piece|slice|scoop|glass)\b)/i;
+function weightInName(name) {
+  const t = String(name || '');
+  if (/\beach\b(?!-)/i.test(t)) return null;
+  const hits = [...t.matchAll(WEIGHT_RE)];
+  if (hits.length !== 1) return null;
+  const h = hits[0];
+  const atStart = /^\s*~?$/.test(t.slice(0, h.index));
+  if (!atStart && !WHOLE_FOOD_AFTER.test(t.slice(h.index + h[0].length))) return null;
+  const n = Number(h[1]);
+  return n >= 5 && n <= 2000 ? n : null;
+}
+
 // Add (from search result or manual) or edit an existing entry.
 function openFoodModal(result, existing = null) {
-  const per100 = existing?.per100 || result?.per100 || null;
+  let per100 = existing?.per100 || result?.per100 || null;
+  // A weight in the name stands in for per-100 g data: worked out here from
+  // one serving's figures, kept on the entry when it's saved.
+  const named = per100 ? null : weightInName(existing?.name ?? result?.name);
+  if (named) {
+    const n = existing?.servings || 1;
+    const oneOf = f => (existing ? (existing.per1?.[f] ?? (existing[f] != null ? existing[f] / n : null)) : result?.[f]);
+    per100 = {};
+    for (const f of ['kcal', 'protein', 'carbs', 'fat', 'fibre', 'sodium', 'water']) {
+      const v = oneOf(f);
+      per100[f] = v == null || v === '' ? null : Math.round((Number(v) * 10000) / named) / 100;
+    }
+  }
   // Without per-100g data (My log / manual favourites) grams are unknown —
   // leave Amount blank rather than implying the portion weighs 100g.
   // An existing entry stores TOTAL grams; the field shows one serving's worth.
   const grams = existing?.grams != null
     ? r1(existing.grams / (existing.servings || 1))
-    : (result ? (per100 ? (result.grams ?? parseServingGrams(result.serving) ?? 100) : result.grams ?? '') : '');
+    : named || (result ? (per100 ? (result.grams ?? parseServingGrams(result.serving) ?? 100) : result.grams ?? '') : '');
   const scaled = f => per100 && per100[f] != null && grams ? r1((per100[f] * grams) / 100) : '';
   // Favourite templates without per100 (manual entries) carry macros directly.
   const direct = f => (per100 ? scaled(f) : result?.[f] ?? '');
@@ -1366,7 +1400,7 @@ function openFoodModal(result, existing = null) {
   const m = openModal(`
     <h2>${existing ? 'Edit food' : 'Add food'}</h2>
     <label class="field"><span>Name</span><input id="f-name" value="${esc(init.name)}"></label>
-    <label class="field"><span>Amount per serving (g) ${per100 ? '— macros update automatically' : ''}</span>
+    <label class="field"><span>Amount per serving (g or ml) ${per100 ? '— macros update automatically' : ''}</span>
       <input id="f-grams" type="number" inputmode="decimal" value="${grams}"></label>
     <div class="row" style="gap:6px;margin:0 0 6px;align-items:center;flex-wrap:wrap">
       <span class="small muted">Servings</span>
