@@ -1707,7 +1707,8 @@ function renderPlan() {
     </div>` : counts.gym || counts.run ? '<p class="small" style="color:var(--green);margin:10px 0 0">✓ Nothing clashes.</p>' : ''}
     <p class="small muted" style="margin:10px 0 0">Tap any slot to set or change it. ✓ means it was logged, <b>!</b> means the day passed without it — tap to move it.</p>
   </div>
-  ${today > activePlan().race ? '' : hmActive() ? hmPlanCard(hm, week, today) + treadmillCard() : hmOfferCard()}`;
+  ${today > activePlan().race ? '' : hmActive() ? hmPlanCard(hm, week, today) : hmOfferCard()}
+  ${treadmillCard()}`;
 
   body.querySelector('#hm-start')?.addEventListener('click', () => {
     startHmPlan();
@@ -1863,17 +1864,19 @@ function hmPlanCard(hm, week, today) {
 // exact session paces as one-tap jumps. 1% incline: on a belt there's no air
 // resistance, and ~1% grade restores the outdoor cost at roughly 10.5 km/h
 // and faster (Jones & Doust, 1996); slower than that it barely matters.
+// Everyone gets the slider (14 Nov 2026, owner's call); the zone label and the
+// jump buttons only come with a race plan, which is where they're read from.
 const TM_SLOW = 480, TM_FAST = 210, TM_STEP = 5; // 8:00 to 3:30 /km, 5 s apart
 const paceSecs = p => { const [m, s] = p.split(':').map(Number); return m * 60 + s; };
 const secsPace = t => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
 
 function treadmillCard() {
-  const plan = activePlan();
-  let start = paceSecs(plan.paces.find(p => /race/i.test(p.zone))?.fast || '5:10');
+  const plan = hmActive() ? activePlan() : null;
+  let start = paceSecs(plan?.paces.find(p => /race/i.test(p.zone))?.fast || '6:00');
   try { start = Number(localStorage.getItem('tracker.tmPace')) || start; } catch { /* default */ }
   start = clamp(Math.round(start / TM_STEP) * TM_STEP, TM_FAST, TM_SLOW);
   const chip = (secs, label) => `<button type="button" class="btn small" data-tm="${secs}">${label}</button>`;
-  const exact = hmSessionPaces(plan.weeks);
+  const exact = plan ? hmSessionPaces(plan.weeks) : [];
   return `
   <div class="card">
     <h2 style="margin:0 0 4px">🏃 Treadmill speed</h2>
@@ -1882,13 +1885,13 @@ function treadmillCard() {
       <div><b id="tm-pace" style="font-size:26px">${secsPace(start)}</b> <span class="muted">/km</span>
         <span class="muted" style="margin:0 6px">→</span>
         <b id="tm-kmh" style="font-size:26px">${paceToKmh(secsPace(start)).toFixed(1)}</b> <span class="muted">km/h</span></div>
-      <div class="small muted"><span id="tm-mph"></span> mph · <span id="tm-zone"></span></div>
+      <div class="small muted"><span id="tm-mph"></span> mph${plan ? ' · <span id="tm-zone"></span>' : ''}</div>
     </div>
     <input id="tm-slider" type="range" min="0" max="${(TM_SLOW - TM_FAST) / TM_STEP}" step="1" value="${(TM_SLOW - start) / TM_STEP}"
       style="width:100%;margin:12px 0 2px;accent-color:var(--accent)" aria-label="Pace">
-    <div class="row between small muted" style="margin-bottom:10px"><span>slower</span><span>faster</span></div>
-    <p class="small muted" style="margin:0 0 6px">Jump to a zone:</p>
-    <div class="row" style="gap:6px;flex-wrap:wrap">${plan.paces.map(p => chip(Math.round((paceSecs(p.fast) + paceSecs(p.slow)) / 2 / TM_STEP) * TM_STEP, esc(p.zone))).join('')}</div>
+    <div class="row between small muted"${plan ? ' style="margin-bottom:10px"' : ''}><span>slower</span><span>faster</span></div>
+    ${plan ? `<p class="small muted" style="margin:0 0 6px">Jump to a zone:</p>
+    <div class="row" style="gap:6px;flex-wrap:wrap">${plan.paces.map(p => chip(Math.round((paceSecs(p.fast) + paceSecs(p.slow)) / 2 / TM_STEP) * TM_STEP, esc(p.zone))).join('')}</div>` : ''}
     ${exact.length ? `<p class="small muted" style="margin:10px 0 6px">Paces your sessions name:</p>
     <div class="row" style="gap:6px;flex-wrap:wrap">${exact.map(p => chip(paceSecs(p), p)).join('')}</div>` : ''}
   </div>`;
@@ -1897,7 +1900,8 @@ function treadmillCard() {
 function wireTreadmill(root) {
   const slider = root.querySelector('#tm-slider');
   if (!slider) return;
-  const zones = activePlan().paces;
+  const zones = hmActive() ? activePlan().paces : [];
+  const zoneEl = root.querySelector('#tm-zone');
   const paint = () => {
     const secs = TM_SLOW - Number(slider.value) * TM_STEP;
     const kmh = paceToKmh(secsPace(secs));
@@ -1905,7 +1909,7 @@ function wireTreadmill(root) {
     root.querySelector('#tm-kmh').textContent = kmh.toFixed(1);
     root.querySelector('#tm-mph').textContent = (kmh / 1.609).toFixed(1);
     const z = zones.find(p => secs >= paceSecs(p.fast) && secs <= paceSecs(p.slow));
-    root.querySelector('#tm-zone').textContent = z ? `${z.zone} zone` : 'between your zones';
+    if (zoneEl) zoneEl.textContent = z ? `${z.zone} zone` : 'between your zones';
     try { localStorage.setItem('tracker.tmPace', String(secs)); } catch { /* fine */ }
   };
   slider.addEventListener('input', paint);

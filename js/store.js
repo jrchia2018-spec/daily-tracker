@@ -715,9 +715,9 @@ export function planWarnings(keys) {
   const kindsOn = k => Object.values(planFor(k)).map(kindOf).filter(Boolean);
 
   // Legs and a leg-heavy run on back-to-back days — both tax the same legs.
-  // A friend's own plan sets its own spacing, which can be exactly this on
-  // purpose (hard days together), so it would be a warning every single week.
-  for (let i = 0; i < keys.length && !state.customPlan; i++) {
+  // On for everyone, a friend's own plan included (the owner's call, 14 Nov
+  // 2026), even where that plan puts them together on purpose.
+  for (let i = 0; i < keys.length; i++) {
     const a = keys[i], b = keys[i + 1];
     if (!b) break;
     const aK = kindsOn(a), bK = kindsOn(b);
