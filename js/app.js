@@ -1779,7 +1779,7 @@ function hmOfferCard() {
   <div class="card">
     <h2 style="margin:0 0 6px">🏁 Half marathon plan available</h2>
     <p class="small" style="margin:0 0 8px">A 23-week plan for a half marathon on <b>Sun 21 Mar 2027</b>, aiming for sub-1:50. Switching it on fills your planner from today, writes out each session, and adds the race paces and a treadmill chart.</p>
-    <p class="small muted" style="margin:0 0 12px">It's a copy of the app owner's plan: the paces come from their fitness, and the off weeks (23–27 Nov, 14–20 Dec, 4–24 Jan) from their schedule — adjust if those don't fit you.</p>
+    <p class="small muted" style="margin:0 0 12px">It's a copy of the app owner's plan: the paces come from their fitness, and the three weeks off (4–24 Jan) from their schedule — adjust if those don't fit you.</p>
     <button class="btn primary block" id="hm-start">Use this plan</button>
     ${planFileButton}
   </div>`;

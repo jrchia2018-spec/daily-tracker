@@ -191,6 +191,28 @@ function migrate(s) {
     s.migrations.sickNov2026 = true;
     changed = true;
   }
+
+  // No off weeks before January after all (14 Nov 2026, see hm-plan.js). The
+  // weeks of 23 Nov and 14 Dec were off, so the planner holds nothing there:
+  // their sessions go in, on days still empty. The weeks after them were
+  // easy re-entry weeks and are now normal ones, so each one's Tuesday easy
+  // run becomes the hard session — only if it's still exactly as the plan put
+  // it. For anyone running this plan: the owner, or a friend on the copy.
+  if (!s.migrations.noOffWeeks2026) {
+    if ((s.owner || (s.hmOptIn && !s.customPlan)) && s.plan) {
+      const today = dateKey();
+      const filled = new Set(['2026-11-23', '2026-12-14']);
+      for (const x of hmSessions(HM_PLAN.weeks)) {
+        if (!filled.has(HM_PLAN.weeks[x.week].mon) || x.date < today || s.plan[x.date]) continue;
+        s.plan[x.date] = { [x.slot]: x.kind };
+      }
+      for (const key of ['2026-12-01', '2026-12-22']) {
+        if (key >= today && s.plan[key]?.am === 'run-easy' && Object.keys(s.plan[key]).length === 1) s.plan[key].am = 'run-hard';
+      }
+    }
+    s.migrations.noOffWeeks2026 = true;
+    changed = true;
+  }
   return changed;
 }
 
