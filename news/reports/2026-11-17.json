@@ -1,0 +1,98 @@
+{
+ "schema": 1,
+ "date": "2026-11-17",
+ "generatedAt": "2026-11-17T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-11-16T07:00:00+08:00",
+  "to": "2026-11-17T07:00:00+08:00",
+  "label": "Monday 16 November 2026, 0700 SGT → Tuesday 17 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "US INTELLIGENCE SAYS IRAN IS PLANNING A DIRTY BOMB IN WASHINGTON, AND A THIRD CARRIER ARRIVES",
+   "breaking": true,
+   "summary": [
+    "New intelligence indicates Iran is developing plans to kill senior Trump administration officials by detonating a dirty bomb or a chemical weapon in Washington, seven US officials told CNN. They described the planning as option-building rather than an imminent attack, but specific as to locations and targets, prompting a week of contingency meetings; the White House said there are \"no credible threats to the homeland\". Officials are divided on whether Iran has people in place to execute, while broadly assuming radioactive material or chemical agents may already have been pre-positioned here for years: what changed is not capability but incentive. A second stream suggests Iran may use chemical weapons against US troops in the region, who several officials said lack adequate protective equipment.",
+    "The USS Theodore Roosevelt arrived in the Middle East, the third US carrier there with the George H.W. Bush and George Washington, reinforcing a blockade CENTCOM says has redirected 150 merchant vessels and disabled five since June; Lloyd's List puts Hormuz traffic below a third of pre-war levels. Trump, who said last week the war would end \"fairly soon\", now appears to favour the blockade over renewed strikes."
+   ],
+   "geopolitical": "A plot aimed at the homeland would turn a war fought over a waterway into one fought on American soil, just as the only restraint on escalation is Trump's preference for strangulation over bombing. Regional sources warn that hardliners who have profited from the war have reason to act as spoilers — so an attack need not be a decision of the Iranian state to end the chance of a deal.",
+   "socioeconomic": "There is a surveillance gap underneath the warning: the law allowing collection of foreigners' communications lapsed in June in a standoff over Trump's then-acting intelligence director, and orders predating it expire in March 2027. The attorney general, intelligence director and CIA director asked congressional leaders last week to reauthorise it, leaving the tool most likely to catch such plotting to a lame-duck Congress."
+  },
+  {
+   "headline": "UKRAINE LANDS THE BIGGEST DRONE ATTACK OF THE WAR AND HITS THE BRIDGE PUTIN BUILT",
+   "breaking": true,
+   "summary": [
+    "A one-way attack drone struck an arch of the Kerch bridge to occupied Crimea, with satellite imagery showing damage and Crimean governor Sergei Aksyonov restricting traffic until about midday as roughly 2,000 vehicles queued. It came inside what Russia called the largest Ukrainian drone attack of the war: the defence ministry claimed 1,336 drones downed overnight and 2,049 plus four Flamingo missiles over 24 hours, figures nobody has independently verified. Kyiv has not detailed the operation. Russia answered with seven killed, about 50,000 homes without power and 17 air-raid alerts over the capital in a day, the most of the war — all while Putin, meeting Kushner and Witkoff in the Kremlin, refused to soften his demand for all four annexed regions."
+   ],
+   "geopolitical": "The bridge is the one target whose political value is separable from its military value: Putin opened it himself in 2018 as the physical claim that Crimea is Russian, and Ukraine has damaged it while being asked at the table whether it would trade Donbas for NATO membership. Striking it says what Kyiv cannot say in Abu Dhabi — that the annexations it is pressed to concede are reversible.",
+   "socioeconomic": "Seventeen alerts and 50,000 households without power in one day is the winter the grid was always going to face, arriving in November rather than January. Every successful strike widens the 2027 budget gap the European Commission has conceded and Belgium still refuses to close with frozen Russian assets."
+  },
+  {
+   "headline": "COMMERCE FINALLY WRITES THE CHIP RULE, AND TRUMP OFFERS TO TAKE HUANG BACK",
+   "breaking": true,
+   "summary": [
+    "The Commerce Department tightened export controls on advanced semiconductors, requiring a licence to export, re-export or transfer them to Indonesia, Malaysia, Singapore, Thailand or Brazil — countries Washington says carry a higher-than-normal risk of diversion to China — and curbing sales to data centres supplying significant computing volumes to arms-embargoed states including China, Iran and Russia. Chips bound for companies ultimately headquartered in the US are exempt subject to reporting. It replaces a Biden-era rule the administration let lapse and was, in Commerce's own wording, \"written by and at the direction of the Department of Treasury and the National Security Council\" — the department having resisted it while Bessent, Rubio and trade representative Greer pushed. One analyst called it the first good-faith attempt to close export-control loopholes in 18 months, with enforcement, which Commerce controls, untested.",
+    "Leaving for Asia, Trump said he has no plans to fire Lutnick, conceded he and Bessent \"have two different views\", defended the delay in listing Megaspeed as avoiding \"a blow-up with China\", and said he \"would not mind\" seeing Jensen Huang reinstated at Nvidia. A source familiar said the board is not considering it."
+   ],
+   "geopolitical": "A rule the commerce secretary spent a year not writing has been drafted by Treasury and the National Security Council and published days before Trump meets Xi, with officials expecting Chinese retaliation to be held until after the visit. Having said publicly that one cabinet secretary wants friendship with Beijing and another a confrontation, Trump arrives in Shenzhen with his negotiating position itemised for the other side.",
+   "socioeconomic": "Markets priced the week as a reckoning: the Nasdaq fell 2.49 per cent to confirm a correction more than 10 per cent below its 6 October high, the S&P 500 lost 1.92, the Dow 1.41, the Philadelphia semiconductor index 5.3 and Nvidia 4.1 per cent, with results due that analysts expect to show US$109.1 billion of revenue. That index was up 106.6 per cent on the year in June and is now up about 43."
+  },
+  {
+   "headline": "FIVE EU STATES PUT A DEPORTATION CENTRE IN RWANDA",
+   "breaking": false,
+   "summary": [
+    "Germany, Austria, Denmark, Greece and the Netherlands announced concrete plans for a joint \"return hub\" in Rwanda for people whose asylum claims have been definitively rejected, targeting a 2027 start and an initial capacity of about 100. The five say it complies with EU and international law, relying on the bloc's revised Return Regulation, which opened the way to offshore return facilities — the legal basis Britain's Rwanda policy never had. No agreement with Kigali has been signed. More than 45 aid, union and rights organisations jointly urged the governments to drop the plan, arguing Rwanda does not meet the required human rights standards; UNHCR says it is in \"constructive discussions\" with the five, while the IOM says it does not negotiate state-to-state removal arrangements."
+   ],
+   "geopolitical": "Doing this as five states rather than one is the point: a shared facility spreads the legal exposure, gives Kigali a counterparty too large to drop, and makes offshoring a European practice rather than a British experiment. Survive the first court challenge and it becomes a template any member state can join, with the Return Regulation the instrument that moved Europe's asylum obligations outside Europe.",
+   "socioeconomic": "A hub for 100 cannot move the numbers on a continent holding hundreds of thousands of unenforced return decisions, so its value to these governments is demonstrative — proof of action for electorates that have handed a decade of gains to parties running on migration."
+  },
+  {
+   "headline": "UNITED GROUNDS DEPARTURES AND CHASE STOPS PROCESSING, FOUR DAYS AFTER THE FAA",
+   "breaking": false,
+   "summary": [
+    "United Airlines reported a widespread system outage on Monday afternoon that halted departing flights, leaving aircraft already airborne and United Express services unaffected; a pilots' union memo identified the failure as the weight-and-balance calculation system, and the airline said there was no sign of a cybersecurity issue. Hours earlier thousands of customers could not reach accounts at JPMorgan Chase, which blamed a software bug in on-premise hardware affecting online and in-branch transactions and said it was neither cyber-related nor systemic; US Bank warned of delays on Zelle payments to other institutions. Both follow Friday's nationwide FAA ground stop, traced to 25-year-old routers installed by L3Harris during a copper-to-fibre conversion, and the Microsoft 365 outage across 74 countries."
+   ],
+   "geopolitical": "Four operators — an aviation regulator, a cloud provider, an airline and the largest American bank — have each failed inside a week with no cyber attribution attached to any of them, which is a more awkward finding than sabotage. It tells adversaries that the systems holding up American aviation and payments break on their own.",
+   "socioeconomic": "These are the parts of the economy with no manual fallback: weight-and-balance cannot be worked around at the gate, and a bank whose ledger stalls stops wages and bills for everyone holding an account. With the Thanksgiving peak a week away and the FAA still on copper it has US$12.5 billion to replace and wants US$50 billion more, the question is how often these systems fail."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "WASHINGTON PUTS SINGAPORE ON THE CHIP LICENCE LIST, AND SINGAPORE SAYS IT IS STUDYING THE SCOPE",
+   "breaking": true,
+   "summary": [
+    "The Ministry of Energy, Trade and Industry and the Ministry of Digital Development and Information said on Tuesday they are studying carefully the US controls announced hours earlier that make Singapore one of five jurisdictions — with Indonesia, Malaysia, Thailand and Brazil — where a licence is now required to export, re-export or transfer advanced semiconductors, Washington's stated reason being a higher-than-normal risk of illegal diversion to China. They are engaging affected companies on the impact, have taken up scope and implementation with US authorities, and are \"exploring how to facilitate trusted access for Singapore companies\". Singapore does not condone companies using their association with the country to circumvent other countries' laws, they added, and will act against those who flout its own.",
+    "The designation follows the Megaspeed affair: the Singapore-based cloud company, an Nvidia partner renting out data-centre computing, has been under Commerce and Justice investigation since 2024 over suspected diversion of chips to China, and its executive's relationship with Jensen Huang preceded his resignation."
+   ],
+   "geopolitical": "Being named is a judgment on jurisdiction rather than conduct: Singapore's value to the chip trade has been that goods and compute move through it without friction, and a licence requirement prices that away while putting the burden of proof on companies here. The exemption for US-headquartered parents sorts firms in Singapore by where their owners sit rather than by what they do.",
+   "socioeconomic": "The data-centre and semiconductor complex is among the most capital-intensive things built here in a decade, and a licensing step of unknown duration is the friction that moves marginal capacity to wherever the paperwork is lighter. Until \"trusted access\" exists, every advanced chip ordered by a non-US-owned operator here carries a delay no local decision can shorten."
+  },
+  {
+   "headline": "SHANMUGAM SAYS NO POLICE FORCE CAN STOP UNREST A GOVERNMENT HAS EARNED",
+   "breaking": false,
+   "summary": [
+    "Senior Minister K. Shanmugam told CNA that good governance, not enforcement, keeps people off the streets: where a government is corrupt and basic needs go unmet, \"no amount of laws, police, or security forces can keep people off the streets\", because people that angry no longer care whether they are shot or arrested. The Coordinating Minister for National Security and Home Affairs cited Europe's near two months of protests — from education in France in September to living costs, wages and housing in Spain and Portugal — alongside Hong Kong, Bangladesh and Sri Lanka. He called public housing a \"signature success\" without which pressure on prices and rents in a city open to foreign investment would be \"explosive\". A Home Affairs survey of about 2,000 citizens and permanent residents taken between May and August found 81.1 per cent satisfied with public order, 75.5 per cent trusting the police to assess demonstration applications fairly and 59.7 per cent agreeing that all demonstrations should require a permit."
+   ],
+   "geopolitical": "The argument inverts the usual defence of Singapore's limits on assembly: the minister responsible for them says they are not what produces stability, and that Europe's riots are a governance failure rather than a policing one. It is also a message to a region where the same cost-of-living grievances have already removed governments that the Singapore claim rests on delivery.",
+   "socioeconomic": "Naming housing as the thing standing between this market and an explosive one sets a test the government has to keep passing, with resale prices climbing through three years and an entry rung the Prime Minister himself has called possibly broken. The 59.7 per cent also leaves permit requirements resting on a bare majority."
+  },
+  {
+   "headline": "LOWER-INCOME FAMILIES ARE CLIMBING, AND MORE ARE COMING BACK FOR HELP",
+   "breaking": false,
+   "summary": [
+    "The Ministry of Social and Family Development's Supporting Lower-Income Households Trends Report 2026, out on Monday, shows 36 per cent of ComLink+ families had steady work, no reliance on major financial assistance and rising real incomes as at December 2025, up from 28 per cent — about 1,104 more families — with median real household income among those achieving social mobility up 31 per cent over the year. Of families that joined in 2023 and stayed, half had reached overall stability against 43 per cent in 2024; self-reliance in pre-school enrolment, vaccination and attendance doubled from 15 to 30 per cent; and the share moving from public rental into owned homes went from zero to 4 per cent. The scheme covered 11,006 families, up from 10,219.",
+    "The same report shows about 54 per cent of households that left ComCare short-to-medium-term assistance in 2022 returning within three years, up from 49 per cent of the 2021 cohort but below 2019's 63 per cent — a shift back, MSF says, towards pre-pandemic patterns. Employment separated the groups: 46 per cent of those who stayed off had a member in stable work against 35 per cent of those who returned. Fewer households drew the aid in 2025 — 19,473 against 20,825 — while disbursements rose from about S$94 million to S$95.8 million."
+   ],
+   "geopolitical": "Singapore has published outcome data on a cohort it followed for two years, including the figures that do not flatter the scheme. It hands ASEAN governments facing the same cost-of-living politics a worked example of social mobility measured rather than asserted.",
+   "socioeconomic": "The two halves describe one household from different ends: coaching and conditional support move a minority into ownership and steady work, while most who exit shorter-term aid are one illness, one caregiving duty or one lost job from returning, usually inside the first year. That puts the weight on job stability rather than transfer size, and it is the evidence base for whatever replaces the Assurance Package, whose five-year run ends next month."
+  }
+ ],
+ "word": {
+  "word": "refoulement",
+  "pos": "noun",
+  "pronunciation": "ruh-FOOL-mon",
+  "definition": "The forcible return of a refugee or asylum seeker to a territory where they face persecution or serious harm. Its prohibition — non-refoulement — is the one obligation in refugee law from which no state may derogate.",
+  "etymology": "French, from refouler, \"to drive back, repel\", built on fouler, to trample. It entered international law through Article 33 of the 1951 Refugee Convention, which kept the French word because no English term carried the same sense of pushing someone back across a line.",
+  "example": "Germany, Austria, Denmark, Greece and the Netherlands insist their Rwanda return hub takes only the definitively rejected and so raises no question of refoulement; the 45 organisations asking them to abandon it say Rwanda cannot meet the standard that makes the distinction mean anything."
+ }
+}

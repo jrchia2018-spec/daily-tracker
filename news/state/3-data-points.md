@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 16 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 17 November 2026)
 
 > **Working file.** It holds the standing reference table plus dated sections from the last 30 days. Older sections are in `archive/3-data-points-YYYY-MM.md`, which runs do not read. Pruning rule: `news/AGENT.md` step 5.
 
@@ -49,31 +49,6 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Singapore births, 2025 | ~29,864 total (27,393 resident, 2,471 non-resident) — below 30,000 for the first time since independence; -11% YoY; median first-time-mother age 32.1 (up from 31.3 in 2021) | Registry of Births and Deaths via wire reports, 27 Jul 2026 |
 | Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
 | Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
-
-## Added 17 Oct 2026
-| Indicator | Figure | Source |
-|---|---|---|
-| Brent crude | US$109.86/barrel at 16 Oct settle (+US$3.94, +3.7%), highest since 19 May 2026; S$140.63 at USD/SGD 1.28 | market reports via web search, 16 Oct 2026 |
-| WTI crude | US$101.41/barrel at 16 Oct settle (+US$3.44, +3.5%), first close above US$100 since 17 Sep 2026; S$129.80 at USD/SGD 1.28 | market reports via web search, 16 Oct 2026 |
-| Hormuz ship attacks | 12 vessels attacked 5–11 Oct, highest week since the war began (10 the week before, six on 11 Oct alone, four more since); UKMTO dating approximate | BBC Verify analysis of UKMTO data, 16 Oct 2026 |
-| Hormuz oil flows | ~12.6m barrels/day on 13 Oct, down from ~15m at end-September | industry data via BBC Verify, 16 Oct 2026 |
-| US FY2026 deficit | US$1.992 trillion, +12% on FY2025's US$1.775tn; third-largest on record after 2020–21; receipts ~US$5.4tn, outlays ~US$7.4tn | US Treasury final FY2026 accounts, 16 Oct 2026 |
-| US debt interest FY2026 | Gross interest a record US$1.36tn (+US$144bn, +12%); net interest above US$1tn — ~two-thirds of the US$217bn rise in the deficit | US Treasury via CNBC/Fox Business, 16 Oct 2026 |
-| US gross federal debt | Above US$40.3 trillion (passed US$40tn in August) | US Treasury via press reports, 16 Oct 2026 |
-| Voided IEEPA tariff refunds | ~US$166bn refunded after the Supreme Court struck the tariffs down in February 2026 | Reuters/CBP via press reports, 16 Oct 2026 |
-| US indices (16 Oct) | Nasdaq Composite -2.1% to 26,140 (worst week since June, ~-4.5%); S&P 500 -1.1% (-~2% weekly); Dow -0.3% | CNN/CBS market reports, 16 Oct 2026 |
-| CoreWeave | -~12% on 16 Oct and ~-24% on the week; bond yields past 15%; CEO stock sales near US$1bn since IPO | Reuters/CNA and SEC filings, 16 Oct 2026 |
-| Transboundary Haze Pollution Act | First notices of this episode: NEA sent preventive measure notices to seven Indonesian companies on 16 Oct, requiring firefighting deployment, no burning and action plans; 2015 investigations into four companies still open; enacted 2014, no prosecution in 11 years | Grace Fu via ST/CNA, 16 Oct 2026 |
-| SG unhealthy-air run | 12 consecutive days of unhealthy PSI from 5 Oct — longest since 2015's 15 days (23 Sep–7 Oct); episode ~6 weeks since 4 Sep, as in 2015 | ST checks of Singstat 24-hour PSI, 16 Oct 2026 |
-| SG PSI (24h) | Central 226 at 8am 16 Oct; Fu warned readings may exceed 300 (hazardous); relief expected only at the inter-monsoon in 3–4 weeks, north-east monsoon ~early December | NEA/Grace Fu via ST, 16 Oct 2026 |
-| SG N95 collection | ~10% of eligible Singaporeans collected since 14 Oct; vending machines at 37 transport hubs and social service offices by 16 Oct | Grace Fu via ST, 16 Oct 2026 |
-| SG haze employer compliance | ~three-quarters of employers inspected had haze measures in place | Jasmin Lau/MOM via ST, 16 Oct 2026 |
-| Brazil Amazon deforestation | -41.8% year on year to 3,335 sq km — lowest since records began 1988, 1,236 sq km below the prior record low; -71.2% since 2022; Pará 33.9%, Mato Grosso 25.5%, Amazonas 15.7%; Roraima +0.4%; Jair Bolsonaro's 2019–23 term +59.5% | Prodes/INPE via The Guardian, 16 Oct 2026 |
-| Brazil Cerrado deforestation | 5,516 sq km, lowest since 2001; -48.4% over four years | Prodes/INPE via The Guardian, 16 Oct 2026 |
-| Ukraine war funding | Zelensky put the 2027 war cost at €155bn and asked the EU for €70bn more; von der Leyen accepted a €70bn gap; December's €90bn plan covers two-thirds of 2026–27 needs; Russia's €210bn frozen in the EU | Zelensky/von der Leyen via The Guardian, 16 Oct 2026 |
-| India voter roll deletions | More than 130 million voters removed in the revision; ~500 protesters reached Connaught Place on 16 Oct | Reuters via CNA, 16 Oct 2026 |
-| SG cardiovascular disease | One in three deaths in 2025; about 23 deaths a day from heart disease and stroke | NHCS via ST, 16 Oct 2026 |
-| CIPHER | Opened 16 Oct at NHCS; 5ml blood reprogrammed into induced pluripotent stem cells; NHCS library of 40+ patient-derived disease models; S$2.5m Tong Ming Chuan Professorship announced | ST, 16 Oct 2026 |
 
 ## Global data points (18 Oct)
 | Indicator | Figure | Source |
@@ -844,3 +819,25 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | National monument lease renewals | policy change allows places of worship gazetted as national monuments to renew leases for up to 60 years, against up to 30 years generally granted to places of worship on state land; St Joseph's Church, Victoria Street (completed 1912, 99-year lease due to expire February 2028) renewed for 60 years effective 15 July at a premium of more than S$5 million, after a five-year restoration costing about S$25 million that reopened in 2022; St George's Church (Minden Road) and Tan Si Chong Su (Magazine Road) also offered 60 years; Prinsep Street Presbyterian Church renewed 30 years in October 2023 at about S$1,194 per sq m per plot ratio; Singapore has 77 national monuments, 30 of them places of worship — 13 freehold, 11 on 999-year leases expiring 2826 or later, the Armenian Church on a 99-year lease to 2092, and five on shorter terms (St Joseph's, St George's, Tan Si Chong Su, Hajjah Fatimah Mosque, Prinsep Street Presbyterian); land for mosques is granted directly to MUIS at chief-valuer market price | SLA and NHB statements to the Straits Times, 16 Nov 2026 |
 | Singapore games sector (carried, not run) | Ubisoft to cut 70 jobs at its Singapore studio, about 20% of its local workforce, announced October 2026; it shut Finland's RedLynx the same week and EA closed BioWare after three decades; Ubisoft Singapore opened in 2008; its Assassin's Creed Black Flag Resynced reportedly sold more than 3.5 million copies within two weeks of its July 2026 launch | industry figures and academics via CNA, 16 Nov 2026 |
 | Road fatality identification (carried, not run) | the cyclist killed by a tipper truck on Tanah Merah Coast Road on 12 Nov, alerted about 8am, identified on 15 Nov as 24-year-old national triathlete Russell Lee; the truck's 38-year-old driver is assisting investigations; the Triathlon Association of Singapore urged "heightened vigilance, care and mutual respect on our roads" | Triathlon Association of Singapore via CNA, 15 Nov 2026 |
+
+## Global data points (17 Nov)
+- US carriers in the Middle East: three — USS Theodore Roosevelt (arrived), USS George H.W. Bush, USS George Washington, with about 20 other US warships, mostly destroyers (Washington Post / AP, 16 Nov 2026).
+- Hormuz blockade since June: 150 merchant vessels redirected, five disabled (CENTCOM, cited 16 Nov 2026); Hormuz traffic below one third of pre-war levels (Lloyd's List, cited 16 Nov 2026).
+- US foreign-communications collection law: lapsed June 2026; orders approved before then grandfathered to March 2027 (CNN, 16 Nov 2026).
+- Russian claims on the Ukrainian drone attack: 1,336 drones downed overnight; 2,049 drones and four Flamingo missiles over 24 hours — unverified independently (Russian defence ministry via NBC/UPI, 16 Nov 2026).
+- Kyiv under attack: seven killed, about 50,000 without power, 17 air-raid alerts in 24 hours, the most of the war (UPI, 16 Nov 2026). About 2,000 vehicles queued at the Kerch bridge; traffic restricted to about midday (Crimean governor Sergei Aksyonov, 16 Nov 2026).
+- New US chip rule: licence required to export, re-export or transfer advanced semiconductors to Indonesia, Malaysia, Singapore, Thailand, Brazil; exemption for ultimately US-headquartered firms subject to reporting (US Commerce Department, 16 Nov 2026).
+- US markets, 16 Nov close: Dow -739.38 points / -1.41% to 51,608.17; S&P 500 -145.08 / -1.92% to 7,416.59; Nasdaq -626.51 / -2.49% to 24,509.76, confirming a correction more than 10% below its 6 Oct closing high; Philadelphia SE Semiconductor index -5.3%; Nvidia -4.1% (Reuters via CNA, 17 Nov 2026).
+- Semiconductor index: +106.6% year-to-date in mid-June 2026, now about +43% for 2026 (Reuters via CNA, 17 Nov 2026). Nvidia results expected at US$109.10bn revenue, earnings +90.4% YoY (analyst consensus cited 17 Nov 2026).
+- EU Rwanda return hub: five states (Germany, Austria, Denmark, Greece, Netherlands); 2027 target start; initial capacity about 100; more than 45 aid, union and rights organisations opposed in a joint statement; no agreement signed with Kigali (CNN / InfoMigrants, 16 Nov 2026).
+- COP31 Antalya first draft cover decision: 18 pages; adaptation finance proposed at at least US$120bn; consensus of almost 200 states needed by Friday (draft text reporting, 16 Nov 2026).
+- FAA: about US$1bn a year spent maintaining copper, US$12.5bn held to replace it, US$50bn more requested (Transport Secretary Sean Duffy, 15 Nov 2026 — carried).
+
+## Singapore data points (17 Nov)
+- ComLink+ (as at Dec 2025): 36% of families met MSF's social-mobility test of steady employment, no reliance on major financial assistance and real income growth, up from 28% in 2024 — about 1,104 more families; median real household income among those achieving mobility +31% over the year; 11,006 families on the scheme, up from 10,219, about 21% having joined only in 2025 (MSF Supporting Lower-Income Households Trends Report 2026, 16 Nov 2026).
+- ComLink+ 2023 joiner cohort still enrolled at end-2025: 50% had achieved overall stability, up from 43% in 2024 (432 more families); pre-school self-reliance 15% (2023) → 30% (2025); share moving from public rental to owned homes 0% → 4% (same report, 16 Nov 2026).
+- ComCare Short-to-Medium-Term Assistance returns within three years of exit: 54% of the 2022 exit cohort, 49% of 2021, 63% of 2019; among the 2022 cohort, 46% of non-returners had a member in stable employment in 2023 against 35% of returners; 23% of returners had a beneficiary aged six or under against 16% of non-returners; 18% had a primary beneficiary medically unfit for work against 13% (same report, 16 Nov 2026).
+- ComCare SMTA caseload: 19,473 households in 2025, down from 20,825 in 2024; disbursements up from about S$94m to S$95.8m (same report, 16 Nov 2026).
+- MHA public order perception survey 2026 (about 2,000 citizens and PRs, polled May–August 2026): 81.1% satisfied with the level of public order; 75.5% trust the police to assess public-demonstration applications fairly; 59.7% believe all public demonstrations should require a police permit (MHA, cited by Shanmugam in a CNA interview published 17 Nov 2026).
+- ERP: PIE (Kallang Bahru and slip road into Bendemeer) 8.30–9am rises from S$4 to S$5 from 4 Jan 2027; northbound CTE before the PIE 5–5.30pm charged S$1 from the same date; S$1 discounts at 12 locations at specified peak timings from 23 Nov to 31 Dec 2026 (LTA, 16 Nov 2026).
+- CDA designated the world's first WHO Collaborating Centre for Infection Prevention and Control; Singapore has trained more than 3,100 foreign government officials through Singapore Cooperation Programme public health courses (MOH/CDA, 16 Nov 2026).
