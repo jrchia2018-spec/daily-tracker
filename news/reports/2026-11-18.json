@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "date": "2026-11-18",
+ "generatedAt": "2026-11-18T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-11-17T07:00:00+08:00",
+  "to": "2026-11-18T07:00:00+08:00",
+  "label": "Tuesday 17 November 2026, 0700 SGT → Wednesday 18 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "AMERICAN JETS STRIKE QESHM AGAIN, AND TRUMP PUTS A PRICE ON THE WASHINGTON PLOT",
+   "breaking": true,
+   "summary": [
+    "US fighter jets hit an Iranian missile launch site on Qeshm Island on Tuesday with precision munitions, a military official said, calling it self-defence against IRGC aggression towards American personnel. Iranian state media reported an enemy attack on a city's outskirts there; Hormozgan's deputy governor for security affairs, Ahmad Nafisi, said no vital infrastructure or residential areas were damaged. US officials cast it as of a piece with other recent strikes around the Strait of Hormuz rather than an escalation.",
+    "Trump said the US was taking any Iranian plan to detonate a dirty bomb in Washington very seriously and that Tehran would pay a major price if it tried; Iran called the allegation baseless. The third carrier strike group has entered CENTCOM's area and is expected to join blockade and escort operations, and Trump has said he could resume full combat operations if Tehran refuses his terms. US officials told the New York Times that Iran reads his election defeat as weakness."
+   ],
+   "geopolitical": "The strike pattern is now the policy: limited hits on launch sites, a blockade and three carriers, with no channel to Tehran since Vance left the file. With Democrats seated in both chambers in January, the window in which Trump can start a larger war without a hostile Congress runs out in about seven weeks, and each defensive strike reads regionally as a placeholder for a decision not taken.",
+   "socioeconomic": "A war held at this temperature keeps its costs on shipping rather than battlefields: Hormuz traffic is below a third of pre-war levels, and what still transits does so under American escort, which prices insurance and freight."
+  },
+  {
+   "headline": "A SPAN OF PUTIN'S BRIDGE IS IN THE WATER, ON THE EVE OF HIS 'NEW YALTA'",
+   "breaking": true,
+   "summary": [
+    "A section of the Kerch bridge collapsed after a Ukrainian strike, the second attack in two days. The SBU said one metal arch and the road span beneath it were completely destroyed and the railway section preliminarily damaged; video geolocated by CNN showed roadway in the water and a fire burning. Zelenskyy called it the seventh stage of an unprecedented operation answering Russian strikes on Ukrainian infrastructure, naming Neptune missiles against the rail section and Palianytsia, Ruta and FP-5 drones against the road, all of them Ukrainian-made.",
+    "Russia suspended traffic, called it a terrorist act, later resumed rail crossings and offered ferries to foot passengers; Peskov said it would be rebuilt better than before. The US$3.7bn crossing is nearly 12 miles long, the longest in Europe, built for 40,000 cars and 13 million tonnes of cargo a year. Moscow claimed 1,441 drones downed overnight. Russian strikes had badly damaged Kyiv's North and South bridges and killed two people hours earlier."
+   ],
+   "geopolitical": "Putin arrives in Shenzhen to sit with Trump and Xi at a meeting his officials have framed as a New Yalta, having just lost the land route to the territory that gathering is meant to ratify. Kyiv, excluded from the table and asked last week whether it would trade Donbas for NATO membership, has answered by showing what it can destroy without American permission or American weapons.",
+   "socioeconomic": "The bridge is the occupied peninsula's supply artery as well as its symbol, and a severed road span pushes logistics onto a rail line Ukraine has also hit and ferries that cannot carry freight at volume. Crimea spent the summer under a state of emergency over power and fuel."
+  },
+  {
+   "headline": "NVIDIA DOUBLES ITS REVENUE AND SHUTS THE DOOR ON ITS FOUNDER",
+   "breaking": false,
+   "summary": [
+    "Nvidia reported third-quarter revenue of US$115.8bn, up 103 per cent on the year against a consensus near US$109bn; data-centre revenue was US$107.6bn, up 110 per cent, net income US$65.3bn, earnings US$2.70 a share, and fourth-quarter guidance near US$130bn. Board chair Harvey Jones opened the call by saying the board had unanimously accepted Jensen Huang's resignation and does not intend to reinstate him, hours after Huang said he would be honoured to return if asked. Shares, down 35 per cent from their 6 October record, rose about 3.5 per cent after hours.",
+    "Huang still owns about 3.5 per cent of the company, and filings show a holder of more than 3 per cent for three years may put two director nominees on the proxy ballot for the June meeting. The Wall Street Journal reported an SEC investigation opened after his resignation. Commerce and Justice, answering a week of criticism of Howard Lutnick, published a timeline: a Megaspeed export-control investigation opened in 2024, records demanded from Nvidia in May 2025, Nvidia's no-sell listing a month later, and an on-site check in June 2025 with Singaporean officers at which chief executive Alice Huang was interviewed."
+   ],
+   "geopolitical": "The timeline defends a bureaucracy, not a company: Commerce is arguing it was checking Megaspeed on the ground in Singapore two and a half years before Treasury accused it of sitting on an entity listing. It also concedes that American and Singaporean officials interviewed the executive at the centre of the affair in 2025 and left her in place — the question a Democratic Congress will put.",
+   "socioeconomic": "A quarter this size settles the narrow question, that demand did not depend on the founder, while leaving governance open: a departed chief executive who can still name two directors is not a clean succession. About US$2 trillion of value has gone since 6 October, spread by index weight across every S&P 500 fund."
+  },
+  {
+   "headline": "THE NSA'S CLASSIFIED NETWORK GOES DOWN, AND THE WHITE HOUSE SAYS IT IS FINE",
+   "breaking": false,
+   "summary": [
+    "NSANet, the network the National Security Agency uses for internal classified communication, went down on Tuesday, six people told CNN, and the agency staggered staff arrivals while establishing the scope. The NSA called it temporary degradation during scheduled maintenance and said mission-critical capabilities stayed up. Director of National Intelligence Jay Clayton gave a different account: the agency was patching major vulnerabilities found last month in PHP, the language behind about 70 per cent of the world's websites, and some systems did not come back up. Researchers had used AI tools to exploit those flaws, setting off a global scramble the NSA itself urged.",
+    "A former senior NSA official called it alarming but likely not crippling given NSANet's redundancies, and officials said intelligence could still reach Trump aboard Air Force One. Apple spent the day restoring Apple Pay, iCloud and app services after an internal update failed — days after JPMorgan Chase, United Airlines, the FAA's nationwide ground stop and a 74-country Microsoft outage. The FAA has paused installing the Juniper routers blamed for the ground stop. Trump said of the NSA failure that it is like that when you are big and powerful."
+   ],
+   "geopolitical": "Six failures in a week, each attributed to maintenance, software or ageing hardware rather than an attacker, is its own intelligence product: it shows any adversary which American systems have no margin, without touching them. Clayton's explanation is the most uncomfortable detail, because the patch an agency applies to protect itself is now as likely to take it down as the flaw was.",
+   "socioeconomic": "What connects an airline, a bank, a cloud provider and a signals agency is deferred replacement — copper the FAA spends about US$1bn a year maintaining, routers due for retirement in 2006 — and that bill comes due in outages, not budgets, with the Thanksgiving peak a week away."
+  },
+  {
+   "headline": "ISRAEL'S PARLIAMENT TAKES THE GAVEL OFF NETANYAHU",
+   "breaking": false,
+   "summary": [
+    "The Knesset elected Matan Kahana of Gadi Eisenkot's Yashar party as its 26th speaker with 66 votes, replacing Likud's Amir Ohana; Likud's whip Ofir Katz drew 52 in a separate vote. It is the first substantive move by the bloc that won the 27 October election, in which Netanyahu's coalition took 53 of 120 seats against the opposition's 67 — 48 across four Jewish parties and a record 19 for the Joint List and Raam. Netanyahu's bloc tried to delegitimise the result as dependent on Arab lawmakers, shouting shame at each who backed Kahana; Likud called it a low point in Knesset history.",
+    "Eisenkot, holding President Herzog's mandate, has up to four and a half weeks left to form a government, but his bloc now controls the plenum, the legislative agenda and key committees. It has installed interim chairs at finance and defence, with Avigdor Liberman at Foreign Affairs and Defense saying he will summon every security chief. Special committees have been formed to repeal the judicial-selection law, the law weakening the attorney-general and the media regulation overhaul, and the bloc has pledged a state commission of inquiry into 7 October."
+   ],
+   "geopolitical": "Control of the plenum does not make Eisenkot prime minister, but it ends Netanyahu's ability to govern a caretaker period by default. A committee that can summon the Mossad and IDF chiefs, during a war with Iran and a stalled Gaza ceasefire, puts both under oversight he has avoided for three years, and the October 7 inquiry he refused now has a majority able to constitute it.",
+   "socioeconomic": "Unwinding the judicial overhaul matters to Israel's cost of capital as much as to its courts: the 2023 legislation drew warnings from the Bank of Israel and foreign investors about legal certainty. The same majority now holds the finance committee, and so the budget."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE TAKES THE ASEAN GAVEL, AND WONG FLIES ON TO SHENZHEN",
+   "breaking": false,
+   "summary": [
+    "Philippine President Ferdinand Marcos Jr handed Prime Minister Lawrence Wong the chairmanship gavel at the close of the 49th ASEAN Summit in Manila on Tuesday. Singapore chairs the bloc in 2027 under the theme \"Deeper Integration, Wider Partnerships\". ASEAN cannot control superpower rivalry, distant conflicts or economic disruption, Wong said, but it can decide how to respond, and by working together more closely and widening its network of partners the region can shape its own future. He warned external pressures will keep testing the bloc's cohesion, and called for closer cooperation with Australia and South Korea and for ASEAN to reinforce the United Nations.",
+    "The chair year starts with its files open: the haze-information platform Wong asked for on Sunday, ratification of the ASEAN Petroleum Security Agreement, the digital economy framework signed in Manila on Saturday, and the Thailand-Cambodia observer team. The PMO said Wong travels to Shenzhen and Beijing from 18 to 21 November — to the city where Trump, Xi and Putin are due to meet, days after Washington made Singapore one of five jurisdictions needing a licence for advanced American chips."
+   ],
+   "geopolitical": "Singapore inherits the chair where the bloc's two largest partners use it as leverage against each other and its members are named individually in American export controls. Wider partnerships is the Singaporean answer — more counterparties, so no single one sets the terms — and the deliverables Wong listed are plumbing rather than declarations, the only integration a consensus body can be held to.",
+   "socioeconomic": "The chairmanship gives Singapore a year of agenda-setting over the files that set its own costs: energy security while the war keeps diesel elevated, a regional power grid, digital trade rules, and a haze regime whose last failure was put at S$2.32 billion."
+  },
+  {
+   "headline": "SIMBA ADMITS IT MISUSED SPECTRUM ON PURPOSE, AND ITS DIRECTOR GOES",
+   "breaking": false,
+   "summary": [
+    "Simba's Australian-listed parent Tuas told the ASX on Tuesday that the telco does not contest IMDA's allegations of unauthorised use of the 2,100MHz band for 4G and of the 2,340-2,360MHz band at about 92 sites, intermittently between 2023 and 2026 — conduct the regulator alleges was intentional and approved by senior management. It also admitted deploying 5G equipment without authorisation at two locations in 2023 and failing to comply with an IMDA production order. Singapore-based director Richard Tan will resign subject to regulatory approval and new directors will be appointed; whether he also leaves the chief executive role is unclear.",
+    "IMDA's show-cause notice had required an answer by 16 November. Tuas said Simba has given the regulator the circumstances and its remediation steps, and would not comment further while no findings have been made. IMDA can fine the telco up to S$1 million or 10 per cent of its annual Singapore revenue, whichever is higher, and can suspend or cancel its spectrum rights, shorten its licence, or cancel the licence in whole or in part."
+   ],
+   "geopolitical": "A fourth mobile operator admitting it used airwaves it was never assigned, with management approval, is a problem for the regulatory model rather than one company: Singapore allocates spectrum by auction on the premise that holders stay inside their grants, and enforcement has rested on that premise rather than monitoring. Regional regulators that licensed challenger telcos on the same logic will read IMDA's remedy as the precedent.",
+   "socioeconomic": "The penalty range reaches the licence itself, which makes this a question about whether Singapore keeps four mobile networks. Simba sells the cheapest plans in the market, and even a partial suspension of its spectrum rights would move those customers onto the three incumbents it exists to undercut."
+  },
+  {
+   "headline": "ONG YE KUNG PUTS TIERED SOCIAL MEDIA INTO LAW NEXT YEAR",
+   "breaking": false,
+   "summary": [
+    "The government will legislate early next year to curb harmful social media features for the young, Coordinating Minister for Social Policies and Health Minister Ong Ye Kung said at the Asian Family Conference in Singapore on Tuesday, and may set tiered access — restricted features for younger teenagers, full access for older users. He put the case in terms of weakening social bonds rather than content, calling human relationships fraying and in recession, with the young in many countries reporting fewer close friends. In Singapore the share of youths with no close friends has doubled from 4 to 8 per cent, and poor mental health among the young has risen from 17 to 26 per cent.",
+    "MDDI's engagements with more than 2,000 parents and young people between June and August 2026 found screen addiction and overuse the top social media concern among youth, ahead of misinformation, scams and privacy, and parents' second after inappropriate content. Both groups preferred age-based access with safeguards to an outright ban."
+   ],
+   "geopolitical": "Singapore is taking the middle path in a field where Australia has legislated an under-16 ban now before its High Court and the EU has gone after feed design through the Digital Services Act. Regulating features by age rather than prohibiting accounts is harder to litigate and harder to evade, and because platforms build one product for the region, a Singaporean feature tier is a template other ASEAN regulators can copy.",
+   "socioeconomic": "Ong's figures are the argument for acting before the health system absorbs the cost: suicide has been the leading cause of death for Singaporeans aged 10 to 29 for six consecutive years. Tiering by age also obliges platforms to verify age, which is the compliance cost and the privacy question the bill must answer."
+  }
+ ],
+ "word": {
+  "word": "caesura",
+  "pos": "noun",
+  "pronunciation": "si-ZYOOR-uh",
+  "definition": "A break, interruption or cutting-off in something continuous; originally a pause in a line of verse.",
+  "etymology": "From Latin caesura, \"a cutting\", from caedere, \"to cut\" — the root also behind incision and decide.",
+  "example": "The destroyed arch put a caesura in the only road from Russia to Crimea, and Peskov's promise to rebuild the bridge better than before conceded how long the pause might last."
+ }
+}

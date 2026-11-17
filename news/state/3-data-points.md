@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 17 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 18 November 2026)
 
 > **Working file.** It holds the standing reference table plus dated sections from the last 30 days. Older sections are in `archive/3-data-points-YYYY-MM.md`, which runs do not read. Pruning rule: `news/AGENT.md` step 5.
 
@@ -49,33 +49,6 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Singapore births, 2025 | ~29,864 total (27,393 resident, 2,471 non-resident) — below 30,000 for the first time since independence; -11% YoY; median first-time-mother age 32.1 (up from 31.3 in 2021) | Registry of Births and Deaths via wire reports, 27 Jul 2026 |
 | Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
 | Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
-
-## Global data points (18 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Graham Act (Lindsey O. Graham Sanctioning Russia and Iran Act of 2026) | Senate passage 86–11, signed into law mid-Sep 2026; Russia provisions waived by executive order signed late Fri 16 Oct, two days before effect; no expiry | Reuters/CNA, 17 Oct 2026 |
-| Waived provisions | Tariffs up to 100% on the largest buyers of Russian oil and gas; sanctions on Russia's energy sector, banks and shadow tanker fleet; curbs on Russian sovereign debt and US investment; the clause conditioning relief on a Ukrainian-accepted peace deal | Reuters/CNA/Guardian, 17 Oct 2026 |
-| Russian strikes on Ukrainian energy, 16 Oct | More than 15 power generation and transmission sites | Zelensky via CNA, 17 Oct 2026 |
-| Starshield speed cap | Terminals cut out above 161kmh inside Ukraine; ran beyond 180kmh when driven into the EU | Zelensky via Guardian, 17 Oct 2026 |
-| France protests, 17 Oct | 550,000 nationwide (110,000 Paris) per interior ministry; 800,000 per CGT; 400 arrests rising past 1,000 by late evening; at least 60 officers injured | Interior ministry/CGT via Guardian, CNA, BBC, 17 Oct 2026 |
-| French cost-of-living worry | ~45% worried about rising prices and inflation (survey of 2,000) | October 2026 survey via Guardian, 17 Oct 2026 |
-| Yemen displacement since August | More than 200,000 people | UN via Guardian, 17 Oct 2026 |
-| Aden airport strike, 16 Oct | Two Houthi missiles, ~500m from a Yemenia aircraft preparing to depart, ~100m from the runway midpoint; no casualties | Yemen information ministry via Guardian, 17 Oct 2026 |
-| West Bank settler attacks | 170+ since 27 Sep; at least 4 killed, 100+ injured, thousands of trees damaged | Yesh Din and Palestinian authorities via Guardian, 17 Oct 2026 |
-| Kenya Ebola (Bundibugyo) | 7 confirmed cases (4 new on 17 Oct, 3 of them health workers aged 29/35/32); 128 of 130 contacts traced and quarantined (98.5% vs an 85% benchmark); no approved vaccine or treatment | Kenya health ministry via CNA/Reuters, 17 Oct 2026 |
-| Congo Ebola epidemic | More than 9,000 cases, more than 4,000 deaths (second largest recorded) | Kenya health ministry via CNA, 17 Oct 2026 |
-| USD/SGD | 1.2800 — carried; frankfurter.app and open.er-api.com both 403 through the proxy for a fifth run | Carried rate, last sourced 13 Oct 2026 |
-
-## Singapore data points (18 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Consecutive unhealthy PSI days | 13 — longest unbroken run since 2015; 24-hour PSI unhealthy and hourly PM2.5 high on 17 Oct | Straits Times, 17 Oct 2026 |
-| Haze outlook | One of the worst transboundary haze episodes on record for Singapore, Malaysia and the Philippines; could last weeks to months; current El Nino on track to be the strongest ever observed | Ben Churchill, WMO Asia-Pacific regional director, via Straits Times interview 16 Oct, published 17 Oct 2026 |
-| PSA container throughput | 44.66m TEUs in 2025 — record, from 41.12m in 2024 | SM Lee Hsien Loong, 17 Oct 2026 |
-| Singapore Port Workers Union | Founded 1946; more than 10,000 members at PSA Corporation, PSA International and port logistics firms | SPWU 80th anniversary dinner, 17 Oct 2026 |
-| TCM Accreditation Programme | Voluntary; first 5 providers accredited; valid 3 years for clinics, 2 for practitioners; run by the Academy of Chinese Medicine, Singapore | Ong Ye Kung at the 23rd World Congress of Chinese Medicine, 17 Oct 2026 |
-| TCM Integrative Sandbox | Launched Jan 2025; first call selected 7 acupuncture projects from 18 proposals; second call opens 3 Nov 2026 and the call stays open three more years | MOH, 17 Oct 2026 |
-| PM Wong Middle East visit | Doha 18–20 Oct, Abu Dhabi and Dubai 20–22 Oct; co-chairs the 9th Qatar–Singapore High-Level Joint Committee (established 2006, last met Aug 2023) | PMO, 17 Oct 2026 |
 
 ## Global data points (19 Oct)
 | Indicator | Figure | Source |
@@ -841,3 +814,26 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 - MHA public order perception survey 2026 (about 2,000 citizens and PRs, polled May–August 2026): 81.1% satisfied with the level of public order; 75.5% trust the police to assess public-demonstration applications fairly; 59.7% believe all public demonstrations should require a police permit (MHA, cited by Shanmugam in a CNA interview published 17 Nov 2026).
 - ERP: PIE (Kallang Bahru and slip road into Bendemeer) 8.30–9am rises from S$4 to S$5 from 4 Jan 2027; northbound CTE before the PIE 5–5.30pm charged S$1 from the same date; S$1 discounts at 12 locations at specified peak timings from 23 Nov to 31 Dec 2026 (LTA, 16 Nov 2026).
 - CDA designated the world's first WHO Collaborating Centre for Infection Prevention and Control; Singapore has trained more than 3,100 foreign government officials through Singapore Cooperation Programme public health courses (MOH/CDA, 16 Nov 2026).
+
+## Global data points (18 Nov)
+- Nvidia Q3 FY2027 (quarter reported 17 Nov 2026): revenue US$115.8bn, +103% YoY and +20% QoQ, against analyst consensus near US$109bn; data-centre revenue US$107.6bn, +110%; net income US$65.3bn; GAAP EPS US$2.70; Q4 guidance about US$130bn (Nvidia results release and earnings call, 17 Nov 2026).
+- Nvidia share price: -16.7% since Jensen Huang disclosed the affair, about US$751bn of market value erased; -35% from the 6 October record, about US$2 trillion; +about 3.5% in after-hours trading on the results (CNN, 17 Nov 2026).
+- Jensen Huang's stake: about 3.5% of Nvidia. A holder of more than 3% of voting power for at least three years may nominate two directors onto the company proxy ballot; the annual meeting is typically in June (Nvidia proxy and corporate filings via Reuters/CNA, 17 Nov 2026).
+- Megaspeed investigation timeline, per a joint Commerce-Justice statement: export-control investigation opened 2024; records on sales to Megaspeed demanded from Nvidia May 2025; Nvidia placed Megaspeed on its "no sell" list the following month; on-site end-use check at Megaspeed in June 2025 with Singaporean law enforcement, at which CEO Alice Huang was interviewed. US intelligence collected to date does not prove she acted as a spy for Beijing (CNN, 17 Nov 2026). SEC probing Nvidia after Huang's resignation (Wall Street Journal, 17 Nov 2026).
+- Kerch (Crimean) bridge: built at US$3.7bn, nearly 12 miles long — the longest crossing in Europe — designed for 40,000 cars a day, 14 million passengers and 13 million tonnes of cargo a year (Russian state media, cited by CNN 17 Nov 2026). One metal arch and the road span beneath it completely destroyed; railway section preliminarily damaged (Ukraine's SBU, 17 Nov 2026).
+- Russian claim: 1,441 Ukrainian drones downed overnight into 17 Nov — unverified independently (Russian defence ministry via CNN, 17 Nov 2026). Kyiv: two killed, North and South bridges badly damaged (Kyiv officials, 17 Nov 2026).
+- Israel's 26th Knesset speaker: Matan Kahana (Yashar) elected with 66 votes; Likud's Ofir Katz 52 in a separate vote. Seats after the 27 October election: Netanyahu bloc 53 of 120; opposition 67, comprising 48 across four Jewish parties and a record 19 for the Joint List and Raam (Knesset spokesperson via CNN, 17 Nov 2026).
+- PHP vulnerabilities disclosed October 2026: PHP powers about 70% of the world's websites; AI tools helped researchers exploit the flaws; the NSA's own NSANet outage on 17 Nov was attributed by DNI Jay Clayton to patching them (CNN, 17 Nov 2026).
+- US retail sales, October 2026: +0.2% on the month, the weakest gain in three months, after +0.8% in September; gasoline station sales +1.5% (from +6% in September); CPI +0.4% in October, so sales are not inflation-adjusted (US Commerce Department, 17 Nov 2026).
+- California DMV restriction on Waymo freeway operation: effective 11 November 2026, "imminent hazard to public safety"; Waymo ran freeways in five of its 13 US cities (California DMV / Waymo, 17 Nov 2026 — carried, not run).
+- No Brent settlement figure could be verified for 17 November 2026; no oil level is quoted this run.
+
+## Singapore data points (18 Nov)
+- ASEAN chairmanship: handed to Singapore by Philippine President Marcos at the close of the 49th ASEAN Summit in Manila on 17 Nov 2026; Singapore chairs in 2027 under the theme "Deeper Integration, Wider Partnerships" (Straits Times, 17 Nov 2026).
+- PM Lawrence Wong makes a working visit to Shenzhen and Beijing from 18 to 21 November 2026 (PMO newsroom, retrieved 18 Nov 2026).
+- Simba/Tuas admissions to the ASX, 17 Nov 2026: unauthorised use of the 2,100MHz band for 4G; unauthorised use of the 2,340-2,360MHz band at about 92 sites intermittently between 2023 and 2026, alleged intentional and approved by senior management; unauthorised 5G equipment at two locations in 2023; failure to comply with an IMDA production order. Director Richard Tan to resign subject to regulatory approval. IMDA's show-cause deadline was 16 Nov 2026 (Tuas ASX filing via Straits Times, 17 Nov 2026).
+- IMDA penalty range for Simba: fine up to S$1 million or 10% of annual Singapore revenue, whichever is higher; spectrum rights may be suspended or cancelled; licence may be shortened, or cancelled in whole or in part (Straits Times, 17 Nov 2026).
+- Youth wellbeing figures cited by Ong Ye Kung at the Asian Family Conference, 17 Nov 2026: share of youths with no close friends doubled from 4% to 8%; prevalence of poor mental health among young people up from 17% to 26%. Legislation on harmful social media features for the young planned for early 2027, possibly with tiered access (Mothership, 17 Nov 2026).
+- MDDI engagements with more than 2,000 parents and young people, June-August 2026: screen addiction and overuse the top social media concern among youth, ahead of misinformation/scams and privacy; parents' second concern after exposure to inappropriate content; both groups preferred age-based access with safeguards to an outright ban (MDDI via Straits Times, 17-18 Nov 2026).
+- Long Island: preparatory works off East Coast Park start January 2027 — seabed obstruction removal, then temporary sand bunds and sand infilling; works east of Bedok Jetty only after the 2029 SEA Games; park facilities stay open; new round of public engagement from January 2027 (URA/HDB statement, 17 Nov 2026 — carried, not run).
+- PSLE results to be released on 24 November 2026 (Straits Times, 17 Nov 2026 — carried, not run).
