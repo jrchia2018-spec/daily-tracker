@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 18 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 19 November 2026)
 
 > **Working file.** It holds the standing reference table plus dated sections from the last 30 days. Older sections are in `archive/3-data-points-YYYY-MM.md`, which runs do not read. Pruning rule: `news/AGENT.md` step 5.
 
@@ -50,32 +50,6 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
 | Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
 
-## Global data points (19 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Ukraine's St Petersburg strike | 1,000+ drones launched; 1 killed and 5 hospitalised in the city; 145 drones downed over Leningrad region and ~20,000 people without power; Russia claimed 1,015 downed nationwide | Gov. Alexander Beglov, Gov. Alexander Drozdenko and Russian defence ministry via Guardian, 18 Oct 2026 |
-| "Energy ceasefire" violations | 76 Russian violations claimed; 3 killed and tens of thousands without power from Russian strikes | Zelensky via CNA/AFP, 18 Oct 2026 |
-| US missile-warning pause | Blocked 3 days, then "deblocked"; only the US supplies warning of Russian ballistic launches | Zelensky on NBC Meet the Press, 18 Oct 2026 |
-| France unrest | 2,400+ arrests nationwide, a record 855 in Paris; 500+ police, gendarmes and firefighters injured (later counts near 1,000, 7 badly) | Macron address and Interior Minister Laurent Nuñez via Guardian/ABC, 18 Oct 2026 |
-| Iran's seven-day terms | Blockade and oil sanctions lifted, frozen assets of no less than US$12bn released, ceasefire covering Lebanon; strait reopens day six, talks day seven | FM Abbas Araghchi, 18 Oct 2026 |
-| Hormuz shipping attacks | 10+ vessels attacked in or near the strait in a week, the most of the war; IRGC claims a 2m+ barrel supertanker exploded on a naval mine (unverified) | UKMTO and IRGC via wire reports, 17–18 Oct 2026 |
-| Brent crude | US$109.86 (Friday 16 Oct settle; no market data in the weekend window) | Carried from 17 Oct 2026 report |
-| CFB Wainwright fire | 4 Canadian Armed Forces members killed, 39 hospitalised across 4 hospitals; base 210km east of Edmonton; attributed to a grass fire driven by high winds, no indication of terrorism | PM Mark Carney and Alberta health officials via CTV/NBC/Reuters, 18 Oct 2026 |
-| Israeli election | 27 October 2026; first since the 7 Oct 2023 Hamas attack; PM chosen by Knesset coalition-building, polls show no clear path | Reuters via CNA, 18 Oct 2026 |
-| Anthropic public benefit fund | 5% of shares committed, plus 2% per 50% rise in value above an undisclosed baseline; wholly-owned LLC; pending stockholder approval | Anthropic announcement via Reuters, 18 Oct 2026 |
-| USD/SGD | 1.2800 — carried; frankfurter.app and open.er-api.com still 403 through the proxy | Carried rate, last sourced 13 Oct 2026 |
-
-## Singapore data points (19 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| Haze peak and easing | West's 24-hour PSI 230 at 10am 18 Oct (season high, very unhealthy), 227 at noon, rest of island 127–180; early 19 Oct 92 (north, moderate) to 139 (west); NEA forecast 101–190 for 19 Oct | NEA via CNA and Straits Times, 18–19 Oct 2026 |
-| Consecutive unhealthy PSI days | Unbroken since 5 Oct (14 days), longest since 2015; first crossed into the band on 4 Sep 2026 | NEA via Straits Times, 18 Oct 2026 |
-| Firefly cancellations | Subang–Seletar suspended a 10th straight day, 12 flights scrapped 17–19 Oct; rebooking via Malaysia Airlines from KL or full refund | Firefly website via Straits Times, 18 Oct 2026 |
-| Haze impact on F&B | Tekka Centre stallholder down from ~500 to ~200 customers a day against S$4,000 monthly costs; half the seats empty at 10am on 16 Oct | Straits Times, 18 Oct 2026 |
-| New notifiable diseases | CCHF, Lassa fever and Marburg virus disease notifiable from 31 Oct (IDA amended Sept); fatality up to 40% (CCHF) and ~50% (Marburg); Lassa 1% overall, 15%+ of hospitalised, foetal death 80%+ in third trimester; no approved vaccine or antiviral | Communicable Diseases Agency and WHO via Straits Times, 19 Oct 2026 |
-| Mortgages above S$1m | ~8 in 10 new private launch buyers in H1 2026 vs 4 in 10 in 2021; UOB average private housing loan now above S$1m, +8%/yr since 2023 | OCBC (Tok Geok Peng) and UOB via Straits Times, 18 Oct 2026 |
-| Prices vs mortgages, 2021–H1 2026 | New launches: prices +49%, median mortgages +35%; private resale +36% vs +32%; HDB resale +32% vs +32% | OCBC via Straits Times, 18 Oct 2026 |
-| Max-LTV borrowers | New launches: 67% (2021) to 52% (H1 2026); private resale 66% to 61%; LTV limit 75%; median borrower age ~38; mortgagee-sale listings at a six-year high | OCBC and DBS via Straits Times, 18 Oct 2026 |
 
 ## Global data points (20 Oct)
 | Indicator | Figure | Source |
@@ -837,3 +811,28 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 - MDDI engagements with more than 2,000 parents and young people, June-August 2026: screen addiction and overuse the top social media concern among youth, ahead of misinformation/scams and privacy; parents' second concern after exposure to inappropriate content; both groups preferred age-based access with safeguards to an outright ban (MDDI via Straits Times, 17-18 Nov 2026).
 - Long Island: preparatory works off East Coast Park start January 2027 — seabed obstruction removal, then temporary sand bunds and sand infilling; works east of Bedok Jetty only after the 2029 SEA Games; park facilities stay open; new round of public engagement from January 2027 (URA/HDB statement, 17 Nov 2026 — carried, not run).
 - PSLE results to be released on 24 November 2026 (Straits Times, 17 Nov 2026 — carried, not run).
+
+## Global data points (19 Nov)
+- Iranian attacks, 18 Nov 2026: drones at Ali Al Salem Air Base, Kuwait — first Iranian attack on Kuwait in two months (Press TV via CNN, 18 Nov 2026); Bahrain intercepted "a number of Iranian aerial attacks" (Bahraini military via CNN, 18 Nov 2026).
+- ADNOC vessel attacked while transiting the Strait of Hormuz on the evening of 17 Nov: 11 crew injured, one missing (ADNOC via CNN, 18 Nov 2026).
+- Gaza: Israeli operation west of the Yellow Line near Nuseirat and Al-Bureij; Israel says it controls more than 60% of the territory; three Palestinians killed in three separate drone strikes the same day; more than 1,600 Palestinians killed since the October 2025 ceasefire began (AFP tally of Gaza health ministry data) against seven Israeli soldiers and one civilian contractor; 2.1m Gazans, most displaced at least once (AFP via CNA, 18 Nov 2026).
+- EU loan proposal: EUR45bn (US$49bn; about S$67bn at the carried USD/SGD 1.2800 via EUR cross — EUR figure is primary) for Ukraine in 2027, two-thirds of a EUR70bn gap; borrowed against EU central-budget headroom; repayable only once Russia pays reparations; follows a EUR90bn facility now being disbursed; more than EUR200bn of frozen Russian central bank assets left untapped (European Commission / von der Leyen, 18 Nov 2026).
+- Anthropic IPO: priced at US$83 a share, above the US$70-78 range; offering size increased from a planned 825 million shares; could raise US$65bn or more; more than six times subscribed; Nasdaq ticker ANT, trading from 19 Nov; Goldman Sachs and Morgan Stanley lead a 22-bank syndicate (person familiar via Reuters/CNA and AFP/CNA, 18 Nov 2026).
+- Anthropic financials per IPO filings: annualised revenue run rate US$81bn as at 31 Oct 2026, up US$10bn from 30 Sep; Q3 revenue US$16.96bn, +47%; Q3 operating loss US$567m against Q2 operating income US$974m; Q3 net loss US$23.3bn against US$66.3bn in Q2 (including non-operating items on convertible bonds); nearly US$9bn spent on computing and infrastructure in H1 2026 and US$5bn more in Q3; nearly US$900bn committed to computing with partners including Amazon and Google; 11,900 customers at US$100,000+ annual revenue as at 30 Sep against more than 1,500 at end-2025 (Anthropic IPO filings via Reuters/CNA, 18 Nov 2026).
+- US markets, 18 Nov close: Dow -about 1.11% to about 50,198; S&P 500 -0.23% to 7,323.63, a fifth straight loss and below its 200-day moving average; Nasdaq +0.42% to about 24,430; Nvidia -2.9% (market reports and AFP/CNA, 18 Nov 2026).
+- October FOMC minutes, released 18 Nov 2026: "almost all" participants saw further rate rises as likely appropriate, up from "most" in September; "a couple" argued a half-point rise might be needed on unfavourable inflation data; Governor Waller told CNBC he could back 50 basis points; about 91% priced for a December rise (Fed minutes and market reports, 18 Nov 2026).
+- COP31 Antalya: Türkiye's voluntary pledge to raise electricity's share of final energy demand to 35% by 2035 from about 20% now, with no carbon-free requirement, backed by 75 of nearly 200 countries attending; talks scheduled to end Friday 20 Nov (Turkish hosts and OPEC Secretary General Haitham Al Ghais via Reuters/CNA, 18 Nov 2026).
+- US-Venezuela: military cooperation agreement signed in Caracas by Hegseth with Defence Minister Gustavo Gonzalez Lopez, covering joint training, intelligence sharing and defence equipment; Maduro was captured by the US on 3 January 2026; Colombia refused joint anti-cartel operations on its soil (CNN, 18 Nov 2026 — carried, not run).
+- NSA outage: NSANet disruption also affected the agency's Georgia cryptologic centre, which oversees Middle East cyber operations; Maryland non-essential day-shift staff told not to report on 18 Nov; officials say not a cyberattack but PHP patching; Fort Meade employs more than 20,000 (CNN, 18 Nov 2026 — carried, not run).
+- US Senate: Democrats at 56 seats after Mary Peltola ousted Dan Sullivan in Alaska; Hakeem Jeffries nominated as House speaker (CNN/BBC, 18 Nov 2026 — carried, not run).
+- No Brent settlement figure could be verified for 18 November 2026; no oil level is quoted this run.
+
+## Singapore data points (19 Nov)
+- US chip controls: PM Lawrence Wong said Singapore is prepared to facilitate US government checks on companies here where advanced chips are deployed; said the licence rule will have a manageable impact on transhipment volumes; said most chips recorded as sales to Singapore never enter the country, being transhipped or sent directly elsewhere; said Singapore will not implement or enforce other countries' export controls but will act against those using Singapore to circumvent them (PM Wong, ASEAN Summit wrap-up interview in Manila 17 Nov, reported by Mothership 18 Nov 2026).
+- CPF retirement sums: under review for members turning 55 after 2027, to keep pace with rising living standards and life expectancy; no amounts announced. Basic Retirement Sum S$110,200 for those turning 55 in 2026, S$114,100 for 2027; Full Retirement Sum twice that, S$220,400 and S$228,200. Sums for 2023-2027 were announced in 2022 (Acting Manpower Minister Jasmin Lau at the 43rd ASEAN Social Security Association Conference 17 Nov, and MOM written parliamentary reply 13 Jan 2026, via Mothership 18 Nov 2026).
+- COE tender, 18 Nov 2026: Cat A S$130,100, -6.4% from the record S$139,001 of 4 Nov; Cat B S$125,600, -5.1% from S$132,334; Cat C S$91,790, -0.2% from S$92,000; motorcycles S$10,489, -1.9% from S$10,689; Open S$136,000, up marginally from S$135,998. Sixth time in 2026 that Cat A exceeded Cat B. Two tenders remain in 2026; next tender three weeks away. Dealers estimated showroom traffic down 30%+ (Straits Times, 18 Nov 2026).
+- COE review: due by H1 2027; Cat A and B to merge with a fee-and-rebate system; Transport Minister Jeffrey Siow said on 3 Nov that most respondents backed the five-band option (+/-S$7,500 bands either side of a neutral middle band) over the three-band option (+/-S$15,000) (Straits Times, 18 Nov 2026).
+- PM Wong held bilateral meetings in Shenzhen on 18 Nov with Vietnam's To Lam, Chile's Jose Antonio Kast and Peru's Keiko Fujimori on the APEC sidelines; Vietnam hosts APEC in 2027, Singapore in 2030 (Straits Times, 18 Nov 2026).
+- ASEAN economy: US$4.5 trillion now, could reach US$10 trillion by the early 2040s with deeper integration (PM Wong, Straits Times 18 Nov 2026).
+- IMH to be renamed the National Centre for Mental Health Singapore in 2027, with campus expansion completed by 2040 (Straits Times, 18 Nov 2026 — carried, not run).
+- PMO newsroom checked 19 Nov 2026 with `curl -L`: no cabinet-level change in window; listing carried PM Wong's APEC op-ed and DPM Gan Kim Yong's Singapore FinTech Festival speech and fireside chat of 18 Nov.

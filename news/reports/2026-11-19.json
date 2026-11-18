@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "date": "2026-11-19",
+ "generatedAt": "2026-11-19T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-11-18T07:00:00+08:00",
+  "to": "2026-11-19T07:00:00+08:00",
+  "label": "Wednesday 18 November 2026, 0700 SGT → Thursday 19 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "IRAN WIDENS ITS GULF CAMPAIGN TO KUWAIT AND HITS AN EMIRATI TANKER",
+   "breaking": true,
+   "summary": [
+    "Iran's army sent drones at the Ali Al Salem Air Base in Kuwait, which hosts US forces, in the first Iranian attack on Kuwait in two months, Press TV said. Kuwait's General Staff said any explosions heard were air defences intercepting attacks. Bahrain, home to the US Fifth Fleet and struck repeatedly over the past week, sounded air-raid sirens early the same day and said it had intercepted \"a number of Iranian aerial attacks\". The strikes answered US fighter jets hitting a missile launch site on Qeshm Island hours earlier, which an American military official called self-defence against IRGC aggression towards US personnel.",
+    "Abu Dhabi's state-owned ADNOC said one of its vessels was attacked transiting the Strait of Hormuz the previous evening, leaving 11 crew injured and one missing. Tehran warns it will not accept a prolonged stalemate and will not wait for another American attack before striking; Trump prefers crippling economic pressure to resuming full combat operations, and there is no sign of an imminent agreement. The New York Times reported Trump growing frustrated with JD Vance over the vice-president's Iran war criticism, as Vance weighs a 2028 run."
+   ],
+   "geopolitical": "Kuwait's inclusion means every Gulf state hosting American forces has now been hit, and the cost of that hosting is charged to governments that chose neither the blockade nor the strikes. Crisis Group's Hamidreza Azizi put the lesson plainly: the belief in Washington that economic pressure and a blockade can run indefinitely without another full war is getting harder to hold.",
+   "socioeconomic": "An attack with casualties on an ADNOC ship moves the risk from anonymous tankers to the fleet of a Gulf national oil company, which is what war-risk underwriters price off. With Hormuz traffic already below a third of pre-war levels, each crewed vessel hit raises the premium and the crewing difficulty for ships still willing to transit."
+  },
+  {
+   "headline": "ISRAELI TANKS CROSS THE YELLOW LINE INTO CENTRAL GAZA",
+   "breaking": true,
+   "summary": [
+    "The Israeli military said it had launched a \"precise operation\" west of the Yellow Line, the line it declared when the ceasefire began in October 2025, to remove a threat to its troops; an AFP journalist saw tanks positioned east of the Nuseirat refugee camp. A Gaza security source described intense artillery shelling north of Nuseirat with gunfire and air strikes from midday. The military said Hamas infrastructure was in the area and that Shin Bet personnel took part. COGAT told residents of Al-Bureij and Nuseirat to leave for the operation's duration and closed the Salah al-Din road.",
+    "Hamas called the incursion \"a flagrant violation of the ceasefire agreement and confirmation that the occupation has reneged on its obligations\"; the military said it was responding to Hamas violations. Three Palestinians were killed in separate drone strikes the same day, near Nuseirat, in Gaza City and outside the Deir el-Balah police station. More than 1,600 Palestinians have been killed since the ceasefire began, on an AFP tally of Gaza health ministry data the UN considers reliable; Israel counts seven soldiers and one civilian contractor killed over the same period."
+   ],
+   "geopolitical": "A rare ground operation across a line Israel drew itself, by a caretaker government whose prime minister lost the Knesset gavel the day before, tests whether Gadi Eisenkot can form a government while the army is moving: security is the one asset Netanyahu's bloc has left, and a widening operation puts it back at the centre of the coalition talks.",
+   "socioeconomic": "Most of Gaza's 2.1 million people have been displaced at least once, and residents who fled Al-Bureij said they feared it starting again. Closing Salah al-Din road also cuts the artery aid convoys and commercial traffic use to reach the south."
+  },
+  {
+   "headline": "TRUMP, XI AND PUTIN GATHER IN SHENZHEN ON THE EVE OF A THREE-POWER MEETING",
+   "breaking": false,
+   "summary": [
+    "Xi Jinping met Trump on the tarmac in Shenzhen, a rare gesture from China's leader reciprocating Trump's welcome of Xi in Washington in September, and embraced him. Putin approached Trump and initiated a handshake in front of the cameras before the APEC leaders' photograph and welcome banquet, the three leaders' first encounter ahead of a trilateral meeting set for Thursday. Putin flew in with a show of force: Russian military aircraft, including nuclear bombers, transited the region, prompting Japan and South Korea to scramble jets and drawing complaints from Taiwan.",
+    "US intelligence assesses that Putin intends to continue the war in Ukraine regardless of the meeting, which Trump plans to use to discuss Ukraine. Putin said Europe was in \"humiliating decline\", and Kyiv and European capitals have no seat at a table the Kremlin has framed as a new Yalta. Around the summit, Xi greeted Japan's Sanae Takaichi a year after Beijing began punishing her over Taiwan remarks, and Mark Carney held an unscheduled trade meeting with Trump days after agreeing a trade pact with Xi."
+   ],
+   "geopolitical": "The sequencing is the substance: an American president discussing the terms of a European war with Russia and China, with neither Ukraine nor the EU present, concedes the principle Moscow has sought since February — that the settlement is for great powers to arrange.",
+   "socioeconomic": "Shenzhen is the argument China is making with the venue: a city whose AI and robotics industry is the answer to export controls written to slow it. For the economies in the room, the meeting's value is the tariff truce expiring on 10 January, and nothing moved that date."
+  },
+  {
+   "headline": "BRUSSELS PROPOSES A EUR45BN LOAN TO KEEP UKRAINE SOLVENT THROUGH 2027",
+   "breaking": false,
+   "summary": [
+    "The European Commission proposed that member states lend Ukraine a further EUR45bn (S$67bn, US$49bn) to cover its 2027 budget shortfall, filling two-thirds of a EUR70bn gap and leaving the rest to other backers. Ursula von der Leyen said it was the best way to give Kyiv \"a strong hand at the negotiation table\" and that Ukraine would repay only once Russia pays for the damage it has caused. It would be borrowed against headroom in the EU's central budget, the same format as the EUR90bn facility now being paid out, which Russia's intensified attacks have left insufficient, and tied to Kyiv continuing reforms.",
+    "EU leaders discuss it at a Brussels summit next week. Friedrich Merz insists all 27 states settle the financing before any deal on the next central budget, which rankles Bulgaria, the Czech Republic, Hungary and Slovakia; three were exempted last time. Brussels is pressing Britain, Canada and Japan to cover the remainder, offering loan guarantees or the interest on frozen Russian assets. The proposal means the EU will not, for now, try to tap the more than EUR200bn of frozen Russian central bank assets held in the bloc, a plan Belgium killed in 2025 and still opposes."
+   ],
+   "geopolitical": "Funding Ukraine out of the EU's own budget headroom rather than Russia's money is a decision about who carries the war's cost, and it lands the week three leaders discuss Ukraine's future without Europe present. Von der Leyen's \"strong hand\" framing concedes the loan is now a negotiating instrument, not only a budget line.",
+   "socioeconomic": "Ukraine enters 2027 needing EUR70bn against a shrinking tax base and a grid under nightly attack, so a loan repayable only out of future reparations is in substance a transfer. Tying it to the next multi-annual budget makes every state's farm, cohesion and defence allocation part of the bargain."
+  },
+  {
+   "headline": "ANTHROPIC PRICES THE FIRST FRONTIER-LAB LISTING ABOVE ITS RANGE AT US$83",
+   "breaking": false,
+   "summary": [
+    "Anthropic priced its initial public offering at US$83 a share, above the US$70-78 range set on 10 November, and increased the size of the offering, a person familiar with the matter told Reuters. It had planned to sell 825 million shares; the sale could raise US$65bn or more, among the largest IPOs on record and the first by a developer of frontier AI models. The issue was more than six times subscribed. Shares are due to trade on the Nasdaq under the ticker ANT, with Goldman Sachs and Morgan Stanley leading a 22-bank syndicate.",
+    "The filings set out both halves of the case. Annualised revenue reached US$81bn as of 31 October, up US$10bn in a month, and third-quarter revenue rose 47 per cent to US$16.96bn, with 11,900 customers generating at least US$100,000 a year against more than 1,500 at end-2025. Against that, it spent nearly US$9bn on computing and infrastructure in the first half of 2026 and US$5bn more in the third quarter, turned a US$974m second-quarter operating profit into a US$567m operating loss, and has committed nearly US$900bn to computing with partners including Amazon and Google."
+   ],
+   "geopolitical": "A listing this size gives public markets, and so disclosure rules and quarterly scrutiny, their first direct hold on a frontier AI developer, at a moment when governments write chip licences and safety rules around companies they can only see from outside. The prospectus warning that partners depend on third-party financing to buy chips is now a filed statement rather than a rumour.",
+   "socioeconomic": "The pricing came as the equity it depends on wobbled: the Dow fell about 1.1 per cent to roughly 50,198 and the S&P 500 slipped 0.23 per cent to 7,323.63, a fifth straight loss, while the Nasdaq rose 0.42 per cent and Nvidia fell again despite doubling its revenue. Fed minutes showed almost all policymakers expect further rate rises, so capital for a US$900bn build-out keeps getting dearer."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE OFFERS WASHINGTON ACCESS TO CHECK WHERE ITS CHIPS END UP",
+   "breaking": false,
+   "summary": [
+    "Singapore is prepared to help facilitate checks by the US government on companies here where advanced chips are deployed, Prime Minister Lawrence Wong said, asked about the licence requirement Commerce imposed on exports of advanced semiconductors to Singapore and four other jurisdictions. He said the rule, which the government is studying, will have some impact on transhipment volumes but that the impact is manageable, and that the greater concern is the chips that stay here and are used by Singapore companies and data centres. Contrary to popular belief, he said, most chips recorded as sales to Singapore never enter the country, being transhipped or sent directly elsewhere.",
+    "Wong drew the limit as well: Singapore's aim is not to implement or enforce other countries' export controls, but to ensure businesses here comply with the rule of law and with controls other countries impose, and those using Singapore to circumvent them will be dealt with accordingly. He said he had a good conversation with Trump at the ASEAN dinner in Manila, then flew to Shenzhen, meeting Vietnam's To Lam, Chile's Jose Antonio Kast and Peru's Keiko Fujimori on the APEC sidelines."
+   ],
+   "geopolitical": "Offering end-use verification is a larger concession than the \"trusted access\" carve-out METI and MDDI said they were seeking: it trades a measure of regulatory sovereignty for the right to keep buying. It sets a template the other four listed jurisdictions will be measured against, and it was said before Wong landed in the Chinese city hosting the summit at which chip controls are the unspoken subject.",
+   "socioeconomic": "Wong's distinction matters for the numbers everyone cites: if most chips booked as Singapore sales never arrive, the licence's real bite falls on the data centres and firms using them here, not on the transhipment figure. For operators the binding constraint becomes licence processing time, which nobody has quantified."
+  },
+  {
+   "headline": "CPF RETIREMENT SUMS REOPENED FOR THE COHORTS TURNING 55 FROM 2028",
+   "breaking": false,
+   "summary": [
+    "The government is reviewing CPF retirement sums for members turning 55 after 2027, Acting Manpower Minister Jasmin Lau said at the 43rd ASEAN Social Security Association conference, to keep pace with rising living standards and increased life expectancy. No new amounts were announced. The Basic Retirement Sum is S$110,200 for those turning 55 in 2026 and rises to S$114,100 in 2027, with the Full Retirement Sum twice that, at S$220,400 and S$228,200. The sum is fixed by the year a member turns 55 and does not change afterwards, and CPF Life converts those savings into lifelong monthly payouts.",
+    "MOM confirmed the review in a written parliamentary reply on 13 January, answering MP Shawn Loh, who asked how fast the Basic Retirement Sum would grow beyond 2027 and whether amounts could be published five years ahead. The ministry said the sum is reviewed against spending by lower-middle-income retiree households, inflation and rising living standards, that the 2023-to-2027 figures were announced in 2022, and that any change would come with advance notice."
+   ],
+   "geopolitical": "Lau chose a regional social-security forum to say it, in a year Singapore has been selling its retirement architecture to ASEAN systems facing the same demographics. A country with a fertility rate of 0.87 and 21.4 per cent of citizens over 65 is the test case its neighbours read.",
+   "socioeconomic": "The sum set at 55 is fixed for life, so each cohort's figure is a one-shot decision about how much of its savings is locked into annuitised income rather than withdrawable cash. Members turning 55 in 2028 have had no number to plan against since the 2022 announcement ran out."
+  },
+  {
+   "headline": "CAT A COE FALLS 6.4 PER CENT BUT STILL COSTS MORE THAN CAT B",
+   "breaking": false,
+   "summary": [
+    "The Category A certificate of entitlement closed at S$130,100, down 6.4 per cent from the record S$139,001 set on 4 November, yet still above Category B, which fell 5.1 per cent to S$125,600 — the sixth time in 2026 that premiums for smaller and less powerful cars have exceeded those for larger ones. Commercial vehicle premiums slipped 0.2 per cent to S$91,790 and motorcycles 1.9 per cent to S$10,489, while the Open category rose marginally to S$136,000. Bidding was slow, with Categories A and B still at S$1 fifteen minutes before close.",
+    "Dealers estimated showroom traffic fell 30 per cent or more after the record price, and said loan curbs extended on 31 October to private-hire car registrations cooled demand further. They expect a rebound: the next tender is three weeks away rather than two, and buyers are hurrying to register within 2026 before EV incentives are rolled back and petrol-car surcharges rise in 2027. The COE review remains due by the first half of 2027, and Transport Minister Jeffrey Siow said on 3 November that most respondents backed merging Categories A and B with a five-band fee-and-rebate structure."
+   ],
+   "geopolitical": "Nothing here is foreign policy, but the review is the state conceding that a quota built on engine power no longer sorts cars as intended, and that surcharges and rebates must do the sorting instead.",
+   "socioeconomic": "A 6.4 per cent fall off a record leaves a mass-market car licence above S$130,000, and the anomaly the review exists to fix survived the correction intact. The expected year-end rush means the 2027 tax changes are pulling demand into the two tenders left, the pattern that produced the record."
+  }
+ ],
+ "word": {
+  "word": "penumbra",
+  "pos": "noun",
+  "pronunciation": "pi-NUM-bruh",
+  "definition": "A region of partial shadow between full light and full darkness; by extension, an indeterminate zone surrounding something more clearly defined.",
+  "etymology": "Coined in 1604 by Kepler from Latin paene, \"almost\", and umbra, \"shadow\".",
+  "example": "Kuwait's air defences fired on Iranian drones in the penumbra between blockade and open war, where Washington calls each strike self-defence and Tehran says it will not accept a stalemate."
+ }
+}
