@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "date": "2026-11-20",
+ "generatedAt": "2026-11-20T07:16:00+08:00",
+ "coverage": {
+  "from": "2026-11-19T07:00:00+08:00",
+  "to": "2026-11-20T07:00:00+08:00",
+  "label": "Thursday 19 November 2026, 0700 SGT → Friday 20 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "THREE POWERS DECLARE PEACE AND LEAVE BOTH WARS OUT OF IT",
+   "breaking": true,
+   "summary": [
+    "Trump, Xi and Putin met for 81 minutes outside Shenzhen, their first three-way meeting, and issued a four-point declaration on peace and strategic stability. It states that a nuclear war \"cannot be won and must never be fought\", commits them to dialogue on nuclear risk and non-proliferation with no timetable, calls for reform of the UN, promises to increase the production and supply of refined fuels, and treats immunity for state officials before international courts as of fundamental importance. It mentions neither of the wars two signatories are fighting, in Ukraine and Iran, nor Europe.",
+    "Afterwards Putin said he had asked his Security Council to weigh limited ceasefires — a halt to energy strikes, a naval truce — but that \"after the attacks on the Crimean Bridge, we will not negotiate\", and promised a more painful response. Russian drones over Kyiv hours earlier killed a 26-year-old man, injured five, damaged the Dutch, Austrian and Qatari embassies and the EU delegation and blew out windows at St Volodymyr's Cathedral; Moscow said the strike was not targeted. In Berlin 30 to 40 of Ukraine's partners met as the \"coalition of the willing\", said they hold a united negotiating position and are ready for talks with Russia, and warned a \"Yalta format\" will not bring peace."
+   ],
+   "geopolitical": "The silence is the content: three nuclear powers signed a strategic-stability text omitting both wars in progress and the continent most exposed to them, and Europe convened the same day to insist it will not be negotiated over.",
+   "socioeconomic": "The one economic clause binds the largest oil producer, the largest consumer and a sanctioned exporter to a single remedy for the costs the Iran war created — more refined fuel — and costs none of them anything to sign."
+  },
+  {
+   "headline": "THE WORLD COURT FINDS A STATE GUILTY OF GENOCIDE FOR THE FIRST TIME",
+   "breaking": true,
+   "summary": [
+    "The International Court of Justice ruled by nine votes to six that Myanmar committed genocide against the Rohingya, the first time in its 80-year history that a state has been held responsible for the crime. Presiding judge Iwasawa Yuji, reading for nearly three hours, said the scale and nature of the 2016-17 military campaign in northern Rakhine state were \"characteristic of an intent to destroy a substantial part of the group\". The court gave particular weight to widespread sexual violence, extreme violence against children and attacks on people fleeing to Bangladesh, and rejected Myanmar's defence that its \"clearance operations\" were counterterrorism, finding the army did not distinguish militants from civilians.",
+    "The case was brought in 2019 by The Gambia. More than 740,000 Rohingya fled; the Cox's Bazar camps now hold over 1.2 million people barred from working. The court ordered reparations, safe and voluntary return with family reunification, restoration of property and protection from future persecution. Compliance is improbable: Min Aung Hlaing, who commanded the army during the massacres, now rules Myanmar and calls Rohingya identity imaginary, and most of Rakhine is held by the Arakan Army. The ICJ cannot enforce judgments, which pass to the Security Council. The State Department said it is \"studying the decision\"."
+   ],
+   "geopolitical": "The judgment hands South Africa's genocide case against Israel a worked method for inferring intent from a pattern of conduct, which is why an administration set on dismantling the International Criminal Court is studying this ruling rather than welcoming it.",
+   "socioeconomic": "For 1.2 million stateless people in the camps a binding order to facilitate return is worth only what the Security Council does with it, and the land they would return to is controlled by neither party bound by the judgment."
+  },
+  {
+   "headline": "A MISSILE HITS RIYADH'S TALLEST TOWER AS IRAN'S OIL LEVERAGE SLIPS",
+   "breaking": true,
+   "summary": [
+    "A Houthi missile struck the Public Investment Fund Tower in Riyadh, the Saudi capital's tallest building and the headquarters of the kingdom's sovereign wealth fund, in the second attack on the King Abdullah Financial District this month. Civil defence said several floors and nearby buildings were damaged, with windows destroyed across seven to eight floors; nobody was hurt. Three people familiar with it told Reuters a missile hit the tower directly; the Houthis, who said on Wednesday they had fired cruise missiles at Riyadh's airport and financial district, did not immediately claim it. Saudi authorities called it terrorism and Saudi aircraft struck Sanaa in reply.",
+    "Tehran's main economic weapon is meanwhile weakening. Gulf exports are back near pre-war levels and the International Energy Agency expects oil supply to exceed demand this quarter for the first time since the war began in February, despite continuing Iranian attacks on Hormuz shipping. The American pump price fell three cents to S$4.76 a gallon (US$3.72), a 26th straight daily decline, down 50.5 cents since 29 October — the steepest three-week fall outside 2008 in AAA data back to 2000. Analysts told CNN that a leadership losing the ability to internationalise the war's cost has historically escalated, and named tanker traffic, ship-to-ship transfers and Gulf infrastructure as likelier next targets."
+   ],
+   "geopolitical": "Every Gulf state hosting American forces has now been hit and the region's financial centre with them, but the missile that hit Riyadh was Yemeni: the pressure comes through proxies, against targets Washington does not defend and cannot cleanly retaliate for.",
+   "socioeconomic": "Falling fuel is the war's only dividend for importers and the thing stripping Tehran of leverage at the same time, which makes the next phase more likely to be charged to energy infrastructure than to the oil price."
+  },
+  {
+   "headline": "CONGRESS PUBLISHES THE LICENCE BOOK: 879,000 AI CHIPS CLEARED FOR CHINA",
+   "breaking": true,
+   "summary": [
+    "The House Foreign Affairs Committee released the Commerce Department's chip export licensing data, showing its Bureau of Industry and Security approved shipments of 879,000 advanced Nvidia and AMD AI chips to Chinese companies between December 2025 and May 2026, out of 3.4 million sought. The approvals included 150,000 chips for Tencent, 75,000 for Alibaba, 43,000 for Baidu and 4,000 for BYD, all on the Pentagon's list of alleged Chinese military companies, which together took more than 30 per cent of the chips cleared. The hardware was Nvidia's H200 and AMD's MI325X. Chairman Brian Mast called it the most detailed disclosure in the Export Control Reform Act's history.",
+    "Nvidia said the approvals were \"subject to strict conditions and limited volumes\" and that it has since stopped shipping H200s to China; AMD said it complies with export law. How much moved is unclear — a Commerce official told the committee in July that shipments had begun but were \"very few\", and several large Chinese internet firms are reported to have taken about 10,000 H200s each. The release follows the Jensen Huang affair and the Megaspeed diversion inquiry. Chris McGuire, a former US official, said the military-company share calls into question whether Commerce conducted any serious national security review."
+   ],
+   "geopolitical": "Washington licensed to firms its own defence department calls Chinese military companies the same class of chip for which it has just made Singapore, Malaysia, Indonesia, Thailand and Brazil apply for permission — the gap a Democratic Congress will subpoena in January.",
+   "socioeconomic": "Publication, not refusal, is now the enforcement tool: with the licence book public, every approved buyer and intermediary in the transhipment chain can be read off it by competitors, regulators and plaintiffs alike."
+  },
+  {
+   "headline": "THE FIRST PUBLIC FRONTIER AI COMPANY LISTS INTO A FALLING MARKET",
+   "breaking": false,
+   "summary": [
+    "Anthropic began trading on the Nasdaq as ANT, the first developer of frontier artificial-intelligence models to list publicly. Shares opened at US$111.50, 34 per cent above the US$83 offer price, reached US$114.99 and closed at US$97.17, up about 17 per cent. CNN put the closing value at about US$1.76 trillion fully diluted, after a market capitalisation above US$2 trillion intraday; the offering raised roughly US$81bn, the largest initial public offering on record. Anti-AI protesters rallied outside the Nasdaq in Times Square, where several were arrested, and at the company's San Francisco headquarters.",
+    "The debut did not lift the trade it belongs to. Market reports put the Dow down 2.19 per cent, about 1,101 points, to roughly 49,097 — its first close below 50,000 since June — the S&P 500 off 2.02 per cent to 7,175.83 in a sixth straight losing session, and the Nasdaq Composite down 2.25 per cent to 23,879.20. The selling was attributed to concern that the chip-export exposure disclosed in Washington reaches past Nvidia into the rest of the AI supply chain, and to October Federal Reserve minutes showing almost all policymakers expecting further rate rises."
+   ],
+   "geopolitical": "A frontier model developer now answers to public-market disclosure and quarterly scrutiny for the first time, giving governments that write chip licences and safety rules a statutory window into a company they could previously only regulate from outside.",
+   "socioeconomic": "A listing this size inside falling indices concentrates risk rather than spreading it: index funds must hold the AI build-out at a valuation set on one profitable quarter, while the capital that build-out needs keeps getting dearer."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "WONG WARNS APEC AGAINST SPLITTING INTO COMPETING ECONOMIC BLOCS",
+   "breaking": false,
+   "summary": [
+    "At the 33rd APEC Economic Leaders' Meeting in Shenzhen, PM Lawrence Wong said the conditions behind the Asia-Pacific's success can no longer be taken for granted: tension is rising, economic ties are increasingly read through the lens of national security, and globalisation is entering a more contested and fragmented era. The region must not be allowed to divide into competing economic blocs, he said, pressing for concrete steps towards APEC's Free Trade Area of the Asia-Pacific, built on the CPTPP and RCEP so as to reinforce rather than split the wider trading system, and for continued support of WTO reform.",
+    "Where consensus among all 21 economies is unreachable, that cannot become an excuse for inaction, he argued, citing the WTO's interim appeal arrangement and e-commerce agreement as proof willing parties can move first and leave the door open. He offered the APEC Centre of Excellence for Paperless Trade, conceived by Singapore and Australia with the business advisory council, as the model of a small technical fix that lowers real costs, and urged the same approach to artificial intelligence: cooperation on AI safety and responsible use, adoption by small and medium enterprises, investment in AI infrastructure and reskilling, not only competition for the best chips and models."
+   ],
+   "geopolitical": "A small open economy cannot pick a bloc without losing half its market, so Singapore's answer is plurilateral workarounds that keep both poles reachable — argued this week in the one city where the alternative was on display.",
+   "socioeconomic": "Paperless trade and SME AI adoption are the parts of that agenda Singapore can deliver without anyone's consent, and where the gains for local firms are measurable: whether trading gets cheaper, not whether declarations are issued."
+  },
+  {
+   "headline": "ONE IN FIVE ETOMIDATE VAPE OFFENDERS REOFFENDS, AND THE ROUTE TO DETENTION SHORTENS",
+   "breaking": false,
+   "summary": [
+    "Of 1,544 etomidate vaporiser offenders caught between 1 September 2025 and 30 September 2026, 367 — one in five — reoffended, some three or more times, the Ministry of Health and the Health Sciences Authority said. Sixty-seven reoffenders aged 16 and above entered the drug rehabilitation centre; 27 have been released onto supervision orders with regular urine or hair tests. Despite heavier penalties since September 2025, the agencies set out tougher measures in force since 1 October: significantly shortened processing into supervision or the DRC, more surprise tests during rehabilitation, escalation for those who do not cooperate, and double the mandatory stay on a second DRC admission.",
+    "For repeat offenders under 16 they have introduced a 24-week intensive rehabilitation programme run with the Institute of Mental Health, which those youths must complete; those who keep reoffending will be charged in the Youth Courts, where penalties include a boys' or girls' home. Health Minister Ong Ye Kung said it is worrying that so many reoffenders are young, that enforcement will be improved further, and that rehabilitation remains the starting point — \"but if you don't cooperate during rehabilitation, you'll end up here\". Schools and institutes of higher learning referred 238 students to HSA between July and September, when more than 490 young people received cessation counselling."
+   ],
+   "geopolitical": "An anaesthetic sold through regional e-commerce and shipped inside disposable devices is a border problem as much as a health one, and Singapore is answering it domestically because the supply side sits outside its jurisdiction.",
+   "socioeconomic": "A one-in-five reoffending rate is the state conceding deterrence has not worked on this cohort, and the answer — faster detention with a 24-week clinical programme for children — moves vaping out of fines and licensing into the rehabilitation and youth-justice systems."
+  },
+  {
+   "headline": "AI AGENTS GET A ROUTE INTO SINGAPORE'S BILL PAYMENTS",
+   "breaking": false,
+   "summary": [
+    "Mastercard and Visa are working with AXS to let consumers pay telco, electricity and healthcare bills, housing loan instalments and fines by typing or speaking a prompt to an AI agent, acting across AXS's network of more than 800 billing organisations, among them hospitals, telcos, insurers, the Housing Board and the police. Partners will be able to connect their own agents, group chief executive Jeffrey Goh said; AXS would not give a rollout date and is planning a trial with the Grab AI assistant. A demonstration at the Singapore FinTech Festival showed an agent confirming the amount and card before a face biometric completed the payment.",
+    "The safeguards are the substance. Visa's Abhijeet Ramesh said only a verified agent can initiate a transaction, explicit approval with biometric verification is required, and card details are never shared with the agent: a device-specific token and a one-time code per transaction pass instead, so stolen credentials cannot be reused elsewhere or for a different amount than approved. Users can set payment limits and permitted transactions. Visa will handle disputes under its existing card framework, supported by a tamper-proof record of each agent action, and is working with banks on transaction-level data; no rule changes have been made yet. OpenAI announced a comparable US-only arrangement with American Express, Mastercard and Visa on 13 November."
+   ],
+   "geopolitical": "Singapore is again the pilot market for a payments capability before the rules for it exist, which brings the standard-setting advantage it sought in QR payments and the liability exposure of going first.",
+   "socioeconomic": "Letting software initiate payments to the Housing Board and the police shifts the failure mode from a forgotten bill to a wrongly executed one, and the only recourse on offer today is a dispute framework written for humans pressing buttons."
+  }
+ ],
+ "word": {
+  "word": "erga omnes",
+  "pos": "adjectival and adverbial phrase (Latin)",
+  "pronunciation": "ER-guh OM-nayz",
+  "definition": "In international law, of an obligation owed to the international community as a whole rather than to one injured state, so that any state party may demand compliance.",
+  "etymology": "Latin erga, \"towards\", and omnes, \"all\"; a term of art the International Court of Justice used to let a state with no direct injury sue over a treaty breach.",
+  "example": "The Gambia could sue a country thousands of miles away because the duty not to commit genocide runs erga omnes, and on Thursday the court used that standing to make Myanmar the first state ever found responsible for the crime."
+ }
+}
