@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-11-21",
+ "generatedAt": "2026-11-21T07:25:00+08:00",
+ "coverage": {
+  "from": "2026-11-20T07:00:00+08:00",
+  "to": "2026-11-21T07:00:00+08:00",
+  "label": "Friday 20 November 2026, 0700 SGT → Saturday 21 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "RUSSIA'S BIGGEST ATTACK OF THE YEAR REACHES POLISH SOIL",
+   "breaking": true,
+   "summary": [
+    "Hours after Putin left Shenzhen, Russia fired at least 110 missiles and some 400 drones at Ukraine over ten hours, killing nine and injuring at least 28 — \"the biggest this year\", Zelensky said. The missiles came in waves 20 to 30 minutes apart to stop fires being put out between them. Of 27 ballistic missiles, three were intercepted — Ukraine's Patriot shortage laid bare. Three Kyiv bridges were damaged, severing the two banks; power failed in the capital, Lviv, Zakarpattia and Ivano-Frankivsk, with Ukrenergo calling the grid \"extremely critical\" as temperatures fall below zero. A Kharkiv hospital and homes in five regions were hit.",
+    "Objects entered and fell inside Poland during the attack; Polish and NATO jets scrambled and Patriot batteries were activated, with no injuries. Defence Minister Władysław Kosiniak-Kamysz said the timing — during Polish exercises attended by European defence ministers — was \"no accident\". Trump had told Ukraine's allies in Berlin that \"Putin is tired, wants to end this, ready for a deal\"; Tusk, on the call, said Trump's \"belief in Putin's goodwill seems unshakable, though so far there are no facts to support it\"."
+   ],
+   "geopolitical": "Moscow put ordnance on alliance soil during an exercise staged to deter exactly that, days after the US president called Putin a friend — and the answer was a scramble and a statement. Testing NATO's edge now costs almost nothing.",
+   "socioeconomic": "The winter damage is not the nine dead but three bridges and four regions dark: the targeting has moved from the grid to what lets a city function around an outage, as heating demand peaks and interceptors run short."
+  },
+  {
+   "headline": "WALL STREET CLOSES IN CORRECTION AS THE AI TRADE UNWINDS",
+   "breaking": true,
+   "summary": [
+    "The S&P 500 fell 3.7 per cent to 6,910.39, a seventh straight loss and its longest such run since February 2020. The Nasdaq dropped 5.28 per cent to 22,617.73, erasing its 2026 gains to sit 2 per cent down for the year and 18 per cent below its 6 October record, some US$8.7 trillion of value gone since. The Dow fell 1.93 per cent to 48,147.33, down 8 per cent on the week, its worst since March 2020. Dow and S&P both closed more than 10 per cent off their peaks, joining the Nasdaq in correction; the VIX rose 86 per cent on the week to 35.89, a 19-month high.",
+    "Nvidia fell 14 per cent, its worst day in nearly two years, and 22.9 per cent on the week, its worst since October 2008; it is down 47.5 per cent and US$2.7 trillion from its peak. Reuters reported the SEC is probing its accounting, and California's attorney-general Rob Bonta subpoenaed it over whether its chips reached China and investors were misled. Anthropic, listed a day earlier, fell 8.5 per cent to US$88.91. Trump used a White House press conference to threaten a \"tremendous tax\" on US firms building data centres abroad, conceding he had not briefed his own team."
+   ],
+   "geopolitical": "Penalising the overseas build is the one lever that makes the capex look worse rather than better: data centres go where the power and the permits are, and taxing the alternative creates neither at home.",
+   "socioeconomic": "This reprices the buildout's financing, not its demand — investors now want returns on the hundreds of billions raised in debt and equity, so the next leg falls on capex plans, not valuations."
+  },
+  {
+   "headline": "IRAQI TROOPS ENTER AN IRANIAN PROXY'S FIEF AS TRUMP RULES OUT RETREAT",
+   "breaking": true,
+   "summary": [
+    "A convoy under Iraqi flags entered Jurf al-Sakhar and took positions in the town centre, the first state deployment into the Kataib Hezbollah stronghold in over a decade, under a last-minute compromise that averted an armed clash, with a security headquarters to open there to oversee a handover. Prime Minister Ali al-Zaidi had ordered forces to prepare to move against the Iran-backed group, which officials accuse of running an oil-smuggling network; nine senior security and oil officials have been dismissed after the investigation. A Kataib Hezbollah source told AFP the group would not leave but had \"allowed the government a way out\"; reporting attributed the move to American and Gulf pressure.",
+    "Trump spent part of a 90-minute press conference on the war, saying \"Iran will never have a nuclear weapon, ever\", calling its leaders \"crazy\" and saying Tehran had been \"bullshitting\" him. He acknowledged the war had cost his party politically but gave no account of how it ends, noting only that fuel prices rose far less than he feared: \"I thought it would go up to $300 a barrel.\" Iran's Revolutionary Guards claimed two more tankers struck mines in Hormuz, a claim that could not be independently verified."
+   ],
+   "geopolitical": "Baghdad is reclaiming ground from an Iranian proxy in the same week Tehran's ability to make the war expensive for everyone else is slipping — the first sign the regional network, not just the Iranian state, is paying for the blockade.",
+   "socioeconomic": "Smuggled oil is what pays a militia answerable to no budget, so a state headquarters in Jurf al-Sakhar attacks Kataib Hezbollah's revenue rather than its weapons — which is why it conceded the town centre and nothing else."
+  },
+  {
+   "headline": "BRITAIN AND THE EU SET A TIMETABLE TO UNDO PART OF BREXIT",
+   "breaking": true,
+   "summary": [
+    "At a second UK-EU summit in Brussels, Prime Minister Andy Burnham and European leaders agreed a reset covering food and farm trade, carbon markets and youth mobility. The two emissions trading systems are to be linked from 1 January 2028, with mutual recognition of allowances and exemption from each side's carbon border levy. A youth experience scheme is to start no later than 2030, letting 100,000 young people a year from each side live, work or study in the other for up to three years, and Britain is to rejoin Erasmus+ in 2027. A veterinary agreement is meant to cut checks on food and agricultural exports.",
+    "What was signed is a timetable for each strand, not finished schemes. Tuition fees for EU students remain unresolved, to be negotiated within six months, with Brussels treating the rest as contingent on them. Burnham said the package could add half a percentage point to annual growth; European Council president António Costa said the EU \"remains open to have the closest possible relationship\" with Britain."
+   ],
+   "geopolitical": "Each strand is alignment bought with access, and the fee row shows the price: Brussels holds one concession hostage to another, so the reset advances at the speed of whichever file London finds hardest.",
+   "socioeconomic": "Linked carbon markets and a veterinary deal remove the two costs falling hardest on exporters of food and energy-intensive goods, and the youth scheme answers a labour shortage neither side's politics would let it call one."
+  },
+  {
+   "headline": "A PILL SHRANK PANCREATIC TUMOURS IN THREE PATIENTS IN FIVE",
+   "breaking": false,
+   "summary": [
+    "At the EORTC-NCI-AACR symposium in Barcelona, Revolution Medicines reported that daraxonrasib, an oral RAS inhibitor, added to gemcitabine and nab-paclitaxel shrank tumours in 60.7 per cent of 61 people starting treatment for metastatic pancreatic cancer. Tumours disappeared entirely in 8.2 per cent, disease was controlled in 90.2 per cent, median progression-free survival was 12.8 months and responses lasted a median 11.1 months, at 18.3 months of follow-up.",
+    "The caveat is structural: this is a phase 1/2 cohort with no control arm, so the comparison is with historical results, and only a randomised trial can show the drug beats chemotherapy alone. It has already cleared that bar one step later in the disease — in the phase 3 RASolute 302 trial, in previously treated metastatic patients, it roughly doubled median overall survival against chemotherapy, 13.2 months to 6.7, with responses in 33.2 per cent against 11.8, published in the New England Journal of Medicine on 31 May. It is approved as Rasonque after at least one prior treatment. Pancreatic cancer has resisted the targeted-therapy era almost entirely, because the RAS mutations driving it were long held to be undruggable."
+   ],
+   "geopolitical": "A first-line approval would turn a RAS inhibitor from a last-resort drug into the backbone of initial treatment, and whichever regulator moves first sets the evidence standard every other health system then negotiates against on price.",
+   "socioeconomic": "This disease is counted in months, so a first-line regimen holding tumours for a median of a year changes what work, care and insurance look like for patients previously counselled in weeks."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE AND CHINA OPEN TALKS TO REWRITE THEIR TRADE PACT",
+   "breaking": true,
+   "summary": [
+    "Meeting Xi Jinping at Kylin Villa in Shenzhen after APEC, Prime Minister Lawrence Wong said the two countries had launched negotiations to upgrade the China-Singapore Free Trade Agreement. The upgrade covers new ground including the digital economy, with the facilitation of cross-border data flows named explicitly, and government procurement; the leaders also discussed deepening cooperation in artificial intelligence.",
+    "Wong briefed Xi on Singapore's priorities as ASEAN chair in 2027 — regional integration, supply-chain resilience and energy security through the ASEAN Power Grid. On the strait, he restated Singapore's \"longstanding and consistent\" One China policy and conveyed its opposition to Taiwan independence and to any unilateral move to change the status quo. Xinhua reported Xi calling for the two to be \"friendly neighbours\" who learn from each other, with closer exchanges on governance and more cooperation between their political parties."
+   ],
+   "geopolitical": "Negotiating a cross-border data chapter with Beijing days after Washington put Singapore on a licence list for advanced chips moves the balancing act from speeches into treaty text, which is harder to walk back when one side objects.",
+   "socioeconomic": "Tariffs between the two are already close to nil, so the value of an upgrade is entirely in whether it opens the services and state contracts Singaporean firms are currently shut out of."
+  },
+  {
+   "headline": "TUAS PORT BEGINS ITS LARGEST EXTENSION",
+   "breaking": false,
+   "summary": [
+    "Work began on 20 November on the second phase of Tuas Port — Finger Three, the third and largest of four planned extensions — on nearly 400ha of reclaimed land, close to the size of Clementi Town. It will carry 21 mega berths, each 23m deep, along an 8.6km wharf, opening from 2028 and running fully by the mid-2030s. Tuas works 15 berths today, on track for 18 by 2027, and has handled 25 million twenty-foot equivalent units since opening in 2022. When the port is finished in the 2040s all of Singapore's container operations consolidate on one site, making it the world's largest fully automated port at 65 million TEUs a year.",
+    "Transport Minister Jeffrey Siow said Finger Three equips the port for the world's largest vessels \"for at least the next decade\", and that the pitch to shipping lines is reliability — fast turnaround, and making up for delays elsewhere on a route. The seaport connects Singapore to over 600 ports and supports more than 140,000 jobs, he said; the next maritime masterplan lands in April 2027."
+   ],
+   "geopolitical": "Betting 400ha of reclamation on transhipment is a bet that ships keep coming through this strait rather than around it — made in the year the Hormuz closure proved how fast a chokepoint can rewrite a route.",
+   "socioeconomic": "Consolidating everything on one automated site trades resilience for throughput: 65 million TEUs from a single location is unmatched efficiency and a single point of failure."
+  },
+  {
+   "headline": "A BILLION DOLLARS INTO THE CPF ACCOUNTS OF SENIORS WITH THE LEAST",
+   "breaking": false,
+   "summary": [
+    "More than 782,000 Singaporeans born in or before 1976 will receive a CPF top-up of up to S$1,500 by 8 December, the Manpower Ministry and the CPF Board said on 20 November. The S$1.04 billion total was announced at Budget 2026 and is aimed at seniors who, in their words, \"may face challenges in building their retirement savings\".",
+    "Eligibility turns on two means tests: citizens resident here with retirement savings below the 2026 Basic Retirement Sum of S$110,200, in a home of annual value at most S$31,000. The amount is tiered — S$1,500 for an annual value up to S$21,000 with under S$60,000 saved; S$1,000 for the same homes with S$60,000 to S$110,200; S$500 where annual value falls between S$21,000 and S$31,000. The money is credited automatically into Retirement Accounts at 55 and over and Special Accounts below that, where it earns the higher CPF rates."
+   ],
+   "geopolitical": "Nothing external here, but the design is the argument Singapore makes abroad about ageing: a transfer routed through a savings account at a guaranteed rate rather than a pension promise caps the future liability the moment the cheque is written.",
+   "socioeconomic": "Putting the money where it cannot be spent is the whole policy — it lifts the balances of the cohort now reaching 55 with the least, and does nothing for the cash pressure this year's fuel and electricity bills created."
+  },
+  {
+   "headline": "DIVERSIFICATION AS ENERGY POLICY, WITH A NEIGHBOUR'S TAP AS THE REASON",
+   "breaking": false,
+   "summary": [
+    "Energy, Trade and Industry Minister Tan See Leng said Singapore's answer to energy insecurity is diversifying both sources and suppliers, and that natural gas may still underpin the mix around 2050 at 50 per cent or less — the year the country is pledged to net zero. \"No country in the world can go 100 per cent green\", he said, because gas carries the round-the-clock baseload; 40 to 50 per cent from renewable and cleaner sources would be enough to decarbonise. Less than half of gas needs now arrive by pipe, mainly from Indonesia and Malaysia, on contracts to end-2028; a second LNG terminal at Jurong Port from 2030 cuts that share further. With Qatari shipments disrupted by the war, replacement cargoes have come from Australia, Africa and the US. Geothermal and nuclear are being studied.",
+    "The same day the ministry confirmed Indonesia fully restored piped gas on 12 November, 18 days after cutting it on 24 October — a reduction the Energy Market Authority put at 17 BBTUD against total demand above 1,000, under 2 per cent of needs. The affected importer, Gas Supply, is wholly owned by Temasek."
+   ],
+   "geopolitical": "Indonesia cut the pipe citing its own needs and has said it will prioritise domestic demand on electricity unless the price suits — so Singapore sells the ASEAN Power Grid as mutual enrichment precisely because it cannot compel supply from anyone.",
+   "socioeconomic": "An 18-day cut costing under 2 per cent of gas showed the layered contracts work, and where the exposure sits: with pipe, LNG and grid all crossing borders, the electricity price here is set by other governments' domestic politics as much as by any tariff review."
+  }
+ ],
+ "word": {
+  "word": "capitulation",
+  "pos": "noun",
+  "pronunciation": "kuh-pit-yoo-LAY-shun",
+  "definition": "A surrender on agreed terms; in markets, the point at which holders stop defending a position and sell regardless of value.",
+  "etymology": "From Latin capitulare, to draw up under headings, from capitulum, a little head or chapter — originally the setting out of terms in articles, and only later the giving up those articles recorded.",
+  "example": "A seventh straight fall in the S&P 500 and a 14 per cent drop in Nvidia looked less like a reassessment than a capitulation, with one strategist telling CNN it was \"sell now and worry about the fundamentals later\"."
+ }
+}
