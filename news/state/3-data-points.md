@@ -1,4 +1,4 @@
-# Section 3 — Confirmed data points (mutable; each with source date; state as of 21 November 2026)
+# Section 3 — Confirmed data points (mutable; each with source date; state as of 22 November 2026)
 
 > **Working file.** It holds the standing reference table plus dated sections from the last 30 days. Older sections are in `archive/3-data-points-YYYY-MM.md`, which runs do not read. Pruning rule: `news/AGENT.md` step 5.
 
@@ -31,6 +31,7 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Non-resident population | 1.98m, +3.7% on more work permit holders and migrant domestic workers | Population in Brief 2026, NPTD, 25 Sep 2026 |
 | New citizenships / PRs granted (2025) | 25,094 / 35,352; 62.1% of new citizens from South-east Asia | Population in Brief 2026, NPTD, 25 Sep 2026 |
 | Residents 65+ in employment | nearly 1 in 3 (24.7% in 2015) | 2025 data cited by ST, 25 Sep 2026 |
+| Senior (65+) vaccination uptake | Influenza 49.5% of citizens/PRs in the calendar year (20.4% in 2021); pneumococcal 67.8% (31.6% in 2021); shingles 199,000+ doses to 60+ from Sep 2025 to Aug 2026 | CDA data via Straits Times, 22 Nov 2026 |
 | Taiwan (#1 trading partner) | ~$134B bilateral 2025; semiconductor-driven | MTI, early 2026 |
 | Temasek net portfolio value | S$518B as at 31 Mar 2026 (+S$49B YoY) | Temasek Review 2026, 8 Jul 2026 |
 | Temasek TSR | 1-yr 10.5% SGD (14.8% USD); 10-yr 7.1%; 20-yr 6.8% | Temasek Review 2026, 8 Jul 2026 |
@@ -50,41 +51,6 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 | Property agent Currency Requirement | 3 transactions per 3-year registration cycle (or Refresher Exam) to renew licence, effective 1 Jan 2027; licence validity extended to 3 years | CEA/Sun Xueling, 28 Jul 2026 |
 | Singapore 2024 suicide toll (finalised) | 441 deaths; suicide #1 cause of death ages 10-29 for 6th straight year; ages 30-39 up 50% (66 to 99); males 65.8% of deaths | Samaritans of Singapore 2025 report, 28 Jul 2026 |
 
-
-## Singapore data points (22 Oct)
-| Indicator | Figure | Source |
-|---|---|---|
-| COE Cat A premium | S$132,004 (+1.5% from S$130,001); above Cat B for the fourth time in 2026 | LTA tender, 21 Oct 2026 |
-| COE Cat B premium | S$131,901 (+1.4% from S$130,100) | LTA tender, 21 Oct 2026 |
-| COE Cat E (open) | S$135,790 (-0.9% from S$137,000) | LTA tender, 21 Oct 2026 |
-| COE commercial vehicle | S$92,200 (+0.3%) | LTA tender, 21 Oct 2026 |
-| COE motorcycle | S$10,778 (-2.1% from S$11,012) | LTA tender, 21 Oct 2026 |
-| EV tax rebate cut | -S$10,000 for new EVs from 1 Jan 2027 | LTA, via ST 21 Oct 2026 |
-| COE consultation close | 2 Nov 2026, 11.59pm | LTA, 21 Oct 2026 |
-| WJP rule of law rank | 14th of 143 (up 2); 1st order and security; 2nd absence of corruption; 3rd in East Asia and Pacific | World Justice Project, 21 Oct 2026 |
-| Haze — PM2.5 | Normal band in all five regions since 1am, after 16 consecutive unhealthy days and a season-high west PSI of 230 | NEA, via ST 22 Oct 2026 |
-| Haze law notices | 10 Indonesian companies served; SGX queries to 7 listed firms | NEA/SGX, via ST 20-21 Oct 2026 |
-| Coastal protection research | +S$135m, on top of S$125m committed in 2023 | ST, 21 Oct 2026 |
-| SE Asia digital economy | US$368b in 2026, +17% YoY | e-Conomy report, via ST 21 Oct 2026 |
-| Vet visits during haze | Up to +15% respiratory/eye cases | ST, 21 Oct 2026 |
-
-## Global economic variables (22 Oct)
-| Variable | Figure | Source |
-|---|---|---|
-| Brent crude | Above US$110/bbl | CNN, 21 Oct 2026 |
-| France 10-year OAT yield | 5.0% (second time this month; briefly above 5% on 2 Oct, a 2002 high) | CNA, 22 Oct 2026 |
-| Meta New Mexico penalty | US$25bn; largest to date against the company | NM state district court (Judge Francis Mathew), 21 Oct 2026 |
-| Meta Unfair Practices Act violations | More than 43 million | NM jury verdict, Sep 2026 |
-| Cambridge Analytica exposure | Up to 87 million Facebook users | Facebook disclosure, 2018 |
-| Meta multistate settlement | US$18bn (youth-harm claims; NM not a party) | Aug 2026 |
-| Meta Q3 revenue | More than US$64bn, +26% YoY | Meta earnings, 21 Oct 2026 |
-| Meta Q3 operating income | ~US$13bn (~US$23bn excluding the settlement charge) | Meta earnings, 21 Oct 2026 |
-| Meta quarterly capex | Nearly US$35bn, +80% YoY; FY guidance US$135-145bn | Meta earnings, 21 Oct 2026 |
-| PHP2Shell exposure | PHP underlies roughly 70% of the internet | OpenAI/Wiz/Calif disclosure, 21 Oct 2026 |
-| Guinea-Bissau trial funding | US$1.6m CDC + US$1.6m private (Pershing Square, Bluebell foundations) | Guardian, 21 Oct 2026 |
-| Shaybah oil field attack | 2 expatriate workers killed, 2 injured; 7+ drones intercepted | Saudi statement, via CNN 21 Oct 2026 |
-| Abyei market strike toll | 153+ | AP/CNN, 20-21 Oct 2026; NYT 22 Oct 2026 |
-| Ukrainian civilian deaths | More than 17,500 confirmed since Feb 2022 | UN, via Guardian 21 Oct 2026 |
 
 ## Global economic variables (23 Oct)
 | Indicator | Figure | Source |
@@ -834,3 +800,37 @@ Replace a row in place when a newer sourced figure appears, keeping its source d
 - Indonesian piped gas restored (METI, 20 Nov 2026): supply fully restored on 12 November, 18 days after reductions began on 24 October; an Indonesian official had said exports via the two pipelines from the Natuna and Sumatra fields would be cut by 31 BBTUD, with SKK Migas diverting supply to power generation in Batam, Bintan and Sumatra; the Energy Market Authority put the actual reduction at 17 BBTUD over 18 days, under 2% of Singapore's natural gas needs against total daily demand above 1,000 BBTUD; the affected importer, Gas Supply, is wholly owned by Temasek; "at this point in time, there has been no further notification of supply reduction" (METI via Straits Times, 20 Nov 2026).
 - Carried, not run (Singapore, 21 Nov): Defence Minister Chan Chun Sing said the number of national servicemen in leadership roles is unchanged even as cohorts shrink, with the SAF moving to smaller, more tech-enabled units; BCA issued a new escalator safety guide, with escalator accidents at MRT stations and shopping malls accounting for 92% of all reported incidents; Mistral is expanding its Singapore operations with a science hub and doubling its Asia-Pacific workforce from about 100 to 200 by 2027; a 4,000-capacity mosque with a "bamboo lamp" minaret is planned for Tampines North; Su Haijin is to lose S$93m (£45m frozen by the UK's National Crime Agency) of UK assets in the S$3bn money-laundering case; and Tommy Koh called the Trump-Xi-Putin APEC peace declaration "absurd" (Straits Times and Mothership, 20 Nov 2026).
 - PMO newsroom checked 21 Nov 2026 with `curl -L`: no cabinet-level change in window; the listing's most recent items remained PM Wong's 19 November APEC remarks and, from 18 November, his APEC op-ed and DPM Gan Kim Yong's Singapore FinTech Festival speech. `mfa.gov.sg` is rejected by the egress proxy (403 CONNECT), so the Wong-Xi readout was taken from Mothership's quotation of the MFA release.
+
+## Global data points (22 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| Riemann hypothesis proof — certification | Lean FRO and Mathlib Initiative joint statement: "full confidence that Alpöge's proof of the Riemann Hypothesis is correct"; theorem matched to Mathlib's statement with two independent tools, comparator and con-leche; exported proof passed several checkers including Lean's own kernel | Joint statement 21 Nov 2026, via Guardian and search reports, 21-22 Nov 2026 |
+| Riemann proof — size and provenance | Lean library of 17 million lines of code released 20 Nov 2026 (one secondary report describes it as a 175,000-file archive — conflicting characterisation, both kept); four-page note on Alpöge's website; no prose paper; Alpöge says over 250,000 pages came out of the work | CNN/AP, 21 Nov 2026; search reports 21-22 Nov 2026 |
+| Riemann proof — independent checks | MIT's Andrew Sutherland reports the code compiles and rests only on the three standard axioms; one report says no full proof build or replay was performed | Search reports, 21-22 Nov 2026 (not attributed to a listed source) |
+| Clay Millennium Prize | US$1m; hypothesis posed 1859, named one of seven problems in 2000, still listed unsolved; prize requires publication plus two years of scrutiny; president Martin Bridson: "an announcement of historic significance" but the journey to real understanding "will be long and difficult" | CNN/AP, 21 Nov 2026 |
+| Separate Anthropic zeta result (not in report) | Proven lower bound for zeta zeros on the critical line raised from 41.6% to 67.2%, reviewed by Brian Conrey and Dan Goldston | Search reports, 21-22 Nov 2026 |
+| Sparta II drone attack | Russian military-linked cargo ship bound for Kaliningrad hit in international waters west of Gogland island, 16 crew evacuated; Finland assesses Ukraine likely responsible; temporary aviation and maritime restrictions in the eastern Gulf of Finland; suspected brief Russian helicopter airspace violation during the rescue | CNN/Reuters and CNA, 21 Nov 2026 |
+| Russian aerial attacks on Ukrainian bridges | 109 separate attacks, cited by Zelensky as the basis for the Crimean bridge strikes | BBC, 21 Nov 2026 |
+| CCW autonomous-weapons talks | Mandate collapsed just before 5am in Geneva; 128 parties, consensus rule; weaker text asks states "to elaborate by consensus" an instrument that may carry no legal obligations; more than 100 states sought binding law; seven-state bloc (Austria, Belgium, Brazil, Ireland, Mexico, New Zealand, Panama) sought negotiations within a year; US proposed five years; no new CCW weapons law in 30 years; Human Rights Watch says a treaty is negotiable in 15 months | Guardian, 21 Nov 2026 |
+| AI-enabled targeting scale | Pentagon struck more than 1,000 targets in Iran on the war's first day; investigative reports say the US military aims for 1,000 AI-assisted targeting decisions an hour | Guardian, 21 Nov 2026 |
+| COP31 Antalya state of play | Ran past its scheduled Friday close, still deadlocked at 22 Nov 0700 SGT; nearly 200 countries; Thursday draft dropped the fossil-fuel phase-out and the welcome for Brazil's COP30 roadmap, centring carbon capture; around 130 countries pressing to restore the phase-out; Panama, leading about a dozen states, threatened to walk out; EU says the draft "risks turning this climate COP into a fossil summit"; climate finance and the missed temperature goals unresolved | BBC feed 22 Nov 2026; wire and agency reports (Al Jazeera, France 24, Irish Times, UN News) 19-21 Nov 2026 — figures not from a listed source |
+| Iranian F-16 claim | Iranian state media reported air defences damaged a US F-16 over the Gulf on Friday evening, forcing an emergency landing; CENTCOM: "Iran did not attack a US F-16 fighter aircraft yesterday - at all", all US fighter jets in the Middle East safe and accounted for | Reuters via CNA, 21 Nov 2026 |
+| El Chapo Isidro capture (carried, not run) | Fausto Isidro Meza-Flores, leader of Los Mazatlecos and on the FBI's 10 most wanted, captured by Mexican elite military forces in Sinaloa; at least 11 killed including four Mexican soldiers; seven associates arrested including second-in-command "Serafín"; FBI reward US$5m; September indictment alleges roughly 6,000 pounds of meth imported near Eagle Pass, Texas in 2022, with narcoterrorism and material-support charges | CNN, 21 Nov 2026 |
+| Proxy-voting ruling (carried, not run) | Fifth Circuit held 9-8 that the US$1.7 trillion 2022 omnibus was unconstitutionally enacted because proxy votes do not count toward a quorum; House passed it 225-201 with 226 lawmakers voting by proxy; opinion by Judge Cory Wilson stresses a "narrow scope" applying only to enforcement against Texas; the bill carried roughly US$45bn in Ukraine and NATO assistance and about US$40bn in disaster relief | CNN, 21 Nov 2026 |
+| FBI NCIC breach (carried, not run) | Apparent hackers intruded into the National Crime Information Center, used nationwide for warrants and background checks; second FBI-related breach in recent months after the September ShinyHunters theft of jobs-site data; Trump: "it's not good - I don't like that" | CNN, 20-21 Nov 2026 |
+| US measles (carried, not run) | Virginia reported its first measles-associated death of 2026, involving a child, on Friday 20 November; follows the loss of US measles elimination status after 26 years | Guardian, 21 Nov 2026 |
+
+## Singapore data points (22 Nov)
+| Indicator | Figure | Source |
+|---|---|---|
+| Senior influenza vaccination (65+) | 20.4% of citizens and PRs receiving at least one dose in the calendar year in 2021, 49.5% in 2025 | CDA data via Straits Times, 22 Nov 2026 |
+| Senior pneumococcal vaccination (65+) | 31.6% in 2021, 67.8% in 2025 | CDA data via Straits Times, 22 Nov 2026 |
+| Shingles vaccination (60+) | Over 199,000 doses from September 2025, when it entered the National Adult Immunisation Schedule and became subsidised, to August 2026; no comparable earlier data | CDA (Sharon Ang) via Straits Times, 22 Nov 2026 |
+| Vaccination subsidies | Pneumococcal, influenza, hepatitis B and chickenpox free for eligible Healthier SG enrollees at their enrolled clinic; shingles means-tested to 75% at CHAS GP clinics, polyclinics and MOH-funded long-term care institutions, with extra Pioneer and Merdeka Generation subsidies; MediSave usable for the balance | Straits Times, 22 Nov 2026 |
+| JMEV exit | Showroom on Telok Kurau Road closed about a year after a July 2025 launch; distributor Valor Auto incorporated 2 July 2024; 28 JMEV Elight saloons registered since 2025, latest June 2026; priced at S$208,777 with COE before discounts on the May 2026 list, with a 10-year battery warranty, five-year vehicle warranty and six years of routine servicing; no CASE complaints 1 Jan to 18 Nov 2026 | LTA records and CASE via Straits Times, 22 Nov 2026 |
+| Chinese EV brands in Singapore | Around 15 entered since 2024; JMEV is the second to exit, after Neta (Hozon Auto) closed in early April 2025 under three months after opening | Straits Times, 22 Nov 2026 |
+| Patulin in Homegrown apple juice | Hong Kong Centre for Food Safety sample from a Sai Ying Pun wholesale market at 79 micrograms per kilogramme against a 50 mcg/kg legal limit; affected batch is the one-litre bottle, best-before 11 February 2027, imported by Cold Storage; SFA issued a direction barring sale after a voluntary withdrawal | HK CFS statement 17 Nov 2026 and SFA via Straits Times, 21 Nov 2026 |
+| 22nd JCBC and steering councils | Ding Xuexiang official visit 22-23 November at DPM Gan Kim Yong's invitation; the two co-chair the 22nd Joint Council for Bilateral Cooperation, 27th Suzhou Industrial Park, 18th Tianjin Eco-City and 10th Chongqing Connectivity Initiative joint steering councils on 23 November; theme "Innovating Together for New Opportunities"; Ding calls on PM Wong and SM Lee | PMO press release, 21 Nov 2026 |
+| Wong-Li Qiang meeting | Met at the Diaoyutai State Guesthouse, Beijing, 21 November, with a lunch following; Li said China is ready to accelerate the China-Singapore FTA upgrade; both welcomed progress on the Suzhou, Tianjin and Chongqing projects and discussed AI safety and governance coordination; Wong met Beijing party secretary Yin Li on 20 November | MFA readout and Xinhua via search reports, 21 Nov 2026 (mfa.gov.sg unreachable from this environment) |
+| Fullerton Health breach — worker exposure (carried, not run) | Worker groups (TWC2, Migrant Workers' Centre) and SUSS's Razwana Begum warn the leaked names, FINs, dates of birth, mobile numbers, e-mail and residential addresses make fake work-permit and job messages harder to spot; rogue agents can apply for permits and demand hundreds or thousands of dollars to cancel the resulting In-Principle Approval; of 140,000 records about 43,000 belong to lapsed passes | CNA, 22 Nov 2026 |
+| TOUCH Preschools dismissal (carried, not run) | Teacher of three years dismissed on the afternoon of 17 November over footage of her jerking a K2 pupil's chin at the Hougang branch on 12 November, flagged to the centre on 16 November and reported to ECDA within 24 hours; regulatory K2 ratios of 1:25 indoors and 2:25 outdoors were met | Straits Times, 21 Nov 2026 |

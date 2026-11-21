@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-11-22",
+ "generatedAt": "2026-11-22T07:15:00+08:00",
+ "coverage": {
+  "from": "2026-11-21T07:00:00+08:00",
+  "to": "2026-11-22T07:00:00+08:00",
+  "label": "Saturday 21 November 2026, 0700 SGT → Sunday 22 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "TWO GROUPS CERTIFY A PROOF OF THE RIEMANN HYPOTHESIS, AND IT IS 17 MILLION LINES OF CODE",
+   "breaking": true,
+   "summary": [
+    "The Lean FRO, which develops the Lean proof assistant, and the Mathlib Initiative, which maintains its shared library of mathematics, said jointly on Saturday they have “full confidence that Alpöge's proof of the Riemann Hypothesis is correct”. Levent Alpöge, a member of Anthropic's technical staff, released it on Friday as a Lean library of 17 million lines of code and a four-page note on his website. Two independent tools, comparator and con-leche, confirmed the theorem in his library is identical to Mathlib's statement of the hypothesis; the exported proof passed several checkers including Lean's own kernel, and MIT's Andrew Sutherland reported it compiles on the three standard axioms.",
+    "What is certified is that a machine-checkable object matches a formal statement, not that anyone has read an argument. No paper exists; Alpöge said he is presenting a complete argument “before having mastered a massive neighbourhood around its mathematics”. The Clay Mathematics Institute, which in 2000 made the 1859 hypothesis one of its seven Millennium Prize Problems with US$1m attached, still lists it unsolved; president Martin Bridson called the announcement “of historic significance” but said reaching real understanding would be “long and difficult”."
+   ],
+   "geopolitical": "Authority over what counts as proved has shifted, for this claim, from journals and referees to verification infrastructure run by two small non-profits. No academy or funder set Saturday's standard, and Clay's rules — publication plus two years of scrutiny — cannot be met by code.",
+   "socioeconomic": "The certification landed a day after the most valuable listing in history, by the company employing the claimant — and a result posted to a personal website and checked by volunteers sits outside anything a filing must describe."
+  },
+  {
+   "headline": "A RUSSIAN SHIP BURNS IN FINNISH WATERS AND THE WAR ARRIVES IN NATO'S BALTIC",
+   "breaking": true,
+   "summary": [
+    "The Sparta II, a Russian cargo ship with military links bound for Kaliningrad, was hit by drones on Saturday in international waters west of Russia's Gogland island, caught fire and drifted into Finnish waters. Its 16 crew evacuated to lifeboats, then to a nearby Russian vessel. Finnish armed forces spokesman Aki-Mauri Huhtinen said it was “likely that Ukraine” was behind the attack and unclear why the ship was targeted. Finland is leading the rescue, has restricted aviation and shipping in the eastern Gulf of Finland so drones can be intercepted if needed, and suspects a Russian helicopter briefly violated its airspace. Swedish combat aircraft flew under Finnish command; Estonia sent a navy vessel.",
+    "“The war is spilling over into our neighbouring areas,” Finnish Prime Minister Petteri Orpo said, adding that “Ukraine has the right to fight against the aggressor”. Denmark separately said it would expel Russia's defence attaché in Copenhagen over an alleged plot by Russian intelligence to kill the US-Ukrainian rapper Kyivstoner, which the Russian embassy denied."
+   ],
+   "geopolitical": "Three NATO members ran a joint maritime operation against a strike their own side most likely launched — the mirror image of Thursday's Polish airspace violation, and harder, because deterrence does not fit an incident caused by the party the alliance arms.",
+   "socioeconomic": "Kaliningrad's supply line now carries a war risk priced in the Gulf of Finland rather than the Black Sea, and Finland's restrictions bind civilian traffic there whoever launched the drones."
+  },
+  {
+   "headline": "THIRTEEN YEARS OF TALKS ON AUTONOMOUS WEAPONS END WITH NO MANDATE TO NEGOTIATE",
+   "breaking": true,
+   "summary": [
+    "Week-long efforts to agree a negotiating mandate for a legally binding treaty on autonomous weapons collapsed just before 5am at the UN's Convention on Certain Conventional Weapons in Geneva, after all-night talks failed to overcome Russian objections. An overwhelming majority wanted the mandate; because the CCW works by consensus among all 128 parties, the conference adopted a far weaker text asking countries “to elaborate by consensus” an instrument that may carry no legal obligations. More than 100 states had pushed for new law, a bloc of seven — Austria, Belgium, Brazil, Ireland, Mexico, New Zealand and Panama — seeking negotiations inside a year. Diplomats said Russia was deliberately filibustering; the United States sought a consensus text but would not be bound, proposing five years.",
+    "South Korea, Japan, Turkey, Britain, France and Germany also resisted binding law, arguing a non-binding agreement or existing humanitarian law suffices; European and NATO states, Ukraine, China and Iran expressed support or willingness. The CCW has passed no new weapons law in 30 years. The Future of Life Institute's Max Tegmark said “slaughterbots are already here” yet states “have agreed it is sufficient to just talk about this for the 14th year”."
+   ],
+   "geopolitical": "The route left open is the one that produced the 2008 cluster-munitions ban: a treaty negotiated outside the CCW by the states that want one, binding on none of the powers fielding these systems.",
+   "socioeconomic": "Defence-technology procurement keeps its clearest regulatory signal of the decade: no compliance cost is coming for autonomous targeting, and no disclosure duty attaches to the AI in a weapon that would not attach to it elsewhere."
+  },
+  {
+   "headline": "A CLIMATE SUMMIT RUNS PAST ITS DEADLINE WITH FOSSIL FUELS CUT FROM THE TEXT",
+   "breaking": false,
+   "summary": [
+    "COP31 at Antalya ran past its scheduled Friday close and was still deadlocked at the end of the window, with nearly 200 countries split over a draft that no longer mentions moving away from fossil fuels. An earlier version called for a faster phase-out; Thursday's text dropped that language and the welcome for the global transition roadmap prepared by Brazil's COP30 presidency, putting carbon capture at the centre instead. The European Union said the draft “risks turning this climate COP into a fossil summit”. Saudi Arabia, which wants strong carbon-capture recommendations, and Russia oppose the roadmap. Around 130 countries are pressing to restore the phase-out reference, and Panama threatened to walk out.",
+    "Climate finance targets and whether to acknowledge that temperature goals have been missed are also unresolved. It would be the second consecutive conference to end without fossil-fuel language: COP30 at Belém closed the same way and moved the roadmap into a voluntary process outside the UN structure. These figures come from wire reports rather than a listed source, and no final text existed at the window's close."
+   ],
+   "geopolitical": "Consensus hands producer states a veto they have now used twice running, and each time the substance moved into coalitions outside the convention. What survives at Antalya is the forum; what leaves it is the commitment.",
+   "socioeconomic": "Substituting carbon capture for a phase-out changes who pays and for what: capital goes to abating emissions from production rather than cutting production, and the capture industry gains its first treaty-level endorsement."
+  },
+  {
+   "headline": "WASHINGTON DENIES IRAN HIT AN F-16 AS THE VICE-PRESIDENT DECLINES THE CASE FOR THE WAR",
+   "breaking": false,
+   "summary": [
+    "US Central Command said on Saturday that “Iran did not attack a US F-16 fighter aircraft yesterday — at all”, after Iranian state media reported that air defences had struck the jet over the Gulf on Friday evening, damaging it and forcing an emergency landing. All American fighter aircraft in the Middle East are safe and accounted for, CENTCOM said. Iran has made similar claims through the war, each denied by the US military.",
+    "At the White House news conference where Trump said Iran would “never have a nuclear weapon, ever”, Vice-President JD Vance stopped short of endorsing the president's claim that Iran had been close to building one, saying it was not his place to second-guess him. Nine months after the February strikes that killed Supreme Leader Ali Khamenei and opened the war, the proximity of an Iranian weapon remains its central public justification — and the administration's second-ranking official declined to affirm it on the record."
+   ],
+   "geopolitical": "A government that will not restate its own casus belli has fewer ways to end the war on terms it can defend, and Tehran's unverifiable claims land because Washington's account of why the fighting started is no longer uniformly held inside it.",
+   "socioeconomic": "The war's cost is now carried at home rather than at the strait: Gulf exports are near pre-war levels and the US pump price has fallen, so the bill arrives as oversight and a contested rationale."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "WONG CLOSES THE BEIJING LEG WITH LI QIANG AS CHINA'S VICE-PREMIER HEADS FOR THE APEX BILATERAL TABLE",
+   "breaking": false,
+   "summary": [
+    "Prime Minister Lawrence Wong met Premier Li Qiang at the Diaoyutai State Guesthouse in Beijing on Saturday, the last day of his working visit. Li said China is ready to accelerate talks on upgrading the China-Singapore Free Trade Agreement, launched at Wong's meeting with Xi Jinping two days earlier. Both welcomed progress on the three flagship government-to-government projects in Suzhou, Tianjin and Chongqing, and discussed artificial intelligence, including the need for international coordination on AI safety and governance.",
+    "The Prime Minister's Office announced on Saturday that Vice-Premier Ding Xuexiang will visit on 22 and 23 November at the invitation of Deputy Prime Minister Gan Kim Yong. The two will co-chair the 22nd Joint Council for Bilateral Cooperation, the apex annual bilateral platform, with the 27th Suzhou Industrial Park, 18th Tianjin Eco-City and 10th Chongqing Connectivity Initiative joint steering councils, all on 23 November. This year's theme is “Innovating Together for New Opportunities”. Ding will call on Wong and Senior Minister Lee Hsien Loong."
+   ],
+   "geopolitical": "Singapore is deepening a treaty relationship with Beijing in the month Washington placed it on a licence list for advanced chips, and doing it through institutions with numbered sessions — harder to read as choosing a side than any single agreement.",
+   "socioeconomic": "The three government-to-government projects are the measurable part: they give Singapore firms a route into western China that does not depend on the trade agreement being upgraded, which is why the steering councils meet regardless."
+  },
+  {
+   "headline": "SENIOR VACCINATION RATES HAVE ROUGHLY DOUBLED IN FIVE YEARS",
+   "breaking": false,
+   "summary": [
+    "Communicable Diseases Agency data show the share of citizens and permanent residents aged 65 and above taking at least one influenza vaccine dose in a calendar year rose from 20.4 per cent in 2021 to 49.5 per cent in 2025, while pneumococcal vaccination in the same group grew from 31.6 per cent to 67.8 per cent. More than 199,000 shingles doses were given to people aged 60 and above between September 2025, when the vaccine entered the National Adult Immunisation Schedule and became subsidised, and August 2026.",
+    "Seniors enrolled under Healthier SG get pneumococcal and influenza vaccinations free at their enrolled clinic, along with hepatitis B and chickenpox shots also on the schedule. Means-tested subsidies of up to 75 per cent apply to the shingles vaccine at CHAS clinics, polyclinics and MOH-funded long-term care institutions, with MediSave covering the rest. Public health specialist Clive Tan said the subsidies likely drove the increase in a group made up largely of cost-conscious retirees."
+   ],
+   "geopolitical": "The United States has just lost the measles elimination status it held for 26 years and recorded a child's death in Virginia on Friday; Singapore's adult immunisation numbers move the other way — a contrast in delivery and subsidy design, not in science.",
+   "socioeconomic": "Nearly seven in ten seniors taking the pneumococcal vaccine is a hospital-admissions figure before it is a health one, and the lesson is testable: uptake roughly doubled where the price went to zero at the point of care."
+  },
+  {
+   "headline": "A SECOND CHINESE EV BRAND LEAVES SINGAPORE AND ITS OWNERS KEEP THE CAR",
+   "breaking": false,
+   "summary": [
+    "Chinese electric vehicle brand JMEV has closed its showroom on Telok Kurau Road about a year after launching here in July 2025. The Straits Times found the unit empty with most windows boarded up on 18 November, the Singapore website inaccessible and the official number answered by someone with no connection to the dealership. Its distributor, Valor Auto, was incorporated on 2 July 2024. Land Transport Authority records show 28 JMEV Elight saloons registered since 2025, the latest in June 2026, the car priced at S$208,777 with a certificate of entitlement on the last published list in May.",
+    "JMEV is the second brand to leave in recent months, after Neta closed less than three months after opening in April 2025, and one of around 15 Chinese EV brands to enter since 2024. Lawyer Parwani Vijai said owners have no legal recourse when a distributor closes, and a distributor's extended warranty lapses with it; the factory warranty terms were not stated in the price list. CASE president Melvin Yong said no complaints were received against the distributor this year."
+   ],
+   "geopolitical": "Fifteen entrants in two years was never sustainable for this market, and the shakeout is arriving through distributors rather than manufacturers — exactly the layer where a buyer's protection sits.",
+   "socioeconomic": "Twenty-eight households paid over S$200,000 each for a car whose warranty is now worth whatever the factory honours, and the only remedy anyone names is due diligence before purchase."
+  },
+  {
+   "headline": "SFA BARS AN APPLE JUICE BATCH AFTER HONG KONG FINDS A MOULD TOXIN ABOVE THE LIMIT",
+   "breaking": false,
+   "summary": [
+    "Cold Storage has removed a batch of New Zealand brand Homegrown's 100% Pure NZ Apple Juice from sale after Hong Kong's Centre for Food Safety reported excessive levels of the mycotoxin patulin. A sample from a wholesale market in Sai Ying Pun contained 79 micrograms per kilogramme against a legal limit of 50, the centre said on 17 November; the affected batch is the one-litre bottle with a best-before date of 11 February 2027. Answering queries on Friday, the Singapore Food Agency said it engaged the importer, Cold Storage, which removed the batch voluntarily, and has issued a direction barring the products from sale.",
+    "Patulin is a heat-stable toxin produced by moulds, found mainly in rotting apples and apple products, and survives processing; excessive amounts can cause nausea, vomiting and gastrointestinal disturbance. Food failing safety requirements cannot be sold under the Sale of Food Act. The agency advised anyone holding the product not to drink it."
+   ],
+   "geopolitical": "The trigger was another jurisdiction's routine sampling, four days before the local action: import safety here rests on testing done elsewhere in the same supply chain — fast when Hong Kong publishes, silent when nobody does.",
+   "socioeconomic": "A batch pulled by agreement rather than recalled by order is the cheapest version of this intervention, and it works here because the importer is also the retailer: one call reached every shelf."
+  }
+ ],
+ "word": {
+  "word": "filibuster",
+  "pos": "noun",
+  "pronunciation": "FIL-ih-buss-ter",
+  "definition": "The deliberate use of delay and procedural obstruction to stop a decision being taken, particularly by a minority in a body that must agree to act.",
+  "etymology": "From Dutch vrijbuiter, a freebooter or pirate, by way of Spanish filibustero and French flibustier — a word for an irregular adventurer raiding the Caribbean, applied to legislative obstruction only in nineteenth-century America.",
+  "example": "Diplomats in Geneva said Russia had been deliberately filibustering rather than negotiating in good faith, and the consensus rule turned that filibuster into the outcome: no mandate, after thirteen years."
+ }
+}
