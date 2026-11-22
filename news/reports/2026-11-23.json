@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "date": "2026-11-23",
+ "generatedAt": "2026-11-23T07:15:00+08:00",
+ "coverage": {
+  "from": "2026-11-22T07:00:00+08:00",
+  "to": "2026-11-23T07:00:00+08:00",
+  "label": "Sunday 22 November 2026, 0700 SGT → Monday 23 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "COP31 COLLAPSES WITHOUT A DEAL, THE FIRST BREAKDOWN SINCE COPENHAGEN",
+   "breaking": true,
+   "summary": [
+    "The COP31 conference in Antalya collapsed on Sunday after more than two weeks, the longest COP on record and the first major breakdown since Copenhagen in 2009. With the Antalya Pact due to be adopted, president Murat Kurum said \"we have done our utmost\" but \"there is no consensus on this document\". The EU, Panama, the Marshall Islands, Norway and Britain rejected it; Ireland's Darragh O'Brien said for the bloc that it would not endorse a deal \"that does not even mention fossil fuels\".",
+    "Monday's first draft had called for \"the immediate transition away from fossil fuels in energy systems\". Every later draft cut all mention of them, despite more than 100 of the 190-odd countries present pushing to keep the words, and centred carbon capture instead. On finance the text asked for adaptation funding to at least triple by 2035, with no baseline and no figure. The United States, having quit international climate action, was absent."
+   ],
+   "geopolitical": "A consensus rule has again handed producer states a veto, and this time it cost the process its own back catalogue: the conference could not restate language every country accepted at Dubai in 2023. In doubt now is not ambition but whether these talks can adopt anything.",
+   "socioeconomic": "Adaptation finance leaves Antalya without a number: states facing the costs got a tripling pledge dated 2035 and no baseline, so they budget against a promise nobody must meet, while the carbon-capture framing tells energy investors production need not fall."
+  },
+  {
+   "headline": "IRAN'S TANKER CAMPAIGN HITS ITS HIGHEST LEVEL OF THE WAR AS ITS OIL REVENUE NEARS ZERO",
+   "breaking": true,
+   "summary": [
+    "Reported attacks on shipping in and around the Strait of Hormuz are at their highest since the war began, on CNN's analysis of UK Maritime Trade Operations data. October exceeded 30 reported attacks for the first time; at least 22 came in November as of Sunday, the second highest month, against a pre-October average of about 10. IMO figures also put October highest for confirmed incidents this year.",
+    "Projectiles struck three tankers leaving the strait on Friday and Saturday, said the risk firm Marisks, which judged Iranian involvement likely without confirming it: the Marshall Islands-flagged Captain Leon, hit at the bow and set alight, crew safe; the Hong Kong-flagged crude tanker Torkel, hit in the stern and alight; and the Hong Kong-flagged Arina, struck in the engine room by a missile. Kpler reports Iranian oil on water outside the blockade zone has hit zero, with revenues possibly reaching zero by mid-December."
+   ],
+   "geopolitical": "The leverage has inverted: Tehran is hitting more ships as the strait stops paying it anything — a party manufacturing a bargaining chip rather than defending one. The International Crisis Group's Hamidreza Azizi warns the market's assumption that full war is unlikely \"could change quickly\".",
+   "socioeconomic": "Oil has repriced as though the strait were solved, the IEA crediting recovered Gulf exports, while the hit rate on hulls rises; the cost migrates from the crude price to war-risk premiums, charter rates and crews on the Omani corridor."
+  },
+  {
+   "headline": "A RUSSIAN CORVETTE SINKS AT BENGHAZI AND THE DRONE WAR ACQUIRES A THIRD SEA",
+   "breaking": true,
+   "summary": [
+    "The Russian navy corvette Merkury, docked at a Benghazi naval base to refuel on its way home under a maritime cooperation agreement with Libya's eastern government, was struck in the early hours of Sunday, exploded and sank. That administration called a drone attack the likely cause and opened a joint investigation with Moscow; nobody has claimed it and Russia has not commented. Planet Labs imagery shows a plume over the port, and two eastern military sources told Reuters a Maltese-flagged merchant ship was also hit by a boat drone offshore.",
+    "It comes two days after drones hit the Russian cargo ship Sparta II in the Gulf of Finland, which Finland judged Ukraine likely to have carried out. CNN has previously reported Ukrainian naval drone crews working from a base at Misrata against Russia's shadow fleet in exchange for training Libyan forces. The eastern government, one of two ruling the country since 2011, said it would not let its territory become an \"arena for settling scores\"."
+   ],
+   "geopolitical": "Russia's Mediterranean logistics now run through a port it cannot defend, in a state with no single government to hold responsible. Every African resupply call becomes contested, and Libya's eastern authorities must choose between the agreement that brought the ship in and the deniability they claimed.",
+   "socioeconomic": "Two attacks in two days at opposite ends of Russia's shipping network turn an insurance question into a structural one for a shadow fleet whose economics depend on ports that ask nothing and were assumed out of range."
+  },
+  {
+   "headline": "DEMOCRATS TAKE THE LARGEST HOUSE MAJORITY IN THREE DECADES",
+   "breaking": false,
+   "summary": [
+    "Virginia Foxx conceded North Carolina's fifth district on Sunday after the machine recount she requested, having trailed by 331 votes, ended on Saturday. Her defeat by Chuck Hubbard, a former journalist, gives Democrats the largest House majority either party has won in a national election in three decades: at least 258 seats on the BBC's, Guardian's and New York Times's counts and at least 259 on CNN's, against at least 173 Republicans. One race is uncalled in Minnesota, with a recount from 30 November, and two Louisiana runoffs fall on 12 December.",
+    "Foxx, first elected in 2004, chairs the Rules Committee, which decides which bills reach the floor and how they may be amended. The incoming speaker, Hakeem Jeffries, told CBS's Face the Nation his party would concentrate on affordability, expanding healthcare and repairing a \"broken\" immigration system, and that he was willing to work across the aisle."
+   ],
+   "geopolitical": "The chamber that voted 211-204 on 11 November to bury impeachment articles against the defence secretary is replaced by one with the numbers to legislate on the war, and with the Rules Committee held by a party whose leaders call the Iran campaign reckless.",
+   "socioeconomic": "A majority this size turns the affordability agenda from a message into a programme that must still survive a Senate at 56 and a veto. Healthcare and immigration bills now have a floor path, which is what lobbying and state budgeting respond to."
+  },
+  {
+   "headline": "CHINA'S SPY SERVICE WAS AFTER THE CHIPS LONG BEFORE THE SCANDAL",
+   "breaking": false,
+   "summary": [
+    "China's Ministry of State Security has run a campaign for at least two years to help Chinese companies obtain the advanced AI chips American firms cannot legally export to them, and to collect intelligence on the semiconductor industry and its supply chains, the New York Times reported on Sunday, citing current and former US and other officials. Secondary accounts say the minister, Chen Yixin, leads it through a team answering to him directly; that is not independently confirmed here. Commerce first barred Nvidia's most advanced chips from China in late 2022.",
+    "The reporting lands eight days after Jensen Huang resigned as Nvidia's chief executive and three days after the House Foreign Affairs Committee published Commerce's licence book. On NBC's Meet the Press, asked whether Huang's reported affair with a woman suspected of spying for China had put national security at risk, Senator John Kennedy of Louisiana called it \"the most expensive sex since Helen of Troy\"."
+   ],
+   "geopolitical": "If procurement is a state intelligence programme rather than commercial leakage, the licensing regime is aimed at the wrong actor: export rules bind companies and transhipment hubs, not a service built to defeat them. That is the assumption under last week's licence rule covering Singapore.",
+   "socioeconomic": "The compliance burden moves again onto distributors, resellers and the entrepôts between them, asked to detect a counter-intelligence problem with commercial due diligence. For Nvidia, facing an SEC inquiry and a California subpoena, the question widens from one executive to its sales channel."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "WONG SAYS SINGAPORE CANNOT POLICE AMERICA'S EXPORT CONTROLS",
+   "breaking": false,
+   "summary": [
+    "Singapore attracts \"genuine investments from China\" that add value and create jobs, but \"abusing Singapore's trusted position\" to circumvent another country's export controls is a \"real concern\", Prime Minister Lawrence Wong told Singapore media in Beijing at the close of his China visit, in remarks published on Sunday. Chips that enter Singapore and are deployed here are visible to the government, which can check their use. Chips registered for sale here and re-exported are not: the volume is \"not small\" and far larger than what is deployed locally, the goods often never land here, and Singapore has neither jurisdiction nor sight of the end user.",
+    "\"We cannot enforce on their behalf, especially not in these other countries,\" Wong said, adding that Singapore can share information and leave those countries to enforce their own rules. What matters is \"that we are able to get the chips we need for Singapore's legitimate needs\". He added that \"so long as the two superpowers do not collide ... there will be space for Singapore to navigate\"."
+   ],
+   "geopolitical": "This is the first time the government has set out in its own words the limit of its cooperation with Washington's chip regime — information yes, enforcement no. It answers the \"trusted access\" question raised by the 17 November licence rule with visibility over domestic deployment only.",
+   "socioeconomic": "The admission that re-export volumes dwarf domestic use prices the exposure: a regime written against transhipment reaches the larger half of the business, not the half Singapore can vouch for. The entrepôt trade, not the data-centre build, is what a tightening would cost."
+  },
+  {
+   "headline": "THE APEX BILATERAL FORUM CONVENES AND ITS DELIVERABLE IS A DATA RULEBOOK",
+   "breaking": false,
+   "summary": [
+    "Chinese Vice-Premier Ding Xuexiang called on Prime Minister Lawrence Wong at the Istana on Sunday and was hosted to dinner by Deputy Prime Minister Gan Kim Yong, who co-chairs the 22nd Joint Council for Bilateral Cooperation with him on Monday, where more than 20 agreements and initiatives are expected. Gan, in an op-ed on the Prime Minister's Office website, credited 36 years of relations to a \"willingness to innovate together\".",
+    "The substantive work landed a day early. The third Singapore-China Digital Policy Dialogue met here on Sunday, co-chaired by Senior Minister of State Tan Kiat How and Liu Liehong, head of China's National Data Administration. They completed a draft joint guide to help businesses operating across ASEAN and China comply with data-protection law on cross-border transfers, and finished a joint mapping of both countries' AI governance frameworks. The council itself reviews the Suzhou Industrial Park, Tianjin Eco-City and Chongqing Connectivity Initiative."
+   ],
+   "geopolitical": "A guide written for ASEAN-China data traffic is a standards move, not a courtesy: whoever maps the frameworks first sets the vocabulary firms use, and this one was finished the same month Washington put Singapore on a chip licence list.",
+   "socioeconomic": "For companies the gain is concrete: one reference instead of two legal opinions when moving personal data between Chinese and South-east Asian operations, and a map of where the two AI regimes diverge. It is drafted, not signed."
+  },
+  {
+   "headline": "STROKES UP BY HALF IN A DECADE, AND RISING FASTEST AMONG THE YOUNG",
+   "breaking": false,
+   "summary": [
+    "Stroke episodes in Singapore rose from 6,720 in 2013 to 10,664 in 2023, the National Registry of Diseases Office reported in its Singapore Stroke Registry annual report of 1 October, set out by the Straits Times on Monday. Ageing accounts for most of that, but the age-standardised rate, which strips ageing out, still rose 8 per cent, from 160.3 to 173.4 per 100,000. Incidence almost doubles with each ten-year age band from 50 onwards.",
+    "The sharpest rises were among the youngest adults: the rate for 15- to 29-year-olds nearly doubled over the decade, from 3.9 to 7.4 per 100,000, and rose about 40 per cent for 30- to 39-year-olds, from 19.4 to 27.3. Carol Tham, a senior neurology consultant at the National Neuroscience Institute, attributed that to diets high in salt, saturated fat and processed food and to inactivity, leaving more young adults with hypertension, diabetes, high cholesterol and obesity."
+   ],
+   "geopolitical": "The figures test the premise of Healthier SG, that chronic-disease risk can be caught in primary care before it becomes an event. An 8 per cent rise in the age-standardised rate says prevention is not yet outrunning the risk factors, and the doubling under 30 sits below the ages screening starts.",
+   "socioeconomic": "A stroke at 25 is an economic event as well as a medical one: Tham noted such patients are often their families' breadwinners, and losing independence at peak earning age shifts cost onto households and long-term care rather than acute wards."
+  },
+  {
+   "headline": "FEMALE YOUTH ARRESTS AT A FIVE-YEAR HIGH, AND THE SCAM TRADE IS WHY",
+   "breaking": false,
+   "summary": [
+    "A total of 792 girls and young women aged 10 to under 21 were arrested in 2025, up about 20 per cent from 662 in 2024 and 657 in 2023, the highest in five years, the Ministry of Social and Family Development told the Straits Times. They were about one in four youth offenders, at a rate of three per 1,000 against 8.1 for boys. Total youth arrests rose to 3,117 from 2,627, per the ministry's 29 September rehabilitation trends report, largely on cheating offences.",
+    "Cheating and related offences, including scam cases, topped the list for female offenders: girls acted as money mules by handing scammers control of their bank accounts or Singpass credentials, or registered SIM cards for them to use. Theft was second, commonly of food, alcohol and cosmetics. Michelle Lee of the ministry's Probation, Reintegration and Gambling Safeguards division said girls weight belonging and connection with peers and partners more heavily, and are more susceptible to them."
+   ],
+   "geopolitical": "The recruitment problem has moved inside the country. Syndicates reached for minors with Singpass credentials and local bank accounts because the identity layer the state built for convenience is the commodity, and a 20 per cent rise says enforcement aimed at mule accounts has not reached the people opening them.",
+   "socioeconomic": "Scam facilitation carries a criminal record into a first job application, so a one-year spike becomes a cohort effect on employability. The ministry's answer is relational rather than punitive — teaching girls to recognise unhealthy dynamics and set boundaries."
+  }
+ ],
+ "word": {
+  "word": "guerre de course",
+  "pos": "noun",
+  "pronunciation": "gair duh KOORS",
+  "definition": "A strategy of war at sea that attacks an enemy's merchant shipping and seaborne trade instead of engaging its fighting fleet.",
+  "etymology": "French, literally \"war of the chase\", from guerre, war, and course, a privateering cruise, from Latin cursus, a running. It named the doctrine French naval theorists urged against English and Dutch commerce from the seventeenth century, when a weaker navy could not win a battle line but could ruin a trade route.",
+  "example": "Three tankers hit off Oman and a corvette sunk at its Libyan bunkering stop are the same idea in two hands: a guerre de course fought by drone, by the side that cannot hold the sea."
+ }
+}
