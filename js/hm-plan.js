@@ -26,6 +26,10 @@
 // lighter week (7 Dec) in the middle as the breather the off weeks used to
 // be. Long run 12→13→14→11→16→14→12, the last two eased around the 29 Dec
 // 10k trial. Planner slots added by the noOffWeeks2026 migration in store.js.
+// 23 Nov 2026: the 5k trial wasn't run in the week of 16 Nov (moved to that
+// Saturday, then missed). It takes Tue 24 Nov's hard slot instead, replacing
+// the 3×1.6 km reps: same 8 km, same kind of session, so the planner slots
+// stay as they are and no migration is needed.
 //
 // The owner's, plus any friend who switches on a copy. A friend can instead
 // load a plan of their own from a file: that lives only on their phone (see
@@ -105,8 +109,9 @@ const HM_WEEKS = [
   { mon: '2026-11-02', phase: 'Base', note: 'Sick from Sat 7 Nov: the weekend\'s push and long run are dropped, not made up.', sessions: [push(), tue('3×8 min @ 4:55, 2 min jog — 7 km'), lower(3), thu('7 km easy'), sat('11 km easy')] },
   { mon: '2026-11-09', phase: 'Comeback', note: 'Back from being sick: rest until Wednesday. Run only once you\'ve had a full day without symptoms (48 h after any fever). Everything this week is easy; the 5k trial moves to Tue 17 Nov.',
     sessions: [lower(2), thu('5 km easy — first run back, at a pace you could chat at'), S(4, 'night', 'push', 'Push — moved from Monday, keep it light'), sat('10 km easy')] },
-  { mon: '2026-11-16', phase: 'Base', sessions: [push(), tue(`5k TIME TRIAL (moved from 10 Nov): 2 km easy + 4 strides, then 5 km all-out at even pace (first km no faster than the rest), 1 km easy — 8 km. ${TT_NOTE}`), lower(3), thu('7 km easy + 6 strides (20 s relaxed-fast, 60–90 s walk)'), sat('12 km easy')] },
-  { mon: '2026-11-23', phase: 'Base', sessions: [push(), tue('3×1.6 km @ 4:55, 2 min jog — 8 km'), lower(3), thu('7 km easy'), sat('13 km easy')] },
+  { mon: '2026-11-16', phase: 'Base', note: 'The 5k trial wasn\'t run this week: it moves to Tue 24 Nov.', sessions: [push(), tue(`5k TIME TRIAL (moved from 10 Nov): 2 km easy + 4 strides, then 5 km all-out at even pace (first km no faster than the rest), 1 km easy — 8 km. ${TT_NOTE}`), lower(3), thu('7 km easy + 6 strides (20 s relaxed-fast, 60–90 s walk)'), sat('12 km easy')] },
+  { mon: '2026-11-23', phase: 'Base', note: 'The 5k trial moved here from last week. Slept under ~5 h the night before? Swap it with this week\'s easy run.',
+    sessions: [push(), tue(`5k TIME TRIAL (moved from 17 Nov): 2 km easy + 4 strides, then 5 km all-out at even pace (first km no faster than the rest), 1 km easy — 8 km. ${TT_NOTE}`), lower(3), thu('7 km easy'), sat('13 km easy')] },
   { mon: '2026-11-30', phase: 'Build', sessions: [push(), tue('25 min tempo @ 4:50 — 8 km'), lower(3), thu('7 km easy + 6 strides (20 s relaxed-fast, 60–90 s walk)'), sat('14 km easy')] },
   { mon: '2026-12-07', phase: 'Lighter week', note: 'Lighter on purpose: with no off weeks before January, this is the breather. Don\'t add to it.',
     sessions: [push(), tue('6×400m @ 4:25, 90 s rest — 6 km'), lower(2), thu('6 km easy'), sat('11 km easy')] },
