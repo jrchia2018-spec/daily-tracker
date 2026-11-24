@@ -1,0 +1,93 @@
+{
+ "schema": 1,
+ "date": "2026-11-25",
+ "generatedAt": "2026-11-25T07:19:00+08:00",
+ "coverage": {
+  "from": "2026-11-24T07:00:00+08:00",
+  "to": "2026-11-25T07:00:00+08:00",
+  "label": "Tuesday 24 November 2026, 0700 SGT → Wednesday 25 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "NVIDIA'S RESTORED CHIEF APOLOGISES WHILE REPUBLICANS REFUSE THE CLEARANCE",
+   "breaking": true,
+   "summary": [
+    "Jensen Huang apologised at an hour-long staff meeting on Tuesday, a day after his reinstatement, saying he had resigned because he broke Nvidia's code of conduct and that returning does not put him above it: \"I made some terrible mistakes.\" He denied that Trump orchestrated his return, defended the flat structure that leaves him no named successor, and took no questions.",
+    "The Republican chairs of the House intelligence and foreign affairs committees and of the select committee on the Chinese Communist Party said the \"brief internal investigation\" and reinstatement \"do not erase the national security threats and questions that must be addressed\". Tom Cotton called the Megaspeed affair \"the tip of the iceberg\" and pressed his Chip Security Act, which would require location verification on advanced chips. Attorney General Todd Blanche called Nvidia \"a good corporate citizen\", would not say whether Huang had been cleared, and met a question on the export inquiry with \"I don't know what you're talking about\" — a day after Trump called him \"exonerated\". The New York Times reported that Justice Department investigators have gathered evidence of Nvidia chips illegally diverted to China by other firms.",
+    "Markets gave back most of Monday: Nvidia fell 5.9 per cent to US$155.38, Anthropic 6.5 per cent to US$81.91, under its US$83 offer price, and the Philadelphia semiconductor index nearly 8 per cent. The Nasdaq lost 1.48 per cent and the S&P 500 0.50 per cent, an eighth fall in nine sessions; the Dow rose 0.85 per cent to 50,018.70."
+   ],
+   "geopolitical": "The clearance the board relied on came from officials it has not named, and the legislators who write export-control law will not accept it. Cotton's bill would move the test onto the chips themselves, out of the hands of an administration that has now intervened for one executive.",
+   "socioeconomic": "Monday's US$952 billion repricing was a bet on one man and Tuesday reversed most of it, with Anthropic closing under its listing price. The market is pricing the buildout, not Nvidia's governance."
+  },
+  {
+   "headline": "ISRAEL SAYS IRAN IS BUILDING CHEMICAL WEAPONS AND RAISES A PRE-EMPTIVE STRIKE",
+   "breaking": true,
+   "summary": [
+    "Defence Minister Israel Katz said on Tuesday that Iran is developing chemical weapons but \"has not yet reached the capability to attack Israel with them\", and pledged that Israel \"will not allow Iran to attain a chemical weapon\". In a statement through his Likud party he attributed the programme to the damage Iran took in the February campaign, said Israeli and American intelligence indicate the work began after it, and in a briefing to reporters raised a pre-emptive strike. He also said Iran is trying to kill Trump and his family. Iran's UN mission denies the allegation, and Foreign Minister Abbas Araghchi has called the reporting \"Iraq War-style propaganda\".",
+    "It is the second chemical stream in eight days, after CNN reported on 17 November that US intelligence indicated Iranian planning for a dirty bomb or chemical attack in Washington. Nothing in the window moved the blockade: Al Jazeera put oil traffic through Hormuz down about 40 per cent, and Iranian officials spent the weekend walking back reports that 14 loaded tankers at Kharg Island would run it, spokesman Esmaeil Baghaei calling the accounts \"media speculation\" and Kpler's Homayoun Falakshahi saying most of about 20 loaded tankers there remain stationary."
+   ],
+   "geopolitical": "The war's stated justification is migrating. Vance declined on 21 November to endorse the claim that Iran was close to a nuclear weapon; the charge is now chemical, it comes from Jerusalem rather than Washington, and it arrives with a pre-emptive strike attached — a claim the United States has not made, offered as grounds for an action its president has withheld.",
+   "socioeconomic": "Economic pressure has nothing left to add: Kpler already puts Iranian oil on water outside the blockade zone at zero. A new weapons charge carries no sanctions lever, only a military one, and that cost falls first on Gulf shipping and its insurance."
+  },
+  {
+   "headline": "A SECOND MISSILE HITS RIYADH'S TALLEST TOWER AS THE HOUTHIS CLOSE ON ADEN",
+   "breaking": true,
+   "summary": [
+    "Eleven people were wounded when the Public Investment Fund Tower in Riyadh's King Abdullah Financial District was struck on Tuesday, the second hit on the building in under a week. Saudi Arabia's civil defence directorate, calling it a terrorist incident, listed two Saudi citizens and nine foreign residents — two Indian, three Nepali, four Egyptian — among the injured; damage appeared about halfway up the facade, as after the 19 November strike, which caused none. The coalition said it intercepted three Houthi ballistic missiles headed for the capital, and accounts differ on whether a missile or a drone hit the tower. The attacks have disrupted air links to Riyadh and forced the kingdom to postpone or cancel major events, football's AFC Asian Cup among them.",
+    "Houthi forces are now 80km from Aden on the highland front to the north and 110km to the west along a desert road with few natural obstacles, having advanced on nearly every front since Yemen's war reignited this summer after a four-year truce. Government forces have set up checkpoints, brought in reinforcements and dug trenches, but analysts say factional feuding is hobbling the defence: the brigades \"do not share the same political objectives, territorial priorities, or willingness to fight\", said Mohammed al-Basha of the Royal United Services Institute, while the recognised government insists they are under one command."
+   ],
+   "geopolitical": "Tehran's closest ally is gaining ground as Tehran's own leverage erodes. The Houthis hold the heights above Bab el-Mandeb, are closing on the south's provisional capital and can reach Riyadh's financial district — and no Hormuz settlement with Iran would bind them, which is the hole in any deal Washington is refusing to make.",
+   "socioeconomic": "Two strikes in six days on the tower housing the sovereign wealth fund have produced cancelled tournaments and disrupted flights rather than mass casualties. That is the cost that reprices: war-risk and property cover for the district Saudi Arabia has spent a decade selling as a regional headquarters."
+  },
+  {
+   "headline": "A BROOKLYN JURY CONVICTS HUAWEI ON TEN OF TWELVE COUNTS",
+   "breaking": false,
+   "summary": [
+    "A federal jury in Brooklyn convicted Huawei Technologies and three affiliates on 10 of 12 criminal counts on Tuesday after five days of deliberation, ending a trial of more than two months. The convictions cover bank fraud, wire fraud, sanctions violations and conspiring to steal trade secrets: prosecutors said Huawei misled HSBC, Standard Chartered and BNP Paribas about its business in Iran so that it could move dollars in and out of the country against US sanctions, and that it took source code from Cisco Systems for its routers, antenna technology from Quintel and access to a CNEX circuit board through a professor it hired. The jury acquitted it of racketeering conspiracy and of conspiracy to obstruct justice.",
+    "Huawei said the counts it was convicted on \"lack legal merit\" and called the racketeering acquittal confirmation that \"these allegations lack factual basis\". No sentencing date has been set. The prosecution began with the 2018 detention in Canada of chief financial officer Meng Wanzhou, the founder's daughter, who fought extradition for nearly three years before a deferred prosecution agreement dropped her charges; prosecutors put her acknowledgment that the company had illegally done business in Iran before the jury. Huawei employs more than 200,000 people in about 170 countries and is central to China's AI push; nothing in the verdict restricts what it sells."
+   ],
+   "geopolitical": "A jury has established as fact what export-control policy has only asserted: a Chinese national champion deceived European banks over Iran and took American technology. It landed on the day the US attorney general called Nvidia \"a good corporate citizen\" while declining to discuss chips diverted to China — two halves of one problem, pursued at very different speeds.",
+   "socioeconomic": "The cost arrives before any fine. A criminal conviction gives banks, insurers and suppliers a court finding to cite in their own compliance decisions, which is where commercial consequence falls for a company already shut out of the American market."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE AND AUSTRALIA WIDEN THEIR SUPPLY PACT AND SIGN A CARBON-SHIPPING TREATY",
+   "breaking": true,
+   "summary": [
+    "Two agreements were exchanged in Canberra on 24 November before Prime Minister Lawrence Wong and Anthony Albanese at the 11th Singapore-Australia Annual Leaders' Meeting. The first takes supply-chain cooperation beyond petroleum oils and liquefied natural gas to 10 categories of goods, among them food, semiconductors, water-treatment chemicals, pharmaceuticals, telecommunications equipment, fertilisers and renewable energy technologies. It supplements a legally binding protocol signed in July under the two countries' free trade agreement, covering oil and LNG with an undertaking to endeavour not to impose export restrictions, which has not yet entered into force. Singapore supplies 55 per cent of Australia's petrol, 23 per cent of its aviation fuel and 15 per cent of its diesel.",
+    "The second is a treaty framework for shipping captured carbon dioxide from Singapore to Australia for offshore geological storage, transferring responsibility for accounting for it and setting reporting in line with the Paris Agreement; Albanese called it the first of its kind. A joint statement on artificial intelligence positions both countries as trusted AI hubs for the Indo-Pacific, with work on interoperability in digital infrastructure and cross-border data flows and support for Pacific-led capability. Albanese said negotiations to renew the Oakey Treaty, which underpins more than 25 years of Republic of Singapore Air Force helicopter training in Queensland, were substantially concluded."
+   ],
+   "geopolitical": "Two middle powers are writing their own insurance — on supplies, emissions and AI rules — that neither superpower administers. Albanese noted the US is Australia's most important ally and China its largest trading partner; Wong said \"we do not want to choose sides\", and that Singapore will widen ASEAN's engagement with Canada, the EU and the Gulf states from the 2027 chair.",
+   "socioeconomic": "The carbon treaty gives Singapore's refineries and petrochemical plants the only disposal route a city-state without suitable geology can have, turning hard-to-abate emissions into a shipping and accounting problem rather than a reason to close plants — before the carbon tax reaches its S$50-S$80 band in 2030."
+  },
+  {
+   "headline": "SINGAPORE SEEKS A MECHANISM FOR AMERICAN CHIP ENFORCEMENT AND SAYS EVIDENCE WAS WITHHELD",
+   "breaking": true,
+   "summary": [
+    "Hours after Washington moved to blacklist Megaspeed and six related firms, Wong said in Canberra that Singapore is working closely with the US administration \"to facilitate information sharing, to work out a mechanism where America can do its own enforcement\". \"We do not enforce America's export controls, but we do not want Singapore to be used and abused as a conduit by companies to circumvent America's export controls.\" Asked whether Washington had helped Singapore's own inquiry, he said: \"We did ask for some information. Not all of it was forthcoming.\" Three of the seven companies added to the Entity List on 23 November are registered here — Megaspeed International, Apex Enterprise Solutions (Singapore) and Swiftdata — with three in Malaysia and one in Thailand.",
+    "Singapore's investigation into whether Megaspeed breached domestic law continues, with discussions under way to establish the end users of the chips it bought and verify transaction documents. Wong said the Republic is also examining companies that may be exploiting its position as a trading hub to reroute advanced chips. Police and Customs began investigating several firms and their key officers in February 2025 over possibly inaccurate declarations on server purchases; six individuals besides Alice Huang, barred from re-entry in February, remain under investigation. On Jensen Huang's reinstatement Wong said Singapore had no part: \"They have decided. So be it.\""
+   ],
+   "geopolitical": "Singapore's offer is unchanged — visibility and verification, not enforcement on another state's behalf — but \"not all of it was forthcoming\" is the first time it has made the cooperation deficit mutual in public, twelve days after the Home Affairs Ministry said the same of the evidence behind the Alice Huang case.",
+   "socioeconomic": "Three Singapore-registered companies on the Entity List is a compliance event for every local reseller, broker and data-centre operator in the chip trade, raising the documentation and customer-verification cost of transshipment — the business Wong says is far larger than what Singapore deploys itself."
+  },
+  {
+   "headline": "STARHUB AND M1 AGREE A S$1.1 BILLION MERGER THAT WOULD LEAVE THREE NETWORKS",
+   "breaking": false,
+   "summary": [
+    "The all-shares deal announced on 24 November is expected to complete in the first half of 2027 and would bring 4.1 million mobile and more than 750,000 broadband customers under one owner: StarHub and M1 in full service, giga, Circles.Life and MyRepublic as digital-first brands. That trails Singtel's 4.5 million, and Simba would remain the smallest full network at nearly 1.5 million. The merged company would hold 41 per cent of mobile revenue market share, more than 7,000 mobile sites and over 13,000km of fibre, employ about 2,700 people and, by FY2030 once duplicate sites and systems close, run at a cost base S$110 million a year lower net of integration costs.",
+    "Mobile prices will not change in 2027 before completion, chief executive Nikhil Eapen told an analyst briefing, and any change would follow a public consultation held after submissions to the regulator due by 25 November. Incoming chief executive Matt Williams said existing customers keep their plans and points of contact and that there are no plans to cut headcount \"at the moment\". Eapen declined to repeat the commitment made during Simba's failed bid for M1 to hold prices for existing subscribers for two years. Gartner's Peter Liu expects the Infocomm Media Development Authority to review the deal closely and possibly impose conditions; analysts expect promotional discounts and free-data giveaways to be pared back rather than headline prices raised."
+   ],
+   "geopolitical": "Keppel's exit, after Simba's bid for M1 collapsed earlier this year, leaves mobile infrastructure held by two domestic groups and one foreign-backed challenger whose spectrum rights await an IMDA penalty decision. The regulator, not the buyers, now decides whether Singapore runs three networks or something closer to two and a half.",
+   "socioeconomic": "The consumer effect will show in promotions rather than list prices: four-network competition produced the giveaways analysts expect to disappear. The S$110 million of annual savings measures what duplication cost, and who captures it depends on the conditions IMDA attaches."
+  }
+ ],
+ "word": {
+  "word": "exculpate",
+  "pos": "verb",
+  "pronunciation": "EKS-kul-payt",
+  "definition": "To clear someone of blame or of a charge; to show that a person is not guilty of the wrong alleged against them.",
+  "etymology": "From Latin exculpatus, past participle of exculpare, to free from blame, built from ex-, out of, and culpa, fault; in English from the mid-seventeenth century, first in the language of the courts.",
+  "example": "Trump said Jensen Huang had been \"exonerated\" and Nvidia's board said senior officials had assured it there was no national security risk, but the Attorney General would not say on Tuesday what had exculpated him, and three Republican committee chairmen said the questions remain open."
+ }
+}
