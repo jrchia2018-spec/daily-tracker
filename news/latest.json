@@ -1,102 +1,102 @@
 {
  "schema": 1,
- "date": "2026-11-26",
- "generatedAt": "2026-11-26T07:20:00+08:00",
+ "date": "2026-11-27",
+ "generatedAt": "2026-11-27T07:25:00+08:00",
  "coverage": {
-  "from": "2026-11-25T07:00:00+08:00",
-  "to": "2026-11-26T07:00:00+08:00",
-  "label": "Wednesday 25 November 2026, 0700 SGT → Thursday 26 November 2026, 0700 SGT"
+  "from": "2026-11-26T07:00:00+08:00",
+  "to": "2026-11-27T07:00:00+08:00",
+  "label": "Thursday 26 November 2026, 0700 SGT → Friday 27 November 2026, 0700 SGT"
  },
  "global": [
   {
-   "headline": "WASHINGTON REBUILDS ITS TARIFFS COUNTRY BY COUNTRY, AND NAMES FOURTEEN",
+   "headline": "IRANIAN DRONES KILL TWO ITALIANS IN KUWAIT, AND TEHRAN CALLS IT A FALSE FLAG",
    "breaking": true,
    "summary": [
-    "The US Trade Representative ruled in 14 of the 16 Section 301 investigations opened on 11 March into \"structural excess capacity and production in manufacturing\", proposing duties set economy by economy rather than one blanket levy. China draws the highest rate, 20 per cent, which Jamieson Greer said sits on top of the roughly 25 per cent imposed in 2018 on about two-thirds of Chinese imports. The EU, Japan, South Korea, Switzerland and Taiwan are held to 15 per cent, Bangladesh, Cambodia, Indonesia, Malaysia and Thailand to 18, Vietnam to 35, India to 25 or 17 with a trade deal, and Singapore to 20, or 10 with an agreement on reciprocal trade. Mexico and Norway were investigated and spared. Some US$30 billion of Chinese goods up for cuts under the bilateral Board of Trade mechanism is exempt.",
-    "Comments close on 5 January, hearings are set for 25 January, and Greer told CNBC the duties probably will not bite for months. It rebuilds the tariffs the Supreme Court struck down on 20 February as an unlawful use of emergency powers, after which Trump fell back on Section 122's 10 per cent for 150 days. Greer said anything above 20 per cent would be read in Beijing as breaching the year-old truce, which expires on 10 January. Guo Jiakun called overcapacity \"a false issue\" used \"as an excuse for political manipulation\"; no retaliation was announced."
+    "Foreign Minister Antonio Tajani told the Italian Senate that drones of Iranian origin struck Kuwaiti military installations on Thursday, among them an air-defence detection station where two Italian technicians from Rheinmetall Italia were servicing detection antennas for Kuwait's armed forces. A powerful explosion killed both. Kuwait's defence ministry said its forces engaged several hostile drones in its airspace, blamed \"Iranian aggression\" for an attack on a \"vital site\", and said falling shrapnel wounded a Kuwaiti and a Pakistani national.",
+    "Brigadier-General Abolfazl Shekarchi, spokesman for Iran's armed forces, said Iran had conducted no military or offensive operations whatsoever in the region and called it a false flag meant to deepen regional insecurity. Abbas Araghchi repeated the denial to Tajani by telephone and offered to help Kuwait and Italy establish the drone's origin. Tajani said later it was Iranian-made, while noting that numerous pro-Iranian militias operate in the region; Italy will protest to Iran's embassy. Israel's Gideon Sa'ar said the attack showed Iran's unchecked aggression and Ursula von der Leyen called for more pressure on Tehran. It is the first strike on Kuwait since Iran's 19 November drones at Ali Al Salem Air Base, and the first time the Gulf campaign has killed European civilians."
    ],
-   "geopolitical": "The instrument has changed, and with it the leverage: emergency powers set one rate for everyone and lost in court, while Section 301 attaches to every country both a rate and a lower number conditional on a deal.",
-   "socioeconomic": "The rates tax the export model rather than particular goods, and they stack: Singapore's 20 per cent would sit above the 12.5 per cent forced-labour duty in force since 24 July. Nothing applies for two months."
+   "geopolitical": "The war has killed nationals of a NATO state on third-country soil, handing Rome a casualty in a conflict it has no part in and giving the Europeans their own grievance against Tehran just as Washington defers its next strike decision to the new year.",
+   "socioeconomic": "Gulf air defence is maintained by imported contractors. Killing two at their workstation raises the price of keeping those systems manned and leaves every Gulf host liable for the foreign civilians it brings in to defend it."
   },
   {
-   "headline": "THE VICE PRESIDENT SAYS THERE WAS NO INVESTIGATION AS CONGRESS IS BRIEFED ON A SPY SERVICE",
+   "headline": "THE HOUTHIS REACH SAUDI ARABIA'S EXPORT TERMINAL AND THE OIL PRICE FOLLOWS",
    "breaking": true,
    "summary": [
-    "JD Vance, in Dayton, Ohio, said officials had assured him Nvidia's restored chief executive was not under investigation and that \"the accusations against him were based on anonymous reporting, not on actual evidence\". He named Attorney General Todd Blanche among \"multiple people\" who gave those assurances, a day after Blanche met a question about whether Jensen Huang had been investigated with \"For what?\" Trump told the New York Post a pardon was \"always an option, I guess, but I don't think it'll be necessary\"; Vance said Huang needs none.",
-    "Officials briefing congressional staff on Tuesday said US intelligence believes Alice Huang, the Megaspeed executive, was introduced last year through a mutual friend to an officer of China's Ministry of State Security who openly deals with large companies in China, and that a man believed to be her husband was a Chinese asset in regular contact with the ministry; they cited no intelligence that she passed Nvidia material to him. Huang testifies publicly and behind closed doors next week. S&P Global placed Nvidia on CreditWatch Negative, signalling a high likelihood of downgrade, because the resignation and reinstatement \"does not sufficiently answer its questions regarding board oversight of the executive code of conduct\". Moody's left the Aa1 rating and stable outlook intact, saying the return cuts near-term uncertainty without resolving governance and regulatory questions."
+    "A projectile struck an oil refinery in Saudi Arabia's south-western Jazan region on Thursday, killing a Nepalese worker, injuring several others and temporarily suspending some operations, the energy ministry said. It followed the Houthis' claim a day earlier on Ras Tanura, the kingdom's biggest refinery at 550,000 barrels a day and part of the complex that held its main crude export terminal before the war. Wednesday's satellite imagery showed a large plume of black smoke; a shipping source told CNN loadings were suspended, with no confirmation they resumed. The Saudi-led coalition said it destroyed four drones over Ras Tanura, with debris but no injuries. Aramco did not comment.",
+    "The coalition said it destroyed 50 targets across Sanaa, Hodeidah and Saada on Thursday, a day after striking Hodeidah port; Houthi forces counted 109 Saudi strikes in 24 hours and the Houthi-run health ministry reported at least 19 civilians killed and 25 wounded over 48 hours, claims CNN could not verify. Brent settled 3.5 per cent higher at US$94.61 on Wednesday and traded above US$96 on Thursday in thin Thanksgiving dealing. Crown Prince Mohammed bin Salman is planning his first United States visit since the war began, for next month's G20 in Miami."
    ],
-   "geopolitical": "An administration has put its own word, not a document, behind the clearance of one executive, while the intelligence given to Congress describes a contact chain into a foreign service nobody denies.",
-   "socioeconomic": "Two agencies read the same week in opposite directions: Moody's prices the leader, S&P the board that removed and restored him in ten days. Governance, not chip demand, is now Nvidia's cost-of-capital risk."
+   "geopolitical": "Riyadh's request of Washington changes from help in Yemen to air defence for its own export plant, and the Houthis, bound by no clause of any settlement with Tehran, now hold a veto over Saudi barrels as well as over Bab el-Mandeb.",
+   "socioeconomic": "Recovered Gulf exports were why crude fell through November. A credible threat to Ras Tanura's loadings puts the war premium back into the price as OPEC+ meets on Sunday and the IEA expects supply to exceed demand this quarter."
   },
   {
-   "headline": "IRAN TURNS HORMUZ INTO A PERMISSION SYSTEM AND SAYS MINES ENFORCE IT",
-   "breaking": true,
-   "summary": [
-    "The Revolutionary Guards' navy said two oil tankers struck naval mines and caught fire early on Wednesday east of the strait after taking what it called an unauthorised route; some Iranian accounts say three vessels, including an LNG carrier. No ship was named, no flag state or crew casualties given, and none of it independently confirmed — the Joint Maritime Information Centre has called comparable claims unconfirmed and the US military has disputed earlier mine reports. Iran's army said it had upgraded surveillance and warned that ships crossing without coordinating with Iranian forces were running greater risks; Tehran Times reported two American drones shot down over the waterway.",
-    "Tehran now ties reopening to the lifting of the US naval blockade of Iranian ports, on top of its seven earlier conditions, and the army chief's order to close the strait \"further day by day\" until Washington meets them stands. Trump says the next decision on fresh strikes can wait until after the new year while a deal remains reachable, and that no talks are under way; Iran's foreign ministry agrees. Qatar is pressing Washington to revive them."
-   ],
-   "geopolitical": "Requiring ships to coordinate passage converts a blockade into an administrative claim over an international strait: a sovereignty assertion, not a siege. Mines make it self-enforcing and deniable at once.",
-   "socioeconomic": "Unattributed mines are harder to price than missiles — no aggressor to exclude, no confirmed incident to rate. Owners must choose between a permission regime that legitimises Tehran's claim and cover against a hazard nobody confirms."
-  },
-  {
-   "headline": "ISRAEL'S COURT TELLS THE PROSECUTION ITS BRIBERY CASE WILL NOT STAND",
-   "breaking": true,
-   "summary": [
-    "Judge Rivka Friedman-Feldman told Attorney General Gali Baharav-Miara, summoned to a hearing she rarely attends, that conviction in Case 4000 was unlikely and the case should be dropped: \"There is serious doubt as to whether the evidentiary foundation supports this allegation.\" They cited shifts in the account of the key witness Shlomo Filber and a timeline that did not hold; of Case 2000 they had \"serious doubts as to whether the conduct described in the indictment actually constitutes a criminal offence\"; in Case 1000, the cigars and champagne, they urged a negotiated end. None of it is a ruling. Case 4000 alleged regulatory favours to Shaul Elovitch's Bezeq for favourable coverage on Walla!, put at more than 1 billion shekels (about S$384 million) by CNN and about 1.8 billion by Reuters.",
-    "Baharav-Miara said she would review every recommendation and that only \"a verdict or an appropriate plea agreement\" can end the matter. Netanyahu, at the Knesset, called it vindication after \"10 years of terrible suffering\", said \"this trial needs to end immediately\" and repeated his offer of a unity government; Israel Katz said a trial \"tainted from the outset\" should close. He was indicted in January 2020 and began testifying in December 2024. Gadi Eisenkot, who holds the mandate, has set 6 December as his deadline to form a government, and Avigdor Liberman said he is on track."
-   ],
-   "geopolitical": "The case was the fixed point of Israeli politics: every coalition since 2020 was assembled around a defendant. Remove the bribery count and the reason rivals would not sit with him goes too.",
-   "socioeconomic": "Nothing was decided, and that is the cost. A court that doubts the indictment in public but issues no judgment leaves the attorney general choosing between a verdict years away and a deal resembling surrender."
-  },
-  {
-   "headline": "AMERICA GREW AT 4.3 PER CENT AND ITS INFLATION WENT UP WITH IT",
+   "headline": "A TWICE-YEARLY HIV SHOT REACHES AFRICA AT FORTY DOLLARS A YEAR",
    "breaking": false,
    "summary": [
-    "The Commerce Department revised third-quarter growth to an annualised 4.3 per cent from the 3.4 first reported, the best quarter in three years, with business investment — software above all, the signature of AI building — the largest driver, and consumer spending central too. The Federal Reserve's preferred gauge moved the other way: personal consumption expenditures prices accelerated to 3.8 per cent annualised in October from 3.7, nearly double the 2 per cent target, though the monthly pace eased to 0.3 from September's 0.5. Strip that out and real spending was flat for the month. The savings rate rose half a point to 4.1 per cent, against 4.9 a year earlier, and much of October's income gain came from Medicare rebates. \"The cautious consumer is back,\" wrote Heather Long of Navy Federal.",
-    "Markets took it badly, then recovered most of it. Shares opened sharply lower on AI selling, the Nasdaq Composite down close to 4 per cent and the Dow off more than 1,100 points, before paring back: the Dow closed up 0.33 per cent at 50,182.95, the S&P 500 down about 0.25 per cent near 7,182.78, the Nasdaq down 0.62 per cent at 23,585.80. Nvidia fell 3.91 per cent to US$149.30, a second straight decline."
+    "The first shipments anywhere of generic lenacapavir, the twice-yearly injection that is close to fully effective at preventing HIV infection, arrived in Zambia on Wednesday, the Global Fund said, with Uganda's delivery due within days and Zimbabwe's in early 2027. The generic is expected to cost about US$40 (S$51) a person a year, against a list price near US$28,000 in the United States.",
+    "The deliveries rest on royalty-free licences Gilead granted six generic manufacturers for named countries in sub-Saharan Africa, Asia and Latin America, arranged with Unitaid, the Gates Foundation and the Children's Investment Fund Foundation; India's Dr Reddy's Laboratories makes one version. More than 189,000 people across ten early-adopter countries have had a first dose, and 24 countries are expected to have received lenacapavir by the end of this year. It arrives as American aid cuts fall on the clinics that would administer it."
    ],
-   "geopolitical": "A central bank pushed towards raising rates while most peers cut pulls capital to the dollar and tightens conditions for every borrower priced off it. The economies just handed tariff rates meet both at once.",
-   "socioeconomic": "Growth is coming from firms buying software, not households being better off: real spending flat, savings thinner than a year ago. A December rate rise would add mortgage and card costs on top of 3.8 per cent inflation."
+   "geopolitical": "A voluntary licence running from an American patent holder through Indian manufacturers to African health systems has put a frontier medicine into public programmes without a compulsory licence, a treaty fight or any American agency.",
+   "socioeconomic": "At US$40 a year, prevention becomes a line a health ministry can budget rather than a donor project it must win. Price is no longer the binding constraint; the clinics that give the injection are, and those are what the aid cuts close."
+  },
+  {
+   "headline": "WASHINGTON LICENSES A MILLION SATELLITES TO PUT AI COMPUTING IN ORBIT",
+   "breaking": false,
+   "summary": [
+    "The Federal Communications Commission authorised SpaceX on Wednesday to deploy up to a million orbital compute modules, the \"Starmind\" constellation, saying they would process massive amounts of data for use on Earth and help meet rapidly growing demand for AI computing power. Chairman Brendan Carr called it a bold new frontier; Elon Musk said it would be a great asset to America and the world. The licence requires one station in orbit by November 2033, 100,000 by November 2035 and half the total by November 2038, with the first launch targeted for the third quarter of 2027. SpaceX told the regulator near-constant solar power would deliver transformative cost and energy efficiency with far less environmental impact than terrestrial data centres, having warned before its June listing that the technology is unproven and may not reach commercial viability.",
+    "About 16,700 satellites are operational today on Orbital Radar's count, 15,800 on the European Space Agency's. The American Astronomical Society said it was dismayed, arguing the constellation would undermine decades of federal investment in astronomy and the public's ability to study the night sky, with extremely bright objects visible for longer periods, radio emissions and waste heat threatening sensitive instruments. Amazon also opposed it, and the commission deferred SpaceX's request to allow alternatives to atmospheric re-entry."
+   ],
+   "geopolitical": "One national regulator has allotted a single company sixty times the world's entire satellite population, in orbital shells no treaty assigns, making the FCC the de facto licensing authority for off-planet computing and leaving every other state to object after the grant.",
+   "socioeconomic": "If orbital compute works it breaks the link between AI capacity and the grid, land and water now constraining data-centre construction. If not, the deployment milestones encumber low orbit for a decade regardless, and astronomy pays first."
+  },
+  {
+   "headline": "EUROPE SETTLES WHO RUNS ITS CENTRAL BANK AND DEFERS WHAT IT OWES KYIV",
+   "breaking": false,
+   "summary": [
+    "Euro-area governments agreed at a Brussels summit on Thursday to recommend Pablo Hernandez de Cos as the next president of the European Central Bank, the first Spaniard to hold the job, European Council president Antonio Costa said. Laurence Boone, a French economist at Santander, takes market operations from Isabel Schnabel and the Princeton economist Markus Brunnermeier replaces Philip Lane as chief economist; all three should be confirmed in December after European Parliament and governing council review, both formalities. De Cos, general manager of the Bank for International Settlements and governor of the Bank of Spain until 2024, succeeds Christine Lagarde when she leaves in February, eight months early, and inherits euro-area inflation at 4 per cent, twice the target, with bond-market strain in France.",
+    "The same leaders broke up without agreeing either the 2028-2034 budget or the EUR45bn (S$67bn) loan to Ukraine for 2027, pushing both to the European Council of 17-18 December. Hungary, Slovakia and the Czech Republic remain unconvinced, Andrej Babis has tied his budget vote to a collective commitment on Ukraine, seven \"frugal\" states boycotted Costa's discussion format, and his compromise cuts EUR204bn from the Commission's proposal. Costa said unanimity is needed by year's end. Spain votes in a snap election on Sunday."
+   ],
+   "geopolitical": "Europe can fill its own institutions by package deal and cannot fund the war on its border, the division Moscow has read all autumn; Kyiv's 2027 budget now waits on a December meeting at which three capitals still hold a veto.",
+   "socioeconomic": "De Cos takes the rate decision for 21 countries with inflation at double target and French yields unsettled, so the first question put to a central banker chosen for balance is whether to tighten into a Europe that cannot agree its budget."
   }
  ],
  "singapore": [
   {
-   "headline": "CIVIL SERVANTS GET TWO MONTHS AS THE OFFICIAL GROWTH FORECAST GOES TO SIX PER CENT",
+   "headline": "NVIDIA STOPS ITS OWN SERVERS AT SINGAPORE'S BORDER",
    "breaking": true,
    "summary": [
-    "The Public Service Division announced a 1.55-month year-end bonus for all civil servants, up from 1.3 months in 2025, taking the annual variable component to two months for 2026 with June's 0.45-month mid-year payment. Grades equivalent to MX13(I) and MX14 receive a one-off S$300, and MX15, MX16 and the Operations Support Scheme S$600, in line with National Wages Council recommendations to lift lower-wage pay; the one-month non-pensionable annual allowance continues.",
-    "The payment rests on a growth forecast now put at around 6 per cent for 2026, against the 4.5 to 5.5 per cent range given in August. The division cited better-than-expected performance over the first three quarters and an expectation that the global boom in AI-related investment runs to the end of the year, benefiting manufacturing and wholesale trade, alongside the Manpower Ministry's third-quarter advance release showing stronger employment growth with unemployment and retrenchments edging up slightly. NTUC's Cham Hui Fong called the support \"progressive and targeted\" while warning of structural shifts from AI and digitalisation."
+    "Nvidia has told its manufacturing partners to stop shipping servers containing its chips to Singapore, Malaysia, Thailand and Indonesia, the Financial Times reported on Thursday, citing three people familiar with the matter. Partners including Dell and Supermicro, which package the chips into servers, have told buyers in the four countries that Nvidia will not allow their orders to ship. The Wall Street Journal reported the pause runs for an unspecified period while the company assesses whether its regional partners meet American export requirements; whether it is temporary is unclear.",
+    "It follows the Commerce Department rule issued on 16 November and in force last week, which requires licences to send advanced chips to the four states and closes the route by which Chinese companies rented computing power from overseas cloud providers that buy Nvidia servers rather than importing chips themselves. Among those affected is Aolani, a Singapore-registered cloud company that had planned to supply advanced computing to ByteDance, the Chinese owner of TikTok, under leasing agreements. Singapore has sought \"trusted access\" arrangements since the rule was published."
    ],
-   "geopolitical": "The forecast that sets the state's own wage bill now turns on AI capital spending abroad, in the same chip trade as the American enforcement actions naming Singapore-registered firms.",
-   "socioeconomic": "Two months is the clearest signal that the government expects the upswing to hold into 2027, while the flat payments to junior grades concede the aggregate number is not reaching the bottom of the scale."
+   "geopolitical": "The licence rule has produced a commercial embargo before any licence has been refused: the vendor is withholding shipments rather than test the paperwork, which makes compliance risk, not American policy, the thing deciding what reaches Singapore.",
+   "socioeconomic": "Data-centre and cloud investment here was sold on access to the newest accelerators. A pause of unstated length on the servers carrying them stalls build-outs already contracted and gives customers reason to place the next workload where no licence condition applies."
   },
   {
-   "headline": "THE CHIEF JUSTICE MARKS OUT WHERE A COURT STOPS AND PARLIAMENT BEGINS",
+   "headline": "SINGAPORE PUTS A FIGURE ON THE TARIFF AND IS TOLD ITS PENSION IS THE PROBLEM",
    "breaking": false,
    "summary": [
-    "Sundaresh Menon, who retires in February 2027, used his keynote at the Global Rule of Law Conference to argue that a judgment prompting a Cabinet review, a consultation or a new statute does not mean the judiciary has taken on a political function. His example was the Sentencing (Scams) Bill, introduced on 3 November after the High Court in September allowed the appeals of four scam offenders who offended under 21, replacing reformative training with probation of a year to 18 months; the Bill would make jail or reformative training the default for young scam mules.",
-    "He also cited Tan Seet Eng, detained without trial in 2013 under the Criminal Law (Temporary Provisions) Act, whose order the Court of Appeal set aside for failing to establish harm in Singapore: the Home Affairs Ministry then reviewed other detentions and released three detainees no court had ordered freed. \"Neither institution assumed the function of the other, but each responded within its proper constitutional lane,\" Menon said of that sequence, adding that \"authoritative judicial determinations must be respected by those branches\". Section 377A went the same way: challenges dismissed on procedural grounds but with a note that equality jurisprudence could affect a future case, after which the Attorney-General advised the provision was at significant risk and repeal followed consultations."
+    "Gan Kim Yong said about 33 per cent of Singapore's direct exports to the United States, some S$9.4 billion (US$7.2 billion) worth, would be caught by the Section 301 duty of up to 20 per cent the US Trade Representative proposed on Wednesday, lifting the effective rate on affected goods from 7.8 to 10.3 per cent. The measures could take effect in early 2027, and the rate falls to 10 per cent if Singapore reaches an agreement on reciprocal trade. Comments close 5 January and hearings sit 25 January.",
+    "The Deputy Prime Minister said he was very surprised by the finding, given the two countries' free-trade agreement and years of work together, that Singapore would keep negotiating, and that any agreement would involve give and take and compromises Singapore must be prepared to accept. The determination named Singapore's industrial policies, its support schemes and the Central Provident Fund among the causes of structural excess capacity; Gan rejected the argument that the CPF is designed to suppress household consumption."
    ],
-   "geopolitical": "Singapore is making a claim about method rather than values: a court enforcing statutory limits and a legislature rewriting the statute afterwards is dialogue, not conflict — a communitarian model argued before an international audience.",
-   "socioeconomic": "For anyone litigating against the state here, a win can be answered by legislation within two months, as the scam-mule appeals were, but it can also free people no court was asked about."
+   "geopolitical": "An American finding that a national retirement system is an unfair trade practice reaches past tariffs into domestic social policy, and no Singapore government can trade anything on the CPF, which narrows any deal to the parts Washington cares least about.",
+   "socioeconomic": "A third of direct exports at an effective 10.3 per cent is survivable for an economy MTI now sees growing about 6 per cent, but the lower rate is conditional on a bilateral agreement, so firms must plan for two tariff worlds into the new year."
   },
   {
-   "headline": "SINGAPORE'S MARINE LAB BECOMES A REGIONAL INSTRUMENT BEFORE THE NEXT BLEACHING",
+   "headline": "NINE PROGRAMMES BECOME ONE, WITH ONE WORKER AND ONE PLAN",
    "breaking": false,
    "summary": [
-    "St John's Island National Marine Laboratory was renamed the National Marine Research Station and given the lead of a new South-east Asia Marine Research Stations Network, launched by President Tharman Shanmugaratnam at the start of Marine Science Week on its tenth anniversary. More than 10 stations from Singapore, Malaysia, Indonesia, Thailand and the Philippines have joined, and the NUS-hosted station will open its facilities, data and expertise to the region, beginning with shared sea temperatures.",
-    "Director Jani Tanzil said sea warming is the region's biggest challenge and the network could detect early signs of the fifth global coral bleaching event, forecast for April to July 2027 after one of the strongest El Niño events; the previous four were in 1998, 2010, 2016 and 2024, the last the most intense on record, reaching reefs in more than 80 countries and territories. Singapore's three research buoys already report in near real time through the Marine Environment Sensing Network. Within five years it will add imaging instruments to identify plankton, the first organisms to react to environmental shifts and the precursor of harmful algal blooms, and a vessel to replace an 18-year-old boat, under the S$37 billion Research, Innovation and Enterprise 2030 plan."
+    "The Ministry of Social and Family Development said on Thursday it had accepted in principle all 19 recommendations of the Family Services Review Committee convened in June 2024, the central one a One Family Service model folding nine MSF-funded programmes - family support, domestic violence and protection, and youth delinquency - into a single integrated service. They serve about 35,000 individuals or families a year, close to one in five of whom already draw on more than one programme and so sit through a separate assessment and case plan for each. Under the new model a family gets one assessment, one integrated case plan and one main worker.",
+    "Agencies will have to plan and deliver as regional partners rather than within their own organisations, a substantial change for the 26 running the nine programmes. Singapore will be divided into seven regions, three starting in 2029 and the rest over the following one to two years; MSF said the first three are not chosen. The committee, drawing on 28 agencies and more than 400 professionals, found cases that are complex, high-risk or both rose from a quarter of family service centre caseloads in 2019 to 30 per cent in 2025."
    ],
-   "geopolitical": "Scientific infrastructure is the cheapest form of regional convening, and Singapore has taken the chair of it a year before the ASEAN chair. A shared temperature series is also a shared evidentiary record.",
-   "socioeconomic": "A bleaching event with a forecast window is a planning problem, not a disaster: reefs are nurseries for fished stocks and coastal barriers, so monitoring changes what fisheries and coastal works can prepare for."
+   "geopolitical": "Nothing external turns on this, but it is the clearest admission yet that the problems an ageing, smaller-household Singapore generates do not arrive one programme at a time, and that the state's own structure added to the burden it meant to lift.",
+   "socioeconomic": "One worker and one plan should cut the retelling and duplicated assessment families absorb now, but the regional model concentrates caseloads, so it turns on whether the sector can staff seven regions with people able to hold a whole family's case."
   }
  ],
  "word": {
-  "word": "obiter dictum",
+  "word": "demesne",
   "pos": "noun",
-  "pronunciation": "OH-bih-ter DIK-tum",
-  "definition": "A remark a judge makes in passing which forms no part of the binding decision, and so carries persuasive weight without legal force.",
-  "etymology": "Latin, \"a thing said by the way\", from obiter, in passing, and dictum, something said; used in English law since the eighteenth century in contrast to the ratio decidendi, the reasoning that actually binds.",
-  "example": "The Jerusalem court was explicit that its advice to drop the bribery case was obiter dictum and no judgment at all, which did not stop Netanyahu from treating it as vindication and demanding the trial end immediately."
+  "pronunciation": "dih-MAYN",
+  "definition": "Land or a domain held and worked directly by its owner rather than let out to others; by extension, a sphere held under one's own control.",
+  "etymology": "From Anglo-French demesne, a variant of Old French demeine, from Latin dominicus, belonging to a lord, from dominus, lord; the -s- crept in by confusion with Old French mesnie, household.",
+  "example": "By licensing up to a million Starmind satellites, the FCC has in effect granted SpaceX a demesne in low Earth orbit, a region no treaty parcels out and which every other state's regulators will now reach only after the grant."
  }
 }

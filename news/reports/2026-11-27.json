@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "date": "2026-11-27",
+ "generatedAt": "2026-11-27T07:25:00+08:00",
+ "coverage": {
+  "from": "2026-11-26T07:00:00+08:00",
+  "to": "2026-11-27T07:00:00+08:00",
+  "label": "Thursday 26 November 2026, 0700 SGT → Friday 27 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "IRANIAN DRONES KILL TWO ITALIANS IN KUWAIT, AND TEHRAN CALLS IT A FALSE FLAG",
+   "breaking": true,
+   "summary": [
+    "Foreign Minister Antonio Tajani told the Italian Senate that drones of Iranian origin struck Kuwaiti military installations on Thursday, among them an air-defence detection station where two Italian technicians from Rheinmetall Italia were servicing detection antennas for Kuwait's armed forces. A powerful explosion killed both. Kuwait's defence ministry said its forces engaged several hostile drones in its airspace, blamed \"Iranian aggression\" for an attack on a \"vital site\", and said falling shrapnel wounded a Kuwaiti and a Pakistani national.",
+    "Brigadier-General Abolfazl Shekarchi, spokesman for Iran's armed forces, said Iran had conducted no military or offensive operations whatsoever in the region and called it a false flag meant to deepen regional insecurity. Abbas Araghchi repeated the denial to Tajani by telephone and offered to help Kuwait and Italy establish the drone's origin. Tajani said later it was Iranian-made, while noting that numerous pro-Iranian militias operate in the region; Italy will protest to Iran's embassy. Israel's Gideon Sa'ar said the attack showed Iran's unchecked aggression and Ursula von der Leyen called for more pressure on Tehran. It is the first strike on Kuwait since Iran's 19 November drones at Ali Al Salem Air Base, and the first time the Gulf campaign has killed European civilians."
+   ],
+   "geopolitical": "The war has killed nationals of a NATO state on third-country soil, handing Rome a casualty in a conflict it has no part in and giving the Europeans their own grievance against Tehran just as Washington defers its next strike decision to the new year.",
+   "socioeconomic": "Gulf air defence is maintained by imported contractors. Killing two at their workstation raises the price of keeping those systems manned and leaves every Gulf host liable for the foreign civilians it brings in to defend it."
+  },
+  {
+   "headline": "THE HOUTHIS REACH SAUDI ARABIA'S EXPORT TERMINAL AND THE OIL PRICE FOLLOWS",
+   "breaking": true,
+   "summary": [
+    "A projectile struck an oil refinery in Saudi Arabia's south-western Jazan region on Thursday, killing a Nepalese worker, injuring several others and temporarily suspending some operations, the energy ministry said. It followed the Houthis' claim a day earlier on Ras Tanura, the kingdom's biggest refinery at 550,000 barrels a day and part of the complex that held its main crude export terminal before the war. Wednesday's satellite imagery showed a large plume of black smoke; a shipping source told CNN loadings were suspended, with no confirmation they resumed. The Saudi-led coalition said it destroyed four drones over Ras Tanura, with debris but no injuries. Aramco did not comment.",
+    "The coalition said it destroyed 50 targets across Sanaa, Hodeidah and Saada on Thursday, a day after striking Hodeidah port; Houthi forces counted 109 Saudi strikes in 24 hours and the Houthi-run health ministry reported at least 19 civilians killed and 25 wounded over 48 hours, claims CNN could not verify. Brent settled 3.5 per cent higher at US$94.61 on Wednesday and traded above US$96 on Thursday in thin Thanksgiving dealing. Crown Prince Mohammed bin Salman is planning his first United States visit since the war began, for next month's G20 in Miami."
+   ],
+   "geopolitical": "Riyadh's request of Washington changes from help in Yemen to air defence for its own export plant, and the Houthis, bound by no clause of any settlement with Tehran, now hold a veto over Saudi barrels as well as over Bab el-Mandeb.",
+   "socioeconomic": "Recovered Gulf exports were why crude fell through November. A credible threat to Ras Tanura's loadings puts the war premium back into the price as OPEC+ meets on Sunday and the IEA expects supply to exceed demand this quarter."
+  },
+  {
+   "headline": "A TWICE-YEARLY HIV SHOT REACHES AFRICA AT FORTY DOLLARS A YEAR",
+   "breaking": false,
+   "summary": [
+    "The first shipments anywhere of generic lenacapavir, the twice-yearly injection that is close to fully effective at preventing HIV infection, arrived in Zambia on Wednesday, the Global Fund said, with Uganda's delivery due within days and Zimbabwe's in early 2027. The generic is expected to cost about US$40 (S$51) a person a year, against a list price near US$28,000 in the United States.",
+    "The deliveries rest on royalty-free licences Gilead granted six generic manufacturers for named countries in sub-Saharan Africa, Asia and Latin America, arranged with Unitaid, the Gates Foundation and the Children's Investment Fund Foundation; India's Dr Reddy's Laboratories makes one version. More than 189,000 people across ten early-adopter countries have had a first dose, and 24 countries are expected to have received lenacapavir by the end of this year. It arrives as American aid cuts fall on the clinics that would administer it."
+   ],
+   "geopolitical": "A voluntary licence running from an American patent holder through Indian manufacturers to African health systems has put a frontier medicine into public programmes without a compulsory licence, a treaty fight or any American agency.",
+   "socioeconomic": "At US$40 a year, prevention becomes a line a health ministry can budget rather than a donor project it must win. Price is no longer the binding constraint; the clinics that give the injection are, and those are what the aid cuts close."
+  },
+  {
+   "headline": "WASHINGTON LICENSES A MILLION SATELLITES TO PUT AI COMPUTING IN ORBIT",
+   "breaking": false,
+   "summary": [
+    "The Federal Communications Commission authorised SpaceX on Wednesday to deploy up to a million orbital compute modules, the \"Starmind\" constellation, saying they would process massive amounts of data for use on Earth and help meet rapidly growing demand for AI computing power. Chairman Brendan Carr called it a bold new frontier; Elon Musk said it would be a great asset to America and the world. The licence requires one station in orbit by November 2033, 100,000 by November 2035 and half the total by November 2038, with the first launch targeted for the third quarter of 2027. SpaceX told the regulator near-constant solar power would deliver transformative cost and energy efficiency with far less environmental impact than terrestrial data centres, having warned before its June listing that the technology is unproven and may not reach commercial viability.",
+    "About 16,700 satellites are operational today on Orbital Radar's count, 15,800 on the European Space Agency's. The American Astronomical Society said it was dismayed, arguing the constellation would undermine decades of federal investment in astronomy and the public's ability to study the night sky, with extremely bright objects visible for longer periods, radio emissions and waste heat threatening sensitive instruments. Amazon also opposed it, and the commission deferred SpaceX's request to allow alternatives to atmospheric re-entry."
+   ],
+   "geopolitical": "One national regulator has allotted a single company sixty times the world's entire satellite population, in orbital shells no treaty assigns, making the FCC the de facto licensing authority for off-planet computing and leaving every other state to object after the grant.",
+   "socioeconomic": "If orbital compute works it breaks the link between AI capacity and the grid, land and water now constraining data-centre construction. If not, the deployment milestones encumber low orbit for a decade regardless, and astronomy pays first."
+  },
+  {
+   "headline": "EUROPE SETTLES WHO RUNS ITS CENTRAL BANK AND DEFERS WHAT IT OWES KYIV",
+   "breaking": false,
+   "summary": [
+    "Euro-area governments agreed at a Brussels summit on Thursday to recommend Pablo Hernandez de Cos as the next president of the European Central Bank, the first Spaniard to hold the job, European Council president Antonio Costa said. Laurence Boone, a French economist at Santander, takes market operations from Isabel Schnabel and the Princeton economist Markus Brunnermeier replaces Philip Lane as chief economist; all three should be confirmed in December after European Parliament and governing council review, both formalities. De Cos, general manager of the Bank for International Settlements and governor of the Bank of Spain until 2024, succeeds Christine Lagarde when she leaves in February, eight months early, and inherits euro-area inflation at 4 per cent, twice the target, with bond-market strain in France.",
+    "The same leaders broke up without agreeing either the 2028-2034 budget or the EUR45bn (S$67bn) loan to Ukraine for 2027, pushing both to the European Council of 17-18 December. Hungary, Slovakia and the Czech Republic remain unconvinced, Andrej Babis has tied his budget vote to a collective commitment on Ukraine, seven \"frugal\" states boycotted Costa's discussion format, and his compromise cuts EUR204bn from the Commission's proposal. Costa said unanimity is needed by year's end. Spain votes in a snap election on Sunday."
+   ],
+   "geopolitical": "Europe can fill its own institutions by package deal and cannot fund the war on its border, the division Moscow has read all autumn; Kyiv's 2027 budget now waits on a December meeting at which three capitals still hold a veto.",
+   "socioeconomic": "De Cos takes the rate decision for 21 countries with inflation at double target and French yields unsettled, so the first question put to a central banker chosen for balance is whether to tighten into a Europe that cannot agree its budget."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "NVIDIA STOPS ITS OWN SERVERS AT SINGAPORE'S BORDER",
+   "breaking": true,
+   "summary": [
+    "Nvidia has told its manufacturing partners to stop shipping servers containing its chips to Singapore, Malaysia, Thailand and Indonesia, the Financial Times reported on Thursday, citing three people familiar with the matter. Partners including Dell and Supermicro, which package the chips into servers, have told buyers in the four countries that Nvidia will not allow their orders to ship. The Wall Street Journal reported the pause runs for an unspecified period while the company assesses whether its regional partners meet American export requirements; whether it is temporary is unclear.",
+    "It follows the Commerce Department rule issued on 16 November and in force last week, which requires licences to send advanced chips to the four states and closes the route by which Chinese companies rented computing power from overseas cloud providers that buy Nvidia servers rather than importing chips themselves. Among those affected is Aolani, a Singapore-registered cloud company that had planned to supply advanced computing to ByteDance, the Chinese owner of TikTok, under leasing agreements. Singapore has sought \"trusted access\" arrangements since the rule was published."
+   ],
+   "geopolitical": "The licence rule has produced a commercial embargo before any licence has been refused: the vendor is withholding shipments rather than test the paperwork, which makes compliance risk, not American policy, the thing deciding what reaches Singapore.",
+   "socioeconomic": "Data-centre and cloud investment here was sold on access to the newest accelerators. A pause of unstated length on the servers carrying them stalls build-outs already contracted and gives customers reason to place the next workload where no licence condition applies."
+  },
+  {
+   "headline": "SINGAPORE PUTS A FIGURE ON THE TARIFF AND IS TOLD ITS PENSION IS THE PROBLEM",
+   "breaking": false,
+   "summary": [
+    "Gan Kim Yong said about 33 per cent of Singapore's direct exports to the United States, some S$9.4 billion (US$7.2 billion) worth, would be caught by the Section 301 duty of up to 20 per cent the US Trade Representative proposed on Wednesday, lifting the effective rate on affected goods from 7.8 to 10.3 per cent. The measures could take effect in early 2027, and the rate falls to 10 per cent if Singapore reaches an agreement on reciprocal trade. Comments close 5 January and hearings sit 25 January.",
+    "The Deputy Prime Minister said he was very surprised by the finding, given the two countries' free-trade agreement and years of work together, that Singapore would keep negotiating, and that any agreement would involve give and take and compromises Singapore must be prepared to accept. The determination named Singapore's industrial policies, its support schemes and the Central Provident Fund among the causes of structural excess capacity; Gan rejected the argument that the CPF is designed to suppress household consumption."
+   ],
+   "geopolitical": "An American finding that a national retirement system is an unfair trade practice reaches past tariffs into domestic social policy, and no Singapore government can trade anything on the CPF, which narrows any deal to the parts Washington cares least about.",
+   "socioeconomic": "A third of direct exports at an effective 10.3 per cent is survivable for an economy MTI now sees growing about 6 per cent, but the lower rate is conditional on a bilateral agreement, so firms must plan for two tariff worlds into the new year."
+  },
+  {
+   "headline": "NINE PROGRAMMES BECOME ONE, WITH ONE WORKER AND ONE PLAN",
+   "breaking": false,
+   "summary": [
+    "The Ministry of Social and Family Development said on Thursday it had accepted in principle all 19 recommendations of the Family Services Review Committee convened in June 2024, the central one a One Family Service model folding nine MSF-funded programmes - family support, domestic violence and protection, and youth delinquency - into a single integrated service. They serve about 35,000 individuals or families a year, close to one in five of whom already draw on more than one programme and so sit through a separate assessment and case plan for each. Under the new model a family gets one assessment, one integrated case plan and one main worker.",
+    "Agencies will have to plan and deliver as regional partners rather than within their own organisations, a substantial change for the 26 running the nine programmes. Singapore will be divided into seven regions, three starting in 2029 and the rest over the following one to two years; MSF said the first three are not chosen. The committee, drawing on 28 agencies and more than 400 professionals, found cases that are complex, high-risk or both rose from a quarter of family service centre caseloads in 2019 to 30 per cent in 2025."
+   ],
+   "geopolitical": "Nothing external turns on this, but it is the clearest admission yet that the problems an ageing, smaller-household Singapore generates do not arrive one programme at a time, and that the state's own structure added to the burden it meant to lift.",
+   "socioeconomic": "One worker and one plan should cut the retelling and duplicated assessment families absorb now, but the regional model concentrates caseloads, so it turns on whether the sector can staff seven regions with people able to hold a whole family's case."
+  }
+ ],
+ "word": {
+  "word": "demesne",
+  "pos": "noun",
+  "pronunciation": "dih-MAYN",
+  "definition": "Land or a domain held and worked directly by its owner rather than let out to others; by extension, a sphere held under one's own control.",
+  "etymology": "From Anglo-French demesne, a variant of Old French demeine, from Latin dominicus, belonging to a lord, from dominus, lord; the -s- crept in by confusion with Old French mesnie, household.",
+  "example": "By licensing up to a million Starmind satellites, the FCC has in effect granted SpaceX a demesne in low Earth orbit, a region no treaty parcels out and which every other state's regulators will now reach only after the grant."
+ }
+}
