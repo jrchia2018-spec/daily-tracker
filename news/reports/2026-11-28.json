@@ -1,0 +1,92 @@
+{
+ "schema": 1,
+ "date": "2026-11-28",
+ "generatedAt": "2026-11-28T07:20:00+08:00",
+ "coverage": {
+  "from": "2026-11-27T07:00:00+08:00",
+  "to": "2026-11-28T07:00:00+08:00",
+  "label": "Friday 27 November 2026, 0700 SGT → Saturday 28 November 2026, 0700 SGT"
+ },
+ "global": [
+  {
+   "headline": "AMERICAN AIRCRAFT CRIPPLE A SHIP LEAVING IRAN AS TEHRAN VOWS TO BREAK THE BLOCKADE",
+   "breaking": true,
+   "summary": [
+    "US Central Command said on Friday that aircraft fired precision munitions into the stern of the Palau-flagged M/V Pacific Archer in the Gulf of Oman on Thursday, after it left Bandar Abbas and ignored repeated warnings; its propulsion was disabled and the civilian crew unharmed. It is the first commercial ship CENTCOM reports disabling since Iranian officials began promising to run the blockade, and 158 others have complied with orders to change course. The blockade was reimposed in July; Task Force Iron Gate followed on 7 November to interdict weapons, dual-use goods and petroleum across Iran's land borders and the Caspian.",
+    "Mohammad Mokhber, adviser to Supreme Leader Ayatollah Mojtaba Khamenei, replied that \"neither will the Strait of Hormuz be reopened, nor will we allow the blockade to remain in place\", without saying how. Navy commander Shahram Irani told state television that \"breaking through the enemy blockade is underway and our ports are active today\", claiming escorted convoys were sailing. Neither is corroborated; Tasnim and IRNA have walked back a week of reports that 14 tankers staged at Kharg Island were moving. Kpler put strait flows at 55 per cent of pre-war levels in the week to 25 November."
+   ],
+   "geopolitical": "Both sides are now publicly committed to an outcome the other denies: Washington will disable any ship that sails, Tehran insists ships are sailing. That removes the quiet non-compliance a blockade runs on, and makes the next loaded tanker out of Kharg Island a test neither can lose without humiliation.",
+   "socioeconomic": "Front-month Brent for January traded near US$96 on Friday, Thursday's settlement its highest since midterms week and the month's first weekly gain at about 3.5 per cent, after dipping below US$90 days earlier; WTI rose 1 per cent to about US$84.50. Roughly two dozen attacks on shipping were reported in November against October's record 30. OPEC+ meets Sunday, expected to hold quotas through January."
+  },
+  {
+   "headline": "CANADA'S TOP COURT UPHOLDS QUEBEC'S SECULARISM LAW AND TELLS THE OVERRIDE CLAUSE WHERE IT STOPS",
+   "breaking": false,
+   "summary": [
+    "The Supreme Court of Canada upheld most of Quebec's 2019 secularism law, which bars teachers, police officers, judges, prosecutors and other public servants in positions of authority from wearing religious symbols at work. Six justices held that the province validly invoked section 33 of the Charter of Rights and Freedoms, the notwithstanding clause, and that a government may invoke it pre-emptively, before any court finds a law unconstitutional. Chief Justice Richard Wagner, writing the lead opinion, called the law consistent with Quebec's historic approach to secularism.",
+    "One provision fell: section 8, requiring National Assembly members to sit with faces uncovered, infringes the section 3 right to run for and serve in elected office, which section 33 cannot shield. Justices Kasirer, Martin, Karakatsanis and O'Bonsawin each wrote that superior courts keep the power to declare that a law covered by the clause breaches the Charter, though the declaration strikes nothing down; the court issued none here, and accounts of the split differ. Premier Paul St-Pierre Plamondon welcomed the ruling but objected to that finding. Prime Minister Mark Carney said his government will not use the clause and that it is \"useful in a democracy to really know\" when rights are breached; the National Council of Canadian Muslims called it \"a dark day for Quebec and for Canada\"."
+   ],
+   "geopolitical": "A federation has been told its bill of rights can be switched off in advance by any legislature willing to say so, leaving courts only the power to describe the breach. Every province gained that instrument, and the ruling becomes the reference for other Westminster systems with override clauses.",
+   "socioeconomic": "The effect falls on observant Muslims, Sikhs and Jews in public-sector careers, who must choose between a headscarf, turban or kippah and work as a teacher, prosecutor or police officer in Quebec. Rights groups say they will keep litigating, and the declaratory route those four justices described offers a judgment to win with no remedy to collect."
+  },
+  {
+   "headline": "TRUMP PUTS WASHINGTON BEHIND BAGHDAD AS IRAQ DECLARES KURDISH OIL EXPORTS SMUGGLING",
+   "breaking": false,
+   "summary": [
+    "Trump wrote on Truth Social on Friday that the United States supports Prime Minister Ali al-Zaidi's efforts \"to assert state authority throughout Iraq, stop the smuggling of Iraqi oil, end corruption, and bring all weapons under the exclusive control of the state\". Iraqi state media reported the same day that crude exported outside the state oil company SOMO will be treated as smuggling, because the revenue misses the treasury; spokesman Haider al-Aboudi put Baghdad's losses from Kurdish exports above US$100 billion between 2008 and 2025.",
+    "On Thursday Baghdad ordered every \"unofficial\" border crossing run by the Kurdistan Regional Government closed, including those with Syria and Iran, and demonstrations followed. The region's two rival parties issued a rare joint statement calling the seizure of oilfields and crossings \"a red line\", the Erbil broadcaster Rudaw reported. Al-Zaidi, a 41-year-old businessman who took office in May during the war and is backed by US envoy Tom Barrack, also sent state forces last week into Jurf al-Sakhar, the Kataib Hezbollah stronghold, where the militia has still not surrendered its weapons."
+   ],
+   "geopolitical": "The post ends any Kurdish hope of playing Washington against Baghdad, the hedge Erbil has used since 2003, and does it in the same sentence demanding Iran-aligned militias disarm. Tehran loses the ambiguity that let its allies hold weapons and revenue outside a state that kept American backing.",
+   "socioeconomic": "Kurdistan's budget rests on exports now reclassified as smuggling, and the closed crossings carry its trade with Iran, Syria and Turkey. Routing every barrel through SOMO moves the region's wage bill and investor contracts onto transfers from Baghdad, the arrangement whose repeated failure caused the dispute."
+  },
+  {
+   "headline": "COMMERCE ORDERS A RUSSIAN-ROOTED INTERNET BACKBONE TORN OUT OF AMERICAN NETWORKS",
+   "breaking": false,
+   "summary": [
+    "The Commerce Department's Bureau of Industry and Security barred the bandwidth provider RETN from United States networks in a Federal Register notice posted on Friday, finding that it poses the \"undue and unacceptable risks\" identified in a 2019 executive order on hostile foreign information-technology suppliers. RETN and its successors must \"decommission and remove all equipment it has provided or installed either directly or through third parties from any U.S. network, and terminate services provided to U.S. persons\" from 1 January 2027.",
+    "RETN describes itself as a Eurasian network whose cables tie Europe to Asia across Russia, and a 2013 press release called it \"a leading Russian wholesale telecom and backbone provider\"; Reuters could not reach the company. The order goes further than the equipment bans applied to Chinese vendors, which stopped new purchases: this one compels physical removal of installed transit infrastructure and the cutting of existing contracts on a fixed date."
+   ],
+   "geopolitical": "Transit capacity has been treated as plumbing that sanctions reach only indirectly. Naming a carrier whose whole value is the route it owns through Russia extends exclusion from the boxes on a network to the paths across it, and invites European regulators facing the same sabotage findings to ask who carries their traffic east.",
+   "socioeconomic": "American customers have thirty-four days to replace capacity on Europe-Asia routes already longer and dearer since traffic began avoiding Russian and Red Sea corridors. Smaller carriers and content networks that bought cheap wholesale transit pay the difference, and removal costs fall on the networks hosting the equipment."
+  }
+ ],
+ "singapore": [
+  {
+   "headline": "SINGAPORE HAS NOT CONFIRMED THE NVIDIA HALT, AND GAN SAYS IT WILL WALK AWAY IF THE PRICE IS TOO HIGH",
+   "breaking": false,
+   "summary": [
+    "Singapore has not confirmed reports that Nvidia stopped shipping servers containing its chips here, Deputy Prime Minister Gan Kim Yong said at SPH Media's Asia Future Summit on 27 November. The government is engaging local companies to assess the effect of Washington's licence rule covering Singapore, Malaysia, Thailand, Indonesia and Brazil, and is working with the United States on how Singaporean firms keep secure access to high-end chips; firms are arranging their own access with partners. Singapore is reviewing how to strengthen regulation and monitoring, because \"Singapore does not want to become a conduit for illegal trade in any form\" — but \"in order for us to enforce and to take real action, we need evidence\", which requires information on activity conducted abroad.",
+    "On tariffs, two days after Washington proposed duties of up to 20 per cent over structural excess capacity, Gan said \"our approach has not changed\". Singapore has no Agreement on Reciprocal Trade, which the United States says it will accept other negotiations in place of. Talks may fail and involve trade-offs: \"every time when we negotiate, we must be prepared to walk away when the price they ask for is too high.\" The weaponisation of technology, he said, \"is here to stay\"."
+   ],
+   "geopolitical": "The position is now explicit in both halves: Singapore polices its own territory and will not enforce another state's controls abroad, and it will not buy a lower tariff at any price. Naming a walk-away point publicly is close to the only leverage available to a party with no market size to withhold.",
+   "socioeconomic": "Companies here are told to secure their own chip supply while the government negotiates, which prices delay into every data-centre and AI build with a 2027 delivery date. An unconfirmed vendor halt matters more than the licence rule, because a commercial pause needs no refusal from Commerce and offers nothing to appeal."
+  },
+  {
+   "headline": "A PANEL WANTS SINGAPOREANS GIVEN TIME TO CHANGE THEIR MINDS, AND A BIGGER COURT TO SUE IN",
+   "breaking": false,
+   "summary": [
+    "The panel reviewing Singapore's consumer protection regime submitted seven recommendations to the government on 27 November, the first comprehensive review since the Consumer Protection (Fair Trading) Act was last amended in 2018. It wants a mandated cooling-off period letting buyers of expensive prepaid packages cancel after leaving the shop, beginning with high-risk sectors and naming beauty and wellness as the priority. It proposes raising the Small Claims Tribunal's standard consumer limit from S$20,000 to S$30,000, and from S$30,000 to S$60,000 where both parties agree, and widening the claims it may hear to disputes such as car-sharing services and vehicle-rental deposits. Of 1,014 survey respondents who considered a claim and did not file, 42 per cent said it exceeded the limit and 29 per cent could not get the other side's consent.",
+    "Co-chaired by CASE president Melvin Yong and former judicial commissioner Foo Tuat Yien, the panel consulted more than 8,000 consumers and about 250 business and industry representatives over a year. It asks the government and the Competition and Consumer Commission to consider powers to issue directions and impose financial penalties for unfair digital practices, voluntary training and stronger monitoring of influencer advertising, and verified-account tickets with dynamic QR codes for high-demand events. Reported prepayment losses hit S$6.69 million from January to 30 September, about 147 per cent above 2025's S$2.71 million, including 1,610 complaints and S$3.82 million after the True Fitness and True Yoga closures."
+   ],
+   "geopolitical": "Letting a competition regulator fine firms for deceptive digital design would move Singapore towards the European and Australian model of enforcement by penalty, in a jurisdiction that has preferred accreditation and mediation.",
+   "socioeconomic": "Prepayment is the commonest way Singaporean consumers lose money, and a cooling-off window attacks the sale rather than the insolvency that follows. The tribunal limits matter more in volume: at S$30,000 a standard claim, most gym, renovation and course disputes become winnable without a lawyer."
+  },
+  {
+   "headline": "DYING COSTS MORE FROM 2027, AND SCATTERING ASHES COSTS LESS",
+   "breaking": false,
+   "summary": [
+    "The National Environment Agency raised fees for cremation, burial and columbarium niches at government-managed facilities from January 2027, the first revision in more than 25 years. For citizens and permanent residents, cremation goes from S$100 to S$175, compulsory burial — for those whose religion requires it — from S$315 to S$400, non-compulsory burial from S$940 to S$1,200, a standard niche from S$500 to S$600 and a family niche from S$900 to S$1,080. Non-residents pay S$350 for cremation and S$2,500 for burial. Cremation and niche fees were last set in 1997 and citizen burial fees in 2000; NEA said provision costs have risen 20 to 65 per cent, by more than S$1,690 a person for compulsory burial, and that the state will still bear up to about 90 per cent of the cost of key services for citizens and PRs.",
+    "The inland ash-scattering fee falls S$120, from S$320 to S$200, as the land-saving option grows: about 7 per cent of cremations in 2022 and 12 per cent in 2025. Cremation plus scattering will cost a citizen S$375, down from S$420, against S$775 for cremation and a standard niche, up from S$600. A two-year pilot of scheduled sea-scattering ferries starts in the second half of 2027 at S$50 a group of up to six. Households on ComCare or ComLink+ get a full waiver of essential after-death fees."
+   ],
+   "geopolitical": "No external dimension: a land-constrained state is pricing the one piece of ground every resident eventually needs, and using the price to steer a choice it will not mandate.",
+   "socioeconomic": "The gap between a niche and scattering widens to S$400, which is the point. With citizens aged 65 and over at 21.4 per cent of the population and 152,000 past 80, columbarium demand is the growing claim on land, and the cheaper option is now the one the state subsidises most. The waivers keep the rise off the lowest-income households."
+  }
+ ],
+ "word": {
+  "word": "nullification",
+  "pos": "noun",
+  "pronunciation": "nuh-lih-fih-KAY-shun",
+  "definition": "The act of making something legally void or of no effect; in constitutional usage, a government's assertion of power to set aside a right or a higher law while leaving it formally in place.",
+  "etymology": "From Late Latin nullificare, to make nothing of, from Latin nullus, none, and facere, to make; in English from the 1620s, taking its constitutional sense in the American nullification crisis of the 1830s.",
+  "example": "Six justices accepted that Quebec may switch off Charter rights in advance, so what the Supreme Court of Canada left the lower courts is nullification with a commentary: a judgment that the law breaches the Charter and no power to stop it operating."
+ }
+}
